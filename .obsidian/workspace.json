@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/tmp.md",
+                "file": "resource/format/post format.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/tmp.md",
+                "file": "resource/format/post format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/tmp.md",
+                "file": "resource/format/post format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/tmp.md"
+                "file": "resource/format/post format.md"
               }
             }
           },
@@ -159,9 +159,9 @@
   "active": "409f269eb4554642",
   "lastOpenFiles": [
     "area/흑요석 공예.md",
-    "archive/tmp.md",
     "resource/format/post format.md",
     "README.md",
+    "archive/tmp.md",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul",
     "resource/format",
