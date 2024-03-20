@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "무제 파일.md",
+                "file": "area/obsidian craft.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,16 +47,16 @@
         "currentTab": 2
       },
       {
-        "id": "0749196c4b0dd9a9",
+        "id": "0654bc9e74512dd1",
         "type": "tabs",
         "children": [
           {
-            "id": "4accfdae71cba86d",
+            "id": "5efb17959c4db019",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/format/post format.md",
+                "file": "area/obsidian craft.md",
                 "mode": "preview",
                 "source": false
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "무제 파일.md",
+                "file": "area/obsidian craft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "무제 파일.md",
+                "file": "area/obsidian craft.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "무제 파일.md"
+                "file": "area/obsidian craft.md"
               }
             }
           }
@@ -191,10 +191,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f47b7d3a3792f650",
+  "active": "5efb17959c4db019",
   "lastOpenFiles": [
     "resource/format/post format.md",
-    "무제 파일.md",
+    "area/obsidian craft.md",
     "README.md",
     "resource/format",
     "archive",
