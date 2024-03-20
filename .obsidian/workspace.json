@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "post format.md",
+                "file": "resource/format/post format.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f47b7d3a3792f650",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "무제 파일.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0749196c4b0dd9a9",
@@ -44,7 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "post format.md",
+                "file": "resource/format/post format.md",
                 "mode": "preview",
                 "source": false
               }
@@ -116,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "post format.md",
+                "file": "무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "post format.md",
+                "file": "무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "post format.md"
+                "file": "무제 파일.md"
               }
             }
           }
@@ -175,13 +187,15 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5924d62a6df9bf10",
+  "active": "f47b7d3a3792f650",
   "lastOpenFiles": [
+    "resource/format/post format.md",
+    "무제 파일.md",
     "README.md",
-    "post format.md",
     "resource/format",
     "archive",
     "resource",
