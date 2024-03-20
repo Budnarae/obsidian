@@ -11,12 +11,8 @@
             "id": "409f269eb4554642",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/format/post format.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -97,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/format/post format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/format/post format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/format/post format.md"
+                "file": "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md"
               }
             }
           },
@@ -169,10 +163,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "409f269eb4554642",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "area/흑요석 공예.md",
     "resource/format/post format.md",
+    "area/흑요석 공예.md",
     "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md",
     "Excalidraw",
     "README.md",
