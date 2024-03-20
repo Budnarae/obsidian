@@ -15,7 +15,7 @@
               "state": {
                 "file": "README.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -27,7 +27,7 @@
               "state": {
                 "file": "resource/format/post format.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -37,9 +37,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/obsidian craft.md",
+                "file": "area/흑요석 공예.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -56,9 +56,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/obsidian craft.md",
+                "file": "area/흑요석 공예.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
             }
           }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "area/obsidian craft.md",
+                "file": "area/흑요석 공예.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "area/obsidian craft.md",
+                "file": "area/흑요석 공예.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "area/obsidian craft.md"
+                "file": "area/흑요석 공예.md"
               }
             }
           },
@@ -202,7 +202,7 @@
   "lastOpenFiles": [
     "README.md",
     "resource/format/post format.md",
-    "area/obsidian craft.md",
+    "area/흑요석 공예.md",
     "resource/format",
     "archive",
     "resource",

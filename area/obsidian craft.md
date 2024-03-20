@@ -1,5 +1,0 @@
-
----
-
-#updating #obsidian 
-
