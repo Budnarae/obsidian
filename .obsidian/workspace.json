@@ -171,14 +171,21 @@
                 "file": "area/obsidian craft.md"
               }
             }
+          },
+          {
+            "id": "96ad26511009b524",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,7 +198,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5efb17959c4db019",
+  "active": "96ad26511009b524",
   "lastOpenFiles": [
     "resource/format/post format.md",
     "area/obsidian craft.md",
