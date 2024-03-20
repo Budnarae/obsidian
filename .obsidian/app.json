@@ -1,5 +1,6 @@
 {
   "strictLineBreaks": false,
   "livePreview": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "spellcheck": false
 }
