@@ -18,6 +18,18 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "16593950ef53bb10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "area/흑요석 공예.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
         ]
       }
@@ -153,13 +165,16 @@
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "409f269eb4554642",
   "lastOpenFiles": [
     "area/흑요석 공예.md",
     "resource/format/post format.md",
+    "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md",
+    "Excalidraw",
     "README.md",
     "archive/tmp.md",
     "project/42Seoul/NetPractice.md",
