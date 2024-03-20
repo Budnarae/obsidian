@@ -164,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,7 +176,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4accfdae71cba86d",
+  "active": "54a631dd2141b36f",
   "lastOpenFiles": [
     "README.md",
     "post format.md",
