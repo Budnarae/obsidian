@@ -3,7 +3,7 @@
 
 #network 
 
-*IP는 Internet Protocol의 약자이다.*
+*Internet Protocol*
 
 ---
 
