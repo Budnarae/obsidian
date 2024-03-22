@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/브리지.md",
+                "file": "resource/Computer Science/Network/NIC.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/브리지.md",
+                "file": "resource/Computer Science/Network/NIC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/브리지.md",
+                "file": "resource/Computer Science/Network/NIC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/브리지.md"
+                "file": "resource/Computer Science/Network/NIC.md"
               }
             }
           },
@@ -157,12 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "ea5e5fb3c6ff9964",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/IP.md",
+    "resource/Computer Science/Network/패킷.md",
+    "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/스위칭 허브.md",
     "resource/Computer Science/Network/브리지.md",
     "resource/Computer Science/Network/NIC.md",
-    "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/게이트웨이.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
@@ -170,7 +172,6 @@
     "resource/Computer Science/Network/스타형 LAN.md",
     "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/허브.md",
-    "resource/Computer Science/Network/패킷.md",
     "resource/Computer Science/Network/리피터.md",
     "resource/Computer Science/Network/라우팅.md",
     "resource/Computer Science/Network/이더넷.md",
@@ -179,7 +180,6 @@
     "resource/Computer Science/Network/TCP.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/LAN.md",
-    "resource/Computer Science/Network/IP.md",
     "archive/tmp.md",
     "무제 파일.canvas",
     "resource/유용한 서적 링크.md",
