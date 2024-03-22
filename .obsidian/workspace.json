@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/이더넷.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c0cafde52f0d983b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/OSI 참조 모델.md"
+                "file": "resource/Computer Science/Network/TCP IP.md"
               }
             }
           },
@@ -169,13 +156,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c0cafde52f0d983b",
+  "active": "549ca8aa9c2289b5",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
-    "resource/Computer Science/Network/이더넷.md",
-    "resource/유용한 서적 링크.md",
+    "resource/Computer Science/Network/TCP IP.md",
     "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/네트워크 프로토콜.md",
+    "resource/Computer Science/Network/이더넷.md",
+    "무제 파일.canvas",
+    "resource/유용한 서적 링크.md",
     "resource/Computer Science/Network/LAN.md",
     "project/42Seoul/NetPractice.md",
     "area/흑요석 공예.md",
