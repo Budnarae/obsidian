@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/TCP IP.md",
+                "file": "IP.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/TCP IP.md",
+                "file": "IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/TCP IP.md",
+                "file": "IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/TCP IP.md"
+                "file": "IP.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "549ca8aa9c2289b5",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/TCP IP.md",
+    "IP.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/이더넷.md",
