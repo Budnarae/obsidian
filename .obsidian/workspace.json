@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/MAC 주소.md",
+                "file": "resource/Computer Science/Network/브리지.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/MAC 주소.md",
+                "file": "resource/Computer Science/Network/브리지.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/MAC 주소.md",
+                "file": "resource/Computer Science/Network/브리지.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/MAC 주소.md"
+                "file": "resource/Computer Science/Network/브리지.md"
               }
             }
           },
@@ -157,9 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ea5e5fb3c6ff9964",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
     "resource/Computer Science/Network/스위칭 허브.md",
+    "resource/Computer Science/Network/브리지.md",
+    "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/게이트웨이.md",
@@ -186,8 +188,6 @@
     "resource/format/post format.md",
     "resource/Computer Science/Network",
     "resource/Computer Science",
-    "Excalidraw/network.excalidraw.md",
-    "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md",
     "Excalidraw",
     "project/42Seoul",
     "resource/format",
