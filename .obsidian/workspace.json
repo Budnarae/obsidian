@@ -157,12 +157,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "549ca8aa9c2289b5",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/스타형 LAN.md",
-    "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/이더넷.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/라우터.md",
     "archive/tmp.md",
     "resource/Computer Science/Network/라우팅.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
