@@ -18,8 +18,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "a656dcffe4e069d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Computer Science/Network/WAN.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/이더넷.md",
+                "file": "resource/Computer Science/Network/WAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/이더넷.md",
+                "file": "resource/Computer Science/Network/WAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/이더넷.md"
+                "file": "resource/Computer Science/Network/WAN.md"
               }
             }
           },
@@ -157,11 +170,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6859d18e76081da4",
+  "active": "a656dcffe4e069d0",
   "lastOpenFiles": [
     "resource/Computer Science/Network/LAN.md",
-    "project/42Seoul/NetPractice.md",
+    "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/이더넷.md",
+    "project/42Seoul/NetPractice.md",
     "resource/유용한 서적 링크.md",
     "area/흑요석 공예.md",
     "resource/format/post format.md",
