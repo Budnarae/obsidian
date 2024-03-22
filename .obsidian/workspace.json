@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md"
+                "file": "resource/Computer Science/Network/서브넷 마스크.md"
               }
             }
           },
@@ -142,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,9 +158,10 @@
   },
   "active": "ea5e5fb3c6ff9964",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/공인 IP 주소.md",
-    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
+    "resource/Computer Science/Network/서브넷 마스크.md",
+    "resource/Computer Science/Network/사설 IP 주소.md",
+    "resource/Computer Science/Network/공인 IP 주소.md",
     "resource/Computer Science/Network/IP.md",
     "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/패킷.md",
@@ -185,7 +185,6 @@
     "resource/Computer Science/Network/LAN.md",
     "archive/tmp.md",
     "무제 파일.canvas",
-    "resource/유용한 서적 링크.md",
     "resource/Computer Science/Network",
     "resource/Computer Science",
     "Excalidraw",
