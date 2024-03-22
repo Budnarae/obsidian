@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IP.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IP.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IP.md",
+                "file": "resource/Computer Science/Network/TCP IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IP.md"
+                "file": "resource/Computer Science/Network/TCP IP.md"
               }
             }
           },
@@ -158,15 +158,19 @@
   },
   "active": "549ca8aa9c2289b5",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/TCP IP.md",
-    "IP.md",
-    "resource/Computer Science/Network/OSI 참조 모델.md",
+    "resource/Computer Science/Network/UDP.md",
     "resource/Computer Science/Network/WAN.md",
-    "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/이더넷.md",
+    "resource/Computer Science/Network/라우팅.md",
+    "resource/Computer Science/Network/라우터.md",
+    "resource/Computer Science/Network/네트워크 프로토콜.md",
+    "resource/Computer Science/Network/TCP IP.md",
+    "resource/Computer Science/Network/TCP.md",
+    "resource/Computer Science/Network/IP.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
     "무제 파일.canvas",
     "resource/유용한 서적 링크.md",
-    "resource/Computer Science/Network/LAN.md",
     "project/42Seoul/NetPractice.md",
     "area/흑요석 공예.md",
     "resource/format/post format.md",
