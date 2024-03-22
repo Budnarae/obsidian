@@ -1,0 +1,9 @@
+
+---
+
+#network 
+
+*public IP address*
+
+---
+
