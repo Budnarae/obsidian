@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/리피터.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#network",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/Computer Science/Network/공인 IP 주소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/Computer Science/Network/공인 IP 주소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-22 17.53.10.excalidraw.md"
+                "file": "resource/Computer Science/Network/공인 IP 주소.md"
               }
             }
           },
@@ -156,32 +158,32 @@
   },
   "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/TCP.md",
+    "resource/Computer Science/Network/TCP IP.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
+    "resource/Computer Science/Network/MAC 주소.md",
+    "resource/Computer Science/Network/IP 주소.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/IP.md",
+    "resource/Computer Science/Network/라우터.md",
+    "resource/Computer Science/Network/공인 IP 주소.md",
+    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/리피터.md",
     "Excalidraw/Drawing 2024-03-22 17.53.10.excalidraw.md",
-    "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/스위칭 허브.md",
     "resource/Computer Science/Network/스타형 LAN.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
-    "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/게이트웨이.md",
     "resource/Computer Science/Network/UDP.md",
-    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/NIC.md",
-    "resource/Computer Science/Network/LAN.md",
-    "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/IP 주소.md",
-    "resource/Computer Science/Network/사설 IP 주소.md",
-    "resource/Computer Science/Network/공인 IP 주소.md",
     "resource/Computer Science/Network/패킷.md",
     "resource/Computer Science/Network/브리지.md",
-    "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/라우팅.md",
     "resource/Computer Science/Network/이더넷.md",
-    "resource/Computer Science/Network/TCP IP.md",
-    "resource/Computer Science/Network/TCP.md",
     "무제 파일.canvas",
     "resource/Computer Science/Network",
     "resource/Computer Science",
