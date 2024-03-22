@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
+                "file": "이더넷.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
+                "file": "이더넷.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
+                "file": "이더넷.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md"
+                "file": "이더넷.md"
               }
             }
           },
@@ -159,8 +159,10 @@
   },
   "active": "6859d18e76081da4",
   "lastOpenFiles": [
-    "area/흑요석 공예.md",
     "resource/Computer Science/Network/근거리 통신망 LAN.md",
+    "이더넷.md",
+    "resource/유용한 서적 링크.md",
+    "area/흑요석 공예.md",
     "project/42Seoul/NetPractice.md",
     "resource/format/post format.md",
     "resource/Computer Science/Network",
