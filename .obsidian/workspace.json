@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/무제 파일.md",
+                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/무제 파일.md",
+                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/무제 파일.md",
+                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/무제 파일.md"
+                "file": "resource/Computer Science/Network/근거리 통신망 LAN.md"
               }
             }
           },
@@ -160,7 +160,7 @@
   "active": "6859d18e76081da4",
   "lastOpenFiles": [
     "resource/format/post format.md",
-    "resource/Computer Science/Network/무제 파일.md",
+    "resource/Computer Science/Network/근거리 통신망 LAN.md",
     "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Network",
     "resource/Computer Science",
