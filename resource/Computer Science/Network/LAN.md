@@ -3,7 +3,7 @@
 
 #network 
 
-*LAN은 Local Area network의 약어이다*
+*LAN은 Local Area network(근거리 통신망)의 약어이다*
 
 ---
 
