@@ -4,26 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "636885147dd1da9b",
+        "id": "472a6f8ce895fa91",
         "type": "tabs",
         "children": [
           {
-            "id": "409f269eb4554642",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/network.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "16593950ef53bb10",
+            "id": "6859d18e76081da4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "resource/Computer Science/Network/무제 파일.md",
                 "mode": "source",
                 "source": true
               }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/network.excalidraw.md",
+                "file": "resource/Computer Science/Network/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/network.excalidraw.md",
+                "file": "resource/Computer Science/Network/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/network.excalidraw.md"
+                "file": "resource/Computer Science/Network/무제 파일.md"
               }
             }
           },
@@ -167,16 +157,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "409f269eb4554642",
+  "active": "6859d18e76081da4",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md",
-    "Excalidraw/network.excalidraw.md",
     "resource/format/post format.md",
+    "resource/Computer Science/Network/무제 파일.md",
+    "project/42Seoul/NetPractice.md",
+    "resource/Computer Science/Network",
+    "resource/Computer Science",
     "area/흑요석 공예.md",
+    "Excalidraw/network.excalidraw.md",
+    "Excalidraw/Drawing 2024-03-20 15.45.24.excalidraw.md",
     "Excalidraw",
     "README.md",
     "archive/tmp.md",
-    "project/42Seoul/NetPractice.md",
     "project/42Seoul",
     "resource/format",
     "archive",
