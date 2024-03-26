@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md"
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md"
               }
             }
           },
@@ -156,18 +156,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "ea5e5fb3c6ff9964",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/WAN.md",
-    "resource/Computer Science/Network/TCP.md",
-    "resource/Computer Science/Network/TCP IP.md",
-    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
-    "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/라우터.md",
+    "resource/Computer Science/Network/TCP.md",
+    "resource/Computer Science/Network/TCP IP.md",
     "resource/Computer Science/Network/공인 IP 주소.md",
+    "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/리피터.md",
     "Excalidraw/Drawing 2024-03-22 17.53.10.excalidraw.md",
