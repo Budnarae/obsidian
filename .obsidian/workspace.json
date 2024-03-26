@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md"
+                "file": "resource/Computer Science/Network/서브넷 마스크.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "ea5e5fb3c6ff9964",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/브로드캐스트 도메인.md",
     "resource/Computer Science/Network/콜리전 도메인.md",
     "resource/유용한 링크.md",
@@ -181,7 +182,6 @@
     "resource/Computer Science/Network/멀티캐스트.md",
     "resource/Computer Science/Network/브로드캐스트.md",
     "resource/Computer Science/Network/브리지.md",
-    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/스타형 LAN.md",
     "무제 파일.canvas",
