@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/브로드캐스트 도메인.md",
+                "file": "resource/유용한 링크.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/브로드캐스트 도메인.md",
+                "file": "resource/유용한 링크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/브로드캐스트 도메인.md",
+                "file": "resource/유용한 링크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/브로드캐스트 도메인.md"
+                "file": "resource/유용한 링크.md"
               }
             }
           },
@@ -158,10 +158,10 @@
   },
   "active": "ea5e5fb3c6ff9964",
   "lastOpenFiles": [
+    "resource/유용한 서적.md",
     "resource/Computer Science/Network/콜리전 도메인.md",
     "resource/Computer Science/Network/브로드캐스트 도메인.md",
     "resource/유용한 링크.md",
-    "resource/유용한 서적.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/IP.md",
