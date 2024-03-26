@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "resource/Computer Science/Network/사설 IP 주소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "resource/Computer Science/Network/사설 IP 주소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md"
+                "file": "resource/Computer Science/Network/사설 IP 주소.md"
               }
             }
           },
@@ -183,8 +183,8 @@
   },
   "active": "4d5ac26027b6534d",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/공인 IP 주소.md",
+    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
