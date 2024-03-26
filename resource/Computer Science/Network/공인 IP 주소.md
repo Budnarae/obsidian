@@ -20,5 +20,6 @@ IP 주소는 32비트의 정수로 표현하기 때문에 중복되지 않는 �
 참고자료
 
 [그림으로 이해하는 네트워크 용어](https://product.kyobobook.co.kr/detail/S000001834837)
+[후니의 쉽게 쓴 시스코 네트워킹](https://product.kyobobook.co.kr/detail/S000000562247)
 
 ---
