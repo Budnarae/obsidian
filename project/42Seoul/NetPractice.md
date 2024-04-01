@@ -62,7 +62,11 @@
 
 1. 라우터끼리 잇는 인터페이스는 서로 같은 네트워크에 속해야 한다.
 
+![[NetPractice_lv7_after.png]]
+
 #### lv8
+
+![[NetPractice_lv8_before.png]]
 
 
 
