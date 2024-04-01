@@ -4,28 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3551e7c8c19d47dc",
+        "id": "ed502bf25386dba4",
         "type": "tabs",
         "children": [
           {
-            "id": "b2d7094454ce0fd2",
+            "id": "6b3a27fc0da6e6df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "mode": "preview",
                 "source": true
-              }
-            }
-          },
-          {
-            "id": "4bfbb76141d2564a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/NetPractice/NetPractice_lv3_after.png"
               }
             }
           }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/NetPractice.md"
+                "file": "resource/Computer Science/Network/IP.md"
               }
             }
           },
@@ -166,21 +156,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2d7094454ce0fd2",
+  "active": "6b3a27fc0da6e6df",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/IP 주소.md",
+    "resource/Computer Science/Network/IP.md",
+    "resource/Computer Science/Network/브리지.md",
+    "project/42Seoul/NetPractice.md",
+    "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
     "img/NetPractice/NetPractice_lv9_after.png",
     "img/NetPractice/NetPractice_lv9_before.png",
-    "project/42Seoul/NetPractice.md",
     "img/NetPractice/NetPractice_lv8_after.png",
-    "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv8_before.png",
     "img/NetPractice/NetPractice_lv7_after.png",
     "img/NetPractice/NetPractice_lv7_before.png",
     "img/NetPractice/NetPractice_lv6_after.png",
-    "img/NetPractice/NetPractice_lv6_before.png",
-    "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "img/NetPractice",
     "resource/Computer Science/Network/공인 IP 주소.md",
@@ -189,8 +181,6 @@
     "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/TCP.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
-    "resource/Computer Science/Network/LAN.md",
-    "resource/Computer Science/Network/IP.md",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
     "img",
