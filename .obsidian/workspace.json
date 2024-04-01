@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "img/NetPractice/NetPractice_lv3_after.png",
+                "file": "project/42Seoul/NetPractice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "img/NetPractice/NetPractice_lv3_after.png",
+                "file": "project/42Seoul/NetPractice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "img/NetPractice/NetPractice_lv3_after.png"
+                "file": "project/42Seoul/NetPractice.md"
               }
             }
           },
@@ -167,10 +166,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4bfbb76141d2564a",
+  "active": "b2d7094454ce0fd2",
   "lastOpenFiles": [
-    "project/42Seoul/NetPractice.md",
     "img/NetPractice/NetPractice_lv3_after.png",
+    "img/NetPractice/NetPractice_lv7_before.png",
+    "img/NetPractice/NetPractice_lv6_after.png",
+    "project/42Seoul/NetPractice.md",
     "img/NetPractice/NetPractice_lv6_before.png",
     "img/NetPractice/NetPractice_lv5_after.png",
     "img/Screen Shot 2024-04-01 at 10.56.50 AM.png",
@@ -179,7 +180,6 @@
     "img/Screen Shot 2024-04-01 at 10.51.49 AM.png",
     "img/NetPractice/NetPractice_lv4_before.png",
     "img/Screen Shot 2024-04-01 at 10.48.34 AM.png",
-    "img/Screen Shot 2024-04-01 at 10.46.45 AM.png",
     "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "img/NetPractice",

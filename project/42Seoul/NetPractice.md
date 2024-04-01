@@ -57,7 +57,11 @@
 3. 경로가 하나 밖에 없으면 디폴트 라우팅이 유리하다.
 4. 하지만 인터넷에서는 디폴트 라우팅을 사용할 수 없다.
 
+![[NetPractice_lv6_after.png]]
+
 #### lv7
+
+![[NetPractice_lv7_before.png]]
 
 
 
