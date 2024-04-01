@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/라우팅.md",
+                "file": "resource/Computer Science/Network/리피터.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/라우팅.md",
+                "file": "resource/Computer Science/Network/리피터.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/라우팅.md",
+                "file": "resource/Computer Science/Network/리피터.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/라우팅.md"
+                "file": "resource/Computer Science/Network/리피터.md"
               }
             }
           },
@@ -157,10 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6b3a27fc0da6e6df",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/리피터.md",
     "resource/Computer Science/Network/라우팅.md",
+    "resource/Computer Science/Network/리피터.md",
     "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/네트워크 토폴로지.md",
