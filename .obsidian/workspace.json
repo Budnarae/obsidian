@@ -8,26 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d5ac26027b6534d",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/NetPractice/NetPractice_lv2_before.png"
-              }
-            }
-          },
-          {
-            "id": "f2a30e8218cf3e4e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "img/NetPractice/NetPractice_lv1_before.png"
-              }
-            }
-          },
-          {
             "id": "b2d7094454ce0fd2",
             "type": "leaf",
             "state": {
@@ -39,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,9 +158,11 @@
   },
   "active": "b2d7094454ce0fd2",
   "lastOpenFiles": [
+    "img/NetPractice/NetPractice_lv2_after.png",
+    "project/42Seoul/NetPractice.md",
+    "img/Screen Shot 2024-04-01 at 10.42.37 AM.png",
     "img/NetPractice/NetPractice_lv1_before.png",
     "img/NetPractice/NetPractice_lv2_before.png",
-    "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "img/Screen Shot 2024-04-01 at 10.37.00 AM.png",
