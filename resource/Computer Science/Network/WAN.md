@@ -3,7 +3,7 @@
 
 #network 
 
-*WAN은 Wide Area network(광역 통신망)의 약어이다*
+*WAN은 Wide Area Network(광역 통신망)의 약어이다*
 
 ---
 
