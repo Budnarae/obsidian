@@ -72,7 +72,10 @@
 
 #### lv9
 
+![[NetPractice_lv9_before.png]]
 
-
+![[NetPractice_lv9_after.png]]
 
 #### lv10
+
+![[NetPractice_lv10_before.png]]
