@@ -18,6 +18,16 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "4bfbb76141d2564a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "img/NetPractice/NetPractice_lv3_after.png"
+              }
+            }
           }
         ]
       }
@@ -156,10 +166,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2d7094454ce0fd2",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "img/NetPractice/NetPractice_lv2_after.png",
+    "img/NetPractice/NetPractice_lv4_before.png",
+    "img/Screen Shot 2024-04-01 at 10.48.34 AM.png",
+    "img/NetPractice/NetPractice_lv3_after.png",
     "project/42Seoul/NetPractice.md",
+    "img/Screen Shot 2024-04-01 at 10.46.45 AM.png",
+    "img/NetPractice/NetPractice_lv3_before.png",
+    "img/Screen Shot 2024-04-01 at 10.44.19 AM.png",
+    "img/NetPractice/NetPractice_lv2_after.png",
     "img/Screen Shot 2024-04-01 at 10.42.37 AM.png",
     "img/NetPractice/NetPractice_lv1_before.png",
     "img/NetPractice/NetPractice_lv2_before.png",

@@ -25,3 +25,14 @@
 
 #### lv3
 
+![[NetPractice_lv3_before.png]]
+
+1. 같은 LAN 안의 IP 주소는 네트워크 주소와 서브넷 마스크가 모두 일치해야 한다.
+
+![[NetPractice_lv3_after.png]]
+
+#### lv4
+
+![[NetPractice_lv4_before.png]]
+
+1. 라우터 인텊같은 LAN 안의 IP 주소는 네트워크 주소와 서브넷 마스크가 모두 일치해야 한다.
