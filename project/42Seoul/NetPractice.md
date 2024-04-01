@@ -68,8 +68,7 @@
 
 ![[NetPractice_lv8_before.png]]
 
-
-
+![[NetPractice_lv8_after.png]]
 
 #### lv9
 
