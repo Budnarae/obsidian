@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/리피터.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/리피터.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/리피터.md",
+                "file": "resource/Computer Science/Network/서브넷 마스크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/리피터.md"
+                "file": "resource/Computer Science/Network/서브넷 마스크.md"
               }
             }
           },
@@ -157,10 +157,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "6b3a27fc0da6e6df",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/라우팅.md",
+    "resource/Computer Science/Network/사설 IP 주소.md",
+    "resource/Computer Science/Network/브리지.md",
+    "resource/Computer Science/Network/브로드캐스트 도메인.md",
+    "resource/Computer Science/Network/브로드캐스트.md",
+    "resource/Computer Science/Network/멀티캐스트.md",
     "resource/Computer Science/Network/리피터.md",
+    "resource/Computer Science/Network/라우팅.md",
     "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/네트워크 토폴로지.md",
@@ -178,7 +183,6 @@
     "resource/Computer Science/Network/IP.md",
     "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
-    "resource/Computer Science/Network/브리지.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
@@ -189,14 +193,10 @@
     "img/NetPractice/NetPractice_lv7_after.png",
     "img/NetPractice/NetPractice_lv7_before.png",
     "img/NetPractice/NetPractice_lv6_after.png",
-    "resource/Computer Science/Network/사설 IP 주소.md",
     "img/NetPractice",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
     "img",
-    "resource/Computer Science/Network/브로드캐스트 도메인.md",
-    "resource/Computer Science/Network/콜리전 도메인.md",
-    "resource/Computer Science/Network/멀티캐스트.md",
     "무제 파일.canvas",
     "resource/Computer Science/Network",
     "resource/Computer Science",
