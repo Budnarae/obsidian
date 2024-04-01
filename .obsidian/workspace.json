@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
-                "mode": "preview",
+                "file": "project/42Seoul/NetPractice.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "project/42Seoul/NetPractice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md",
+                "file": "project/42Seoul/NetPractice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/공인 IP 주소.md"
+                "file": "project/42Seoul/NetPractice.md"
               }
             }
           },
@@ -183,32 +183,33 @@
   },
   "active": "4d5ac26027b6534d",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/IP 주소.md",
-    "resource/Computer Science/Network/사설 IP 주소.md",
+    "img/NetPractice_lv1.png",
     "resource/Computer Science/Network/공인 IP 주소.md",
-    "resource/Computer Science/Network/서브넷 마스크.md",
+    "resource/Computer Science/Network/네트워크 토폴로지.md",
+    "resource/Computer Science/Network/게이트웨이.md",
+    "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/TCP.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
+    "resource/Computer Science/Network/IP 주소.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/IP.md",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
+    "project/42Seoul/NetPractice.md",
+    "img",
+    "resource/Computer Science/Network/사설 IP 주소.md",
+    "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/브로드캐스트 도메인.md",
     "resource/Computer Science/Network/콜리전 도메인.md",
-    "resource/Computer Science/Network/OSI 참조 모델.md",
-    "resource/Computer Science/Network/네트워크 토폴로지.md",
-    "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/TCP IP.md",
     "resource/Computer Science/Network/UDP.md",
-    "resource/Computer Science/Network/WAN.md",
-    "resource/Computer Science/Network/게이트웨이.md",
     "resource/Computer Science/Network/네트워크 프로토콜.md",
     "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/라우팅.md",
     "resource/Computer Science/Network/리피터.md",
     "resource/Computer Science/Network/멀티캐스트.md",
-    "resource/Computer Science/Network/브로드캐스트.md",
-    "resource/Computer Science/Network/브리지.md",
-    "resource/Computer Science/Network/스타형 LAN.md",
     "무제 파일.canvas",
     "resource/Computer Science/Network",
     "resource/Computer Science",
