@@ -3,7 +3,7 @@
 
 #42Seoul #network 
 
-**
+*about IP addressing & subnet masking*
 
 ---
 
@@ -64,6 +64,8 @@
 
 ![[NetPractice_lv7_after.png]]
 
+
+
 #### lv8
 
 ![[NetPractice_lv8_before.png]]
@@ -79,3 +81,5 @@
 #### lv10
 
 ![[NetPractice_lv10_before.png]]
+
+![[NetPractice_lv10_after.png]]
