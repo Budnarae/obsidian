@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/허브.md",
+                "file": "resource/Computer Science/Network/LAN.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/허브.md",
+                "file": "resource/Computer Science/Network/LAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/허브.md",
+                "file": "resource/Computer Science/Network/LAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/허브.md"
+                "file": "resource/Computer Science/Network/LAN.md"
               }
             }
           },
@@ -159,6 +159,9 @@
   },
   "active": "6b3a27fc0da6e6df",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/패킷.md",
     "resource/Computer Science/Network/콜리전 도메인.md",
     "resource/Computer Science/Network/이더넷.md",
@@ -178,13 +181,10 @@
     "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/공인 IP 주소.md",
     "resource/Computer Science/Network/게이트웨이.md",
-    "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/UDP.md",
     "resource/Computer Science/Network/TCP IP.md",
     "resource/Computer Science/Network/TCP.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
-    "resource/Computer Science/Network/NIC.md",
-    "resource/Computer Science/Network/MAC 주소.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
