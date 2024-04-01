@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
+                "file": "resource/Computer Science/Network/IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md"
+                "file": "resource/Computer Science/Network/IP.md"
               }
             }
           },
@@ -158,11 +158,11 @@
   },
   "active": "6b3a27fc0da6e6df",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/IP 주소.md",
     "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/브리지.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
