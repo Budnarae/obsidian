@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/IP.md",
+                "file": "resource/Computer Science/Network/IP 주소.md",
                 "mode": "source",
                 "source": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/IP.md",
+                "file": "resource/Computer Science/Network/IP 주소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/IP.md",
+                "file": "resource/Computer Science/Network/IP 주소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/IP.md"
+                "file": "resource/Computer Science/Network/IP 주소.md"
               }
             }
           },
@@ -172,6 +172,7 @@
   },
   "active": "002cf80069d2c666",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/IP.md",
     "resource/Computer Science/Network/동적 라우팅.md",
     "resource/Computer Science/Network/정적 라우팅.md",
     "resource/Computer Science/Network/라우팅.md",
@@ -197,7 +198,6 @@
     "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/공인 IP 주소.md",
     "resource/Computer Science/Network/게이트웨이.md",
-    "resource/Computer Science/Network/UDP.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
