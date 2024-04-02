@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md",
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/IP 주소.md"
+                "file": "resource/Computer Science/Network/OSI 참조 모델.md"
               }
             }
           },
@@ -172,6 +172,11 @@
   },
   "active": "002cf80069d2c666",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/TCP.md",
+    "resource/Computer Science/Network/NIC.md",
+    "resource/Computer Science/Network/MAC 주소.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/IP.md",
     "resource/Computer Science/Network/동적 라우팅.md",
     "resource/Computer Science/Network/정적 라우팅.md",
@@ -180,7 +185,6 @@
     "resource/Computer Science/Network/리피터.md",
     "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Network/스위칭 허브.md",
-    "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/패킷.md",
@@ -194,10 +198,6 @@
     "resource/Computer Science/Network/브로드캐스트 도메인.md",
     "resource/Computer Science/Network/브로드캐스트.md",
     "resource/Computer Science/Network/멀티캐스트.md",
-    "resource/Computer Science/Network/네트워크 프로토콜.md",
-    "resource/Computer Science/Network/네트워크 토폴로지.md",
-    "resource/Computer Science/Network/공인 IP 주소.md",
-    "resource/Computer Science/Network/게이트웨이.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
