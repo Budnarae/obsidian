@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/Network/정적 라우팅.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
+                "file": "resource/Computer Science/Network/정적 라우팅.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/NetPractice.md",
+                "file": "resource/Computer Science/Network/정적 라우팅.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/NetPractice.md"
+                "file": "resource/Computer Science/Network/정적 라우팅.md"
               }
             }
           },
@@ -159,6 +159,17 @@
   },
   "active": "002cf80069d2c666",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/서브넷 마스크.md",
+    "resource/Computer Science/Network/스위칭 허브.md",
+    "resource/Computer Science/Network/라우팅.md",
+    "resource/Computer Science/Network/라우터.md",
+    "resource/Computer Science/Network/동적 라우팅.md",
+    "resource/Computer Science/Network/정적 라우팅.md",
+    "resource/Computer Science/Network/WAN.md",
+    "resource/Computer Science/Network/LAN.md",
+    "resource/Computer Science/Network/IP 주소.md",
+    "resource/Computer Science/Network/IP.md",
+    "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/유용한 서적.md",
@@ -172,21 +183,10 @@
     "resource/Computer Science/Network/TCP.md",
     "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/MAC 주소.md",
-    "resource/Computer Science/Network/LAN.md",
-    "resource/Computer Science/Network/IP 주소.md",
-    "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/동적 라우팅.md",
-    "resource/Computer Science/Network/정적 라우팅.md",
-    "resource/Computer Science/Network/라우팅.md",
     "resource/유용한 링크.md",
     "resource/Computer Science/Network/리피터.md",
-    "resource/Computer Science/Network/라우터.md",
-    "resource/Computer Science/Network/스위칭 허브.md",
-    "resource/Computer Science/Network/WAN.md",
     "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/패킷.md",
-    "resource/Computer Science/Network/콜리전 도메인.md",
-    "resource/Computer Science/Network/이더넷.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
