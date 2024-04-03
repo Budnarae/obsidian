@@ -53,6 +53,7 @@
 ![[NetPractice_lv6_before.png]]
 
 1. 인터넷에서는 디폴트 라우팅을 사용할 수 없다.
+2. 인테넷에서 라우트를 지정할 때, 사설 ip 주소를 destination으로 삼을 수 없다.
 
 ![[NetPractice_lv6_after.png]]
 

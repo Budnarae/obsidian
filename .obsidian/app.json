@@ -4,5 +4,12 @@
   "readableLineLength": true,
   "spellcheck": false,
   "alwaysUpdateLinks": true,
-  "vimMode": false
+  "vimMode": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
