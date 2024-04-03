@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/윤성우 C++.md",
+                "file": "resource/Computer Science/Language/C++/함수 오버로딩.md",
                 "mode": "source",
                 "source": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/윤성우 C++.md",
+                "file": "resource/Computer Science/Language/C++/함수 오버로딩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/윤성우 C++.md",
+                "file": "resource/Computer Science/Language/C++/함수 오버로딩.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/윤성우 C++.md"
+                "file": "resource/Computer Science/Language/C++/함수 오버로딩.md"
               }
             }
           },
@@ -172,8 +172,10 @@
   },
   "active": "002cf80069d2c666",
   "lastOpenFiles": [
-    "resource/Computer Science/Network/OSI 참조 모델.md",
+    "resource/유용한 서적.md",
+    "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "resource/Computer Science/Network/TCP.md",
@@ -198,8 +200,6 @@
     "resource/Computer Science/Network/스타형 LAN.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/사설 IP 주소.md",
-    "resource/Computer Science/Network/브리지.md",
-    "resource/Computer Science/Network/브로드캐스트 도메인.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
