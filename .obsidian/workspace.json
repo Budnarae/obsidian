@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md"
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md"
               }
             }
           },
@@ -159,9 +159,10 @@
   },
   "active": "002cf80069d2c666",
   "lastOpenFiles": [
-    "resource/유용한 서적.md",
     "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
+    "resource/유용한 서적.md",
+    "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Language/C++",
@@ -186,7 +187,6 @@
     "resource/Computer Science/Network/이더넷.md",
     "resource/Computer Science/Network/유니캐스트.md",
     "resource/Computer Science/Network/스타형 LAN.md",
-    "resource/Computer Science/Network/서브넷 마스크.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
