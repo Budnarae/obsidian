@@ -11,8 +11,12 @@
             "id": "013fa069fdb020aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md"
+              }
             }
           },
           {
@@ -149,8 +157,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "013fa069fdb020aa",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/new & delete.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
@@ -178,7 +187,6 @@
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "resource/Computer Science/Network/TCP.md",
-    "resource/Computer Science/Network/NIC.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
