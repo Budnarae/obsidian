@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md"
+                "file": "resource/Computer Science/Language/C++/인라인 함수.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/클래스.md",
+    "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
