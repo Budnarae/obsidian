@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/이름공간.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/Language/C++/참조자.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/이름공간.md",
+                "file": "resource/Computer Science/Language/C++/참조자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/이름공간.md",
+                "file": "resource/Computer Science/Language/C++/참조자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/이름공간.md"
+                "file": "resource/Computer Science/Language/C++/참조자.md"
               }
             }
           },
@@ -159,10 +159,13 @@
   },
   "active": "ebbdecd503931017",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/인라인 함수.md",
+    "resource/Computer Science/Language/C++/Call-by-reference.md",
+    "resource/유용한 서적.md",
+    "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/참조자.md",
     "resource/유용한 링크.md",
-    "resource/유용한 서적.md",
     "템플릿.md",
     "resource/Computer Science/Network/정적 라우팅.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
@@ -175,10 +178,8 @@
     "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/IP.md",
     "project/42Seoul/NetPractice.md",
-    "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
-    "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Language/C++",
@@ -186,7 +187,6 @@
     "resource/Computer Science/Network/TCP.md",
     "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/MAC 주소.md",
-    "resource/Computer Science/Network/리피터.md",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
