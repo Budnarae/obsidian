@@ -159,8 +159,9 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
+    "resource/Computer Science/Language/C++/new & delete.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
+    "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
@@ -173,7 +174,6 @@
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/구조체.md",
-    "resource/Computer Science/Language/C++/new & delete.md",
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "템플릿.md",
     "resource/유용한 서적.md",
