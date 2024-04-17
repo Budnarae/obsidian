@@ -20,6 +20,25 @@ const int num = 10;
 
 ```
 
+2. 포인터의 상수화
+	
+	+ 포인터 자체를 상수화
+
+```cpp
+
+int * const ptr = &val;
+//ptr = &val2; -> error
+
+```
+
+	+ 참조를 통해 값을 변경할 수 없음
+
+```cpp
+
+int const *ptr = &val;
+
+```
+
 ---
 
 참고자료
