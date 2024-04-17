@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "디폴트 소멸자.md",
+                "file": "resource/Computer Science/ANSI escape code.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "디폴트 소멸자.md",
+                "file": "resource/Computer Science/ANSI escape code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "디폴트 소멸자.md",
+                "file": "resource/Computer Science/ANSI escape code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "디폴트 소멸자.md"
+                "file": "resource/Computer Science/ANSI escape code.md"
               }
             }
           },
@@ -159,8 +159,10 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/이름공간.md",
+    "resource/유용한 링크.md",
     "디폴트 소멸자.md",
+    "resource/Computer Science/ANSI escape code.md",
+    "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/소멸자.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
@@ -179,12 +181,10 @@
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "템플릿.md",
     "resource/유용한 서적.md",
-    "resource/유용한 링크.md",
     "resource/Computer Science/Network/정적 라우팅.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/스위칭 허브.md",
     "resource/Computer Science/Network/라우팅.md",
-    "resource/Computer Science/Network/라우터.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
