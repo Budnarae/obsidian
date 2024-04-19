@@ -77,3 +77,5 @@ Your program must be able to apply translation and rotation transformation to ob
 사물, 광원, 카메라의 이동과 회전을 구현해야 한다 (구와 회전이 적용될 수 없는 광원은 예외)
 
 Light management: spot brightness, hard shodows, ambiance lighting (objects are never completely in the dark). You must implement Ambient and diffuse lighting.
+
+광원 관리 : 점 광원 밝기, hard shadows(그림자의 경계가 명확하게 끊어지는 렌더링 기법), 환경광 Ambiance lighting
