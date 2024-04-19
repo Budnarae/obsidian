@@ -166,6 +166,33 @@ Light:
 
 ---
 
-Sphe
+Sphere:
+
+`sp 0.0,0.0,20.6 12.6 10,0, 55`
+
++ identifier: sp
++ x,y,z coordinates of the sphere center: 0.0,0.0,20.6
++ the sphere diameter: 12.6
++ R,G,B colors in range \[0-255]: 10, 0, 255
+
+구:
+
+`sp 0.0,0.0,20.6 12.6 10,0, 55`
+
++ 식별자: sp
++ 구의 중심의 x, y, z 좌표: 0.0,0.0,20.6
++ 구의 지름: 12.6
++ R,G,B 색상. (\[0-255] 사이의 범위를 가짐.): 10, 0, 255
+
+---
+
+Plane:
+
+`pl 0.0,0.0,-10.0 0.0,1.0,0.0 0,0,255`
+
++ identifier: pl
++ x,y,z coordinates of a point in the plane: 0.0,0.0,-10.0
++ 3d normalized normal vector. In range [-1,1] for each x,y,z axis: 0.0,1.0,0.0
++ R,G,B colors in range [0-255]: 0,0,225
 
 ---
