@@ -48,4 +48,10 @@ The constraints are as follows:
 
 다음의 제약을 따라야 한다.
 
-- You must use the **miniLibX**. Either the version that is available on the operatiing system, or from its sources. If you choose to work with the sources, you will need to apply the same rules for your **libft** as those written
+- You must use the **miniLibX**. Either the version that is available on the operatiing system, or from its sources. If you choose to work with the sources, you will need to apply the same rules for your **libft** as those written above in **Common Instructions** part.
+
+반드시 **miniLibX**를 사용해야 한다. 운영체제에 설치되어 있는 버전을 써도 되고, 소스 파일을 다운받아 사용해도 된다. 만약 소스 파일을 다운받는다면, **Common Instructions**에 기술된 **libft**의 사용규칙을 그대로 적용해야 한다.
+
+- The management of your window must remain fluid: switching to another window, minimization, ect..
+
+프로그램 창의 관리는 유동적이어야 한다: 다른 창으로의 전환, 최소화 등등이 적용되야
