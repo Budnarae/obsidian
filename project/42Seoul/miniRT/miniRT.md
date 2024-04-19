@@ -48,25 +48,25 @@ The constraints are as follows:
 
 다음의 제약을 따라야 한다.
 
-- You must use the **miniLibX**. Either the version that is available on the operatiing system, or from its sources. If you choose to work with the sources, you will need to apply the same rules for your **libft** as those written above in **Common Instructions** part.
+You must use the **miniLibX**. Either the version that is available on the operatiing system, or from its sources. If you choose to work with the sources, you will need to apply the same rules for your **libft** as those written above in **Common Instructions** part.
 
 반드시 **miniLibX**를 사용해야 한다. 운영체제에 설치되어 있는 버전을 써도 되고, 소스 파일을 다운받아 사용해도 된다. 만약 소스 파일을 다운받는다면, **Common Instructions**에 기술된 **libft**의 사용규칙을 그대로 적용해야 한다.
 
-- The management of your window must remain fluid: switching to another window, minimization, ect..
+The management of your window must remain fluid: switching to another window, minimization, ect..
 
 프로그램 창의 관리는 유동적이어야 한다: 다른 창으로의 전환, 최소화 등등이 적용되야 한다는 뜻.
 
-- When you change the resolution of the window, the content of the window must remain unchanged and be adjusted accordingly.
+When you change the resolution of the window, the content of the window must remain unchanged and be adjusted accordingly.
 
 화면의 해상도를 바꿀 때, 화면의 구성은 그대로 유지한 채 보정만을 적용해야한다.
 
-- You need at least these 3 simple geometric objects: plane, sphere, cylinder.
+You need at least these 3 simple geometric objects: plane, sphere, cylinder.
 
 적어도 3개의 간단한 기하학적 사물을 배치해야 한다: 평면, 구, 원기둥.
 
-- If applicable, all possible intersections and the inside of the object must be handled correctly.
+If applicable, all possible intersections and the inside of the object must be handled correctly.
 
 사물 간의 중첩과 도형의 내부를 잘 제어할 수 있어야 한다.
 
-- Your program must be able to resize the object's unique properties: diameter for a sphere and the width and height for a cylinder.
+Your program must be able to resize the object's unique properties: diameter for a sphere and the width and height for a cylinder.
 
