@@ -97,11 +97,11 @@ Your program must take as a first argument a scene description fiie with the .rt
 - Elements which are defined by a capital letter can only be declared once in the scene.
 
 프로그램은 .rf 확장자를 가진, 장면을 정의하는 파일을 첫번째 인자로 받아야 한다.
-- 각각의 속성은 하나 이상의 개행으로 분리되어야 한다.
-- 속성으로부터 비롯된 각각의 요소는 하나 이상의 공백으로 분리되어야 한다.
-- 각각의 속성은 파일의 어떠한 위치에도 존재할 수 있다.
-- 대문자로 정의되는 속성들은 하나의 장면에 하나만 존재할 수 있다.
+- 각각의 요소는 하나 이상의 개행으로 분리되어야 한다.
+- 요소로부터 비롯된 각각의 속성은 하나 이상의 공백으로 분리되어야 한다.
+- 각각의 요소는 파일의 어떠한 위치에도 존재할 수 있다.
+- 대문자로 정의되는 요소들은 하나의 장면에 하나만 존재할 수 있다.
 
 Each element first’s information is the type identifier (composed by one or two character(s)), followed by all specific information for each object in a strict order such as:
 
-
+요소의 첫번째 속성 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의
