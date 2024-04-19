@@ -64,3 +64,8 @@ The constraints are as follows:
 
 적어도 3개의 간단한 기하학적 사물을 배치해야 한다: 평면, 구, 원기둥.
 
+- If applicable, all possible intersections and the inside of the object must be handled correctly.
+
+사물 간의 중첩과 도형의 내부를 잘 제어할 수 있어야 한다.
+
+- Your program must be able to resize the object's unique properties,
