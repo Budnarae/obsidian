@@ -104,4 +104,4 @@ Your program must take as a first argument a scene description fiie with the .rt
 
 Each element first’s information is the type identifier (composed by one or two character(s)), followed by all specific information for each object in a strict order such as:
 
-요소의 첫번째 속성 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의
+요소의 첫번째 속성 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의 속성들은 요소의 정보를 
