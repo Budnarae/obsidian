@@ -104,4 +104,19 @@ Your program must take as a first argument a scene description fiie with the .rt
 
 Each element first’s information is the type identifier (composed by one or two character(s)), followed by all specific information for each object in a strict order such as:
 
-요소의 첫번째 속성 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의 속성들은 요소의 정보를 
+요소의 첫번째 속성은 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의 속성들은 사물의 정보를 아래와 같이 구체적으로 명시해야 한다:
+
+Ambient lightning:
+
+`A 0.2 255,255,255`
+
++ identifier: A
++ ambient lighting ratio in range \[0.0, 1.0]: 0.2
++ R,G,B colors in range \[0-255]: 255, 255, 255
+
+환경광:
+
+`A 0.2 255,255,255`
+
++ 식별자: A
++ 환경광 비율(\[0.0, 1.0]의 범위를 가진다.): 0.2
