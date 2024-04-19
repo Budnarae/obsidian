@@ -33,10 +33,13 @@ miniRT 과제의 주목적은 수학 그리고 물리 공식을 구현할 수 �
 
 #### III. Mandatory part - miniRT
 
-| 프로그램 이름 | miniRT                         |
-| ------------- | ------------------------------ |
-| 제출 파일     | 구현한 모든 파일               |
-| Makefile      | all, clean, fclean, re, bonus  |
-| 인자          | 씬 정보를 담고 있는 \*.rt 파일 |
-| 허용함수      | +                              |
-|               |                                |
+| 프로그램 이름  | miniRT                                                                 |
+| -------------- | ---------------------------------------------------------------------- |
+| 제출 파일      | 구현한 모든 파일                                                       |
+| Makefile       | all, clean, fclean, re, bonus                                          |
+| 인자           | 씬 정보를 담고 있는 \*.rt 파일                                         |
+| 허용함수       | open, close, read, write, printf, malloc, free, perror, strerror, exit |
+|                | math 라이브러리의 모든 함수 (-lm man man 3 math 참고)                  |
+|                | MinilibX의 모든 함수                                                   |
+| Libft 허용여부 | Yes                                                                    |
+| 설명           | 프로그램의 목적은 Ray Tracing을 이용하여 이미지를 생성하는 것이다. 컴퓨터로 생성된 이미지는 특정 각도와 위치를                                                                        |
