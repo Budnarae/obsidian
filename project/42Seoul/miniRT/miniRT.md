@@ -81,13 +81,21 @@ Light management: spot brightness, hard shodows, ambiance lighting (objects are 
 광원 관리 : 점 광원 밝기, hard shadows(그림자의 경계가 명확하게 끊어지는 렌더링 기법), 환경광 Ambiance lighting(사물이 완전히 검게 물드는 부분이 없어야 함). 당신은 환경광과 난반사를 구현해야 한다.
 
 The program displays the image in a window and respect the following rules:
-	- Pressing Esc must close the window and quit the program cleanly.
-	- Clicking on the red cross on the window's frame must close the window and quit the program cleanly.
-	- The use of images of the minilibX is strongly recommanded.
+- Pressing Esc must close the window and quit the program cleanly.
+- Clicking on the red cross on the window's frame must close the window and uit the program cleanly.
+- The use of images of the minilibX is strongly recommanded.
 
 프로그램은 창에 이미지를 띄워야 하며 다음의 규칙을 따라야 한다.
-	- Esc를 누르면 창이 닫히고 프로그램이 종료되어야 한다.
-	- 창의 틀에 있는 빨간 십자 버튼을 누르면 창이 닫히고 프로그램이 종료되어야 한다.
-	- minilibX의 이미지를 사용하는 것이 강력하게 권장된다.
+- Esc를 누르면 창이 닫히고 프로그램이 종료되어야 한다.
+- 창의 틀에 있는 빨간 십자 버튼을 누르면 창이 닫히고 프로그램이 종료되어야 한다.
+- minilibX의 이미지를 사용하는 것이 강력하게 권장된다.
 
-Your program mus
+Your program must take as a first argument a scene description fiie with the .rt extension.
+- Each type of element can be seperated by one or more line break(s).
+- Each type of imformation from an element can be separated by one or more space(s).
+- Each type of element cat be set in any order in the file.
+- Elements which are defined by a capital letter can only be declared once in the scene.
+
+프로그램은 .rf 확장자를 가진, 장면을 정의하는 파일을 첫번째 인자로 받아야 한다.
+- 각 속성은 하나 이상의 개행으로 분리되어야 한다.
+- 
