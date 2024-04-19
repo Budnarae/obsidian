@@ -106,6 +106,8 @@ Each element first’s information is the type identifier (composed by one or tw
 
 요소의 첫번째 속성은 타입 정의자(하나 혹은 두 개의 문자로 구성된다)이며, 그 뒤의 속성들은 사물의 정보를 아래와 같이 구체적으로 명시해야 한다:
 
+---
+
 Ambient lightning:
 
 `A 0.2 255,255,255`
@@ -120,3 +122,23 @@ Ambient lightning:
 
 + 식별자: A
 + 환경광 비율(\[0.0, 1.0]의 범위를 가진다.): 0.2
++ R,G,B 색상(\[0-255]의 범위를 가진다.): 255, 255, 255
+
+---
+
+Camera:
+
+`C -50.0,0,20 0,0,1 70`
+
++ identifier: C
++ x,y,z coordinates of the view point: -50.0,0,20
++ 3d normalized orientation vector. In range \[-1, 1] for each x,y,z axis: 0.0,0.0,1.0
++ FOV : Horizontal field of view in degrees in range \[0,180]: 70
+
+카메라:
+
+`C -50.0,0,20 0,0,1 70`
+
++ 식별자: C
++ 시점 veiw point의 x, y, z 좌표값 : -50.0, 0, 20
++ 
