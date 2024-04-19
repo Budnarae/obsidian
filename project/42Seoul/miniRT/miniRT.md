@@ -142,4 +142,15 @@ Camera:
 + 식별자: C
 + 시점 veiw point의 x, y, z 좌표값 : -50.0, 0, 20
 + 정규화된 3차원 방향 벡터. x, y, z 축 모두 \[-1, 1] 범위를 가진다.
-+ FOV :  : 70
++ FOV : 수평 시야각. (\[0, 180] 사이의 범위를 가지고 있다.) : 70
+
+---
+
+Light:
+
+`L -40.0,50.0,0.0. 0`
+
++ identifier: L 
++ x,y,z coordinates of the light point: -40.0,50.0,0.0
++ the light brightness ratio in range [0.0,1.0]: 0.6
++ (unused in mandatory part)R,G,B colors in range [0-255]: 10, 0, 255
