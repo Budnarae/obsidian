@@ -70,4 +70,10 @@ If applicable, all possible intersections and the inside of the object must be h
 
 Your program must be able to resize the object's unique properties: diameter for a sphere and the width and height for a cylinder.
 
-사물의 요소를 
+사물의 크기 요소를 다시 설정할 수 있어야 한다: 원의 지름, 원기둥의 넓이 높이 등등.
+
+Your program must be able to apply translation and rotation transformation to objects, lights and cameras (except for spheres and lights that cannot be rotated)
+
+사물, 광원, 카메라의 이동과 회전을 구현해야 한다 (구와 회전이 적용될 수 없는 광원은 예외)
+
+Light management: spot brightness, hard shodows, ambiance lighting (objects are never completely in the dark). You must implement Ambient and diffuse lighting.
