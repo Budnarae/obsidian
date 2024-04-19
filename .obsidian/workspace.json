@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
-                "mode": "preview",
+                "file": "project/42Seoul/miniRT/miniRT.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md"
+                "file": "project/42Seoul/miniRT/miniRT.md"
               }
             }
           },
@@ -159,6 +159,9 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
+    "project/42Seoul/miniRT/miniRT.md",
+    "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/소멸자.md",
@@ -177,14 +180,12 @@
     "resource/유용한 링크.md",
     "디폴트 소멸자.md",
     "resource/Computer Science/Language/C++/new & delete.md",
-    "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "resource/Computer Science/Language/C++/참조자.md",
     "resource/Computer Science/Language/C++/정보은닉.md",
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "템플릿.md",
     "resource/Computer Science/Network/정적 라우팅.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
-    "resource/Computer Science/Network/스위칭 허브.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
@@ -204,7 +205,6 @@
     "resource/Computer Science",
     "Excalidraw",
     "project/42Seoul",
-    "resource/format",
-    "archive"
+    "resource/format"
   ]
 }
