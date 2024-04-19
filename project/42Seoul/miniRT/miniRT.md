@@ -25,4 +25,6 @@ Before you can even begin to produce such high-quality grapics, you must master 
 
 높은 품질의 그래픽을 구현하기 전에, 당신은 우선 기초를 숙달해야 한다: miniRT는 C 언어로 짜인 당신의 표준적이고, 소박하지만 기능적인 첫번째 광선 추적기가 될 것이다.
 
-The main goal of miniRT is to prove to yourself that you can implement any mathematics or physics formulas without being a mathematician, we will only implement the most basic ray tracing features here se just keep calm, take a deep breath and don't panic! After 
+The main goal of miniRT is to prove to yourself that you can implement any mathematics or physics formulas without being a mathematician, we will only implement the most basic ray tracing features here so just keep calm, take a deep breath and don't panic! After this project you'll be able to show off nice-looking pictures to justify the number of hours you're spending at school...
+
+miniRT 과제의 주목적은 수학 그리고 물리 공식을 구현할 수 있음을 스스로에게 증명하는 것이다. 우리는 가장 기초적인 Ray Tracing의 특징만을 구현할 것이므로 너무 겁먹지 말라.
