@@ -54,4 +54,13 @@ The constraints are as follows:
 
 - The management of your window must remain fluid: switching to another window, minimization, ect..
 
-프로그램 창의 관리는 유동적이어야 한다: 다른 창으로의 전환, 최소화 등등이 적용되야
+프로그램 창의 관리는 유동적이어야 한다: 다른 창으로의 전환, 최소화 등등이 적용되야 한다는 뜻.
+
+- When you change the resolution of the window, the content of the window must remain unchanged and be adjusted accordingly.
+
+화면의 해상도를 바꿀 때, 화면의 구성은 그대로 유지한 채 보정만을 적용해야한다.
+
+- You need at least these 3 simple geometric objects: plane, sphere, cylinder.
+
+적어도 3개의 간단한 기하학적 사물을 배치해야 한다: 평면, 구, 원기둥.
+
