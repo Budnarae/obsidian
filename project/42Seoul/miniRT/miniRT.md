@@ -68,4 +68,5 @@ The constraints are as follows:
 
 사물 간의 중첩과 도형의 내부를 잘 제어할 수 있어야 한다.
 
-- Your program must be able to resize the object's unique properties,
+- Your program must be able to resize the object's unique properties: diameter for a sphere and the width and height for a cylinder.
+
