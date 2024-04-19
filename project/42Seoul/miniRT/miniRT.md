@@ -21,4 +21,8 @@ As a result, it is not yet fully adapted to real time use-cases but it produce a
 
 결과적으로, Ray Tracing은 실시간으로 무언가를 투영해야 하는 경우에는 아직 적합하지 않지만, 훨씬 시각적으로 사실적인 표현이 가능하다.
 
-Before you can even begin to produce such high-quality grapics, you must master the basics: the miniRT is your first ray tracer coded in C, normed and humble but
+Before you can even begin to produce such high-quality grapics, you must master the basics: the miniRT is your first ray tracer coded in C, normed and humble but functional.
+
+높은 품질의 그래픽을 구현하기 전에, 당신은 우선 기초를 숙달해야 한다: miniRT는 C 언어로 짜인 당신의 표준적이고, 소박하지만 기능적인 첫번째 광선 추적기가 될 것이다.
+
+The main goal of miniRT is to prove to yourself that you can implement any mathematics or physics formulas without being a mathematician, we will only implement the most basic ray tracing features here se just keep calm, take a deep breath and don't panic! After 
