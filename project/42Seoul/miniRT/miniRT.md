@@ -70,3 +70,4 @@ If applicable, all possible intersections and the inside of the object must be h
 
 Your program must be able to resize the object's unique properties: diameter for a sphere and the width and height for a cylinder.
 
+사물의 요소를 
