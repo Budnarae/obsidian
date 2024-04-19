@@ -27,4 +27,16 @@ Before you can even begin to produce such high-quality grapics, you must master 
 
 The main goal of miniRT is to prove to yourself that you can implement any mathematics or physics formulas without being a mathematician, we will only implement the most basic ray tracing features here so just keep calm, take a deep breath and don't panic! After this project you'll be able to show off nice-looking pictures to justify the number of hours you're spending at school...
 
-miniRT 과제의 주목적은 수학 그리고 물리 공식을 구현할 수 있음을 스스로에게 증명하는 것이다. 우리는 가장 기초적인 Ray Tracing의 특징만을 구현할 것이므로 너무 겁먹지 말라.
+miniRT 과제의 주목적은 수학 그리고 물리 공식을 구현할 수 있음을 스스로에게 증명하는 것이다. 우리는 가장 기초적인 Ray Tracing의 특징만을 구현할 것이므로 너무 겁먹지 말라. 이번 프로젝트가 끝나면 여러분이 얼마나 많은 시간을 노력했는지 증명할 멋진 이미지를 얻을 것이다.
+
+#### II. Common Instructions(생략)
+
+#### III. Mandatory part - miniRT
+
+| 프로그램 이름 | miniRT                         |
+| ------------- | ------------------------------ |
+| 제출 파일     | 구현한 모든 파일               |
+| Makefile      | all, clean, fclean, re, bonus  |
+| 인자          | 씬 정보를 담고 있는 \*.rt 파일 |
+| 허용함수      | +                              |
+|               |                                |
