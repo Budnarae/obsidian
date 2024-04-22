@@ -247,11 +247,11 @@ Bonus list:
 + Add specular reflection to have a full Phong reflection model.
 + Color disruption: checkerboard.
 + Colored and multi-spot lights.
-+ One other 2nd degree object: Cone, Hyperboloid, Paraboloid.
++ One other 2nd degree object: Cone, Hyperboloid, Paraboloid..
 + Handle bump map textures.
 
 + 퐁 반사 모델을 완벽히 구현하기 위해 정반사를 추가할 것
 + 색상 왜곡: 체커보드.
 + 색상이 있고 여러 군데 존재하는 광원.
-+ 다른 2차 사물을 구현할 것: 원뿔, 쌍곡면, 포물면
++ 다른 2차 사물을 구현할 것: 원뿔, 쌍곡면, 포물면 등등
 + 범프맵 텍스처를 다룰 것.
