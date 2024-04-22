@@ -218,3 +218,5 @@ x,y,z coordinates of the center of the cylinder: 50.0,0.0,20.6
 the cylinder diameter: 14.2
 the cylinder height: 21.42
 R,G,B colors in range [0,255]: 10, 0, 255
+
+---
