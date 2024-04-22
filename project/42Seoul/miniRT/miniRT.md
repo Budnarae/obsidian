@@ -238,3 +238,16 @@ But for the **miniRT** project, we want to keep things simple for your first ray
 
 So here is a list of few simple bonuses you could implement, if you want to do bigger bonuses we strongly advise you to recode a new ray-tracer later in your developer life after this little one is finished and fully functionnal.
 
+그러므로 우리는 당신에게 단순한 보너스 목록 - 당신이 충분히 구현할 수 있을만한 - 을 제시합니다. 만약에 당신이 더 어려운 무언가를 구현하고 싶다면 우리는 우선 이 과제를 완전히 끝난 후에 새로운 광선 추적기를 만들면서 구현하기를 강력하게 권장합니다.
+
+Bonus list:
+
+보너스 목록:
+
++ Add specular reflection to have a full Phong reflection model.
++ Color disruption: checkerboard.
++ Colored and multi-spot lights.
++ One other 2nd degree object: Cone, Hyperboloid, Paraboloid.
++ Handle bump map textures.
+
+
