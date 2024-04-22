@@ -228,3 +228,13 @@ R,G,B colors in range \[0,255]: 10, 0, 255
 
 #### IV. Bonus part
 
+The Ray-Tracing technique could handle many more things like reflection, transparency, refraction, more complex objects, soft shadows, caustics, global illumination, bump mapping, .obj file rendering etc..
+
+Ray-Tracing 기술은 반사, 투명도, 굴절, 더 복잡한 모양의 사물, 부드러운 그림자, 물결, 채색, 범프 매핑, 목적 파일 렌더링 등 더 복잡한 것들을 다룰 수 있다.
+
+But for the **miniRT** project, we want to keep things simple for your first raytracer and your first steps in CGI.
+
+하지만 **miniRT** 과제는 여러분의 첫번째 광선 추적기이자 컴퓨터 생성 화상 과제이므로, 최대한 단순함을 지키고 싶습니다.
+
+So here is a list of few simple bonuses you could implement, if you want to do bigger bonuses we strongly advise you to recode a new ray-tracer later in your developer life after this little one is finished and fully functionnal.
+
