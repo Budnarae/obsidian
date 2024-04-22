@@ -195,8 +195,6 @@ Plane:
 + 3d normalized normal vector. In range \[-1,1] for each x,y,z axis: 0.0,1.0,0.0
 + R,G,B colors in range \[0-255]: 0,0,225
 
----
-
 평면:
 
 `pl 0.0,0.0,-10.0 0.0,1.0,0.0 0,0,255`
@@ -219,4 +217,12 @@ the cylinder diameter: 14.2
 the cylinder height: 21.42
 R,G,B colors in range [0,255]: 10, 0, 255
 
+원원기둥: cy
+실린더 중싱의 x,y,z 좌표값: 50.0,0.0,20.6
+실린더 축의 3차 정규화 벡터. x,y,z 축 모두 [-1,1] 범위: 0.0,0.0,1.0
+원기둥 지름: 14.2
+원기둥 높이: 21.42
+[0,255] 범위의 R,G,B 색상: 10, 0, 255
+
 ---
+
