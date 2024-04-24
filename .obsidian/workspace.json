@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/정확도.md",
+                "file": "resource/Computer Science/정확도와 정밀도.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/정확도.md",
+                "file": "resource/Computer Science/정확도와 정밀도.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/정확도.md",
+                "file": "resource/Computer Science/정확도와 정밀도.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/정확도.md"
+                "file": "resource/Computer Science/정확도와 정밀도.md"
               }
             }
           },
@@ -160,7 +160,7 @@
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
     "project/42Seoul/miniRT/miniRT.md",
-    "resource/Computer Science/정확도.md",
+    "resource/Computer Science/정확도와 정밀도.md",
     "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
