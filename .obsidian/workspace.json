@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/정확도.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "resource/Computer Science/정확도.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "resource/Computer Science/정확도.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md"
+                "file": "resource/Computer Science/정확도.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/miniRT/miniRT.md",
+    "resource/Computer Science/정확도.md",
+    "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/생성자.md",
@@ -185,7 +186,6 @@
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "템플릿.md",
     "resource/Computer Science/Network/정적 라우팅.md",
-    "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
