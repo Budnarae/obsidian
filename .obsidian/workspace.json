@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
               }
             }
           },
@@ -157,8 +157,8 @@
   },
   "active": "013fa069fdb020aa",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
     "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
     "resource/Computer Science/정확도와 정밀도.md",
     "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/miniRT/flowchart/무제 파일.md",

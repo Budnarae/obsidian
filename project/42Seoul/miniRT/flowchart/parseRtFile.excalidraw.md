@@ -8,14 +8,6 @@ tags: [excalidraw]
 
 
 # Text Elements
-open RT file ^InnlZXEW
-
-valid filename? ^DmiAC6Ze
-
-no ^ItLoYaZK
-
-printErrorExit ^NVZsyg6n
-
 %%
 # Drawing
 ```json
@@ -45,20 +37,16 @@ printErrorExit ^NVZsyg6n
 				"type": 3
 			},
 			"seed": 1221694696,
-			"version": 283,
-			"versionNonce": 1228970136,
-			"isDeleted": false,
+			"version": 285,
+			"versionNonce": 226261144,
+			"isDeleted": true,
 			"boundElements": [
 				{
 					"type": "text",
 					"id": "InnlZXEW"
-				},
-				{
-					"id": "OXV4m24X390jv6JVAQEPq",
-					"type": "arrow"
 				}
 			],
-			"updated": 1714012405158,
+			"updated": 1714012766269,
 			"link": null,
 			"locked": false
 		},
@@ -81,11 +69,11 @@ printErrorExit ^NVZsyg6n
 			"frameId": null,
 			"roundness": null,
 			"seed": 1201501848,
-			"version": 174,
-			"versionNonce": 770291352,
-			"isDeleted": false,
+			"version": 175,
+			"versionNonce": 1221111272,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012380197,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"text": "open RT file",
@@ -120,28 +108,16 @@ printErrorExit ^NVZsyg6n
 				"type": 2
 			},
 			"seed": 1115718120,
-			"version": 131,
-			"versionNonce": 227089128,
-			"isDeleted": false,
+			"version": 133,
+			"versionNonce": 1897331944,
+			"isDeleted": true,
 			"boundElements": [
 				{
 					"type": "text",
 					"id": "DmiAC6Ze"
-				},
-				{
-					"id": "OXV4m24X390jv6JVAQEPq",
-					"type": "arrow"
-				},
-				{
-					"id": "8WZPwoVmv7dZdJuaR30K7",
-					"type": "arrow"
-				},
-				{
-					"id": "7jjMWkrA6PegNzdHiLyAV",
-					"type": "arrow"
 				}
 			],
-			"updated": 1714012473217,
+			"updated": 1714012766269,
 			"link": null,
 			"locked": false
 		},
@@ -164,11 +140,11 @@ printErrorExit ^NVZsyg6n
 			"frameId": null,
 			"roundness": null,
 			"seed": 890872552,
-			"version": 42,
-			"versionNonce": 1716328680,
-			"isDeleted": false,
+			"version": 43,
+			"versionNonce": 1112191208,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012406841,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"text": "valid\nfilename?",
@@ -203,11 +179,11 @@ printErrorExit ^NVZsyg6n
 				"type": 2
 			},
 			"seed": 316712936,
-			"version": 114,
-			"versionNonce": 876216040,
-			"isDeleted": false,
+			"version": 115,
+			"versionNonce": 1638085016,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012406842,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -255,16 +231,16 @@ printErrorExit ^NVZsyg6n
 				"type": 2
 			},
 			"seed": 418257560,
-			"version": 29,
-			"versionNonce": 1022915736,
-			"isDeleted": false,
+			"version": 30,
+			"versionNonce": 1653887976,
+			"isDeleted": true,
 			"boundElements": [
 				{
 					"type": "text",
 					"id": "ItLoYaZK"
 				}
 			],
-			"updated": 1714012464618,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -310,11 +286,11 @@ printErrorExit ^NVZsyg6n
 			"frameId": null,
 			"roundness": null,
 			"seed": 1538933480,
-			"version": 9,
-			"versionNonce": 817493144,
-			"isDeleted": false,
+			"version": 10,
+			"versionNonce": 2121875096,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012436531,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"text": "no",
@@ -349,20 +325,16 @@ printErrorExit ^NVZsyg6n
 				"type": 3
 			},
 			"seed": 1669836440,
-			"version": 91,
-			"versionNonce": 1672008856,
-			"isDeleted": false,
+			"version": 93,
+			"versionNonce": 227648920,
+			"isDeleted": true,
 			"boundElements": [
-				{
-					"id": "8WZPwoVmv7dZdJuaR30K7",
-					"type": "arrow"
-				},
 				{
 					"type": "text",
 					"id": "NVZsyg6n"
 				}
 			],
-			"updated": 1714012451788,
+			"updated": 1714012766269,
 			"link": null,
 			"locked": false
 		},
@@ -385,11 +357,11 @@ printErrorExit ^NVZsyg6n
 			"frameId": null,
 			"roundness": null,
 			"seed": 1956797928,
-			"version": 29,
-			"versionNonce": 2002627992,
-			"isDeleted": false,
+			"version": 30,
+			"versionNonce": 252029848,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012463404,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"text": "printErrorExit",
@@ -424,11 +396,11 @@ printErrorExit ^NVZsyg6n
 				"type": 2
 			},
 			"seed": 1680744856,
-			"version": 62,
-			"versionNonce": 1712084968,
-			"isDeleted": false,
+			"version": 63,
+			"versionNonce": 237926888,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1714012473217,
+			"updated": 1714012766268,
 			"link": null,
 			"locked": false,
 			"points": [
