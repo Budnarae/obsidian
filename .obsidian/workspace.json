@@ -38,6 +38,16 @@
                 "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "4ca49bba0573d99f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
+              }
+            }
           }
         ],
         "currentTab": 2
