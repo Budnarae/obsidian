@@ -11,46 +11,13 @@
             "id": "013fa069fdb020aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Computer Science/정확도와 정밀도.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "f2f31cf48699d269",
-            "type": "leaf",
-            "state": {
               "type": "excalidraw",
               "state": {
                 "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "2e3df6cfc61f4697",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "4ca49bba0573d99f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,12 +155,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2e3df6cfc61f4697",
+  "active": "013fa069fdb020aa",
   "lastOpenFiles": [
     "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
     "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
-    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/정확도와 정밀도.md",
+    "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/miniRT/flowchart/무제 파일.md",
     "project/42Seoul/miniRT/miniRTFlowchart.excalidraw.md",
     "project/42Seoul/miniRT/flowchart",
