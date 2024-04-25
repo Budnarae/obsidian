@@ -18,8 +18,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "f2f31cf48699d269",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/정확도와 정밀도.md",
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/정확도와 정밀도.md",
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/정확도와 정밀도.md"
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
               }
             }
           },
@@ -157,10 +168,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "013fa069fdb020aa",
+  "active": "f2f31cf48699d269",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/정확도와 정밀도.md",
+    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/무제 파일.md",
+    "project/42Seoul/miniRT/miniRTFlowchart.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart",
+    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
@@ -183,9 +198,6 @@
     "resource/Computer Science/Language/C++/new & delete.md",
     "resource/Computer Science/Language/C++/참조자.md",
     "resource/Computer Science/Language/C++/정보은닉.md",
-    "resource/Computer Science/Language/C++/Call-by-reference.md",
-    "템플릿.md",
-    "resource/Computer Science/Network/정적 라우팅.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
@@ -204,7 +216,6 @@
     "resource/Computer Science/Network",
     "resource/Computer Science",
     "Excalidraw",
-    "project/42Seoul",
-    "resource/format"
+    "project/42Seoul"
   ]
 }
