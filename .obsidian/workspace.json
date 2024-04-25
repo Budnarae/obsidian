@@ -28,9 +28,19 @@
                 "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "2e3df6cfc61f4697",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -168,14 +178,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f2f31cf48699d269",
+  "active": "2e3df6cfc61f4697",
   "lastOpenFiles": [
-    "resource/Computer Science/정확도와 정밀도.md",
+    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
     "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/miniRT/miniRT.md",
+    "resource/Computer Science/정확도와 정밀도.md",
     "project/42Seoul/miniRT/flowchart/무제 파일.md",
     "project/42Seoul/miniRT/miniRTFlowchart.excalidraw.md",
     "project/42Seoul/miniRT/flowchart",
-    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
@@ -197,7 +208,6 @@
     "디폴트 소멸자.md",
     "resource/Computer Science/Language/C++/new & delete.md",
     "resource/Computer Science/Language/C++/참조자.md",
-    "resource/Computer Science/Language/C++/정보은닉.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
