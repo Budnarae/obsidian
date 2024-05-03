@@ -18,6 +18,16 @@
 
 ---
 
+C 언어 라이브러리에 포함되어 있는 대부분의 헤더들을 C++ 언어에서도 사용할 수 있다.
+아래는 몇가지 예시를 든 것이다.
+
+`#include <stdio.h> -> #include <cstdio>`
+`#include <stdlib.h -> #include <cstdlib>`
+`#include <math.h> -> #include <cmath>`
+`#include <`
+
+---
+
 참고자료
 
 [윤성우의 열혈 c++ 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589147)
