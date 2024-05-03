@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Language/C++/생성자.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
+                "file": "resource/Computer Science/Language/C++/생성자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
+                "file": "resource/Computer Science/Language/C++/생성자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md"
+                "file": "resource/Computer Science/Language/C++/생성자.md"
               }
             }
           },
@@ -159,6 +159,7 @@
   },
   "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/클래스.md",
@@ -186,7 +187,6 @@
     "resource/Computer Science/Language/C++/소멸자.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
-    "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
