@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/클래스.md"
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md"
               }
             }
           },
@@ -159,6 +159,7 @@
   },
   "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
@@ -184,7 +185,6 @@
     "resource/Computer Science/Language/C++/소멸자.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
-    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
     "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++",
