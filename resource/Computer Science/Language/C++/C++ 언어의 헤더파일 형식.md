@@ -19,12 +19,15 @@
 ---
 
 C 언어 라이브러리에 포함되어 있는 대부분의 헤더들을 C++ 언어에서도 사용할 수 있다.
-아래는 몇가지 예시를 든 것이다.
+헤더파일의 확장자인 .h를 생략하고 앞에 c를 붙이면 C 언어에 대응하는 C++의 헤더파일 이름이 된다.
 
 `#include <stdio.h> -> #include <cstdio>`
 `#include <stdlib.h -> #include <cstdlib>`
 `#include <math.h> -> #include <cmath>`
-`#include <`
+`#include <string.h -> #include <cstring>`
+
+참고로 C++ 언어에서도 stdio.h 같은 C 언어의 헤더를 사용할 수 있다. C++ 언어에서 이와 같은 형태로 함수호출을 허용하는 이유는 '하위 버전과의 호환성(backwards compatibility)'을 제공하기 위함으로 볼 수 있다.
+
 
 ---
 
