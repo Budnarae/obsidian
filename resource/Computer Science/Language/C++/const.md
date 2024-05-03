@@ -35,14 +35,15 @@ int * const ptr = &val;
 
 ```cpp
 
-int const *ptr = &val;
+const int *ptr = &val;
 //*ptr = 4; -> error
 
 ```
 
 3. [[클래스]]의 멤버함수를 const로 선언. const 함수는 아래의 특징을 가진다.
-	+ 함수 내부에서 멤버 변수의 값 변경 불가
-	+ const 함수 내에서 const가 아닌 함수의 호출 제한
+
++ 함수 내부에서 멤버 변수의 값 변경 불가
++ const 함수 내에서 const가 아닌 함수의 호출 제한
 
 ```cpp
 
