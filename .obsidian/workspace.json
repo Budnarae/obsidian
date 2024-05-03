@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "aaf48c7e686e053e",
+        "id": "7ac2b8719bf84119",
         "type": "tabs",
         "children": [
           {
-            "id": "013fa069fdb020aa",
+            "id": "9ac161a588e0f76e",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/flowchart/main.excalidraw.md"
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md"
               }
             }
           },
@@ -155,10 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "013fa069fdb020aa",
+  "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+    "resource/Computer Science/Language/C++/Call-by-reference.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
+    "resource/유용한 서적.md",
+    "resource/유용한 링크.md",
     "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
     "resource/Computer Science/정확도와 정밀도.md",
     "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/miniRT/flowchart/무제 파일.md",
@@ -178,13 +184,9 @@
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
     "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
     "resource/Computer Science/Language/C++/const.md",
-    "resource/유용한 서적.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/ANSI escape code.md",
-    "resource/유용한 링크.md",
     "디폴트 소멸자.md",
-    "resource/Computer Science/Language/C++/new & delete.md",
-    "resource/Computer Science/Language/C++/참조자.md",
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
