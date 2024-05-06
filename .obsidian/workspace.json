@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md"
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/복사 생성자.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
+    "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/참조자.md",
     "resource/Computer Science/Language/C++/this.md",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
@@ -184,7 +185,6 @@
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
     "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
-    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
