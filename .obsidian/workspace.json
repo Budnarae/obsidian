@@ -18,8 +18,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "53e62def204182e0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md"
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
               }
             }
           },
@@ -157,8 +168,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ac161a588e0f76e",
+  "active": "53e62def204182e0",
   "lastOpenFiles": [
+    "project/42Seoul/miniRT/miniRT.md",
+    "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
+    "Excalidraw",
     "resource/Computer Science/Language/C++/복사 생성자.md",
     "resource/Computer Science/Language/C++/깊은 복사.md",
     "img/얕은 복사/얕은 복사 깊은 복사.png",
@@ -182,7 +196,6 @@
     "resource/Computer Science/Language/C++/this.md",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
-    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
@@ -203,7 +216,6 @@
     "img/NetPractice",
     "img",
     "무제 파일.canvas",
-    "resource/Computer Science/Network",
-    "resource/Computer Science"
+    "resource/Computer Science/Network"
   ]
 }
