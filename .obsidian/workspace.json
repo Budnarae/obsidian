@@ -157,17 +157,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ac161a588e0f76e",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/소멸자.md",
-    "resource/Computer Science/Language/C++/얕은 복사.md",
-    "project/42Seoul/NetPractice.md",
-    "resource/Computer Science/Language/C++/생성자.md",
+    "img/얕은 복사/얕은 복사 깊은 복사.png",
+    "img/얕은 복사/얕은 복사.png",
+    "img/얕은 복사",
     "Pasted image 20240506125304.png",
-    "resource/Computer Science/Language/C++/복사 생성자.md",
-    "img/복사생성자",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
+    "resource/Computer Science/Language/C++/얕은 복사.md",
+    "resource/Computer Science/Language/C++/소멸자.md",
+    "project/42Seoul/NetPractice.md",
+    "resource/Computer Science/Language/C++/생성자.md",
+    "resource/Computer Science/Language/C++/복사 생성자.md",
+    "img/복사생성자",
     "resource/Computer Science/Language/C++/explicit 키워드.md",
     "resource/Computer Science/Language/C++/디폴트 소멸자.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
@@ -188,7 +191,6 @@
     "resource/Computer Science/Language/C++/이름공간.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
-    "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
@@ -199,12 +201,10 @@
     "img/NetPractice/NetPractice_lv9_after.png",
     "img/NetPractice/NetPractice_lv9_before.png",
     "img/NetPractice/NetPractice_lv8_after.png",
-    "img/NetPractice/NetPractice_lv8_before.png",
     "img/NetPractice",
     "img",
     "무제 파일.canvas",
     "resource/Computer Science/Network",
-    "resource/Computer Science",
-    "Excalidraw"
+    "resource/Computer Science"
   ]
 }
