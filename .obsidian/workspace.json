@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md"
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md"
               }
             }
           },
@@ -159,12 +159,12 @@
   },
   "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/Computer Science/Language/C++/복사 생성자.md",
-    "resource/Computer Science/Language/C++/C++ 언어의 변수 선.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/참조자.md",
     "resource/Computer Science/Language/C++/this.md",
-    "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/디폴트 소멸자.md",
     "resource/Computer Science/Language/C++/소멸자.md",
