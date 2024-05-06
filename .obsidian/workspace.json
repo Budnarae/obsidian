@@ -11,17 +11,11 @@
             "id": "9ac161a588e0f76e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "70c0a3d24fd53988",
-            "type": "leaf",
-            "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "img/얕은 복사/얕은 복사 깊은 복사.png"
+                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -91,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "resource/Computer Science/Language/C++/복사 생성자.md"
+              }
             }
           },
           {
