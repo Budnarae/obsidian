@@ -63,6 +63,8 @@ int main(void)
 
 ```
 
+또한, this 포인터를 사용하여 객체 자신을 참조자를 반환하는 구분을 작성할 수 있다. 이러한 참조자를 **Self-Reference**라 한다.
+
 ```cpp
 
 #include <iostream>
@@ -71,69 +73,35 @@ using namespace std;
 
 class SelfRef
 {
-
-private :
-
-int num;
-
-  
-
-public :
-
-SelfRef(int n) : num(n)
-
-{
-
-cout<<"객체생성"<<endl;
-
-}
-
-SelfRef &Adder(int n)
-
-{
-
-num += n;
-
-return *this;
-
-}
-
-SelfRef &ShowTwoNumber()
-
-{
-
-cout<<num<<endl;
-
-return *this;
-
-}
-
+	private :
+		int num;
+	public :
+		SelfRef(int n) : num(n)
+		{
+			cout<<"객체생성"<<endl;
+		}
+		SelfRef &Adder(int n)
+		{
+			num += n;
+			return *this;
+		}
+		SelfRef &ShowTwoNumber()
+		{
+			cout<<num<<endl;
+			return *this;
+		}
 };
 
-  
-
 int main(void)
-
 {
+	SelfRef obj(3);
+	SelfRef &ref = obj.Adder(2);
+	
+	obj.ShowTwoNumber();
+	ref.ShowTwoNumber();
+	ref.Adder(1).ShowTwoNumber().Adder(2).ShowTwoNumber();
 
-SelfRef obj(3);
-
-SelfRef &ref = obj.Adder(2);
-
-  
-
-obj.ShowTwoNumber();
-
-ref.ShowTwoNumber();
-
-  
-
-ref.Adder(1).ShowTwoNumber().Adder(2).ShowTwoNumber();
-
-  
-
-return (0);
-
+	return (0);
 }
 
 ```
