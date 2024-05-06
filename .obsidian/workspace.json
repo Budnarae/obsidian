@@ -23,9 +23,11 @@
             "id": "53e62def204182e0",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
+                "file": "project/42Seoul/miniRT/miniRT.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
+                "file": "project/42Seoul/miniRT/miniRT.md"
               }
             }
           },
@@ -170,8 +172,8 @@
   },
   "active": "53e62def204182e0",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/miniRT.md",
     "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
+    "project/42Seoul/miniRT/miniRT.md",
     "Excalidraw",
     "resource/Computer Science/Language/C++/복사 생성자.md",
     "resource/Computer Science/Language/C++/깊은 복사.md",
