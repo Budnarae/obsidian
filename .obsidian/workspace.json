@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/얕은 복사.md",
+                "file": "resource/Computer Science/Language/C++/깊은 복사.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/얕은 복사.md",
+                "file": "resource/Computer Science/Language/C++/깊은 복사.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/얕은 복사.md",
+                "file": "resource/Computer Science/Language/C++/깊은 복사.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/얕은 복사.md"
+                "file": "resource/Computer Science/Language/C++/깊은 복사.md"
               }
             }
           },
@@ -157,15 +157,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/구조체.md",
+    "resource/Computer Science/Language/C++/깊은 복사.md",
+    "resource/Computer Science/Language/C++/얕은 복사.md",
     "img/얕은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사/얕은 복사.png",
     "img/얕은 복사",
     "Pasted image 20240506125304.png",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
-    "resource/Computer Science/Language/C++/얕은 복사.md",
     "resource/Computer Science/Language/C++/소멸자.md",
     "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Language/C++/생성자.md",
@@ -185,7 +187,6 @@
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/클래스.md",
-    "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "resource/Computer Science/Language/C++/이름공간.md",
@@ -200,7 +201,6 @@
     "img/NetPractice/NetPractice_lv10_before.png",
     "img/NetPractice/NetPractice_lv9_after.png",
     "img/NetPractice/NetPractice_lv9_before.png",
-    "img/NetPractice/NetPractice_lv8_after.png",
     "img/NetPractice",
     "img",
     "무제 파일.canvas",
