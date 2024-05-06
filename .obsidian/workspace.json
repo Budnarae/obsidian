@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/무제 파일.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md",
+                "file": "resource/Computer Science/Language/C++/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/복사 생성자.md"
+                "file": "resource/Computer Science/Language/C++/무제 파일.md"
               }
             }
           },
@@ -157,13 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "9ac161a588e0f76e",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/복사 생성자.md",
+    "resource/Computer Science/Language/C++/무제 파일.md",
     "img/복사생성자",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
     "resource/Computer Science/Language/C++/explicit 키워드.md",
-    "resource/Computer Science/Language/C++/복사 생성자.md",
     "resource/Computer Science/Language/C++/디폴트 소멸자.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
     "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
@@ -204,7 +205,6 @@
     "무제 파일.canvas",
     "resource/Computer Science/Network",
     "resource/Computer Science",
-    "Excalidraw",
-    "project/42Seoul"
+    "Excalidraw"
   ]
 }
