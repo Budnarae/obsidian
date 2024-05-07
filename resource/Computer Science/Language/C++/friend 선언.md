@@ -40,7 +40,13 @@ friend 키워드는 다음의 특징을 가진다.
 	- Girl은 클래스의 이름이다.
 	- 그리고 바로 그 Girl 클래스를 friend로 선언한다.
 
-3. friend 선언은 다음
+3. friend 선언은 다음과 같이 클래스의 특정 멤버 함수에 한하여 사용될 수 있다.
+
+`friend Point PointOP::PointAdd(const Point&, const Point&);`
+
+4. 또한 friend 선언은 다음과 같이 일반 함수에 대해서도 사용할 수 있다.
+
+`friend void ShowPointPos(const Point&);`
 
 ---
 
