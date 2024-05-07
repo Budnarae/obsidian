@@ -14,7 +14,28 @@
 
 C++에서 static 키워드는 추가적으로 다음의 의미를 가진다.
 
-- static 멤버변수는 'zmffk'
+1. static 키워드가 멤버 변수에 붙은 경우
+	- static 멤버변수는 **클래스 매개변수**라고도 한다. 일반적인 멤버변수와 달리 클래스당 하나씩만 생성되기 때문이다.
+	- static 변수는 클래스의 객체가 생성되지 않아도 전역 변수와 같이 메모리 공간에 할당된다.
+	- 만일 객체가 여러 개 생성된다면 여러 개의 객체가 하나의 static 변수를 공유한다.
+
+*static 멤버변수를 선언하는 예제코드*
+
+```cpp
+
+class SoSimple
+{
+	private :
+		static int simObjCnt; //static 멤버변수, 클래스 변수
+	public :
+		SoSimple()
+		{
+			simObjCnt++;
+			
+		}
+}
+
+```
 
 ---
 
