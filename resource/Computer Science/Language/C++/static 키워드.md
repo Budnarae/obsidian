@@ -53,7 +53,29 @@ int SoSimple::simObjCnt = 0; //static 멤버 변수의 초기화. static 멤버 
 		- -> static 멤버함수 내에서는 static 멤버변수와 static 멤버함수만 호출이 가능하다.
 
 3. const static 멤버의 경우
-	- 
+	- 클래스 내에 선언된 [[const]] 멤버변수의 경우, [[멤버 이니셜라이저]]의 도움을 받아 초기화해야 한다. 그러나 const static 멤버변수의 경우 다음과 같이 선언과 동시에 초기화할 수 있다.
+
+```cpp
+
+#include <iostream>
+using namespace std;
+
+class countryArea
+{
+	public :
+		const static int RUSSIA = 1707540;
+		const static int CANADA = 998467;
+		const static int CHINA  = 957290;
+		const static int SOUTH_KOREA = 9922;
+};
+
+int main(void)
+{
+	cout<<"러시아 면적: "<<CountryArea::RUSSIA<<"km"<<endl;
+	
+}
+
+```
 
 ---
 
