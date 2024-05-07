@@ -48,6 +48,8 @@ friend 키워드는 다음의 특징을 가진다.
 
 `friend void ShowPointPos(const Point&);`
 
++ 3번, 4번 케이스의 경우, friend 선언에 함수의 원형 선언이 포함되어 있으므로 friend 선언을 위해서 별도의 함수원형을 선언할 필요는 없다.
+
 ---
 
 참고자료
