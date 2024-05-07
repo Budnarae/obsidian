@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/임시 객체.md",
+                "file": "resource/Computer Science/Language/C++/const.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/임시 객체.md",
+                "file": "resource/Computer Science/Language/C++/const.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/임시 객체.md",
+                "file": "resource/Computer Science/Language/C++/const.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/임시 객체.md"
+                "file": "resource/Computer Science/Language/C++/const.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/임시 객체.md",
+    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "project/42Seoul/miniRT/miniRT.md",
     "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
     "Excalidraw",
