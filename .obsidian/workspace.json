@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/friend 선언.md",
+                "file": "resource/Computer Science/Language/C++/static 키워드.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/friend 선언.md",
+                "file": "resource/Computer Science/Language/C++/static 키워드.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/friend 선언.md",
+                "file": "resource/Computer Science/Language/C++/static 키워드.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/friend 선언.md"
+                "file": "resource/Computer Science/Language/C++/static 키워드.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++/friend 선언.md",
+    "resource/Computer Science/Language/C++/static 키워드.md",
+    "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++/임시 객체.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "project/42Seoul/miniRT/miniRT.md",
@@ -192,7 +193,6 @@
     "resource/Computer Science/Language/C++/인라인 함수.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
-    "resource/Computer Science/Language/C++/Call-by-reference.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
