@@ -11,11 +11,9 @@
             "id": "bfc894aafbd41fe0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "resource/Computer Science/Language/C++/static 키워드.md",
-                "mode": "source",
-                "source": true
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/static 키워드.md",
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/static 키워드.md",
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/static 키워드.md"
+                "file": "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md"
               }
             }
           },
@@ -159,10 +157,10 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/static 키워드.md",
     "img/static 키워드/static 멤버변수.png",
     "img/static 키워드",
     "img/무제 파일.md",
-    "resource/Computer Science/Language/C++/static 키워드.md",
     "resource/Computer Science/Language/C++/friend 선언.md",
     "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Language/C++/임시 객체.md",

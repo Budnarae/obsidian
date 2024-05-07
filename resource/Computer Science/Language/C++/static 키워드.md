@@ -72,7 +72,9 @@ class countryArea
 int main(void)
 {
 	cout<<"러시아 면적: "<<CountryArea::RUSSIA<<"km"<<endl;
-	
+	cout<<"캐나다 면적: "<<CountryArea::CANADA<<"km"<<endl;
+	cout<<"중국 면적: "<<CountryArea::CHINA<<"km"<<endl;
+	cout<<"한국 면적: "<<CountryArea::SOUTH_KOREA<<"km"<<endl;
 }
 
 ```
