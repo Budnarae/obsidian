@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "mode": "source",
                 "source": true
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "함수 오버라이딩.md",
                 "mode": "source",
                 "source": true
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md"
+                "file": "resource/Computer Science/Language/C++/상속.md"
               }
             }
           },
@@ -171,6 +171,7 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
+    "함수 오버라이딩.md",
     "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
     "resource/Computer Science/Language/C++/구조체.md",
@@ -206,7 +207,6 @@
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
     "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
-    "resource/Computer Science/Language/C++/참조자.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
