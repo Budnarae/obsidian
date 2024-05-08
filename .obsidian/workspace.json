@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "resource/Computer Science/Language/C++/가상 함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "resource/Computer Science/Language/C++/가상 함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md"
+                "file": "resource/Computer Science/Language/C++/가상 함수.md"
               }
             }
           },
@@ -170,10 +169,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f378257ec56ae8bb",
+  "active": "c20d9171b109f5ca",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/상속.md",
+    "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/함수 오버라이딩.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
