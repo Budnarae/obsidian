@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md",
+                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/상속.md"
+                "file": "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/상속.md",
+    "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
+    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/생성자.md",
@@ -194,7 +195,6 @@
     "resource/Computer Science/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
     "resource/Computer Science/Language/C++/참조자.md",
-    "resource/Computer Science/Language/C++/this.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
