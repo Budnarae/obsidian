@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/컨트롤 클래스.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/컨트롤 클래스.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/컨트롤 클래스.md",
+                "file": "resource/Computer Science/Language/C++/상속.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/컨트롤 클래스.md"
+                "file": "resource/Computer Science/Language/C++/상속.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "bfc894aafbd41fe0",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
+    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/mutable 키워드.md",
