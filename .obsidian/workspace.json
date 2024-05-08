@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/다형성.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/다형성.md",
+                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/다형성.md",
+                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/다형성.md"
+                "file": "resource/Computer Science/Language/C++/가상 소멸자.md"
               }
             }
           },
@@ -157,11 +157,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "be1ca789d08af73e",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
     "resource/Computer Science/Language/C++/virtual 키워드.md",
-    "resource/Computer Science/Language/C++/this.md",
+    "resource/Computer Science/Language/C++/가상 소멸자.md",
     "resource/Computer Science/Language/C++/다형성.md",
+    "resource/Computer Science/Language/C++/this.md",
     "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/추상 클래스.md",
     "resource/Computer Science/Language/C++/클래스.md",
@@ -193,7 +194,6 @@
     "Pasted image 20240506125304.png",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
-    "resource/Computer Science/Language/C++/소멸자.md",
     "img/복사생성자",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
