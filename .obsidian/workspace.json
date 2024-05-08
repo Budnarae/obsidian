@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/다형성.md",
                 "mode": "source",
                 "source": true
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/다형성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/다형성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md"
+                "file": "resource/Computer Science/Language/C++/다형성.md"
               }
             }
           },
@@ -171,15 +171,17 @@
   },
   "active": "c20d9171b109f5ca",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/상속.md",
+    "resource/Computer Science/Language/C++/다형성.md",
+    "resource/Computer Science/Language/C++/추상 클래스.md",
+    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/가상 함수.md",
+    "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/함수 오버라이딩.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
     "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
-    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/mutable 키워드.md",
     "resource/Computer Science/Language/C++/const.md",
@@ -205,8 +207,6 @@
     "project/42Seoul/NetPractice.md",
     "img/복사생성자",
     "resource/Computer Science/Language/C++/explicit 키워드.md",
-    "resource/Computer Science/Language/C++/디폴트 소멸자.md",
-    "resource/Computer Science/Language/C++/디폴트 생성자.md",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
