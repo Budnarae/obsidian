@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/구조체.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/구조체.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md",
+                "file": "resource/Computer Science/Language/C++/구조체.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 함수.md"
+                "file": "resource/Computer Science/Language/C++/구조체.md"
               }
             }
           },
@@ -157,16 +157,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "46ac2c91bdda7b8b",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/클래스.md",
+    "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/가상 소멸자.md",
     "resource/Computer Science/Language/C++/다형성.md",
-    "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/virtual 키워드.md",
     "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/this.md",
     "resource/Computer Science/Language/C++/추상 클래스.md",
-    "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/함수 오버라이딩.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/객체 포인터의 참조관계.md",
