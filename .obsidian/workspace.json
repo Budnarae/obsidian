@@ -159,8 +159,11 @@
   },
   "active": "46ac2c91bdda7b8b",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/구조체.md",
+    "img/가상 함수 테이블/가상 함수 테이블.png",
+    "img/가상 함수 테이블",
+    "img/무제 파일.md",
     "resource/Computer Science/Language/C++/가상 함수 테이블.md",
+    "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/가상 소멸자.md",
@@ -182,12 +185,10 @@
     "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
     "img/static 키워드/static 멤버변수.png",
     "img/static 키워드",
-    "img/무제 파일.md",
     "resource/Computer Science/Language/C++/임시 객체.md",
     "project/42Seoul/miniRT/miniRT.md",
     "Excalidraw",
     "resource/Computer Science/Language/C++/복사 생성자.md",
-    "resource/Computer Science/Language/C++/깊은 복사.md",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "img/얕은 복사, 깊은 복사",
@@ -202,9 +203,7 @@
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
-    "img/NetPractice/NetPractice_lv9_after.png",
     "img/NetPractice",
-    "img",
     "무제 파일.canvas"
   ]
 }
