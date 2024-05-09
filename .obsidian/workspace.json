@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "가상 상속.md",
+                "file": "resource/Computer Science/Language/C++/다중 상속.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "가상 상속.md",
+                "file": "resource/Computer Science/Language/C++/다중 상속.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "가상 상속.md",
+                "file": "resource/Computer Science/Language/C++/다중 상속.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "가상 상속.md"
+                "file": "resource/Computer Science/Language/C++/다중 상속.md"
               }
             }
           },
@@ -159,8 +159,11 @@
   },
   "active": "46ac2c91bdda7b8b",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/virtual 키워드.md",
+    "resource/Computer Science/Language/C++/상속.md",
+    "resource/Computer Science/Language/C++/다중 상속.md",
+    "resource/Computer Science/Language/C++/다형성.md",
     "가상 상속.md",
+    "resource/Computer Science/Language/C++/virtual 키워드.md",
     "resource/Computer Science/Language/C++/가상 함수.md",
     "resource/Computer Science/Language/C++/가상 함수 테이블.md",
     "img/가상 함수 테이블/가상 함수 테이블.png",
@@ -169,8 +172,6 @@
     "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/가상 소멸자.md",
-    "resource/Computer Science/Language/C++/다형성.md",
-    "resource/Computer Science/Language/C++/상속.md",
     "resource/Computer Science/Language/C++/this.md",
     "resource/Computer Science/Language/C++/추상 클래스.md",
     "resource/Computer Science/Language/C++/함수 오버라이딩.md",
@@ -189,7 +190,6 @@
     "resource/Computer Science/Language/C++/임시 객체.md",
     "project/42Seoul/miniRT/miniRT.md",
     "Excalidraw",
-    "resource/Computer Science/Language/C++/복사 생성자.md",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "img/얕은 복사, 깊은 복사",
