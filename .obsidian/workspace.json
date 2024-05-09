@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
                 "mode": "source",
                 "source": true
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "객체",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md"
+                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md"
               }
             }
           },
@@ -159,8 +160,8 @@
   },
   "active": "4c748198730a5ecd",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/얕은 복사.md",
     "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+    "resource/Computer Science/Language/C++/얕은 복사.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
     "resource/Computer Science/Language/C++/다중 상속.md",
     "resource/Computer Science/Language/C++/깊은 복사.md",
