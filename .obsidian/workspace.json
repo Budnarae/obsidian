@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md"
+                "file": "resource/Computer Science/Language/C++/멤버 이니셜라이저.md"
               }
             }
           },
@@ -159,9 +159,9 @@
   },
   "active": "2ab39d3e0807e375",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
-    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "무제 파일.canvas",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
     "resource/Computer Science/Language/C++/얕은 복사.md",
