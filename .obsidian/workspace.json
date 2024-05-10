@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4d407a75339d5187",
+        "id": "140eac6a9a5e0fef",
         "type": "tabs",
         "children": [
           {
-            "id": "4c748198730a5ecd",
+            "id": "2ab39d3e0807e375",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "객체",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md"
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md"
               }
             }
           },
@@ -158,8 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4c748198730a5ecd",
+  "active": "2ab39d3e0807e375",
   "lastOpenFiles": [
+    "무제 파일.canvas",
+    "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
     "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "resource/Computer Science/Language/C++/얕은 복사.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
@@ -186,8 +187,6 @@
     "resource/Computer Science/Language/C++/생성자.md",
     "resource/Computer Science/Language/C++/mutable 키워드.md",
     "resource/Computer Science/Language/C++/const.md",
-    "resource/Computer Science/Language/C++/friend 선언.md",
-    "resource/Computer Science/Language/C++/static 키워드.md",
     "img/static 키워드/static 멤버변수.png",
     "img/static 키워드",
     "Excalidraw",
@@ -205,7 +204,6 @@
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png",
     "img/NetPractice/NetPractice_lv10_before.png",
-    "img/NetPractice",
-    "무제 파일.canvas"
+    "img/NetPractice"
   ]
 }
