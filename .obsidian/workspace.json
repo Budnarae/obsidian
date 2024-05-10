@@ -159,9 +159,11 @@
   },
   "active": "2ab39d3e0807e375",
   "lastOpenFiles": [
+    "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
+    "img/연산자 오버로딩",
+    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "무제 파일.canvas",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
-    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "resource/Computer Science/Language/C++/얕은 복사.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
     "resource/Computer Science/Language/C++/다중 상속.md",
@@ -202,8 +204,6 @@
     "resource/Computer Science/Language/C++",
     "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
-    "img/NetPractice/NetPractice_lv10_after.png",
-    "img/NetPractice/NetPractice_lv10_before.png",
-    "img/NetPractice"
+    "img/NetPractice/NetPractice_lv10_after.png"
   ]
 }
