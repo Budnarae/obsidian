@@ -14,19 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "947e9a5b4db00b30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
