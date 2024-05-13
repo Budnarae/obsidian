@@ -26,13 +26,12 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Computer Science/Language/C++/const.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md",
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/const.md"
+                "file": "resource/Computer Science/Language/C++/연산자 오버로딩.md"
               }
             }
           },
@@ -170,10 +169,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "947e9a5b4db00b30",
+  "active": "2ab39d3e0807e375",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "resource/Computer Science/Language/C++/const.md",
+    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/스위칭 허브.md",
