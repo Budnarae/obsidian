@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "140eac6a9a5e0fef",
+        "id": "5f9946a397b57fd1",
         "type": "tabs",
         "children": [
           {
-            "id": "2ab39d3e0807e375",
+            "id": "ac9e497444ea2789",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -157,10 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2ab39d3e0807e375",
+  "active": "ac9e497444ea2789",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/템플릿.md",
     "resource/Computer Science/Language/C++/예외 처리.md",
+    "resource/Computer Science/Language/C++/템플릿.md",
     "resource/Computer Science/Language/C++/클래스 템플릿.md",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/클래스.md",
