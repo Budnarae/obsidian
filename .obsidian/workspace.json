@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/템플릿.md",
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/템플릿.md",
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/템플릿.md"
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md"
               }
             }
           },
@@ -170,10 +169,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bb0325fc6d9e6403",
+  "active": "2ab39d3e0807e375",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/클래스 템플릿.md",
     "resource/Computer Science/Language/C++/템플릿.md",
+    "resource/Computer Science/Language/C++/클래스 템플릿.md",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
