@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "06c167c8d816ae1b",
+        "id": "34c7fe244bcf2b43",
         "type": "tabs",
         "children": [
           {
-            "id": "f8d454e18c81c5ac",
+            "id": "02baab45b852e85e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Graphics/집합.md",
+                "file": "resource/Computer Science/Graphics/소박한 집합론.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Graphics/집합.md",
+                "file": "resource/Computer Science/Graphics/소박한 집합론.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Graphics/집합.md",
+                "file": "resource/Computer Science/Graphics/소박한 집합론.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Graphics/집합.md"
+                "file": "resource/Computer Science/Graphics/소박한 집합론.md"
               }
             }
           },
@@ -157,8 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f8d454e18c81c5ac",
+  "active": "02baab45b852e85e",
   "lastOpenFiles": [
+    "resource/Computer Science/Graphics/공리적 집합론.md",
+    "resource/Computer Science/Graphics/소박한 집합론.md",
+    "무제 파일.canvas",
     "resource/Computer Science/Graphics/집합.md",
     "resource/Computer Science/Language/C++/a reference.md",
     "resource/Computer Science/Graphics",
@@ -183,12 +186,8 @@
     "resource/Computer Science/Network/유니캐스트.md",
     "resource/Computer Science/Network/이더넷.md",
     "resource/Computer Science/Network/정적 라우팅.md",
-    "resource/Computer Science/Network/콜리전 도메인.md",
-    "resource/Computer Science/Network/패킷.md",
-    "resource/Computer Science/Network/허브.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
-    "무제 파일.canvas",
     "img/가상 함수 테이블/가상 함수 테이블.png",
     "img/가상 함수 테이블",
     "img/static 키워드/static 멤버변수.png",
