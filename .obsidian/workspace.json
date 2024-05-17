@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fc2eba3968000881",
+        "id": "55c78c64a3e522bf",
         "type": "tabs",
         "children": [
           {
-            "id": "837539aa4266b923",
+            "id": "44b5c9085c5f8753",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/추상 클래스.md",
+                "file": "resource/Computer Science/Language/C++/a reference.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/추상 클래스.md",
+                "file": "resource/Computer Science/Language/C++/a reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/추상 클래스.md",
+                "file": "resource/Computer Science/Language/C++/a reference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/추상 클래스.md"
+                "file": "resource/Computer Science/Language/C++/a reference.md"
               }
             }
           },
@@ -157,8 +157,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "837539aa4266b923",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Computer Science/Graphics",
+    "resource/Computer Science/Language/C++/a reference.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
+    "resource/Computer Science/Language/C++/README.md",
+    "resource/Computer Science/Language/C++/추상 클래스.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/클래스 템플릿.md",
@@ -168,7 +173,6 @@
     "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/Language/C++/예외 처리.md",
     "resource/Computer Science/Language/C++/가상 함수.md",
-    "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/윤성우 C++.md",
     "resource/Computer Science/Language/C++/연산자 오버로딩.md",
     "resource/Computer Science/Language/C++/const.md",
@@ -181,10 +185,6 @@
     "resource/Computer Science/Network/콜리전 도메인.md",
     "resource/Computer Science/Network/패킷.md",
     "resource/Computer Science/Network/허브.md",
-    "resource/Computer Science/Network/IP 주소.md",
-    "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/브로드캐스트 도메인.md",
-    "resource/Computer Science/Network/브리지.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
     "무제 파일.canvas",
