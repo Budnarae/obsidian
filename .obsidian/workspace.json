@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "55c78c64a3e522bf",
+        "id": "06c167c8d816ae1b",
         "type": "tabs",
         "children": [
           {
-            "id": "44b5c9085c5f8753",
+            "id": "f8d454e18c81c5ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/a reference.md",
+                "file": "resource/Computer Science/Graphics/집합.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/a reference.md",
+                "file": "resource/Computer Science/Graphics/집합.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/a reference.md",
+                "file": "resource/Computer Science/Graphics/집합.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/a reference.md"
+                "file": "resource/Computer Science/Graphics/집합.md"
               }
             }
           },
@@ -157,10 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "f8d454e18c81c5ac",
   "lastOpenFiles": [
-    "resource/Computer Science/Graphics",
+    "resource/Computer Science/Graphics/집합.md",
     "resource/Computer Science/Language/C++/a reference.md",
+    "resource/Computer Science/Graphics",
     "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/README.md",
     "resource/Computer Science/Language/C++/추상 클래스.md",
@@ -203,7 +204,6 @@
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
     "resource/Computer Science/Language/C++",
-    "resource/Computer Science/Language",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png"
   ]
