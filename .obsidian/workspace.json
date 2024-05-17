@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Computer Science/Graphics/소박한 집합론.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -142,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
