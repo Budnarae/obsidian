@@ -11,11 +11,9 @@
             "id": "02baab45b852e85e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
-                "mode": "preview",
-                "source": true
+                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md"
+                "file": "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md"
               }
             }
           },
@@ -159,6 +157,9 @@
   },
   "active": "02baab45b852e85e",
   "lastOpenFiles": [
+    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+    "project/42Seoul/miniRT/miniRT.md",
     "resource/Computer Science/Language/C++/임시 객체.md",
     "resource/Computer Science/Language/C++/템플릿.md",
     "resource/Computer Science/Language/C++/클래스 템플릿.md",
@@ -184,9 +185,6 @@
     "resource/Computer Science/Language/C++/const.md",
     "resource/Computer Science/Network/서브넷 마스크.md",
     "resource/Computer Science/Network/스위칭 허브.md",
-    "resource/Computer Science/Network/스타형 LAN.md",
-    "resource/Computer Science/Network/유니캐스트.md",
-    "resource/Computer Science/Network/이더넷.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
     "img/가상 함수 테이블/가상 함수 테이블.png",
