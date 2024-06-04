@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Graphics/낙서장.md",
+                "file": "resource/Computer Science/Graphics/정리 노트.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Graphics/낙서장.md",
+                "file": "resource/Computer Science/Graphics/정리 노트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Graphics/낙서장.md",
+                "file": "resource/Computer Science/Graphics/정리 노트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Graphics/낙서장.md"
+                "file": "resource/Computer Science/Graphics/정리 노트.md"
               }
             }
           },
@@ -159,10 +159,11 @@
   },
   "active": "02baab45b852e85e",
   "lastOpenFiles": [
+    "resource/Computer Science/Graphics/낙서장.md",
+    "resource/Computer Science/Graphics/정리 노트.md",
     "resource/Computer Science/Graphics/reference.md",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
-    "resource/Computer Science/Graphics/낙서장.md",
     "resource/Computer Science/Language/C++/C++ 언어의 객체 배열.md",
     "resource/Computer Science/Graphics/소박한 집합론.md",
     "resource/Computer Science/Graphics/집합.md",
@@ -186,7 +187,6 @@
     "resource/Computer Science/Language/C++/함수 오버로딩.md",
     "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/Language/C++/예외 처리.md",
-    "resource/Computer Science/Language/C++/가상 함수.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
     "img/가상 함수 테이블/가상 함수 테이블.png",
