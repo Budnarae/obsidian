@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Graphics/정리 노트.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Network/허브.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Graphics/정리 노트.md",
+                "file": "resource/Computer Science/Network/허브.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Graphics/정리 노트.md",
+                "file": "resource/Computer Science/Network/허브.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Graphics/정리 노트.md"
+                "file": "resource/Computer Science/Network/허브.md"
               }
             }
           },
@@ -159,8 +159,12 @@
   },
   "active": "02baab45b852e85e",
   "lastOpenFiles": [
-    "resource/Computer Science/Graphics/낙서장.md",
+    "resource/Computer Science/Network/리피터.md",
+    "resource/Computer Science/Network/스위칭 허브.md",
+    "resource/Computer Science/Network/브리지.md",
+    "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Graphics/정리 노트.md",
+    "resource/Computer Science/Graphics/낙서장.md",
     "resource/Computer Science/Graphics/reference.md",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
@@ -183,10 +187,6 @@
     "resource/Computer Science/Language/C++/README.md",
     "resource/Computer Science/Language/C++/추상 클래스.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
-    "resource/Computer Science/Language/C++/함수 오버라이딩.md",
-    "resource/Computer Science/Language/C++/함수 오버로딩.md",
-    "resource/Computer Science/Language/C++/형 변환.md",
-    "resource/Computer Science/Language/C++/예외 처리.md",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
     "img/가상 함수 테이블/가상 함수 테이블.png",
