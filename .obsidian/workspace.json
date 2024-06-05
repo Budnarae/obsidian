@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "34c7fe244bcf2b43",
+        "id": "7ebeadac553be9a2",
         "type": "tabs",
         "children": [
           {
-            "id": "02baab45b852e85e",
+            "id": "d18a29b45579f843",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Network/사설 IP 주소.md"
+                "file": "project/42Seoul/miniRT/miniRT.md"
               }
             }
           },
@@ -157,11 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "02baab45b852e85e",
+  "active": "d18a29b45579f843",
   "lastOpenFiles": [
+    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/IP.md",
-    "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/브리지.md",
     "resource/Computer Science/Network/브로드캐스트.md",
     "resource/Computer Science/Network/멀티캐스트.md",
