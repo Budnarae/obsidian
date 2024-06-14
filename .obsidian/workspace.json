@@ -18,8 +18,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "d5a2ef4b69c5fbbf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,7 +168,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d18a29b45579f843",
+  "active": "d5a2ef4b69c5fbbf",
   "lastOpenFiles": [
     "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
