@@ -23,11 +23,15 @@ Write a program that will behave like executing a shell command
 
 - Executable's path will be absolute or relative but your program must not build a path (from the PATH variable for example)
 
-
+프로그램은 절대 경로와 상대 경로 둘 다 실행 가능하지만 경로를 직접 빌드해선 안됩니다.
 
 - You must implement "|" and ";" like in bash
 
+당신은 파이프("|")와 세미콜론(";")을 bash 에서와 같이 동작하도록 구현하여야 합니다.
+
 - we will never try a "|" immediately followed or preceded by nothing or "|" or ";"
+
+우리는 파이프("|")의 앞과 뒤에 아무
 
 - Your program must implement the built-in command cd only with a path as argument (no '-' or without parameters)
 
