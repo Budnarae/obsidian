@@ -63,11 +63,15 @@ execve와 chdir을 제외한 시스템 콜이 에러를 반환하면 프로그�
 
 - If execve failed you should print "error: cannot execute executable_that_failed" in STDERR followed by a '\n' with executable_that_failed replaced with the path of the failed executable (It should be the first argument of execve)
 
-- Your program should be able to manage more than hundreds of "|" even if we limit the number of "open files" to less than 30.
+만약 execve가 fail한다면 STDERR로 "error: cannot execute executable_that_failed"에 개행을 붙힌 문자열을 출력해야 합니다(executable_that_failed는 execve가 입력받은 첫번째 매개인자로 대체해야 함).
 
-  
+- Your program should be able to manage more than hundreds of "|" even if we limit the number of "open files" to less than 30.  
+
+프로그램은 백 단위의 파이프("|")와 30개 이하의 열린 파일들을 처리할 수 있어야 합니다.
 
 for example this should work:
+
+예를 들어 아래와 같은 명령문이 동작해야 합니다.
 
 $>./microshell /bin/ls "|" /usr/bin/grep microshell ";" /bin/echo i love my microshell
 
