@@ -43,15 +43,23 @@ Write a program that will behave like executing a shell command
 
 - if cd failed your program should print in STDERR "error: cd: cannot change directory to path_to_change" followed by a '\n' with path_to_change replaced by the argument to cd
 
-만약 cd
+만약 cd에 잘못된 경로명을 입력하여 프로그램이 실패할 경우 STDERR로 "error: cd: cannot change directory to path_to_change"에 개행을 붙힌 문자열을 출력해야 합니다(path_to change는 cd가 입력받은 경로명으로 대체)
 
 - a cd command will never be immediately followed or preceded by a "|"
 
+cd 커맨드는 파이프라인과 같이 사용될 수 없습니다.
+
 - You don't need to manage any type of wildcards (*, ~ etc...)
+
+당신은 와일드카드(\*, ~ 등등)을 구현할 필요가 없습니다.
 
 - You don't need to manage environment variables ($BLA ...)
 
+당신은 환경변수($BLA ... 등등)와 관련된 기능을 구현할 필요가 없습니다.
+
 - If a system call, except execve and chdir, returns an error your program should immediatly print "error: fatal" in STDERR followed by a '\n' and the program should exit
+
+execve와 chdir을 제외한 시스템 콜이 에러를 반환하면 프로그램은 즉시 STDERR로 "error: fatal"에 개행을 붙인 문자열을 출력하고 exit하여야 합니다.
 
 - If execve failed you should print "error: cannot execute executable_that_failed" in STDERR followed by a '\n' with executable_that_failed replaced with the path of the failed executable (It should be the first argument of execve)
 
