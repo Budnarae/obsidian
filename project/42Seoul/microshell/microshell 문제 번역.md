@@ -23,7 +23,7 @@ Write a program that will behave like executing a shell command
 
 - Executable's path will be absolute or relative but your program must not build a path (from the PATH variable for example)
 
-프로그램은 절대 경로와 상대 경로 둘 다 실행 가능하지만 경로를 직접 빌드해선 안됩니다.
+프로그램은 절대 경로와 상대 경로 둘 다 실행 가능하지만 경로를 직접 빌드해선 안됩니다(예를 들어, ls를 입력받았을때 PATH 변수와 조합해서 /bin/ls로 파싱하는 것과 같은 작업을 하지 말라는 뜻).
 
 - You must implement "|" and ";" like in bash
 
