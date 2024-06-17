@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
-                "mode": "preview",
+                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md",
+                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/miniRT.md"
+                "file": "project/42Seoul/microshell/microshell 문제 번역.md"
               }
             }
           },
@@ -159,6 +159,9 @@
   },
   "active": "d18a29b45579f843",
   "lastOpenFiles": [
+    "project/42Seoul/miniRT/miniRT.md",
+    "project/42Seoul/microshell/microshell 문제 번역.md",
+    "project/42Seoul/microshell",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
     "resource/Computer Science/Network/IP.md",
@@ -183,8 +186,6 @@
     "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/스위칭 허브.md",
     "resource/Computer Science/Graphics/정리 노트.md",
-    "resource/Computer Science/Graphics/낙서장.md",
-    "resource/Computer Science/Graphics/reference.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
@@ -203,7 +204,6 @@
     "img/복사생성자",
     "project/42Seoul/miniRT/flowchart",
     "project/42Seoul/miniRT",
-    "resource/Computer Science/Language/C++",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png"
   ]
