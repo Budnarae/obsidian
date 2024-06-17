@@ -31,13 +31,19 @@ Write a program that will behave like executing a shell command
 
 - we will never try a "|" immediately followed or preceded by nothing or "|" or ";"
 
-우리는 파이프("|")의 앞과 뒤에 아무
+우리는 파이프("|")의 앞과 뒤에 아무것도 없는 경우, 또는 파이프가 위치한 경우, 또는 세미콜론(";")이 위치한 경우를 시험하지 않습니다(syntax error 검사하지 않겠다는 뜻).
 
 - Your program must implement the built-in command cd only with a path as argument (no '-' or without parameters)
 
+당신은 빌트 인 커맨드로 cd를 구현해야 합니다. 단, 매개인자가 입력되지 않는 경우는 고려하지 않습니다.
+
 - if cd has the wrong number of argument your program should print in STDERR "error: cd: bad arguments" followed by a '\n'
 
+만약에 cd가 잘못된 개수의 매개인자를 받으면 당신의 프로그램은 STDERR로 "error: cd: bad arguments"에 개행을 붙힌 문자열을 출력해야 합니다.
+
 - if cd failed your program should print in STDERR "error: cd: cannot change directory to path_to_change" followed by a '\n' with path_to_change replaced by the argument to cd
+
+만약 cd
 
 - a cd command will never be immediately followed or preceded by a "|"
 
