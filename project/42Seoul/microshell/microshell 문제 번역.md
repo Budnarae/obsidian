@@ -81,14 +81,12 @@ i love my microshell
 
 $>
 
-  
-
 Hints:
-
 Don't forget to pass the environment variable to execve
 
-  
+execve에 환경변수를 전달하는 것을 잊지 마세요.
 
 Hints:
-
 Do not leak file descriptors!
+
+fd의 누수는 허용하지 않습니다(파이프 잘 닫고 열린 파일 잘 닫으라는 뜻).
