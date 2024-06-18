@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "f0bb9918c0fe6fa5",
+            "id": "44fe9e5d7e786f3f",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md"
+                "file": "project/42Seoul/microshell/flowchart/minishell-flowchart.excalidraw.md"
               }
             }
           }
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
+                "file": "project/42Seoul/microshell/flowchart/minishell-flowchart.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
+                "file": "project/42Seoul/microshell/flowchart/minishell-flowchart.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md"
+                "file": "project/42Seoul/microshell/flowchart/minishell-flowchart.excalidraw.md"
               }
             }
           },
@@ -169,10 +168,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f0bb9918c0fe6fa5",
+  "active": "44fe9e5d7e786f3f",
   "lastOpenFiles": [
+    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/minishell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/microshell 문제 번역.md",
-    "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart",
+    "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/microshell",
     "resource/Computer Science/Network/사설 IP 주소.md",
@@ -197,7 +199,6 @@
     "resource/Computer Science/Network/MAC 주소.md",
     "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/허브.md",
-    "resource/Computer Science/Network/스위칭 허브.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
@@ -215,7 +216,6 @@
     "Pasted image 20240506124406.png",
     "img/복사생성자",
     "project/42Seoul/miniRT/flowchart",
-    "project/42Seoul/miniRT",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png"
   ]
