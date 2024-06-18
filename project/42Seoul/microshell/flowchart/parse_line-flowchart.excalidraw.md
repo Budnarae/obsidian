@@ -12,7 +12,7 @@ start(커맨드(argv)를 입력으로 받음) ^Bds4ZIqz
 
 parse_list의 head malloc ^lC1z5Nw8
 
-line의 끝에 도달했는가? ^LZcgGs5w
+infinity loop ^LZcgGs5w
 
 find_cmd_len
 cmd의 길이를 구한다 ^dg3kiBP9
@@ -32,6 +32,17 @@ no(type : PIPE or SEMICOLON) ^73qgS8ks
 check_syntax_type으로 type이 PIPE인지 SEMICOLON인지 확인 ^ZD5WWhci
 
 parse_list를 완성하였는가? ^Cb9YXq6s
+
+list의 다음 node를 malloc ^YbEY5aHP
+
+no ^VDE0fR61
+
+yes ^Cr05Mcr6
+
+end
+microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
+
+[[microshell-flowchart.excalidraw]] ^y5JHn7C6
 
 %%
 # Drawing
@@ -118,8 +129,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		},
 		{
 			"type": "arrow",
-			"version": 155,
-			"versionNonce": 486609373,
+			"version": 159,
+			"versionNonce": 458712179,
 			"isDeleted": false,
 			"id": "QY11Cen1TPvVTZ82D2czj",
 			"fillStyle": "solid",
@@ -128,12 +139,12 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2.4754294396148957,
-			"y": -331.33250938277143,
+			"x": -2.466630403925027,
+			"y": -331.33248670231995,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 1.145415720850611,
-			"height": 23.529790266560497,
+			"width": 1.1486148467434925,
+			"height": 23.529767586109017,
 			"seed": 334095556,
 			"groupIds": [],
 			"frameId": null,
@@ -141,7 +152,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718676036810,
+			"updated": 1718676287992,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -163,8 +174,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					-1.145415720850611,
-					23.529790266560497
+					-1.1486148467434925,
+					23.529767586109017
 				]
 			]
 		},
@@ -249,8 +260,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		},
 		{
 			"type": "arrow",
-			"version": 166,
-			"versionNonce": 361496595,
+			"version": 172,
+			"versionNonce": 2132894237,
 			"isDeleted": false,
 			"id": "J6yCGVJOd31B_9PtayQQp",
 			"fillStyle": "solid",
@@ -259,12 +270,12 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2.33039026061042,
+			"x": -2.3386426703430927,
 			"y": -225.8196563720703,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 0.40520823223016267,
-			"height": 55.36507151856006,
+			"width": 0.4079066806526801,
+			"height": 55.364887279312825,
 			"seed": 28932292,
 			"groupIds": [],
 			"frameId": null,
@@ -272,7 +283,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718676036810,
+			"updated": 1718676307876,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -294,15 +305,15 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					0.40520823223016267,
-					55.36507151856006
+					0.4079066806526801,
+					55.364887279312825
 				]
 			]
 		},
 		{
 			"type": "diamond",
-			"version": 157,
-			"versionNonce": 1497497245,
+			"version": 158,
+			"versionNonce": 817703027,
 			"isDeleted": false,
 			"id": "yOIKhkwYdk4pM4M2t9bgi",
 			"fillStyle": "solid",
@@ -335,16 +346,20 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				{
 					"id": "AcXnP8AokeOfLBFFmb60L",
 					"type": "arrow"
+				},
+				{
+					"id": "IbQrATLSrZrsY1jmduXYn",
+					"type": "arrow"
 				}
 			],
-			"updated": 1718676036810,
+			"updated": 1718676133568,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 180,
-			"versionNonce": 1389921715,
+			"version": 210,
+			"versionNonce": 1575615741,
 			"isDeleted": false,
 			"id": "LZcgGs5w",
 			"fillStyle": "solid",
@@ -353,35 +368,35 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -49.783889770507834,
+			"x": -32.98388671875002,
 			"y": -81.58702087402344,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 95.81993103027344,
+			"width": 62.21992492675781,
 			"height": 50,
 			"seed": 359565636,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1718676036810,
+			"updated": 1718676302961,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "line의 끝에\n도달했는가?",
-			"rawText": "line의 끝에 도달했는가?",
+			"text": "infinity\nloop",
+			"rawText": "infinity loop",
 			"textAlign": "center",
 			"verticalAlign": "middle",
 			"containerId": "yOIKhkwYdk4pM4M2t9bgi",
-			"originalText": "line의 끝에 도달했는가?",
+			"originalText": "infinity loop",
 			"lineHeight": 1.25,
 			"baseline": 42
 		},
 		{
 			"type": "arrow",
-			"version": 69,
-			"versionNonce": 1226973949,
+			"version": 75,
+			"versionNonce": 658194141,
 			"isDeleted": false,
 			"id": "AcXnP8AokeOfLBFFmb60L",
 			"fillStyle": "solid",
@@ -408,7 +423,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					"id": "flpszI8m"
 				}
 			],
-			"updated": 1718676036810,
+			"updated": 1718676307876,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -553,8 +568,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		},
 		{
 			"type": "arrow",
-			"version": 494,
-			"versionNonce": 2028554173,
+			"version": 498,
+			"versionNonce": 1227307411,
 			"isDeleted": false,
 			"id": "ssUnqPZSNhlfv3M3-IvAR",
 			"fillStyle": "solid",
@@ -581,7 +596,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					"id": "auFt32vC"
 				}
 			],
-			"updated": 1718676036810,
+			"updated": 1718676287999,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -730,8 +745,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		},
 		{
 			"type": "arrow",
-			"version": 216,
-			"versionNonce": 1195261053,
+			"version": 220,
+			"versionNonce": 1131523923,
 			"isDeleted": false,
 			"id": "KQf_VwQIYN9NGExjWJ-MP",
 			"fillStyle": "solid",
@@ -740,12 +755,12 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -88.72519504460138,
-			"y": 538.1897168995223,
+			"x": -88.72570236198847,
+			"y": 538.1894758887264,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 109.24361858251345,
-			"height": 94.86377212831133,
+			"width": 109.2433488026973,
+			"height": 94.86401313910721,
 			"seed": 1476765508,
 			"groupIds": [],
 			"frameId": null,
@@ -758,7 +773,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					"id": "jT8JEsbX"
 				}
 			],
-			"updated": 1718676036810,
+			"updated": 1718676288003,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -780,8 +795,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					-109.24361858251345,
-					94.86377212831133
+					-109.2433488026973,
+					94.86401313910721
 				]
 			]
 		},
@@ -903,8 +918,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		},
 		{
 			"type": "arrow",
-			"version": 335,
-			"versionNonce": 653066557,
+			"version": 339,
+			"versionNonce": 1106374099,
 			"isDeleted": false,
 			"id": "T9I3YpWgcqzqXHHlqFt-9",
 			"fillStyle": "solid",
@@ -913,12 +928,12 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 108.47533770655885,
-			"y": 529.6993268439298,
+			"x": 108.4754767889534,
+			"y": 529.699260770187,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 107.61537558563457,
-			"height": 98.73352759342231,
+			"width": 107.61530560372474,
+			"height": 98.73359366716511,
 			"seed": 55121988,
 			"groupIds": [],
 			"frameId": null,
@@ -931,7 +946,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					"id": "73qgS8ks"
 				}
 			],
-			"updated": 1718676036810,
+			"updated": 1718676288005,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -953,8 +968,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					107.61537558563457,
-					98.73352759342231
+					107.61530560372474,
+					98.73359366716511
 				]
 			]
 		},
@@ -1095,8 +1110,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				"type": 2
 			},
 			"seed": 110723219,
-			"version": 318,
-			"versionNonce": 1003517523,
+			"version": 324,
+			"versionNonce": 847846675,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -1110,9 +1125,17 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				{
 					"id": "l9n8ua8kv3feWUQvl_PAi",
 					"type": "arrow"
+				},
+				{
+					"id": "sOLlucTFCZ4B9cVkeGCYD",
+					"type": "arrow"
+				},
+				{
+					"id": "CXp21EzAiSoIcYuGooOGn",
+					"type": "arrow"
 				}
 			],
-			"updated": 1718676071098,
+			"updated": 1718676216673,
 			"link": null,
 			"locked": false
 		},
@@ -1156,10 +1179,10 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		{
 			"id": "9g9FFlXp7M0rB6ls_PE7X",
 			"type": "arrow",
-			"x": 207.45905740936956,
+			"x": 207.44595177338078,
 			"y": 780.66317274136,
-			"width": 145.21590334433512,
-			"height": 107.75802772117959,
+			"width": 145.2052871370964,
+			"height": 107.75661386894456,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -1174,11 +1197,11 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				"type": 2
 			},
 			"seed": 840424339,
-			"version": 379,
-			"versionNonce": 412619571,
+			"version": 385,
+			"versionNonce": 1092545619,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1718676071098,
+			"updated": 1718676288007,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1187,8 +1210,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					-145.21590334433512,
-					107.75802772117959
+					-145.2052871370964,
+					107.75661386894456
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1208,10 +1231,10 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		{
 			"id": "l9n8ua8kv3feWUQvl_PAi",
 			"type": "arrow",
-			"x": -193.220221444892,
+			"x": -193.11011642738362,
 			"y": 782.8547163204615,
-			"width": 138.36300220159353,
-			"height": 108.56848433327957,
+			"width": 138.27341465415594,
+			"height": 108.55683159129364,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -1226,11 +1249,11 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 				"type": 2
 			},
 			"seed": 402157853,
-			"version": 337,
-			"versionNonce": 1090331251,
+			"version": 343,
+			"versionNonce": 1144533907,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1718676071098,
+			"updated": 1718676288007,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1239,8 +1262,8 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 					0
 				],
 				[
-					138.36300220159353,
-					108.56848433327957
+					138.27341465415594,
+					108.55683159129364
 				]
 			],
 			"lastCommittedPoint": null,
@@ -1256,6 +1279,404 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			},
 			"startArrowhead": null,
 			"endArrowhead": "arrow"
+		},
+		{
+			"id": "IbQrATLSrZrsY1jmduXYn",
+			"type": "arrow",
+			"x": 448.11930857764355,
+			"y": 950.6324333177229,
+			"width": 409.76654052734375,
+			"height": 998.7459182739258,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1888421629,
+			"version": 847,
+			"versionNonce": 1049189181,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1718676307877,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					73.06373596191406,
+					-75.9982681274414
+				],
+				[
+					40.78498840332031,
+					-581.8823658635711
+				],
+				[
+					-107.52685546875,
+					-918.0191040039062
+				],
+				[
+					-336.7028045654297,
+					-998.7459182739258
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "bmqxqfle9vhLwKzPQ1Tnw",
+				"gap": 1.75323486328125,
+				"focus": 0.6185398483979183
+			},
+			"endBinding": {
+				"elementId": "yOIKhkwYdk4pM4M2t9bgi",
+				"gap": 10.807218131488526,
+				"focus": -0.28633672747186967
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "sOLlucTFCZ4B9cVkeGCYD",
+			"type": "arrow",
+			"x": 140.56765757666707,
+			"y": 946.1764671345404,
+			"width": 109.61433410644523,
+			"height": 0.174560546875,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 2049810493,
+			"version": 46,
+			"versionNonce": 1420970291,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "VDE0fR61"
+				}
+			],
+			"updated": 1718676288008,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					109.61433410644523,
+					0.174560546875
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "EYU2LhvULtLtUsVpHtrMM",
+				"gap": 3.4705246478955587,
+				"focus": 0.041722298157483795
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "VDE0fR61",
+			"type": "text",
+			"x": 185.16483317481152,
+			"y": 933.7637474079779,
+			"width": 20.41998291015625,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 331067827,
+			"version": 3,
+			"versionNonce": 1810979869,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1718676208877,
+			"link": null,
+			"locked": false,
+			"text": "no",
+			"rawText": "no",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"baseline": 17,
+			"containerId": "sOLlucTFCZ4B9cVkeGCYD",
+			"originalText": "no",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "bmqxqfle9vhLwKzPQ1Tnw",
+			"type": "rectangle",
+			"x": 257.42900096045605,
+			"y": 878.933196260517,
+			"width": 188.93707275390625,
+			"height": 137.16835021972656,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1553421907,
+			"version": 97,
+			"versionNonce": 764604573,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "YbEY5aHP"
+				},
+				{
+					"id": "IbQrATLSrZrsY1jmduXYn",
+					"type": "arrow"
+				}
+			],
+			"updated": 1718676195793,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "YbEY5aHP",
+			"type": "text",
+			"x": 270.0276032553779,
+			"y": 922.5173713703803,
+			"width": 163.7398681640625,
+			"height": 50,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 253542579,
+			"version": 55,
+			"versionNonce": 1764532765,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1718676189357,
+			"link": null,
+			"locked": false,
+			"text": "list의 다음 node를\nmalloc",
+			"rawText": "list의 다음 node를 malloc",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"baseline": 42,
+			"containerId": "bmqxqfle9vhLwKzPQ1Tnw",
+			"originalText": "list의 다음 node를 malloc",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "CXp21EzAiSoIcYuGooOGn",
+			"type": "arrow",
+			"x": 5.80576370583813,
+			"y": 1022.5255299775536,
+			"width": 4.489893906640885,
+			"height": 133.85248937352253,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1008225245,
+			"version": 37,
+			"versionNonce": 2147428691,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "Cr05Mcr6"
+				}
+			],
+			"updated": 1718676288012,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					4.489893906640885,
+					133.85248937352253
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "EYU2LhvULtLtUsVpHtrMM",
+				"gap": 3.6151501748963284,
+				"focus": 0.017282497704625557
+			},
+			"endBinding": {
+				"elementId": "y5JHn7C6",
+				"gap": 15.75202037855582,
+				"focus": 0.0587566452662958
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "Cr05Mcr6",
+			"type": "text",
+			"x": -7.0516661538017615,
+			"y": 1077.0492375153112,
+			"width": 31.179962158203125,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1814692531,
+			"version": 4,
+			"versionNonce": 655200125,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1718676218106,
+			"link": null,
+			"locked": false,
+			"text": "yes",
+			"rawText": "yes",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"baseline": 17,
+			"containerId": "CXp21EzAiSoIcYuGooOGn",
+			"originalText": "yes",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "y5JHn7C6",
+			"type": "ellipse",
+			"x": -128.5538939370049,
+			"y": 1172.083169247489,
+			"width": 268.22265625,
+			"height": 156,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1939642899,
+			"version": 80,
+			"versionNonce": 798750803,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "CXp21EzAiSoIcYuGooOGn",
+					"type": "arrow"
+				},
+				{
+					"type": "text",
+					"id": "LJ7mqdQj"
+				}
+			],
+			"updated": 1718676280577,
+			"link": "[[microshell-flowchart.excalidraw]]",
+			"locked": false
+		},
+		{
+			"id": "LJ7mqdQj",
+			"type": "text",
+			"x": -56.05353310726717,
+			"y": 1199.9288403149383,
+			"width": 123.55987548828125,
+			"height": 100,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 152786131,
+			"version": 62,
+			"versionNonce": 274004435,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1718676251779,
+			"link": null,
+			"locked": false,
+			"text": "end\nmicroshell에게\nparse_list를\n넘긴다",
+			"rawText": "end\nmicroshell에게 parse_list를 넘긴다",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"baseline": 92,
+			"containerId": "y5JHn7C6",
+			"originalText": "end\nmicroshell에게 parse_list를 넘긴다",
+			"lineHeight": 1.25
 		},
 		{
 			"id": "woukqxQj",
@@ -1341,6 +1762,58 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 			"endBinding": null,
 			"startArrowhead": null,
 			"endArrowhead": "arrow"
+		},
+		{
+			"id": "uBocOcPbfZKC6fJYOomLT",
+			"type": "arrow",
+			"x": 77.35095225440136,
+			"y": 991.0250999470404,
+			"width": 89.33700561523438,
+			"height": 99.73747253417969,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1538298451,
+			"version": 83,
+			"versionNonce": 2026543997,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1718676167292,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					52.79388427734375,
+					57.35527038574219
+				],
+				[
+					89.33700561523438,
+					99.73747253417969
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "EYU2LhvULtLtUsVpHtrMM",
+				"focus": -0.20514898456671757,
+				"gap": 11.248772309674948
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
 		}
 	],
 	"appState": {
@@ -1359,7 +1832,7 @@ parse_list를 완성하였는가? ^Cb9YXq6s
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 549.9246529473198,
-		"scrollY": -150.09010466627146,
+		"scrollY": 495.5227085526383,
 		"zoom": {
 			"value": 0.8
 		},

@@ -25,7 +25,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md"
+                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md"
               }
             }
           },
@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md"
+                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md"
               }
             }
           },
@@ -179,11 +179,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "19202c57d5f76e92",
+  "active": "44fe9e5d7e786f3f",
   "lastOpenFiles": [
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/microshell 문제 번역.md",
     "project/42Seoul/microshell/flowchart",
     "project/42Seoul/microshell/무제 파일.canvas",
