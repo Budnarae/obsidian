@@ -18,8 +18,19 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "f0bb9918c0fe6fa5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
+                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
+                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/microshell/microshell 문제 번역.md"
+                "file": "project/42Seoul/microshell/minishell-flowchart.excalidraw.md"
               }
             }
           },
@@ -158,10 +169,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d18a29b45579f843",
+  "active": "f0bb9918c0fe6fa5",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/microshell/microshell 문제 번역.md",
+    "project/42Seoul/microshell/minishell-flowchart.excalidraw.md",
+    "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/microshell",
     "resource/Computer Science/Network/사설 IP 주소.md",
     "resource/Computer Science/Network/IP 주소.md",
@@ -186,7 +198,6 @@
     "resource/Computer Science/Network/LAN.md",
     "resource/Computer Science/Network/허브.md",
     "resource/Computer Science/Network/스위칭 허브.md",
-    "resource/Computer Science/Graphics/정리 노트.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
