@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7ebeadac553be9a2",
+        "id": "4ce21f6032d2606b",
         "type": "tabs",
         "children": [
           {
-            "id": "d18a29b45579f843",
+            "id": "1b817a88526624b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/microshell/microshell 문제 번역.md",
-                "mode": "source",
+                "file": "project/42Seoul/miniRT/miniRT.md",
+                "mode": "preview",
                 "source": true
               }
             }
-          },
-          {
-            "id": "44fe9e5d7e786f3f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "19202c57d5f76e92",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -107,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+                "file": "project/42Seoul/miniRT/miniRT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md"
+                "file": "project/42Seoul/miniRT/miniRT.md"
               }
             }
           },
@@ -179,14 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "44fe9e5d7e786f3f",
+  "active": "1b817a88526624b9",
   "lastOpenFiles": [
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/microshell 문제 번역.md",
-    "project/42Seoul/microshell/flowchart",
     "project/42Seoul/microshell/무제 파일.canvas",
+    "project/42Seoul/microshell/microshell 문제 번역.md",
+    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart",
     "project/42Seoul/miniRT/miniRT.md",
     "project/42Seoul/microshell",
     "resource/Computer Science/Network/사설 IP 주소.md",
@@ -209,7 +187,6 @@
     "resource/Computer Science/Network/OSI 참조 모델.md",
     "resource/Computer Science/Network/NIC.md",
     "resource/Computer Science/Network/MAC 주소.md",
-    "resource/Computer Science/Network/LAN.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
