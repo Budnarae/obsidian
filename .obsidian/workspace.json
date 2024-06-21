@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/miniRT/메모장.md",
+                "file": "project/42Seoul/miniRT/miniRT.pdf.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/miniRT/메모장.md",
+                "file": "project/42Seoul/miniRT/miniRT.pdf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/miniRT/메모장.md",
+                "file": "project/42Seoul/miniRT/miniRT.pdf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/miniRT/메모장.md"
+                "file": "project/42Seoul/miniRT/miniRT.pdf.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "1b817a88526624b9",
   "lastOpenFiles": [
-    "project/42Seoul/miniRT/miniRT.pdf.md",
     "project/42Seoul/miniRT/메모장.md",
+    "project/42Seoul/miniRT/miniRT.pdf.md",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/microshell 문제 번역.md",
