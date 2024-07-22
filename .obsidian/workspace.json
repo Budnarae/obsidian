@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "file": "resource/Computer Science/Language/C++/다중 상속.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3b854e4162b30ac0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Computer Science/Language/C++/가상 상속.md",
                 "mode": "preview",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "file": "resource/Computer Science/Language/C++/가상 상속.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "file": "resource/Computer Science/Language/C++/가상 상속.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md"
+                "file": "resource/Computer Science/Language/C++/가상 상속.md"
               }
             }
           },
@@ -157,8 +170,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1b817a88526624b9",
+  "active": "3b854e4162b30ac0",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/virtual 키워드.md",
+    "resource/Computer Science/Language/C++/가상 상속.md",
+    "resource/Computer Science/Language/C++/다중 상속.md",
+    "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/정확도와 정밀도.md",
     "project/42Seoul/miniRT/메모장.md",
     "project/42Seoul/miniRT/miniRT.pdf.md",
@@ -184,10 +201,6 @@
     "resource/Computer Science/Network/네트워크 토폴로지.md",
     "resource/Computer Science/Network/공인 IP 주소.md",
     "resource/Computer Science/Network/게이트웨이.md",
-    "resource/Computer Science/Network/UDP.md",
-    "resource/Computer Science/Network/TCP IP.md",
-    "resource/Computer Science/Network/TCP.md",
-    "resource/Computer Science/Network/OSI 참조 모델.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
