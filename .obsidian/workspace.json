@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
-                "mode": "source",
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md"
+                "file": "resource/Computer Science/Language/C++/형 변환.md"
               }
             }
           },
@@ -172,6 +172,8 @@
   },
   "active": "3b854e4162b30ac0",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
+    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Language/C++/static 키워드.md",
     "resource/Computer Science/Language/C++/mutable 키워드.md",
     "resource/Computer Science/Language/C++/friend 선언.md",
@@ -200,8 +202,6 @@
     "resource/Computer Science/Network/IP.md",
     "resource/Computer Science/Network/브리지.md",
     "resource/Computer Science/Network/브로드캐스트.md",
-    "resource/Computer Science/Network/멀티캐스트.md",
-    "resource/Computer Science/Network/리피터.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
