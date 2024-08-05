@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 상속.md",
-                "mode": "preview",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 상속.md",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 상속.md",
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 상속.md"
+                "file": "resource/Computer Science/Language/C++/접근제어 지시자.md"
               }
             }
           },
@@ -172,19 +172,27 @@
   },
   "active": "3b854e4162b30ac0",
   "lastOpenFiles": [
-    "resource/Computer Science/Language/C++/virtual 키워드.md",
+    "resource/Computer Science/Language/C++/static 키워드.md",
+    "resource/Computer Science/Language/C++/mutable 키워드.md",
+    "resource/Computer Science/Language/C++/friend 선언.md",
+    "resource/Computer Science/Language/C++/const.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
+    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+    "project/42Seoul/miniRT/miniRT.pdf.md",
+    "project/42Seoul/NetPractice.md",
+    "resource/Computer Science/Network.zip",
     "resource/Computer Science/Language/C++/가상 상속.md",
+    "resource/Computer Science/Language/C++/virtual 키워드.md",
     "resource/Computer Science/Language/C++/다중 상속.md",
     "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/정확도와 정밀도.md",
     "project/42Seoul/miniRT/메모장.md",
-    "project/42Seoul/miniRT/miniRT.pdf.md",
-    "project/42Seoul/NetPractice.md",
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/microshell 문제 번역.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart",
     "project/42Seoul/microshell",
     "resource/Computer Science/Network/사설 IP 주소.md",
@@ -194,13 +202,6 @@
     "resource/Computer Science/Network/브로드캐스트.md",
     "resource/Computer Science/Network/멀티캐스트.md",
     "resource/Computer Science/Network/리피터.md",
-    "resource/Computer Science/Network/라우팅.md",
-    "resource/Computer Science/Network/라우터.md",
-    "resource/Computer Science/Network/동적 라우팅.md",
-    "resource/Computer Science/Network/네트워크 프로토콜.md",
-    "resource/Computer Science/Network/네트워크 토폴로지.md",
-    "resource/Computer Science/Network/공인 IP 주소.md",
-    "resource/Computer Science/Network/게이트웨이.md",
     "무제 파일.canvas",
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
@@ -217,7 +218,6 @@
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
     "img/복사생성자",
-    "project/42Seoul/miniRT/flowchart",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png"
   ]
