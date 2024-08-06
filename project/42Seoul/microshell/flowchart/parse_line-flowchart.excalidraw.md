@@ -1,6 +1,6 @@
 ---
 
-excalidraw-plugin: parsed
+excalidraw-plugin: raw
 tags: [excalidraw]
 
 ---
@@ -125,12 +125,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "Tcm4uImg9cG1AewBg7jgs",
 			"originalText": "start(커맨드(argv)를 입력으로 받음)",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 163,
-			"versionNonce": 736822290,
+			"version": 167,
+			"versionNonce": 250457442,
 			"isDeleted": false,
 			"id": "QY11Cen1TPvVTZ82D2czj",
 			"fillStyle": "solid",
@@ -139,12 +139,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2.4649859504525105,
-			"y": -331.3324824805702,
+			"x": -2.464678618055973,
+			"y": -331.33248169216006,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 1.1492127320900107,
-			"height": 23.52976336435927,
+			"width": 1.1493244710628177,
+			"height": 23.52976257594912,
 			"seed": 334095556,
 			"groupIds": [],
 			"frameId": null,
@@ -152,7 +152,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718685335270,
+			"updated": 1722935451630,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -174,8 +174,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					-1.1492127320900107,
-					23.52976336435927
+					-1.1493244710628177,
+					23.52976257594912
 				]
 			]
 		},
@@ -256,12 +256,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "YSDmwM9NXEaKcZsX7SrEP",
 			"originalText": "parse_list의 head malloc",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 180,
-			"versionNonce": 1690783886,
+			"version": 184,
+			"versionNonce": 2074274914,
 			"isDeleted": false,
 			"id": "J6yCGVJOd31B_9PtayQQp",
 			"fillStyle": "solid",
@@ -270,12 +270,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2.3875639739297316,
+			"x": -2.4053962828554996,
 			"y": -225.8196563720703,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 0.30596041185806344,
-			"height": 55.020504350528086,
+			"width": 0.3117644997629947,
+			"height": 55.0194896197188,
 			"seed": 28932292,
 			"groupIds": [],
 			"frameId": null,
@@ -283,7 +283,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718685443709,
+			"updated": 1722935451631,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -305,8 +305,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					0.30596041185806344,
-					55.020504350528086
+					0.3117644997629947,
+					55.0194896197188
 				]
 			]
 		},
@@ -391,12 +391,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "yOIKhkwYdk4pM4M2t9bgi",
 			"originalText": "loop",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "arrow",
-			"version": 83,
-			"versionNonce": 1855653134,
+			"version": 87,
+			"versionNonce": 60354338,
 			"isDeleted": false,
 			"id": "AcXnP8AokeOfLBFFmb60L",
 			"fillStyle": "solid",
@@ -405,12 +405,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -0.7618592224796623,
-			"y": 56.220228938928315,
+			"x": -0.7719096646312029,
+			"y": 56.22545359573947,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 0.21564267670612036,
-			"height": 95.26413372377958,
+			"width": 0.22152943867072494,
+			"height": 95.25890906696843,
 			"seed": 772427844,
 			"groupIds": [],
 			"frameId": null,
@@ -423,7 +423,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "flpszI8m"
 				}
 			],
-			"updated": 1718685443709,
+			"updated": 1722935451631,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -445,8 +445,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					0.21564267670612036,
-					95.26413372377958
+					0.22152943867072494,
+					95.25890906696843
 				]
 			]
 		},
@@ -485,7 +485,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "AcXnP8AokeOfLBFFmb60L",
 			"originalText": "no",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "rectangle",
@@ -564,12 +564,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "ZtqrakdxYdkWCfv5iTG9n",
 			"originalText": "find_cmd_len\ncmd의 길이를 구한다",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 502,
-			"versionNonce": 99141330,
+			"version": 506,
+			"versionNonce": 1119833634,
 			"isDeleted": false,
 			"id": "ssUnqPZSNhlfv3M3-IvAR",
 			"fillStyle": "solid",
@@ -596,7 +596,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "auFt32vC"
 				}
 			],
-			"updated": 1718685335272,
+			"updated": 1722935451632,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -658,7 +658,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "ssUnqPZSNhlfv3M3-IvAR",
 			"originalText": "cmd_len을 전달",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "diamond",
@@ -741,12 +741,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "gJtZKV0XR74PrTarZhUHQ",
 			"originalText": "cmd_len > 0",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "arrow",
-			"version": 224,
-			"versionNonce": 1674445138,
+			"version": 228,
+			"versionNonce": 453692578,
 			"isDeleted": false,
 			"id": "KQf_VwQIYN9NGExjWJ-MP",
 			"fillStyle": "solid",
@@ -755,12 +755,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -88.72570609955977,
-			"y": 538.1894741131218,
+			"x": -88.7257061270956,
+			"y": 538.1894741000403,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 109.24334681513903,
-			"height": 94.86401491471179,
+			"width": 109.24334680049608,
+			"height": 94.86401492779328,
 			"seed": 1476765508,
 			"groupIds": [],
 			"frameId": null,
@@ -773,7 +773,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "jT8JEsbX"
 				}
 			],
-			"updated": 1718685335274,
+			"updated": 1722935451633,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -795,8 +795,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					-109.24334681513903,
-					94.86401491471179
+					-109.24334680049608,
+					94.86401492779328
 				]
 			]
 		},
@@ -835,7 +835,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "KQf_VwQIYN9NGExjWJ-MP",
 			"originalText": "yes(type : cmd)",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "rectangle",
@@ -914,12 +914,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "9pLvSd4ZCfq9x5AetMrPw",
 			"originalText": "malloc_cmd",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "arrow",
-			"version": 343,
-			"versionNonce": 1652672594,
+			"version": 347,
+			"versionNonce": 1905683362,
 			"isDeleted": false,
 			"id": "T9I3YpWgcqzqXHHlqFt-9",
 			"fillStyle": "solid",
@@ -928,12 +928,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 108.4754775597421,
-			"y": 529.6992604040091,
+			"x": 108.47547756401377,
+			"y": 529.6992604019797,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 107.61530521588782,
-			"height": 98.73359403334302,
+			"width": 107.61530521373845,
+			"height": 98.73359403537245,
 			"seed": 55121988,
 			"groupIds": [],
 			"frameId": null,
@@ -946,7 +946,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "73qgS8ks"
 				}
 			],
-			"updated": 1718685335280,
+			"updated": 1722935451633,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -968,8 +968,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					107.61530521588782,
-					98.73359403334302
+					107.61530521373845,
+					98.73359403537245
 				]
 			]
 		},
@@ -1008,7 +1008,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "T9I3YpWgcqzqXHHlqFt-9",
 			"originalText": "no(type : PIPE or SEMICOLON)",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "rectangle",
@@ -1087,7 +1087,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "ySpAqdh986VDYHyvKwuWf",
 			"originalText": "check_syntax_type으로 type이 PIPE인지 SEMICOLON인지 확인",
 			"lineHeight": 1.25,
-			"baseline": 67
+			"baseline": 68
 		},
 		{
 			"type": "diamond",
@@ -1174,12 +1174,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "EYU2LhvULtLtUsVpHtrMM",
 			"originalText": "parse_list를 완성하였는가?",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 389,
-			"versionNonce": 295309138,
+			"version": 393,
+			"versionNonce": 1104841378,
 			"isDeleted": false,
 			"id": "9g9FFlXp7M0rB6ls_PE7X",
 			"fillStyle": "solid",
@@ -1188,12 +1188,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 207.44594105428098,
+			"x": 207.4459409600295,
 			"y": 780.66317274136,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 145.20527845415342,
-			"height": 107.75661271252477,
+			"width": 145.20527837780554,
+			"height": 107.7566127023565,
 			"seed": 840424339,
 			"groupIds": [],
 			"frameId": null,
@@ -1201,7 +1201,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718685335292,
+			"updated": 1722935451634,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1223,15 +1223,15 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					-145.20527845415342,
-					107.75661271252477
+					-145.20527837780554,
+					107.7566127023565
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 347,
-			"versionNonce": 957866706,
+			"version": 351,
+			"versionNonce": 474860066,
 			"isDeleted": false,
 			"id": "l9n8ua8kv3feWUQvl_PAi",
 			"fillStyle": "solid",
@@ -1240,12 +1240,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -193.11005352381568,
+			"x": -193.110053088778,
 			"y": 782.8547163204615,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 138.27336347498607,
-			"height": 108.55682493251027,
+			"width": 138.2733631210337,
+			"height": 108.55682488645846,
 			"seed": 402157853,
 			"groupIds": [],
 			"frameId": null,
@@ -1253,7 +1253,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718685335293,
+			"updated": 1722935451634,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1275,15 +1275,15 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					138.27336347498607,
-					108.55682493251027
+					138.2733631210337,
+					108.55682488645846
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 851,
-			"versionNonce": 1733505870,
+			"version": 853,
+			"versionNonce": 145664290,
 			"isDeleted": false,
 			"id": "IbQrATLSrZrsY1jmduXYn",
 			"fillStyle": "solid",
@@ -1305,7 +1305,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1718685443711,
+			"updated": 1722935451634,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1346,8 +1346,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 		},
 		{
 			"type": "arrow",
-			"version": 47,
-			"versionNonce": 1031256210,
+			"version": 48,
+			"versionNonce": 370423266,
 			"isDeleted": false,
 			"id": "sOLlucTFCZ4B9cVkeGCYD",
 			"fillStyle": "solid",
@@ -1374,7 +1374,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "VDE0fR61"
 				}
 			],
-			"updated": 1718685335293,
+			"updated": 1722935451634,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1432,7 +1432,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "sOLlucTFCZ4B9cVkeGCYD",
 			"originalText": "no",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "rectangle",
@@ -1507,12 +1507,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "bmqxqfle9vhLwKzPQ1Tnw",
 			"originalText": "list의 다음 node를 malloc",
 			"lineHeight": 1.25,
-			"baseline": 42
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 41,
-			"versionNonce": 1207442770,
+			"version": 45,
+			"versionNonce": 1854687394,
 			"isDeleted": false,
 			"id": "CXp21EzAiSoIcYuGooOGn",
 			"fillStyle": "solid",
@@ -1521,12 +1521,12 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 5.801638799010231,
-			"y": 1022.5259444069061,
+			"x": 5.801541418413059,
+			"y": 1022.5259541330065,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 4.492314330417891,
-			"height": 133.85204122033383,
+			"width": 4.492371472382395,
+			"height": 133.85203069824365,
 			"seed": 1008225245,
 			"groupIds": [],
 			"frameId": null,
@@ -1539,7 +1539,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					"id": "Cr05Mcr6"
 				}
 			],
-			"updated": 1718685335294,
+			"updated": 1722935451635,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1561,8 +1561,8 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 					0
 				],
 				[
-					4.492314330417891,
-					133.85204122033383
+					4.492371472382395,
+					133.85203069824365
 				]
 			]
 		},
@@ -1601,7 +1601,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "CXp21EzAiSoIcYuGooOGn",
 			"originalText": "yes",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "ellipse",
@@ -1676,7 +1676,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 			"containerId": "y5JHn7C6",
 			"originalText": "end\nmicroshell에게 parse_list를 넘긴다",
 			"lineHeight": 1.25,
-			"baseline": 92
+			"baseline": 93
 		}
 	],
 	"appState": {
@@ -1695,7 +1695,7 @@ microshell에게 parse_list를 넘긴다 ^LJ7mqdQj
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 1608.6838951655775,
-		"scrollY": 466.7097751697986,
+		"scrollY": 1561.6205528686621,
 		"zoom": {
 			"value": 0.55
 		},
