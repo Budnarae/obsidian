@@ -87,14 +87,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
+                "file": "resource/Computer Science/Language/C++/예외 처리.md",
                 "mode": "preview",
                 "source": true
               }
             }
+          },
+          {
+            "id": "62e2502f1b39d42a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md"
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -160,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
+                "file": "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 소멸자.md",
+                "file": "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/가상 소멸자.md"
+                "file": "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md"
               }
             }
           },
@@ -232,34 +242,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "05056cd47f454cd9",
+  "active": "62e2502f1b39d42a",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-08-06 18.16.40.excalidraw.md",
+    "resource/Computer Science/Language/C++/예외 처리.md",
+    "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md",
+    "resource/Computer Science/Language/C++/클래스.md",
+    "resource/Computer Science/Language/C++/정보은닉.md",
+    "resource/Computer Science/Language/C++/컨트롤 클래스.md",
+    "resource/Computer Science/Language/C++/this.md",
+    "resource/Computer Science/Language/C++/접근제어 지시자.md",
+    "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
-    "resource/Computer Science/정확도와 정밀도.md",
+    "resource/Computer Science/Language/C++/범위지정 연산자.md",
+    "resource/Computer Science/Language/C++/복사 생성자.md",
+    "resource/Computer Science/Language/C++/상속.md",
+    "resource/Computer Science/Language/C++/멤버 이니셜라이저.md",
+    "resource/Computer Science/Language/C++/매개변수의 디폴트 값.md",
+    "resource/Computer Science/Language/C++/디폴트 소멸자.md",
+    "resource/Computer Science/Language/C++/디폴트 생성자.md",
+    "resource/Computer Science/Language/C++/다형성.md",
+    "resource/Computer Science/Language/C++/다중 상속.md",
+    "resource/Computer Science/Language/C++/깊은 복사.md",
     "resource/Computer Science/Language/C++/가상 함수 테이블.md",
     "resource/Computer Science/Language/C++/가상 함수.md",
+    "resource/Computer Science/Language/C++/가상 소멸자.md",
+    "Excalidraw/Drawing 2024-08-06 18.16.40.excalidraw.md",
+    "resource/Computer Science/정확도와 정밀도.md",
     "resource/Computer Science/Language/C++/virtual 키워드.md",
-    "resource/Computer Science/Language/C++/접근제어 지시자.md",
-    "resource/Computer Science/Language/C++/정보은닉.md",
     "resource/Computer Science/Language/C++/인라인 함수.md",
-    "resource/Computer Science/Language/C++/예외 처리.md",
-    "resource/Computer Science/Language/C++/연산자 오버로딩.md",
-    "project/42Seoul/microshell/microshell 문제 번역.md",
-    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "resource/Computer Science/Language/C++/템플릿.md",
-    "resource/Computer Science/Language/C++/형 변환.md",
-    "resource/Computer Science/Language/C++/static 키워드.md",
-    "resource/Computer Science/Language/C++/mutable 키워드.md",
-    "resource/Computer Science/Language/C++/friend 선언.md",
-    "resource/Computer Science/Language/C++/const.md",
-    "resource/Computer Science/Language/C++/C++ 언어의 헤더파일 형식.md",
-    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
-    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
-    "project/42Seoul/miniRT/miniRT.pdf.md",
-    "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Network.zip",
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart",
