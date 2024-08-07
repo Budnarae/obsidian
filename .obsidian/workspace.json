@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d3e827de2595a19c",
+        "id": "44a95dff767b5010",
         "type": "tabs",
         "children": [
           {
-            "id": "d987ca19e20ab121",
+            "id": "612ced62666d2d19",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "resource/Computer Science/Language/C++/클래스 템플릿.md"
+              }
             }
           },
           {
@@ -149,8 +157,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d987ca19e20ab121",
+  "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/템플릿.md",
+    "resource/Computer Science/Language/C++/클래스 템플릿.md",
     "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
@@ -176,8 +186,6 @@
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/정보은닉.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
-    "resource/Computer Science/Language/C++/this.md",
-    "resource/Computer Science/Language/C++/접근제어 지시자.md",
     "resource/Computer Science/Network.zip",
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart",
