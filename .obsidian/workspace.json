@@ -11,9 +11,11 @@
             "id": "612ced62666d2d19",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md"
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+                "file": "resource/Computer Science/Language/C++/형 변환.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md"
+                "file": "resource/Computer Science/Language/C++/형 변환.md"
               }
             }
           },
@@ -157,6 +159,7 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "project/42Seoul/microshell.zip",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
@@ -166,7 +169,6 @@
     "resource/Computer Science/Language/C++/예외 처리.md",
     "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/구조체.md",
     "resource/Computer Science/Language/C++/디폴트 생성자.md",
@@ -202,7 +204,6 @@
     "Pasted image 20240506125304.png",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
-    "img/복사생성자",
     "img/NetPractice/NetPractice_lv3_after.png",
     "img/NetPractice/NetPractice_lv10_after.png"
   ]
