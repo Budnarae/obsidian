@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
-                "mode": "preview",
+                "file": "project/42Seoul/포드 존슨 알고리즘.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "file": "project/42Seoul/포드 존슨 알고리즘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md",
+                "file": "project/42Seoul/포드 존슨 알고리즘.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/형 변환.md"
+                "file": "project/42Seoul/포드 존슨 알고리즘.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "resource/Computer Science/Language/C++/형 변환.md",
+    "project/42Seoul/포드 존슨 알고리즘.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "project/42Seoul/microshell.zip",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
@@ -167,7 +169,6 @@
     "resource/Computer Science/Language/C++/클래스 템플릿.md",
     "resource/Computer Science/Language/C++/템플릿.md",
     "resource/Computer Science/Language/C++/예외 처리.md",
-    "resource/Computer Science/Language/C++/형 변환.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
     "resource/Computer Science/Language/C++/범위지정 연산자.md",
     "resource/Computer Science/Language/C++/구조체.md",
