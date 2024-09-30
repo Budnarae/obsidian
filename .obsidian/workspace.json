@@ -11,11 +11,9 @@
             "id": "612ced62666d2d19",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
-                "mode": "preview",
-                "source": true
+                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
+                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
+                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md"
+                "file": "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md"
               }
             }
           },
@@ -159,6 +157,9 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+    "resource/Computer Science/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Computer Science/Language/C++/Call-by-reference.md",
     "resource/Computer Science/Language/C++/클래스.md",
     "resource/Computer Science/Language/C++/컨트롤 클래스.md",
@@ -180,13 +181,10 @@
     "resource/Computer Science/Language/C++/디폴트 소멸자.md",
     "project/42Seoul/NetPractice.md",
     "resource/Computer Science/Language/C++/가상 상속.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "project/42Seoul/microshell.zip",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/microshell 문제 번역.md",
     "resource/Computer Science/Language/C++/클래스 템플릿.md",
-    "resource/Computer Science/Language/C++/템플릿.md",
     "img/가상 함수 테이블/가상 함수 테이블.png",
     "resource/Computer Science/Network.zip",
     "project/42Seoul/microshell/무제 파일.canvas",
