@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/스타형 LAN.md",
+                "file": "resource/Network/TCP IP.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/스타형 LAN.md",
+                "file": "resource/Network/TCP IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/스타형 LAN.md",
+                "file": "resource/Network/TCP IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/스타형 LAN.md"
+                "file": "resource/Network/TCP IP.md"
               }
             }
           },
@@ -159,11 +159,13 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "resource/Network/TCP.md",
+    "resource/Network/OSI 참조 모델.md",
+    "resource/Network/스타형 LAN.md",
     "resource/Network/브로드캐스트 도메인.md",
     "resource/Network/라우팅.md",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "resource/Network/OSI 참조 모델.md",
     "resource/Network/NIC.md",
     "resource/Network/MAC 주소.md",
     "resource/Network/LAN.md",
@@ -177,14 +179,12 @@
     "resource/Network/정적 라우팅.md",
     "resource/Network/이더넷.md",
     "resource/Network/유니캐스트.md",
-    "resource/Network/스타형 LAN.md",
     "resource/Network/스위칭 허브.md",
     "resource/Network/서브넷 마스크.md",
     "resource/Network/사설 IP 주소.md",
     "resource/Network/브로드캐스트.md",
     "resource/Network/멀티캐스트.md",
     "resource/Network/리피터.md",
-    "resource/Network/라우터.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
