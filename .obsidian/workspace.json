@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/라우팅.md",
+                "file": "resource/Network/사설 IP 주소.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/라우팅.md",
+                "file": "resource/Network/사설 IP 주소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/라우팅.md",
+                "file": "resource/Network/사설 IP 주소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/라우팅.md"
+                "file": "resource/Network/사설 IP 주소.md"
               }
             }
           },
@@ -159,6 +159,12 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "resource/Network/브리지.md",
+    "resource/Network/브로드캐스트 도메인.md",
+    "resource/Network/브로드캐스트.md",
+    "resource/Network/멀티캐스트.md",
+    "resource/Network/리피터.md",
+    "resource/Network/라우팅.md",
     "resource/Network/라우터.md",
     "resource/Network/동적 라우팅.md",
     "resource/Network/네트워크 프로토콜.md",
@@ -180,12 +186,6 @@
     "resource/Language/C++/클래스.md",
     "resource/Language/C++/컨트롤 클래스.md",
     "resource/Language/C++/추상 클래스.md",
-    "resource/Language/C++/임시 객체.md",
-    "resource/Language/C++/정보은닉.md",
-    "resource/Language/C++/이름공간.md",
-    "resource/Language/C++/생성자.md",
-    "resource/Language/C++/복사 생성자.md",
-    "resource/Language/C++/멤버 이니셜라이저.md",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
     "img/가상 함수 테이블/가상 함수 테이블.png",
