@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/이더넷.md",
+                "file": "resource/Network/IP.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/이더넷.md",
+                "file": "resource/Network/IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/이더넷.md",
+                "file": "resource/Network/IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/이더넷.md"
+                "file": "resource/Network/IP.md"
               }
             }
           },
@@ -159,13 +159,17 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
-    "resource/Network/유니캐스트.md",
+    "resource/Network/허브.md",
+    "resource/Network/패킷.md",
+    "resource/Network/콜리전 도메인.md",
+    "resource/Network/브리지.md",
+    "resource/Network/정적 라우팅.md",
     "resource/Network/이더넷.md",
+    "resource/Network/유니캐스트.md",
     "resource/Network/스타형 LAN.md",
     "resource/Network/스위칭 허브.md",
     "resource/Network/서브넷 마스크.md",
     "resource/Network/사설 IP 주소.md",
-    "resource/Network/브리지.md",
     "resource/Network/브로드캐스트 도메인.md",
     "resource/Network/브로드캐스트.md",
     "resource/Network/멀티캐스트.md",
@@ -182,10 +186,6 @@
     "무제 파일.canvas",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
-    "resource/format/post format.md",
-    "resource/ANSI escape code.md",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
     "img/가상 함수 테이블/가상 함수 테이블.png",
