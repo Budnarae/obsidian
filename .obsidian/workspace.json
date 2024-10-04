@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "44a95dff767b5010",
+        "id": "d2b6d41f200a1d20",
         "type": "tabs",
         "children": [
           {
-            "id": "612ced62666d2d19",
+            "id": "73f76b00fcb6eef9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Network/WAN.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/WAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/WAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "resource/Network/WAN.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,8 +149,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "612ced62666d2d19",
+  "active": "73f76b00fcb6eef9",
   "lastOpenFiles": [
+    "2024-10-04.md",
     "resource/Network/WAN.md",
     "resource/Network/UDP.md",
     "resource/Network/TCP IP.md",
@@ -184,7 +177,6 @@
     "resource/Network/유니캐스트.md",
     "resource/Network/스위칭 허브.md",
     "resource/Network/서브넷 마스크.md",
-    "resource/Network/사설 IP 주소.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
