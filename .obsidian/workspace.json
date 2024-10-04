@@ -159,6 +159,7 @@
   },
   "active": "612ced62666d2d19",
   "lastOpenFiles": [
+    "resource/Network/WAN.md",
     "resource/Network/UDP.md",
     "resource/Network/TCP IP.md",
     "resource/Network/TCP.md",
@@ -184,7 +185,6 @@
     "resource/Network/스위칭 허브.md",
     "resource/Network/서브넷 마스크.md",
     "resource/Network/사설 IP 주소.md",
-    "resource/Network/브로드캐스트.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
