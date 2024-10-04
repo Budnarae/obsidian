@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/정확도와 정밀도.md",
-                "mode": "source",
+                "file": "resource/Network/라우팅.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/정확도와 정밀도.md",
+                "file": "resource/Network/라우팅.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/정확도와 정밀도.md",
+                "file": "resource/Network/라우팅.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/정확도와 정밀도.md"
+                "file": "resource/Network/라우팅.md"
               }
             }
           },
@@ -157,10 +157,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "612ced62666d2d19",
   "lastOpenFiles": [
-    "무제 파일.canvas",
+    "resource/Network/라우터.md",
+    "resource/Network/동적 라우팅.md",
+    "resource/Network/네트워크 프로토콜.md",
+    "resource/Network/네트워크 토폴로지.md",
+    "resource/Network/공인 IP 주소.md",
+    "resource/Network/게이트웨이.md",
+    "README.md",
     "resource/정확도와 정밀도.md",
+    "무제 파일.canvas",
     "resource/유용한 서적.md",
     "resource/유용한 링크.md",
     "resource/format/post format.md",
@@ -179,13 +186,7 @@
     "resource/Language/C++/생성자.md",
     "resource/Language/C++/복사 생성자.md",
     "resource/Language/C++/멤버 이니셜라이저.md",
-    "resource/Language/C++/다중 상속.md",
-    "resource/Language/C++/가상 함수.md",
-    "project/42Seoul/cpp module 09/포드 존슨 알고리즘.md",
     "project/42Seoul/cpp module 09",
-    "resource/Language/C++/형 변환.md",
-    "resource/Language/C++/a reference.md",
-    "resource/Language/C++/C++ 언어의 객체 배열.md",
     "project/42Seoul/microshell.zip",
     "img/가상 함수 테이블/가상 함수 테이블.png",
     "resource/Computer Science/Network.zip",
