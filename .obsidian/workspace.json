@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/TCP.md",
+                "file": "resource/Network/패킷.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/TCP.md",
+                "file": "resource/Network/패킷.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/TCP.md",
+                "file": "resource/Network/패킷.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/TCP.md"
+                "file": "resource/Network/패킷.md"
               }
             }
           },
@@ -157,11 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "73f76b00fcb6eef9",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Network/TCP.md",
     "resource/Network/패킷.md",
     "resource/Network/TCP IP.md",
-    "resource/Network/TCP.md",
     "resource/Network/IP.md",
     "resource/Network/공인 IP 주소.md",
     "resource/Network/네트워크 프로토콜.md",
