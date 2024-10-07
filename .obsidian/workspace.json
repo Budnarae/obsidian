@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/네트워크 프로토콜.md",
+                "file": "resource/Network/IP.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/네트워크 프로토콜.md",
+                "file": "resource/Network/IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/네트워크 프로토콜.md",
+                "file": "resource/Network/IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/네트워크 프로토콜.md"
+                "file": "resource/Network/IP.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "73f76b00fcb6eef9",
   "lastOpenFiles": [
-    "resource/Network/OSI 참조 모델.md",
+    "resource/Network/공인 IP 주소.md",
     "resource/Network/네트워크 프로토콜.md",
+    "resource/Network/OSI 참조 모델.md",
     "resource/Network/IP.md",
     "2024-10-04.md",
     "resource/Network/WAN.md",
@@ -184,7 +185,6 @@
     "resource/Network/이더넷.md",
     "resource/Network/유니캐스트.md",
     "resource/Network/스위칭 허브.md",
-    "resource/Network/서브넷 마스크.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
