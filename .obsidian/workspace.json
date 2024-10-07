@@ -11,8 +11,12 @@
             "id": "08ce5495c7b24a84",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "area/흑요석 공예.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "area/흑요석 공예.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "area/흑요석 공예.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "area/흑요석 공예.md"
+              }
             }
           },
           {
@@ -150,8 +158,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "08ce5495c7b24a84",
   "lastOpenFiles": [
+    "archive/tmp.md",
+    "Excalidraw/Drawing 2024-08-06 18.16.40.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md",
+    "Excalidraw/Drawing 2024-05-06 15.10.01.excalidraw.md",
     "template",
     "resource/Network/OSI 참조 모델.md",
     "resource/Network/패킷.md",
@@ -175,9 +187,6 @@
     "resource/Network/허브.md",
     "resource/Network/콜리전 도메인.md",
     "resource/Network/브리지.md",
-    "resource/Network/정적 라우팅.md",
-    "resource/Network/이더넷.md",
-    "resource/Network/유니캐스트.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
@@ -192,7 +201,6 @@
     "img/가상 함수 테이블",
     "img/static 키워드/static 멤버변수.png",
     "img/static 키워드",
-    "Excalidraw",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "Pasted image 20240506125304.png",
