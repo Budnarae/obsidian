@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-                "mode": "source",
+                "file": "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md"
               }
             }
           },
@@ -161,9 +161,10 @@
   },
   "active": "079b1b883b1ac36f",
   "lastOpenFiles": [
-    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/소켓 프로그래밍(리눅스)/socket.md",
     "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/ANSI escape code.md",
+    "resource/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "template/개요와 참고자료.md",
     "template/참고자료.md",
     "template/개요.md",
@@ -188,7 +189,6 @@
     "resource/Network/OSI 참조 모델.md",
     "resource/Network/패킷.md",
     "resource/Network/TCP.md",
-    "resource/Network/TCP IP.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
