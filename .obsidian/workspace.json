@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e5084d093cc797e",
+        "id": "e325bbc7418583e5",
         "type": "tabs",
         "children": [
           {
-            "id": "079b1b883b1ac36f",
+            "id": "48ab10f76d8d66cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -159,20 +159,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "079b1b883b1ac36f",
+  "active": "48ab10f76d8d66cc",
   "lastOpenFiles": [
+    "resource/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Language/C++/C++ 언어의 bool 자료형.md",
+    "resource/소켓 프로그래밍(리눅스)/무제 파일 1.md",
+    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/ANSI escape code.md",
+    "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1 1 1.md",
     "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1 1.md",
     "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1.md",
     "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1.md",
-    "resource/소켓 프로그래밍(리눅스)/무제 파일 1.md",
-    "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "template/개요와 참고자료.md",
     "template/개요.md",
-    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/ANSI escape code.md",
-    "resource/소켓 프로그래밍(리눅스)/socket.md",
     "template/참고자료.md",
     "area/유용한 서적.md",
     "resource/소켓 프로그래밍(리눅스)/프로토콜 체계(Protocol Family).md",
@@ -183,7 +184,6 @@
     "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
     "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/정확도와 정밀도.md",
-    "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "area/흑요석 공예.md",
     "project/42Seoul/cpp module 09/포드 존슨 알고리즘.md",
     "archive/tmp.md",
