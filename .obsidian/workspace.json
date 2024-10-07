@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d2b6d41f200a1d20",
+        "id": "45c45e609be2f761",
         "type": "tabs",
         "children": [
           {
-            "id": "73f76b00fcb6eef9",
+            "id": "08ce5495c7b24a84",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Network/OSI 참조 모델.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/OSI 참조 모델.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/OSI 참조 모델.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "resource/Network/OSI 참조 모델.md"
-              }
+              "state": {}
             }
           },
           {
@@ -154,18 +146,20 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73f76b00fcb6eef9",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "template",
+    "resource/Network/OSI 참조 모델.md",
     "resource/Network/패킷.md",
     "resource/Network/TCP.md",
     "resource/Network/TCP IP.md",
     "resource/Network/IP.md",
     "resource/Network/공인 IP 주소.md",
     "resource/Network/네트워크 프로토콜.md",
-    "resource/Network/OSI 참조 모델.md",
     "2024-10-04.md",
     "resource/Network/WAN.md",
     "resource/Network/UDP.md",
@@ -184,7 +178,6 @@
     "resource/Network/정적 라우팅.md",
     "resource/Network/이더넷.md",
     "resource/Network/유니캐스트.md",
-    "resource/Network/스위칭 허브.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
