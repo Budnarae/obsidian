@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cb4b0a9261207401",
+        "id": "d2765e6b28d952dd",
         "type": "tabs",
         "children": [
           {
-            "id": "60c2e515df26115c",
+            "id": "be3e116065e5bff9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": true
               }
             }
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/socket.md"
               }
             }
           },
@@ -158,18 +159,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60c2e515df26115c",
+  "active": "be3e116065e5bff9",
   "lastOpenFiles": [
+    "area/유용한 서적.md",
+    "resource/소켓 프로그래밍(리눅스)/socket.md",
+    "area/유용한 링크.md",
+    "template/개요와 참고자료.md",
+    "template/참고자료.md",
     "resource/Language/C++/explicit 키워드.md",
-    "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
     "resource/소켓 프로그래밍(리눅스)",
     "resource/Language/C++/const.md",
     "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
     "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/정확도와 정밀도.md",
-    "resource/유용한 서적.md",
-    "template/개요와 참고자료.md",
-    "template/참고자료.md",
     "template/개요.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "area/흑요석 공예.md",
@@ -187,7 +189,6 @@
     "resource/Network/공인 IP 주소.md",
     "resource/Network/네트워크 프로토콜.md",
     "2024-10-04.md",
-    "resource/Network/WAN.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
