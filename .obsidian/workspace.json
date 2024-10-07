@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/TCP IP.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/TCP IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/TCP IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/IP.md"
+                "file": "resource/Network/TCP IP.md"
               }
             }
           },
@@ -159,15 +159,15 @@
   },
   "active": "73f76b00fcb6eef9",
   "lastOpenFiles": [
+    "resource/Network/TCP.md",
+    "resource/Network/IP.md",
     "resource/Network/공인 IP 주소.md",
     "resource/Network/네트워크 프로토콜.md",
     "resource/Network/OSI 참조 모델.md",
-    "resource/Network/IP.md",
     "2024-10-04.md",
     "resource/Network/WAN.md",
     "resource/Network/UDP.md",
     "resource/Network/TCP IP.md",
-    "resource/Network/TCP.md",
     "resource/Network/스타형 LAN.md",
     "resource/Network/브로드캐스트 도메인.md",
     "resource/Network/라우팅.md",
