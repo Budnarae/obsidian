@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "45c45e609be2f761",
+        "id": "cb4b0a9261207401",
         "type": "tabs",
         "children": [
           {
-            "id": "08ce5495c7b24a84",
+            "id": "60c2e515df26115c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "template/개요와 참고자료.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "template/개요와 참고자료.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "template/개요와 참고자료.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "area/흑요석 공예.md"
+                "file": "template/개요와 참고자료.md"
               }
             }
           },
@@ -158,8 +158,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "08ce5495c7b24a84",
+  "active": "60c2e515df26115c",
   "lastOpenFiles": [
+    "template/참고자료.md",
+    "template/개요.md",
+    "template/개요와 참고자료.md",
+    "resource/정확도와 정밀도.md",
+    "resource/유용한 서적.md",
+    "resource/Language/C++/C++ 언어의 bool 자료형.md",
+    "area/흑요석 공예.md",
+    "project/42Seoul/cpp module 09/포드 존슨 알고리즘.md",
     "archive/tmp.md",
     "Excalidraw/Drawing 2024-08-06 18.16.40.excalidraw.md",
     "Excalidraw/Drawing 2024-08-06 18.20.30.excalidraw.md",
@@ -179,14 +187,6 @@
     "resource/Network/브로드캐스트 도메인.md",
     "resource/Network/라우팅.md",
     "project/42Seoul/NetPractice.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "resource/Network/NIC.md",
-    "resource/Network/MAC 주소.md",
-    "resource/Network/LAN.md",
-    "resource/Network/IP 주소.md",
-    "resource/Network/허브.md",
-    "resource/Network/콜리전 도메인.md",
-    "resource/Network/브리지.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
