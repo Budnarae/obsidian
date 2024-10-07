@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/네트워크 프로토콜.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/네트워크 프로토콜.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/IP.md",
+                "file": "resource/Network/네트워크 프로토콜.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/IP.md"
+                "file": "resource/Network/네트워크 프로토콜.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   "active": "73f76b00fcb6eef9",
   "lastOpenFiles": [
     "resource/Network/OSI 참조 모델.md",
+    "resource/Network/네트워크 프로토콜.md",
+    "resource/Network/IP.md",
     "2024-10-04.md",
     "resource/Network/WAN.md",
     "resource/Network/UDP.md",
@@ -174,8 +176,6 @@
     "resource/Network/MAC 주소.md",
     "resource/Network/LAN.md",
     "resource/Network/IP 주소.md",
-    "resource/Network/IP.md",
-    "resource/Network/네트워크 프로토콜.md",
     "resource/Network/허브.md",
     "resource/Network/패킷.md",
     "resource/Network/콜리전 도메인.md",
