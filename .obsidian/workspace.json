@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/socket.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/socket.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md"
               }
             }
           },
@@ -161,11 +161,13 @@
   },
   "active": "be3e116065e5bff9",
   "lastOpenFiles": [
-    "area/유용한 서적.md",
-    "resource/소켓 프로그래밍(리눅스)/socket.md",
-    "area/유용한 링크.md",
     "template/개요와 참고자료.md",
     "template/참고자료.md",
+    "area/유용한 서적.md",
+    "resource/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계(Protocol Family).md",
+    "area/유용한 링크.md",
     "resource/Language/C++/explicit 키워드.md",
     "resource/소켓 프로그래밍(리눅스)",
     "resource/Language/C++/const.md",
@@ -187,8 +189,6 @@
     "resource/Network/TCP IP.md",
     "resource/Network/IP.md",
     "resource/Network/공인 IP 주소.md",
-    "resource/Network/네트워크 프로토콜.md",
-    "2024-10-04.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
