@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/개요와 참고자료.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/개요와 참고자료.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/개요와 참고자료.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "template/개요와 참고자료.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/무제 파일.md"
               }
             }
           },
@@ -160,11 +160,17 @@
   },
   "active": "60c2e515df26115c",
   "lastOpenFiles": [
-    "template/참고자료.md",
-    "template/개요.md",
-    "template/개요와 참고자료.md",
+    "resource/Language/C++/explicit 키워드.md",
+    "resource/소켓 프로그래밍(리눅스)/무제 파일.md",
+    "resource/소켓 프로그래밍(리눅스)",
+    "resource/Language/C++/const.md",
+    "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
+    "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/정확도와 정밀도.md",
     "resource/유용한 서적.md",
+    "template/개요와 참고자료.md",
+    "template/참고자료.md",
+    "template/개요.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "area/흑요석 공예.md",
     "project/42Seoul/cpp module 09/포드 존슨 알고리즘.md",
@@ -182,11 +188,6 @@
     "resource/Network/네트워크 프로토콜.md",
     "2024-10-04.md",
     "resource/Network/WAN.md",
-    "resource/Network/UDP.md",
-    "resource/Network/스타형 LAN.md",
-    "resource/Network/브로드캐스트 도메인.md",
-    "resource/Network/라우팅.md",
-    "project/42Seoul/NetPractice.md",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
@@ -200,7 +201,6 @@
     "img/연산자 오버로딩",
     "img/가상 함수 테이블",
     "img/static 키워드/static 멤버변수.png",
-    "img/static 키워드",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "Pasted image 20240506125304.png",
