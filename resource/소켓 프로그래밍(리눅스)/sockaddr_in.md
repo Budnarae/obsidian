@@ -19,9 +19,12 @@ struct sockaddr_in
 }
 ```
 
-| member     | type        | typedef | 기능 | 
-| ---------- | ----------- | ------- | ---- |
-| sin_family | sa_family_t |         |      |
+| member     | type           | typedef   | 의미                     | 예시        |
+| ---------- | -------------- | --------- | ------------------------ | ----------- |
+| sin_family | sa_family_t    | __uint8_t | 주소체계(address Family) | PF_INET     |
+| sin_port   | uint16_t       |           | 16비트 TCP/UDP PORT 번호 | htons(port) |
+| sin_addr   | struct in_addr |           | 32비트 IP 주소           | 후술        |
+| sin_zero   | char[8]        |           | 실질적                         |             |
 
 ---
 
