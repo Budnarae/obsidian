@@ -11,8 +11,13 @@
             "id": "fa71cbe1d242f074",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md"
+              }
             }
           },
           {
@@ -152,17 +161,17 @@
   },
   "active": "fa71cbe1d242f074",
   "lastOpenFiles": [
+    "resource/소켓 프로그래밍(리눅스)/htons.md",
+    "resource/소켓 프로그래밍(리눅스)/bind.md",
+    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+    "resource/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+    "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1 1.md",
     "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-    "resource/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
-    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/ANSI escape code.md",
     "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1 1 1.md",
-    "resource/소켓 프로그래밍(리눅스)/무제 파일 1 1 1 1.md",
     "template/개요와 참고자료.md",
     "template/개요.md",
     "template/참고자료.md",

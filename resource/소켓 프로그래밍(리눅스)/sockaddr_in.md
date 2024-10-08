@@ -15,14 +15,14 @@ struct sockaddr_in
 	sa_family_t    sin_family;
 	uint16_t       sin_port;
 	struct in_addr sin_addr;
-	char.          sin_zero[8];
+	char           sin_zero[8];
 }
 ```
 
 ```C
 struct in_addr
 {
-	in_addr_t.     s_addr; //32비트 IPv4 인터넷 주소
+	in_addr_t      s_addr; //32비트 IPv4 인터넷 주소
 }
 ```
 
@@ -33,7 +33,7 @@ struct in_addr
 |  sin_addr  | struct in_addr |         |                            32비트 IP 주소                            |    후술     |
 |  sin_zero  |    char[8]     |         | 실질적인 의미가 없으며 구조체의 크기를 sockaddr과 통일하기 위해 사용 |             |
 
-uint8_t와 같은 **POSIX(Portable Operating System Interpace)** 자료형을 사용하는 이유는 어떠한 경우에도 1 바이트 자료형임을 보장받기 위해서이다.
+uint8_t와 같은 **POSIX(Portable Operating System Interpace)** 자료형을 사용하는 이유는 어떠한 경우에도 고정된 바이트 자료형임을 보장받기 위해서이다.
 
 #### sin_family
 
