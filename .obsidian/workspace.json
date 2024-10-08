@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/inet_addr.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/inet_addr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/inet_addr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/inet_aton.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/inet_addr.md"
               }
             }
           },
@@ -160,8 +160,8 @@
   },
   "active": "fa71cbe1d242f074",
   "lastOpenFiles": [
-    "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
+    "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/소켓 프로그래밍(리눅스)/inet_addr.md",
     "resource/소켓 프로그래밍(리눅스)/htons.md",
     "resource/소켓 프로그래밍(리눅스)/socket.md",

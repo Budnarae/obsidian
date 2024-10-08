@@ -18,6 +18,9 @@
 in_addr_t inet_addr(const char *string);
 ```
 
+비슷한 기능을 수행하는 함수로 [[inet_aton]]이 있다.
+만약 네트워크 바이 32비트 정수
+
 ---
 
 참고자료
