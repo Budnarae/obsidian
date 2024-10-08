@@ -18,12 +18,16 @@ int bind(int sockfd, struct sockaddr *myaddr, socklen_t addrlen);
 - addrlen : 두 번째 인자로 전달된 구조체 변수의 길이 정보.
 + 반환값 : 성공 시 0, 실패 시 -1 반환
 
-특이 사항으로 [[sockaddr 구조체는 매우 사용하기 불
+bind()를 통해 IP 주소와 PORT 번호를 얻은 소켓은 해당 포트로 전송되는 모든 데이터를 수신하게 된다.
+
+특이 사항으로 [[sockaddr_in#^917553 | sockaddr]] 구조체는 매우 사용하기 불편하므로 보통 [[sockaddr_in]] 타입 변수의 주소를 형변환으로 변환시켜 사용한다.
 
 ---
 
 참고자료
 
 [윤성우의 열혈 TCP/IP 소켓 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589146)
+#윤성우의_열혈_TCP/IP_소켓_프로그래밍
+#
 
 ---

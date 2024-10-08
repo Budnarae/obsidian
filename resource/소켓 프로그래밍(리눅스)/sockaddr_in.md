@@ -61,6 +61,8 @@ uint8_t와 같은 **POSIX(Portable Operating System Interpace)** 자료형을 �
 
 #### sockaddr
 
+^917553
+
 sockaddr은 아래와 같은 형태의 구조체이다.
 
 ```C
