@@ -72,7 +72,7 @@ struct sockaddr
 
 ```
 
-sockaddr_in은 [[bind]]에 전달하기 위한 구조체라고 설명하였지만, 본래 bind()에는 sockaddr 구조체를 전달하여야 한다. 그러나 sockaddr은 sa_data에 IP 주소와 port 번호를 bit 단위로 조작하여 넣어야 하기 때문에 매우 불편하다. 따라서 sockaddr_in에서 sa_data를 sin_port(포트), sin_addr(IP 주소), sin_zero(남은 공간을 0으로 채움)의 형태로 나누어 입력할 수 있도록 고친 후, 형변환을 사용하여 아래와 같이 sockaddr 구조체의 주소형으로 변환하여 넘긴다.
+sockaddr_in은 [[bind]]에 전달하기 위한 구조체라고 설명하였지만, 본래 bind()에는 sockaddr 구조체를 전달하여야 한다. 그러나 sockaddr은 sa_data에 IP 주소와 port 번호를 bit 단위로 조작하여 넣어야 하기 때문에 매우 불편하다. 따라서 sockaddr_in에서 sa_data를 sin_port(포트), sin_addr(IP 주소), sin_zero(남은 공간을 0으로 채움)의 형태로 나누어 입력할 수 있도록 고친 후, 형변환을 사용하여 아래와 같이 sockaddr 구조체의 주소형으로 변환하여 넘긴다. sockaddr_in에 sin_zero가 들어가는 이유도 구조체의 크기가 동일해야 주소를 통해 접근했을 때 sockaddr과 동일한 효과를 얻을 수 있기 때문이다.
 
 ```C
 if (bind(serv_scok, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) == -1)
