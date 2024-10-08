@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/참고링크.md",
+                "file": "resource/ANSI escape code.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "area/참고링크.md",
+                "file": "resource/ANSI escape code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "area/참고링크.md",
+                "file": "resource/ANSI escape code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "area/참고링크.md"
+                "file": "resource/ANSI escape code.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "971c118223281ee7",
   "lastOpenFiles": [
+    "area/참고링크.md",
+    "resource/Network/콜리전 도메인.md",
     "area/참고도서.md",
     "resource/Network/유니캐스트.md",
     "resource/Network/OSI 참조 모델.md",
@@ -167,8 +169,6 @@
     "resource/Network/브로드캐스트.md",
     "resource/Network/멀티캐스트.md",
     "resource/Network/브로드캐스트 도메인.md",
-    "resource/Network/콜리전 도메인.md",
-    "area/참고링크.md",
     "resource/Language/C++/가상 상속.md",
     "resource/Network/IP 주소.md",
     "resource/Network/IP.md",
