@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/listen.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/listen.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/listen.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/listen.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/accept.md"
               }
             }
           },
@@ -160,8 +160,14 @@
   },
   "active": "4410f8f935a0ad17",
   "lastOpenFiles": [
-    "연결 요청 대기 큐.md",
+    "resource/소켓 프로그래밍(리눅스)/틀 3.md",
+    "resource/소켓 프로그래밍(리눅스)/accept.md",
+    "resource/소켓 프로그래밍(리눅스)/틀 2.md",
+    "resource/소켓 프로그래밍(리눅스)/틀 1.md",
+    "resource/소켓 프로그래밍(리눅스)/틀.md",
+    "resource/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "resource/소켓 프로그래밍(리눅스)/listen.md",
+    "연결 요청 대기 큐.md",
     "resource/Language/C++/가상 함수 테이블.md",
     "img/listen/연결 요청 대기 큐.png",
     "img/listen",
@@ -182,12 +188,6 @@
     "resource/Network/LAN.md",
     "resource/Network/MAC 주소.md",
     "resource/Network/NIC.md",
-    "resource/Network/TCP IP.md",
-    "resource/Network/TCP.md",
-    "resource/Network/UDP.md",
-    "resource/Network/WAN.md",
-    "resource/Network/네트워크 토폴로지.md",
-    "resource/Network/게이트웨이.md",
     "resource/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
