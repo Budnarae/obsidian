@@ -17,7 +17,7 @@
 char *inet_ntoa(struct in_addr adr);
 ```
 
-참고로 inet_ntoa가 반환하는 메모리 주소는 inet_ntoa에 내부적으로 할당된 메모리 공간이다. inet_ntoa가 재호출되면 이전에 할당한 메모리 주소는 지워
+참고로 inet_ntoa가 반환하는 메모리 주소는 inet_ntoa에 내부적으로 할당된 메모리 공간이다. inet_ntoa가 재호출되면 이전에 할당한 메모리 주소를 지우고 새로운 메모리 주소를 할당하기 때문에, inet_ntoa가 반환한 문자열 정보를 다른 문자열 공간에 복사해 두는 것이 좋다.
 
 ---
 
