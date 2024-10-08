@@ -27,7 +27,5 @@ bind()를 통해 IP 주소와 PORT 번호를 얻은 소켓은 해당 포트로 �
 참고자료
 
 [윤성우의 열혈 TCP/IP 소켓 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589146)
-#윤성우의_열혈_TCP/IP_소켓_프로그래밍
-#
 
 ---
