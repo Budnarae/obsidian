@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
-                "mode": "source",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md"
               }
             }
           },
@@ -160,12 +160,14 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+    "template/참고자료.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "img/listen/연결 요청 대기 큐.png",
     "img/accept",
     "img/accept/accept의 기능.png",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/기초 개념/게이트웨이.md",
     "resource/Network/기초 개념",
     "resource/정확도와 정밀도.md",
@@ -189,7 +191,6 @@
     "resource/Network/기초 개념/멀티캐스트.md",
     "resource/Network/기초 개념/브로드캐스트 도메인.md",
     "resource/Language/C++/가상 상속.md",
-    "resource/Network/기초 개념/IP 주소.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
