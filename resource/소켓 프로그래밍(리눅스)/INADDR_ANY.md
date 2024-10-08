@@ -24,6 +24,6 @@ addr.sin_addr.s_addr = htonl(INADDR_ANY);
 
 참고자료
 
-[윤성우의 열혈 TCP/IP 소켓 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589146)
+#참고도서/윤성우의_열혈_TCP\IP_소켓_프로그래밍
 
 ---

@@ -15,5 +15,14 @@
       ],
       "key": "T"
     }
+  ],
+  "global-search-and-replace:search-and-replace": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "L"
+    }
   ]
 }

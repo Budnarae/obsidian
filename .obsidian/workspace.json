@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/bind.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:([윤성우의 열혈 TCP/IP 소켓 프로그래밍)",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/bind.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/bind.md",
+                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/bind.md"
+                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md"
               }
             }
           },
@@ -160,11 +160,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99cb3010a8824735",
+  "active": "6aaabd8d5c1862dd",
   "lastOpenFiles": [
+    "resource/소켓 프로그래밍(리눅스)/bind.md",
     "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-    "resource/소켓 프로그래밍(리눅스)/bind.md",
     "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
     "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/소켓 프로그래밍(리눅스)/inet_ntoa.md",
