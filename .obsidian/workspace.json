@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "resource/소켓 프로그래밍(리눅스)/listen.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
@@ -160,6 +160,11 @@
   },
   "active": "939353c0ac1a5cee",
   "lastOpenFiles": [
+    "resource/Language/C++/가상 함수 테이블.md",
+    "resource/소켓 프로그래밍(리눅스)/listen.md",
+    "img/listen/연결 요청 대기 큐.png",
+    "img/listen",
+    "img/listen.md",
     "area/참고링크.md",
     "area/참고도서.md",
     "resource/ANSI escape code.md",
@@ -183,9 +188,6 @@
     "resource/Network/네트워크 토폴로지.md",
     "resource/Network/게이트웨이.md",
     "resource/Network/네트워크 프로토콜.md",
-    "resource/Network/라우터.md",
-    "resource/Network/리피터.md",
-    "resource/Network/브리지.md",
     "resource/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
@@ -199,14 +201,12 @@
     "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/연산자 오버로딩",
-    "img/가상 함수 테이블",
     "img/static 키워드/static 멤버변수.png",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "Pasted image 20240506125304.png",
     "Pasted image 20240506124414.png",
     "Pasted image 20240506124406.png",
-    "img/NetPractice/NetPractice_lv3_after.png",
-    "img/NetPractice/NetPractice_lv10_after.png"
+    "img/NetPractice/NetPractice_lv3_after.png"
   ]
 }
