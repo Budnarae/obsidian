@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+                "file": "resource/Language/C++/virtual 키워드.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+                "file": "resource/Language/C++/virtual 키워드.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+                "file": "resource/Language/C++/virtual 키워드.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md"
+                "file": "resource/Language/C++/virtual 키워드.md"
               }
             }
           },
@@ -144,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,33 +160,33 @@
   },
   "active": "6aaabd8d5c1862dd",
   "lastOpenFiles": [
-    "resource/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-    "resource/소켓 프로그래밍(리눅스)/inet_aton.md",
-    "resource/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
-    "resource/소켓 프로그래밍(리눅스)/inet_ntoa.md",
-    "resource/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/소켓 프로그래밍(리눅스)/htons.md",
-    "resource/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
-    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/소켓 프로그래밍(리눅스)/a 4.md",
-    "resource/소켓 프로그래밍(리눅스)/a 3.md",
+    "resource/Language/C++/디폴트 소멸자.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
-    "resource/ANSI escape code.md",
-    "template/개요와 참고자료.md",
-    "template/개요.md",
-    "template/참고자료.md",
-    "area/유용한 서적.md",
-    "resource/소켓 프로그래밍(리눅스)/프로토콜 체계(Protocol Family).md",
-    "area/유용한 링크.md",
-    "resource/Language/C++/explicit 키워드.md",
-    "resource/소켓 프로그래밍(리눅스)",
-    "resource/Language/C++/const.md",
-    "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
     "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
+    "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
+    "resource/Language/C++/Call-by-reference.md",
+    "resource/Language/C++/a reference.md",
+    "resource/Language/C++/const.md",
+    "resource/Language/C++/explicit 키워드.md",
+    "resource/Language/C++/friend 선언.md",
+    "resource/Language/C++/mutable 키워드.md",
+    "resource/Language/C++/new & delete.md",
+    "resource/Language/C++/static 키워드.md",
+    "resource/Language/C++/this.md",
+    "resource/Language/C++/virtual 키워드.md",
+    "resource/Language/C++/가상 상속.md",
+    "resource/Language/C++/가상 소멸자.md",
+    "resource/Language/C++/가상 함수 테이블.md",
+    "resource/Language/C++/가상 함수.md",
+    "resource/Language/C++/구조체.md",
+    "resource/Language/C++/다중 상속.md",
+    "resource/Language/C++/다형성.md",
+    "resource/Language/C++/디폴트 생성자.md",
+    "resource/Language/C++/매개변수의 디폴트 값.md",
+    "resource/Language/C++/멤버 이니셜라이저.md",
+    "resource/Language/C++/범위지정 연산자.md",
+    "resource/Language/C++/복사 생성자.md",
+    "resource/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",

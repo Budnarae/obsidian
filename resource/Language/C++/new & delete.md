@@ -36,6 +36,6 @@ c++에서 동적 할당 기능을 가진 연산자이다. malloc, free와 비교
 
 참고자료
 
-[윤성우의 열혈 c++ 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589147)
+#참고도서/윤성우의_열혈_cpp_프로그래밍
 
 ---

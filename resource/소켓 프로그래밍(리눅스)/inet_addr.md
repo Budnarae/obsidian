@@ -25,6 +25,6 @@ in_addr_t inet_addr(const char *string);
 
 참고자료
 
-[윤성우의 열혈 TCP/IP 소켓 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589146)
+#참고도서/윤성우의_열혈_TCP_IP_소켓_프로그래밍
 
 ---

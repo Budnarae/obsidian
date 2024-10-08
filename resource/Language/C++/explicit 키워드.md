@@ -33,7 +33,7 @@ explicit SoSimple(const SoSimple &copy) : num1(copy.num1), num2(copy.num2)
 
 참고자료
 
-[윤성우의 열혈 c++ 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589147)
+#참고도서/윤성우의_열혈_cpp_프로그래밍
 
 ---
 

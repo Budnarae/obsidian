@@ -17,6 +17,6 @@ virtual 키워드는 다음의 용도를 가지는 키워드이다.
 
 참고자료
 
-[윤성우의 열혈 c++ 프로그래밍](https://product.kyobobook.co.kr/detail/S000001589147)
+#참고도서/윤성우의_열혈_cpp_프로그래밍
 
 ---
