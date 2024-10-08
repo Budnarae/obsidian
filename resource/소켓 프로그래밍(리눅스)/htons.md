@@ -25,8 +25,9 @@ htons의 형제격으로 아래의 함수들이 있다. 자주 쓰이지는 않�
 
 // network byte order to host byte order - short variable
 unsigned short ntohs(unsigned short);
-// network byte order to host byte order - short variable
+// host byte order to network byte order - long variable
 unsigned long  htonl(unsigned long);
+// network byte order to host byte order - long variable
 unsigned long  ntohl(unsigned long);
 
 ```
