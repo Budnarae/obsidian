@@ -11,13 +11,8 @@
             "id": "ee4e794915ba1dd6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md"
-              }
+              "state": {}
             }
           },
           {
@@ -160,6 +151,7 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
@@ -190,7 +182,6 @@
     "area/참고링크.md",
     "area/참고도서.md",
     "resource/ANSI escape code.md",
-    "resource/Network/기초 개념/콜리전 도메인.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
