@@ -7,7 +7,14 @@
 
 ---
 
+[[listen]]의 호출 이후에 클라이언트의 연결 요청이 들어왔다면, 들어온 순서대로 연결 요청을 수락해야 한다.
+listen을 통해 생성된 **서버 소켓**은 오로지 연결 요청만을 전담하여 수신하는 소켓이므로, 클라이언트와 데이터를 주고 받기 위해서는 별도의 연결 소켓이 필요하다. 이를 위해 **accept**를 사용한다.
 
+```c
+#include <sys/socket.h>
+
+int accept(int sock, struct sockaddr *addr, socklen_t *addrlen);
+```
 
 ---
 
