@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/ANSI escape code.md",
+                "file": "area/참고링크.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/ANSI escape code.md",
+                "file": "area/참고링크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/ANSI escape code.md",
+                "file": "area/참고링크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/ANSI escape code.md"
+                "file": "area/참고링크.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -160,9 +160,10 @@
   },
   "active": "971c118223281ee7",
   "lastOpenFiles": [
+    "area/참고도서.md",
+    "resource/ANSI escape code.md",
     "area/참고링크.md",
     "resource/Network/콜리전 도메인.md",
-    "area/참고도서.md",
     "resource/Network/유니캐스트.md",
     "resource/Network/OSI 참조 모델.md",
     "resource/Network/공인 IP 주소.md",
@@ -185,7 +186,6 @@
     "resource/Network/라우터.md",
     "resource/Network/리피터.md",
     "resource/Network/브리지.md",
-    "resource/Network/사설 IP 주소.md",
     "resource/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
