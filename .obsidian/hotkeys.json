@@ -24,5 +24,14 @@
       ],
       "key": "L"
     }
+  ],
+  "workspace:export-pdf": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "P"
+    }
   ]
 }
