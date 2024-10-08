@@ -3,9 +3,10 @@
 
 #network #c #socket_programming #linux
 
-**
+*자기 자신의 IP 주소를 나타내는 상수*
 
 ---
+
 
 
 ---
