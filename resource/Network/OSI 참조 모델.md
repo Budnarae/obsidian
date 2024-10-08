@@ -29,7 +29,7 @@
 
 참고자료
 
-[그림으로 이해하는 네트워크 용어](https://product.kyobobook.co.kr/detail/S000001834837)
-[후니의 쉽게 쓴 시스코 네트워킹](https://product.kyobobook.co.kr/detail/S000000562247)
+#참고도서/그림으로_이해하는_네트워크_용어
+#참고도서/후니의_쉽게_쓴_시스코_네트워킹
 
 ---
