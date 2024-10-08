@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md"
               }
             }
           },
@@ -160,12 +160,12 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "img/listen/연결 요청 대기 큐.png",
     "img/accept",
     "img/accept/accept의 기능.png",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 3.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/기초 개념/게이트웨이.md",
     "resource/Network/기초 개념",
     "resource/정확도와 정밀도.md",
