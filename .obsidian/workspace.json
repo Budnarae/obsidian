@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eed35f289e7f5bca",
+        "id": "1148bdd84361aeef",
         "type": "tabs",
         "children": [
           {
-            "id": "1ed85993b1921b93",
+            "id": "ee4e794915ba1dd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,22 +158,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1ed85993b1921b93",
+  "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
+    "img/listen/연결 요청 대기 큐.png",
+    "img/accept",
+    "img/accept/accept의 기능.png",
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 3.md",
     "resource/Network/기초 개념/게이트웨이.md",
     "resource/Network/기초 개념",
     "resource/정확도와 정밀도.md",
     "project/42Seoul/NetPractice.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
     "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "연결 요청 대기 큐.md",
     "resource/Language/C++/가상 함수 테이블.md",
-    "img/listen/연결 요청 대기 큐.png",
     "img/listen",
     "img/listen.md",
     "area/참고링크.md",
@@ -188,7 +190,6 @@
     "resource/Network/기초 개념/브로드캐스트 도메인.md",
     "resource/Language/C++/가상 상속.md",
     "resource/Network/기초 개념/IP 주소.md",
-    "resource/Network/기초 개념/IP.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
@@ -199,14 +200,12 @@
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart",
     "project/42Seoul/microshell",
-    "resource/Computer Science/Graphics",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/static 키워드/static 멤버변수.png",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "Pasted image 20240506125304.png",
     "Pasted image 20240506124414.png",
-    "Pasted image 20240506124406.png",
-    "img/NetPractice/NetPractice_lv3_after.png"
+    "Pasted image 20240506124406.png"
   ]
 }
