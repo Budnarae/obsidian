@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0eb7a6091ece56e2",
+        "id": "eed35f289e7f5bca",
         "type": "tabs",
         "children": [
           {
-            "id": "4410f8f935a0ad17",
+            "id": "1ed85993b1921b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/기초 개념/게이트웨이.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/기초 개념/게이트웨이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/기초 개념/게이트웨이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/소켓 프로그래밍(리눅스)/accept.md"
+                "file": "resource/Network/기초 개념/게이트웨이.md"
               }
             }
           },
@@ -158,15 +158,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4410f8f935a0ad17",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/소켓 프로그래밍(리눅스)/틀 3.md",
-    "resource/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/소켓 프로그래밍(리눅스)/틀 2.md",
-    "resource/소켓 프로그래밍(리눅스)/틀 1.md",
-    "resource/소켓 프로그래밍(리눅스)/틀.md",
-    "resource/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
-    "resource/소켓 프로그래밍(리눅스)/listen.md",
+    "resource/Network/기초 개념",
+    "resource/정확도와 정밀도.md",
+    "project/42Seoul/NetPractice.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 3.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "연결 요청 대기 큐.md",
     "resource/Language/C++/가상 함수 테이블.md",
     "img/listen/연결 요청 대기 큐.png",
@@ -175,20 +178,17 @@
     "area/참고링크.md",
     "area/참고도서.md",
     "resource/ANSI escape code.md",
-    "resource/Network/콜리전 도메인.md",
-    "resource/Network/유니캐스트.md",
-    "resource/Network/OSI 참조 모델.md",
-    "resource/Network/공인 IP 주소.md",
-    "resource/Network/브로드캐스트.md",
-    "resource/Network/멀티캐스트.md",
-    "resource/Network/브로드캐스트 도메인.md",
+    "resource/Network/기초 개념/콜리전 도메인.md",
+    "resource/Network/기초 개념/유니캐스트.md",
+    "resource/Network/기초 개념/OSI 참조 모델.md",
+    "resource/Network/기초 개념/공인 IP 주소.md",
+    "resource/Network/기초 개념/브로드캐스트.md",
+    "resource/Network/기초 개념/멀티캐스트.md",
+    "resource/Network/기초 개념/브로드캐스트 도메인.md",
     "resource/Language/C++/가상 상속.md",
-    "resource/Network/IP 주소.md",
-    "resource/Network/IP.md",
-    "resource/Network/LAN.md",
-    "resource/Network/MAC 주소.md",
-    "resource/Network/NIC.md",
-    "resource/소켓 프로그래밍(리눅스)",
+    "resource/Network/기초 개념/IP 주소.md",
+    "resource/Network/기초 개념/IP.md",
+    "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
     "project/42Seoul/cpp module 09",
