@@ -160,6 +160,8 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "img/TCP 소켓",
+    "img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
@@ -190,7 +192,6 @@
     "resource/Language/C++/가상 함수 테이블.md",
     "img/listen",
     "img/listen.md",
-    "area/참고링크.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
@@ -206,7 +207,6 @@
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
     "img/얕은 복사, 깊은 복사/얕은 복사.png",
     "Pasted image 20240506125304.png",
-    "Pasted image 20240506124414.png",
-    "Pasted image 20240506124406.png"
+    "Pasted image 20240506124414.png"
   ]
 }
