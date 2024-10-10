@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1148bdd84361aeef",
+        "id": "a3520733ee70e57e",
         "type": "tabs",
         "children": [
           {
-            "id": "ee4e794915ba1dd6",
+            "id": "5beb8c275ed28795",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,15 +158,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ee4e794915ba1dd6",
+  "active": "5beb8c275ed28795",
   "lastOpenFiles": [
+    "img/TCP 소켓/tcp 소켓의 연결종료 과정.png",
+    "img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
+    "img/TCP 소켓/tcp 소켓의 데이터 송신 오류.png",
+    "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "img/무제 폴더",
     "img/TCP 소켓/tcp 소켓의 연결 설정 과정.png",
     "img/TCP 소켓",
-    "img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
@@ -202,11 +204,8 @@
     "img/가상 함수 테이블/가상 함수 테이블.png",
     "resource/Computer Science/Network.zip",
     "project/42Seoul/microshell/무제 파일.canvas",
-    "project/42Seoul/microshell/flowchart",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/static 키워드/static 멤버변수.png",
-    "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
-    "img/얕은 복사, 깊은 복사/얕은 복사.png",
-    "Pasted image 20240506125304.png"
+    "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png"
   ]
 }
