@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md"
               }
             }
           },
@@ -160,6 +160,7 @@
   },
   "active": "5beb8c275ed28795",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
@@ -176,7 +177,6 @@
     "img/TCP 소켓/tcp 소켓의 연결 설정 과정.png",
     "img/TCP 소켓",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
