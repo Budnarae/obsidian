@@ -160,6 +160,7 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "img/listen/tcp 소켓의 연결 설정 과정.png",
     "img/TCP 소켓",
     "img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
@@ -201,7 +202,6 @@
     "resource/Computer Science/Network.zip",
     "project/42Seoul/microshell/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart",
-    "project/42Seoul/microshell",
     "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png",
     "img/static 키워드/static 멤버변수.png",
     "img/얕은 복사, 깊은 복사/얕은 복사 깊은 복사.png",
