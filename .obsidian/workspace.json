@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-                "mode": "preview",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -160,7 +160,11 @@
   },
   "active": "ee4e794915ba1dd6",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
@@ -172,8 +176,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "template/참고자료.md",
     "img/listen/연결 요청 대기 큐.png",
     "img/accept",
@@ -182,7 +184,6 @@
     "resource/Network/기초 개념",
     "resource/정확도와 정밀도.md",
     "project/42Seoul/NetPractice.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
     "연결 요청 대기 큐.md",
@@ -190,7 +191,6 @@
     "img/listen",
     "img/listen.md",
     "area/참고링크.md",
-    "area/참고도서.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
