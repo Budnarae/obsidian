@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md"
               }
             }
           },
@@ -161,10 +161,10 @@
   },
   "active": "5beb8c275ed28795",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "img/Half-close/소켓을 기반으로 생성되는 두 개의 스트림.png",
     "img/Half-close",
-    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
