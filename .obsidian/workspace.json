@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md"
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md"
               }
             }
           },
@@ -161,11 +161,11 @@
   },
   "active": "5beb8c275ed28795",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
     "img/Half-close/일방적 연결종료.png",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "img/Half-close/소켓을 기반으로 생성되는 두 개의 스트림.png",
     "img/Half-close",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
@@ -207,7 +207,6 @@
     "project/42Seoul/cpp module 09",
     "project/42Seoul/microshell.zip",
     "img/가상 함수 테이블/가상 함수 테이블.png",
-    "project/42Seoul/microshell/무제 파일.canvas",
-    "img/연산자 오버로딩/디폴트 대입 연산자의 동작(얕은 복사).png"
+    "project/42Seoul/microshell/무제 파일.canvas"
   ]
 }
