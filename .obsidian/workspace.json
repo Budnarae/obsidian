@@ -11,8 +11,13 @@
             "id": "5beb8c275ed28795",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md"
+              }
             }
           },
           {
@@ -151,6 +160,10 @@
   },
   "active": "5beb8c275ed28795",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 3.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
@@ -181,12 +194,9 @@
     "resource/Network/기초 개념",
     "resource/정확도와 정밀도.md",
     "project/42Seoul/NetPractice.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
     "연결 요청 대기 큐.md",
-    "resource/Language/C++/가상 함수 테이블.md",
     "img/listen",
-    "img/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
