@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "a3520733ee70e57e",
+        "id": "0162d51d3fd77df9",
         "type": "tabs",
         "children": [
           {
-            "id": "5beb8c275ed28795",
+            "id": "c49102dd28a900e9",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -150,7 +150,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5beb8c275ed28795",
+  "active": "c49102dd28a900e9",
   "lastOpenFiles": [
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
