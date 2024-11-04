@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/컨테이너.md",
+                "file": "resource/Docker/이미지.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "컨테이너"
+              "title": "이미지"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Docker/컨테이너.md",
+                "file": "resource/Docker/이미지.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "컨테이너의 백링크"
+              "title": "이미지의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Docker/컨테이너.md",
+                "file": "resource/Docker/이미지.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "컨테이너의 나가는 링크"
+              "title": "이미지의 나가는 링크"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/컨테이너.md"
+                "file": "resource/Docker/이미지.md"
               },
               "icon": "lucide-list",
-              "title": "컨테이너 개요"
+              "title": "이미지 개요"
             }
           },
           {
@@ -178,8 +178,8 @@
   },
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Docker/컨테이너.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "img/컨테이너",
     "img/컨테이너/컨테이너의 구조.png",
     "resource/Docker/도커 허브.md",
