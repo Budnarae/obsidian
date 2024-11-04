@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 허브.md",
+                "file": "resource/Docker/컨테이너.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 허브"
+              "title": "컨테이너"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Docker/도커 허브.md",
+                "file": "resource/Docker/컨테이너.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "도커 허브의 백링크"
+              "title": "컨테이너의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Docker/도커 허브.md",
+                "file": "resource/Docker/컨테이너.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "도커 허브의 나가는 링크"
+              "title": "컨테이너의 나가는 링크"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커 허브.md"
+                "file": "resource/Docker/컨테이너.md"
               },
               "icon": "lucide-list",
-              "title": "도커 허브 개요"
+              "title": "컨테이너 개요"
             }
           },
           {
@@ -179,8 +179,8 @@
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
     "resource/Docker/컨테이너.md",
-    "resource/Docker/도커.md",
     "resource/Docker/도커 허브.md",
+    "resource/Docker/도커.md",
     "resource/Docker/이미지.md",
     "area/흑요석 공예.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
