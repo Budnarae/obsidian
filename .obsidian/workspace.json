@@ -178,12 +178,14 @@
   },
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Docker/컨테이너.md",
+    "img/컨테이너",
+    "img/컨테이너/컨테이너의 구조.png",
     "resource/Docker/도커 허브.md",
     "resource/Docker/도커.md",
     "resource/Docker/이미지.md",
     "area/흑요석 공예.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
@@ -203,7 +205,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/정확도와 정밀도.md",
     "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
@@ -223,8 +224,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)",
     "template",
     "무제 파일.canvas",
-    "project/42Seoul/cpp module 09",
-    "img/가상 함수 테이블/가상 함수 테이블.png",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
 }
