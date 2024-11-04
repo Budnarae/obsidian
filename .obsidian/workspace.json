@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/마운트.md",
+                "file": "resource/Docker/도커.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "마운트"
+              "title": "도커"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#obsidian",
+                "query": "tag:#docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Docker/마운트.md",
+                "file": "resource/Docker/도커.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "마운트의 백링크"
+              "title": "도커의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Docker/마운트.md",
+                "file": "resource/Docker/도커.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "마운트의 나가는 링크"
+              "title": "도커의 나가는 링크"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/마운트.md"
+                "file": "resource/Docker/도커.md"
               },
               "icon": "lucide-list",
-              "title": "마운트 개요"
+              "title": "도커 개요"
             }
           },
           {
@@ -178,8 +178,8 @@
   },
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
-    "resource/Docker/도커 허브.md",
     "resource/Docker/마운트.md",
+    "resource/Docker/도커 허브.md",
     "resource/Docker/컨테이너.md",
     "resource/Docker/이미지.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
