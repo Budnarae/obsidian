@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Docker/도커 허브.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커"
+              "title": "도커 허브"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Docker/도커 허브.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "도커의 백링크"
+              "title": "도커 허브의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Docker/도커 허브.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "도커의 나가는 링크"
+              "title": "도커 허브의 나가는 링크"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커.md"
+                "file": "resource/Docker/도커 허브.md"
               },
               "icon": "lucide-list",
-              "title": "도커 개요"
+              "title": "도커 허브 개요"
             }
           },
           {
@@ -176,8 +176,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4759f83d978844ac",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Docker/컨테이너.md",
+    "resource/Docker/도커.md",
+    "resource/Docker/도커 허브.md",
+    "resource/Docker/이미지.md",
     "area/흑요석 공예.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
@@ -200,10 +204,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/정확도와 정밀도.md",
-    "resource/Language/C++/정보은닉.md",
-    "resource/Language/C++/가상 소멸자.md",
-    "resource/Language/C++/함수 오버로딩.md",
-    "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
