@@ -1,7 +1,7 @@
 
 ---
 
-#network #c #socket_programming #linux
+#network #language/c #socket_programming #linux
 
 *주소 정보의 표현*
 

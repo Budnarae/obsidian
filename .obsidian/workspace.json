@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Language/C++/형 변환.md",
+                "file": "area/흑요석 공예.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "형 변환"
+              "title": "흑요석 공예"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#language",
+                "query": "tag:#obsidian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Language/C++/형 변환.md",
+                "file": "area/흑요석 공예.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "형 변환의 백링크"
+              "title": "흑요석 공예의 백링크"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Language/C++/형 변환.md",
+                "file": "area/흑요석 공예.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "형 변환의 나가는 링크"
+              "title": "흑요석 공예의 나가는 링크"
             }
           },
           {
@@ -140,10 +141,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Language/C++/형 변환.md"
+                "file": "area/흑요석 공예.md"
               },
               "icon": "lucide-list",
-              "title": "형 변환 개요"
+              "title": "흑요석 공예 개요"
             }
           },
           {
@@ -178,33 +179,33 @@
   },
   "active": "518d994566516148",
   "lastOpenFiles": [
-    "resource/Docker/도커.md",
-    "area/참고도서.md",
-    "resource/정확도와 정밀도.md",
-    "resource/ANSI escape code.md",
-    "resource/무제 파일.md",
-    "resource/Docker",
-    "resource/Language/C++/a reference.md",
-    "resource/Language/C++/explicit 키워드.md",
-    "resource/Language/C++/C++ 언어의 헤더파일 형식.md",
-    "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
-    "resource/Language/C++/C++ 언어의 객체 배열.md",
-    "resource/Language/C++/C++ 언어의 bool 자료형.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/정확도와 정밀도.md",
+    "resource/Language/C++/정보은닉.md",
+    "resource/Language/C++/가상 소멸자.md",
+    "resource/Language/C++/함수 오버로딩.md",
+    "resource/Language/C++/C++ 언어의 bool 자료형.md",
+    "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
+    "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
     "img/Half-close/일방적 연결종료.png",

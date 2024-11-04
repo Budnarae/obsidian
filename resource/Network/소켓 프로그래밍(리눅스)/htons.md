@@ -1,7 +1,7 @@
 
 ---
 
-#network #c #socket_programming #linux
+#network #language/c #socket_programming #linux
 
 *htons는 [[호스트 바이트 순서 | host network byte order]] to [[네트워크 바이트 순서 | network byte order]] - short variable의 약자이다.*
 

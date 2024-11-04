@@ -1,7 +1,7 @@
 
 ---
 
-#network #c #socket_programming #linux
+#network #language/c #socket_programming #linux
 
 *연결 요청 대기 상태로의 진입*
 

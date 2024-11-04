@@ -1,7 +1,7 @@
 
 ---
 
-#network #c #socket_programming #linux
+#network #language/c #socket_programming #linux
 
 *스트림의 절반만 닫는다*
 

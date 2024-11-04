@@ -1,7 +1,7 @@
 
 ---
 
-#network #c #socket_programming #linux
+#network #language/c #socket_programming #linux
 
 *클라이언트의 연결 요청 수락*
 

@@ -1,7 +1,7 @@
 
 ---
 
-#language #cpp 
+#language/cpp 
 
 *동적 메모리 할당*
 
