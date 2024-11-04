@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "766995bd13b451b3",
+        "id": "1fc38f85f3623b5b",
         "type": "tabs",
         "children": [
           {
-            "id": "518d994566516148",
+            "id": "4759f83d978844ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "resource/Docker/도커.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "흑요석 공예"
+              "title": "도커"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "resource/Docker/도커.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "흑요석 공예의 백링크"
+              "title": "도커의 백링크"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "area/흑요석 공예.md",
+                "file": "resource/Docker/도커.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "흑요석 공예의 나가는 링크"
+              "title": "도커의 나가는 링크"
             }
           },
           {
@@ -141,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "area/흑요석 공예.md"
+                "file": "resource/Docker/도커.md"
               },
               "icon": "lucide-list",
-              "title": "흑요석 공예 개요"
+              "title": "도커 개요"
             }
           },
           {
@@ -177,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "518d994566516148",
+  "active": "4759f83d978844ac",
   "lastOpenFiles": [
+    "area/흑요석 공예.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
@@ -204,7 +204,6 @@
     "resource/Language/C++/가상 소멸자.md",
     "resource/Language/C++/함수 오버로딩.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
-    "resource/Language/C++/C++ 언어의 변수 선언과 초기화.md",
     "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
