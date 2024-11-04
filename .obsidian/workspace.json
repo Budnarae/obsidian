@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Language/C++/형 변환.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커"
+              "title": "형 변환"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Language/C++/형 변환.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "도커의 백링크"
+              "title": "형 변환의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Language/C++/형 변환.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "도커의 나가는 링크"
+              "title": "형 변환의 나가는 링크"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커.md"
+                "file": "resource/Language/C++/형 변환.md"
               },
               "icon": "lucide-list",
-              "title": "도커 개요"
+              "title": "형 변환 개요"
             }
           },
           {
@@ -178,9 +178,10 @@
   },
   "active": "518d994566516148",
   "lastOpenFiles": [
+    "resource/Docker/도커.md",
+    "area/참고도서.md",
     "resource/정확도와 정밀도.md",
     "resource/ANSI escape code.md",
-    "resource/Docker/도커.md",
     "resource/무제 파일.md",
     "resource/Docker",
     "resource/Language/C++/a reference.md",
@@ -204,7 +205,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
     "img/Half-close/일방적 연결종료.png",
