@@ -157,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -176,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4759f83d978844ac",
+  "active": "96ad26511009b524",
   "lastOpenFiles": [
     "resource/Docker/도커.md",
     "resource/Linux/ssh.md",
