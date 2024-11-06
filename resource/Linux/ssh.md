@@ -49,14 +49,17 @@ ssh는 원격으로 다른 환경에 연결하기 위한 도구이다.
 2. `f1 -> Remote-SSH: Connect to Host... -> Add New SHH Host...` 실행
 3. `ssh -p <port> <계정>@<ip 주소>` 입력
 4. SSH configuration file을 저장할 장소 선택(~/.ssh/config가 일반적이다.)
-5. 4의 configuration file은 아래와 같이 수정할 수 있다.
-	```
-	Host []
-	HostName [ip addr]
-	User [account_name]
-	Port [port number]
-	IdentityFile [key location]
-	```
+5. 연결 완료
+
+향후 연결을 더 편하게 하고 싶으면 4의 configuration file을 아래와 같이 수정할 수 있다.
+
+```
+Host [연결 시 ip 주소 대신 사용하는 단축키를 설정]
+HostName [연결 대상 ip 주소]
+User [연결에 사용할 계정]
+Port [연결 대상 port. 서버가 default port인 22번 포트를 사용하면 필요 없음]
+IdentityFile [인증에 사용할 ssh private key 경로. 공개 키 인증을 하지 않는다면 필요 없다]
+```
 
 ---
 
