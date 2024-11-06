@@ -30,10 +30,10 @@ ssh는 원격으로 다른 환경에 연결하기 위한 도구이다.
 #### 공개키를 사용한 연결
 
 1. 클라이언트 측에서 다음의 명령어를 실행해 ssh 키 한 쌍을 생성한다. 
-	- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	- `ssh-keygen -t rsa -b 4096 -C "comment"
 	- `-t rsa` : rsa 알고리즘으로 키를 생성
 	- `-b 4096` : 4096 비트 길이의 키를 생성
-	- `-C "your_email@example.com"` : 키에 대한 코멘트를 입력 (보통 이메일 주소를 입력)
+	- `-C "comment"` : 키에 대한 코멘트를 입력 (보통 이메일 주소를 입력)
 	- 생성된 키는 ~/.ssh/id_rsa, id_rsa_pub의 형태로 저장된다.
 2. 1의 명령어를 입력하면 다음과 같은 질문이 나온다.
 	1. **파일 이름**: 기본 경로인 `~/.ssh/id_rsa`를 그대로 사용하려면 Enter 입력
