@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커.md",
+                "file": "resource/Linux/ssh.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커"
+              "title": "ssh"
             }
           }
         ]
@@ -178,6 +178,9 @@
   },
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
+    "resource/Docker/도커.md",
+    "resource/Linux/ssh.md",
+    "resource/Linux",
     "img/도커",
     "img/도커/도커의 구조.jpeg",
     "resource/Docker/마운트.md",
@@ -187,7 +190,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "img/컨테이너",
     "img/컨테이너/컨테이너의 구조.png",
-    "resource/Docker/도커.md",
     "area/흑요석 공예.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
@@ -222,8 +224,6 @@
     "img/accept",
     "resource/Network/기초 개념",
     "img/listen",
-    "resource/Network/소켓 프로그래밍(리눅스)",
-    "template",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
