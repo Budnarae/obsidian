@@ -45,7 +45,18 @@ ssh는 원격으로 다른 환경에 연결하기 위한 도구이다.
 
 #### vscode의 remote developement 확장 사용법
 
-1. remote
+1. vscode의 remote developement을 설치한다.
+2. `f1 -> Remote-SSH: Connect to Host... -> Add New SHH Host...` 실행
+3. `ssh -p <port> <계정>@<ip 주소>` 입력
+4. SSH configuration file을 저장할 장소 선택(~/.ssh/config가 일반적이다.)
+5. 4의 configuration file은 아래와 같이 수정할 수 있다.
+	```
+	Host []
+	HostName [ip addr]
+	User [account_name]
+	Port [port number]
+	IdentityFile [key location]
+	```
 
 ---
 
