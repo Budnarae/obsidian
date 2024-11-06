@@ -22,7 +22,9 @@ ssh는 원격으로 다른 환경에 연결하기 위한 도구이다.
 |  PubkeyAuthentication  |     공개키를 사용한 인증 허용 여부      | yes / no |
 |    PermitRootLogin     |     root 계정으로의 연결 허용 여부      | yes / no / **prohibit-password(공개키를 사용한 연결만 허용)**         |
 
-4. 클라이언트 측에서 다음의 명령어를 실행한다. `ssh -p <연결에_사용할_port> <계정_id>@<서버의_ip주소>`
+4. 클라이언트 측에서 다음의 명령어를 실행한다. 
+	- `ssh -p <연결에_사용할_port> <계정_id>@<서버의_ip주소>`
+	- ssh 서버 측에서 default port인 22번 포트를 사용할 경우 -p 옵션은 불필요하다.
 5. 서버 측에서 연결을 위해 계정의 비밀번호를 요구한다(Permission denied가 뜨는 경우 서버 측의 PasswordAuthentication 옵션을 확인하자).
 
 #### 공개키를 사용한 연결
@@ -35,7 +37,9 @@ ssh는 원격으로 다른 환경에 연결하기 위한 도구이다.
 2. 1의 명령어를 입력하면 다음과 같은 질문이 나온다.
 	1. **파일 이름**: 기본 경로인 `~/.ssh/id_rsa`를 그대로 사용하려면 Enter 입력
 	2. **패스프레이즈**: 비밀번호를 입력하여 추가 보안을 설정할 수 있음. 비밀번호 없이 진행하려면 Enter 입력
-3. ssh 키 중 공개키는 서버의 ~/.ssh/authorized_keys 파일에 등록하고
+3. ssh 키 중 공개키는 서버의 ~/.ssh/authorized_keys 파일에 등록하고, private 키는 클라이언트 측에서 지니고 있다 연결에 사용해야 한다.
+4. 공개 키를 클라이언트 측에서 서버의 ~/.ssh/authorized_keys 파일에 등록하려면 서버에 연결된 상태에서 아래의 명령어를 사용한다.
+	- `ssh-copy-id <user>`
 
 ---
 
