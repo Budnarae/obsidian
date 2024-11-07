@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 커맨드.md",
+                "file": "resource/Docker/도커 명령어.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 커맨드"
+              "title": "도커 명령어"
             }
           }
         ]
@@ -180,7 +180,7 @@
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
     "resource/Docker/도커.md",
-    "resource/Docker/도커 커맨드.md",
+    "resource/Docker/도커 명령어.md",
     "resource/Docker/마운트.md",
     "resource/Linux/ssh.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
