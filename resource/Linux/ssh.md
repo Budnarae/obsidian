@@ -61,10 +61,3 @@ Port [연결 대상 port. 서버가 default port인 22번 포트를 사용하면
 IdentityFile [인증에 사용할 ssh private key 경로. 공개 키 인증을 하지 않는다면 필요 없다]
 ```
 
----
-
-참고자료
-
-
-
----

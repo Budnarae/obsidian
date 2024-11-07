@@ -13,29 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Linux/ssh.md",
-                "mode": "preview",
+                "file": "resource/Docker/도커 커맨드.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ssh"
-            }
-          },
-          {
-            "id": "b5ccc8e2a581d4c2",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.5"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "title": "도커 커맨드"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -191,14 +177,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5ccc8e2a581d4c2",
+  "active": "4759f83d978844ac",
   "lastOpenFiles": [
     "resource/Docker/도커.md",
+    "resource/Docker/도커 커맨드.md",
+    "resource/Docker/마운트.md",
     "resource/Linux/ssh.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Linux",
     "img/도커",
     "img/도커/도커의 구조.jpeg",
-    "resource/Docker/마운트.md",
     "resource/Docker/도커 허브.md",
     "resource/Docker/컨테이너.md",
     "resource/Docker/이미지.md",
@@ -219,11 +209,7 @@
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 2.md",
     "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
