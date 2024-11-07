@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 명령어.md",
+                "file": "resource/Docker/네트워크.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 명령어"
+              "title": "네트워크"
             }
           }
         ]
@@ -179,8 +179,9 @@
   },
   "active": "4759f83d978844ac",
   "lastOpenFiles": [
-    "resource/Docker/도커.md",
     "resource/Docker/도커 명령어.md",
+    "resource/Docker/네트워크.md",
+    "resource/Docker/도커.md",
     "resource/Docker/마운트.md",
     "resource/Linux/ssh.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
@@ -209,7 +210,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Docker",
     "img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
