@@ -37,6 +37,12 @@ nginx가 동작하는 방식은 configuration 파일에 의해 정의된다. 일
 - `/etc/nginx`
 - `/usr/local/etc/nginx`
 
+# 설치
+
+[nginx 공식 문서](https://nginx.org/en/docs/install.html) 참조
+
+# Beginner's Guide
+
 ## 시작, 정지, 그리고 설정 파일 리로딩
 
 nginx를 시작하기 위해선 실행파일을 동작시킨다.
@@ -239,6 +245,8 @@ server {
     }
 }
 ```
+
+> 위의 서버 블록은 `localhost:9000`으로 들어오는 모든 요청을 FastCGI 서버로 전달해주는 역할을 한다.
 
 ---
 
