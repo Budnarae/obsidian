@@ -37,8 +37,7 @@
               "title": "도커 명령어"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커 명령어.md"
+                "file": "project/42Seoul/inception/NGINX.md"
               },
               "icon": "lucide-list",
-              "title": "도커 명령어 개요"
+              "title": "NGINX 개요"
             }
           },
           {
@@ -193,10 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57f88888ab6f8184",
+  "active": "f60b3abbdead77e5",
   "lastOpenFiles": [
-    "project/42Seoul/inception/NGINX.md",
     "resource/Docker/도커 명령어.md",
+    "project/42Seoul/inception/NGINX.md",
     "www.nginx.org.md",
     "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
