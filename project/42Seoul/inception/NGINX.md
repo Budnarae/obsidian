@@ -72,6 +72,16 @@ unix의 kill 유틸리티를 이용하여 신호를 보낼 수도 있다. 이 �
 
 `ps -ax | grep nginx`
 
+## Configuration 파일의 구조
+
+nginx는 configuration 파일에 열거된 지시 사항(directives)을 따른다. 지시 사항은 단순한 지시사항(simple directives)와 블록 지시사항(block directives)로 나뉜다.
+
+단순한 지시사항은 아래와 같은 형식을 취한다.
+
+`name parameter;`
+
+
+
 ---
 
 참고자료
