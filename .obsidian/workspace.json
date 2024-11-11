@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 명령어.md",
+                "file": "project/42Seoul/inception/NGINX.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 명령어"
+              "title": "NGINX"
             }
           }
         ]
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커 명령어.md"
+                "file": "project/42Seoul/inception/NGINX.md"
               },
               "icon": "lucide-list",
-              "title": "도커 명령어 개요"
+              "title": "NGINX 개요"
             }
           },
           {
@@ -179,6 +179,7 @@
   },
   "active": "f60b3abbdead77e5",
   "lastOpenFiles": [
+    "resource/Docker/도커 명령어.md",
     "project/42Seoul/inception/NGINX.md",
     "www.nginx.org.md",
     "area/참고링크.md",
@@ -190,7 +191,6 @@
     "재료",
     "resource/Docker/Dockerfile.md",
     "resource/Docker/네트워크.md",
-    "resource/Docker/도커 명령어.md",
     "resource/Docker/도커 허브.md",
     "resource/Docker/이미지.md",
     "resource/Docker/마운트.md",
