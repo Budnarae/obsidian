@@ -29,7 +29,22 @@ nginx가 동작하는 방식은 configuration 파일에 의해 정의된다. 일
 - `/etc/nginx`
 - `/usr/local/etc/nginx`
 
-## 
+## 시작, 정지, 그리고 설정 파일 리로딩
+
+nginx를 시작하기 위해선 실행파일을 동작시킨다.
+
+동작 중인 nginx를 제어하기 위해서는 -s 매개변수를 사용하여 응용 프로그램을 동작시킨다.
+다음의 문법을 따른다.
+
+`nginx -s <signal>`
+
+**signal** 위치에는 다음의 인자들이 위치할 수 있다.
+- stop : 빠른 강제 종료
+- quit : 우아한(graceful) 종료
+- reload : configuration file을 reload함
+- reopen : log 파일을 다시 염
+
+예를 
 
 ---
 
