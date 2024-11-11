@@ -82,6 +82,13 @@ nginx는 configuration 파일에 열거된 지침(directives)을 따른다. 지�
 
 블록 지침은 다른 여러 개의 지침들을 `{`, `}`로 둘러싸는 형태로 보유할 수 있으며, 이를 context(문맥)라고 부른다(예 : events, http, server, location).
 
+```
+http {
+	server {
+	}
+}
+```
+
 configuration 파일에 있는 모든 지침들은 어디에 위치해있던지 main context에 존재하는 것으로 간주한다(*오역의 가능성 있음*).
 
 `#` 기호 뒤에 오는 문장은 주석으로 간주한다.
@@ -94,6 +101,11 @@ html 파일은 보통 `/data/www` 디렉토리에 위치해 있고
 이미지 파일은 보통 `/data/images`에 위치해 있다.
 
 http 블록 내부의 server 블록에 두 개의 location 블록을 설정함으로서 이를 설정할 수 있다.
+아래와 같은 절차를 통해 예제를 진행해보자.
+
+1. `/data/www` 디렉토리를 만든 후 그 안에 `index.html`을 위치시킨다. `index.html`에는 어떠한 내용이 있어도 괜찮다.
+2. `/data/image` 디렉토리를 만든 후 그 안에 아무 이미지나 넣는다.
+3. configuration 파일을 연다. 파일 안에는 이미 여러 개의 server 블록이 있을 것이고 그 중에서는 주석 처리가 된 것도, 그렇지 않은 것도 있을 것이다. 주석 처리되지 않은 모든 server 블록을 주석처리하고 아래와 같이 새로운 seer
 
 ---
 
