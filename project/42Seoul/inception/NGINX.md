@@ -124,7 +124,14 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 	}
 	```
 
+	```
+	location /images/ {
+		root /data;
+	}
+	```
 
+> URI의 경로는 root 지침의 인자와 location 지침의 인자를 조합한 결과물과 대조된다. `/data/images` 블록을 보면 경로가 역순으로 되어 있는데(하위 디렉토리인 /images/ 가 상단에 있고 상위 디렉토리인 /data/가 하단에 있음) 이는 탐색의 효율성을 위해서이다.
+> 코드가 모두 그러하듯 configuration 파일도 위에서 아래로 읽는다.
 
 ---
 
