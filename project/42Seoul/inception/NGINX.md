@@ -39,12 +39,23 @@ nginx를 시작하기 위해선 실행파일을 동작시킨다.
 `nginx -s <signal>`
 
 **signal** 위치에는 다음의 인자들이 위치할 수 있다.
+
 - stop : 빠른 강제 종료
 - quit : 우아한(graceful) 종료
 - reload : configuration file을 reload함
 - reopen : log 파일을 다시 염
 
-예를 
+예를 들어, 현재 요청을 처리하기 위해 동작 중인 worker 프로세스들을 정지하기 위해서는 아래의 커맨드를 동작한다.
+
+`nginx -s quit`
+
+> 이 커맨드는 nginx를 실행시킨 유저와 동일한 유저에 의하여 호출되어야 한다.
+
+configuration 파일이 수정되어도 그것이 reload 되거나 nginx가 다시 시작하기 전까지는 수정사항이 반영되지 않는다. configuration 파일을 reload 하려면 아래의 커맨드를 동작시킨다.
+
+`nginx -s reload`
+
+
 
 ---
 
