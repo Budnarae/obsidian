@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/inception/무제 파일.md",
+                "file": "project/42Seoul/inception/NGINX.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "무제 파일"
+              "title": "NGINX"
             }
           }
         ]
@@ -157,11 +157,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,10 +179,11 @@
   },
   "active": "540fbbd48f0bb408",
   "lastOpenFiles": [
+    "project/42Seoul/inception/NGINX.md",
+    "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
     "재료/template/개요.md",
     "재료/template/참고자료.md",
-    "project/42Seoul/inception/무제 파일.md",
     "resource/Docker/도커 컴포즈.md",
     "project/42Seoul/inception",
     "재료",
@@ -210,7 +212,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Docker",
     "재료/img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
