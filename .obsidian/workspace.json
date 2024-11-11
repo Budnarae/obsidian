@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/도커.md"
+                "file": "project/42Seoul/inception/NGINX.md"
               },
               "icon": "lucide-list",
-              "title": "도커 개요"
+              "title": "NGINX 개요"
             }
           },
           {
@@ -157,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
