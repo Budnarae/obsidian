@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ed23177bfc245b4b",
+        "id": "2a066d71683f9114",
         "type": "tabs",
         "children": [
           {
-            "id": "540fbbd48f0bb408",
+            "id": "f60b3abbdead77e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -177,8 +177,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "540fbbd48f0bb408",
+  "active": "f60b3abbdead77e5",
   "lastOpenFiles": [
+    "www.nginx.org.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
@@ -211,7 +212,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Docker",
     "재료/img/Half-close/파일 전송 데이터 흐름도.png",
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
