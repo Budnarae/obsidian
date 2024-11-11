@@ -137,7 +137,13 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 
 위 과정이 완료되면 위 설정 파일은 80 포트(nginx의 기본 포트이다)로 웹 서비스를 제공하라는 의미를 가지게 된다.
 
-`http://localhost/` 뒤에 `/images`
+`http://localhost/` 뒤에 `/images/`가 붙으면 `/data/images/`의 파일을 제공하게 된다.
+- ex. `http://localhost/images/example.png` 주소는 `/data/images/example.png`를 제공하라는 뜻
+
+`/images/` 외의 다른 경로는 `/data/www/`의 파일을 제공하게 된다.
+- ex. `http://localhost/images/some/example.html`은 `/data/www/some/example.html`을 제공하라는 뜻
+
+> 예상대로 작업이 수행되지 않는다면 `access.log`와 `error.log` 파일에 이유가 기록되어 있을 수 있다. 두 파일은 보통 `/usr/local/nginx`
 
 ---
 
