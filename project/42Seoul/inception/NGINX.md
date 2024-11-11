@@ -55,6 +55,15 @@ configuration 파일이 수정되어도 그것이 reload 되거나 nginx가 다�
 
 `nginx -s reload`
 
+master 프로세스는 reload configuration 신호를 받으면, 수정된 configuration 파일의 유효성을 확인하고 변경사항을 적용한다.
+
+이 작업이 성공한다면, master 프로세스는 새로운 worker 프로세스를 생성하고 기존에 존재하던 worker 프로세스에게는 종료 명령을 보낸다.
+
+이 작업이 실패한다면, master 프로세스는 변경 사항을 롤백하고 기존 configuration 파일에 따라 작업을 계속한다.
+
+종료 명령을 받은 worker 프로세스는 새로운 요청을 받는 것을 중단한 후, 제공하고 있던 요청(=서비스)를 마저 제공한다. 그런 후 exit 한다.
+
+
 
 
 ---
