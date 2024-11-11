@@ -135,7 +135,9 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 > 따라서 configuration 파일에서는 하위 디렉토리를 location 지침의 인자로, 상위 디렉토리를 root 지침의 인자로 전달한다.
 > 참고로 configuration 파일은 인자의 길이가 긴 location 블록을 우선적으로 탐색한다.
 
+위 과정이 완료되면 위 설정 파일은 80 포트(nginx의 기본 포트이다)로 웹 서비스를 제공하라는 의미를 가지게 된다.
 
+`http://localhost/` 뒤에 `/images`
 
 ---
 
