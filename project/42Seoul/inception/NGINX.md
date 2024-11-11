@@ -93,7 +93,7 @@ configuration 파일에 있는 모든 지침들은 어디에 위치해있던지 
 html 파일은 보통 `/data/www` 디렉토리에 위치해 있고
 이미지 파일은 보통 `/data/images`에 위치해 있다.
 
-http 블록 내부의 server 브
+http 블록 내부의 server 블록에 두 개의 location 블록을 설정함으로서 이를 설정할 수 있다.
 
 ---
 
