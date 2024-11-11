@@ -177,7 +177,22 @@ server
 
 `location / {}`와 같이 location 지침 내부에 아무것도 지정이 안 되어 있을 경우, `root /data/upl;`와 같이 서버 블록이 독자적으로 root 지침을 보유한다.
 
+이제 본격적으로 proxy 서버 설정을 하는 부분을 configuration 파일에 추가해보자.
+[[NGINX#^0bc08f | 정적 컨텐츠 제공하기]]에서 만들었던 server 블록을 아래와 같이 수정한다.
 
+```
+server {
+	location / {
+		proxy_pass http://localhost:8080;
+	}
+
+	location /images/ {
+		root /data;
+	}
+}
+```
+
+`proxy_pass` 지침은 
 
 ---
 
