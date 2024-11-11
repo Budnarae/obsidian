@@ -82,8 +82,13 @@ nginx는 configuration 파일에 열거된 지침(directives)을 따른다. 지�
 
 블록 지침은 다른 여러 개의 지침들을 `{`, `}`로 둘러싸는 형태로 보유할 수 있으며, 이를 context(문맥)라고 부른다(예 : events, http, server, location).
 
-configuration 파일에 있는 모든 지침들은 어디에 위치해있던지 main context에 존재하는 것으로 간주한다.
-예를 들어 events와 http 지침은 main context에 위치하면서도, server의 http,
+configuration 파일에 있는 모든 지침들은 어디에 위치해있던지 main context에 존재하는 것으로 간주한다(*오역의 가능성 있음*).
+
+`#` 기호 뒤에 오는 문장은 주석으로 간주한다.
+
+## 정적 컨텐츠 제공하기
+
+웹 서버의 주요 업무는 이미지나 정적 html 페이지 같은 파일을 제공하는 것이다.
 
 ---
 
