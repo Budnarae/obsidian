@@ -219,6 +219,12 @@ server {
 
 >즉 위 server 블록에서 요청을 처리하기 위한 location 블록을 선택할 때, gif, jpg, pnd 형식의 파일은 모두 로컬의 `/data/images/` 디렉토리로 매핑되고, 그 외 요청은 `localhost:8080` 서버로 넘어간다.
 
+## FastCGI Proxing 구축하기
+
+nginx는 **FastCGI 서버**로 통하는 경로를 요청하는 데 사용될 수도 있다. FastCGI 서버란 다양한 프레임워크와 프로그래밍 언어로 짜여진 응용 프로그램을 실행시켜 주는 서버이다.
+
+FastCGI 서버로의 매핑을 요청하려면 
+
 ---
 
 참고자료
