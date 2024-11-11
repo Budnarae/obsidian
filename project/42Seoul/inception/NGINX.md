@@ -63,8 +63,14 @@ master 프로세스는 reload configuration 신호를 받으면, 수정된 confi
 
 종료 명령을 받은 worker 프로세스는 새로운 요청을 받는 것을 중단한 후, 제공하고 있던 요청(=서비스)를 마저 제공한다. 그런 후 exit 한다.
 
+unix의 kill 유틸리티를 이용하여 신호를 보낼 수도 있다. 이 경우 신호를 보내고자 하는 프로세스의 id를 알아야 한다. nginx master 프로세스의 id는 일반적으로 `/usr/local/nginx/logs/nginx.pid`에 저장되어 있다.
+아래와 같은 명령어를 사용한다.
 
+`kill -s QUIT <nginx master process id>`
 
+`ps` 명령을 통해 현재 동작 중인 nginx 프로세스들의 목록을 가져올 수도 있다.
+
+`ps -ax | grep nginx`
 
 ---
 
