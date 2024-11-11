@@ -161,7 +161,6 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 
 > 예상대로 작업이 수행되지 않는다면 `access.log`와 `error.log` 파일에 이유가 기록되어 있을 수 있다. 두 파일은 보통 `/usr/local/nginx/logs`나 `/var/log/nginx`에 위치해 있다.
 
-
 ## 간단한 프록시 서버 구축하기
 
 ^7fc5ba
