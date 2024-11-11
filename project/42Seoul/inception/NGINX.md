@@ -173,9 +173,9 @@ server
 	}
 ```
 
-`listen` 지침은 해당 서버가 어느 포트를 사용해서 수신할 지를 명시한다. 만약 listen이 server 블록 내에 정의되지 않았다면, 기본 포트인 80포트를 사용하여 수신한다.
-
-`location / {}`와 같이 location 지침 내부에 아무것도 지정이 안 되어 있을 경우, `root /data/upl;`와 같이 서버 블록이 독자적으로 root 지침을 보유한다.
+>`listen` 지침은 해당 서버가 어느 포트를 사용해서 수신할 지를 명시한다. 만약 listen이 server 블록 내에 정의되지 않았다면, 기본 포트인 80포트를 사용하여 수신한다.
+>
+>`location / {}`와 같이 location 지침 내부에 아무것도 지정이 안 되어 있을 경우, `root /data/upl;`와 같이 서버 블록이 독자적으로 root 지침을 보유한다.
 
 이제 본격적으로 proxy 서버 설정을 하는 부분을 configuration 파일에 추가해보자.
 [[NGINX#^0bc08f | 정적 컨텐츠 제공하기]]에서 만들었던 server 블록을 아래와 같이 수정한다.
@@ -192,7 +192,17 @@ server {
 }
 ```
 
-`proxy_pass` 지침은 
+>`proxy_pass` 지침은 클라이언트의 요청을 전달할 proxied 서버의 server name과 포트 번호를 기재한다. 위 configuration 파일의 경우, `http://localhost:8080`이다.
+
+아까의 블록에서 `location /images/` 블록을 아래와 같이 수정한다.
+
+```
+location ~ \.(gif/jpg/png)$ {
+	root /data/images;
+}
+```
+
+`~ \.(gif/jpg/png)`는 
 
 ---
 
