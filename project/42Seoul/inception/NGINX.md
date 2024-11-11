@@ -80,7 +80,7 @@ nginx는 configuration 파일에 열거된 지시 사항(directives)을 따른�
 
 `name parameter;`
 
-
+블록 지시사항은 다른 여러 개의 지시사항들을 `{`, `}`로 둘러싸는 형태로 보유할 수 있으며, 이를 context(문맥)라고 부른다(예 : events, http, server, location).
 
 ---
 
