@@ -202,7 +202,22 @@ location ~ \.(gif/jpg/png)$ {
 }
 ```
 
->위 블록은 파일 중 gif, jpg, png 확장자를 가지는 파일만을 로컬의 `/data/images` 디렉토리로 매핑하겠다는 정규 표현식이다. 이러한 형태의 표현식은 반드시 `~`기호로 시작해야 한다.
+>위 블록은 파일 중 gif, jpg, png 확장자를 가지는 파일만을 로컬의 `/data/images` 디렉토리로 매핑하겠다는 **정규 표현식**이다. 이러한 형태의 표현식은 반드시 `~`기호로 시작해야 한다.
+>nginx가 요청을 처리하기 위해 location 블록을 선택할 때, 먼저 접두사를 지정한 location 지시어를 확인하여 가장 긴 접두사를 기억하고, 그 다음에 정규 표현식을 확인한다. 정규 표현식이 일치하는 경우 nginx는 해당 location을 선택하고, 그렇지 않으면 이전에 기억된 location을 선택한다.
+
+```
+server {
+	location / {
+		proxy_pass http://localhost:8080;
+	}
+
+	location ~ \.(gif/jpg/png)$ {
+		root /data/images;
+	}
+}
+```
+
+>즉 위 server 블록에서 요청을 처리하기 위한 location 블록을 선택할 때, gif, jpg, pnd 형식의 파일은 모두 로컬의 `/data/images/` 디렉토리로 매핑되고, 그 외 요청은 `localhost:8080` 서버로 넘어간다.
 
 ---
 
