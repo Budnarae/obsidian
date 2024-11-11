@@ -116,6 +116,14 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 
 > 일반적으로 configuration 파일 내부에는 수신하고 있는 포트 번호, 그리고 서버의 이름에 따라 여러 개의 server 블록이 있다. nginx는 요청의 헤더 부분에 있는 URI를 분석하여 server 블록 내부의 location 지침에 있는 인자와 대조함으로서 어느 서버가 요청을 수행할지를 결정한다.
 
+4. 다음의 location 블록을 server 블록에 더한다.
+
+	```
+	location / {
+		root /data/www;
+	}
+	```
+
 ---
 
 참고자료
