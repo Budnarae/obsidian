@@ -74,13 +74,16 @@ unix의 kill 유틸리티를 이용하여 신호를 보낼 수도 있다. 이 �
 
 ## Configuration 파일의 구조
 
-nginx는 configuration 파일에 열거된 지시 사항(directives)을 따른다. 지시 사항은 단순한 지시사항(simple directives)와 블록 지시사항(block directives)로 나뉜다.
+nginx는 configuration 파일에 열거된 지침(directives)을 따른다. 지시 사항은 단순한 지침(simple directives)와 블록 지침(block directives)로 나뉜다.
 
-단순한 지시사항은 아래와 같은 형식을 취한다.
+단순한 지침은 아래와 같은 형식을 취한다.
 
 `name parameter;`
 
-블록 지시사항은 다른 여러 개의 지시사항들을 `{`, `}`로 둘러싸는 형태로 보유할 수 있으며, 이를 context(문맥)라고 부른다(예 : events, http, server, location).
+블록 지침은 다른 여러 개의 지침들을 `{`, `}`로 둘러싸는 형태로 보유할 수 있으며, 이를 context(문맥)라고 부른다(예 : events, http, server, location).
+
+configuration 파일에 있는 모든 지침들은 어디에 위치해있던지 main context에 존재하는 것으로 간주한다.
+예를 들어 events와 http 지침은 main context에 위치하면서도, server의 http,
 
 ---
 
