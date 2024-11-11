@@ -158,6 +158,8 @@ http 블록 내부의 server 블록에 두 개의 location 블록을 설정함�
 
 ## 간단한 프록시 서버 구축하기
 
+^7fc5ba
+
 nginx의 주된 기능 중 하나는 **프록시 서버**를 구축하는 것이다. 프록시 서버란 클라이언트부터 요청을 받아 또다른 서버(보통 proxied 서버라 칭한다.)에게 그 요청을 전달해주는, 일종의 중개 역할을 하는 서버를 칭한다.
 
 다음의 예제를 진행하여 단순한 프록시 서버를 만들어보자. 우리가 만들 프록시 서버는 이미지 파일 요청은 로컬 디렉토리에 있는 파일을 제공하고, 다른 요청은 proxied 서버로 전달해주는 기능을 한다.
@@ -223,7 +225,20 @@ server {
 
 nginx는 **FastCGI 서버**로 통하는 경로를 요청하는 데 사용될 수도 있다. FastCGI 서버란 다양한 프레임워크와 프로그래밍 언어로 짜여진 응용 프로그램을 실행시켜 주는 서버이다.
 
-FastCGI 서버로의 매핑을 요청하려면 
+FastCGI 서버로의 매핑을 요청하려면 `fastcgi_pass` 지침에 `server_name:port`의 형태로 인자를 전달해야 한다.
+PHP에서는 스크립트의 이름을 정의하기 위해 `SCRIPT_FILENAME` 인자가 필요하고, 요청 인자를 전달하기 위해 `QUERY_STRING` 인자가 필요하다.
+
+결과적으로 다음과 같은 블록을 사용한다. [[NGINX#^7fc5ba | 간단한 프록시 서버 구축하기]]에서 만든 configuration 파일에 다음 블록을 추가하여 보자.
+
+```
+server {
+    location / {
+        fastcgi_pass  localhost:9000;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param QUERY_STRING    $query_string;
+    }
+}
+```
 
 ---
 
