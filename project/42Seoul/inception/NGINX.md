@@ -172,12 +172,13 @@ nginx의 주된 기능 중 하나는 **프록시 서버**를 구축하는 것이
 [[NGINX#^0bc08f | 정적 컨텐츠 제공하기]]에서 만든 configuration 파일에 아래와 같은 서버 블록을 추가한다.
 
 ```
-server
+server {
 	listen 8080;
 	root /data/upl;
 
 	location / {
 	}
+}
 ```
 
 >`listen` 지침은 해당 서버가 어느 포트를 사용해서 수신할 지를 명시한다. 만약 listen이 server 블록 내에 정의되지 않았다면, 기본 포트인 80포트를 사용하여 수신한다.
