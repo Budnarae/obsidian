@@ -238,6 +238,7 @@ PHP에서는 스크립트의 이름을 정의하기 위해 `SCRIPT_FILENAME` 인
 
 ```
 server {
+	listen 90;
     location / {
         fastcgi_pass  localhost:9000;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -246,7 +247,7 @@ server {
 }
 ```
 
-> 위의 서버 블록은 `localhost:9000`으로 들어오는 모든 요청을 FastCGI 서버로 전달해주는 역할을 한다.
+> 위의 서버 블록은 90 포트로 들어오는 모든 요청을  `localhost:9000`에 위치한 FastCGI 서버로 전달해주는 역할을 한다.
 
 ---
 
