@@ -37,7 +37,8 @@
               "title": "도커 명령어"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,10 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f60b3abbdead77e5",
+  "active": "57f88888ab6f8184",
   "lastOpenFiles": [
-    "resource/Docker/도커 명령어.md",
     "project/42Seoul/inception/NGINX.md",
+    "resource/Docker/도커 명령어.md",
     "www.nginx.org.md",
     "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
