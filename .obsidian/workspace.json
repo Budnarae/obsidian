@@ -36,9 +36,21 @@
               "icon": "lucide-file",
               "title": "도커 명령어"
             }
+          },
+          {
+            "id": "c5be7efce102f54c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.6"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.6"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,7 +205,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57f88888ab6f8184",
+  "active": "c5be7efce102f54c",
   "lastOpenFiles": [
     "project/42Seoul/inception/NGINX.md",
     "resource/Docker/도커 명령어.md",
