@@ -205,7 +205,7 @@ server {
 아까의 블록에서 `location /images/` 블록을 아래와 같이 수정한다.
 
 ```
-location ~ \.(gif/jpg/png)$ {
+location ~ \.(gif|jpg|png)$ {
 	root /data/images;
 }
 ```
