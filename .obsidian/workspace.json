@@ -28,29 +28,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 명령어.md",
+                "file": "resource/Linux/ssh.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 명령어"
-            }
-          },
-          {
-            "id": "c5be7efce102f54c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.6"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.6"
+              "title": "ssh"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,26 +193,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c5be7efce102f54c",
+  "active": "57f88888ab6f8184",
   "lastOpenFiles": [
-    "project/42Seoul/inception/NGINX.md",
+    "resource/Docker/컨테이너.md",
+    "resource/Docker/이미지.md",
+    "resource/Docker/도커 컴포즈.md",
     "resource/Docker/도커 명령어.md",
+    "project/42Seoul/inception/NGINX.md",
     "www.nginx.org.md",
     "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
     "재료/template/개요.md",
     "재료/template/참고자료.md",
-    "resource/Docker/도커 컴포즈.md",
     "project/42Seoul/inception",
     "재료",
     "resource/Docker/Dockerfile.md",
     "resource/Docker/네트워크.md",
     "resource/Docker/도커 허브.md",
-    "resource/Docker/이미지.md",
     "resource/Docker/마운트.md",
     "resource/Docker/도커.md",
     "resource/Docker/볼륨.md",
-    "resource/Docker/컨테이너.md",
     "resource/Linux/ssh.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
