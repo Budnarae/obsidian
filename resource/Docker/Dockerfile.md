@@ -53,11 +53,34 @@ RUN 명령어에 `["/bin/bash", "echo hello >> test2.html"]`과 같이 입력하
 
 이는 JSON 배열의 입력 형식을 따르기 때문에 JSON 형식과 일치해야 한다. 단, JSON 배열 형태로 Dockerfile의 명령어를 사용하면 셸을 실행하지 않는다. 예를 들어, `["echo", "$MY_ENV"]`는 `$MY_ENV` 환경변수를 사용하지 않는다. 이 형태로 셸을 사용하려면  `["sh", "-c", "echo $MY_ENV]`와 같이 사용하는 것이 좋다.
 
-### ADD (또는 COPY)
+### ADD
 
 파일을 이미지에 추가한다. 추가하는 파일은 Dockerfile이 위치한 디렉터리인 컨텍스트(Context)에서 가져온다.
 
 ADD 명령어는 JSON 배열의 형태로 `["추가할 파일 이름", ... "컨테이너에 추가될 위치"]`와 같이 사용할 수 있다. 추가할 파일명은 여러 개를 지정할 수 있으며 배열의 마지막 원소가 컨테이너에 추가될 위치이다.
+
+#### ADD와 COPY
+
+COPY 또한 로컨 리렉터리에서 읽어들인 컨텍스트로부터 이미지에 파일을 복사하는 역할을 한다.
+COPY를 사용하는 형식은 ADD와 같다.
+
+```
+COPY test.html /home/
+COPY ["test.html", "/home/"]
+```
+
+==ADD와 COPY의 차이점==
+
+*COPY는 로컬의 파일만 이미지에 추가할 수 있지만 ADD는 외부 URL 및 tar 파일에서도 파일을 추가할 수 있다는 점에서 다르다.*
+
+즉, COPY의 기능이 ADD에 포함되는 셈이다.
+예를 들어, ADD 명령어는 다음과 같이 사용할 수 있다.
+
+`ADD https://raw.github...../test.html /home`
+
+또는 tar 파일을 추가할 수도 있다. 그러나 tar 파일을 그대로 추가하는 것이 아니라 tar 파일을 자동으로 해체해서 추가한다. 다음 명령어는 test.tar 파일을 이미지의 /home 디렉터리에 푼다.
+
+`ADD test.tar /h`
 
 ### WORKDIR
 
