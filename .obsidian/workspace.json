@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Docker/도커 컴포즈.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -161,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
