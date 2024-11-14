@@ -114,6 +114,22 @@ ARG와 ENV의 값을 사용하는 방법은 `${}`로 같으므로 Dockerfile에�
 
 위의 Dockerfile 예제에서는 `$(my_arg)`의 디렉터리에 mytouch라는 파일을 생성했기 때문에 빌드된 이미지로 컨테이너를 생성해 확인하면 mytouch라는 이름의 파일을 확인할 수 있다.
 
+```
+# docker run -it --name arg_test myarg:0.0
+root@ccdlakjldj:/# ls /home/mytouch
+/home/mytouch
+```
+
+### USER
+
+USER로 컨테이너 내에서 사용될 사용자 계정의 이름이나 UID를 설정하면 그 아래의 명령어는 해당 사용자 권한으로 실행된다. 일반적으로 RUN으로 사용자의 그룹과 계정을 생성한 뒤 사용한다. 루트 권한이 필요하지 않다면 USER를 사용하는 것을 권장한다.
+
+```
+RUN groupadd -r author && useradd -r -g author alicek106
+USER alicek106
+```
+
+> 기본적으로 컨테이너 내부에서는 root 사용자를 사용하도록 설정된다. 이는 컨테이너가 호스트의 root 권한을 가질 수 있다는 것을 의미하기 때문에 보안 측면에서 매우 바람직하지 않다. 예를 들어 root가 소유한 호스트의 디렉터리를 컨테이너에 공유했을 때, 컨테이너 내부에서는 공유된 root 소유의 디렉터리를 마음대로 조작할 수도 있다.
 
 
 ## 빌드 컨텍스트
