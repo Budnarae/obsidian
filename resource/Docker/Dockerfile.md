@@ -106,6 +106,16 @@ ARG my_arg_2=value2
 RUN touch ${my_arg}/mytouch
 ```
 
+[[도커 명령어#^fb817c | build 명령어]]를 실행할 때 `--build-arg` 옵션을 사용해 Dockerfile의 ARG에 값을 입력할 수 있다. 입력하는 형식은 `<키>=<값>`과 같이 쌍을 이뤄야 한다.
+
+`# docker build --build0-arg my_arg=/home -t myarg:0.0 ./`
+
+ARG와 ENV의 값을 사용하는 방법은 `${}`로 같으므로 Dockerfile에서 ARG로 설정한 변수를 ENV에서 같은 이름으로 다시 정의하면 --build-arg 옵션에서 설정하는 값은 ENV에 의해 덮어쓰여진다.
+
+위의 Dockerfile 예제에서는 `$(my_arg)`의 디렉터리에 mytouch라는 파일을 생성했기 때문에 빌드된 이미지로 컨테이너를 생성해 확인하면 mytouch라는 이름의 파일을 확인할 수 있다.
+
+
+
 ## 빌드 컨텍스트
 
 [[도커 명령어#^fb817c | 이미지 빌드]]를 시작하면 도커는 가장 먼저 빌드 컨텍스트를 읽어들인다. 빌드 컨텍스트는 이미지를 생성하는 데 필요한 각종 파일, 소스 코드, 메타 데이터 등을 담고 있는 디렉터리를 의미하며, Dockerfile이 위치한 디렉터리가 빌드 컨텍스트가 된다.
