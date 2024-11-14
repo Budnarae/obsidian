@@ -127,6 +127,24 @@ entrypoint가 설정되지 않았다면 cmd에 설정된 명령어를 그대로 
 
 ```
 
+#### JSON 배열 형태와 일반 형식의 차이점
+
+JSON 배열 형태가 아닌 CMD와 ENTRYPOINT를 사용하면 실제로 이미지를 생성할 때 cmd와 entrypoint에 `/bin/sh -c`가 앞에 추가된다.
+
+따라서 CMD 또는 ENTRYPOINT에 설정하려는 명령어를 `/bin/sh`로 사용할 수 없다면 JSON 배열의 형태로 명령어를 설정해야 한다.
+
+```
+# 예시
+
+CMD echo tset
+# -> /bin/sh -c echo test
+
+ENTRYPOINT /entrypoint.sh
+# -> /bin/sh -c /entrypoint.sh
+```
+
+CMD와  ENTRYPOI
+
 ### ENV
 
 Dockerfile에서 사용될 환경 변수를 지정한다. 설정한 환경변수는 `${ENV_NAME}` 또는 `$ENV_NAME`의 형태로 사용할 수 있다. 이 환경변수는 Dockerfile 뿐 아니라 이미지에도 저장되므로 빌드된 이미지로 컨테이너를 생성하면 이 환경 변수를 사용할 수 있다.
