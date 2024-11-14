@@ -93,6 +93,19 @@ Dockerfile에서 환경변수의 값을 사용할 때 배시 셸에서 사용하
 
 빌드된 이미지로 컨테이너를 생성했을 때 호스트와 공유할 컨테이너 내부의 디렉터리를 설정합니다. `VOLUME ["/home/dir", "home/dir2"]`처럼 JSON 배열의 형식으로 여러 개를 사용하거나 `VOLUME /home/dir /home/dir2`로도 사용할 수 있다.
 
+VOLUME이 포함된 Dockerfile로 이미지를 빌드한 뒤 컨테이너를 생성하면 자동으로 볼륨이 생성된다.
+
+### ARG
+
+build 명령어를 실행할 때 추가로 입력을 받아 Dockerfile 내에서 사용될 변수의 값을 설정한다. 다음 Dockefile은 build 명령어에서 `my_arg`와 `my_arg_2`라는 이름의 변수를 추가로 입력받을 것이라고 ARG를 통해 명시한다. ARG의 값은 기본적으로 build 명령어에서 입려받아야 하지만 다음의 `my_arg_2`와 같이 기본값을 지정할수도 있다.
+
+```
+FROM ubuntu:14.04
+ARG my_arg
+ARG my_arg_2=value2
+RUN touch ${my_arg}/mytouch
+```
+
 ## 빌드 컨텍스트
 
 [[도커 명령어#^fb817c | 이미지 빌드]]를 시작하면 도커는 가장 먼저 빌드 컨텍스트를 읽어들인다. 빌드 컨텍스트는 이미지를 생성하는 데 필요한 각종 파일, 소스 코드, 메타 데이터 등을 담고 있는 디렉터리를 의미하며, Dockerfile이 위치한 디렉터리가 빌드 컨텍스트가 된다.
