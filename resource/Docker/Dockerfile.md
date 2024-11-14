@@ -97,6 +97,19 @@ CMD의 입력은 JSON 배열 형태인 `["실행 가능한 파일",  "명령줄 
 
 .dockerignore 파일은 **컨텍스트의 최상위 경로, 즉 build 명령어에서 맨 마지막에 오는 경로인 Dockerfile이 위치한 경로**와 같은 곳에 위치해야 한다.
 
+다음은 .dockerignore 파일의 예시이다.
+
+```
+test2.html
+*.html
+*/*.html
+test.htm?
+```
+
+컨텍스트에서 제외할 파일의 경로는 Dockerfile이 존재하는 경로를 기준으로 한다. 예를 들어, build 명령어에서 설정한 경로가 현재 디렉터리이고 `/home/alicek106`이라면 `*.html`은 `/home/alicek106/*.html`에 해당하는 모든 파일을 뜻한다.
+
+`test.htm?`은 `test.htm`을 접두어로 두고 `?` 자리에 임의의 1자리 문자가 들어가는 파일을 제외한다는 뜻이다. `.dockerignore`에 `test.htm?`을 지정하면 `test.htma`, `test.htmb`, `...` 등이 켄텏
+
 ---
 
 참고자료
