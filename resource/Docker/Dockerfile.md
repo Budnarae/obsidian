@@ -143,7 +143,7 @@ ENTRYPOINT /entrypoint.sh
 # -> /bin/sh -c /entrypoint.sh
 ```
 
-CMD와  ENTRYPOI
+CMD와  ENTRYPOINT를 JSON 형태로 명령어를 입력하면 입력된 명령어가 그대로 이미지에서 사용된다.
 
 ### ENV
 
@@ -246,6 +246,7 @@ test.htm?
 
 ### Dockerfile을 이용한 컨테이너 생성과 커밋
 ### 캐시를 이용한 이미지 빌드
+### Dockerfile로 빌드할 때 주의할 점
 
 ---
 
