@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/inception/NGINX.md"
+                "file": "resource/Docker/Dockerfile.md"
               },
               "icon": "lucide-list",
-              "title": "NGINX 개요"
+              "title": "Dockerfile 개요"
             }
           },
           {
@@ -157,12 +157,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,14 +178,15 @@
   },
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
+    "resource/Docker/도커 명령어.md",
+    "resource/Docker/마운트.md",
+    "resource/Docker/이미지.md",
+    "resource/Docker/Dockerfile.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고도서.md",
-    "resource/Docker/Dockerfile.md",
     "resource/Linux/ssh.md",
     "resource/Docker/컨테이너.md",
-    "resource/Docker/이미지.md",
     "resource/Docker/도커 컴포즈.md",
-    "resource/Docker/도커 명령어.md",
     "www.nginx.org.md",
     "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
@@ -196,7 +196,6 @@
     "재료",
     "resource/Docker/네트워크.md",
     "resource/Docker/도커 허브.md",
-    "resource/Docker/마운트.md",
     "resource/Docker/도커.md",
     "resource/Docker/볼륨.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
