@@ -108,7 +108,22 @@ CMD의 입력은 JSON 배열 형태인 `["실행 가능한 파일",  "명령줄 
 
 ==ENTRYPOINT와 CMD의 차이점==
 
-entrypoint는 커맨드와 동일하게 컨테이너가 시작될 때
+entrypoint는 커맨드와 동일하게 컨테이너가 시작될 때 수행할 명령을 지정한다는 점에서 같다. 그러나 entrypoint는 커맨드를 인자로 받아 사용할 수 있는 스크립트의 역할을 할 수 있다는 점에서 다르다.
+
+entrypoint가 설정되지 않았다면 cmd에 설정된 명령어를 그대로 실행하지만 entrypoint가 설정되었다면 cmd는 단지 entrypoint에 대한 인자의 기능을 한다.
+
+```
+# # entrypoint: 없음, cmd: /bin/bash
+# docker run -it --name no_entrypoint ubuntu:14.04 /bin/bash
+-> bash 쉘이 실행
+```
+
+```
+# # entrypoint: echo, cmd: /bin/bash
+# docker run -i -t --entrypoint="echo" --name yes_entrypoint ubuntu:14.04 /bin/bash
+-> /bin/bash가 출력. 즉, /bin/bash는 ec
+
+```
 
 ### ENV
 
