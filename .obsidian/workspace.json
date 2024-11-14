@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/Dockerfile.md",
+                "file": "resource/Docker/도커 명령어.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Dockerfile"
+              "title": "도커 명령어"
             }
           }
         ]
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Docker/Dockerfile.md"
+                "file": "resource/Docker/도커 명령어.md"
               },
               "icon": "lucide-list",
-              "title": "Dockerfile 개요"
+              "title": "도커 명령어 개요"
             }
           },
           {
@@ -178,10 +178,10 @@
   },
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
+    "resource/Docker/Dockerfile.md",
     "resource/Docker/도커 명령어.md",
     "resource/Docker/마운트.md",
     "resource/Docker/이미지.md",
-    "resource/Docker/Dockerfile.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고도서.md",
     "resource/Linux/ssh.md",
