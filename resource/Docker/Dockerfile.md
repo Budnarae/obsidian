@@ -93,7 +93,9 @@ CMD의 입력은 JSON 배열 형태인 `["실행 가능한 파일",  "명령줄 
 
 ## .dockerignore
 
-상기한 문제를 방지하기 위해 `.dockerignore`라는 파일을 작성할 수 있다. `.dockerignore
+상기한 문제를 방지하기 위해 `.dockerignore`라는 파일을 작성할 수 있다. 이미지 빌드 시 `.dockerignore`에서 명시된 파일은 컨텍스트에서 제외된다.
+
+.dockerignore 파일은 **컨텍스트의 최상위 경로, 즉 build 명령어에서 맨 마지막에 오는 경로인 Dockerfile이 위치한 경로**와 같은 곳에 위치해야 한다.
 
 ---
 
