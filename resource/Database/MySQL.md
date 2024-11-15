@@ -103,9 +103,14 @@ MySQL은 3가지 구성요소로 되어 있다.
 
 ```sql
 CREATE TABLE topic(
-	<topic의 이름> 
+	<topic의 이름> <topic의 data type>(<검색할 때 얼마만큼의 길이까지 노출할 것인가>) <필드 공백의 허용 여부>
 )
 ```
+
+==필드 공백의 허용 여부란 무엇인가==
+해당 열(topic)에 무조건 값이 들어가야 하는지, 아니면 비어있을 수 있는지를 설정하는 영역이다. NOT NULL을 넣으면 
+
+==AUTO_INCREMENT
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/fPULu-Q-OlQ" title="DATABASE2 MySQL - 8.2테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
