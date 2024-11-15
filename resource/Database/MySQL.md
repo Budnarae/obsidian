@@ -59,7 +59,11 @@ MySQL은 3가지 구성요소로 되어 있다.
 | 옵션 | 용도                                |
 | ---- | ----------------------------------- |
 | `-u` | 어느 유저로 서버에 접속할 지를 지정 |
-| `-p` | 계정의 비밀번호 입력                | 
+| `-p` | 계정의 비밀번호 입력                |
+
+다음의 커맨드를 사용하여 서버와의 연결을 끊는다.
+
+`exit`
 
 # 스키마 schema의 사용
 
@@ -92,6 +96,8 @@ MySQL은 3가지 구성요소로 되어 있다.
 # MySQL 테이블의 생성
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/d3ye07XRexs" title="DATABASE2 MySQL - 8.1.테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+다음의 커맨드를 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/fPULu-Q-OlQ" title="DATABASE2 MySQL - 8.2테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
