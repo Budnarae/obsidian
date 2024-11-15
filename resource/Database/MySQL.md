@@ -18,7 +18,7 @@
 <iframe width="640" height="360" src="https://www.youtube.com/embed/h_XDmyz--0w" title="DATABASE2 MySQL - 1.수업소개" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [[데이터베이스]] 문서 참고.
-현 데이터베이스의 가장 보편적인 형식은 **관계형 데이터베이스**이며 데이터를 표의 형태로 관리하여 **정렬, 검색, 표시 및 숨김 그 외에도 많은 기능**들을 편리하게 사용할 수 있다.
+현 데이터베이스의 가장 보편적인 형식은 **관계형 데이터베이스**이며 데이터를 **표의 형태로 관리**하여 **정렬, 검색, 표시 및 숨김 그 외에도 많은 기능**들을 편리하게 사용할 수 있다.
 
 MySQL의 가장 큰 장점은 무료이면서 관계형 데이터베이스의 핵심 기능들을 포함하고 있다는 것이다. **웹**이 폭발적으로 성장하면서 웹 개발자들에게 선택받은 MySQL은 많은 수요를 확보하였다.
 
@@ -26,7 +26,7 @@ MySQL의 가장 큰 장점은 무료이면서 관계형 데이터베이스의 �
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/l3jMQh-NqLY" title="DATABASE2 MySQL - 2.데이터베이스의 목적" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+MySQL은 **SQL**이라는 언어를 사용해서 데이터를 조작할 수 있다.
 
 ---
 
