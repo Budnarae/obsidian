@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/Dockerfile.md",
+                "file": "resource/Database/데이터베이스.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Dockerfile"
+              "title": "데이터베이스"
             }
           }
         ]
@@ -180,7 +180,10 @@
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
     "project/42Seoul/inception/NGINX.md",
+    "resource/Database/데이터베이스.md",
+    "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
+    "resource/Database",
     "resource/Docker/도커 컴포즈.md",
     "resource/Language/C++/friend 선언.md",
     "resource/Language/C++/virtual 키워드.md",
@@ -194,7 +197,6 @@
     "resource/Linux/ssh.md",
     "resource/Docker/컨테이너.md",
     "www.nginx.org.md",
-    "area/참고링크.md",
     "재료/template/개요와 참고자료.md",
     "재료/template/개요.md",
     "재료/template/참고자료.md",
@@ -206,7 +208,6 @@
     "resource/Docker/볼륨.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀 1.md",
     "resource/Linux",
     "재료/img/도커",
     "재료/img/도커/도커의 구조.jpeg",
@@ -224,7 +225,6 @@
     "재료/img/TCP 소켓/tcp 소켓의 연결 설정 과정.png",
     "재료/img/TCP 소켓",
     "재료/img/listen/연결 요청 대기 큐.png",
-    "재료/img/accept",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
