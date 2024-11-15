@@ -46,6 +46,20 @@ MySQL은 3가지 구성요소로 되어 있다.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/bzhFcbin8_g" title="DATABASE2 MySQL - 5.서버접속" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+데이터베이스의 효용
+
+- 보안성이 좋다.
+	1. 자체적인 보안 체계를 가지고 있다.
+	2. 사용자 권한 설정을 할 수 있다.
+
+다음의 커맨드를 이용하여 서버에 접속한다.
+
+`./mysql -uroot -p`
+
+| 옵션 | 용도                                |
+| ---- | ----------------------------------- |
+| `-u` | 어느 유저로 서버에 접속할 지를 지정 |
+| `-p` | 계정의 비밀번호 입력                | 
 
 
 ---
