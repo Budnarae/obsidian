@@ -39,7 +39,7 @@ MySQL은 **SQL**이라는 언어를 사용해서 데이터를 조작할 수 있�
 MySQL은 3가지 구성요소로 되어 있다.
 
 1. 표 table : 정보가 저장되는 장소
-2. 데이터베이스 database 또는 스키마 : 여러 개의 표들을 묶어 관리하는 단위
+2. 데이터베이스 database 또는 스키마 schema: 여러 개의 표들을 묶어 관리하는 단위
 3. 데이터베이스 서버 database server : 여러 개의 스키마를 묶어 관리하는 단위
 
 # MySQL 서버 접속
@@ -60,6 +60,11 @@ MySQL은 3가지 구성요소로 되어 있다.
 | ---- | ----------------------------------- |
 | `-u` | 어느 유저로 서버에 접속할 지를 지정 |
 | `-p` | 계정의 비밀번호 입력                | 
+
+# 스키마 schema의 사용
+
+ <iframe width="640" height="360" src="https://www.youtube.com/embed/9stHa3mRbNI" title="DATABASE2 MySQL - 6. 스키마의 사용" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 ---
