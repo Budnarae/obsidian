@@ -155,7 +155,17 @@ MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장�
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/0pU6_5BQ2Dk" title="DATABASE2 MySQL - 9.CRUD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+# SQL의 INSERT 구문
 
+<iframe width="1270" height="1440" src="https://www.youtube.com/embed/75LHpeOQiOs" title="DATABASE2 MySQL - 10.INSERT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+다음의 명령어를 통해 테이블의 구조를 볼 수 있다.
+
+`DESC topic;`
+
+다음의 명령어를 통해 표에 값을 삽입할 수 있다.
+
+`INSERT INTO <삽입하고자하는 table 이름>`
 
 ---
 
