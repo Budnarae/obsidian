@@ -173,7 +173,7 @@ MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장�
 
 다음의 명령어를 통해 표를 출력할 수 있다.
 
-`SELECT <option> FROM <출력하고자 하는 표의 이름>`
+`SELECT <option> FROM <출력하고자 하는 표의 이름> WHERE <field>='<value>' ORDER BY <field> <정렬 옵션> LIMIT <출력할 데이터의 상한>`
 
 - option : 표에서 어떤 요소들을 노출할 것인지 설정한다.
 
@@ -181,7 +181,10 @@ MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장�
 | ----------------------------- | -------------- |
 | `column1,column2,...,columnN` | 특정 열만 표시 |
 | `*`                           | 표 전체를 표시 |
-|                               |                |
+
+- `WHERE <field>='<value>'` : 특정 field가 value인 행만 출력한다는 뜻
+- `ORDER BY <field> <정렬 옵션>` : 특정 field를 기준으로 정렬. `<정렬 옵션>` 위치에 `DESC`(descending의 약자)가 오면 큰 값이 위로 가도록 정렬한다.
+- 
 
 ---
 
