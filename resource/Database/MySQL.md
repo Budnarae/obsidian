@@ -97,6 +97,8 @@ MySQL은 3가지 구성요소로 되어 있다.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/d3ye07XRexs" title="DATABASE2 MySQL - 8.1.테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/fPULu-Q-OlQ" title="DATABASE2 MySQL - 8.2테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 `;`을 붙이고 줄바꿈하면 해당 line이 실행되지만 그냥 줄바꿈하면 line이 실행되지 않고 계속 입력을 받는다 -> 긴 line을 입력할 때 줄바꿈을 해가며 가독성 좋게 입력할 수 있다.
 
 다음의 커맨드를 사용하여 새로운 열을 만든다.
@@ -108,13 +110,13 @@ CREATE TABLE topic(
 ```
 
 ==topic의 data type==
-[다음 참고]()
+[다음 참고](https://incodom.kr/DB_-_%EB%8D%B0%EC%9D%B4%ED%84%B0_%ED%83%80%EC%9E%85/MYSQL)
 
 ==필드 공백의 허용 여부란 무엇인가==
 해당 열(topic)에 무조건 값이 들어가야 하는지, 아니면 비어있을 수 있는지를 설정하는 영역이다.
 
 - NOT NULL : 무조건 값을 대입하여야 한다.
-- NULL : 비어있는 채로 둘 수 있ㄷ
+- NULL : 비어있는 채로 둘 수 있다.
 
 ==AUTO_INCREMENT==
 특정 열의 값을 위의 행의 공간 + 1로 자동으로 대입해주는 옵션
@@ -124,11 +126,18 @@ CREATE TABLE topic(
 ```sql
 CREATE TABLE topic(
 	id INT(11) NOT NULL AUTO_INCREMENT,
-	...
+	title VARCHAR(100) NOT NULL,
+	description TEXT NULL,
+	created DATETIME NOT NULL,
+	author VARCHAR(30) NULL,
+	profile VARCHAR(100) NULL,
+	PRIMARY KEY(id)
 );
 ```
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/fPULu-Q-OlQ" title="DATABASE2 MySQL - 8.2테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+==PRIMARY KEY(<topic의 이름>)==
+
+해당 열(t)
 
 ---
 
