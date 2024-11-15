@@ -9,7 +9,7 @@
 
 ==들어가기에 앞서==
 
-본 문서는 42 seoul의 프로젝트 inception의 해결을 위해 작성되었습니다. inception은 mar 아래에서 제시되는 자료들은 모두 **MySQL**을 기준으로 하나 MySQL의 커맨드는 대 부분이 **MaraiDB**에서 호환되기 때문에 문제가 없다고 생각하여 첨부합니다.
+본 문서는 42 seoul의 프로젝트 inception의 해결을 위해 작성되었습니다. inception은 **MariaDB** 지식을 요구하고 아래에서 제시되는 자료들은 모두 **MySQL**을 기준으로 하나 MySQL의 커맨드는 대부분이 **MaraiDB**에서 호환되기 때문에 문제가 없다고 생각하여 첨부합니다.
 
 ---
 
@@ -32,7 +32,21 @@ MySQL은 **SQL**이라는 언어를 사용해서 데이터를 조작할 수 있�
 
 [다음 참고](https://opentutorials.org/course/3161/19532)
 
-# 
+# MySQL의 구조
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/IWEa4DN_1Yk" title="DATABASE2 MySQL - 4.MySQL의 구조" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+MySQL은 3가지 구성요소로 되어 있다.
+
+1. 표 table : 정보가 저장되는 장소
+2. 데이터베이스 database 또는 스키마 : 여러 개의 표들을 묶어 관리하는 단위
+3. 데이터베이스 서버 database server : 여러 개의 스키마를 묶어 관리하는 단위
+
+# MySQL 서버 접속
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/bzhFcbin8_g" title="DATABASE2 MySQL - 5.서버접속" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 ---
 
