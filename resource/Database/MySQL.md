@@ -167,13 +167,16 @@ MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장�
 
 `INSERT INTO <삽입하고자하는 table 이름> (<Field의 이름 입력, 이름 2, ..., 이름 n>) VALUES(<Field에 대응하는 값 입력, 값 2, ..., 값 n>)`
 
-다음의 명령어를 통해 표 전체를 출력할 수 있다.
-
-`SELECT * FROM <출력하고자 하는 표의 이름>`
-
 # SQL의 SELECT 구문
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/FCnJH6fLc64" title="DATABASE2 MySQL - 11.SELECT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+다음의 명령어를 통해 표를 출력할 수 있다.
+
+`SELECT <list> FROM <출력하고자 하는 표의 이름>`
+
+- list : 표
+	- 열1,열2,... 와 같이 입력한다. 전체를 입력하고 싶으면 \*을 입력한다.
 
 ---
 
