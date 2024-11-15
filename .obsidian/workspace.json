@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Database/MariaDB.md",
+                "file": "resource/Database/MySQL.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "MariaDB"
+              "title": "MySQL"
             }
           }
         ]
@@ -180,7 +180,7 @@
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
     "resource/Database/데이터베이스.md",
-    "resource/Database/MariaDB.md",
+    "resource/Database/MySQL.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
