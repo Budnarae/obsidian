@@ -149,6 +149,16 @@ MySQL에 처음 접속하면 기본적으로 유저마다 비밀번호를 자동
 
 ---
 
+MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장하도록 강제할 수 있다.
+
+# MySQL의 CRUD
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/0pU6_5BQ2Dk" title="DATABASE2 MySQL - 9.CRUD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+---
+
 참고자료
 
 #참고링크/생활코딩 
