@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Database/데이터베이스.md",
+                "file": "resource/Database/MariaDB.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "데이터베이스"
+              "title": "MariaDB"
             }
           }
         ]
@@ -179,8 +179,9 @@
   },
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
-    "project/42Seoul/inception/NGINX.md",
     "resource/Database/데이터베이스.md",
+    "resource/Database/MariaDB.md",
+    "project/42Seoul/inception/NGINX.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
     "resource/Database",
@@ -207,7 +208,6 @@
     "resource/Docker/도커.md",
     "resource/Docker/볼륨.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/틀.md",
     "resource/Linux",
     "재료/img/도커",
     "재료/img/도커/도커의 구조.jpeg",
