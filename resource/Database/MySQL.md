@@ -97,7 +97,15 @@ MySQL은 3가지 구성요소로 되어 있다.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/d3ye07XRexs" title="DATABASE2 MySQL - 8.1.테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-다음의 커맨드를 
+`;`을 붙이고 줄바꿈하면 해당 line이 실행되지만 그냥 줄바꿈하면 line이 실행되지 않고 계속 입력을 받는다 -> 긴 line을 입력할 때 줄바꿈을 해가며 가독성 좋게 입력할 수 있다.
+
+다음의 커맨드를 사용하여 새로운 열을 만든다.
+
+```sql
+CREATE TABLE topic(
+	<topic의 이름> 
+)
+```
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/fPULu-Q-OlQ" title="DATABASE2 MySQL - 8.2테이블의 생성" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
