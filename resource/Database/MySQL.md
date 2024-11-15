@@ -65,6 +65,14 @@ MySQL은 3가지 구성요소로 되어 있다.
 
  <iframe width="640" height="360" src="https://www.youtube.com/embed/9stHa3mRbNI" title="DATABASE2 MySQL - 6. 스키마의 사용" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+다음의 명령어를 사용하여 새로운 스키마를 만든다.
+
+`CREATE DATABASE <만들고자 하는 스키마의 이름>`
+
+그리고 다음의 명령어를 사용하여 기존의 스키마를 삭제한다.
+
+`DROP DATABASE <제거하고자 하는 스키마의 이름>`
+
 
 
 ---
