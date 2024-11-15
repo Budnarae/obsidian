@@ -190,7 +190,11 @@ MySQL은 사용자로 하여금 **정해진 포맷**대로 데이터를 저장�
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/pNINXzXaWWM" title="DATABASE2 MySQL - 12.UPDATE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+특정 행의 특정 필드를 수정하려면
 
+`UPDATE <table 이름> SET <고치고자 하는 필드의 이름>='<수정할 내용>', ... WHERE <field>=<value>`
+
+SET을 통해 고치고자 하는 필드의 이름을 설정하고 WHERE을 통해 고치고자 하는 행의 정보를 설정한다.
 
 ---
 
