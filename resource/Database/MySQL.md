@@ -9,7 +9,7 @@
 
 ==들어가기에 앞서==
 
-본 문서는 42 seoul의 프로젝트 inception의 해결을 위해 작성되었습니다. 아래에서 제시되는 자료들은 모두 **MySQL**을 기준으로 하나 MySQL의 커맨드는 대부분이 **MaraiDB**에서 호환되기 때문에 문제가 없다고 생각하여 첨부합니다.
+본 문서는 42 seoul의 프로젝트 inception의 해결을 위해 작성되었습니다. inception은 mar 아래에서 제시되는 자료들은 모두 **MySQL**을 기준으로 하나 MySQL의 커맨드는 대 부분이 **MaraiDB**에서 호환되기 때문에 문제가 없다고 생각하여 첨부합니다.
 
 ---
 
@@ -27,6 +27,12 @@ MySQL의 가장 큰 장점은 무료이면서 관계형 데이터베이스의 �
 <iframe width="640" height="360" src="https://www.youtube.com/embed/l3jMQh-NqLY" title="DATABASE2 MySQL - 2.데이터베이스의 목적" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 MySQL은 **SQL**이라는 언어를 사용해서 데이터를 조작할 수 있다.
+
+# MySQL 설치
+
+[다음 참고](https://opentutorials.org/course/3161/19532)
+
+# 
 
 ---
 
