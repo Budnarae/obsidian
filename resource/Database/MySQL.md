@@ -1,7 +1,7 @@
 
 ---
 
-#database
+#database #uncomplete
 
 *MySQL의 my는 개발자의 딸의 이름에서 유래한 것이다.*
 
@@ -215,7 +215,13 @@ ex)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/_LpWcVkTytU" title="DATABASE2 MySQL - 14.수업의 정상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# 
+# 관계형 데이터베이스의 필요성
+# 테이블 분리하기
+# 관계형 데이터베이스의 꽃 JOIN
+# 인터넷과 데이터베이스
+# MySQL 클라이언트
+# MySQL Workbench
+# 수업을 마치며
 
 ---
 
