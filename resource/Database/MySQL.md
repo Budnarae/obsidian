@@ -199,7 +199,15 @@ WHERE을 빼먹어 행 정보를 제한하지 않으면 모든 행의 정보가 
 
 # SQL의 DELETE 구문
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/GDY2_t-9l-s" title="DATABASE2 MySQL - 13.DELETE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+`DELETE FROM <삭제를 진행하고자 하는 table 이름> WHERE <삭제하고자 하는 행의 정보>`
+
+ex)
+
+ `DELETE FROM topic WHERE id = 5`
+
+삭제 범위를 규정하는 WHERE 구문을 뺴먹으면 **테이블의 모든 행이 삭제**된다. 
 
 ---
 
