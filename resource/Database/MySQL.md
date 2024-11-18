@@ -203,7 +203,7 @@ WHERE을 빼먹어 행 정보를 제한하지 않으면 모든 행의 정보가 
 
 특정 행을 삭제하려면
 
-`DELETE FROM <삭제를 진행하고자 하는 table 이름> WHERE <삭제하고자 하는 행의 정보>`
+`DELETE FROM <삭제를 진행하고자 하는 table 이름> WHERE <field>='<value>'`
 
 ex)
 
