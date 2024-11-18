@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Database/MySQL.md",
+                "file": "resource/Docker/도커 컴포즈.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "MySQL"
+              "title": "도커 컴포즈"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#uncomplete",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -181,8 +179,8 @@
   },
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
-    "resource/Database/데이터베이스.md",
     "resource/Database/MySQL.md",
+    "resource/Database/데이터베이스.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
