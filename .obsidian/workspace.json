@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Linux/ssh.md",
+                "file": "resource/ANSI escape code.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ssh"
+              "title": "ANSI escape code"
             }
           }
         ]
@@ -161,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f84dfecdeb6316e3",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Linux/ssh.md",
     "resource/Docker/도커 컴포즈.md",
     "resource/Database/MySQL.md",
     "resource/Database/데이터베이스.md",
@@ -195,7 +195,6 @@
     "resource/Docker/마운트.md",
     "resource/Docker/이미지.md",
     "area/참고도서.md",
-    "resource/Linux/ssh.md",
     "resource/Docker/컨테이너.md",
     "www.nginx.org.md",
     "재료/template/개요와 참고자료.md",
