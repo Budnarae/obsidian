@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 컴포즈.md",
+                "file": "resource/Linux/ssh.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 컴포즈"
+              "title": "ssh"
             }
           }
         ]
@@ -179,10 +179,10 @@
   },
   "active": "f84dfecdeb6316e3",
   "lastOpenFiles": [
+    "resource/Docker/도커 컴포즈.md",
     "resource/Database/MySQL.md",
     "resource/Database/데이터베이스.md",
     "resource/Docker/도커 명령어.md",
-    "resource/Docker/도커 컴포즈.md",
     "project/42Seoul/inception/NGINX.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
