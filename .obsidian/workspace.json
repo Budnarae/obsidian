@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "ANSI escape code"
             }
+          },
+          {
+            "id": "9b5a1865f9200ff4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,7 +189,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "9b5a1865f9200ff4",
   "lastOpenFiles": [
     "resource/Linux/ssh.md",
     "resource/Docker/도커 컴포즈.md",
