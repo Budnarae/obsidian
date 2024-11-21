@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 명령어.md",
-                "mode": "source",
+                "file": "resource/Linux/envsubst.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 명령어"
+              "title": "envsubst"
             }
           }
         ]
@@ -178,8 +178,10 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
-    "resource/Linux/envsubst.md",
+    "resource/Linux/ssh.md",
     "project/42Seoul/inception/낙서장.md",
+    "resource/Docker/도커 명령어.md",
+    "resource/Linux/envsubst.md",
     "project/42Seoul/inception/tls.md",
     "resource/Database/MySQL.md",
     "resource/Database/데이터베이스.md",
@@ -187,8 +189,6 @@
     "project/42Seoul/inception/NGINX.md",
     "resource/Docker/도커 컴포즈.md",
     "resource/ANSI escape code.md",
-    "resource/Linux/ssh.md",
-    "resource/Docker/도커 명령어.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
     "resource/Database",
