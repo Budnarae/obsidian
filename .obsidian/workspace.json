@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 컴포즈.md",
+                "file": "project/42Seoul/inception/tls.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 컴포즈"
+              "title": "tls"
             }
           }
         ]
@@ -178,13 +178,15 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
-    "resource/ANSI escape code.md",
-    "resource/Linux/ssh.md",
-    "resource/Docker/도커 컴포즈.md",
     "resource/Database/MySQL.md",
     "resource/Database/데이터베이스.md",
-    "resource/Docker/도커 명령어.md",
+    "project/42Seoul/inception/tls.md",
+    "project/42Seoul/inception/php-fpm.md",
     "project/42Seoul/inception/NGINX.md",
+    "resource/Docker/도커 컴포즈.md",
+    "resource/ANSI escape code.md",
+    "resource/Linux/ssh.md",
+    "resource/Docker/도커 명령어.md",
     "area/참고링크.md",
     "resource/Docker/Dockerfile.md",
     "resource/Database",
@@ -205,8 +207,6 @@
     "재료",
     "resource/Docker/네트워크.md",
     "resource/Docker/도커 허브.md",
-    "resource/Docker/도커.md",
-    "resource/Docker/볼륨.md",
     "resource/Linux",
     "재료/img/도커",
     "재료/img/도커/도커의 구조.jpeg",
