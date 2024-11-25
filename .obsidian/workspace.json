@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/이미지.md",
+                "file": "resource/Docker/도커 명령어.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "이미지"
+              "title": "도커 명령어"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Docker/이미지.md",
     "resource/Docker/도커.md",
     "project/42Seoul/inception/낙서장.md",
     "resource/Linux/envsubst.md",
@@ -200,7 +201,6 @@
     "resource/Language/C++/static 키워드.md",
     "resource/Language/C++/new & delete.md",
     "resource/Docker/마운트.md",
-    "resource/Docker/이미지.md",
     "area/참고도서.md",
     "resource/Docker/컨테이너.md",
     "www.nginx.org.md",
