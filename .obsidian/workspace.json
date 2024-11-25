@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/마운트.md",
+                "file": "resource/Docker/도커 네트워크.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "마운트"
+              "title": "도커 네트워크"
             }
           }
         ]
@@ -179,12 +179,14 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "재료/img/도커 네트워크",
+    "재료/img/도커 네트워크/도커 네트워크 구조.png",
+    "resource/Docker/마운트.md",
     "resource/Docker/컨테이너.md",
     "resource/Docker/이미지.md",
-    "resource/Docker/마운트.md",
     "resource/Docker/도커 명령어.md",
     "resource/Docker/도커.md",
-    "resource/Docker/네트워크.md",
+    "resource/Docker/도커 네트워크.md",
     "resource/Docker/Dockerfile.md",
     "resource/Docker/도커 허브.md",
     "resource/Docker/도커 컴포즈.md",
@@ -205,7 +207,6 @@
     "resource/Language/C++/static 키워드.md",
     "resource/Language/C++/new & delete.md",
     "area/참고도서.md",
-    "www.nginx.org.md",
     "project/42Seoul/inception",
     "재료",
     "resource/Linux",
@@ -224,7 +225,6 @@
     "재료/img/TCP 소켓/tcp 소켓의 데이터 송신 오류.png",
     "재료/img/TCP 소켓/tcp 소켓의 연결 설정 과정.png",
     "재료/img/TCP 소켓",
-    "재료/img/listen/연결 요청 대기 큐.png",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
