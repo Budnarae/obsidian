@@ -19,9 +19,15 @@
 - "slowlog" 지원
 - FastCGI에 추가된 fastcgi_finish_request() 기능은 시간이 많이 걸리는 작업(비디오 변환, 통계 처리 등)을 계속 진행하면서 요청을 완료하고 모든 데이터를 플러시하는 특수 기능입니다.
 
+# CGI란
+
+[위키백과](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%9A%A9_%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4)
+
 # fastCGI란
 
-fastCGI는 Fast Common w
+fastCGI는 Fast Common gate interface의 약자이다.
+
+[위키백과](https://ko.wikipedia.org/wiki/FastCGI)
 
 ---
 
