@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/네트워크.md",
+                "file": "resource/Docker/이미지.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "네트워크"
+              "title": "이미지"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Docker/네트워크.md",
     "resource/Docker/도커 명령어.md",
     "resource/Docker/이미지.md",
     "resource/Docker/도커.md",
@@ -205,7 +206,6 @@
     "resource/Docker/컨테이너.md",
     "www.nginx.org.md",
     "재료/template/개요와 참고자료.md",
-    "재료/template/개요.md",
     "project/42Seoul/inception",
     "재료",
     "resource/Linux",
