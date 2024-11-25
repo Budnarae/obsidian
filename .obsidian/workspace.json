@@ -14,24 +14,12 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Docker/도커 네트워크.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
               "title": "도커 네트워크"
-            }
-          },
-          {
-            "id": "41ec34a64a018bbf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "재료/img/도커 네트워크/도커 네트워크 구조.png"
-              },
-              "icon": "lucide-image",
-              "title": "도커 네트워크 구조"
             }
           }
         ]
