@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/inception/캐시.md",
+                "file": "project/42Seoul/inception/낙서장.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "캐시"
+              "title": "낙서장"
             }
           }
         ]
@@ -179,8 +179,8 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
-    "project/42Seoul/inception/NGINX.md",
     "project/42Seoul/inception/캐시.md",
+    "project/42Seoul/inception/NGINX.md",
     "project/42Seoul/inception/php-fpm.md",
     "project/42Seoul/inception/tls.md",
     "project/42Seoul/inception/마이크로서비스.md",
