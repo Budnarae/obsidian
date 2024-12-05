@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Linux/ssh.md",
+                "file": "project/42Seoul/inception/tls.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ssh"
+              "title": "tls"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Linux/ssh.md",
     "resource/Docker/도커 네트워크.md",
     "resource/Docker/도커 명령어.md",
     "project/42Seoul/inception/NGINX.md",
@@ -198,7 +199,6 @@
     "resource/Docker/도커 허브.md",
     "resource/Docker/도커 컴포즈.md",
     "resource/Linux/envsubst.md",
-    "resource/Linux/ssh.md",
     "resource/Database/MySQL.md",
     "resource/Database/데이터베이스.md",
     "resource/ANSI escape code.md",
