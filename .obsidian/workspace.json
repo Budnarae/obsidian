@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/도커 네트워크.md",
+                "file": "resource/Linux/ssh.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "도커 네트워크"
+              "title": "ssh"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Docker/도커 네트워크.md",
     "resource/Docker/도커 명령어.md",
     "project/42Seoul/inception/NGINX.md",
     "resource/Docker/도커.md",
@@ -189,7 +190,6 @@
     "project/42Seoul/inception/마이크로서비스.md",
     "area/참고링크.md",
     "resource/Docker/컨테이너.md",
-    "resource/Docker/도커 네트워크.md",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
     "resource/Docker/마운트.md",
