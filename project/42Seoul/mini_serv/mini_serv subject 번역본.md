@@ -19,12 +19,19 @@ Allowed functions: write, close, select, socket, accept, listen, send, recv, bin
 ---
 
 Write a program that will listen for client to connect on a certain port on 127.0.0.1 and will let clients to speak with each other.
-클라이언트들로 하여금 127.0.0.1 주소의 특정한 포트로 연결하여
+클라이언트들로 하여금 127.0.0.1 주소의 특정한 포트로 연결하여 서로 소통할 수 있게끔하는 프로그램을 만드세요.
 
-This program will take as first argument the port to bind to
-If no argument is given, it should write in stderr "Wrong number of arguments" followed by a \n and exit with status 1
-If a System Calls returns an error before the program start accepting connection, it should write in stderr "Fatal error" followed by a \n and exit with status 1
-If you cant allocate memory it should write in stderr "Fatal error" followed by a \n and exit with status 1
+This program will take as first argument the port to bind to.
+이 프로그램은 첫 번째 인자로 bind에 사용할 포트를 받습니다.
+
+If no argument is given, it should write in stderr "Wrong number of arguments" followed by a \n and exit with status 1.
+만약에 아무런 인자도 주어지지 않는다면, 표준 에러로 "Wrong number of arguments"에 개행(\n)을 붙여 출력하고 exit status 1로 종료되어야 합니다.
+
+If a System Calls returns an error before the program start accepting connection, it should write in stderr "Fatal error" followed by a \n and exit with status 1.
+만약에 시스템 콜이 연결이 완료되기 전에(accepting connection) 오류를 반환한다면, 표준 에러로 "Fatal error"에 개행(\n)을 붙여 출력하고 exit status 1로 종료되어야 합니다.
+
+If you can't allocate memory it should write in stderr "Fatal error" followed by a \n and exit with status 1
+만약에 당신이 메모리를 할당할 수 없다면 표준 오류로 "Fatal error"에 개행(\n)을 붙여 출력하고 exit status 1로 종료
 
 Your program must be non-blocking but client can be lazy and if they don't read your message you must NOT disconnect them...
 
