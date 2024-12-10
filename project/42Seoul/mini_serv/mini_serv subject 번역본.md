@@ -81,7 +81,11 @@ Evaluation can be a bit longer than usual...
 평가는 평소보다 좀 더 오래 걸릴 수 있습니다...
 
 Hint: you can use nc to test your program
+힌트: 당신은 테스트를 위해서 nc를 사용할 수 있습니다.
+
 Hint: you should use nc to test your program
+힌트: 당신은 테스트를 위해서 nc를 사용해야만 합니다.
+
 Hint: To test you can use fcntl(fd, F_SETFL, O_NONBLOCK) but use select and NEVER check EAGAIN (man 2 send)
-힌트: 
+	힌트: 테스트를 위해서 당신은 fcntl(fd, F_SETFL, O_NONBLOCK)을 사용할 수 있지만 select를 사용하여야 하며 절대 EAGAIN 옵션을 체크해서는 안됩니다.
 
