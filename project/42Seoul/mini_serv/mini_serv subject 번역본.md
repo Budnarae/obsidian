@@ -72,13 +72,16 @@ Memory or fd leaks are forbidden
 메모리나 fd의 누수는 용납되지 않습니다.
 
 To help you, you will find the file main.c with the beginning of a server and maybe some useful functions. (Beware this file use forbidden functions or write things that must not be there in your final program)
-
+당신을 돕기위해서, 우리는 서버의 기초와 몇몇 유용한 함수를 포함하고 있는 main.c 파일을 준비했습니다(이 파일이 당신의 최종 프로그램에 포함되어서는 안될 금지 함수와 출력을 포함하고 있다는 사실에 유의하세요).
 
 Warning our tester is expecting that you send the messages as fast as you can. Don't do un-necessary buffer.
+저희의 테스터기는 당신의 프로그램이 가능한 한 빠르게 메시지를 전송할 것을 가정한다는 사실에 유의하세요. 불필요하게 프로그램을 지연시키지 마세요.
 
 Evaluation can be a bit longer than usual...
+평가는 평소보다 좀 더 오래 걸릴 수 있습니다...
 
 Hint: you can use nc to test your program
 Hint: you should use nc to test your program
 Hint: To test you can use fcntl(fd, F_SETFL, O_NONBLOCK) but use select and NEVER check EAGAIN (man 2 send)
+힌트: 
 
