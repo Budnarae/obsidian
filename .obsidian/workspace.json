@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
-                "mode": "source",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "mini_serv subject 번역본"
+              "title": "socket"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -179,8 +180,11 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
-    "project/42Seoul/inception/tls.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+    "project/42Seoul/inception/tls.md",
     "project/42Seoul/mini_serv",
     "resource/Linux/ssh.md",
     "resource/Docker/도커 네트워크.md",
@@ -206,9 +210,6 @@
     "resource/ANSI escape code.md",
     "resource/Database",
     "resource/Language/C++/friend 선언.md",
-    "resource/Language/C++/virtual 키워드.md",
-    "resource/Language/C++/this.md",
-    "resource/Language/C++/static 키워드.md",
     "project/42Seoul/inception",
     "재료",
     "resource/Linux",
