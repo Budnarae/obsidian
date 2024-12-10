@@ -69,9 +69,10 @@ When a client disconnect from the server:
 - 서버에 연결되어 있는 다른 모든 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
 
 Memory or fd leaks are forbidden
-
+메모리나 fd의 누수는 용납되지 않습니다.
 
 To help you, you will find the file main.c with the beginning of a server and maybe some useful functions. (Beware this file use forbidden functions or write things that must not be there in your final program)
+
 
 Warning our tester is expecting that you send the messages as fast as you can. Don't do un-necessary buffer.
 
