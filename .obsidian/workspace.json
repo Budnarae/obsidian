@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "INADDR_ANY"
+              "title": "listen"
             }
           },
           {
@@ -194,10 +194,15 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
@@ -218,11 +223,6 @@
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
     "resource/Docker/마운트.md",
-    "resource/Docker/이미지.md",
-    "resource/Docker/Dockerfile.md",
-    "resource/Docker/도커 허브.md",
-    "resource/Docker/도커 컴포즈.md",
-    "resource/Linux/envsubst.md",
     "resource/Database",
     "project/42Seoul/inception",
     "재료",
