@@ -37,7 +37,8 @@
               "title": "mini_serv subject 번역본"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,15 +193,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9bc7b971c64ebd4c",
+  "active": "e511bc8a2f696fd7",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
