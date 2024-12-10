@@ -13,13 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "socket"
+              "title": "sockaddr_in"
+            }
+          },
+          {
+            "id": "e511bc8a2f696fd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "mini_serv subject 번역본"
             }
           }
         ]
@@ -180,11 +195,11 @@
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
     "project/42Seoul/inception/tls.md",
     "project/42Seoul/mini_serv",
     "resource/Linux/ssh.md",
