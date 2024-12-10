@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/inception/tls.md",
-                "mode": "preview",
+                "file": "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "tls"
+              "title": "mini_serv subject 번역본"
             }
           }
         ]
@@ -179,6 +179,9 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "project/42Seoul/inception/tls.md",
+    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+    "project/42Seoul/mini_serv",
     "resource/Linux/ssh.md",
     "resource/Docker/도커 네트워크.md",
     "resource/Docker/도커 명령어.md",
@@ -187,7 +190,6 @@
     "project/42Seoul/inception/낙서장.md",
     "project/42Seoul/inception/캐시.md",
     "project/42Seoul/inception/php-fpm.md",
-    "project/42Seoul/inception/tls.md",
     "project/42Seoul/inception/마이크로서비스.md",
     "area/참고링크.md",
     "resource/Docker/컨테이너.md",
@@ -207,7 +209,6 @@
     "resource/Language/C++/virtual 키워드.md",
     "resource/Language/C++/this.md",
     "resource/Language/C++/static 키워드.md",
-    "resource/Language/C++/new & delete.md",
     "project/42Seoul/inception",
     "재료",
     "resource/Linux",
@@ -220,7 +221,6 @@
     "img/Half-close/파일 전송 데이터 흐름도.png.crdownload",
     "재료/img/Half-close/일방적 연결종료.png",
     "재료/img/Half-close/소켓을 기반으로 생성되는 두 개의 스트림.png",
-    "재료/img/Half-close",
     "재료/img/TCP 소켓/tcp 소켓의 연결종료 과정.png",
     "재료/img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
     "재료/img/TCP 소켓/tcp 소켓의 데이터 송신 오류.png",
