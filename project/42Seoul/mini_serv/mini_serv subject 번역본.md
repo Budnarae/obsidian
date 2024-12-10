@@ -43,17 +43,22 @@ Your program must only listen to 127.0.0.1.
 당신의 프로그램은 오직 127.0.0.1 주소로만 수신해야 합니다.
 
 The fd that you will receive will already be set to make 'recv' or 'send' to block if select hasn't be called before calling them, but will not block otherwise. 
-당신에게 주어지는 파일 디스크립터(fd)는 recv 또는 send를 위해 쓰일 것이고
+당신에게 주어지는 파일 디스크립터(fd)는 recv 또는 send를 위해 쓰일 것이고, select를 앞선 함수들을 호출하기 전에 호출하면 block을 방지할 수 있습니다.
 
 When a client connect to the server:
 - the client will be given an id. the first client will receive the id 0 and each new client will received the last client id + 1
 - %d will be replace by this number
 - a message is sent to all the client that was connected to the server: "server: client %d just arrived\n"
+클라이언트가 서버에 연결할 때:
+- 클라이언트는 id를 부여받습니다. 첫번째 클라이언트는 id 0을 부여받고 새로운 클라이언트는 그 직전 클라이언트의 id + 1을 id로 부여받습니다.
+- %d는 이 id로 대체되어야 합니다.
+- 서버에 접속해 있던 모든 클라이언트에게 다음의 메세지를 보냅니다: "server: client %d just arrived\n"
 
 clients must be able to send messages to your program.
 - message will only be printable characters, no need to check
 - a single message can contains multiple \n
 - when the server receive a message, it must resend it to all the other client with "client %d: " before every line!
+
 
 When a client disconnect from the server:
 - a message is sent to all the client that was connected to the server: "server: client %d just left\n"
