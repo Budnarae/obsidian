@@ -31,13 +31,19 @@ If a System Calls returns an error before the program start accepting connection
 만약에 시스템 콜이 연결이 완료되기 전에(accepting connection) 오류를 반환한다면, 표준 에러로 "Fatal error"에 개행(\n)을 붙여 출력하고 exit status 1로 종료되어야 합니다.
 
 If you can't allocate memory it should write in stderr "Fatal error" followed by a \n and exit with status 1
-만약에 당신이 메모리를 할당할 수 없다면 표준 오류로 "Fatal error"에 개행(\n)을 붙여 출력하고 exit status 1로 종료
+만약에 당신이 메모리를 할당할 수 없다면 표준 오류로 "Fatal error"에 개행(\n)을 붙여 출력하고 exit status 1로 종료되어야 합니다.
 
 Your program must be non-blocking but client can be lazy and if they don't read your message you must NOT disconnect them...
+당신의 프로그램은 non-block으로 실행되어야 합니다. 하지만 클라이언트는 게으를 수 있으니 그들이 당신의 메시지를 읽지 않는다고 해서 연결을 끊어서는 안됩니다.
 
-Your program must not contains #define preproc
-Your program must only listen to 127.0.0.1
+Your program must not contains \#define preproc
+당신의 프로그램은 \#define preproc을 포함해선 안됩니다.
+
+Your program must only listen to 127.0.0.1.
+당신의 프로그램은 오직 127.0.0.1 주소로만 수신해야 합니다.
+
 The fd that you will receive will already be set to make 'recv' or 'send' to block if select hasn't be called before calling them, but will not block otherwise. 
+당신에게 주어지는 파일 디스크립터(fd)는 recv 또는 send를 위해 쓰일 것이고
 
 When a client connect to the server:
 - the client will be given an id. the first client will receive the id 0 and each new client will received the last client id + 1
