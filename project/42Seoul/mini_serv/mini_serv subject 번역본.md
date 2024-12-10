@@ -44,7 +44,7 @@ Your program must only listen to 127.0.0.1.
 
 The fd that you will receive will already be set to make 'recv' or 'send' to block if select hasn't be called before calling them, but will not block otherwise. 
 당신에게 주어지는 파일 디스크립터(fd)는 recv 또는 send를 위해 쓰일 것이고, select를 앞선 함수들을 호출하기 전에 호출하면 block을 방지할 수 있습니다.
-
+	
 When a client connect to the server:
 - the client will be given an id. the first client will receive the id 0 and each new client will received the last client id + 1
 - %d will be replace by this number
