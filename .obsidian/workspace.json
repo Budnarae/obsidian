@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "sockaddr_in"
+              "title": "INADDR_ANY"
             }
           },
           {
@@ -194,9 +194,11 @@
   },
   "active": "9bc7b971c64ebd4c",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
+    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
@@ -221,8 +223,6 @@
     "resource/Docker/도커 허브.md",
     "resource/Docker/도커 컴포즈.md",
     "resource/Linux/envsubst.md",
-    "resource/Database/MySQL.md",
-    "resource/Database/데이터베이스.md",
     "resource/Database",
     "project/42Seoul/inception",
     "재료",
