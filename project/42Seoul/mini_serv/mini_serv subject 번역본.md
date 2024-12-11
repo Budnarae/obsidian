@@ -58,6 +58,7 @@ clients must be able to send messages to your program.
 - message will only be printable characters, no need to check
 - a single message can contains multiple \n
 - when the server receive a message, it must resend it to all the other client with "client %d: " before every line!
+
 클라이언트는 당신의 프로그램에 메시지를 전송할 수 있어야 합니다.
 - 메시지는 출력 가능한(printable) 캐릭터로만 구성되며, 이를 체크할 필요는 없습니다(예외 처리할 필요 없다는 뜻).
 - 하나의 메시지는 여러 개의 개행(\n)을 포함할 수 있습니다.
@@ -65,6 +66,7 @@ clients must be able to send messages to your program.
 
 When a client disconnect from the server:
 - a message is sent to all the client that was connected to the server: "server: client %d just left\n"
+
 클라이언트가 서버와의 연결을 끊을 때:
 - 서버에 연결되어 있는 다른 모든 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
 
