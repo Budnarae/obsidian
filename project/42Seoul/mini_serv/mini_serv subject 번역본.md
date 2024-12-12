@@ -142,5 +142,6 @@ client 0: vvvveeeerrrryyyy lllloooonnnngggg mmmmssssgggg.
 
 **mini_serv는 개행(\n)을 구분자로 삼아 메시지를 처리해야 한다.**
 
-서버에 연결할 때("server: client %d just arrived\n"), 서버와 연결을 끊을 때("server: client %d just left\n") 클라이언트에게 전송되는 메시지 메시지 모두 개행으로 
+서버에 연결할 때("server: client %d just arrived\n"), 서버와 연결을 끊을 때("server: client %d just left\n") 클라이언트에게 전송되는 메시지 모두 개행으로 끝난다는 것이 단서라면 유일한 단서였던 셈이다.
 
+즉, 
