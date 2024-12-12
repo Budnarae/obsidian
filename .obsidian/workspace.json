@@ -11,10 +11,15 @@
             "id": "b6f0f2ed66c96688",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "mini_serv subject 번역본"
             }
           }
         ]
@@ -156,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {

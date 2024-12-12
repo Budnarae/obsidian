@@ -91,3 +91,9 @@ Hint: you should use nc to test your program
 Hint: To test you can use fcntl(fd, F_SETFL, O_NONBLOCK) but use select and NEVER check EAGAIN (man 2 send)
 	힌트: 테스트를 위해서 당신은 fcntl(fd, F_SETFL, O_NONBLOCK)을 사용할 수 있지만 select를 사용하여야 하며 절대 EAGAIN 옵션을 체크해서는 안됩니다.
 
+---
+
+이상이 exam 06 mini_serv의 subject 원본이다. 언뜻 보면 일반적인 echo 서버에 접두사를 붙이는 기능만 추가하면 되는 간단한 과제로 보인다. 하지만 불친절하기 짝이 없는 42 교육 과정의 exam답게 본 시험에는 숨겨진 조건이 존재한다. 사실 tcp의 특성을 알고 있는 사람이라면 다음과 같은 의문이 들 것이다.
+
+1. tcp 프로토콜은 임의로 자신이 필요하다고 판단할 시(ex. 한 번에 송신하기에는 너무 대량의 데이터일 경우) 패킷을 분할하여 송신한다. 예를 들어 10000 바이트 길이의 데이터를 송신할 시 1000바이트씩 쪼개서 보내는 것이 가능하다.
+2. 
