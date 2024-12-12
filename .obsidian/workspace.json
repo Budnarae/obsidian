@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "accept"
+              "title": "connect"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "b6f0f2ed66c96688",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
@@ -193,7 +194,6 @@
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Linux/ssh.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
