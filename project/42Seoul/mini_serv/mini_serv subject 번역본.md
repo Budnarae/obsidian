@@ -128,6 +128,12 @@ packet2: mmmmssssgggg.
 
 buffer: vvvveeeerrrryyyy + lllloooonnnngggg + (waiting for '.' ....)
 
-// 구분자가 도
+// 구분자가 도착하면 비로소 전송한다.
+
+client 0: vvvveeeerrrryyyy lllloooonnnngggg mmmmssssgggg.
 
 ```
+
+6. 그런데 subject에는 구분자가 무엇인지 명시되어 있지 않다.
+
+결론부터 말하자면, exam 06을 통과하기 위해선 구분자를 지정해야 한다. subject에 명시가 되어있지 않더라도 말이다. exam 06의 test case 08을 통과하기 위해서는 약 36만 바이트 길이의 메시지를 문제없이 echo 시킬 수 있어야 한다. 당연히 메시지는 분할되어서 들어올 것이고, 구분자를 지정하지 않으면 
