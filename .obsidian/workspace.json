@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "inet_ntoa"
+              "title": "accept"
             }
           }
         ]
@@ -179,10 +179,12 @@
   },
   "active": "b6f0f2ed66c96688",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
@@ -190,11 +192,9 @@
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Linux/ssh.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "project/42Seoul/inception/tls.md",
