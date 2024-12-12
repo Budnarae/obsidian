@@ -115,4 +115,19 @@ client 0: vvvveeeerrrryyyy client 0: lllloooonnnngggg client 0: mmmmssssgggg
 ```
 
 4. 일반적인 echo 서버는 위와 같은 걱정을 할 필요가 없다. 왜냐하면 접두사를 붙여서 보내지 않기 때문이다. 클라이언트에서 패킷을 분할해서 보내도 보내는 대로 받아서 send back하면 그만이다. 하지만 접두사를 앞에 붙여서 보내야 한다는 조건이 추가되는 순간 이는 중대한 문제가 된다. 분할된 패킷 사이에 들어가는 접두사는 불순물로 전락해버린다. 접두사는 메시지의 맨 앞에 단 한 번만 들어가야 한다.
-5. 이와 같은 문제를 해결하는 가장 간단한 방법은 구분자(delimeter, seperator)을 지정하는 것이다. 예를 들어 구분자를
+5. 이와 같은 문제를 해결하는 가장 간단한 방법은 구분자(delimeter, seperator)을 지정하는 것이다. 예를 들어 마침표(.)를 구분자로 지정했다고 가정해보자. 그러면 메시지가 분할되어 도착해도 구분자가 없음을 확인한 후 버퍼에 저장해두었다가, 구분자가 도착하면 합쳐서 한꺼번에 전송하는 방식이 가능할 것이다.
+
+```
+// 메시지가 다음과 같이 분할되어 전송된다.
+
+packet0: vvvveeeerrrryyyy
+packet1: lllloooonnnngggg
+packet2: mmmmssssgggg.
+
+// 하지만 구분자(.)가 발견될 때까지 패킷은 전송되지 않고 버퍼에 저장된다.
+
+buffer: vvvveeeerrrryyyy + lllloooonnnngggg + (waiting for '.' ....)
+
+// 구분자가 도
+
+```
