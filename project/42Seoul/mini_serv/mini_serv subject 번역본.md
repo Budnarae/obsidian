@@ -144,4 +144,11 @@ client 0: vvvveeeerrrryyyy lllloooonnnngggg mmmmssssgggg.
 
 서버에 연결할 때("server: client %d just arrived\n"), 서버와 연결을 끊을 때("server: client %d just left\n") 클라이언트에게 전송되는 메시지 모두 개행으로 끝난다는 것이 단서라면 유일한 단서였던 셈이다.
 
-즉, 
+즉, exam 06은 추가적으로 다음의 조건을 따라야 한다.
+
+1. 수신받은 메시지에 개행이 포함되어 있다면 그냥 평범하게 send back 하면 된다.
+2. 수신받은 메시지에 개행이 포함되어 있지 않다면 버퍼에 저장해두었다가 나중에 구분자가 도착했을 때 합쳐서 보내야 한다. 따라서 클라이언트마다 별개로 버퍼가 존재해야 하고, 새로운 클라이언트가 서버에 접속할 때마다 버퍼도 새로 만들어야 한다.
+3. subject에는 이런 내용이 포함되어 있다.
+>- a single message can contains multiple \n
+>- 하나의 메시지에는 여러 개의 개행(\n)이 포함될 수 있다.
+위와 같은 경우 개행을 기준으로 
