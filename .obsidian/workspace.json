@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "mini_serv subject 번역본"
+              "title": "프로토콜 체계"
             }
           }
         ]
@@ -179,8 +179,10 @@
   },
   "active": "b6f0f2ed66c96688",
   "lastOpenFiles": [
-    "resource/Linux/ssh.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
+    "resource/Linux/ssh.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
@@ -190,9 +192,7 @@
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "project/42Seoul/inception/tls.md",
     "project/42Seoul/mini_serv",
     "resource/Docker/도커 네트워크.md",
