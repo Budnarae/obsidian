@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "멀티 플렉싱 기반 서버"
+              "title": "멀티 프로세스 기반 서버"
             }
           }
         ]
@@ -176,9 +176,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "b6f0f2ed66c96688",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
+    "README.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
@@ -193,7 +197,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
     "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
     "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Linux/cmd/ssh.md",
     "resource/Linux/system call",
     "resource/Linux/cmd",
@@ -203,10 +206,7 @@
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/기초 개념/패킷.md",
-    "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
-    "project/42Seoul/inception/tls.md",
     "project/42Seoul/mini_serv",
-    "resource/Docker/도커 네트워크.md",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
     "resource/Database",
