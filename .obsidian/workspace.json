@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Linux/cmd/envsubst.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "envsubst"
+              "title": "다중 접속 서버"
             }
           }
         ]
@@ -161,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +179,10 @@
   },
   "active": "b6f0f2ed66c96688",
   "lastOpenFiles": [
-    "resource/Linux/cmd/ssh.md",
-    "resource/Linux/cmd",
     "resource/Linux/cmd/envsubst.md",
+    "resource/Linux/cmd/ssh.md",
+    "resource/Linux/system call",
+    "resource/Linux/cmd",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
@@ -215,7 +217,6 @@
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/컨테이너",
     "재료/img/컨테이너/컨테이너의 구조.png",
-    "resource/Docker",
     "재료/img/Half-close/파일 전송 데이터 흐름도.png",
     "재료/img/Half-close/일방적 연결종료.png",
     "재료/img/Half-close/소켓을 기반으로 생성되는 두 개의 스트림.png",

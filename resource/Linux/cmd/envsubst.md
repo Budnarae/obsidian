@@ -1,7 +1,7 @@
 
 ---
 
-#linux
+#linux/cmd
 
 *환경변수 삽입*
 
