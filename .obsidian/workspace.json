@@ -11,10 +11,12 @@
             "id": "e4a866f8de7e6a25",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "pdf",
+              "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "다중 접속 서버 구현 방식"
             }
           }
         ]
@@ -48,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#참고도서/윤성우의_열혈_cpp_프로그래밍",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +71,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,8 +173,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99cb3010a8824735",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf",
+    "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(12).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(11).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(10).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(7).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(6).png",
+    "재료/img/다중 접속 서버 구현 방식_files/sodar",
+    "재료/img/다중 접속 서버 구현 방식_files/f(3).txt",
+    "재료/img/다중 접속 서버 구현 방식_files/20.5dbdccff.chunk.css",
+    "재료/img/다중 접속 서버 구현 방식_files/f(4).txt",
+    "재료/img/다중 접속 서버 구현 방식_files/main.e7869632.chunk.css",
+    "재료/img/다중 접속 서버 구현 방식_files/f(5).txt",
+    "재료/img/다중 접속 서버 구현 방식_files/sdk.js",
+    "재료/img/다중 접속 서버 구현 방식_files/l",
+    "재료/img/다중 접속 서버 구현 방식_files/f.txt",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
@@ -200,27 +221,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
-    "resource/Linux/system call",
-    "resource/Linux/cmd",
-    "project/42Seoul/mini_serv",
-    "재료/img/도커 네트워크/도커 네트워크 구조.png",
-    "재료/img/도커 네트워크",
-    "resource/Database",
-    "project/42Seoul/inception",
-    "재료",
-    "resource/Linux",
-    "재료/img/도커",
-    "재료/img/도커/도커의 구조.jpeg",
-    "재료/img/컨테이너",
-    "재료/img/컨테이너/컨테이너의 구조.png",
-    "재료/img/Half-close/파일 전송 데이터 흐름도.png",
-    "재료/img/Half-close/일방적 연결종료.png",
-    "재료/img/Half-close/소켓을 기반으로 생성되는 두 개의 스트림.png",
-    "재료/img/TCP 소켓/tcp 소켓의 연결종료 과정.png",
-    "재료/img/TCP 소켓/tcp 소켓의 입출력 버퍼.png",
-    "재료/img/TCP 소켓/tcp 소켓의 데이터 송신 오류.png",
-    "재료/img/TCP 소켓/tcp 소켓의 연결 설정 과정.png",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
