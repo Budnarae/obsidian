@@ -1,7 +1,7 @@
 
 ---
 
-#linux
+#linux/cmd
 
 *Secured SHell*
 
