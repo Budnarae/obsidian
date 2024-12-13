@@ -67,6 +67,24 @@ FD_ISSET(int fd, fd_set *fdset)
 
 ```
 
+## 검사(관찰)의 범위지정과 타임아웃의 설정
+
+이 단락의 내용을 이해하려면 먼저 select 함수의 형태를 알아야 한다.
+
+```c
+
+#include <sys/select.h>
+#include <sys/time.h>
+
+int select(int maxfd, fd_set *readset, fd_set *writeset, \
+	fd_set *exceptset, const struct timeval *timeout);
+
+```
+
+- maxfd : 검사 대상이 되는 파일 디스크립터의 수
+- readset : fd_set형 변수에 '수신된 데이터의 존재 여부'에 관심 있는 파일 디스크립터 정보를 모두 등록해서 그 변수의 주소 값을 전달한다.
+- writeset : fd_set형 변수에 '블로킹 없는 데이터 전송의 기능여부'에 관심 있는 파일 디스크립터 정보를 모두 등록해서 
+
 ---
 
 참고자료
