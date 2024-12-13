@@ -99,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -201,8 +200,10 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/select.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
@@ -228,7 +229,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/무제 파일.md",
     "재료/template/참고자료.md",
     "재료/template/개요.md",
     "resource/Docker/Dockerfile.md",
@@ -240,7 +240,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
     "README.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
