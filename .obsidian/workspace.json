@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "멀티 프로세스 기반 서버"
+              "title": "멀티 플렉싱 기반 서버"
             }
           }
         ]
@@ -178,6 +178,7 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
@@ -199,7 +200,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/f(4).txt",
     "재료/img/다중 접속 서버 구현 방식_files/main.e7869632.chunk.css",
     "재료/img/다중 접속 서버 구현 방식_files/f(5).txt",
-    "재료/img/다중 접속 서버 구현 방식_files/sdk.js",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
@@ -213,7 +213,6 @@
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "README.md",
