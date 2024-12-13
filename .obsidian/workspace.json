@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "다중 접속 서버"
+              "title": "멀티 플렉싱 기반 서버"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#linux/system_call",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,36 +176,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6f0f2ed66c96688",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "resource/Linux/cmd/envsubst.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Linux/cmd/ssh.md",
     "resource/Linux/system call",
     "resource/Linux/cmd",
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "resource/Network/기초 개념/패킷.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "project/42Seoul/mini_serv/mini_serv subject 번역본.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
     "project/42Seoul/inception/tls.md",
     "project/42Seoul/mini_serv",
     "resource/Docker/도커 네트워크.md",
-    "resource/Docker/도커 명령어.md",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
     "resource/Database",

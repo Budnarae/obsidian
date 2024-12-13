@@ -1,7 +1,7 @@
 
 ---
 
-#network #language/c #socket_programming #linux
+#network #language/c #socket_programming #linux/system_call
 
 *연결 요청*
 

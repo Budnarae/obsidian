@@ -1,7 +1,7 @@
 
 ---
 
-#network #language/c #socket_programming #linux
+#network #language/c #socket_programming #linux/system_call
 
 *소켓에 인터넷 주소를 할당*
 
