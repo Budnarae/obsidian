@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "61cc873293275f1e",
+        "id": "fd19ede802dd37c4",
         "type": "tabs",
         "children": [
           {
-            "id": "b6f0f2ed66c96688",
+            "id": "2752b878a3ebfe6f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "project/42Seoul/microshell/flowchart/무제 파일.canvas",
-                "viewState": {
-                  "x": 124.071044921875,
-                  "y": -391.44297485351564,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "무제 파일"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -178,7 +171,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6f0f2ed66c96688",
+  "active": "2752b878a3ebfe6f",
   "lastOpenFiles": [
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
@@ -208,7 +201,6 @@
     "resource/Linux/cmd",
     "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
     "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/호스트 바이트 순서.md",
     "project/42Seoul/mini_serv",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
