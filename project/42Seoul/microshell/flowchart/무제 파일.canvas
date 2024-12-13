@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"332ead806b54e085","x":-276,"y":-67,"width":400,"height":400,"type":"file","file":"project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md"},
+		{"id":"4a48371ede68d215","x":237,"y":61,"width":400,"height":400,"type":"file","file":"project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md"},
+		{"id":"966a809e50a4330c","x":-60,"y":534,"width":400,"height":400,"type":"file","file":"project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md"},
+		{"id":"bb4c944b9bd5074b","x":179,"y":-187,"width":250,"height":60,"type":"text","text":""},
+		{"id":"d870e1dd303b2fa0","x":-300,"y":-551,"width":400,"height":394,"type":"file","file":"project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md"}
+	],
+	"edges":[
+		{"id":"da92805a9c746aed","fromNode":"332ead806b54e085","fromSide":"bottom","toNode":"966a809e50a4330c","toSide":"top"}
+	]
+}
