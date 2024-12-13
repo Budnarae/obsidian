@@ -11,12 +11,10 @@
             "id": "e4a866f8de7e6a25",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "다중 접속 서버 구현 방식"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -173,10 +171,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
-    "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
+    "재료/img/다중 접속 서버 구현 방식.pdf",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf",
+    "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(12).png",
