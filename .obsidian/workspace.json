@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fd19ede802dd37c4",
+        "id": "cbc80bb76fd41daf",
         "type": "tabs",
         "children": [
           {
-            "id": "2752b878a3ebfe6f",
+            "id": "e4a866f8de7e6a25",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#linux/system_call",
+                "query": "tag:#참고도서/윤성우의_열혈_cpp_프로그래밍",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -171,8 +172,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2752b878a3ebfe6f",
+  "active": "99cb3010a8824735",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
+    "재료/template/개요와 참고자료.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/무제 파일.md",
+    "재료/template/참고자료.md",
+    "재료/template/개요.md",
+    "resource/Docker/Dockerfile.md",
+    "area/참고도서.md",
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
@@ -182,7 +192,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "README.md",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
@@ -192,15 +201,8 @@
     "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "resource/Network/소켓 프로그래밍(리눅스)/htons.md",
     "resource/Network/소켓 프로그래밍(리눅스)/Half-close.md",
-    "resource/Linux/cmd/envsubst.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/connect.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/bind.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/accept.md",
-    "resource/Linux/cmd/ssh.md",
     "resource/Linux/system call",
     "resource/Linux/cmd",
-    "resource/Network/소켓 프로그래밍(리눅스)/TCP 소켓.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/네트워크 바이트 순서.md",
     "project/42Seoul/mini_serv",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/도커 네트워크",
