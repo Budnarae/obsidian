@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "다중 접속 서버"
+              "title": "멀티 프로세스 기반 서버"
             }
           }
         ]
@@ -178,6 +178,7 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식",
     "재료/img/다중 접속 서버 구현 방식.pdf",
@@ -215,7 +216,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "README.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
