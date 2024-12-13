@@ -11,10 +11,15 @@
             "id": "e4a866f8de7e6a25",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "다중 접속 서버"
             }
           }
         ]
@@ -173,6 +178,8 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
+    "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
+    "재료/img/다중 접속 서버 구현 방식",
     "재료/img/다중 접속 서버 구현 방식.pdf",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
@@ -184,7 +191,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(7).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(6).png",
     "재료/img/다중 접속 서버 구현 방식_files/sodar",
     "재료/img/다중 접속 서버 구현 방식_files/f(3).txt",
     "재료/img/다중 접속 서버 구현 방식_files/20.5dbdccff.chunk.css",
@@ -192,8 +198,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/main.e7869632.chunk.css",
     "재료/img/다중 접속 서버 구현 방식_files/f(5).txt",
     "재료/img/다중 접속 서버 구현 방식_files/sdk.js",
-    "재료/img/다중 접속 서버 구현 방식_files/l",
-    "재료/img/다중 접속 서버 구현 방식_files/f.txt",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
