@@ -23,6 +23,27 @@
             }
           }
         ]
+      },
+      {
+        "id": "6a592c0472b4d9ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46016cf754f80f14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "다중 접속 서버"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -161,7 +183,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,10 +201,11 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
+    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식",
     "재료/img/다중 접속 서버 구현 방식.pdf",
@@ -214,7 +238,6 @@
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "README.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
