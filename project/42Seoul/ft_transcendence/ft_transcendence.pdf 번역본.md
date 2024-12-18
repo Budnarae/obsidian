@@ -156,4 +156,8 @@ This project is about creating a website for the mighty Pong contest!
 > - The use of libraries or tools that provide an immediate complete solution for a global feature or a module is prohibited.
 > - 과제 전체 혹은 모듈 전체의 기능을 즉시 그리고 통째로 제공하는 라이브러리 또는 도구의 사용은 금지됩니다.
 > - Any direct instruction about the usage (can, must, can't) of a third party library or tool must be followed.
-> - 
+> - 서드 파티 라이브러리나 도구의 사용에 있어 직접적인 지시가 있으면(ex. 이렇게 해야 합니다, 이렇게 하지 말아야 합니다 등등) 무조건 해당 사항을 따라야 합니다.
+> - During the evaluation, the team will justify any usage of library or tool that is not explicitly approved by the subject.
+> - 과제에 직접적으로 명시되지 않은 라이브러리나 툴을 사용했다면 평가 때 그것을 왜 사용했는지 타당한 이유를 댈 수 있어야 합니다.
+> - During the evaluation, the evaluator will take her/his responsibility and define if the usage of a specific library or tool is legit (and allowed) or almost solving an entire feature or module (and prohibited).
+> - 평가를 하는 동안에, 평가자는 
