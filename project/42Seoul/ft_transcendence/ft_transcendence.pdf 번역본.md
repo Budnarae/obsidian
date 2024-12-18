@@ -87,40 +87,59 @@ VI Submission and peer-evaluation
 
 # Chapter II. Essential Points
 
-This project is a complex undertaking, requiring decision-making within the specified constraints.
-이 프로젝트는 복잡하며, 명시된 제약들의 범위 내에서 판단을 내릴 것을 요구합니다.
+This project is a complex undertaking, requiring decision-making within the specified constraints.  
+이 프로젝트는 주어진 제약 내에서 의사결정을 요구하는 복잡한 작업입니다.
 
-You have some flexibility in implementing certain modules, and it is left to your discretion **within the scope of the subject**.
-당신은 특정 모듈을 구현하는 데 약간의 유연성을 발휘할 수 있으며, 그 유연성은 **과제에 범위 내에서** 당신의 재량껏 발휘될 수 있습니다.
+You have some flexibility in implementing certain modules, and it is left to your discretion within the scope of the subject.  
+일부 모듈을 구현하는 데 있어서 유연성이 주어지며, 주제의 범위 내에서 본인의 재량으로 선택할 수 있습니다.
 
-All your choices must be justifiable.
-당신의 모든 선택은 정당화할 수 있어야 합니다.
+All your choices must be justifiable.  
+모든 선택은 타당한 이유가 있어야 합니다.
 
-If you believe it's necessary to use nginx to set up your website, there's no issue, but ask yourself first, is it truly necessary? Can I do without it?
-만약 당신이 당신의 웹사이트를 설정하기 위해 nginx가 필요하다고 믿는다면, 그건 아무런 문제도 되지 않습니다. 하지만 스스로에게 물어보세요. 그것이 정말로 필수적인가요? 그것 없이 구현할 수 있지 않은가요?
+If you believe it’s necessary to use nginx to set up your website, there’s no issue, but ask yourself first, is it truly necessary?  
+nginx를 사용하여 웹사이트를 설정해야 할 필요성이 있다고 판단되면, 그 선택을 해도 괜찮습니다. 그러나 정말로 필요한지 먼저 생각해보세요.
 
-Similarly, when faced with a library that could assist you, it's crucial to understand whether it will fullfill your tasks.
-마찬가지로, 만약 당신을 보조해줄 라이브러리를 찾았을 때, 그것이 당신의 과제를 충족시키는지의 여부는 중요합니다.
+Can I do without it?  
+nginx 없이 해결할 방법이 있을지 고민해보세요.
 
-You're not expected to rework uninteresting sub-layers but rather to make the proposed features function.
-당신은 흥미롭지 못한 sub-layer들을 재작업할 필요는 없지만, 제시된 내용에 관한 기능은 만들 필요가 있습니다.
+Similarly, when faced with a library that could assist you, it’s crucial to understand whether it will fulfill your tasks.  
+마찬가지로, 특정 라이브러리가 도움이 될 것 같을 때는 그 라이브러리가 실제로 요구하는 작업을 충족시킬 수 있는지 확실히 이해하는 것이 중요합니다.
 
-It's crucial to understand that you'll encounter decisions where doubts about implementing certain features will arise.
-*의역, 전략* 앞으로 기능들을 구현하면서 많은 선택과 결정을 하게 될 것입니다.
+You’re not expected to rework uninteresting sub-layers but rather to make the proposed features function.  
+흥미롭지 않은 하위 작업을 재작업할 필요는 없으며, 제안된 기능이 정상적으로 동작하도록 만드는 것이 핵심입니다.
 
-Initially, it is **STRONGLY recommended** to comprehend the project requirements thoroughly.
-시작하기 앞서, 일단 프로젝트의 요구사항을 철두철미하게 이해하기를 **강력하게 추천합니다**.
+It’s crucial to understand that you’ll encounter decisions where doubts about implementing certain features will arise.  
+의심이 드는 기능을 구현해야 할 때, 요구사항을 철저히 이해하는 것이 가장 중요합니다.
 
-Once you've grasped what needs to be accomplished, it is necessary to stay within the framework of the project.
-*전략* 모든 것은 프로젝트의 틀 내에서 이루어져야 합니다.
+Initially, it is STRONGLY recommended to comprehend the project requirements thoroughly.  
+처음에는 요구사항을 철저히 이해하는 것이 강력히 권장됩니다.
 
-When we mention an imposed technology, it explicitly means that everything officially related to the requested framework/language is allowed.
-과제가 어떠한 기술을 제시할 때, 제시된 언어나 프레임워크와 공식적으로 관련이 있는 것들은 사용할 수 있습니다.
+Once you’ve grasped what needs to be accomplished, it is necessary to stay within the framework of the project.  
+요구되는 내용을 정확히 파악한 후, 프로젝트의 프레임워크 내에서 작업을 진행해야 합니다.
 
-However, we emphasize that when you wish to implement a module, all restrictions apply to that module.
-하지만 우리는 당신이 모듈을 구현할 때 모든 제약들을 준수해야 함을 강조합니다.
+When we mention an imposed technology, it explicitly means that everything officially related to the requested framework/language is allowed.  
+지정된 기술이 언급되었을 때, 그 기술과 공식적으로 관련된 모든 것만 사용해야 합니다.
 
-For instance, if you want to realize the project with the Backend module as specified in the subject, you can no longer use the default language and must adapt your project accordingly.
-예를 들어, 
+However, we emphasize that when you wish to implement a module, all restrictions apply to that module.  
+하지만 모듈을 구현할 때, 해당 모듈에 대한 제약이 적용된다는 점을 명심해야 합니다.
 
+For instance, if you want to realize the project with the Backend module as specified in the subject, you can no longer use the default language and must adapt your project accordingly.  
+예를 들어, 백엔드 모듈을 지정된 대로 구현하고 싶다면 기본 언어를 사용하지 않고 요청된 언어와 프레임워크를 맞춰야 합니다.
 
+If you still want to create a backend using the default language, it’s also possible, but since you’re not using the requested language/framework, this module will not be considered valid.  
+기본 언어를 사용해 백엔드를 구현하고 싶다면 그 방법도 가능하지만, 이 경우 해당 모듈은 유효하지 않게 됩니다.
+
+Before concluding, it’s important to note that some modules intentionally have strong dependencies on others.  
+마지막으로, 일부 모듈은 다른 모듈에 강한 의존성을 가질 수 있다는 점을 염두에 두어야 합니다.
+
+Your choices are significant and must be justified during your evaluation.  
+선택이 중요하며, 평가 과정에서 그 선택을 정당화해야 합니다.
+
+Exercise caution.  
+신중하게 결정하십시오.
+
+Take the time to contemplate the design of your application with your choices before delving into the code – it’s crucial.  
+코드를 작성하기 전에 애플리케이션 설계와 선택에 대해 충분히 고민하는 것이 중요합니다.
+
+Have a fun! :)  
+재미있게 작업하세요! :)
