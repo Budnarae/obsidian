@@ -90,4 +90,10 @@ VI Submission and peer-evaluation
 This project is a complex undertaking, requiring decision-making within the specified constraints.
 이 프로젝트는 복잡하며, 명시된 제약들의 범위 내에서 판단을 내릴 것을 요구합니다.
 
-If you believe it's necessary to use
+You have some flexibility in implementing certain modules, and it is left to your discretion **within the scope of the subject**.
+당신은 특정 모듈을 구현하는 데 약간의 유연성을 발휘할 수 있으며, 그 유연성은 **과제에 범위 내에서** 당신의 재량껏 발휘될 수 있습니다.
+
+All your choices must be justifiable.
+당신의 모든 선택은 정당화할 수 있어야 합니다.
+
+If you believe it's necessary to use nginx to set up your website, there's no issue, but ask yourself first, is it truly necessary? Can I do without it?
