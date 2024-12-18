@@ -143,3 +143,14 @@ Take the time to contemplate the design of your application with your choices be
 
 Have a fun! :)  
 재미있게 작업하세요! :)
+
+---
+
+# Chapter III. Mandatory part
+
+This project is about creating a website for the mighty Pong contest!
+이 프로젝트의 목적은 터프한 퐁 대회를 즐길 수 있는 웹사이트를 만드는 것입니다!
+
+> Caution
+> 주의
+> - 
