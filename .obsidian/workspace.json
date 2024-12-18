@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
+                "file": "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "mini_serv 억까 방지용 시트"
+              "title": "ft_transcendence.pdf 번역본"
             }
           }
         ]
@@ -177,9 +177,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
-    "project/42Seoul/무제 폴더",
+    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+    "project/42Seoul/무제 폴더/무제 파일.canvas",
+    "project/42Seoul/ft_transcendence",
     "project/42Seoul/microshell/microshell 문제 번역.md",
     "resource/Network/소켓 프로그래밍(리눅스)/select.md",
     "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
@@ -205,7 +208,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/20.5dbdccff.chunk.css",
     "재료/img/다중 접속 서버 구현 방식_files/f(4).txt",
     "재료/img/다중 접속 서버 구현 방식_files/main.e7869632.chunk.css",
-    "재료/img/다중 접속 서버 구현 방식_files/f(5).txt",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
@@ -225,7 +227,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/INADDR_ANY.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
