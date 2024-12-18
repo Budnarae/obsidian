@@ -106,10 +106,18 @@ You're not expected to rework uninteresting sub-layers but rather to make the pr
 당신은 흥미롭지 못한 sub-layer들을 재작업할 필요는 없지만, 제시된 내용에 관한 기능은 만들 필요가 있습니다.
 
 It's crucial to understand that you'll encounter decisions where doubts about implementing certain features will arise.
-(대충 앞으로 기능들을 구현하면서 많은 선택과 결정을 하게 될 것이라는 뜻)
+*의역, 전략* 앞으로 기능들을 구현하면서 많은 선택과 결정을 하게 될 것입니다.
 
 Initially, it is **STRONGLY recommended** to comprehend the project requirements thoroughly.
 시작하기 앞서, 일단 프로젝트의 요구사항을 철두철미하게 이해하기를 **강력하게 추천합니다**.
 
 Once you've grasped what needs to be accomplished, it is necessary to stay within the framework of the project.
-모든 것은 프
+*전략* 모든 것은 프로젝트의 틀 내에서 이루어져야 합니다.
+
+When we mention an imposed technology, it explicitly means that everything officially related to the requested framework/language is allowed.
+과제가 어떠한 기술을 제시할 때, 제시된 언어나 프레임워크와 공식적으로 관련이 있는 것들은 사용할 수 있습니다.
+
+However, we emphasize that when you wish to implement a module, all restrictions apply to that module.
+
+
+
