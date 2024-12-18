@@ -170,6 +170,6 @@ Thanks to your website, users will play Pong with others. You have to provide a 
 당신의 웹사이트 덕분에, 사용자들은 다른 사람들과 퐁 게임을 즐길 수 있을 것입니다. 당신은 훌륭한 사용자 인터페이스와 실시간 멀티플레이어 온라인 게임을 만들 수 있어야 합니다.
 
 - Your project needs to adhere to the following guidelines as a minimum requirement, contributing only a small portion to the final grade.
-- 
+- 당신의 프로젝트는 적어도 앞으로 제시되는 가이드라인들은 준수해야 하며, 최종 점수에는
 
 - The second part of this subject will offer additional modules that can replace or complete the following rules.
