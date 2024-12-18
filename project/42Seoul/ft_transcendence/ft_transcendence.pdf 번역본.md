@@ -118,6 +118,9 @@ When we mention an imposed technology, it explicitly means that everything offic
 과제가 어떠한 기술을 제시할 때, 제시된 언어나 프레임워크와 공식적으로 관련이 있는 것들은 사용할 수 있습니다.
 
 However, we emphasize that when you wish to implement a module, all restrictions apply to that module.
+하지만 우리는 당신이 모듈을 구현할 때 모든 제약들을 준수해야 함을 강조합니다.
 
+For instance, if you want to realize the project with the Backend module as specified in the subject, you can no longer use the default language and must adapt your project accordingly.
+예를 들어, 
 
 
