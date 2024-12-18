@@ -106,4 +106,10 @@ You're not expected to rework uninteresting sub-layers but rather to make the pr
 당신은 흥미롭지 못한 sub-layer들을 재작업할 필요는 없지만, 제시된 내용에 관한 기능은 만들 필요가 있습니다.
 
 It's crucial to understand that you'll encounter decisions where doubts about implementing certain features will arise.
-(대충 앞으로)
+(대충 앞으로 기능들을 구현하면서 많은 선택과 결정을 하게 될 것이라는 뜻)
+
+Initially, it is **STRONGLY recommended** to comprehend the project requirements thoroughly.
+시작하기 앞서, 일단 프로젝트의 요구사항을 철두철미하게 이해하기를 **강력하게 추천합니다**.
+
+Once you've grasped what needs to be accomplished, it is necessary to stay within the framework of the project.
+모든 것은 프
