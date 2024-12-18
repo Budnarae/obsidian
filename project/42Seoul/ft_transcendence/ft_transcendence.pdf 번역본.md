@@ -160,4 +160,16 @@ This project is about creating a website for the mighty Pong contest!
 > - During the evaluation, the team will justify any usage of library or tool that is not explicitly approved by the subject.
 > - 과제에 직접적으로 명시되지 않은 라이브러리나 툴을 사용했다면 평가 때 그것을 왜 사용했는지 타당한 이유를 댈 수 있어야 합니다.
 > - During the evaluation, the evaluator will take her/his responsibility and define if the usage of a specific library or tool is legit (and allowed) or almost solving an entire feature or module (and prohibited).
-> - 평가를 하는 동안에, 평가자는 
+> - 평가를 하는 동안에, 평가자는 사용된 라이브러리나 도구가 적절하고 허용되었는지, 과제 혹은 모듈 전체에 대한 해결책을 제공하거나 사용이 금지되지는 않았는지 책임감을 가지고 평가하세요.
+
+---
+
+## III.1 Overview
+
+Thanks to your website, users will play Pong with others. You have to provide a nice user interface and real-time multiplayer online games!
+당신의 웹사이트 덕분에, 사용자들은 다른 사람들과 퐁 게임을 즐길 수 있을 것입니다. 당신은 훌륭한 사용자 인터페이스와 실시간 멀티플레이어 온라인 게임을 만들 수 있어야 합니다.
+
+- Your project needs to adhere to the following guidelines as a minimum requirement, contributing only a small portion to the final grade.
+- 
+
+- The second part of this subject will offer additional modules that can replace or complete the following rules.
