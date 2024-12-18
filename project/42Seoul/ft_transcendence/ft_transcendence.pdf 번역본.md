@@ -103,4 +103,7 @@ Similarly, when faced with a library that could assist you, it's crucial to unde
 마찬가지로, 만약 당신을 보조해줄 라이브러리를 찾았을 때, 그것이 당신의 과제를 충족시키는지의 여부는 중요합니다.
 
 You're not expected to rework uninteresting sub-layers but rather to make the proposed features function.
-당신은 흥미롭지 못한 sub-layer들을 재작업할 필요는 없지만, 제시된 특성
+당신은 흥미롭지 못한 sub-layer들을 재작업할 필요는 없지만, 제시된 내용에 관한 기능은 만들 필요가 있습니다.
+
+It's crucial to understand that you'll encounter decisions where doubts about implementing certain features will arise.
+(대충 앞으로)
