@@ -153,4 +153,7 @@ This project is about creating a website for the mighty Pong contest!
 
 > Caution
 > 주의
+> - The use of libraries or tools that provide an immediate complete solution for a global feature or a module is prohibited.
+> - 과제 전체 혹은 모듈 전체의 기능을 즉시 그리고 통째로 제공하는 라이브러리 또는 도구의 사용은 금지됩니다.
+> - Any direct instruction about the usage (can, must, can't) of a third party library or tool must be followed.
 > - 
