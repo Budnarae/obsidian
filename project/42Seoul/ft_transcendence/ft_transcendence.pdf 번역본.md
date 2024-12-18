@@ -97,3 +97,9 @@ All your choices must be justifiable.
 당신의 모든 선택은 정당화할 수 있어야 합니다.
 
 If you believe it's necessary to use nginx to set up your website, there's no issue, but ask yourself first, is it truly necessary? Can I do without it?
+만약 당신이 당신의 웹사이트를 설정하기 위해 nginx가 필요하다고 믿는다면, 그건 아무런 문제도 되지 않습니다. 하지만 스스로에게 물어보세요. 그것이 정말로 필수적인가요? 그것 없이 구현할 수 있지 않은가요?
+
+Similarly, when faced with a library that could assist you, it's crucial to understand whether it will fullfill your tasks.
+마찬가지로, 만약 당신을 보조해줄 라이브러리를 찾았을 때, 그것이 당신의 과제를 충족시키는지의 여부는 중요합니다.
+
+You're not expected to rework uninteresting sub-layers but rather to make the proposed features function.
