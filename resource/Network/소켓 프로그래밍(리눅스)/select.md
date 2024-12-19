@@ -196,6 +196,7 @@ void error_handling(char *buf);
 
 int main(int argc, char *argv[])
 {
+	// 필요한 변수 설정
 	int serv_sock, clnt_sock;
 	struct sockaddr_in serv_adr, clnt_adr;
 	struct timeval timeout;
@@ -204,6 +205,8 @@ int main(int argc, char *argv[])
 	socklen_t adr_sz;
 	int fd_max, str_len, fd_num, i;
 	char buf[BUF_SIZE];
+
+	// 필요한 port 번
 	if (argc !=2)
 	{
 		printf("Usage : %s <port>\n", argv[0]);
@@ -242,11 +245,39 @@ int main(int argc, char *argv[])
 			{
 				if (i == serv_sock) // connection request!
 				{
-					adr_sz = si
+					adr_sz = sizeof(clnt_adr);
+					clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_adr, &adr_sz);
+					FD_SET(clnt_sock, &reads);
+					if (fd_max < clnt_sock)
+						fd_max = clnt_sock;
+					printf("connected client: %d \n", clnt_sock);
+				}
+				else // read message!
+				{
+					str_len = read(i, buf, BUF_SIZE);
+					if (str_len == 0) // close request!
+					{
+						FD_CLR(i, &reads);
+						close(i);
+						printf("closed client: %d \n", i);
+					}
+					else
+					{
+						write(i, buf, str_len); // echo!
+					}
 				}
 			}
 		}
 	}
+	close(serv_sock);
+	return (0);
+}
+
+void error_handling(char *buf)
+{
+	fputs(buf, stderr);
+	fputc('\n', stderr);
+	exit(1);
 }
 
 ```
