@@ -93,6 +93,10 @@ Hint: To test you can use fcntl(fd, F_SETFL, O_NONBLOCK) but use select and NEVE
 
 ---
 
+# 숨겨진 조건에 관하여
+
+## 구분자
+
 이상이 exam 06 mini_serv의 subject 원본이다. 언뜻 보면 일반적인 echo 서버에 접두사(client : %d)를 붙이는 기능만 추가하면 되는 간단한 과제로 보인다. 하지만 불친절하기 짝이 없는 42 교육 과정의 exam답게 본 시험에는 숨겨진 조건이 존재한다. 사실 tcp의 특성을 알고 있는 사람이라면 다음과 같은 의문이 들 것이다.
 
 1. tcp 프로토콜은 임의로 자신이 필요하다고 판단할 시(ex. 한 번에 송신하기에는 너무 대량의 데이터일 경우) 패킷을 분할하여 송신한다. 예를 들어 10000 바이트 길이의 데이터를 송신할 시 1000바이트씩 쪼개서 보내지는 것이 가능하다.
@@ -144,7 +148,7 @@ client 0: vvvveeeerrrryyyy lllloooonnnngggg mmmmssssgggg.
 
 **mini_serv는 개행(\n)을 구분자로 삼아 메시지를 처리해야 한다.**
 
-사실 subject 폴더에서 제공하는 
+사실 subject 폴더에서 제공하는 main.c의 extract_message 함수에 개행을 기준으로 메시지를 추출하는 기능이 구현되어 있기 때문에 이게 힌트라면 힌트였던 셈이다.
 
 즉, exam 06은 추가적으로 다음의 조건을 따라야 한다.
 
@@ -155,4 +159,12 @@ client 0: vvvveeeerrrryyyy lllloooonnnngggg mmmmssssgggg.
 	- 하나의 메시지에는 여러 개의 개행(\n)이 포함될 수 있다.
 	-> 이러한 경우, 개행을 기준으로 서버가 메시지를 직접 분할하여 송신해야 한다.
 
-솔직히 이런 조건이 subject에 당연히 명시가 되어 있어야 한다고 생각하는데 왜 그렇지 않은지 알 수가 없다. 이 근본을 알 수 없는 신비주의의 출처가 궁금할 따름이다.
+## 자기 자신에게는 send back하지 마세요
+
+subject에는 다음과 같은 조건이 있다.
+
+- when the server receive a message, it must resend it to all the ==other== client with "client %d: " before every line!
+- 서버가 메시지를 수신할 때, ==다른== 모든 클라이언트에게 "client %d: "를 접두사로 붙여 해당 메시지를 broadcast해야 합니다.
+
+위 문장에서 ==다른==에 강조를 건 이유는, 자기 자신에게는 send back 하지 말아야 하기 때문이다.
+
