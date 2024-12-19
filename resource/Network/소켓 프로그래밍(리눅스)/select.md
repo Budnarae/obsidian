@@ -206,13 +206,14 @@ int main(int argc, char *argv[])
 	int fd_max, str_len, fd_num, i;
 	char buf[BUF_SIZE];
 
-	// 필요한 port 번
+	// 필요한 port 번호를 전달받지 못했다 -> error
 	if (argc !=2)
 	{
 		printf("Usage : %s <port>\n", argv[0]);
 		exit(1);
 	}
 
+	// 서버 소켓의 주소 정보 설정
 	serv_sock = socket(PF_INET, SOCK_STREAM, 0);
 	memset(&serv_adr, 0, sizeof(serv_adr));
 	serv_adr.sin_family = AF_INET;
@@ -224,12 +225,14 @@ int main(int argc, char *argv[])
 	if (listen(serv_sock, 5) == -1)
 		error_handling("listen() error");
 
+	// 서버 소켓을 fd_set에 저장
 	FD_ZERO(&reads);
 	FD_SET(serv_sock, &reads);
 	fd_max = serv_sock;
 
 	while (1)
 	{
+		// select의 블록 시간 == 5초
 		cpy_reads = reads;
 		timeout.tv_sec = 5;
 		timeout.tv_usec = 5000;
@@ -241,8 +244,11 @@ int main(int argc, char *argv[])
 
 		for (int i = 0; i < fd_max + 1; i++)
 		{
+			// 이벤트가 발생한 fd인가?
 			if (FD_ISSET(i, &cpy_reads))
 			{
+				// 이벤트가 발생한 소켓이 서버 소켓일 때
+				// 서버 소켓
 				if (i == serv_sock) // connection request!
 				{
 					adr_sz = sizeof(clnt_adr);
