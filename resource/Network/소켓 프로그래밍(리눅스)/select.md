@@ -240,7 +240,7 @@ int main(int argc, char *argv[])
 		if ((fd_num = select(fd_max + 1, &cpy_reads, 0, 0, &timeout)) == -1)
 			break ;
 		if (fd_num == 0)
-			contunue ;
+			continue ;
 
 		for (int i = 0; i < fd_max + 1; i++)
 		{
@@ -248,7 +248,9 @@ int main(int argc, char *argv[])
 			if (FD_ISSET(i, &cpy_reads))
 			{
 				// 이벤트가 발생한 소켓이 서버 소켓일 때
-				// 서버 소켓
+				// 서버 소켓에 전달되는 클라이언트의 연결 요청도 엄연한 입력이다.
+				// 서버 소켓에 read 이벤트가 발생하면 클라이언트로부터 접속 요청을 받았다고 간주할 수 있다.
+				// 그러므로 새로운 클라이언트와 연결하는 절차를 진행한다.
 				if (i == serv_sock) // connection request!
 				{
 					adr_sz = sizeof(clnt_adr);
@@ -261,12 +263,16 @@ int main(int argc, char *argv[])
 				else // read message!
 				{
 					str_len = read(i, buf, BUF_SIZE);
+					// 소켓이 close될때 연결된 소켓이 있으면 해당 소켓에 eof를 전달한다.
+					// eof를 받으면 read는 0을 반환한다.
+					// 따라서 read가 0을 반환하면 접속이 끊겼다고 간주한다.
 					if (str_len == 0) // close request!
 					{
 						FD_CLR(i, &reads);
 						close(i);
 						printf("closed client: %d \n", i);
 					}
+					// 메세지를 수신받은 경우 echo한다.
 					else
 					{
 						write(i, buf, str_len); // echo!
