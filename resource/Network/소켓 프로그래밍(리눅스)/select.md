@@ -131,9 +131,11 @@ int main(int argc, char *argv[])
 	struct timeval timeout;
 
 	FD_ZERO(&reads);
+	// 0(표준 입력)을 감시 대상으로 삼는다.
 	FD_SET(0, &reads); // 0 is standard input(console)
 
-	// 
+	// timeout은 이 위치가 아닌 아래의 while 문 안에서 실행해야 한다.
+	// select 함수가 호출될 때마다 5번째 인자로 전달된 timeval 구조체의 멤버들이 0으로 초기화되어버리기 때문이다.
 	/*
 	timeout.tv_sec = 5;
 	timeout.tv_usec = 5000;
@@ -141,7 +143,9 @@ int main(int argc, char *argv[])
 
 	while (1)
 	{
+		// select에 temps를 전달하는 이유는 select가 전달받은 fd_set의 비트를 변경하기 때문이다.
 		temps = reads;
+		// select가 블록하는 시간 5초
 		timeout.tv_sec = 5;
 		timeout.tv_usec = 0;
 		result = select(1, &temps, 0, 0, &timeout);
@@ -156,8 +160,10 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
+			// 변화가 발생한 fd가 0인가?
 			if (FD_ISSET(0, &temps))
 			{
+				// 표준 입력으로 입력받은 내용을 표준 출력으로 보낸다.
 				str_len = read(0, buf, BUF_SIZE);
 				buf[str_len] = 0;
 				printf("message from console : %s", buf);
