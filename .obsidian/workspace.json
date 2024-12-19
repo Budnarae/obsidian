@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+                "file": "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ft_transcendence.pdf 번역본"
+              "title": "ft_transcendence 개요"
             }
           }
         ]
@@ -180,8 +180,9 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
-    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
+    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/ft_transcendence",
     "project/42Seoul/microshell/microshell 문제 번역.md",
@@ -227,7 +228,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_ntoa.md",
     "resource/Network/소켓 프로그래밍(리눅스)/inet_aton.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/inet_addr.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
