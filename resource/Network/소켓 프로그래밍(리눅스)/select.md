@@ -210,7 +210,43 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	serv_sock = socket(PF_IN);
+	serv_sock = socket(PF_INET, SOCK_STREAM, 0);
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family = AF_INET;
+	serv_adr.sin_addr.s_addr(htonl(INADDR_ANY));
+	serv_adr.sin_port = htons(atoi(argv[1]));
+
+	if (bind(serv_sock, (struct sockaddr *)&serv_adr, sizeof(serv_adr)) == -1)
+		error_handling("bind() error");
+	if (listen(serv_sock, 5) == -1)
+		error_handling("listen() error");
+
+	FD_ZERO(&reads);
+	FD_SET(serv_sock, &reads);
+	fd_max = serv_sock;
+
+	while (1)
+	{
+		cpy_reads = reads;
+		timeout.tv_sec = 5;
+		timeout.tv_usec = 5000;
+
+		if ((fd_num = select(fd_max + 1, &cpy_reads, 0, 0, &timeout)) == -1)
+			break ;
+		if (fd_num == 0)
+			contunue ;
+
+		for (int i = 0; i < fd_max + 1; i++)
+		{
+			if (FD_ISSET(i, &cpy_reads))
+			{
+				if (i == serv_sock) // connection request!
+				{
+					adr_sz = si
+				}
+			}
+		}
+	}
 }
 
 ```
