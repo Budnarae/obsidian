@@ -203,7 +203,7 @@ int main(int argc, char *argv[])
 	fd_set reads, cpy_reads;
 
 	socklen_t adr_sz;
-	int fd_max, str_len, fd_num, i;
+	int fd_max, str_len, fd_num;
 	char buf[BUF_SIZE];
 
 	// 필요한 port 번호를 전달받지 못했다 -> error
