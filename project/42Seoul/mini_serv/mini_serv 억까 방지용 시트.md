@@ -171,13 +171,10 @@ subject에는 다음과 같은 조건이 있다.
 예를 들어 서버에 클라이언트 1, 2, 3, 4, 5가 접속하고 있는 상황을 가정해보자.
 1이 보낸 메시지는 2, 3, 4, 5에게는 전달되어야 하지만, 메시지를 보낸 당사자인 1에게는 전달되지 말아야 한다.
 
-그럼 추가적으로 다음의 조건들을 살펴보자.
+참고로 이 조건은 클라이언트가 서버에 접속할 때 보내지는 메시지, 클라이언트가 연결을 해제했을 때의 메시지에도 해당한다.
 
-When a client connect to the server:
-- a message is sent to ==all== the client that was connected to the server: "server: client %d just arrived\n"
-- 서버에 접속해 있던 ==모든== 클라이언트에게 다음의 메세지를 보냅니다: "server: client %d just arrived\n"
+즉, 클라이언트는 서버와 연결을 끊을 때 자기 자신의 left 메시지를 받지 못하며(사실 이건 당연하다), 서버에 접속했을 때 자기 자신의 arrive 메시지를 받지 못한다.
 
-When a client disconnect from the server:
-- a message is sent to ==all== the client that was connected to the server: "server: client %d just left\n"
-클라이언트가 서버와의 연결을 끊을 때:
-- 서버에 연결되어 있는 ==모든== 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
+---
+
+이 문서를 읽으시는 모든 분들은 저처럼 시간 낭비하지 마시고 1트에 mini_serv 통과하시길 바랍니다.
