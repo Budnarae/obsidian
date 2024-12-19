@@ -68,7 +68,7 @@ When a client disconnect from the server:
 - a message is sent to all the client that was connected to the server: "server: client %d just left\n"
 
 클라이언트가 서버와의 연결을 끊을 때:
-- 서버에 연결되어 있는 다른 모든 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
+- 서버에 연결되어 있는 모든 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
 
 Memory or fd leaks are forbidden
 메모리나 fd의 누수는 용납되지 않습니다.
@@ -168,3 +168,16 @@ subject에는 다음과 같은 조건이 있다.
 
 위 문장에서 ==다른==에 강조를 건 이유는, 자기 자신에게는 send back 하지 말아야 하기 때문이다.
 
+예를 들어 서버에 클라이언트 1, 2, 3, 4, 5가 접속하고 있는 상황을 가정해보자.
+1이 보낸 메시지는 2, 3, 4, 5에게는 전달되어야 하지만, 메시지를 보낸 당사자인 1에게는 전달되지 말아야 한다.
+
+그럼 추가적으로 다음의 조건들을 살펴보자.
+
+When a client connect to the server:
+- a message is sent to ==all== the client that was connected to the server: "server: client %d just arrived\n"
+- 서버에 접속해 있던 ==모든== 클라이언트에게 다음의 메세지를 보냅니다: "server: client %d just arrived\n"
+
+When a client disconnect from the server:
+- a message is sent to ==all== the client that was connected to the server: "server: client %d just left\n"
+클라이언트가 서버와의 연결을 끊을 때:
+- 서버에 연결되어 있는 ==모든== 클라이언트에게 다음의 메시지를 보내야 합니다: "server: client %d just left\n"
