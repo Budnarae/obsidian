@@ -109,7 +109,26 @@ struct timeval
 
 # select 함수호출 이후의 결과 확인
 
+select 함수는 변화가 생긴 fd의 수를 반환하므로, 양수를 반환한다면 감시 대상에 변화가 생겼다고 해석할 수 있다. 그러면 불특정 다수의 감시 대상 중 정확히 어떤 fd에 변화가 생겼는지 확인할 수 있을까?
 
+select 함수호출이 완료되고 나면, select 함수의 인자로 전달된 fd_set형 변수에는 변화가 생긴다. 모든 비트가 0으로 변경되지만, 변화가 발생한 파일 디스크립터에 해당하는 비트만 그대로 1로 남아있게 된다. 때문에 여전히 1로 남아있는 위치의 파일 디스크립터에서 변화가 발생했다고 판단할 수 있다.
+
+```c
+// select.c
+
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/time.h>
+#include <sys/select.h>
+
+#define BUF_SIZE 30
+
+int main(int argc, char *argv[])
+{
+	fd_set t
+}
+
+```
 
 ---
 
