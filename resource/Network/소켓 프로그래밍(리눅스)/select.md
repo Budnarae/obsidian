@@ -113,6 +113,8 @@ select 함수는 변화가 생긴 fd의 수를 반환하므로, 양수를 반환
 
 select 함수호출이 완료되고 나면, select 함수의 인자로 전달된 fd_set형 변수에는 변화가 생긴다. 모든 비트가 0으로 변경되지만, 변화가 발생한 파일 디스크립터에 해당하는 비트만 그대로 1로 남아있게 된다. 때문에 여전히 1로 남아있는 위치의 파일 디스크립터에서 변화가 발생했다고 판단할 수 있다.
 
+#  예제
+
 ```c
 // select.c
 
@@ -171,6 +173,44 @@ int main(int argc, char *argv[])
 		}
 	}
 	return (0);
+}
+
+```
+
+``` c
+
+// echo_selectserv.c
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/select.h>
+
+#define BUF_SIZE 100
+
+void error_handling(char *buf);
+
+int main(int argc, char *argv[])
+{
+	int serv_sock, clnt_sock;
+	struct sockaddr_in serv_adr, clnt_adr;
+	struct timeval timeout;
+	fd_set reads, cpy_reads;
+
+	socklen_t adr_sz;
+	int fd_max, str_len, fd_num, i;
+	char buf[BUF_SIZE];
+	if (argc !=2)
+	{
+		printf("Usage : %s <port>\n", argv[0]);
+		exit(1);
+	}
+
+	serv_sock = socket(PF_IN);
 }
 
 ```
