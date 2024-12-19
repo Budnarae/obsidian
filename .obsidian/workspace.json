@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
+                "file": "resource/Network/소켓 프로그래밍(리눅스)/select.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ft_transcendence 개요"
+              "title": "select"
             }
           }
         ]
@@ -180,17 +180,18 @@
   },
   "active": "e4a866f8de7e6a25",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
+    "resource/Network/소켓 프로그래밍(리눅스)/select.md",
     "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/ft_transcendence",
     "project/42Seoul/microshell/microshell 문제 번역.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/select.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/멀티 플렉싱 기반 서버.md",
     "resource/Network/소켓 프로그래밍(리눅스)/shutdown.md",
     "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/멀티 프로세스 기반 서버.md",
     "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
@@ -222,7 +223,6 @@
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/멀티 쓰레딩 기반 서버.md",
     "README.md",
     "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "resource/Network/소켓 프로그래밍(리눅스)/listen.md",
