@@ -95,7 +95,21 @@ int select(int maxfd, fd_set *readset, fd_set *writeset, \
 select는 **0 ~ 첫번째 인자 - 1의 범위**에 존재하는 fd에 event가 발생했는지 감시한다. 만약 event가 발생한 fd가 2 ~ 4번째 인자로 받은 fd_set에 포함되어 있으면 해당하는 fd_set에 그 내용을 기록한다.
 
 select가 호출되었을 때 아무런 이벤트가 발생하지 않았으면, 이벤트가 발생할 때까지 감시 대상을 지속적으로 감시하면서 block 상태에 머무른다.
-5번째 인자로 전달되는 timeval 구조체 변수는 select가 얼마만큼 block될 것인지를 설정하는 데 사용한다.
+만약 select가 무한정 대기 상태에 빠지는 것을 원치 않는다면, 5번째 인자로 전달되는 timeval 구조체 변수를 전달하여 얼마만큼의 시간이 지나면 block에서 빠져나오도록 설정할 수 있다. 이러한 시간 제한을 걸기를 원하지 않는다면 NULL을 전달하면 된다.
+
+```c
+
+struct timeval
+{
+	long tv_sec; // seconds
+	long tv_usec; // microseconds
+}
+
+```
+
+# select 함수호출 이후의 결과 확인
+
+
 
 ---
 
