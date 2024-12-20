@@ -268,15 +268,45 @@ id 속성이 중복되면 먼저 나오는 태그로 이동한다. 하지만 id 
 
 HTML5는 글자 형태 태그를 사용해 웹페이지의 글자와 형태에 의미를 부여한다. 각 글자에 형태 및 의미를 부여할 때는 아래의 표이 태그들을 사용한다.
 
-| 태그 이름 | 설명                       |
-| --------- | -------------------------- |
-| b         | 굶은 글자 태그             |
-| i         | 기울어진 글자 태그         |
-| small     | 작은 글자 태그             |
-| sub       | 아래에 달라 붙는 글자 태그 |
-| sup       | 위에 달라 붙는 글자 태그   |
-| ins       | 밑줄 글자 태그             |
-| del       | 가운데 줄이 그어진 글자 태그                           |
+| 태그 이름 | 설명                         |
+| --------- | ---------------------------- |
+| b         | 굶은 글자 태그               |
+| i         | 기울어진 글자 태그           |
+| small     | 작은 글자 태그               |
+| sub       | 아래에 달라 붙는 글자 태그   |
+| sup       | 위에 달라 붙는 글자 태그     |
+| ins       | 밑줄 글자 태그               |
+| del       | 가운데 줄이 그어진 글자 태그 |
+
+```html
+
+<!--letter_type.html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML TXT Basic Page</title>
+</head>
+<body>
+	<h1><b>Lorem ipsum dolor sit amet</b></h1>
+	<h1><i>Lorem ipsum dolar sit amet</i></h1>
+	<h1><small>Lorem ipsum dolar sit amet</small></h1>
+	<h1><sub>Lorem ipsum dolar sit amet</sub></h1>
+	<h1><sup>Lorem ipsum dolar sit amet</sup></h1>
+	<h1><ins>Lorem ipsum dolar sit amet</ins></h1>
+	<h1><del>Lorem ipsum dolar sit amet</del></h1>
+	<hr />
+	<b>Lorem ipsum dolor sit amet</b><br />
+	<i>Lorem ipsum dolor sit amet</i><br />
+	<small>Lorem ipsum dolor sit amet</small><br />
+	<sub>Lorem ipsum dolor sit amet</sub><br />
+	<sup>Lorem ipsum dolor sit amet</sup><br />
+	<ins>Lorem ipsum dolor sit amet</ins><br />
+	<del>Lorem ipsum dolor sit amet</del><br />
+</body>
+</html>
+
+```
 
 ---
 
