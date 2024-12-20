@@ -274,6 +274,39 @@ class 속성은 아래처럼 공백으로 구분해서 여러 클래스를 사�
 
 id 속성은 웹 페이지 내부에서 중복되지 않으므로 상관없지만 class 속성은 중복될 수 있다. 만약 class 속성이 서로 다른 태그에 사용된다면 태그 선택자와 클래스 선택자를 함께 사용해서 더 정확하게 클래스를 선택한다.
 
+```html
+
+<!--select_tag_class.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* li 태그 중 class 속성값으로 select를 가지는 태그의 color 속성을 red 키워드를 적용한다. */
+			li.select { color: red; }
+		</style>
+	</head>
+	<body>
+		<h1 class="select">Lorem ipsum</h1>
+		<ul>
+			<li class="select">Lorem ipsum</li>
+			<li>Lorem ipsum</li>
+			<li>Lorem ipsum</li>
+			<li>Lorem ipsum</li>
+		</ul>
+	</body>
+</html>
+
+```
+
+## 속성 선택자
+
+속성 선택자를 사용하면 특정 속성을 가진 HTML 태그를 선택할 수 있다.
+속성 선택자는 지금까지 배운 다른 선택자와 함께 사용하는 선택자이다. 
+
+속성 선택자는 기본 속성 선택자와 문자열 속성 선택자로 나눌 수 있으며 기본 속성 선택자는 많이 사용하지만 문자열 속성 선택자는 특
+
 ---
 
 참고자료
