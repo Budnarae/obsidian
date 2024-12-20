@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "area/참고도서.md",
+                "file": "resource/Web/WWW.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "참고도서"
+              "title": "WWW"
             }
           }
         ]
@@ -179,6 +179,8 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "area/참고도서.md",
+    "resource/Web/WWW.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
@@ -221,12 +223,10 @@
     "재료/template/참고자료.md",
     "재료/template/개요.md",
     "resource/Docker/Dockerfile.md",
-    "area/참고도서.md",
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "README.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
