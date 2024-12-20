@@ -943,9 +943,39 @@ div나 span 태그가 아니더라도 block 형식과 inline 형식 둘 중 하�
 
 ```html
 
-<!--non_sementic.html>
+<!--non_sementic.html-->
 
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>non semantic</title>
+	</head>
+	<body>
+		<div>
+			<h1>HTML5 Header</h1>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#">Menu - 1</a></li>
+				<li><a href="#">Menu - 2</a></li>
+				<li><a href="#">Menu - 2</a></li>
+			</ul>
+		</div>
+		<div>
+			<div>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		</div>
+		<div>
+			<span>서울특별시 강서구 내발산동</span>
+		</div>
+	</body>
+</html>
 
 ```
 
