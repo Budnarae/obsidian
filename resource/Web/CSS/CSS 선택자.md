@@ -341,7 +341,38 @@ input 태그는 type 속성을 입력하지 않으면 자동으로 text 속성�
 
 문자열 속성 선택자는 거의 사용하지 않지만 파일 형태에 따라 스타일을 적용할 때 가끔 사용한다.
 
+```html
 
+<!--select_string-attribute.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* img 태그 중에서 src 속성값이 png로 끝나는 태그의
+			border 속성에 3px solid red를 적용한다 */
+			img[src$=png] { border: 3px solid red; }
+
+			/* img 태그 중에서 src 속성값이 jpg로 끝나는 태그의
+			border 속성에 3px solid green를 적용한다 */
+			img[src$=jpg] { border: 3px solid green; }
+
+			/* img 태그 중에서 src 속성값이 gif로 끝나는 태그의
+			border 속성에 3px solid blue를 적용한다 */
+			img[src$=png] { border: 3px solid blue; }
+		</style>
+	</head>
+	<body>
+		<img src="jajq.png" width="200" height="250" />
+		<img src="node.jpg" width="200" height="250" />
+		<img src="ux.gif" width="200" height="250" />
+	</body>
+</html>
+
+```
+
+문자열 속성 선택자는 복잡한 CSS 프레임워크를 만들 때나 사용하는 선택자이므로, 나중에 정말 필요한 경우에만 찾아봐도 늦지 않다.
 
 ---
 
