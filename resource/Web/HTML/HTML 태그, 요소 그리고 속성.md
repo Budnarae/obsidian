@@ -832,7 +832,22 @@ select 태그의 multiple 옵션을 체크하므로서 여러개의 선택 항�
 <html>
 	<head><title>BASIC HTML PAGE</title></head>
 	<body>
-		<fo
+		<form>
+			<fieldset>
+				<legend>입력 양식</legend>
+				<table>
+					<tr>
+						<td><label for="name">이름</label></td>
+						<td><input id="name" type="text" /></td>
+					</tr>
+					<tr>
+						<td><label for="mail">이메일</label></td>
+						<td><input id="mail" type="email" /></td>
+					</tr>
+				</table>
+				<input type="submit" />
+			</fieldset>
+		</form>
 	</body>
 </html>
 
