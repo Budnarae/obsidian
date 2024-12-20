@@ -1,7 +1,7 @@
 {
   "strictLineBreaks": false,
   "livePreview": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "spellcheck": false,
   "alwaysUpdateLinks": true,
   "vimMode": false,
