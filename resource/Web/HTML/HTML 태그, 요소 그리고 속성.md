@@ -134,8 +134,8 @@ HTML5는 **h1 ~ h6**까지의 제목 글자 태그를 제공한다. h 뒤의 숫
 ```html
 
 <!--header.html-->
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
 	<title>HTML5 + CSS3 TEXT</title>
@@ -159,8 +159,8 @@ p 태그는 paragraph의 줄임말이다. paragraph는 단락을 의미하므로
 ```html
 
 <!--paragraph.html-->
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
 	<title>HTML TEXT Basic Page</title>
@@ -168,9 +168,21 @@ p 태그는 paragraph의 줄임말이다. paragraph는 단락을 의미하므로
 <body>
 	<h1>Lorem ipsum</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	<p>Nam commodo mi. a lorem congue id ru
+	<p>Nam commodo mi a lorem congue id rutrum leo venenatis.</p>
+</body>
+</html>
 
 ```
+
+### 개행 태그 - br
+
+`<br />`와 같이 사용한다. 줄바꿈을 적용한다.
+
+### 수평 줄 태그 - hr
+
+`<hr />`과 같이 사용한다. 수평 줄을 그린다.
+
+
 
 ---
 
