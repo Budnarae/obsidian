@@ -820,6 +820,24 @@ select 태그의 multiple 옵션을 체크하므로서 여러개의 선택 항�
 
 하지만 select 태그는 결과물이 예쁘지 않고, 자바스크립트 등의 대체 수단이 존재하기 때문에 현재에는 거의 사용되지 않는다.
 
+## fieldset, legend 태그
+
+이 두 태그는 입력 양식을 **입력 양식 폼**에 넣어 정돈하기 위하여 사용된다.
+
+```html
+
+<!--input_form.html-->
+
+<!DOCTYPE html>
+<html>
+	<head><title>BASIC HTML PAGE</title></head>
+	<body>
+		<fo
+	</body>
+</html>
+
+```
+
 ---
 
 참고자료
