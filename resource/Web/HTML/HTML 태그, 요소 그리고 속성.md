@@ -979,6 +979,46 @@ div나 span 태그가 아니더라도 block 형식과 inline 형식 둘 중 하�
 
 ```
 
+```html
+
+<!--sementic.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>semantic</title>
+	</head>
+	<body>
+		<header>
+			<h1>HTML5 Header</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Menu - 1</a></li>
+				<li><a href="#">Menu - 2</a></li>
+				<li><a href="#">Menu - 2</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</article>
+			<article>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</article>
+		</section>
+		<footer>
+			<address>서울특별시 강서구 내발산동</address>
+		</footer>
+	</body>
+</html>
+
+```
+
+사람의 눈으로 보아도 각 단락의 역할을 명확하게 구분할 수 있다.
+
 ---
 
 참고자료
