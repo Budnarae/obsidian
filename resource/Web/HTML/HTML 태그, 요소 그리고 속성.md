@@ -452,7 +452,7 @@ th, td 태그가 가질 수 있는 속성
 			</tr>
 			<tr>
 				<td>Table Data</td>
-				<td rowspan="2">Table Data</td>
+				<td rowspan="2">imsTable Data</td>
 				<td>Table Data</td>
 			</tr>
 			<tr>
@@ -461,6 +461,30 @@ th, td 태그가 가질 수 있는 속성
 			</tr>
 		</table>
 	</body>
+</html>
+
+```
+
+## 이미지 태그
+
+이미지를 올리기 위해서는 `<img />` 태그를 사용한다.
+
+img 태그에서 가장 중요한 속성은 아래의 4가지 속성이다.
+
+| 속성 이름 | 설명                              |
+| --------- | --------------------------------- |
+| src       | 이미지의 경로 지정                |
+| alt       | 이미지가 없을 때 나오는 글자 지정 |
+| width     | 이미지의 너비 지정                |
+| height    | 이미지의 높이 지정                |
+
+```html
+
+<!--img.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
 </html>
 
 ```
