@@ -516,6 +516,7 @@ img 태그에서 가장 중요한 속성은 아래의 4가지 속성이다.
 <html>
 	<head>BASIC HTML Page</head>
 	<body>
+		<br />
 		<audio src="audio.wav" controls="controls" ></audio>
 	</body>
 </html>
