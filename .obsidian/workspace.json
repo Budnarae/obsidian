@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "file": "resource/Web/CSS/CSS 선택자.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HTML 태그, 요소 그리고 속성"
+              "title": "CSS 선택자"
             }
           }
         ]
@@ -181,6 +181,7 @@
   "lastOpenFiles": [
     "resource/Web/HTML/HTML.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+    "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/WWW.md",
     "area/참고도서.md",
     "resource/Web/CSS",
@@ -226,7 +227,6 @@
     "resource/Docker/Dockerfile.md",
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
-    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
