@@ -655,9 +655,52 @@ input 태그의 type 속성값을 지정하므로서 이러한 세부사항들�
 | submit   | 제출 버튼을 생성한다.          |
 | text     | 글자 입력 양식을 생성한다.     |
 
-다음과 같은 예제를 실행하여 결과를 확인해보자
+다음과 같은 예제를 실행하여 결과를 확인해보자.
 
-ㅑㅜㅅ
+```html
+
+<!--input2.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>Basic HTML Page</head>
+	<body>
+		<form>
+			<input type="text" /><br />
+			<input type="buttom" /><br />
+			<input type="checkbox" /><br />
+			<input type="file" /><br />
+			<input type="hidden" /><br />
+			<input type="image" /><br />
+			<input type="password" /><br />
+			<input type="radio" /><br />
+			<input type="reset" /><br />
+			<input type="submit" /><br />
+		</form>
+	</body>
+</html>
+
+```
+
+### HTML5 입력 양식 태그
+
+방금 전에 살펴본 input 태그는 HTML4에서 지원하던 input 태그이다. HTML5는 아래의 표의 type 속성값을 추가로 지원한다.
+
+| 속성값         | 설명                            |
+| -------------- | ------------------------------- |
+| color          | 색상 선택 양식을 생성한다.      |
+| date           | 일 선택 양식을 생성한다.        |
+| datetime       | 날짜 선택 양식을 생성한다.      |
+| datetime-local | 지역 날짜 선택 양식을 생성한다. |
+| email          | 이메일 입력 양식을 생성한다.    |
+| month          | 월 선택 양식을 생성한다.        |
+| number         | 숫자 생성 양식을 생성한다.      |
+| range          | 범위 선택 양식을 생성한다.      |
+| search         | 검색어 입력 양식을 생성한다.    |
+| tel            | 전화 번호 입력 양식을 생성한다. |
+| time           | 시간 선택 양식을 생성한다.      |
+| url            | URL 주소 입력 양식을 생성한다.  |
+| week           | 주 선택 ㅇ                                |
 
 ---
 
