@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Language/Web/HTML/HTML.md",
+                "file": "area/참고도서.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HTML"
+              "title": "참고도서"
             }
           }
         ]
@@ -177,14 +177,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Language/Web/HTML/HTML.md",
-    "resource/Language/Web/CSS",
+    "resource/Web/HTML/HTML.md",
+    "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
-    "resource/Language/Web",
-    "resource/Language/Web/JavaScript",
-    "resource/Language/Web/HTML",
+    "resource/Web",
+    "resource/Web/JavaScript",
+    "resource/Web/HTML",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트 copy.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
