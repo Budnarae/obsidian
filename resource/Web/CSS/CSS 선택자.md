@@ -231,7 +231,42 @@ HTML 문서 안의 모든 태그를 선택할 때는 전체 선택자를 사용�
 
 클래스 선택자는 특정한 클래스를 가지고 있는 태그를 선택할 때 사용하는 선택자이다.
 
-| 
+| 선택자 형태 | 설명 |
+| ----------- | ---- |
+| .클래스      | 특정한 클래스를 가지고 있는 태그를 선택한다.     |
+
+```html
+
+<!--select_class.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* class 속성값으로 select를 가지는 태그의 color 속성에 red 키워드를 적용한다 */
+			.select { color: red; }
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="select">Lorem ipsum</li>
+			<li>Lorem ipsum</li>
+			<li class="select">Lorem ipsum</li>
+			<li>Lorem ipsum</li>
+		</ul>
+	</body>
+</html>
+
+```
+
+### 여러 개의 클래스 선택자 사용
+
+```html
+
+
+
+```
 
 ---
 
