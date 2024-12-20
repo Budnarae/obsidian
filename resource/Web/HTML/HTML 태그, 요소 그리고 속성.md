@@ -314,7 +314,42 @@ HTML5는 글자 형태 태그를 사용해 웹페이지의 글자와 형태에 �
 
 대부분의 웹페이지에서 자주 사용되는 기능 중 하나는 메뉴 기능이다. 일반적으로 페이지를 이동할 때 사용되는 메뉴를 **내비게이션 메뉴**라고 한다.
 
-내비게이션 메뉴를 만들 때는 아래의 목록 태그들을 활요
+내비게이션 메뉴를 만들 때는 아래의 목록 태그들을 활용한다.
+
+| 태그 이름 | 설명                  |
+| --------- | --------------------- |
+| ul        | 순서가 없는 목록 태그 |
+| ol        | 순서가 있는 목록 태그 |
+| li        | 목록 요소             |
+
+ol 태그는 **정렬된 목록 ordered list**를 의미하고
+ul 태그는 **정렬되지 않은 목록 unordered list**를 의미한다.
+li 태그는 **목록 요소 list item**를 의미한다.
+
+```html
+
+<!--basic_list.html-->
+
+<!DOCTYPE>
+<html>
+<head>HTML Basic Page</head>
+<body>
+	<li>ol tag</li>
+	<ol>
+		<li>Facebook></li>
+		<li>Tweeter></li>
+		<li>Linked In</li>
+	</ol>
+	<h1>ul tag</h1>
+	<ul>
+		<li>Facebook</li>
+		<li>Tweeter></li>
+		<li>Linked in</li>
+	</ul>
+</body>
+</html>
+
+```
 
 ---
 
