@@ -484,10 +484,19 @@ img 태그에서 가장 중요한 속성은 아래의 4가지 속성이다.
 
 <!DOCTYPE html>
 <html>
-	<head>
+	<head>BASIC HTML Page</head>
+	<body>
+		<br />
+		<img src="images.jpeg" alt="netcat" width="300" />
+		<img src="Nothing" alt="그림이 존재하지 않습니다." width="300" /><br />
+	</body>
 </html>
 
 ```
+
+## 오디오 태그
+
+오디오를 올리기 위해서는 audio
 
 ---
 
