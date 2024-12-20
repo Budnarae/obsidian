@@ -542,7 +542,26 @@ HTML5 표기법은 아래와 같이 작성한다.
 웹 브라우저에 따라 위의 audio.html 예제가 실행되지 않을수도 있다.
 웹 브라우저마다 지원하는 음원 형식 포맷이 다르기 때문이다.
 
-이러한 문제를 해결하기 위해 source 태그가 
+이러한 문제를 해결하기 위해 source 태그가 탄생하였다.
+
+source 태그는 img 또는 video 안에 입력하는 태그이며 아래의 코드와 같이 사용한다.
+
+```html
+
+<body>
+	<audio controls="controls">
+		<source src="audio.mp3" type="audio/mp3" />
+		<source src="audio.ogg" type="audio/ogg" />
+	</audio>
+</body>
+
+```
+
+mp3 파일과 ogg 파일을 사용하면 모든 브라우저에서 음악을 재생할 수 있다.
+
+## 비디오 태그
+
+
 
 ---
 
