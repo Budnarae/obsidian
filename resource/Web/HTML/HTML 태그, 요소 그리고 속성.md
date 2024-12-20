@@ -126,10 +126,51 @@ head 태그 내부에는 다음 태그만 입력할 수 있다. 아래의 표 �
 
 ## 글자 태그
 
-### 제목
+### 제목 태그 - h 시리즈
 
 HTML5의 대표적인 글자 태그는 제목을 입력할 때 사용하는 제목 글자 태그이다.
 HTML5는 **h1 ~ h6**까지의 제목 글자 태그를 제공한다. h 뒤의 숫자는 글자의 크기 및 우선 순위를 나타낸다.
+
+```html
+
+<!--header.html-->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>HTML5 + CSS3 TEXT</title>
+</head>
+<body>
+	<h1>Header 1</h1>
+	<h2>Header 2</h2>
+	<h3>Header 3</h3>
+	<h4>Header 4</h4>
+	<h5>Header 5</h5>
+	<h6>Header 6</h6>
+</body>
+</html>
+
+```
+
+### 단락 태그 - p
+
+p 태그는 paragraph의 줄임말이다. paragraph는 단락을 의미하므로 p 태그를 사용하면 하나의 단락을 만들 수 있다.
+
+```html
+
+<!--paragraph.html-->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>HTML TEXT Basic Page</title>
+</head>
+<body>
+	<h1>Lorem ipsum</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Nam commodo mi. a lorem congue id ru
+
+```
 
 ---
 
