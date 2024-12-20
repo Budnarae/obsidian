@@ -182,7 +182,32 @@ p 태그는 paragraph의 줄임말이다. paragraph는 단락을 의미하므로
 
 `<hr />`과 같이 사용한다. 수평 줄을 그린다.
 
+```html
 
+<!--paragraph.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML TEXT Basic Page</title>
+</head>
+<body>
+	<h1>Lorem ipsum</h1>
+	<h2>dodor sit amet</h2>
+	<hr />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<br />
+	<p>Nam commodo mi a lorem congue id rutrum leo venenatis.</p>
+</body>
+</html>
+
+```
+
+## 앵커 태그 - a
+
+앵커 anchor 태그는 서로 다른 웹 페이지 사이를 이동하거나 웹 페이지 내부에서 특정한 위치로 이동할 때 사용되는 태그이다.
+
+**hr**
 
 ---
 
