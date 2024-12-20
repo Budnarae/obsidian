@@ -11,10 +11,15 @@
             "id": "29fea7223ffdd170",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "resource/Language/Web/HTML/HTML.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "HTML"
             }
           }
         ]
@@ -174,11 +179,12 @@
   },
   "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/Language/Web/CSS3",
+    "resource/Language/Web/HTML/HTML.md",
+    "resource/Language/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
     "resource/Language/Web",
     "resource/Language/Web/JavaScript",
-    "resource/Language/Web/HTML5",
+    "resource/Language/Web/HTML",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트 copy.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
@@ -208,7 +214,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
     "재료/img/다중 접속 서버 구현 방식_files/sodar",
-    "재료/img/다중 접속 서버 구현 방식_files/f(3).txt",
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
