@@ -330,11 +330,11 @@ li 태그는 **목록 요소 list item**를 의미한다.
 
 <!--basic_list.html-->
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>HTML Basic Page</head>
 <body>
-	<li>ol tag</li>
+	<h1>ol tag</h1>
 	<ol>
 		<li>Facebook></li>
 		<li>Tweeter></li>
@@ -347,6 +347,37 @@ li 태그는 **목록 요소 list item**를 의미한다.
 		<li>Linked in</li>
 	</ul>
 </body>
+</html>
+
+```
+
+### 중첩 목록
+
+중첩해서 목록을 만들고 싶을 때는 li 태그 안에 목록 태그를 중첩해서 입력한다.
+
+```html
+
+<!--list_in_list.html-->
+
+<!DOCTYPE html>
+<html>
+	<body>
+	<ul>
+		<li>HTML5
+			<ol>
+				<li>Multimedia Tag</li>
+				<li>Connectivity</li>
+				<li>Device Access</li>
+			</ol>
+		</li>
+		<li>CSS3
+			<ul>
+				<li>Animation</li>
+				<li>3D Transform</li>
+			</ul>
+		</li>
+	</ul>
+	</body>
 </html>
 
 ```
