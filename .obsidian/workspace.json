@@ -172,12 +172,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29fea7223ffdd170",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "resource/Language/Web/CSS3",
     "resource/Language/JavaScript/무제 파일.md",
     "resource/Language/Web",
-    "resource/Language/JavaScript",
-    "resource/Language/HTML5",
+    "resource/Language/Web/JavaScript",
+    "resource/Language/Web/HTML5",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트 copy.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
@@ -221,7 +222,6 @@
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "README.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/sockaddr_in.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
