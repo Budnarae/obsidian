@@ -864,14 +864,44 @@ select 태그의 multiple 옵션을 체크하므로서 여러개의 선택 항�
 | div       | block 형식으로 공간을 분할한다  |
 | span      | inline 형식으로 공간을 분할한다 |
 
-block 형식이란 차곡차곡 공간을 분할하는 형식을 말한다.
-
 ```html
 
 <!--div.html-->
 
 <!DOCTYPE html>
+<html>
+	<head><title>basic html page</title></head>
+	<body>
+		<div>Lorem ipsum</div>
+		<div>Lorem ipsum</div>
+		<div>Lorem ipsum</div>
+		<div>Lorem ipsum</div>
+		<div>Lorem ipsum</div>
+	</body>
+</html>
 
+```
+
+block 형식이란 차곡차곡 공간을 분할하는 형식을 말한다.
+따라서 글자가 웹 페이지의 너비만큼 차지하면서 쌓아 올려진다.
+
+반면 inline 형식은 한 줄 안에 차례차례 위치하는 형식을 말한다.
+
+```html
+
+<!--span.html-->
+
+<!DOCTYPE html>
+<html>
+	<head><title>basic html page</title></head>
+	<body>
+		<span>Lorem ipsum</span>
+		<span>Lorem ipsum</span>
+		<span>Lorem ipsum</span>
+		<span>Lorem ipsum</span>
+		<span>Lorem ipsum</span>
+	</body>
+</html>
 
 ```
 
