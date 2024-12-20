@@ -700,7 +700,36 @@ input 태그의 type 속성값을 지정하므로서 이러한 세부사항들�
 | tel            | 전화 번호 입력 양식을 생성한다. |
 | time           | 시간 선택 양식을 생성한다.      |
 | url            | URL 주소 입력 양식을 생성한다.  |
-| week           | 주 선택 ㅇ                                |
+| week           | 주 선택 양식을 생성한다.        |
+
+```html
+
+  
+
+<!DOCTYPE html>
+
+<html>
+<head>BASIC HTML Page</head>
+	<body>
+		<form>
+			<input type="color" /><br />
+			<input type="date" /><br />
+			<input type="datetime" /><br />
+			<input type="datetime-local" /><br />
+			<input type="email" /><br />
+			<input type="month" /><br />
+			<input type="number" /><br />
+			<input type="range" /><br />
+			<input type="search" /><br />
+			<input type="tel" /><br />
+			<input type="time" /><br />
+			<input type="url" /><br />
+			<input type="week" /><br />
+		</form>
+	</body>
+</html>
+
+```
 
 ---
 
