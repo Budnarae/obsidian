@@ -390,6 +390,40 @@ li 태그는 **목록 요소 list item**를 의미한다.
 
 **table** 태그는 HTML 페이지에서 표를 만들 때 사용하는 태그이다. 과거에는 테이블 태그를 사용해 레이아웃을 구성하였다. 하지만 현대 웹 페이지의 대부분은 후술할 div 태그를 사용해 레이아웃을 구성하므로 사용 빈도가 굉장히 줄었다.
 
+table 태그 안에 입력할 수 있는 태그는 많지만 실제로 많이 쓰이는 태그는 아래의 태그들이다.
+
+| 태그 이름 | 설명                   |
+| --------- | ---------------------- |
+| tr        | 표 내부의 행 태그      |
+| th        | 행 내부의 제목 셀 태그 |
+| td        | 행 내부의 일반 셀 태그 |
+
+```html
+
+<!--table.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>HTML Basic Page</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 1</td>
+			</tr>
+			<tr>
+				<td>Data 2</td>
+				<td>Data 2</td>
+			</tr>
+	</body>
+</html>
+
+```
+
 ---
 
 참고자료
