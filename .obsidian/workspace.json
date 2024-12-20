@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML.md",
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HTML"
+              "title": "HTML 태그, 요소 그리고 속성"
             }
           }
         ]
@@ -179,8 +179,8 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/WWW.md",
     "area/참고도서.md",
     "resource/Web/CSS",
