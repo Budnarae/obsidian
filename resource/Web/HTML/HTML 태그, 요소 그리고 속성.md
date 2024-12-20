@@ -582,13 +582,14 @@ mp4 형식과 webm 형식을 사용하면 모든 브라우저에서 비디오를
 
 <!--video.html-->
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>BASIC HTML Page</head>
 	<body>
+		<br />vi
 		<video controls="controls">
 			<source src="video.mp4" type="video/mp4" />
-			<source src="
+			<source src="video.mp4" type="video/webm" />
 		</video>
 	</body>
 </html>
