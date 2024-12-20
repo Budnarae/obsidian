@@ -207,7 +207,38 @@ p 태그는 paragraph의 줄임말이다. paragraph는 단락을 의미하므로
 
 앵커 anchor 태그는 서로 다른 웹 페이지 사이를 이동하거나 웹 페이지 내부에서 특정한 위치로 이동할 때 사용되는 태그이다.
 
-**hr**
+**href** 속성을 사용하여 이동하고자 하는 웹페이지를 정확히 지정해야 제대로 작동한다.
+
+```html
+
+<!--anchor.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML TEXT BASIC PAGE</title>
+</head>
+<body>
+	<a href="http://hanbit.co.kr">Hanbit</a><br />
+	<a href="https://github.com/">GitHub</a><br />
+</body>
+</html>
+
+```
+
+### 빈 링크
+
+a 태그는 본래 가지고 있는 하이퍼링크 기능을 제거하고 사용하는 경우도 있다. 하지만 하이퍼링크 기능을 제거해도 웹 표준을 따르려면 a 태그에 href 속성을 반드시 입력해야 한다. 따라서 웹 표준을 지키면서 이동하지 않는 a 태그를 만들 때는 href속성에 \#을 입력한다. 그리고 이를 빈 링크라고 부른다.
+
+```html
+
+<a href="#">Empty link</a>
+
+```
+
+### 페이지 내부 이동
+
+a 태그를 이용하면 현재 페이지 내부에서 원하는 장소로 이동할 수 있다. 이때는 원하는 장소에 id 속성
 
 ---
 
