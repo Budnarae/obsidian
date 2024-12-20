@@ -133,7 +133,46 @@ HTML 문서 안의 모든 태그를 선택할 때는 전체 선택자를 사용�
 
 태그 선택자는 아래의 코드처럼 사용한다. 다음 코드는 h1 태그의 color 속성에 red 키워드를 적용하고 p 태그의 color 속성에 blue 키워드를 적용한다.
 
-s
+```html
+
+<!--select_tag.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Select Basic Page</title>
+		<style>
+			/* h1 태그의 color 속성에 red 키워드를 적용한다. */
+			h1 { color: red; }
+
+			/* p 태그의 color 속성에 blue 키워드를 적용한다. */
+			p { color: blue; }
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+	</body>
+</html>
+
+```
+
+그리고 다음과 같이 여러 개의 선택자를 한꺼번에 선택해서 스타일 속성을 적용할 때는 쉼표를 사용한다.
+
+여러 개의 태그 선택자를 쉼표로 연결해 margin 속성과 padding 속성을 적용한다.
+
+```html
+
+<style>
+	body, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+</style>
+
+```
+
+## 아이디 선택자
+
+아이디 선택자는 특정한 id 솏
 
 ---
 
