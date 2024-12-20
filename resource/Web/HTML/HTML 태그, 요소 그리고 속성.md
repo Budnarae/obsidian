@@ -789,9 +789,36 @@ select 태그의 multiple 옵션을 체크하므로서 여러개의 선택 항�
 
 ```html
 
+<!--select.html-->
 
+<!DOCTYPE html>
+<html>
+<head><title>BASIC HTML PAGE</title></head>
+	<body>
+		<select>
+			<option>김밥</option>
+			<option>떡볶이</option>
+			<option>순대</option>
+			<option>오뎅</option>
+		</select>
+		<br />
+		<select multiple="multiple">
+			<optgroup label="HTML5">
+				<option>Multimedia Tag</option>
+				<option>Connectivity</option>
+				<option>Device Access</option>
+			</optgroup>
+			<optgroup label="CSS3">
+				<option>Animation</option>
+				<option>3D Transform</option>
+			</optgroup>
+		</select>
+	</body>
+</html>
 
 ```
+
+하지만 select 태그는 결과물이 예쁘지 않고, 자바스크립트 등의 대체 수단이 존재하기 때문에 현재에는 거의 사용되지 않는다.
 
 ---
 
