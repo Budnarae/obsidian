@@ -561,7 +561,39 @@ mp3 파일과 ogg 파일을 사용하면 모든 브라우저에서 음악을 재
 
 ## 비디오 태그
 
+동영상을 재생하기 위해 video 태그를 사용하여야 한다.
 
+video 태그에서 주로 사용되는 특성은 아래와 같다.
+
+| 속성 이름 | 설명                                        |
+| --------- | ------------------------------------------- |
+| src       | 비디오 파일의 경로 지정                     |
+| poster    | 비디오 준비 중일 때의 이미지 파일 경로 지정 |
+| preload   | 비디오를 재생하기 전에 모두 불러올지 지정   |
+| autoplay  | 비디오를 자동 재생할지 지정                 |
+| loop      | 비디오를 반복할지 지정                      |
+| controls  | 비디오 재생 도구를 출력할지 지정            |
+| width     | 비디오의 너비를 지정                        |
+| height    | 비디오의 높이를 지정                                            |
+
+mp4 형식과 webm 형식을 사용하면 모든 브라우저에서 비디오를 재생할 수 있으므로 video, source 태그를 사용하여 아래와 같이 작성한다.
+
+```html
+
+<!--video.html-->
+
+<!DOCTYPE>
+<html>
+	<head>BASIC HTML Page</head>
+	<body>
+		<video controls="controls">
+			<source src="video.mp4" type="video/mp4" />
+			<source src="
+		</video>
+	</body>
+</html>
+
+```
 
 ---
 
