@@ -184,9 +184,54 @@ HTML 문서 안의 모든 태그를 선택할 때는 전체 선택자를 사용�
 
 ```html
 
+<!--select_id.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			/* id 속성값으로 header를 가지는 태그의 스타일을 지정한다. */
+			#header {
+				width: 800px; margin: 0 auto;
+				background: red;
+			}
+			#wrap {
+				width: 800px; margin: 0 auto;
+				overflow: hidden;
+			}
+			#aside {
+				width: 200px; float: left;
+				background: blue;
+			}
+			#content {
+				width: 600px; float: left;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Header</h1>
+		</div>
+		<div id="wrap">
+			<div id="aside">
+				<h1>Aside</h1>
+			</div>
+			<div id="content">
+				<h1>Content</h1>
+			</div>
+		</div>
+	</body>
+</html>
 
 ```
+
+## 클래스 선택자
+
+클래스 선택자는 특정한 클래스를 가지고 있는 태그를 선택할 때 사용하는 선택자이다.
+
+| 
 
 ---
 
