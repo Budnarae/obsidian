@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML.md",
+                "file": "resource/Web/HTML/HTML 태그.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HTML"
+              "title": "HTML 태그"
             }
           }
         ]
@@ -179,9 +179,10 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "resource/Web/HTML/HTML.md",
+    "resource/Web/HTML/HTML 태그.md",
     "resource/Web/WWW.md",
     "area/참고도서.md",
-    "resource/Web/HTML/HTML.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
     "resource/Web",
@@ -226,7 +227,6 @@
     "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
-    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
   ]
