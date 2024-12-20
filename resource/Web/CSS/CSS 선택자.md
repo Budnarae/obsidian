@@ -97,6 +97,26 @@ HTML 문서 안의 모든 태그를 선택할 때는 전체 선택자를 사용�
 
 ```html
 
+<!--select_all_range.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		<script>
+			/* 웹페이지가 모두 준비되면 */
+			$(document).ready(function () {
+			/* 모든 태그의 border 속성에 Spx solid black을 적용한다 */
+			$('*').css('border', 'Spx solid black');
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</body>
+</html>
 
 
 ```
