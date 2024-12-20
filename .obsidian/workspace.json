@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/WWW.md",
+                "file": "resource/Web/HTML/HTML.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "WWW"
+              "title": "HTML"
             }
           }
         ]
@@ -179,8 +179,8 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "area/참고도서.md",
     "resource/Web/WWW.md",
+    "area/참고도서.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
