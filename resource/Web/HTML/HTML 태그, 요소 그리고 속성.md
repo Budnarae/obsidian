@@ -240,6 +240,44 @@ a 태그는 본래 가지고 있는 하이퍼링크 기능을 제거하고 사�
 
 a 태그를 이용하면 현재 페이지 내부에서 원하는 장소로 이동할 수 있다. 이때는 원하는 장소에 id 속성을 부여해야 한다. 코드 2-8처럼 이동하기를 원하는 태그에 id 속성을 부여하고 a 태그의 href 속성에 **\#아이디** 형태의 문자열을 입력한다.
 
+```html
+
+<!--id.html-->
+
+<!DOCTYPE html>
+<html>
+<head>id.html</head>
+<body>
+	<a href="#alpha">Move to Alpha</a>
+	<a href="#beta">Move tot Beta</a>
+	<a href="#gamma">Move to Gamma</a>
+	<hr />
+	<h1 id="alpha">Alpha</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<h1 id="beta">Beta</h1>
+	<h1 id="gamma">Gamma</h1>
+	<p>Nullam porta, felis sit amet porttitor vestibulum.</p>
+</body>
+</html>
+
+```
+
+id 속성이 중복되면 먼저 나오는 태그로 이동한다. 하지만 id 속성을 중복해서 사용하는 것은 웹 표준에 어긋나는 행위이므로 지양해야 한다.
+
+## 글자 형태
+
+HTML5는 글자 형태 태그를 사용해 웹페이지의 글자와 형태에 의미를 부여한다. 각 글자에 형태 및 의미를 부여할 때는 아래의 표이 태그들을 사용한다.
+
+| 태그 이름 | 설명                       |
+| --------- | -------------------------- |
+| b         | 굶은 글자 태그             |
+| i         | 기울어진 글자 태그         |
+| small     | 작은 글자 태그             |
+| sub       | 아래에 달라 붙는 글자 태그 |
+| sup       | 위에 달라 붙는 글자 태그   |
+| ins       | 밑줄 글자 태그             |
+| del       | 가운데 줄이 그어진 글자 태그                           |
+
 ---
 
 참고자료
