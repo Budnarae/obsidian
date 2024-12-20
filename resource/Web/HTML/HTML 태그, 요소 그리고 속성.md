@@ -424,20 +424,46 @@ table 태그 안에 입력할 수 있는 태그는 많지만 실제로 많이 �
 
 ```
 
-table, th, td 태그는 아래와 같은 속성을 가질 수 있다.
-
 table이 가질 수 있는 속성
+
 | 속성 이름 | 설명 |
 | --------- | ---- |
 | border    | 표의 테두리 구께를 지정     |
 
 th, td 태그가 가질 수 있는 속성
+
 | 속성 이름 | 설명           |
 | --------- | -------------- |
 | rowspac   | 셀의 높이 지정 |
 | colspan   | 셀의 너비 지정 |
 
+```html
 
+<!--table_attribute.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>HTML Basic Page</head>
+	<body>
+		<table border="5">
+			<tr>
+				<th colspan="3">Table Data</th>
+				<th rowspan="3">Table Data</th>
+			</tr>
+			<tr>
+				<td>Table Data</td>
+				<td rowspan="2">Table Data</td>
+				<td>Table Data</td>
+			</tr>
+			<tr>
+				<td>Table Data</td>
+				<td>Table Data</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+```
 
 ---
 
