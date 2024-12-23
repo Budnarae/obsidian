@@ -1036,9 +1036,64 @@ text-align은 글자의 정렬을 조작하는 속성이다.
 
 ```html
 
+<!--text_align.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Font Property</title>
+		<style>
+			.font_big { font-size: 2em; }
+			.font_italic { font-style: italic; }
+			.font_bold { font-weight: bold; }
+			.font_center { text-align: center; }
+			.font_right { text-align: right; }
+		</style>
+	</head>
+	<body>
+		<p class="font_big font_italic font_bold font_center">Lorem ipsum dolor amet</p>
+		<p class="font_bold font_right">2012.04.21</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</body>
+</html>
 
 ```
+
+> #### text-align을 사용할 때 주의할 점
+> text-align은 span 태그를 대상으로 동작하지 않는다. 왜냐하면 너비가 없으므로 중앙이라는 개념이 존재하지 않기 때문이다. 마찬가지로 inline 형식의 태그는 text-align을 적용할 수 없다.
+
+### text-decoration 속성
+
+text-decoration 속성은 링크의 밑줄을 지우는데 사용된다.
+
+```html
+
+<!--text_decoration.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Font Property</title>
+		<style>
+			a { text-decoration: none; }
+		</style>
+	</head>
+	<body>
+		<h1>
+			<a href="#">Lorem ipsum dolor amet</a>
+		</h1>
+	</body>
+</html>
+
+```
+
+text-decoration 속성으로는 밑줄만 제거되며 색상은 color 속성을 사용해 별도로 적용해야 한다.
+
+## 위치 속성
+
+프로그램을 개발할 때는 요소의 위치를 2가지 방법으로 설정한다.
+
+- 절대 위치 좌표 : 요소의 X 좌표와 Y 좌표를 설정해 절대 위치를 ㅅ
 
 ---
 
