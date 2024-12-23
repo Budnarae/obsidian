@@ -704,8 +704,33 @@ border-radius 속성은  css3에서 추가된 속성이다. border-radius 속성
 
 ### background-image 속성
 
-background-image속성은 배경에 넣을 그림을 지정하는 스타일 속성이다.
-background_
+background-image 속성은 배경에 넣을 그림을 지정하는 스타일 속성이다.
+background-image 속성에는 URL 단위 또는 그레이디언트를 입력한다.
+
+이 절에서는 URL 단위에 대해서만 다루고 그레이디언트는 나중에 다루도록 한다.
+
+```html
+
+<!--background_image.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 property Basic</title>
+		<style>
+			body {
+				background-image: url('BackgroundFront.png');
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+```
+
+위의 예제를 실행시키면 body 태그가 
 
 ---
 
