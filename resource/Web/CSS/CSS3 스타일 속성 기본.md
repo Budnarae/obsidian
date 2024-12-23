@@ -304,7 +304,7 @@ display 속성 중 주로 사용되는 속성으로는 다음이 있다.
 
 ```html
 
-<!--none.html-->
+<!--inline.html-->
 
 <!DOCTYPE html>
 <html>
@@ -313,6 +313,10 @@ display 속성 중 주로 사용되는 속성으로는 다음이 있다.
 		<style>
 			#box {
 				display: inline;
+
+				background-color: red;
+				width: 300px; height: 50px;
+				margin: 10px;
 			}
 		</style>
 	</head>
@@ -326,6 +330,39 @@ display 속성 중 주로 사용되는 속성으로는 다음이 있다.
 </html>
 
 ```
+
+```html
+
+<!--inline-block.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Style Property Basic</title>
+		<style>
+			#box {
+				display: inline-block;
+
+				background-color: red;
+				width: 300px; height: 50px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</body>
+</html>
+
+```
+
+inline 키워드를 적용한 코드는 width 속성과 height 속성이 적용되지 않는다. 또한 margin 속성이 div 태그의 좌우로만 지정된다.
+
+반면에 inline-block 키워드를 적용하면 width 속성과 height 속성을 적용할 수 있다. 또한 margin 속성이 상하좌우로 적용된다. 이러한 특징은 block 키워드와 동일하다.
 
 ---
 
