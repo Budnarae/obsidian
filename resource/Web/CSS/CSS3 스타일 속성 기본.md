@@ -1272,6 +1272,59 @@ overflow 속성에는 아래의 표의 키워드를 사용한다.
 
 ```html
 
+body > div {
+	width: 400px; height: 100px;
+	border: 3px solid black;
+
+	position: relative;
+	overflow: hidden;
+}
+
+```
+
+```html
+
+body > div {
+	width: 400px; height: 100px;
+	border: 3px solid black;
+
+	position: relative;
+	overflow: scroll;
+}
+
+```
+
+overflow 속성에 scroll 키워드를 적용하면 무조건 모든 축에 스크롤이 생성된다. 만약 특정한 방향으로만 스크롤을 생성할 때는 overflow-x 속성과 overflow-y 속성을 사용한다.
+
+```html
+
+```html
+
+body > div {
+	width: 400px; height: 100px;
+	border: 3px solid black;
+
+	position: relative;
+	overflow-y: scroll;
+}
+
+```
+
+## float 속성
+
+float 속성에는 많은 키워드가 있지만 주로 아래의 키워드만 사용된다,.
+
+| 키워드 | 설명                   |
+| ------ | ---------------------- |
+| left   | 태그를 왼쪽에 붙인다   |
+| right  | 태그를 오른쪽에 붙인다 |
+
+### float 속성 개요
+
+float 속성은 부유하는 대상을 만들 때 사용하는 스타일 속성이다.
+
+```html
+
 
 
 ```
