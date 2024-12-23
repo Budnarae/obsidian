@@ -783,7 +783,13 @@ background의 높이를 100%보다 작게 주면 그림이 패턴을 이루어 �
 | repeat-y    | y축 방향으로 이미지가 반복된다. |
 | no-repeat   | 패턴이 반복되지 않는다.         |
 
-### 
+### background-attachment 속성
+
+background-attachment 속성은 배경 이미지를 어떠한 방식으로 화면에 붙일 것인지를 지정하는 스타일 속성이다.
+
+background-attachment 속성의 기본 키워드는 scroll 키워드이다. scorll 키워드는 화면 스크롤에 따라 배경 이미지가 함께 이동함을 의미한다.
+
+
 
 ---
 
