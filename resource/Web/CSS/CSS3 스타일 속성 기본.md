@@ -159,10 +159,30 @@
 ```html
 
 <style>
-	h1 { background}
+	h1 { background-color: red; }
+	h2 { background-color: orange; }
+	h3 { background-color: blue; }
+	h4 { background-color: green; }
+	h5 { background-color: brown; }
+	h6 { background-color: purple; }
 <\style>
 
 ```
+
+하지만 단어로 표현할 수 있는 색상은 제한되어 있으므로 더욱 다양한 색상 표현을 위해 아래의 표와 같은 색상 단위를 제공한다.
+
+| 단위 형태                               | 설명           |
+| --------------------------------------- | -------------- |
+| \#000000                                | HEX 코드 단위  |
+| rbg(red, green, blue)                   | RGB 색상 단위  |
+| rbga(red, green, blue, alpha)           | RGBA 색상 단위 |
+| hsl(hue, saturation, lightness)         | HSL 색상 단위  |
+| hsla(hue, saturation, lightness, alpha) | HSLA 색상 단위 |
+
+> ## 알파 값
+> RGBA와 HSLA의 A는 투명도를 의미하는 알파 값이다. 알파 값은 0.0부터 1.0 사이의 숫자를 입력한다. 0.0을 입력할 경우에는 완전히 투명한 상태를 나타내고 1.0을 입력할 경우에는 불투명한 상태를 나타낸다.
+
+rgb 단위는 red, green, blue의 조합을 사용하여 색상을 표현하는 단위이다.
 
 ---
 
