@@ -909,9 +909,34 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 
 ```html
 
+<!--select_link.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			a { text-decoration: none; }
+			a:visited { color: red; }
+
+			/* href 속성을 가지고 있는 a 태그 뒤의 공간에
+			"- (href 속성)"을 추가한다 */
+			a:link::after { content: ' - ' attr(href); }
+		</style>
+	</head>
+	<body>
+		<h1><a>Nothing</a></h1>
+		<h1><a href="http://hanbit.co.kr">Hanbit Media</a></h1>
+		<h1><a href="http://www.w3.org/">W3C</a></h1>
+		<h1><a href="https://github.com/">Github</a></h1>
+	</body>
+</html>
 
 ```
+
+##  부정 선택자
+
+부정 선택자는 지금까지 배운 선택자를 모두 반대로 적용할 수 있게 만드느
 
 ---
 
