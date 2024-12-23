@@ -795,6 +795,32 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 
 전후 문자 선택자에는 **content 속성**을 사용할 수 있다(다른 선택자에는 content 속성을 사용할 수 없다).
 
+```html
+
+<!--select_front_back.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			p { counter-increment: rint; }
+			p::before { content: counter(rint) "."; }
+			p::after { content: " - " attr(data-page) " page"; }
+			p::first-letter { font-size: 3em; }
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p data-page="52">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<p data-page="273">Aenean ac erat et massa vehicula laoreet consequat et sem.</p>
+	</body>
+</html>
+
+```
+
+주의 깊게 살펴볼 부분은 `::first-lette`
+
 ---
 
 참고자료
