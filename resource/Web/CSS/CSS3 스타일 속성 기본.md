@@ -1032,7 +1032,13 @@ CSS는 block 형식을 가지는 태그를 수직 정렬할 수 있는 스타일
 
 ### text-align 속성
 
-text-align
+text-align은 글자의 정렬을 조작하는 속성이다.
+
+```html
+
+
+
+```
 
 ---
 
