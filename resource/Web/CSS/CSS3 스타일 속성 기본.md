@@ -1116,7 +1116,71 @@ relative 키워드를 적용하면 static 키워드로 초기 위치가 지정�
 | absolute | 절대 위치 좌표를 설정한다                     |
 | fixed    | 화면을 기준으로 절대 위치 좌표를 설정한다     |
 
+```html
 
+<!--absolute.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			.box {
+				width: 100px; height: 100px;
+				position: absolute;
+			}
+			.red { background-color: red; }
+			.green { background-color: green; }
+			.blue { background-color: blue; }
+		</style>
+	</head>
+	<body>
+		<div class="box red"></div>
+		<div class="box green"></div>
+		<div class="box blue"></div>
+	</body>
+</html>
+
+```
+
+위 코드는 어떤 브라우저로 실행시키냐에 따라서 결과가 상이할 수 있다.
+모든 브라우저의 출력 방식을 통일하려면 아래와 같은 스타일 속성을 함께 사용해야 한다.
+
+- top
+- left
+- right
+- bottom
+
+
+```html
+
+<!--absolute.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			.box {
+				width: 100px; height: 100px;
+				position: absolute;
+			}
+			.red { background-color: red;
+				left: 100px; top: 10px; }
+			.green { background-color: green;
+				left: 50px; top: 50px; }
+			.blue { background-color: blue;
+				left: 90px; top: 90px; }
+		</style>
+	</head>
+	<body>
+		<div class="box red"></div>
+		<div class="box green"></div>
+		<div class="box blue"></div>
+	</body>
+</html>
+
+```
 
 ---
 
