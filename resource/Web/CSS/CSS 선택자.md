@@ -613,7 +613,77 @@ checked 상태는 type 속성값이 checkbox 또는 radio인 input 태그가 선
 
 focus 상태는 사용자가 초점을 맞추고 있는 입력 양식에 적용되는 상태이다. 참고로 웹페이지 하나당 하나의 input 태그에만 초점을 맞출 수 있다.
 
-마지막으로 enabled 상태는 input 태그가 사용 가능한 상태를 나타내고 disabled 상태는 input 태그가 사용 불가능한 상태를 나타낸다. selec
+마지막으로 enabled 상태는 input 태그가 사용 가능한 상태를 나타내고 disabled 상태는 input 태그가 사용 불가능한 상태를 나타낸다.
+
+```html
+
+<!--select_status.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* input 태그가 사용 가능할 경우에
+			   background_color 속성에 white 키워드를 적용한다 */
+			input:enabled { background-color: white; }
+			/* input 태그가 사용 가능할 경우에
+			   background_color 속성에 white 키워드를 적용한다 */
+			input:disabled { background-color: gray; }
+			/* input 태그가 사용 가능할 경우에
+			   background_color 속성에 white 키워드를 적용한다 */
+			input:focus { background-color: orange; }
+		</style>
+	</head>
+	<body>
+		<h2>Enabled</h2>
+		<input />
+		<h2>Disabled</h2>
+		<input disabled="disabled" />
+	</body>
+</html>
+
+```
+
+아래 예제는 상태 선택자를 복합적으로 적용시킨 예이다.
+
+```html
+
+<!--select_status_brother.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* input 태그의 type 속성값이 checkbox인 태그가 체크되었을 때
+			   바로 뒤에 위치하는 div 태그의 height 속성에 0픽셀을 적용한다 */
+			input[type=checkout]:checked + div {
+				height: 0px;
+			}
+			div {
+				overflow: hidden;
+				width: 650px; height: 300px;
+
+				/* 변환 효과를 적용한다 */
+				-ms-transition-duration: 1s;
+				-webkit-transition-duration: 1s;
+				-moz-transition-duration: 1s;
+				-o-transition-duration: 1s;
+				transition-duration: 1s;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" />
+		<div>
+			<h1>Lorem ipsum</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+	</body>
+</html>
+
+```
 
 ---
 
