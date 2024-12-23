@@ -953,6 +953,23 @@ font_family 속성에는 사용자 컴퓨터에 설치된 폰트를 사용한다
 
 ```
 
+하지만 다국어 웹 페이지를 제공할 경우 사용자에게 무슨 폰트가 있는지 일일이 확인할 수 없다. 이러한 문제를 해결하고자 font-family 속성의 가장 마지막 폰트에는 Serif 폰트(명조체), Sans-serif 폰트(고딕체), Mono space 폰트(고정 폭 글꼴)을 적용한다.
+
+이 폰트는 웹 브라우저에서 지정하는 generic-family 폰트라고 부른다.
+
+### font-style 속성과 font-weight 속성
+
+font-style 속성과 font-weight 속성은 폰트의 기울기 또는 두께를 조정하는 스타일 속성이다.
+
+font-style 속성에는 키워드만을 사용한다.
+font-weight 속성에는 단위 또는 키워드를 사용한다.
+
+```html
+
+
+
+```
+
 ---
 
 참고자료
