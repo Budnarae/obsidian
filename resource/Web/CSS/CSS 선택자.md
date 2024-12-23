@@ -944,7 +944,27 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 
 ```html
 
+<!--select_not.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* input 태그 중에서 type 속성값이 password가 아닌 태그의
+			   background 속성에 red 키워드를 적용한다 */
+			input:not([type=password]) {
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="password" />
+		<input type="text" />
+		<input type="password" />
+		<input type="text" />
+	</body>
+</html>
 
 ```
 
