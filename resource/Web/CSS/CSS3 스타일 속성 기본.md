@@ -869,6 +869,42 @@ W3C 표준안은 background 속성에 다음 형태를 입력하라고 지정하
 
 실제로는 아래와 같은 형식으로 입력한다.
 
+## 폰트 속성
+
+폰트 속성은 글자와 관련된 스타일 속성을 의미한다.
+
+### font-size 속성
+
+```html
+
+<!--font-size.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Font Property</title>
+	<style>
+		.a { font-size: 32px; }
+		.b { font-size: 2em; }
+		.c { font-size: large; }
+		.d { font-size: small; }
+	</style>
+</head>
+<body>
+	<h1>Lorem imsum</h1>
+	<p class="a">lorem ipsum</p>
+	<p class="b">lorem ipsum</p>
+	<p class="c">lorem ipsum</p>
+	<p class="d">lorem ipsum</p>
+</body>
+</html>
+
+```
+
+## font-family 속성
+
+font_family
+
 ---
 
 참고자료
