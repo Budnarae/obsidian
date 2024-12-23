@@ -382,7 +382,42 @@ input 태그는 type 속성을 입력하지 않으면 자동으로 text 속성�
 | --------------- | -------------------------------------------- |
 | 선택자A 선택자B | 선택자A의 후손에 위치하는 선택자B를 선택한다 |
 
+```html
 
+<!--select_grandchild.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* id 속성값으로 header를 가지는 태그의 후손 위치에 있는 h1 태그의
+			   color 속성에 red 키워드를 적용한다. */
+			#header h1 { color: red; }
+			/* id 속성값으로 section를 가지는 태그의 후손 위치에 있는 h1 태그의
+			   color 속성에 orange 키워드를 적용한다. */
+			#section h1 { color: orange; }
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1 class="title">Lorem ipsum</h1>
+			<div id="nav">
+				<h1>Navigation</h1>
+			</div>
+		</div>
+		<div id="section">
+			<h1 class="title">Lorem ipsum</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+	</body>
+</html>
+
+```
+
+### 후손 선택자와 관련된 주의 사항
+
+여러 개의 선택자를 함께 사용할 때 후손 
 
 ---
 
