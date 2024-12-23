@@ -183,6 +183,36 @@
 > RGBA와 HSLA의 A는 투명도를 의미하는 알파 값이다. 알파 값은 0.0부터 1.0 사이의 숫자를 입력한다. 0.0을 입력할 경우에는 완전히 투명한 상태를 나타내고 1.0을 입력할 경우에는 불투명한 상태를 나타낸다.
 
 rgb 단위는 red, green, blue의 조합을 사용하여 색상을 표현하는 단위이다.
+RGB 색상은 다음과 같이 사용한다. 각각의 숫자는 0부터 255까지 입력할 수 있다.
+
+```html
+
+<style>
+	h1 { background-color: rgb(255,255,255); }
+<\style>
+
+```
+
+HEX 코드 단위는 RGB 색상 단위를 짧게 입력하는 방법이다. HEX 코드는 16진수로 RGB 색상 조합을 순서대로 입력한다.
+
+```html
+
+<style>
+	h1 { background-color: #0094FF;}
+<\style>
+
+```
+
+HSL 색상은 색상 Hue, 채도 Saturation, 명도 Lightness를 사용한다.
+아래와 같이 입력한다.
+
+```html
+
+<style>
+	h1 { background-color: hsl(33, 100%, 50%);}
+<\style>
+
+```
 
 ---
 
