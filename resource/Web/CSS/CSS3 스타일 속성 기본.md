@@ -1325,9 +1325,40 @@ float 속성은 부유하는 대상을 만들 때 사용하는 스타일 속성�
 
 ```html
 
+<!--float.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Float Style Property</title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<img src="hanbit.jpg" />
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<p>In hac habitasse platea dictumst. Donec lobortis angue a metus.</p>
+	</body>
+</html>
 
 ```
+
+float의 개념을 이해하기 위해 먼저 위의 예제를 실행시켜보자. img 태그는 inline 형식의 태그이고 p태그는  block 형식의 태그이므로 그림과 글자가 분리되어 출력한다.
+
+이제 float 속성을 적용시켜보자.
+
+```html
+
+<style>
+	img {
+		float: left;
+	}
+</style>
+
+```
+
+이미지가 글자 위에 부유하고 있는 모습을 볼 수 있을 것이다.
 
 ---
 
