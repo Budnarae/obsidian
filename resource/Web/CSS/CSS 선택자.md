@@ -485,6 +485,51 @@ input 태그는 type 속성을 입력하지 않으면 자동으로 text 속성�
 
 ```
 
+### table 태그와 자손 선택자 주의 사항
+
+table 태그의 요소를 선택할 때는 자손 선택자를 사용하는 것이 좋지 않다.
+
+```html
+
+<!--select_child_with_table.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* table 태그 아래의 tr 태그 아래 th 태그의 color 속성에 red 키워드를 적용한다. */
+			table > tr > th {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th>Region</th>
+			</tr>
+			<tr>
+				<td>윤인성</td>
+				<td>서울특별시 강서구 내발산동</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+```
+
+대부분 th 태그에 빨간색이 적용되는 것을 예상할 것이다. 하지만 실제로는 스타일 속성이 적용되지 않는다.
+
+이 문제는 요소 검사를 사용해 HTML 페이지의 계층 구조를 살펴보면 원인을 알 수 있다. table 태그에 tbody 태그가 자동으로 추가되어 있을 것이다. 이렇게 웹 브라우저가 자동으로 tbody 태그를 추가하므로 스타일 속성이 적용되지 않는 것이다.
+
+따라서 `table > tbody > tr > th` 선택자를 사용해야 색상을 적용할 수 있다. 소스 코드와 실행 결과가 달라 혼동되므로 table 선택자에 스타일을 적용할 때는 자손 선택자를 사용하지 않도록 하자.
+
+## 동위 선택자
+
+
+
 ---
 
 참고자료
