@@ -46,6 +46,8 @@ HTML5은 위와 같이 시작 태그와 끝 태그를 별도로 입력하는 요
 
 ## 후손과  자손
 
+^b1cf89
+
 상술했듯이, 일부 태그는 다른 태그 내부에 위치할수도 있다. 이 때, 어떤 태그의 한 단계 아래에 위치한 태그를 **자손**이라고 하고, 어떤 태그 하위에 위치한 모든 태그를 **후손**이라고 부른다.
 
 ```html
@@ -68,6 +70,26 @@ HTML5은 위와 같이 시작 태그와 끝 태그를 별도로 입력하는 요
 		</div>
 	</body>
 </html>
+
+```
+
+## 동위
+
+^a63bb2
+
+태그들이 같은 깊이에 위치할 경우 이를 **동위** 관계에 있다고 한다. 예를 들어, 아래의 코드에서 \<li> 태그들은 모두 서로 동위 관계에 있다.
+
+```html
+
+<body>
+	<ul>
+		<li>CSS3 Selector Basic</li>
+		<li>CSS3 Selector Basic</li>
+		<li>CSS3 Selector Basic</li>
+		<li>CSS3 Selector Basic</li>
+		<li>CSS3 Selector Basic</li>
+	</ul>
+</body>
 
 ```
 
