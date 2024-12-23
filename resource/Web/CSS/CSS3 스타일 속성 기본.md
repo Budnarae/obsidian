@@ -490,9 +490,30 @@ margin과 padding은 각각 영역을 둘러싸는 세로 및 가로 여백이�
 
 ```html
 
+<!--margin_padding.html-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Property Basic</title>
+		<style>
+			div {
+				width: 100px; height: 100px;
+				background-color: red;
+
+				border: 20px solid black;
+				margin: 10px; padding: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
 
 ```
+
+	
 
 ---
 
