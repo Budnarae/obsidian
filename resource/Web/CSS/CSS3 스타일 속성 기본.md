@@ -450,6 +450,34 @@ opacity 속성은 태그의 투명도를 조절하는 스타일 속성이다. op
 - height
 - width
 
+테두리 border 속성은 내용이 많으므로 다음 절에서 다루도록 한다. 이 절에서는 width 속성, height 속성, margin 속성, padding 속성을 알아보도록 한다.
+
+### width 속성과 height 속성
+
+width 속성과 height 속성은 글자를 감싸는 영역의 크기를 지정하는 스타일 속성이다. 
+
+```html
+
+<!--width_height.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Property Basic</title>
+		<style>
+			div {
+				width: 100px; height: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+
+```
+
 ---
 
 참고자료
