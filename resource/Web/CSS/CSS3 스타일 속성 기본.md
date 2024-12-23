@@ -966,9 +966,32 @@ font-weight 속성에는 단위 또는 키워드를 사용한다.
 
 ```html
 
+<!--font_style_weight.html-->
 
+<!DOCTYPE html>
+<head>
+	<head>
+		<title>CSS3 Font Property</title>
+		<style>
+			.font_big { font-size: 2em; }
+			.font_italic { font-style: italic; }
+			.fint_bold { font-weight: bold; }
+		</style>
+	</head>
+	<body>
+		<p class="font_big font_italic font_bold">Lorem ipsum dolor amet</p>
+	</body>
+</head>
 
 ```
+
+일반 폰트의 두꼐는 400이고 두꺼운 폰트의 두께는 700이다. 또한 두께를 지원하지 않는 폰트는 font-weight 속성을 사용해 두께를 조절할 수 없다.
+
+### line-height 속성
+
+line-height 속성은 글자의 높이를 지정한다. 현대의 HTML 페이지는 문서의 형태보다 애플리케이션의 형태로 사용하므로 글자의 높이를 지정하는 기능보다 글자를 수직 중앙 정렬할 때 사용한다.
+
+
 
 ---
 
