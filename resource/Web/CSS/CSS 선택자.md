@@ -535,7 +535,37 @@ table 태그의 요소를 선택할 때는 자손 선택자를 사용하는 것�
 | 선택자A + 선택자B | 선택자A 바로 뒤에 위치하는 선택자B를 선택한다. |
 | 선택자A ~ 선택자B | 선택자A 뒤에 위치하는 모든 선택자B를 선택한다.      |
 
-니
+```html
+
+<!--select_brother.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* h1 태그 바로 뒤에 위치하는 h2 태그의 color 속성에 red 키워드를 적용한다. */
+			h1 + h2 { color: red; }
+			/* h1 태그 뒤에 위치하는 h2 태그의 background-color 속성에 orange 키워드를 적용한다. */
+			h1 ~ h2 { background-color: orange; }
+		</style>
+	</head>
+	<body>
+		<h1>Header - 1</h1>
+		<h2>Header - 2</h2>
+		<h2>Header - 2</h2>
+		<h2>Header - 2</h2>
+		<h2>Header - 2</h2>
+	</body>
+</html>
+
+```
+
+동위 선택자는 CSS3 애니메이션을 사용해 동적으로 움직이는 레이아웃을 구성할 때 사용된다.
+
+## 반응 선택자
+
+
 
 ---
 
