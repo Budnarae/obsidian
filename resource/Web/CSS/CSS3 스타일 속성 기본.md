@@ -636,6 +636,32 @@ border-style 속성은 테두리의 형태를 지정하는 속성이다.
 
 위 코드를 한 줄로 입력하면 아래와 같이 입력할 수 있다.
 
+```html
+
+<style>
+	.box {
+		border: thick dashed black;
+	}
+</style>
+
+```
+
+border 속성은 margin 속성과 padding 속성처럼 left, top, right, bottom 부분의 값을 적용할 수 있다.
+
+```html
+
+<style>
+	.box {
+		border-left: thick dashed black;
+	}
+</style>
+
+```
+
+### border-raduis 속성
+
+border-radius 속성은  css3에서 추가된 속성이다. border-radius 속성을 사용하면 테두리가 둥근 사각형 또는 원을 만들 수 있다.
+
 ```
 ```
 
