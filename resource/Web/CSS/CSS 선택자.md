@@ -613,7 +613,7 @@ checked 상태는 type 속성값이 checkbox 또는 radio인 input 태그가 선
 
 focus 상태는 사용자가 초점을 맞추고 있는 입력 양식에 적용되는 상태이다. 참고로 웹페이지 하나당 하나의 input 태그에만 초점을 맞출 수 있다.
 
-마지막으로 enabled 상태는 input 태그가 사용 가능한 상태를 나타내고 disabled 상태는 input 태그가 사용 불가능한 상태를 나타낸다. 
+마지막으로 enabled 상태는 input 태그가 사용 가능한 상태를 나타내고 disabled 상태는 input 태그가 사용 불가능한 상태를 나타낸다. selec
 
 ---
 
