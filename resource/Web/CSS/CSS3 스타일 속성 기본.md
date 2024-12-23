@@ -824,7 +824,7 @@ background-position 속성에는 다음과 같은 형태로 값을 적용한다.
 - background-position: X축 크기;
 - background-position: X축 크기 Y축 크기;
 
-다음과 같이 코드를 실행하면 배경 이미지가 아래에 붙는다.
+키워드를 사용하는 경우의 예시를 보자. 다음과 같이 코드를 실행하면 배경 이미지가 아래에 붙는다.
 
 ```html
 
@@ -841,7 +841,33 @@ background-position 속성에는 다음과 같은 형태로 값을 적용한다.
 
 ```
 
-2개의 값을 입력하면 각각 X축 위치와 Y축 위치를 적용한다. 다음의 코드는 자
+2개의 값을 입력하면 각각 X축 위치와 Y축 위치를 적용한다. 다음의 코드는 X축 위치를 0픽셀로 적용하고 Y축 위치를 50%로 적용하는 코드이다.
+
+```html
+
+<style>
+	body {
+		background-color: #E7E7E8;
+		background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 0px 50%;
+	}
+</style>
+
+```
+
+## background 속성
+
+지금까지 배운 모든 배경 속성은 background 속성 한 번에 사용할 수 있다.
+W3C 표준안은 background 속성에 다음 형태를 입력하라고 지정하고 있다.
+
+```
+<final-bg-layer> = <bg-image> || <position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box>{1,2} || <'background_color'>
+```
+
+실제로는 아래와 같은 형식으로 입력한다.
 
 ---
 
