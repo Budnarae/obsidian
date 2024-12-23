@@ -125,7 +125,42 @@
 
 ```html
 
-<!--
+<!--combined.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 property Basic</title>
+		<style>
+			* { font-size:12px; }
+			h1 { font-size:3.0em; }
+			h2 { font-size:1.5em; }
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<h2>consectetur adipiscing elit. Sed nec purus elit, nec cursus dolor.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus elit.</p>
+	</body>
+</html>
+
+```
+
+전체 폰트 크기에 절대 크기를 지정하고 각각의 태그에 상대 크기를 지정하는 방법은 많이 사용되므로 기억하는 것이 좋다.
+
+### 제로
+
+크기 단위 0을 입력하는 경우 단위를 입력하지 않아도 된다. 개발자의 취향에 따라서 0을 입력하는 경우에도 단위를 표기하는 경우가 있고 표기하지 않는 경우도 있다.
+
+## 색상 단위
+
+색상을 입력하는 가장 간단한 방법은 아래의 코드처럼 키워드를 입력하는 것이다.
+
+```html
+
+<style>
+	h1 { background}
+<\style>
 
 ```
 
