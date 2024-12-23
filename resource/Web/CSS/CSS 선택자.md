@@ -875,7 +875,34 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 | ----------- | --------------------------------- |
 | ::selection | 사용자가 드래그한 글자를 선택한다 |
 
+```html
 
+<!--select_reacting_string.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			p::selection { background: black; color: red;}
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+	</body>
+</html>
+
+```
+
+## 링크 선택자
+
+링크 선택자는 href 속성을 가지고 있는 a 태그에 적용되는 선택자이다. 인터넷에서 한 번 다녀온 링크는 색이 변경되는 것을 볼 수 있는데, 링크 선택자는 한번 이상 다녀온 링크를 선택할 수 있는 선택자이다.
+
+| 선택자 형태 | 설명 |
+| ----------- | ---- |
+| ::lin            |      |
 
 ---
 
