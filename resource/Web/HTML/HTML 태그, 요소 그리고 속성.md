@@ -44,6 +44,33 @@ HTML5은 위와 같이 시작 태그와 끝 태그를 별도로 입력하는 요
 
 ```
 
+## 후손과  자손
+
+상술했듯이, 일부 태그는 다른 태그 내부에 위치할수도 있다. 이 때, 어떤 태그의 한 단계 아래에 위치한 태그를 **자손**이라고 하고, 어떤 태그 하위에 위치한 모든 태그를 **후손**이라고 부른다.
+
+```html
+
+<!--child_grandchild.html-->
+
+<!DOCTYPE html>
+
+<html>
+	<head><title>chile, grandchild</title></head>]
+	<body>
+		<div>
+			<h1>CSS3 Selector Basic</h1>
+			<h2>Lorem ipsum</h2>
+			<ul>
+				<li>universal selector</li>
+				<li>type selector</li>
+				<li>id & class selector</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+```
+
 # 속성
 
 태그에 추가 정보를 부여할 때는 속성을 사용한다.
