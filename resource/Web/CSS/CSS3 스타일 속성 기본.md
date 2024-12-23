@@ -598,7 +598,46 @@ border-box 키워드는 width속성과 height 속성이 테두리를 포함한 �
 
 테두리 속성은 원래 박스 속성이다. 하지만 분량이 굉장히 많은 관계로 별도로 분류하였다.
 
+### border-width 속성과 border-style 속성
 
+이번 주제에서는 border-width 속성과 border-style 속성을 살펴본다.
+
+우선 border-width 속성은 테두리의 너비를 지정하는 스타일 속성이다.
+border-style 속성은 테두리의 형태를 지정하는 속성이다.
+
+아래의 예제를 보자.
+
+```html
+
+<!--border_style.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			.box {
+				border-width: thick;
+				border-style: dashed;
+				border-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>Lorem ipsum dolor amet</h1>
+		</div>
+	</body>
+</html>
+
+```
+
+위 코드를 실행하면 두꺼운 dashed 형태의 검정색 테두리가 형성된다.
+
+위 코드를 한 줄로 입력하면 아래와 같이 입력할 수 있다.
+
+```
+```
 
 ---
 
