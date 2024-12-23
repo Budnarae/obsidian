@@ -584,7 +584,12 @@ box-sizing 속성은 width 속성과 height 속성이 차지하는 범위를 지
 
 ```
 
-content-box 키워드는 기본으로 적용되는 키워드이다. content-box 키워드를 적용하면 width 속성과 height 속성이 글저
+content-box 키워드는 기본으로 적용되는 키워드이다. content-box 키워드를 적용하면 width 속성과 height 속성이 글자가 들어가는 영역의 크기를 지정하게 만든다. 따라서 content-box의 너비와 높이는 다음과 같은 공식으로 표기할 수 있다.
+
+*박스 너비 = width 속성 + 2 x (margin 속성 + border 속성 + padding 속성)*
+*박스 높이 = width 속성 + 2 x (margin 속성 + border 속성 + padding 속성)*
+
+
 
 ---
 
