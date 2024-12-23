@@ -767,7 +767,23 @@ background-size 속성은 1개 또는 2개의 크기 단위를 적용하며 각�
 
 ### background-size 속성의 키워드
 
-background-size 속성에는 ㅈ
+background-size 속성에는 contain 키워드와 cover 키워드를 적용할 수 있다.
+
+background-size 속성에 contain 키워드를 적용하면 너비를 100%로 적용한 것과 같은 효과를 낸다.
+cover 키워드를 적용하면 높이를 100%로 적용한 것과 같은 효과를 낸다.
+
+### background-repeat 속성
+
+background의 높이를 100%보다 작게 주면 그림이 패턴을 이루어 여러 개 출력되는 것을 볼 수 있다. 이는 background-repeat 속성의 기본 키워드가 repeat이므로 나타나느니 형상이다. background-repeat 속성에는 다음의 종류가 있다.
+
+| 키워드 종류 | 설명                            |
+| ----------- | ------------------------------- |
+| repeat      | 이미지가 패턴을 이룬다          |
+| repeat-x    | x축 방향으로 이미지가 반복된다. |
+| repeat-y    | y축 방향으로 이미지가 반복된다. |
+| no-repeat   | 패턴이 반복되지 않는다.         |
+
+
 
 ---
 
