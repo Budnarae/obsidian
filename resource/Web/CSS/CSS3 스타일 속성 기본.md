@@ -543,7 +543,48 @@ margin: 10px 20px 30px 40px;
 
 앞 절에서 width 속성과 height 속성은 글자를 감싸는 영역의 크기를 지정하는 스타일 속성이라고 이야기하였다. box-sizing 속성은 이러한 공식을 변경할 수 있는 CSS3 속성이다.
 
-box-sizing 속성은 width 속성과 height 속성이 차지하는 범위를 지정한다. box-sizing 속성은 
+box-sizing 속성은 width 속성과 height 속성이 차지하는 범위를 지정한다. box-sizing 속성은 다음의 키워드들을 사용한다.
+
+- border-box
+- content-box
+- inherit
+- initial
+
+```html
+
+<!--box-sizing.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			div{
+				margin: 10px; padding: 10px;
+				width: 100px; height: 100px;
+				border: 10px solid black;
+			}
+
+			div:first-child {
+				background: red;
+				box-sizing: content-box;
+			}
+			
+			div:last-child {
+				background: orange;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+	</body>
+</html>
+
+```
+
+content-box 키워드는 기본으로 적용되는 키워드이다. content-box 키워드를 적용하면 width 속성과 height 속성이 글저
 
 ---
 
