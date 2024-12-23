@@ -789,7 +789,59 @@ background-attachment 속성은 배경 이미지를 어떠한 방식으로 화�
 
 background-attachment 속성의 기본 키워드는 scroll 키워드이다. scorll 키워드는 화면 스크롤에 따라 배경 이미지가 함께 이동함을 의미한다.
 
+fixed 키워드를 사용하면 화면 스크롤 유무에 관계없이 화면에 배경 이미지가 고정된다.
 
+```html
+
+<!--background_attachment.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			body {
+				background-color: #E7E7E8;
+				background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<p>very long text</p>
+	</body>
+</html>
+
+```
+
+### background-position 속성
+
+background-position 속성에는 다음과 같은 형태로 값을 적용한다.
+
+- background-position: 키워드;
+- background-position: X축 크기;
+- background-position: X축 크기 Y축 크기;
+
+다음과 같이 코드를 실행하면 배경 이미지가 아래에 붙는다.
+
+```html
+
+<style>
+	body {
+		background-color: #E7E7E8;
+		background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: bottom;
+	}
+</style>
+
+```
+
+2개의 값을 입력하면 각각 X축 위치와 Y축 위치를 적용한다. 다음의 코드는 자
 
 ---
 
