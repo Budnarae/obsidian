@@ -271,7 +271,61 @@ display 속성 중 주로 사용되는 속성으로는 다음이 있다.
 | inline       | 태그를 inline 형식으로 지정한다.       |
 | inline-block | 태그를 inline-block 형식으로 지정한다. |
 
+다음은 위의 표 중 none 키워드를 사용한 예제이다. 다른 키워드를 사용할 땐 display의 키워드를 변경해주면 된다.
 
+```html
+
+<!--none.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Style Property Basic</title>
+		<style>
+			#box {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</body>
+</html>
+
+```
+
+코드를 실행했을 때, 단순히 보기에는 inline 형식과 inline-block 형식 모두 동일하게 출력되는 듯 하다.
+
+하지만 width 속성과 height 속성, maring 속성을 사용할 때 2가지 형식의 차이를 확인할 수 있다.
+
+```html
+
+<!--none.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Style Property Basic</title>
+		<style>
+			#box {
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<span>Dummy</span>
+		<div id="box">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+		</div>
+		<span>Dummy</span>
+	</body>
+</html>
+
+```
 
 ---
 
