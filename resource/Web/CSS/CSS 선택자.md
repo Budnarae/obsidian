@@ -446,7 +446,44 @@ input 태그는 type 속성을 입력하지 않으면 자동으로 text 속성�
 
 자손 선택자는 특정 태그 아래에 있는 자손을 선택할 때 사용하는 선택자이다.
 
-| 선택자 형태
+| 선택자 형태       | 설명 |
+| ----------------- | ---- |
+| 선택자A > 선택자B | 선택자A의 자손에 위치하는 선택자B를 선택한다.     |
+
+아래의 예제는 위에서 살펴본 body 태그와 구성이 같지만 \#nav 태그 아래에 있는 h1 태그에는 스타일이 적용되지 않는다.
+
+```html
+
+<!--select_child.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* id 속성값으로 header를 가지는 태그의 후손 위치에 있는 h1 태그의
+			   color 속성에 red 키워드를 적용한다. */
+			#header > h1 { color: red; }
+			/* id 속성값으로 section를 가지는 태그의 후손 위치에 있는 h1 태그의
+			   color 속성에 orange 키워드를 적용한다. */
+			#section > h1 { color: orange; }
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1 class="title">Lorem ipsum</h1>
+			<div id="nav">
+				<h1>Navigation</h1>
+			</div>
+		</div>
+		<div id="section">
+			<h1 class="title">Lorem ipsum</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+	</body>
+</html>
+
+```
 
 ---
 
