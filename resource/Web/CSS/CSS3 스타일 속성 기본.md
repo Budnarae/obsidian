@@ -214,6 +214,34 @@ HSL 색상은 색상 Hue, 채도 Saturation, 명도 Lightness를 사용한다.
 
 ```
 
+## URL 단위
+
+CSS3에서 이미지 파일이나 폰트 파일을 불러올 때는 URL 단위를 사용한다. 간단히 아래의 예제를 통해서 URL 단위의 사용법에 대해서 알아보자.
+
+```html
+
+<!--url.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 property Basic</title>
+		<style>
+			body {
+				background-image: url('Desert.jpg');
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor amet.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</body>
+</html>
+
+```
+
+url() 함수 내부에 경로를 입력하
+
 ---
 
 참고자료
