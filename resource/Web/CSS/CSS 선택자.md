@@ -831,8 +831,51 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 
 ```html
 
+<!--jQuery_Mobile.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>--jQuery_Mobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet"
+		href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header" data-theme="b">
+				<h1>HTML5</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li data-role="list-divider">HTML5</li>
+					<li>Multimedia</li>
+					<li>Connectivity</li>
+					<li>Device Access</li>
+					<li data-role="list-divider">CSS3</li>
+					<li>Animation</li>
+					<li>3d Transform</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
 
 ```
+
+위 예제를 실행하면 페이지가 자동으로 디자인되는 것을 볼 수 있다. 이런 프레임워크를 UI 프레임워크라고 하며 사용자 지정 속성을 굉장히 많이 활용한다.
+
+## 반응 문자 선택자
+
+반응 문자 선택자는 사용자가 문자와 반응해서 생기는 영역을 선택자이다.
+
+| 선택자 형태 | 설명                              |
+| ----------- | --------------------------------- |
+| ::selection | 사용자가 드래그한 글자를 선택한다 |
+
+
 
 ---
 
