@@ -1187,6 +1187,54 @@ relative 키워드를 적용하면 static 키워드로 초기 위치가 지정�
 
 아래의 코드는 각각의 태그의 z-index 속성에 100, 10, 1을 적용하였다.
 
+```html
+
+<!--z-index.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			.box {
+				width: 100px; height: 100px;
+				position: absolute;
+			}
+			.box:nth-child(1) { 
+				background-color: red;
+				left: 10px; top: 10px;
+			
+				z-index: 100;
+			}
+			.box:nth-child(2) { 
+				background-color: green;
+				left: 50px; top: 50px; 
+			
+				z-index: 10;
+			}
+			.box:nth-child(3) { 
+				background-color: blue;
+				left: 90px; top: 90px;
+			
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box red"></div>
+		<div class="box green"></div>
+		<div class="box blue"></div>
+	</body>
+</html>
+
+```
+
+직전의 예제와 달리 빨간색 박스가 제일 앞쪽에 위치하는 것을 볼 수 있다.
+
+### 위치 속성과 관련된 공식
+
+position 속성에 absolute 키워드를 적용하면 부모 태그가 영역을 차지하지 않는다. 따라서 자송
+
 ---
 
 참고자료
