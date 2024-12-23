@@ -991,7 +991,48 @@ font-weight 속성에는 단위 또는 키워드를 사용한다.
 
 line-height 속성은 글자의 높이를 지정한다. 현대의 HTML 페이지는 문서의 형태보다 애플리케이션의 형태로 사용하므로 글자의 높이를 지정하는 기능보다 글자를 수직 중앙 정렬할 때 사용한다.
 
+CSS는 block 형식을 가지는 태그를 수직 정렬할 수 있는 스타일 속성이 없다. 따라서 대체 방안으로 line-height 속성을 사용한다.
 
+```html
+
+<!--align_button.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Font Property</title>
+		<style>
+			.font_big { font-size: 2em; }
+			.font_italic { font-style: italic; }
+			.font_bold { font-weight: bold; }
+			.font_center { text-align: center; }
+
+			.button {
+				width: 150px;
+				height: 70px;
+				background-color: #FF6A00;
+				border: 10px solid #FFFFFF;
+				border-radius: 30px;
+				box-shadow: 5px 5px 5px #A9A9A9
+			}
+
+			.button > a {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="button">
+			<a href="#" class="font_big font_italic font_bold font_center">Click</a>
+		</div>
+	</body>
+</html>
+
+```
+
+### text-align 속성
+
+text-align
 
 ---
 
