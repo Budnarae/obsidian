@@ -240,7 +240,21 @@ CSS3에서 이미지 파일이나 폰트 파일을 불러올 때는 URL 단위�
 
 ```
 
-url() 함수 내부에 경로를 입력하
+url() 함수 내부에 경로를 입력하면 된다. URL 경로를 입력할 때는 아래처럼 복잡한 경로를 사용할 수 있다.
+
+```html
+
+/* 현재 폴더의 Desert.jpg */
+background-image: url('Desert.jpg');
+
+/* 현재 폴더 내부의 Other 폴더의 Desert.jpg */
+background-image: url('Other/Desert.jpg');
+
+/* 루트 폴더의 Desert.jpg */
+/* 루트 폴더의 개념은 서버를 알아야 한다 */
+background-image: url('/Desert.jpg');
+
+```
 
 ---
 
