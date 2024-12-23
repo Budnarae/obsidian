@@ -903,7 +903,55 @@ W3C 표준안은 background 속성에 다음 형태를 입력하라고 지정하
 
 ## font-family 속성
 
-font_family
+font_family 속성에는 사용자 컴퓨터에 설치된 폰트를 사용한다.
+
+일반적으로 한 단어로 이루어진 폰트는 따옴표를 사용하지 않는다. 하지만 두 단어 이상으로 이루어지는 폰트는 따옴표를 반드시 사용해야 한다.
+
+```html
+
+<!--font-size.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Font Property</title>
+	<style>
+		.font_arial { font-family: Arial; }
+		.font_roman { font-family: 'Times New Roman'; }
+	</style>
+</head>
+<body>
+	<h1 class="font_arial">Lorem imsum</h1>
+	<p class="font_roman">Lorem ipsum</p>
+</body>
+</html>
+
+```
+
+폰트를 적용할 때는 주의할 점이 있다. 개발하고 있는 우리의 컴퓨터에는 설치되어 있지만 우리가 개발한 웹 페이지를 사용할 사용자에게는 폰트가 설치되어 있지 않을 수 있다.
+
+일반적으로 이러한 문제를 예방하고자 font-family 속성을 여러 개 사용한다.
+
+```html
+
+<!--font-size.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Font Property</title>
+	<style>
+		.font_arial { font-family: '없는 폰트', Arial; }
+		.font_roman { font-family: 'Times New Roman', Arial; }
+	</style>
+</head>
+<body>
+	<h1 class="font_arial">Lorem imsum</h1>
+	<p class="font_roman">Lorem ipsum</p>
+</body>
+</html>
+
+```
 
 ---
 
