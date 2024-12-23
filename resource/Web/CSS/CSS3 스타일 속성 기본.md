@@ -730,7 +730,44 @@ background-image 속성에는 URL 단위 또는 그레이디언트를 입력한�
 
 ```
 
-위의 예제를 실행시키면 body 태그가 
+위의 예제를 실행시키면 body 태그가 차지하는 영역에 (즉 화면 전체에) 배경 이미지를 적용할 수 있다.
+
+### background-size 속성
+
+그림 크기를 조절할 때는 background-size 속성을 사용한다. background-size 스타일 속성은 CSS3에서 추가된 속성이다.
+
+background-size 속성에는 크기 단위 또는 키워드를 사용한다.
+
+background-size 속성은 1개 또는 2개의 크기 단위를 적용하며 각각 너비와 높이를 의미한다.
+
+```html
+
+<!--background_size.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 property Basic</title>
+		<style>
+			body {
+				background-image: url('BackgroundFront.png');
+				background-size: 100%;
+
+				/* 두 번째 속성은 높이를 의미한다. 
+				background-size: 100% 250px */
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+```
+
+### background-size 속성의 키워드
+
+background-size 속성에는 ㅈ
 
 ---
 
