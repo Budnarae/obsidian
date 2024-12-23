@@ -721,7 +721,59 @@ nth-child 선택자와 nth-last-child 선택자의 괄호 안에 수열을 넣�
 | :nth-of-type(수열)      | 형제 관계 중에서 앞에서 수열 번째로 등장하는 특정 태그를 선택한다. |
 | :nth-last-of-type(수열) | 형제 관계 중에서 뒤에서 수열 번째로 등장하는 특정 태그를 선택한다. |
 
+```html
 
+<!--select_brother_struct.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			h1:first-of-type {color:red;}
+			h2:first-of-type {color:red;}
+			h3:first-of-type {color:red;}
+		</style>
+	</head>
+	<body>
+		<h1>Header - 1</h1>
+		<h2>Header - 2</h2>
+		<h3>Header - 3</h3>
+		<h3>Header - 3</h3>
+		<h2>Header - 2</h2>
+		<h1>Header - 1</h1>
+	</body>
+</html>
+
+```
+
+```html
+
+<!--select_brother_struct2.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			body > *:first-of-type {color:red;}
+		</style>
+	</head>
+	<body>
+		<h1>Header - 1</h1>
+		<h2>Header - 2</h2>
+		<h3>Header - 3</h3>
+		<h4>Header - 4</h4>
+		<h5>Header - 5</h5>
+		<h6>Header - 6</h6>
+	</body>
+</html>
+
+```
+
+## 문자 선택자
+
+문자 가상 요소 선택자는 태그 내부 특정 조건의 문자를 선택하는 선택자이다. 문자 선택자는 가상 요소 선택자 Pseudo-Element Selector
 
 ---
 
