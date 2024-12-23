@@ -565,7 +565,36 @@ table 태그의 요소를 선택할 때는 자손 선택자를 사용하는 것�
 
 ## 반응 선택자
 
+반응 선택자는 사용자의 반응으로 생성되는 특정한 상태를 선택하는 선택자이다. 사용자가 마우스를 특정한 태그 위에 올리면 hover 상태가 적용되고 클릭하면 active 상태가 적용된다.
 
+| 선택자 형태 | 설명                                      |
+| ----------- | ----------------------------------------- |
+| :active     | 사용자가 마우스로 클릭한 태그를 선택한다. |
+| :hover      | 사용자가 마우스를 올린 태그를 선택한다.   |
+
+```html
+
+<!--select_reactor.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic</title>
+		<style>
+			/* h1 태그에 마우스를 올릴 경우에
+			   color 속성에 red 키워드를 적용한다. */
+			h1:hover { color: red; }
+			/* h1 태그를 마우스로 클릭할 때
+			   color 속성에 blue 키워드를 적용한다. */
+			h1:active { color: blue; }
+		</style>
+	</head>
+	<body>
+		<h1>User Action Selector</h1>
+	</body>
+</html>
+
+```
 
 ---
 
