@@ -381,9 +381,74 @@ none 키워드를 사용하면 해당 블록이 완전히 사라지지만, hidde
 > ## collapse 속성
 > visibility의 다른 키워드인 hidden도 table에 적용하는 것이 가능하다. 하지만 hidden은 내용물을 보이지 않게 할 뿐 표의 공간 자체는 남아있는 반면, collapse 속성은 none과 같이 표 자체를 없애버린다는 차이점이 있다.
 
+```html
+
+<!--collapse.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Selector Basic Page</title>
+		<style>
+			table {
+				visibility: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<table>
+			<tr><td>TEST</td><td>Test</td></tr>
+			<tr><td>TEST</td><td>Test</td></tr>
+			<tr><td>TEST</td><td>Test</td></tr>
+		</table>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</body>
+</html>
+
+```
+
 ### opacity 속성
 
-opacity 속성은 태그의 투명도를 조절하는 스타일 속성이다. opacity 속성에는 0.0부터 1.0 사이의 숫자를 입력할 수 있으며 0.0은 완전히 투명한 상태를 나타내고 1.0
+opacity 속성은 태그의 투명도를 조절하는 스타일 속성이다. opacity 속성에는 0.0부터 1.0 사이의 숫자를 입력할 수 있으며 0.0은 완전히 투명한 상태를 나타내고 1.0은 완전히 불투명한 상태를 나타낸다.
+
+예를 들어 아래처럼 0.2를 적용하면 약간 투명한 상태로 보인다.
+
+```html
+
+<!--opacity.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Basic Page</title>
+		<style>
+			#box {
+				background-color: black;
+				color: white;
+
+				opacity: 0.2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">lorem ipsum dolor sit amet,
+			consectetur adipiscing elit.
+		</div>
+	</body>
+</html>
+
+```
+
+## 박스 속성
+
+박스 속성은 웹 페이지의 레이아웃을 구성할 때 가장 중요한 스타일 속성이다. CSS는 다음과 같은 속성을 모두 합쳐 박스 속성이라고 이야기한다.
+
+- margin
+- border
+- padding
+- height
+- width
 
 ---
 
