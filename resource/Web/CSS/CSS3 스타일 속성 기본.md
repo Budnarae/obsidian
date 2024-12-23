@@ -662,8 +662,50 @@ border 속성은 margin 속성과 padding 속성처럼 left, top, right, bottom 
 
 border-radius 속성은  css3에서 추가된 속성이다. border-radius 속성을 사용하면 테두리가 둥근 사각형 또는 원을 만들 수 있다.
 
+```html
+
+<style>
+	.box {
+		border: thick dashed black;
+		border-radius: 20px;
+	}
+</style>
+
 ```
+
+다음과 같은 기법들을 적용시킬 수도 있다.
+
+```html
+
+<style>
+	.box {
+		/*border-width: thick;
+		border-style: dashed;
+		border-color: black;*/
+
+		/* 한 줄로 입력하려면
+		border: thick dashed black;*/
+
+		/* 둥근 모서리 만들기
+		border: thick dashed black;
+		border-radius: 20px; */
+
+		/* 모서리 각각의 각을 다르게 하기 */
+		border: thick dashed black;
+		border-radius: 50px 40px 20px 10px;
+	}
+</style>
+
 ```
+
+## 배경 속성
+
+배경 속성은 특정 태그의 배경 이미지 또는 생상을 지정하는 스타일 속성이다.
+
+### background-image 속성
+
+background-image속성은 배경에 넣을 그림을 지정하는 스타일 속성이다.
+background_
 
 ---
 
