@@ -521,7 +521,29 @@ margin: 10px 20px 30px 40px;
 
 ```
 
-그리고 다음과 같이 margin과 pa
+그리고 다음과 같이 margin과 padding 속성에 2개의 값을 적용하는 경우도 있다.
+이 경우 2개의 값은 각각 margin과 padding의 세로, 가로 값을 의미한다.
+
+```html
+
+<style>
+	div {
+		width: 100px; height: 100px;
+		background-color: red;
+
+		/* margin: 위아래 왼쪽오른쪽 */
+		/* padding: 위아래 왼쪽오른쪽 */
+		margin: 0 30px; padding: 0 30px;
+	}
+</style>
+
+```
+
+### box-sizing 속성
+
+앞 절에서 width 속성과 height 속성은 글자를 감싸는 영역의 크기를 지정하는 스타일 속성이라고 이야기하였다. box-sizing 속성은 이러한 공식을 변경할 수 있는 CSS3 속성이다.
+
+box-sizing 속성은 width 속성과 height 속성이 차지하는 범위를 지정한다. box-sizing 속성은 
 
 ---
 
