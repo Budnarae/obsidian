@@ -589,6 +589,15 @@ content-box 키워드는 기본으로 적용되는 키워드이다. content-box 
 *박스 너비 = width 속성 + 2 x (margin 속성 + border 속성 + padding 속성)*
 *박스 높이 = width 속성 + 2 x (margin 속성 + border 속성 + padding 속성)*
 
+border-box 키워드는 width속성과 height 속성이 테두리를 포함한 영역의 크기를 지정하게 만든다. 따라서 생성되는 영역의 전체 너비와 높이는 다음과 같은 공식으로 표기할 수 있다.
+
+*박스 너비 = width 속성 + 2 x margin 속성*
+*박스 높이 = height 속성 + 2 x margin 속성*
+
+## 테두리 속성
+
+테두리 속성은 원래 박스 속성이다. 하지만 분량이 굉장히 많은 관계로 별도로 분류하였다.
+
 
 
 ---
