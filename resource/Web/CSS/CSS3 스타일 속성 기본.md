@@ -1533,7 +1533,68 @@ text-shadow: <오른쪽> <아래> <흐림도> <색상>
 
 ```
 
+```html
 
+<!--text-shadow.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			h1 {
+				text-shadow: 5px 5px 5px black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Lorem ipsum dolor amet</h1>
+	</body>
+</html>
+
+```
+
+### box-shadow 속성
+
+box-shadow 속성은 박스에 그림자를 부여하는 속성이다. 아래의 형태로 값을 적용한다.
+
+```bnf
+
+box-shadow: <오른쪽> <아래> <흐림도> <색상>
+
+```
+
+```html
+
+<!--text-shadow.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+			div {
+				border: 3px solid black;
+				box-shadow: 10px 10px 30px black;
+				text-shadow: 5px 5px 5px black;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Lorem ipsum dolor amet</h1>
+		</div>
+	</body>
+</html>
+
+```
+
+### 중첩 그림자
+
+그림자 속성은 쉼표를 사용해 여러 개의 그림자 키워드를 사용할 수 있다.
+
+```
+```
 
 ---
 
