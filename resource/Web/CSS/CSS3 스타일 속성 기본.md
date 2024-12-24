@@ -1362,7 +1362,46 @@ float의 개념을 이해하기 위해 먼저 위의 예제를 실행시켜보�
 
 ### float 속성을 사용한 수평 정렬
 
+float 속성을 사용하면 태그를 수평으로 정렬할 수 있다. float 속성을 사용해 수평 정렬할 때는 주의할 점이 있으므로 아래처럼 div 태그에 각각의 태그를 구분할 수 있는 숫자를 입력한다.
 
+```html
+
+ <!--body 태그 구성-->
+
+<body>
+	<div class="box">1</div>
+	<div class="box">2</div>
+</body>
+
+```
+
+스타일시트에는 float 속성에 각각의 키워드를 적용한다.
+
+```html
+
+<style>
+	.box {
+		width: 100px; height: 100px;
+		background-color: red;
+		margin: 10px; padding: 10px;
+
+		/* 태그를 왼쪽으로 붙인다. */
+		float: left;
+	}
+</style>
+
+<style>
+	.box {
+		width: 100px; height: 100px;
+		background-color: red;
+		margin: 10px; padding: 10px;
+
+		/* 태그를 오른쪽으로 붙인다. */
+		floa
+	}
+</style>
+
+```
 
 ---
 
