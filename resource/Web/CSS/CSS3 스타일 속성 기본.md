@@ -1614,7 +1614,33 @@ box-shadow: <오른쪽> <아래> <흐림도> <색상>
 벤더 프리픽스 Vender Prefix는 웹 브라우저 공급 업체에서 제공하며, 실험적인 기능이 필요할 때 사용한다.
 실험적인 기능은 웹 브라우저가 무턱대고 추가하기에는 무리가 있다.
 
-하지만 다른 웹 브라우저를 이기려면 
+하지만 다른 웹 브라우저를 이기려면 새로운 기능을 모두 제공해야 하므로 벤더 프리픽스를 사용해 지원한다. 아래는 벤더 프리픽스를 사용해 변환 효과를 적용하는 스타일 시트이다.
+
+```html
+
+<!--bender-prefix.html-->
+
+<style>
+	input[type=checkout]:checked + div {
+		height: 0px;
+	}
+
+	div {
+		overflow: hidden;
+		width: 650px; height: 300px;
+
+		/* 변환 효과를 적용한다 */
+		-ms-transition-duration: 1s;
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+</style>
+
+```
+
+위 예제에서 transition-duration 속성 앞에 붙어 있는 글자들이 벤더 프리픽스이다.
 
 ---
 
