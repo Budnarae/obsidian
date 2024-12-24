@@ -1427,7 +1427,50 @@ float 속성을 사용해 레이아웃을 구성할 때는 아래의 공식을 �
 
 우선 아래처럼 레이아웃의 기본적인 틀을 입력한다.
 
+```html
 
+<!--rayout.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Property Basic</title>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<div id="header"><h1>Header</h1></div>
+		<div id="navigation"><h1>Navigation</h1></div>
+		<div id="wrap">
+			<div id="aside">
+				<h1>Aside</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div id="section">
+				<h1>Section</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		</div>
+		<div id="footer"><h1>Footer</h1></div>
+	</body>
+</html>
+
+```
+
+이제 스타일을 사용한다. 태그에 width 속성을 사용하고 margin-left, margin-right 속성에 auto 키워드를 적용하면 자동으로 중앙 정렬된다.
+
+```html
+
+<style>
+	/* body 태그를 중앙 정렬한다 */
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+</style>
+
+```
 
 ---
 
