@@ -1648,7 +1648,42 @@ box-shadow: <오른쪽> <아래> <흐림도> <색상>
 
 CSS3에서 그레이디언트를 구현하기 위한 형식은 복잡하므로 다음과 같은 [자동화 도구](https://www.colorzilla.com/gradient-editor/)의 힘을 빌리는 것이 좋다.
 
+```html
 
+ <!--gradient.html-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Style Property Basic</title>
+		<style>
+			div {
+				font-family: 'Times New Roman';
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+				background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>CSS3 Gradient</h1>
+		</div>
+	</body>
+</html>
+
+```
+
+그레이디언트를 구현하기 위해 사용되는 linear-gradient() 함수는 아래와 같은 형식으로 입력한다.
+
+```bnf
+
+linear-gradient(<각도>, <색상 블록 - 색상, 위치>, <색상 블록 - 색상, 위치>)
+
+```
 
 ---
 
