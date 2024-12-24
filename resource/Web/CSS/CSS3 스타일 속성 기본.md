@@ -1497,7 +1497,43 @@ float 속성을 사용해 레이아웃을 구성할 때는 아래의 공식을 �
 
 여기까지 실습을 진행했을 때 문제가 하나 있다. footer 태그는 페이지의 가장 하단에 있어야 하는 데 section 블록 밑에 붙어있을 것이다.
 
-이는 근본적으로 float 태그가 요소를 부유시키기 때문에 발생하는 일로, 
+이는 근본적으로 float 태그가 요소를 부유시키기 때문에 발생하는 일로, 이를 해결하기 위해서는 이 절 맨 처음 서술했던 거처럼 float 속성을 사용한 태그의 부모에 overflow 속성을 사용하고 hidden 키워드를 적용한다.
+
+```html
+<style>
+	/* body 태그를 중앙 정렬한다 */
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+	#aside {
+		width: 200px;
+		float: left;
+	}
+	#section {
+		width: 760px;
+		float: left;
+	}
+	#wrap { overflow: hidden; }
+</style>
+
+```
+
+## 그림자 속성
+
+그림자 속성은 태그에 그림자를 부여해주는 스타일 속성이다.
+
+### text-shadwo 속성
+
+text-shadow 속성은 글자에 그림자를 부여하는 스타일 속성이다. 아래의 그림의 형태로 값을 적용한다.
+
+```bnf
+
+text-shadow: <오른쪽> <아래> <흐림도> <색상>
+
+```
+
+
 
 ---
 
