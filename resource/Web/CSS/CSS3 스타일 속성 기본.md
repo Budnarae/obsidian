@@ -1472,6 +1472,33 @@ float 속성을 사용해 레이아웃을 구성할 때는 아래의 공식을 �
 
 ```
 
+`#wrap` 태그 내부의 영역은 왼쪽과 오른쪽으로 구분되므로 아래처럼 입력한다.
+`#aside`와 `#section` 태그에 width 속성과 float 속성을 사용한다.
+
+```html
+
+<style>
+	/* body 태그를 중앙 정렬한다 */
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+	#aside {
+		width: 200px;
+		float: left;
+	}
+	#section {
+		width: 760px;
+		float: left;
+	}
+</style>
+
+```
+
+여기까지 실습을 진행했을 때 문제가 하나 있다. footer 태그는 페이지의 가장 하단에 있어야 하는 데 section 블록 밑에 붙어있을 것이다.
+
+이는 근본적으로 float 태그가 요소를 부유시키기 때문에 발생하는 일로, 
+
 ---
 
 참고자료
