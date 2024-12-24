@@ -1593,8 +1593,28 @@ box-shadow: <오른쪽> <아래> <흐림도> <색상>
 
 그림자 속성은 쉼표를 사용해 여러 개의 그림자 키워드를 사용할 수 있다.
 
+```html
+
+<style>
+	div {
+		border: 3px solid black;
+		box-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+		text-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+	}
+</style>
+
 ```
-```
+
+## 자동화을 위해 아래의 링크를 애용합시다
+
+[css3 생성기](https://css3generator.com/)
+
+## 벤더 프리픽스
+
+벤더 프리픽스 Vender Prefix는 웹 브라우저 공급 업체에서 제공하며, 실험적인 기능이 필요할 때 사용한다.
+실험적인 기능은 웹 브라우저가 무턱대고 추가하기에는 무리가 있다.
+
+하지만 다른 웹 브라우저를 이기려면 
 
 ---
 
