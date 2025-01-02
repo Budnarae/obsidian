@@ -11,10 +11,15 @@
             "id": "b61c183e067b3a6d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "resource/Web/WWW.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "WWW"
             }
           }
         ]
@@ -174,6 +179,7 @@
   },
   "active": "b61c183e067b3a6d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/JavaScript.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
@@ -220,7 +226,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "재료/template/참고자료.md",
     "재료/template/개요.md",
-    "resource/Docker/Dockerfile.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
