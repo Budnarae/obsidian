@@ -548,7 +548,23 @@ for (const todo of todos)
 
 ## for 반복문
 
-for 반ㅁ
+for 반복문은 특정 횟수만큼 반복하고 싶을 때 사용하는 범용적인 반복문이다.
+
+```javascript
+
+for (let i = 0; i < 반복 횟수; i++)
+{
+	문장;
+}
+
+```
+
+## while 반복문
+## break 키워드
+## continue 키워드
+## 중첩
+
+c 언어와 동일하므로 생략
 
 ---
 
