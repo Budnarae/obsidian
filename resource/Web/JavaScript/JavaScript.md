@@ -63,6 +63,36 @@
 
 # 출력
 
+## 개발자 콘솔 사용하기
+
+맥 기준으로, 크롬에서 **option + cmd + I**를 사용하면 개발자 콘솔을 열 수 있다.
+간단한 표현식의 결과를 확인하기 좋다.
+
+## alert
+
+alert() 함수를 사용하면 웹 브라우저에 경고창을 띄울 수 있다. alert() 함수는 다음과 같이 사용한다.
+
+```javascript
+
+alert('Hello JavaScript...!');
+
+```
+
+## console.log
+
+console.log() 함수를 사용하면 개발자 콘솔을 통해 매개변수로 전달한 값을 출력할 수 있다.
+
+```javascript
+
+console.log('Hello JavaScript...!')
+
+```
+
+# 기본 자료형
+
+## 문자열 자료형
+
+문자들의 집합을 **
 
 ---
 
