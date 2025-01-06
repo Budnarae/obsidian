@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/WWW.md",
+                "file": "resource/Web/JavaScript/JavaScript.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "WWW"
+              "title": "JavaScript"
             }
           }
         ]
@@ -179,12 +179,12 @@
   },
   "active": "b61c183e067b3a6d",
   "lastOpenFiles": [
+    "resource/Web/WWW.md",
     "resource/Web/JavaScript/JavaScript.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
-    "resource/Web/WWW.md",
     "area/참고도서.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
