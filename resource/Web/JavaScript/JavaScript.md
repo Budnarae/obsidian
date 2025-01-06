@@ -269,7 +269,39 @@ const name = value;
 
 ### Missing initializer in const declaration
 
-상수는 
+상수는 한 번만 선언할 수 있으므로 선언할 때 반드시 값을 함께 지정해줘야 한다. 그렇지 않으면 이 오류가 발생한다.
+
+### Assignment to constant variable
+
+상수의 값을 변경하려 할 때 발생한다.
+
+## 변수
+
+**let** 키워드를 사용하여 변수를 만든다.
+
+```javascript
+
+let name = value;
+
+```
+
+### Identifier has already declared
+
+같은 이름으로 변수를 한 번 더 선언하면 발생하는 오류
+
+### 변수에 적용할 수 있는 연산자
+
+#### 복합 대입 연산자
+#### 증감 연산자
+
+#language/c 의 연산자와 동일
+
+## undefined 자료형
+
+식별자를 선언하지 않고 사용하면 **undefined 자료형**으로 처리된다.
+
+```
+```
 
 ---
 
