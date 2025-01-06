@@ -907,11 +907,21 @@ numbers
 // 타이머 걸기
 
 setTimeout(() => {
+	console.log('1초 후에 실행')
+}, 1 * 1000)
 
-})
+let count = 0;
+setInterval(() => {
+	console.log(`1초마다 실행됩니다(${count}번째)`);
+	count++;
+}, 1 * 1000)
 
 ```
- 
+
+**setTimeout() 함수와 setInterval() 함수**를 사용해서 특정 시간 후에 코드를 호출한다. 코드를 실행하면 1초 후에 setTimeout() 함수의 콜백 함수가 실행되고, 1초마다 setInterval() 함수의 콜백 함수가 실행되는 것을 볼 수 있다.
+
+특이사항으로, 2번째 매개변수에 시간을 입력할 때 밀리초로 입력하여야 한다.
+
 ---
 
 참고자료
