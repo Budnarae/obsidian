@@ -298,10 +298,40 @@ let name = value;
 
 ## undefined 자료형
 
-식별자를 선언하지 않고 사용하면 **undefined 자료형**으로 처리된다.
+자바스크립트에서 data가 **undefined**로 취급되는 경우는 아래와 같다.
+
+1. 식별자를 선언하지 않고 사용할때
+
+```javascript
+
+// "undefined"를 반환함
+typeof(abc);
 
 ```
+
+2. 변수를  선언하면서 값을 지정하지 않은 경우에
+
+```javascript
+
+let a;
+
+typeof(a);
+
 ```
+
+# 문자열 입력
+
+문자열 자료형을 입력받을 때 사용하는 함수는 prompt()이다. 다음과 같은 형태로 사용한다.
+
+```javascript
+
+prompt(메시지 문자열, 기본 입력 문자열);
+
+```
+
+# 자료형 변환
+
+
 
 ---
 
