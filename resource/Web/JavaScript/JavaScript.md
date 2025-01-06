@@ -251,6 +251,26 @@ if (typeof(273) === "number")
 
 ```
 
+# 상수와 변수
+
+## 상수
+
+상수는 키워드 **const**를 사용하여 만든다
+
+```javascript
+
+const name = value;
+
+```
+
+### Identifier has already declared
+
+같은 이름으로 상수를 한 번 더 선언하면 발생하는 오류
+
+### Missing initializer in const declaration
+
+상수는 
+
 ---
 
 참고자료
