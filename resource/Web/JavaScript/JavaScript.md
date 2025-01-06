@@ -581,6 +581,39 @@ function () { ... }
 
 ```
 
+```javascript
+
+const func = function() {
+	console.log("자바스크립트로 만든 첫번째 익명 함수.");
+}
+
+func();
+
+```
+
+익명 함수는 이름이 부여되어 있지 않으므로 일반적으로 변수에 붙여서 사용한다.
+
+## 선언적 함수
+
+일반적으로는 이름이 있는 함수를 많이 사용한다.
+이름을 부여하여 생성한 함수를 선언적 함수라고 한다.
+
+```javascript
+
+function functionName() { ... }
+
+```
+
+```javascript
+
+function() func {
+	console.log("자바스크립트로 만든 첫번째 익명 함수.");
+}
+
+func();
+
+```
+
 ---
 
 참고자료
