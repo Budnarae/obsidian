@@ -745,7 +745,44 @@ callThreeTimes(print);
 
 ```
 
-이전 예제의 선언적 함수를 익명 함수로 
+이전 예제의 선언적 함수를 익명 함수로 변경한다면 다음과 같이 코드를 구성할 수 있다.
+
+```javascript
+
+// 함수를 선언한다.
+function callThreeTimes (callback)
+{
+	for (let i = 0; i < 3; i++)
+	{
+		// callback이라는 매개변수는 함수이므로 호출할 수 있다.
+		callback(i);
+	}
+}
+
+// 함수를 호출한다.
+callThreeTimes(function (i) {
+	console.log(`${i}번째 함수 호출`);
+});
+
+```
+
+## forEach()
+
+콜백 함수를 활용하는 가장 기본적인 함수는 **forEach()** 메소드이다. forEach() 메소드는 배열이 갖고 있는 함수(메소드)로써 단순하게 배열 내부의 요소를 사용해서 콜백 함수를 호출해준다.
+
+배열이 갖고 있는 메소드 중에서 콜백 함수를 활용하는 메소드는 다음과 같은 형태의 콜백 함수를 사용한다.
+
+```javascript
+
+function (value, index, array) {}
+
+```
+
+```javascript
+
+const numbers = [273, 52, 103,];
+
+```
 
 ---
 
