@@ -809,7 +809,24 @@ numbers.forEach(console.log);
 
 ### 원하는 매개변수만 받기
 
-배열의 메소드의 매개변수에 전달하는 콜백 함수의 완전한 형식은 `function (valu)`
+배열의 메소드의 매개변수에 전달하는 콜백 함수의 완전한 형식은 `function (value, index, array) {}`가 맞지만, 일반적으로 value 또는  value와 index만 사용하는 경우가 많다.
+
+콜백 함수의 매개변수는 모두 입력할 필요 없고, 사용하고자 하는 위치의 것만 순서에 맞춰 입력하면 된다.
+
+```javascript
+
+// 배열을 선언한다
+let numbers = [273, 52, 103, 32, 57];
+
+// 배열의 모든 값을 제곱한다
+numbers = numbers.map(function (value) {
+	return value * value;
+})
+
+// 출력한다
+numbers.forEach(console.log);
+
+```
 
 ---
 
