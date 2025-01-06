@@ -362,9 +362,34 @@ String() 함수를 사용한다.
 
 ```javascript
 
-
+// "289"를 반환
+String(289);
 
 ```
+
+## 불 자료형으로 변환
+
+Boolean 함수를 사용한다.
+
+```javascript
+
+/* false case */
+Boolean(0);
+Boolean(NaN);
+Boolean("");
+Boolean(null);
+
+// undefined variable ==> false
+let variable;
+Boolean(variable);
+
+```
+
+# 조건문 (if else, switch)
+
+c언어와 동일하므로 생략
+
+# t
 
 ---
 
