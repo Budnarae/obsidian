@@ -606,11 +606,36 @@ function functionName() { ... }
 
 ```javascript
 
-function() func {
-	console.log("자바스크립트로 만든 첫번째 익명 함수.");
+function func() {
+	console.log("자바스크립트로 만든 첫번째 선언적 함수.");
 }
 
 func();
+
+```
+
+## 나머지 매개변수
+
+호출할 때 매개변수의 개수가 고정적이지 않은 함수를 **가변 매개변수 함수**라고 부른다. 자바스크립트에서 이러한 함수를 구현할 때는 **나머지 매개변수 rest parameter**라는 특이한 형태의 문법을 사용한다. 나머지 매개변수의 기본적인 사용 방법은 다음과 같다.
+
+```javascript
+
+function functionName(...나머지 매개변수) { ... }
+
+```
+
+함수의 매개변수 앞에 마침표 3개(...)를 입력하면 매개변수들이 **배열**로 들어온다. 나머지 매개변수의 작동을 확인할 수 있는 간단한 예제를 보도록 하자.
+
+```javascript
+
+function sample(...items)
+{
+	console.log(items);
+}
+
+sample(1, 2);
+sample(1, 2, 3);
+sample(1, 2, 3, 4);
 
 ```
 
