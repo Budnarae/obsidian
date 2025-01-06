@@ -780,9 +780,36 @@ function (value, index, array) {}
 
 ```javascript
 
-const numbers = [273, 52, 103,];
+const numbers = [273, 52, 103, 32, 57];
+
+numbers.forEach(function (value, index, array) {
+	console.log(`${index}번째 요소 : ${value}`);
+})
 
 ```
+
+## map()
+
+map() 메소드도 배열이 갖고 있는 함수 중 하나로, map() 메소드는 콜백 함수에서 리턴한 값들을 기반으로 새로운 배열을 만든다.
+
+```javascript
+
+// 배열을 선언한다
+let numbers = [273, 52, 103, 32, 57];
+
+// 배열의 모든 값을 제곱한다
+numbers = numbers.map(function (value, index, array) {
+	return value * value;
+})
+
+// 출력한다
+numbers.forEach(console.log);
+
+```
+
+### 원하는 매개변수만 받기
+
+배열의 메소드의 매개변수에 전달하는 콜백 함수의 완전한 형식은 `function (valu)`
 
 ---
 
