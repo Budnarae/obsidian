@@ -922,6 +922,31 @@ setInterval(() => {
 
 특이사항으로, 2번째 매개변수에 시간을 입력할 때 밀리초로 입력하여야 한다.
 
+타이머를 종료하고 싶을 때는 **clearTimeout() 함수와 clearInterval() 함수**를 사용한다.
+
+| 함수 이름               | 설명                                          |
+| ----------------------- | --------------------------------------------- |
+| clearTimeout(timer_id)  | setTimeout() 함수로 설정한 타이머를 제거한다  |
+| clearInterval(timer_id) | setInterval() 함수로 설정한 타이머를 제거한다 |
+
+이 함수들의 매개변수에는 타이머 ID라는 것을 넣는데, 타이머 ID는 setTimeout() 함수와 setInterval() 함수의 리턴값이다.
+
+```javascript
+
+// 타이머 취소하기
+let id;
+let count = 0;
+id = setInterval(() => {
+	console.log(`1초마다 실행됩니다(${count}번째)`);
+	count++;
+}, 1 * 1000);
+
+setTimeout(() => {
+	console.log('')
+})
+
+```
+
 ---
 
 참고자료
