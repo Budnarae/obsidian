@@ -637,6 +637,42 @@ sample(1, 2);
 sample(1, 2, 3);
 sample(1, 2, 3, 4);
 
+/*
+실행 결과
+[1, 2]
+[1, 2, 3]
+[1, 2, 3, 4]
+*/
+
+```
+
+```javascript
+
+
+	// 매개변수 items는 배열처럼 사용한다.
+	function min(...items)
+	{
+		let output = items[0];
+		for (const item of items)
+		{
+			if (output > item)
+			{
+				output = item;
+			}
+			return output;
+		}
+	}
+
+	// 함수 호출하기
+	console.log('min(52, 273, 24)');
+	console.log(`${min(52, 273, 24)}`);
+
+/*
+실행 결과
+min(52, 273, 24)
+= 24;
+*/
+
 ```
 
 ---
