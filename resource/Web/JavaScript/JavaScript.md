@@ -1068,6 +1068,8 @@ console.log(`파이 값은 ${pi}입니다.`);
 
 자세한 것은 [모질라 엄격 모드 문서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode)를 참고.
 
+# 객체
+
 
 
 ---
