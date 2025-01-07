@@ -1857,10 +1857,32 @@ h1.style['background-color'];
 		const header = document.createElement('h1');
 
 		// 생성한 태그를 조작한다.
-		header.textContent = 
+		header.textContent = '문서 객체 동적으로 생성하기';
+		header.setAttribute('data-custom', '사용자 정의 속성');
+		header.style.color = 'white';
+		header.style.backgroundColor = 'black';
+
+		// h1 태그를 body 태그 아래에 추가한다.
+		document.body.appendChild(header);
 	})
+</script>
+<body>
+</body>
 
+```
 
+## 문서 객체의 이동
+
+appendChild() 메소드는 문서 객체를 이동할 때도 사용할 수 있다. 문서 객체의 부모 parent는 언제나 하나여야 한다. 따라서 문서 객체를 다른 문서 객체에 추가하면 문서 객체가 이동한다.
+
+다음 코드는 1초마다 h1 태그 요소가 div#first 태그와 div#second 태그 사이를 번갈아가며 움직이게 한다.
+
+```javascript
+
+document.addEventListener('DOMContentLoaded', () => {
+	// 문서 객체 읽어들이고 생성하기
+	c
+	})
 
 ```
 
