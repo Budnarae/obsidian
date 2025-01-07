@@ -1661,6 +1661,31 @@ DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그
 
 ```
 
+## 문서 객체 가져오기
+
+document.body 코드를 사용하면 문서의 body 요소를 읽어들일 수 있다. 이외에도 HTML 문서에 있는 head 요소와 title 요소 등은 다음과 같은 방법으로 읽어들일 수 있다.
+
+```javascript
+
+document.body
+document.head
+document.title
+
+```
+
+이는 웹 브라우저의 자바스크립트가 '당연히 있겠지'라고 전제하고 만든 속성이다(그럴 일은 드물겠지만, html에 해당 태그를 만들어놓지 않으면 버그 난다는 소리다).
+
+head, body 요소 내부에 있는 다른 요소들은 다음과 같은 별도의 메소드를 사용해서 접근한다.
+
+```javascript
+
+document.querySelector(선택자);
+document.querySelectAll(선택자)
+
+```
+
+선택자 부분에는 [[]]
+
 ---
 
 참고자료
