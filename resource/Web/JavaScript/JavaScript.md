@@ -1967,7 +1967,32 @@ appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 �
 
 ```
 
-이벤트가 발생할 때 실행
+이벤트가 발생할 때 실행할 함수를 **이벤트 리스너 Event Listener** 또는 **이벤트 핸들러 Event Handler**라고 부른다. 어떤 이벤트가 있고, 어떤 형태로 활용하는지는 다음 절에서 살펴보기로 하고 이번 절에서는 이벤트를 연결하는 형태만 살펴본다.
+
+다음 코드는 addEventListener() 메소드를 사용해서 h1 태그를 클릭할 때 이벤트 리스너(콜백 함수)를 호출하는 예이다. 이벤트 리스너 내부에서 변수 counter를 증가시키고 출력하고 있다.
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		let counter = 0;
+		const h1 = document.querySelector('h1');
+
+		h1.addEventListener('click', (event) => {
+			// h1 태그에 이벤트가 발생할 때 실행할 함수
+			counter++;
+			h1.textContent = `클릭 횟수: ${counter}`;
+		})
+	})
+</script>
+<style>
+	h1 {
+		/*
+			클릭을 여러 번 했을 ㅠ때
+		*/
+	}
+
+```
 
 ---
 
