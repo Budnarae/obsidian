@@ -1577,10 +1577,20 @@ const star = {...cloud};
 
 const star = {
 	...cloud,
-	name:
+	// 기존의 속성 덮어쓰기
+	// ...cloud 가 맨 위에 위치하냐 아래에 위치하냐에 따라 덮어씌우는 서순이 다르다.
+	name: 'star',
+	// 새로운 속성 추가
+	level: 45
 }
 
 ```
+
+# 문서 객체 조작하기
+
+[[HTML]] 페이지에 있는 [[HTML 태그, 요소 그리고 속성 | 요소]]들을 자바스크립트에서는 ==문서 객체 document object==라고 부른다.
+
+문서 객체를 조합해서 만든 전체적인 형태를 **문서 객체 모델 DOM, Document Objects Model**이라고 부른다.
 
 ---
 
