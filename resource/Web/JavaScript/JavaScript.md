@@ -1541,7 +1541,44 @@ const obj_200302 = obj_200301;
 
 ```javascript
 
-// 전개 연산자를 
+// 전개 연산자를 대괄호로 감싸야 한다.
+const obj_200301 = ['우유', '식빵'];
+const obj_200302 = [...obj_200301];
+
+```
+
+다음과 같이 배열을 전개하고 앞 또는 뒤에 자료를 추가하는 것도 가능하다.
+
+```javascript
+
+const obj_200302 = ['고구마', ...obj_200301, '토마토'];
+
+```
+
+## 객체 전개 연산자
+
+객체를 깊은 복사할 때는 전개 연산자를 아래와 같은 형식으로 사용한다.
+
+```javascript
+
+const cloud = {
+	name: 'cloud',
+	age: 6,
+	type: 'puppy'
+}
+
+const star = {...cloud};
+
+```
+
+배열의 경우와 마찬가지로 앞 뒤에 원하는 속성을 추가하는 것도 가능하다.
+
+```javascript
+
+const star = {
+	...cloud,
+	name:
+}
 
 ```
 
