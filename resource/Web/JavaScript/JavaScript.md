@@ -1281,6 +1281,20 @@ h.sample;
 
 ```
 
+### 일시적 승급 시 자주 사용되는 메소드
+
+#### 숫자 자료형의 경우
+
+##### toFixed()
+
+```javascript
+
+const l = 123.456789;
+
+l.toFix
+
+```
+
 ## prototype
 
 문자열 자료형이 기본적으로 indexOf() 등의 메소드를 사용할 수 있는 것처럼, 다른 자료형에도 편리한 메소드나 속성을 지정할 수 있다. 예를 들어 숫자 자료형에 제곱 연산을 지원하는 power 메소드를 추가할 수 있으면 편리할 것이다.
@@ -1305,11 +1319,19 @@ i.sample;
 
 /* 메소드의 추가 */
 Number.prototype.power = function (n = 2) {
-	return this.value() ** n;
+	return this.valueOf() ** n;
 }
 
+// Number 객체의 power() 메소드를 사용한다.
+const a = 12;
+console.log('a.power():', a.power());
+console.log('a.power(3):', a.power(3));
+console.log('a.power(4):', a.power(4));
 
 ```
+
+코드에서 this.valueOf()로 숫자값을 꺼내 사용하였다. 그냥 this ** n을 해도 아무 문제 없이 계산된다.
+하지만 객체 내부에서 값을 꺼내 쓰는 것임을 명확하게 하기 위해서 4행처럼 valueOf() 메소드를 사용하는 것이 일반적이다.
 
 ---
 
