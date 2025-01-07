@@ -1713,6 +1713,44 @@ querySelector() 메소드는 요소를 하나만 추출하고, querySelectorAll(
 
 querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함수이므로 내부의 요소에 전근하고 활용하려면 반복문을 활용해야 한다.
 
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// 요소를 읽어들인다.
+		const headers = document.querySelectorAll('h1');
+
+		// 텍스트와 스타일을 변경한다.
+		headers.forEach((header) => {
+			header.textContent = 'HEADERS';
+			header.style.color = 'white';
+			header.style.backgroundColor = 'black';
+			header.style.padding = '10px';
+		})
+	})
+</script>
+<body>
+	<h1><h1>
+	<h1><h1>
+	<h1><h1>
+	<h1><h1>
+</body>
+
+```
+
+## 글자 조작하기
+
+문서 객체 내부의 글자들을 조작할 때는 다음과 같은 메소드를 사용한다.
+
+| 속성 이름            | 설명                                 |
+| -------------------- | ------------------------------------ |
+| 문서객체.textContent | 입력된 문자열을 그대로 넣는다        |
+| 문서객체.innerHTML   | 입력된 문자열을 HTML 형식으로 넣는다 |
+
+## 속성 조작하기
+
+문서 객체의 속성을 조작할 때는 다음과 같은 메소드를 사욜한
+
 ---
 
 참고자료
