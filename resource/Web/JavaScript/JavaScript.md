@@ -2023,6 +2023,27 @@ appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 �
 
 keydown 이벤트와 keypress 이벤트는 웹 브라우저에 따라서 아시아권의 문자(한국어, 중국어, 일본어)를 제대로 처리하지 못하는 문제가 있어서 일반적으로는 keyup 이벤트를 사용한다.
 
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const textarea = document.querySelector('textarea');
+		const h1 = document.querySelector('h1');
+
+		textarea.addEventListener('keyup', (event) => {
+			// value 속성으로 입력 양식의 글자를 읽어들일 수 있다.
+			const length = textarea.value.length;
+			h1.textContent = `글자 수: ${length}`;
+		});
+	})
+</script>
+<body>
+	<h1></h1>
+	<textarea></textarea>
+</body>
+
+```
+
 ---
 
 참고자료
