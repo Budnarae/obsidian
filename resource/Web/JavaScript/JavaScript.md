@@ -1833,8 +1833,34 @@ h1.style['background-color'];
 		}})
 </script>
 <body>
-	<div>
+	<div></div><div></div><div></div>...
 </body>
+
+```
+
+## 문서 객체 생성하기
+
+ 지금까지는 body 태그 내부에 특정 문서 객체를 읽어들이고 이를 조작하였다. 문서 객체를 생성하고 싶을 때에는 document.createElement() 메소드를 사용한다.
+
+하지만 자바스크립트에서 문서 객체를 생성하는 것과 그 문서 객체를 어느 위치에 배치시킬 지 정하는 것은 별개의 작업이다.
+
+어떠한 부모 객체 아래에 자식 객체를 추가하기 위해서  appendChild() 객체를 사용한다.
+
+다음의 코드는 h1 태그를 새로 생성하고 이를 document.body의 자식으로 배치하는 코드이다.
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// 문서 객체 생성하기
+		// h1 태그를 생성한다.
+		const header = document.createElement('h1');
+
+		// 생성한 태그를 조작한다.
+		header.textContent = 
+	})
+
+
 
 ```
 
