@@ -1957,7 +1957,9 @@ appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 �
 
 # 이벤트 설정하기
 
-지금까지 계속 documen.addEventListener('DOMCo')
+지금까지 계속 documen.addEventListener('DOMConentLoaded', () => {})라는 형태의 코드를 사용하고 있다. 이 코드는 ==document라는 문서 객체의 DOMContentLoaded 이벤트가 발생했을 때, 매개변수로 지정한 콜백 함수를 실행해라==는 의미이다.
+
+모든 문서 객체는 생성되거나 클릭되거나 마우스를 위에 올리거나 할 때 이벤트 event라는 것이 발생한다. 그리고 이 이벤트가 발생할 때 실행할 함수는 addEventListener() 메소드를 사용한다.
 
 ---
 
