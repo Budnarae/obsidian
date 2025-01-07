@@ -1291,7 +1291,26 @@ h.sample;
 
 const l = 123.456789;
 
-l.toFix
+// 소숫점 3번째 자리에서 반올림하여(즉, 2번째 자리까지만 출력한다) 문자열의 형태로 반환한다.
+// 출력값 : "123.46"
+l.toFixed(2);
+
+```
+
+##### isNaN(), isFinite()
+
+어떤 숫자가 Nan 또는 Infinity 인지 확인하기 위해 사용한다. 불 형식을 반환한다.
+
+```javascript
+
+// isNaN(), isFinite()는 기본자료형을 승급시켜 사용하는 것이 아닌, 자료형 객체의 메소드로서 호출해야 한다.
+
+int n = 9238048;
+
+// false 반환
+Number.isFinite(n);
+// false 반환
+Number.isNaN(n);
 
 ```
 
