@@ -1877,12 +1877,38 @@ appendChild() 메소드는 문서 객체를 이동할 때도 사용할 수 있�
 
 다음 코드는 1초마다 h1 태그 요소가 div#first 태그와 div#second 태그 사이를 번갈아가며 움직이게 한다.
 
-```javascript
+```html
 
-document.addEventListener('DOMContentLoaded', () => {
-	// 문서 객체 읽어들이고 생성하기
-	c
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// 문서 객체 읽어들이고 생성하기
+		const divA = document.querySelector('#first');
+		const divB = document.querySelector('#second');
+		const h1 = document.createElement('h1');
+		h1.textContent = '이동하는 h1 태그';
+	
+		// 서로 번갈아가면서 실행하는 함수를 구현한다
+		const toFirst = () => {
+			// h1을 divA에 추가한다.
+			divA.appendChild(h1);
+			// 1초 뒤에 toSecond 함수를 실행한다.
+			setTimeout(toSecond, 1000);
+		}
+		const toSecond = () => {
+			// h1을 divA에 추가한다
+			divA.appendChild(h1);
+			// 10초 뒤에 toFirst 함수를 실행한다.
+			setTimeout(toFirst, 10000);
+		}
+		toFirst();
 	})
+</script>
+<body>
+	<div id="first">
+		<h1>첫 번째 div 태그 내부</h1>
+	</div>
+	<hr>
+</body>
 
 ```
 
