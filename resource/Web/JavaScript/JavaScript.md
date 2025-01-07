@@ -1616,9 +1616,30 @@ DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그
 <head>
 	<title>DOMContentLoaded</title>
 	<script>
-	// HTM
+		// HTML 태그를 쉽게 만들 수 있는 콜백 함수를 선언한다.
+		const h1 = (text) => `<h1>{text}</h1>`
+	</script>
+	<script>
+		// 앞에서 선언한 h1 함수를 실행한다.
+		// body 태그가 생성되기 전 script 태그로 body 태그를 조작하므로 에러가 난다.
+		document.body.innerHTML += h1('1번째 script 태그');
+	</script>
+</head>
+<body>
+	<script>
+		document.body.innerHTML += h1('2번째 script 태그');
+	</script>
+	<h1>1번째 h1 태그</h1>
+	<script>
+		document.body.innerHTML += h1('3번째 script 태그');
+	</script>
+	<h1>2번째 h2 태그</h1>
+</body>
+</html>
 
 ```
+
+
 
 ---
 
