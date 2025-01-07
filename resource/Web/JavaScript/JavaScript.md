@@ -1405,6 +1405,46 @@ JSON은 JavaScript Object Notation의 약자로 자바스크립트의 객체처�
 
 랜덤한 숫자를 생성할 때는 Math.random() 메소드를 사용한다. Math.random() 메소드는 0 이상, 1 미만의 랜덤한 실수를 생성한다. 따라서 그 이상의 범위에서 랜덤한 숫자를 구하려면 생성된 난수에 특정한 수를 곱하거나 더하는 등의 처리가 필요하다.
 
+# 외부 script 파일 읽어들이기(HTML과 js 파일 분리)
+
+방법 1. `<script>` 블록의 `src` 속성에 읽어들일 js 파일의 경로를 기재
+
+```html
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="test.js"></script>
+	</head>
+	<body>
+	</body>
+</html>
+
+```
+
+방법 2. `src` 속성에 외부 라이브러리의 링크 기재하기
+
+```html
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://..."></script>
+	</head>
+	<body>
+	</body>
+</html>
+
+```
+
+## CDN
+
+**CDN이란 콘텐츠 전송 네트워크**라는 의미이다.
+
+일반적으로 어떤 사이트는 어떤 특정한 지역의 서버에 위치한다. 
+
 ---
 
 참고자료
