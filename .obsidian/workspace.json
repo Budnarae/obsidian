@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript.md",
-                "mode": "source",
+                "file": "resource/Docker/마운트.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript"
+              "title": "마운트"
             }
           }
         ]
@@ -179,8 +179,8 @@
   },
   "active": "b61c183e067b3a6d",
   "lastOpenFiles": [
-    "재료/template/html 코드 블록.md",
     "resource/Web/JavaScript/JavaScript.md",
+    "재료/template/html 코드 블록.md",
     "resource/Web/WWW.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
