@@ -1592,6 +1592,34 @@ const star = {
 
 문서 객체를 조합해서 만든 전체적인 형태를 **문서 객체 모델 DOM, Document Objects Model**이라고 부른다.
 
+## DOMContentLoaded 이벤트
+
+자바스크립트는 문서 객체를 조작하여 동적으로 페이지를 변경시키는 일이 많다.
+이때 DOMContentLoaded 이벤트를 사용한다.
+
+
+```javascript
+
+document.addListener('DOMContentLoaded', () => {
+	// 문장
+})
+
+```
+
+DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그는 위에서 아래 방향으로 순차적으로 실행되기 때문에 해당 태그가 실행되기 전에 DOM을 적용시키려고 하면 에러가 발생한다.
+
+```html
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>DOMContentLoaded</title>
+	<script>
+	// HTM
+
+```
+
 ---
 
 참고자료
