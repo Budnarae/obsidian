@@ -1639,7 +1639,27 @@ DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그
 
 ```
 
+**DOMContentLoaded** 이벤트는 웹 브라우저가 문서 객체를 모두 읽고 나서 실행되는 이벤트이다. 다음과 같이 코드를 구성하면 DOMContentLoaded 상태가 되었을 때 콜백 함수를 호출한다.
 
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOMContentLoaded</title>
+	<script>
+		// DOMContentLoaded 이벤트를 연결한다.
+		document.addEventListener('DOMContentLoaded', () => {
+			const h1 = (text) => `<h1>${text}</h1>`;
+			document.body.innerHTML += h1('DOMContentLoaded 이벤트 발생');
+		})
+	</script>
+</head>
+<body>
+</body>
+</html>
+
+```
 
 ---
 
