@@ -1773,10 +1773,29 @@ querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함�
 	})
 </script>
 <body>
-	
+	<img class="rect">
+	<img class="rect">
+	<img class="rect">
+	<img class="rect">
 </body>
 
 ```
+
+get, setAttribute()를 사용하지 않고도 온점을 사용하여 문서 객체의 속성에 간단히 값을 지정할 수 있다.
+
+```javascript
+
+rects.forEach((rect, index) => {
+	const width = (intex + 1) * 100;
+	const src = `http://placecats.com/${width}/250`;
+	rect.src = src;
+})
+
+```
+
+## 스타일 조작하기
+
+
 
 ---
 
