@@ -1281,6 +1281,36 @@ h.sample;
 
 ```
 
+## prototype
+
+문자열 자료형이 기본적으로 indexOf() 등의 메소드를 사용할 수 있는 것처럼, 다른 자료형에도 편리한 메소드나 속성을 지정할 수 있다. 예를 들어 숫자 자료형에 제곱 연산을 지원하는 power 메소드를 추가할 수 있으면 편리할 것이다.
+
+이를 **자료형의 prototype 속성에 추가한다**라고 표현한다.
+
+```javascript
+
+/* 속성의 추가 */
+
+// 객체 자료형 이름.prototype.메소드_이름 = function() {}의 형식으로 사용한다.
+Number.prototpye.example = 10;
+
+const i = 273;
+
+// 10이 반환된다.
+i.sample;
+
+```
+
+```javascript
+
+/* 메소드의 추가 */
+Number.prototype.power = function (n = 2) {
+	return this.value() ** n;
+}
+
+
+```
+
 ---
 
 참고자료
