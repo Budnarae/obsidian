@@ -1482,9 +1482,45 @@ obj.a = obj.a !== undefined ? obj.a : "a의 기본 값";
 let [a, b] = [1, 2];
 
 // 1, 2를 출력
-console.log(1, 2);
+console.log(a, b);
 
-// 다음과 같이 스왑을 간
+// 다음과 같이 스왑을 간편하게 구현할 수 있다.
+[a, b] = [b, a];
+
+// 2, 1를 출력
+console.log(a, b);
+
+```
+
+## 객체 기반의 다중 할당
+
+최신 자바스크립트에서는 객체 내부에 있는 속성을 꺼내서 변수로 할당할 때 다음과 같은 코드를 사용할 수 있다.
+
+```javascript
+
+{ 속성 이름, 속성 이름 } = 객체
+{ 식별자=속성 이름, 식별자=속성 이름 } = 객체
+
+```
+
+```javascript
+
+// 객체를 생성
+const object = {
+	name: '혼자 공부하는 파이썬',
+	price: 18000,
+	publisher: '한빛미디어'
+}
+
+// 객체에서 변수를 추출한다
+const { name, price } = object;
+console.log('# 속성 이름 그대로 꺼내서 출력하기');
+console.log(name, price);
+console.log('');
+
+// name 속성을 a라는 이름으로, price 속성을 b라는 이름으로 꺼낸다.
+const { a=name, b=price } = object;
+console.log('# 다른 이름으로 속성 꺼내서 출력');
 
 ```
 
