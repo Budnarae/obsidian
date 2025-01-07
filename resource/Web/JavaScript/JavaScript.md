@@ -1929,9 +1929,35 @@ appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 �
 
 ```javascript
 
-문서_객체.parentNode.removeChild(문)
+문서_객체.parentNode.removeChild(문서_객체);
 
 ```
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		setTimeout(() => {
+			const h1 = document.querySelector('h1');
+
+			// h1 태그의 부모 객체 body 태그에 접근하여 제거한다.
+			h1.parentNode.removeChild(h1);
+			// h1.parentnode가 document.body이므로, 이런 형태로 제거할 수 있다
+			// document.body.removeChild(h1);
+		}, 3000)
+	});
+</script>
+<body>
+	<hr>
+	<h1>제거 대상 문서 객체</h1>
+	<hr>
+</body>
+
+```
+
+# 이벤트 설정하기
+
+지금까지 계속 documen.addEventListener('DOMCo')
 
 ---
 
