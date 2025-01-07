@@ -1749,7 +1749,34 @@ querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함�
 
 ## 속성 조작하기
 
-문서 객체의 속성을 조작할 때는 다음과 같은 메소드를 사욜한
+문서 객체의 속성을 조작할 때는 다음과 같은 메소드를 사용한다.
+
+| 메소드 이름                          | 설명                      |
+| ------------------------------------ | ------------------------- |
+| 문서객체.setAttribute(속성 이름, 값) | 특정 속성에 값을 지정한다 |
+| 문서객체.getAttribute(속성 이름)     | 특정 속성을 추출한다      |
+
+다음 코드는 img 태그의 src 속성을 조작해서 이미지를 출력하는 예이다.
+
+```html
+
+<script>
+	documnet.addEventListener('DOMContentLoaded', () => {
+		const rects = document.querySelector('.rect')
+	
+		rects.forEach((rect, index) => {
+			const width = (index + 1) * 100;
+			const src = `http://placecats.com/${width}/250`;
+			// src 속성에 값을 지정한다
+			rect.setAttribute('src', src);
+		})
+	})
+</script>
+<body>
+	
+</body>
+
+```
 
 ---
 
