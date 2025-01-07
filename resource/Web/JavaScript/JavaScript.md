@@ -1684,7 +1684,34 @@ document.querySelectAll(선택자)
 
 ```
 
-선택자 부분에는 [[]]
+선택자 부분에는 [[CSS 선택자]]를 입력한다.
+
+querySelector() 메소드는 요소를 하나만 추출하고, querySelectorAll() 메소드는 문서 객체를 여러 개 추출한다.
+
+다음은 querySelector() 메소드를 사용해서 h1 태그를 추출하고 조작하는 예이다.
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// 요소를 읽어들인다.
+		// h1 태그 이름으로 요소를 선택한다.
+		const header = document.querySelector('h1');
+
+		// 텍스트와 스타일을 변경한다.
+		header.textContent = 'HEADERS';
+		header.style.color = 'white';
+		header.style.backgroundColor = 'black';
+		header.style.padding = '10px';
+	});
+</script>
+<body>
+	<h1><h1>
+</body>
+
+```
+
+querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함수이므로 내부의 요소에 전근하고 활용하려면 반복문을 활용해야 한다.
 
 ---
 
