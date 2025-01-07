@@ -1156,12 +1156,14 @@ pet.eat('밥');
 자바스크립트에서는 객체가 선언된 이후에도 동적으로 요소를 추가하거나 제거하는 것이 가능하다.
 
 요소를 추가할 때는 속성을 지정하고 값을 입력하면 된다.
-요소를 제거할 떄는 
+요소를 제거할 때는 `delete 객체.속성`의 형식으로 쩨거한다.
 
 ```javascript
 
 // 객체 선언
 const student = {};
+
+// 객체의 속성 추가
 student.이름 = '윤인성';
 student.취미 = '악기';
 student.장래희망 = '생명공학자';
@@ -1169,7 +1171,38 @@ student.장래희망 = '생명공학자';
 // 출력해보기
 console.log(JSON.stringify(student, null, 2));
 
+// 객체의 속성 제거
+delete student.장래희망;
+
+// 출력해보기
+console.log(JSON.stringify(student, null, 2));
+
 ```
+
+## 메소드 간단 선언 구문
+
+최신 버전 자바스크립트에서는 `function () {}` 보다 간단한 형식으로 메소드를 선언할 수 있는 전용 구문이 있다.
+
+아래와 같이 선언한다.
+
+```javascript
+
+// 변수를 선언
+const pet = {
+	name: '구름',
+	eat (food) {
+		alert(this.name + '은/는' + food + '을/를 먹습니다.');
+	}
+}
+
+// 메소드 호출
+pet.eat('밥');
+
+```
+
+## 화살표 함수를 사용한 메소드
+
+`function () {}` 형태로 선언하는 **익명 함수**와 ₩
 
 ---
 
