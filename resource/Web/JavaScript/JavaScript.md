@@ -1908,7 +1908,28 @@ appendChild() 메소드는 문서 객체를 이동할 때도 사용할 수 있�
 		<h1>첫 번째 div 태그 내부</h1>
 	</div>
 	<hr>
+	<div id="second">
+		<h1>두 번째 div 태그 내부</h1>
+	</div>
 </body>
+
+```
+
+## 문서 객체 제거하기
+
+문서 객체를 제거할 때는 removeChild() 메소드를 사용한다.
+
+```javascript
+
+부모_객체.removeChild(자식_객체);
+
+```
+
+appendChild() 메소드 등으로 부모 객체와 이미 연결이 완료된 문서 객체의 경우 parentNode 속성으로 부모 객체에 접근할 수 있으므로, 일반적으로 어떤 문서 객체를 제거할 때는 다음과 같은 형태의 코드를 사용한다.
+
+```javascript
+
+문서_객체.parentNode.removeChild(문)
 
 ```
 
