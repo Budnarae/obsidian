@@ -1805,9 +1805,38 @@ rects.forEach((rect, index) => {
 | text-align       | textAlign                    |
 | font-size        | fontSize                     |
 
-style 객체는 다음과 같은 방법으로도 스타일을 조정할 수 있다.
+style 객체는 총 3가지 방법으로 스타일을 조정할 수 있다. 일반적으로 첫번째 방법을 가장 많이 사용한다.
 
-h1.style['background-color']
+```javascript
+
+h1.style.backgroundColor;
+h1.style['backgroundColor'];
+h1.style['background-color'];
+
+```
+
+다음 코드는 25개의  div 태그를 조작해서 검은색에서 흰색으로 변화하는 그레이디언트를 만드는 코드이다.
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// body 태그 아래에 있는 div 태그를 선택한다.
+		const divs = document.querySelectorAll('body > div');
+		
+		divs.forEach(div, index) => {
+			console.log(div, index);
+			const val = index * 10;
+			// 크기를 지정할 때는 반드시 단위를 함께 붙여줘야 한다.
+			div.style.height = '10px';
+			div.style.backgroundColor = `rgba${val}, ${val}, ${val}`
+		}})
+</script>
+<body>
+	<div>
+</body>
+
+```
 
 ---
 
