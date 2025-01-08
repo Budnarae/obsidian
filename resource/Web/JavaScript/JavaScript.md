@@ -2645,13 +2645,22 @@ function test () {
 		return ;
 	}
 	finally
-	alert('C 위치');
+	{
+		alert('C 위치');
+	}
 }
 
 // 함수를 호출
 test();
 
 ```
+
+finally 구문의 ==반드시 실행된다==는 특성은 매우 강력하기 때문에, 다음과 같은 경우에조차 실행이 보장된다.
+
+- try catch 구문 내부에서 return 키워드를 만날 때
+- try catch 구문 내부에서 break 또는 continue 키워드를 만날 때
+
+> catch 의 괄호 안의 인자를 **예외 객체 exception object**라고 한다. 아무 식별자나 입력해도 괜찮지만, 일반적으로 e나  exception이라는 식별자를 사용한다.
 
 ---
 
