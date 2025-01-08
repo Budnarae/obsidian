@@ -2478,6 +2478,24 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 인터넷에서 이미지 불펌 방지 등을 구현할 때 사용하는 코드이므로 기억해두면 유용하게 활용할 수 있다.
 
+```html
+
+<!--다른 입력 양식과 조합해서 사용하는 예
+	체크 때만 링크 활성화하기-->
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		let status = false;
+
+		const checkbox = document.querySelector('input');
+		checkbox.addEventListener('change', (event) => {
+		
+		});
+	})
+</script>
+
+```
+
 ---
 
 참고자료
