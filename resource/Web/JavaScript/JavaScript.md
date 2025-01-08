@@ -2517,10 +2517,31 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 실제로 트위터는 아래 코드와 같이 타이머를 사용해서 50밀리초마다 입력 양식 내부의 글자를 확인해서 글자 수를 센다. **focus** 이벤트와 **blur** 이벤트를 활용하였다.
 
-
 ```html
 
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const textarea = document.querySelector('textarea');
+		const h1 = document.querySelector('h1');
+		let timerId;
 
+		textarea.addEventListener('focus', (event) => {
+			// 입력 양식 활성화
+			timerId = setInterval(() => {
+				const length = textarea.value.length;
+				h1.textContent = `글자 수: ${length}`;
+			}, 50)
+		})
+		textarea.addEventListener('blur', (event) => {
+			// 입력 양식 비활성화
+			clearInterval(timerId);
+		})
+	})
+</script>
+<body>
+	<h1></h1>
+	<textarea></textarea>
+</body>
 
 ```
 
