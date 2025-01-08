@@ -2293,7 +2293,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## 드롭다운 목록 활용하기
 
-드롭다운 목록은 기본적으로 [[HTML 태그, 요소 그리고 속성^| select]] 태그로 구현한다.
+드롭다운 목록은 기본적으로 **select** 태그로 구현한다.
+
+```html
+
+<!--기본 select 태그-->
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const select = document.querySelector(`select`);
+		const p = document.querySelector('p');
+
+		select.addEventListener('change', (event) => {
+			const options = event.currentTarget.options;
+			const index = event.currentTarget.options.selectedIndex;
+
+			p.textContent = `선택: ${options[index].textContent}`;
+		})
+	})
+</script>
+<body>
+	<select>
+		<option>떡볶이</option>
+		<option>순대</option>
+		<option>오뎅</option>
+		<option>튀김</option>
+	</select>
+</body>
+
+```
 
 ---
 
