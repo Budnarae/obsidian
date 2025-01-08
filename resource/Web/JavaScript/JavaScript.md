@@ -2489,10 +2489,38 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 		const checkbox = document.querySelector('input');
 		checkbox.addEventListener('change', (event) => {
-		
+			status = event.currentTarget.checked;
 		});
+
+		const link = document.querySelector('a');
+		lint.addEventListener('click', (event) => {
+			if (!status)
+			{
+				// status가 false가 아니면 링크의 기본 이벤트를 제거한다
+				event.preventDefault()
+			}
+		})
 	})
 </script>
+<body>
+	<input type="checkbox">
+	<span>링크 활성화</span>
+	<br>
+	<a href="http://hanbit.co.kr">한빛미디어</a>
+</body>
+
+```
+
+## 타이머로 구현한 남은 글자 수 세기
+
+아시아권의 문자는 키보드 이벤트로 원하는 것을 제대로 구현할 수 없는 경우가 많다.
+
+실제로 트위터는 아래 코드와 같이 타이머를 사용해서 50밀리초마다 입력 양식 내부의 글자를 확인해서 글자 수를 센다. **focus** 이벤트와 **blur** 이벤트를 활용하였다.
+
+
+```html
+
+
 
 ```
 
