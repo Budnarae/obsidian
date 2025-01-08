@@ -2430,17 +2430,32 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 </script>
 <body>
 	<h3># 좋아하는 애완동물을 선택해주세요</h3>
+	<!--라디오 버튼을 하나씩만 선택하려면 name 속성을 동일하게 입력해 그룹으로 만든다.-->
 	<input type="radio" name="pet" value="강아지">
 	<span>강아지</span>
 	<input type="radio" name="pet" value="고양이">
 	<span>고양이</span>
 	<input type="radio" name="pet" value="햄스터">
 	<span>햄스터</span>
-	<input type="radio" name="pet" value="햄스터">
-	<span>햄스터</span>
+	<input type="radio" name="pet" value="기타">
+	<span>기타</span>
+	<hr>
+	<h3 id="output"></h3>
 </body>
 
 ```
+
+> name 속성이 없는 라디오 버튼
+> 참고로 name 속성을 입력하지 않으면 라디오 버튼을 한번에 여러 개 선택할 수 있다. 카테고리 구분 없이 선택할 수 있으며, 한번 선택하고 나면 선택을 취소할 수도 없다.
+> 따라서 라디오 버튼을 사용할 때는 name 속성과 함께 사용하는 것이 좋다.
+
+## 기본 이벤트 막기
+
+웹 브라우저에서 마우스 오른쪽 버튼을 클릭하면 출력되는 메뉴를 **컨텍스트 메뉴 context menu**라고 한다.
+이처럼 어떤 이벤트가 발생했을 때 웹 브라우저가 기본적으로 처리해주는 것을 **기본 이벤트**라고 부른다.
+
+링크를 클릭했을 때 이동하는 것, 제출 버튼을 눌렀을 때 이동하는 것 ㄱ
+
 
 ---
 
