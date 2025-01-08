@@ -1606,7 +1606,7 @@ document.addListener('DOMContentLoaded', () => {
 
 ```
 
-DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그는 위에서 아래 방향으로 순차적으로 실행되기 때문에 해당 태그가 실행되기 전에 DOM을 적용시키려고 하면 에러가 발생한다.
+DOM을 사용할 때 주의해야 할 점이 있다. 기본적으로 HTML 태그는 위에서 아래 방향으로 순차적으로 생성되기 때문에 해당 태그가 생성되기 전에 DOM을 적용시키려고 하면 에러가 발생한다.
 
 ```html
 
@@ -1761,7 +1761,7 @@ querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함�
 ```html
 
 <script>
-	documnet.addEventListener('DOMContentLoaded', () => {
+	document.addEventListener('DOMContentLoaded', () => {
 		const rects = document.querySelector('.rect')
 	
 		rects.forEach((rect, index) => {
