@@ -1762,7 +1762,7 @@ querySelectorAll()은 문서 객체 여러 개를 배열로 읽어들이는 함�
 
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
-		const rects = document.querySelector('.rect')
+		const rects = document.querySelector('.rect');
 	
 		rects.forEach((rect, index) => {
 			const width = (index + 1) * 100;
