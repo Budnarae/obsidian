@@ -2410,8 +2410,35 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 ```html
 
 <script>
-	document.addEventListener('')
+	document.addEventListener('DOMContentLoaded', () => {
+		// 문서 객체 추출하기
+		const output = document.querySelector('#output');
+		const radios = document.querySelectorAll('[name=pet]');
+
+		// 모든 라디오 버튼에
+		radios.forEach((radio) => {
+			// 이벤트 연결
+			radio.addEventListener('change', (event) => {
+				const current = event.currentTarget;
+				if (current.checked)
+				{
+					output.textContent = `좋아하는 애완동물은 ${current.value}이시군요!`;
+				}
+			})
+		})
+	})
 </script>
+<body>
+	<h3># 좋아하는 애완동물을 선택해주세요</h3>
+	<input type="radio" name="pet" value="강아지">
+	<span>강아지</span>
+	<input type="radio" name="pet" value="고양이">
+	<span>고양이</span>
+	<input type="radio" name="pet" value="햄스터">
+	<span>햄스터</span>
+	<input type="radio" name="pet" value="햄스터">
+	<span>햄스터</span>
+</body>
 
 ```
 
