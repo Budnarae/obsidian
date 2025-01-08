@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "file": "resource/Web/JavaScript/JavaScript.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "HTML 태그, 요소 그리고 속성"
+              "title": "JavaScript"
             }
           }
         ]
@@ -179,6 +179,9 @@
   },
   "active": "e5a67516799a31a0",
   "lastOpenFiles": [
+    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+    "resource/Web/CSS/CSS 선택자.md",
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/JavaScript/JavaScript.md",
     "area/참고도서.md",
@@ -186,9 +189,6 @@
     "재료/template/코드 블록 html.md",
     "resource/Docker/마운트.md",
     "resource/Web/WWW.md",
-    "resource/Web/CSS/CSS 선택자.md",
-    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
     "resource/Web",
