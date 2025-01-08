@@ -2262,11 +2262,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		const isEmail = (value) => {
 			// 골뱅이를 갖고 있고 && 골뱅이 뒤에 점이 있다면
 			return (value.index('@') > 1)
-				&& (value.split('@')[1].inde)
+				&& (value.split('@')[1].indexOf('.') > 1);
 		}
+
+		input.addEventListener('keyup', (event) => {
+			const value = event.currentTarget.value;
+			if (isEmail(value))
+			{
+				p.style.color = 'green';
+				p.textContent = `이메일 형식입니다: ${value}`;
+			}
+			else
+			{
+				p.style.color = 'red';
+				p.textContent = `이메일 형식이 아닙니다: ${value}`;
+			}
+		})
 	})
+</script>
+<body>
+	<input type="text">
+	<p></p>
+</body>
 
 ```
+
+dnldml w
 
 ---
 
