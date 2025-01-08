@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Docker/마운트.md",
+                "file": "resource/Web/JavaScript/JavaScript.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "마운트"
+              "title": "JavaScript"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "b61c183e067b3a6d",
   "lastOpenFiles": [
+    "resource/Docker/마운트.md",
     "resource/Web/JavaScript/JavaScript.md",
     "재료/template/html 코드 블록.md",
     "resource/Web/WWW.md",
@@ -225,7 +226,6 @@
     "resource/Network/소켓 프로그래밍(리눅스)/socket.md",
     "resource/Network/소켓 프로그래밍(리눅스)/소켓의 타입.md",
     "재료/template/개요와 참고자료.md",
-    "resource/Network/소켓 프로그래밍(리눅스)/프로토콜 체계.md",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
