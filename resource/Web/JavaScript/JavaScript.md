@@ -2600,7 +2600,21 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 **구문 오류 syntax error**: 괄호 개수를 잘못 입력하는 등의 오류로 코드가 실행조차 되지 않는 오류
 **예외 exception, 런타임 오류 runtime error** : 구문 오류를 제외하고 코드 실행 중간에 발생하는 오류(반대로 말하면, 코드 실행까지는 어떻게든 된다는 소리다.)
 
-## 고급 
+## 고급 예외 처리 - try catch finally 구문
+
+자바스크립트의 try catch finally 구문은 c++의 try catch 구문과 유사하다. 다만, finally 구문은 예외가 발생하는지와 상관없이 무조건 실행된다는 차이점이 있다.
+
+```javascript
+
+function test () {
+	try
+	{
+		alert('A 위치이다.');
+		throw "예외 강제 발생"
+	}
+}
+
+```
 
 ---
 
