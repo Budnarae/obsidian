@@ -2795,11 +2795,48 @@ class Example
 {
 	#privateMember
 
-	#privateMe
+	#privateMethod () {}
 }
 
 ```
 
+게터와 세터에 관해서는 생략
+
+## get 키워드와 set 키워드
+
+get 키워드와 set 키워드는 게터 세터를 좀 더 편리하게 선언하기 위한 문법적인 요소이다.
+
+```javascript
+
+class Square
+{
+	#length
+
+	constructor (length)
+	{
+		this.length = length;
+	}
+
+	// 참고로 get 키워드를 이용해 만든 객체는 어떠한 인자도 받지 못한다.
+	get length ()
+	{
+		return this.#length;
+	}
+
+	get perimeter ()
+	{
+		return this.#length * 4;
+	}
+
+	set length (length)
+}
+
+// 클래스 사용하기
+const squareA = new Square(10);
+// .length로 접근하면 get length가 호출된다
+console.log(`한 변의 길이: ${square}`)
+
+```
 
 ---
 
