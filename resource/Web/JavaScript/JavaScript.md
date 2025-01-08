@@ -2132,7 +2132,49 @@ keydown 이벤트와 keypress 이벤트는 웹 브라우저에 따라서 아시�
 
 ```
 
-## 이벤트 발생 개
+## 이벤트 발생 객체
+
+지금까지는 이벤트 내부에서 문서 객체 변수를 사용해 문서 객체와 관련된 정보를 추출하였다.
+
+```javascript
+
+// 이전에 사용했던 코드
+document.addEventListener('DOMContentLoaded', () => {
+	const textarea = document.querySelector('textarea');
+	const h1 = document.querySelector('h1');
+
+	textarea.addEventListener('keyup', (event) => {
+		// value 속성으로 입력 양식의 글자를 읽어들일 수 있다.
+		const length = textarea.value.length;
+		h1.textContent = `글자 수: ${length}`;
+	})
+})
+
+```
+
+그런데 코드의 규모가 켜지면 이벤트 리스너를 외부로 분리하는 경우가 많다. 상황에 따라서는 이벤트 리스너 내부에서 그러한 변수에 접근하지 못할 수 있다. 다음 코드에서는 listener() 함수 내부에서 textarea 변수에 접근할 수 없어 오류가 발생한다.
+
+```javascript
+
+// 이벤트 리스너를 외부로 빼낸 경우
+const listener = (event) => {
+	// scope 때문에 현재 블록에서는 textarea 변수를 사용할 수 없다.
+	const length = textarea.value.length;
+	h1.textContent = `글자 수 : ${length}`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	const textarea = document.querySelector('textarea');
+	const h1 = document.querySelector('h1');
+
+	textarea.addEventListener('keyup', (event) => {
+		// value 속성으로 입력 양식의 글자를 읽어들일 수 있다.
+		const length = textarea.value.length;
+		h1.textContent = `글자 수: ${length}`;
+	})
+})
+
+```
 
 ---
 
