@@ -2756,7 +2756,47 @@ class Student
 
 ```javascript
 
+class ClassName extends ParentClass
+{
+	...
+}
 
+```
+
+자식의 생성자는 **super** 키워드를 사용하여 부모의 생성자 코드를 호출한다.
+
+```javascript
+
+class Rectangle
+{
+	constructor (width, height)
+	{
+		this.width = width;
+		this.height = height;
+	}
+}
+
+class Square extends Rectangle
+{
+	constructor (length) {
+		super(length, length);
+	}
+}
+
+```
+
+## 클래스 속성
+
+클래스의 메소드 혹은 멤버를 private하게 선언하고 싶다면 맨 앞에 *#*을 붙이면 된다.
+
+```javascript
+
+class Example
+{
+	#privateMember
+
+	#privateMe
+}
 
 ```
 
