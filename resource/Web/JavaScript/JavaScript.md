@@ -2167,11 +2167,49 @@ document.addEventListener('DOMContentLoaded', () => {
 	const textarea = document.querySelector('textarea');
 	const h1 = document.querySelector('h1');
 
-	textarea.addEventListener('keyup', (event) => {
-		// value 속성으로 입력 양식의 글자를 읽어들일 수 있다.
-		const length = textarea.value.length;
-		h1.textContent = `글자 수: ${length}`;
-	})
+	textarea.addEventListener('keyup', listener)
+})
+
+```
+
+이러한 경우 이벤트를 발생시킨 객체(현재 코드의 textarea)에 접근할 수 있는 방법은 2가지이다.
+
+방법 1. event.currentTarget 속성을 사용한다.
+
+```javascript
+
+// event.currentTarget이 textarea가 된다.
+const listener = (event) => {
+	const length = event.currentTarget.value.length;
+	h1.textContent = `글자 수 : ${length}`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	const textarea = document.querySelector('textarea');
+	const h1 = document.querySelector('h1');
+
+	textarea.addEventListener('keyup', listener)
+})
+
+```
+
+방법 2. this 키워드를 사용한다
+
+이 방법은 화살표 함수가 아닌 `function () {}` 형태로 함수를 선언한 경우에 사용한다.
+
+```javascript
+
+// this가 textarea가 된다.
+const listener = (event) => {
+	const length = this.value.length;
+	h1.textContent = `글자 수 : ${length}`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	const textarea = document.querySelector('textarea');
+	const h1 = document.querySelector('h1');
+
+	textarea.addEventListener('keyup', listener)
 })
 
 ```
