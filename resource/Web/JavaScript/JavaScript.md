@@ -2107,7 +2107,28 @@ keydown 이벤트와 keypress 이벤트는 웹 브라우저에 따라서 아시�
 			star.style.top = `${y * block}px`;
 		}
 		print();
-	})
+
+		// 별을 이동하는 기능
+		const [left, up, right, down] = [37, 38 ,39 ,40];
+		// 아시아권 문자를 사용하지 않으므로 keydown 이벤트를 사용해도 된다.
+		document.body.addEventListener('keydown', (event) => {
+			switch (event.keyCode)
+			{
+				case left:
+					x -= 1;
+					break ;
+				case up:
+					y -= 1;
+					break ;
+				case right:
+					x += 1;
+					break ;
+				case down:
+					y += 1;
+					break ;
+			}
+			print();
+		})
 
 ```
 
