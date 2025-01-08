@@ -2388,10 +2388,29 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 				}
 				else
 				{
+					// 체크 해제 상태
+					clearInterval(timerId);
 				}
 			}
 		})
 	})
+</script>
+<body>
+	<input type="checkbox">
+	<span>타이머 활성화</span>
+	<h1></h1>
+</body>
+
+```
+
+## 라디오 버튼 활용하기
+
+라디오 버튼은 여러 개의 선택지 중에 하나의 요소를 checked 속성을 사용하여 선택할 수 있게 해주는 옵션이다.
+
+```html
+
+<script>
+	document.addEventListener('')
 </script>
 
 ```
