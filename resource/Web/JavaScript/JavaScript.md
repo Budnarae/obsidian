@@ -2454,8 +2454,29 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 웹 브라우저에서 마우스 오른쪽 버튼을 클릭하면 출력되는 메뉴를 **컨텍스트 메뉴 context menu**라고 한다.
 이처럼 어떤 이벤트가 발생했을 때 웹 브라우저가 기본적으로 처리해주는 것을 **기본 이벤트**라고 부른다.
 
-링크를 클릭했을 때 이동하는 것, 제출 버튼을 눌렀을 때 이동하는 것 ㄱ
+링크를 클릭했을 때 이동하는 것, 제출 버튼을 눌렀을 때 이동하는 것 등이 모두 기본 이벤트의 예이다. 이러한 기본 이벤트를 제거할 때는 event 객체의 preventDefault() 메소드를 사용한다.
 
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded' () => {
+		const imgs = document.querySelectorAll('img');
+
+		imgs.forEach((img) => {
+			img.addEventListener('contextmenu', (event) => {
+				// 컨텍스트 메뉴를 출력하는 기본 이벤트를 제거한다.
+				event.preventDefault();
+			})
+		})
+	})
+</script>
+<body>
+	<img src="http://placecats.com/300/300" alt="">
+</body>
+
+```
+
+인터넷에서 이미지 불펌 방지 등을 구현할 때 사용하는 코드이므로 기억해두면 유용하게 활용할 수 있다.
 
 ---
 
