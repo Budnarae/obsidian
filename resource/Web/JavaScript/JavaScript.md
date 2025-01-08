@@ -2834,9 +2834,35 @@ class Square
 // 클래스 사용하기
 const squareA = new Square(10);
 // .length로 접근하면 get length가 호출된다
-console.log(`한 변의 길이: ${square}`)
+console.log(`한 변의 길이: ${squareA.length}`);
+console.log(`둘레: ${squareA.perimeter}`);
+// .length로 값을 넣으면 set length가 호출된다.
+squareA.length = 10;
 
 ```
+
+# static 속성과 메소드
+
+**static 키워드**로 선언된 클래스의 멤버와 메소드는 클래스를 생성하지 않아도 사용할 수 있다 (c++과 동일하다.)
+
+```javascript
+
+class ClassName {
+	static member = value;
+	static method () {
+		...
+	}
+}
+
+// 아래와 같이 사용
+ClassName.member;
+ClassName.method();
+
+```
+
+# 오버라이드
+
+부모가 선언한 함수를 자식이 똑같은 이름으로 선얺
 
 ---
 
