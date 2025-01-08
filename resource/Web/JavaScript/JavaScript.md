@@ -2545,6 +2545,14 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 ```
 
+# localStorage
+
+**localStorage 객체**는 웹 브라우저가 기본적으로 제공하는 객체이며, 데이터를 저장하고 반환하는 기능을 가지고 있다.
+
+아래와 같은 메소드를 가지고 있다.
+
+- localStorage.getItem(키) : 저장된 값을 추출한다. 없으면 undefined가 나온다. 
+
 ---
 
 참고자료
