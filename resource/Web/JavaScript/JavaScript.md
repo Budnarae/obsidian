@@ -2058,6 +2058,28 @@ keydown 이벤트와 keypress 이벤트는 웹 브라우저에 따라서 아시�
 
 **code** 속성은 입력한 키를 나타내는 문자열이 들어있고, **altKey, ctrlKey, shiftKey** 속성은 해당 키를 눌렀는지 불 자료형 값이 들어있다.
 
+다음 코드는 keydown 이벤트와 keyup 이벤트가 발생할 때 표에서 설명한 속성을 모두 출력하는 프로그램이다.
+
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const h1 = document.querySelector('h1');
+		const print = (event) => {
+			let output = '';
+			// 이벤트가 발생하면 불 값을 반환해야 한다.
+			output += `alt: ${event.altKey}<br>`;
+			output += `ctrl: ${event.ctrlKey}<br>`;
+			output += `shift: ${event.shiftKey}<br>`;
+			// event.code가 있으면 event.code를 출력하고, 
+			output += `code: ${typeof(event.code) !== 'undefined' ?
+				event.code : event.keyCode}<br>`
+			h1.innerHTML = output;
+		}
+	})
+
+```
+
 ---
 
 참고자료
