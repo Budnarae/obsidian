@@ -2551,7 +2551,32 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 아래와 같은 메소드를 가지고 있다.
 
-- localStorage.getItem(키) : 저장된 값을 추출한다. 없으면 undefined가 나온다. 
+- localStorage.getItem(키) : 저장된 값을 추출한다. 없으면 undefined가 나온다. 객체의 속성을 추출하는 일반적인 형태로 localStorage.키 또는 localStorage\[키] 형태로 사용할 수도 있다.
+- localStorage.setItem(키, 값) : 값을 저장한다. 이전과 마찬가지로 객체에 속성을 지정하는 일반적인 형태를 사용할 수도 있다.
+- localStorage.removeItem(키) : 특정 키의 값을 제거한다.
+- localStorage.clear() : 저장된 모든 값을 제거한다.
+
+```html
+
+<!--localStorage 객체의 활용-->
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const p = document.querySelector('p');
+		const input = document.querySelector('input');
+		const button = document.querySelector('button');
+
+		// 값을 읽을 때는 getItem() 메소드를 사용한다.
+		const savedValue = localStorage.getItem('input');
+		// localStorage.input도 가능하다.
+		if (savedValue)
+		{
+			inpt.value = savedValue;
+			p.textContent = `이전 실행 때의 `
+		}
+	})
+</script>
+
+```
 
 ---
 
