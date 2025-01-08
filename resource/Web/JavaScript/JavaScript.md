@@ -2219,6 +2219,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```html
 
+<!--입력 양식을 기반으로 inch를 cm 단위로 변환하는 프로그램-->
+
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
 		const input = document.querySelector('input')
@@ -2242,7 +2244,27 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <body>
 	<input type="text"> inch<br>
+	<button>계산</button>
+	<p></p>
 </body>
+
+```
+
+```html
+
+<!--이메일 형식을 확인하기-->
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const input = document.querySelector('input');
+		const p = document.querySelector('p');
+		// 이메일인지 검사하는 함수
+		const isEmail = (value) => {
+			// 골뱅이를 갖고 있고 && 골뱅이 뒤에 점이 있다면
+			return (value.index('@') > 1)
+				&& (value.split('@')[1].inde)
+		}
+	})
 
 ```
 
