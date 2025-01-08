@@ -2360,6 +2360,42 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 ```
 
+## 체그 박스 활용하기
+
+체크 박스처럼 체크 상태를 확인할 때는 입력 양식의 checked 속성을 활용한다.
+
+
+```html
+
+<!--체크 상태일 때만 타이머를 증가시키는 프로그램-->
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		let [timer, timerId] = [0, 0];
+		const h1 = document.querySelector('h1');
+		const checkbox = document.querySelector('input');
+
+		checkbox.addEventListener('change', (event) => {
+			if (event.currentTarget.checked)
+			{
+				// checked 속성을 사용한다.
+				if (event.currentTarget.checked)
+				{
+					// 체크 상태
+					timerId = setInterval(() => {
+						timer += 1;
+						h1.textContent = `${timer}초`
+					}, 1 * 1000);
+				}
+				else
+				{
+				}
+			}
+		})
+	})
+</script>
+
+```
+
 ---
 
 참고자료
