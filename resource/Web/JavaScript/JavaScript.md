@@ -2570,11 +2570,26 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 		// localStorage.input도 가능하다.
 		if (savedValue)
 		{
-			inpt.value = savedValue;
-			p.textContent = `이전 실행 때의 `
+			input.value = savedValue;
+			p.textContent = `이전 실행 때의 마지막 값: ${savedValue}`;
 		}
+
+		input.addEventListener('keyup', (event) => {
+			const value = event.currentTarget.value;
+			localStorage.setItem('input', value);
+		})
+
+		button.addEventListener('click', (event) => {
+			localStorage.clear();
+			input.value = '';
+		})
 	})
 </script>
+<body>
+	<p></p>
+	<button>지우기</button>
+	<input type="text">
+</body>
 
 ```
 
