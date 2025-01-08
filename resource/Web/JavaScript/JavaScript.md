@@ -2604,15 +2604,52 @@ select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 �
 
 자바스크립트의 try catch finally 구문은 c++의 try catch 구문과 유사하다. 다만, finally 구문은 예외가 발생하는지와 상관없이 무조건 실행된다는 차이점이 있다.
 
+참고로, finally 구문은 필수적이지 않으므로 생략해도 무방하다.
+
 ```javascript
 
 function test () {
 	try
 	{
-		alert('A 위치이다.');
-		throw "예외 강제 발생"
+		// nothing.nothing() -> nothing이라는 객체의 nothing
+		alert('A 위치');
+		// throw 키워드로 예외를 강제로 발생시킨다
+		throw "예외 강제 발생";
 	}
+	catch (exception)
+	{
+		alert('B 위치');
+		return ;
+	}
+	alert('C 위치');
 }
+
+// 함수를 호출
+test();
+
+```
+
+```javascript
+
+function test () {
+	try
+	{
+		// nothing.nothing() -> nothing이라는 객체의 nothing
+		alert('A 위치');
+		// throw 키워드로 예외를 강제로 발생시킨다
+		throw "예외 강제 발생";
+	}
+	catch (exception)
+	{
+		alert('B 위치');
+		return ;
+	}
+	finally
+	alert('C 위치');
+}
+
+// 함수를 호출
+test();
 
 ```
 
