@@ -2071,12 +2071,21 @@ keydown 이벤트와 keypress 이벤트는 웹 브라우저에 따라서 아시�
 			output += `alt: ${event.altKey}<br>`;
 			output += `ctrl: ${event.ctrlKey}<br>`;
 			output += `shift: ${event.shiftKey}<br>`;
-			// event.code가 있으면 event.code를 출력하고, 
+			// event.code가 있으면 event.code를 출력하고, undefined라면 event.keyCode를 출력한다.
 			output += `code: ${typeof(event.code) !== 'undefined' ?
 				event.code : event.keyCode}<br>`
 			h1.innerHTML = output;
 		}
-	})
+
+		// 키가 눌릴 때 출력한다
+		document.addEventListener('keydown', print);
+		// 키가 떨어질 때 출력한다
+		document.addEventListener('keyup', print);
+	});
+</script>
+<body>
+	<h1></h1>
+</body>
 
 ```
 
