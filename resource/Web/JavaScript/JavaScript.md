@@ -2217,6 +2217,34 @@ document.addEventListener('DOMContentLoaded', () => {
 ## 글자 입력 양식 이벤트
 
 
+```html
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const input = document.querySelector('input')
+		const button = document.querySelector('button');
+		const p = document.querySelector('p');
+
+		button.addEventListener('click', () => {
+			// 입력을 숫자로 변환한다
+			const inch = Number(input.value);
+			// 숫자가 아니라면 바로 리턴한다
+			if (isNaN(inch))
+			{
+				p.textContent = '숫자를 입력해주세요.';
+				return ;
+			}
+			// 변환해서 출력한다.
+			const cm = inch * 2.54;
+			p.textContent = `${cm} cm`;
+		})
+	})
+</script>
+<body>
+	<input type="text"> inch<br>
+</body>
+
+```
 
 ---
 

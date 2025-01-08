@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "df36796b281ecb50",
+        "id": "b14267ac11bbadf1",
         "type": "tabs",
         "children": [
           {
-            "id": "b61c183e067b3a6d",
+            "id": "e5a67516799a31a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "재료/template/코드 블록 javascript.md",
+                "file": "resource/Web/JavaScript/JavaScript.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "코드 블록 javascript"
+              "title": "JavaScript"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -177,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b61c183e067b3a6d",
+  "active": "e5a67516799a31a0",
   "lastOpenFiles": [
+    "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
     "resource/Web/JavaScript/JavaScript.md",
     "resource/Docker/마운트.md",
@@ -187,7 +189,6 @@
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
-    "재료/template/코드 블록 javascript.md",
     "area/참고도서.md",
     "resource/Web/CSS",
     "resource/Language/JavaScript/무제 파일.md",
