@@ -2305,7 +2305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		select.addEventListener('change', (event) => {
 			const options = event.currentTarget.options;
-			const index = event.currentTarget.options.selectedIndex;
+			const index = options.selectedIndex;
 
 			p.textContent = `선택: ${options[index].textContent}`;
 		})
@@ -2318,6 +2318,44 @@ document.addEventListener('DOMContentLoaded', () => {
 		<option>오뎅</option>
 		<option>튀김</option>
 	</select>
+	<p>선택: 떡볶이</p>
+</body>
+
+```
+
+select 태그에 multiple 속성을 부여하면 ctrl 키 또는 shift 키를 누르고 여러 항목을 선택할 수 있는 선택 상자가 나온다.
+
+```html
+
+<!--multiple select 태그-->
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const select = document.querySelector(`select`);
+		const p = document.querySelector('p');
+
+		select.addEventListener('change', (event) => {
+			const options = event.currentTarget.options;
+			const list = [];
+			// options 속성에는 forEach() 메소드가 없으므로 반복문으로 돌려야 한다.
+			for (const option of options)
+			{
+				if (option.selected)
+				{
+					list.push(option.textContent);
+				}
+			}
+			p.textContent = `선택: ${list.join(',')}`;
+		})
+	})
+</script>
+<body>
+	<select>
+		<option>떡볶이</option>
+		<option>순대</option>
+		<option>오뎅</option>
+		<option>튀김</option>
+	</select>
+	<p>선택: 떡볶이</p>
 </body>
 
 ```
