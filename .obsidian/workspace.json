@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript.md",
+                "file": "resource/Web/JavaScript/JavaScript 기초.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript"
+              "title": "JavaScript 기초"
             }
           }
         ]
@@ -191,7 +191,7 @@
     "resource/Web/CSS/CSS 선택자.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
-    "resource/Web/JavaScript/JavaScript.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "project/42Seoul/inception/tls.md",
