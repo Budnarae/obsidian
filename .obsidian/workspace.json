@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/TDZ.md",
+                "file": "resource/Web/JavaScript/디스트럭처링.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "TDZ"
+              "title": "디스트럭처링"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "area/참고도서.md",
     "resource/Web/JavaScript/TDZ.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
+    "area/참고도서.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/CSS/CSS 선택자.md",
     "재료/template/코드 블록 javascript.md",
@@ -218,7 +219,6 @@
     "resource/Web",
     "resource/Web/HTML",
     "project/42Seoul/NetPractice.md",
-    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트 copy.md",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/ft_transcendence",
     "재료/img/멀티 프로세스 기반 서버",
