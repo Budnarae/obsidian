@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md",
-                "mode": "preview",
+                "file": "resource/Web/JavaScript/TDZ.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript 기초"
+              "title": "TDZ"
             }
           }
         ]
@@ -171,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,14 +189,15 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "area/참고도서.md",
+    "resource/Web/JavaScript/TDZ.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/CSS/CSS 선택자.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "project/42Seoul/inception/tls.md",
-    "area/참고도서.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Docker/도커 명령어.md",
@@ -217,7 +219,6 @@
     "resource/Web/HTML",
     "project/42Seoul/NetPractice.md",
     "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트 copy.md",
-    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/ft_transcendence",
     "재료/img/멀티 프로세스 기반 서버",
