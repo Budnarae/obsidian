@@ -167,6 +167,21 @@ xhr.send(JSON.stringify({ id: 1, content: 'HTML', completed: false }));
 
 ```
 
+HTTP 클라이언트가 서버에 요청할 때 서버가 응답할 데이터의 MIME 타입을 Accept로 지정할 수 있다. 다음은 서버가 응답할 데이터의 MIME 타입을 지정하는 예다.
+
+```javascript
+
+// 서버가 응답할 데이터의 MIME 타입 지정: json
+xhr.setRequestHeader('accept', 'application/json');
+
+```
+
+만약 Accept 헤더를 설정하지 않으면 send 메서드가 호출될 때 Accept 헤더가 \*/\*으로 전송된다.
+
+## HTTP 응답 처리
+
+서버가 전송한 응답을 처리하려면 XMLHttpRequest 객체가 발생시키는 이벤트를 
+
 ---
 
 참고자료
