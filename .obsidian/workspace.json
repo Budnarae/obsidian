@@ -11,10 +11,15 @@
             "id": "29fea7223ffdd170",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "resource/Web/JavaScript/Ajax.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Ajax"
             }
           }
         ]
@@ -184,9 +189,10 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "area/참고도서.md",
+    "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/TDZ.md",
-    "area/참고도서.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/CSS/CSS 선택자.md",
     "재료/template/코드 블록 javascript.md",
@@ -213,7 +219,6 @@
     "resource/Language/JavaScript/무제 파일.md",
     "resource/Web",
     "resource/Web/HTML",
-    "project/42Seoul/NetPractice.md",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/ft_transcendence",
     "재료/img/멀티 프로세스 기반 서버",
