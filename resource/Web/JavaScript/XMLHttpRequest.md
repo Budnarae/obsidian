@@ -184,7 +184,30 @@ xhr.setRequestHeader('accept', 'application/json');
 
 상술했듯이 XMLHttpRequest 객체는 onreadystate, onload, onerror 같은 이벤트 핸들러 프로퍼티를 갖는다. 이 이벤트 핸들러 프로퍼티 중에서 HTTP 요청의 현재 상태를 나타내는 readyState 프로퍼티 값이 변경된 경우 발생하는 readyStatechange 이벤트를 캐치하여 다음과 같이 HTTP 응답을 처리할 수 있다.
 
-XMLHttpRequest 객체는 브라우저에서 제공하는 Web APUI
+참고로 HTTP 요청을 전송하고 응답을 받으려면 서버가 필요하다. 다음 예제에서는 JSONPlaceholder에서 제공하는 가상 (fake) REST API를 사용한다.
+
+```javascript
+
+// XMLHttpRequest 객체 생성
+const xhr = new XMLHttpRequest();
+
+// HTTP 요청 초기화
+// https://jsonplaceholder.typicode.com은 Fake REST API를 제공하는 서비스다.
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1');
+
+// HTTP 요청 전송
+xhr.send();
+
+// readystatechange 이벤트는 HTTP 요청의 현재 상태를 나타내는
+// readyState 프로퍼티가 변경될 때마다 발생한다.
+xhr.onreadystatechange = () => {
+	// readyState 프로퍼티는 HTTP 요청의 현재 상태를 나타낸다.
+	// readyState 프로퍼티 값이 4(XMLHttpRequest.DONE)가 아니면 서버 응답이 완료되지 않은 상태다.
+	// 만약 서버 응답이 아직 완료되지 않았다면 아무런 처리를 하지 않는다.
+	if (xh)
+}
+
+```
 
 ---
 
