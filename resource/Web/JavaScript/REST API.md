@@ -134,6 +134,8 @@ package.json 파일의 scripts를 다음과 같이 수정하여 JSON Server를 �
 
 ### GET 요청
 
+#### 모든 todo 취득하기
+
 todos 리소스에서 모든 todo를 취득(index)한다.
 
 JSON Server의 루트 폴더(/json-server)에 public 폴더를 생성하고 JSON Server를 중단한 후 재실행한다. 그리고 public 폴더에 다음 get_index.html을 추가하고 브라우저에서 `http://localhost:3000/get_index.html`로 접속한다.
@@ -170,6 +172,56 @@ JSON Server의 루트 폴더(/json-server)에 public 폴더를 생성하고 JSON
         </script>
     </body>
 </html>
+
+```
+
+#### 특정 todo 취득(retrieve)하기
+
+todos 리소스에서 id를 사용하여 특정 todo를 취득(retrieve)한다. public 폴더에 다음 get_retrieve.html을 추가하고 브라우저에서 `http://localhost:3000/get_retrieve.html`로 접속한다.
+
+```html
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <pre></pre>
+        <script>
+            // XMLHttpRequest 객체 생성
+            const xhr = new XMLHttpRequest();
+
+            // HTTP 요청 초기화
+            // todos 리소스에서 id를 사용하여 특정 todo를 취득(retrieve)
+            xhr.open('GET', '/todos/1');
+
+            // HTTP 요청 전송
+            xhr.send();
+
+            // load 이벤트는 요청이 성공적으로 완료된 경우 발생한다.
+            xhr.onload = () => {
+                if (xhr.status === 200)
+                {
+                    document.querySelector('pre').textContent = xhr.response;
+                }
+                else
+                {
+                    console.error('Error', xhr.status, xhr.statusText);
+                }
+            };
+        </script>
+    </body>
+</html>
+
+```
+
+### POST 요청
+
+todos 리소스에 새로운 todo를 생성한다. POST 요청 시에는 setRequestHeader 메서드를 사용하여 요청 몸체에 담아 서버로 전송할 페이로드의 MIME 타입을 지정해야 한다.
+
+public 폴더에 다음 post.html을 추가하고 브라우저에서 `http://localhost:3000/post.html`로 접속한다.
+
+```html
+
+
 
 ```
 
