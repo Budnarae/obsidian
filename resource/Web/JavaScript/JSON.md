@@ -31,7 +31,56 @@ JSON은 자바스크립트의 객체 리터럴과 유사하게 키와 값으로 
 
 # JSON.stringify
 
-**JSON.stringify** 메서드는 객체를 JSON 포맷의 문자열로 변환한다. 클라이언트가 서버로 객체를 전송하려면 객체를 문자열화해야 하는데 이를 직렬화 Serializing이라 한다.
+**JSON.stringify** 메서드는 객체를 JSON 포맷의 문자열로 변환한다. 클라이언트가 서버로 객체를 전송하려면 객체를 문자열화해야 하는데 이를 **직렬화 Serializing**이라 한다.
+
+```javascript
+
+const obj = {
+    name: 'Lee',
+    age: 20,
+    alive: true,
+    hobby: ['traveling', 'tennis']
+};
+
+// 객체를 JSON 포맷의 문자열로 변환한다.
+const json = JSON.stringify(obj);
+console.log(typeof json, json);
+
+// 객체를 JSON 포맷의 문자열로 변환하면서 들여쓰기 한다.
+const prettyJson = JSON.stringify(obj, null, 2);
+console.log(typeof prettyJson, prettyJson);
+
+// replacer 함수. 값의 타입이 Number이면 필터링되어 반환되지 않는다.
+function filter(key, value)
+{
+    return typeof value === 'number' ? undefined : value;
+}
+
+// JSON.stringify 메서드에 두 번째 인수로 replacer 함수를 전달한다.
+const strFilteredObject = JSON.stringify(obj, filter, 2);
+console.log(typeof strFilteredObject, strFilteredObject);
+
+```
+
+참고로 JSON.stringify 메서드는 객체뿐만 아니라 배열도 JSON 포맷의 문자열로 변환한다.
+
+```javascript
+
+const todos = [
+    { id: 1, content: 'HTML', completed: false},
+    { id: 2, content: 'CSS', completed: true },
+    { id: 3, content: 'JavaScript', completed: false }
+];
+
+// 배열을 JSON 포맷의 문자열로 변환한다.
+const json = JSON.stringify(todos, null, 2);
+console.log(typeof json, json);
+
+```
+
+# JSON.parse
+
+JSON.parse 메서드는 JSON 포맷의 문자열을 객체로 변환한다. 서버로부터 클라이언트에게 전송된 JSON 데이터는 문자열이다. ㅇ
 
 ---
 
