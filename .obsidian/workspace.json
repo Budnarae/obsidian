@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/Ajax.md",
+                "file": "resource/Web/JavaScript/JSON.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Ajax"
+              "title": "JSON"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "area/참고도서.md",
     "resource/Web/JavaScript/Ajax.md",
+    "resource/Web/JavaScript/JSON.md",
+    "area/참고도서.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
@@ -216,7 +217,6 @@
     "resource/Language/C++/가상 상속.md",
     "resource/Web/WWW.md",
     "resource/Web/CSS",
-    "resource/Language/JavaScript/무제 파일.md",
     "resource/Web",
     "resource/Web/HTML",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
