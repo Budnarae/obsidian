@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JSON.md",
+                "file": "resource/Web/JavaScript/XMLHttpRequest.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JSON"
+              "title": "XMLHttpRequest"
             }
           }
         ]
@@ -189,6 +189,10 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "재료/template/js 문서 임시 템플릿.md",
+    "재료/template/참고자료.md",
+    "재료/template/개요와 참고자료.md",
+    "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/JSON.md",
     "area/참고도서.md",
@@ -212,10 +216,6 @@
     "resource/Language/C++/깊은 복사.md",
     "resource/Language/C++/구조체.md",
     "resource/Language/C++/가상 함수 테이블.md",
-    "resource/Language/C++/가상 함수.md",
-    "resource/Language/C++/가상 소멸자.md",
-    "resource/Language/C++/가상 상속.md",
-    "resource/Web/WWW.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
