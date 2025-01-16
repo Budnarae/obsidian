@@ -180,7 +180,11 @@ xhr.setRequestHeader('accept', 'application/json');
 
 ## HTTP 응답 처리
 
-서버가 전송한 응답을 처리하려면 XMLHttpRequest 객체가 발생시키는 이벤트를 
+서버가 전송한 응답을 처리하려면 XMLHttpRequest 객체가 발생시키는 이벤트를 캐치해야 한다.
+
+상술했듯이 XMLHttpRequest 객체는 onreadystate, onload, onerror 같은 이벤트 핸들러 프로퍼티를 갖는다. 이 이벤트 핸들러 프로퍼티 중에서 HTTP 요청의 현재 상태를 나타내는 readyState 프로퍼티 값이 변경된 경우 발생하는 readyStatechange 이벤트를 캐치하여 다음과 같이 HTTP 응답을 처리할 수 있다.
+
+XMLHttpRequest 객체는 브라우저에서 제공하는 Web APUI
 
 ---
 
