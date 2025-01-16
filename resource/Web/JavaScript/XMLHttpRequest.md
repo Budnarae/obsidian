@@ -28,10 +28,46 @@ XMLHttpRequest 객체는 다양한 프로퍼티와 메서드를 제공한다. �
 
 ### XMLHttpRequest 객체의 프로토타입 프로퍼티
 
-| 프로토타입 프로퍼티 | 설명                                   |
-| ------------------- | -------------------------------------- |
-| readyState          | HTTP 요청의 현재 상태를 나타내는 정수. 다음과 같은 XMLHttpReques |
-|                     |                                        |
+#### readyState
+
+HTTP 요청의 현재 상태를 나타내는 정수. 다음과 같은 XMLHttpRequest의 정적 프로퍼티를 값으로 갖는다.
+
+- UNSENT: 0
+- OPENED: 1
+- HEADERS_RECEIVED: 2
+- LOADING: 3
+- DONE: 4
+
+#### status
+
+HTTP 요청에 대한 응답 상태(HTTP 상태 코드)를 나타내는 정수
+ex) 200
+
+#### statusText
+
+HTTP 요청에 대한 응답 메시지를 나타내는 문자열
+ex) "OK"
+
+#### responseType
+
+HTTP 응답 타입
+ex) document, json, text, blob, arraybuffer
+
+#### response
+
+HTTP 요청에 대한 응답 몸체 reponse body. reponseType에 따라 타입이 다르다.
+
+#### reponseText
+
+서버가 전송한 HTTP 요청에 대한 응답 문자열
+
+### XMLHttpRequest 객체의 이벤트 핸들러 프로퍼티
+### XMLHttpRequest 객체의 메서드
+### XMLHttpRequest 객체의 정적 프로퍼티
+
+(추후 보충)
+
+## H
 
 ---
 
