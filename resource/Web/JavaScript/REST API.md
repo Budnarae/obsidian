@@ -66,7 +66,13 @@ DELETE /todos/1
 
 ```
 
-##
+## JSON Server를 이용한 REST API 실습
+
+HTTP 요청을 전송하고 응답을 받으려면 서버가 필요하다. JSON Server를 사용해 가상 REST API 서버를 구축하여 HTTP 요청을 전송하고 응답을 받는 실습을 진행해보자.
+
+### JSON Server 설치
+
+JSON Server는 json 파일을 사용하여 가상 REST API 서버를 구축할 수 있는 툴이다.
 
 ---
 

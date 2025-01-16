@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/REST API.md",
+                "file": "resource/Web/JavaScript/npm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "REST API"
+              "title": "npm"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/REST API.md",
+    "resource/Web/JavaScript/npm.md",
+    "resource/Web/JavaScript/XMLHttpRequest.md",
     "재료/template/js 문서 임시 템플릿.md",
     "재료/template/참고자료.md",
     "재료/template/개요와 참고자료.md",
@@ -215,7 +216,6 @@
     "resource/Language/C++/함수 오버로딩.md",
     "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Language/C++/깊은 복사.md",
-    "resource/Language/C++/구조체.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
