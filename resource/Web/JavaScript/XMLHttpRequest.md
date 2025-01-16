@@ -67,7 +67,32 @@ HTTP 요청에 대한 응답 몸체 reponse body. reponseType에 따라 타입�
 
 (추후 보충)
 
-## H
+## HTTP 요청 전송
+
+HTTP 요청을 전송하는 경우 다음 순서를 따른다.
+
+1. XMLHttpRequest.prototype.open 메서드로 HTTP 요청을 초기화한다.
+2. 필요에 따라 XMLHttpRequest.prototype.setRequestHeader 메서드로 특정 HTTP 요청의 헤더 값을 설정한다.
+3. XMLHttpRequest.prototype.send 메서드로 HTTP 요청을 전송한다.
+
+```javascript
+
+// XMLHttpRequest 객체 생성
+const xhr = new XMLHttpRequest();
+
+// HTTP 요청 초기화
+xhr.open('GET', '/users');
+
+// HTTP 요청 헤더 설정
+// 클라이언트가 서버로 전송할 데이터의 MIME 타입 지정: json
+xhr.setRequestHeader('content-type', 'application/json');
+
+// HTTP 요청 전송
+xhr.send();
+
+```
+
+###
 
 ---
 
