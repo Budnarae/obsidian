@@ -73,6 +73,47 @@ HTTP 요청을 전송하고 응답을 받으려면 서버가 필요하다. JSON 
 ### JSON Server 설치
 
 JSON Server는 json 파일을 사용하여 가상 REST API 서버를 구축할 수 있는 툴이다.
+다음과 같이 [[npm]]을 사용하여 설치한다.
+
+```bash
+
+mkdir json-server && cd json-server
+npm init -y
+npm install json-server --save-dev
+
+```
+
+### db.json 파일 생성
+
+프로젝트 루트 폴더(/json-server)에 다음과 같이 db.json 파일을 생성한다. db.json 파일은 리소스를 제공하는 데이터베이스 역할을 한다.
+
+```json
+
+{
+    "todos": [
+        {
+            "id": 1,
+            "content": "HTML",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "content": "CSS",
+            "completed": false
+        },
+        {
+            "id": 3,
+            "content": "JavaScript",
+            "completed": true
+        }
+    ]
+}
+
+```
+
+### JSON Server 실행
+
+package.json 파일의 s
 
 ---
 
