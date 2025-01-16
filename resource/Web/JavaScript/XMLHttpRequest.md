@@ -138,7 +138,34 @@ xhr.send(JSON.stringify({ id: 1, content: 'HTML', conpleted: false }));
 
 ### XMLHttpRequest.prototype.setRequestHeader
 
-setRequestHeader 메서드는 특정 HTTP 요청의 헤더 
+setRequestHeader 메서드는 특정 HTTP 요청의 헤더 값을 설정한다. setRequestHeader 메서드는 반드시 open 메서드를 호출한 이후에 호출해야 한다. 자주 사용하는 HTTP 요청 헤더인 Content-type과 Accept에 대해 살펴보자.
+
+Content-type은 요청 몸체에 담아 전송할 데이터의 MIME 타입의 정보를 표현한다. 자주 사용되는 MIME 타입은 다음과 같다.
+
+| MIME 타입   | 서브타입                                           |
+| ----------- | -------------------------------------------------- |
+| text        | text/plane, text/html, text/css, text/javascript   |
+| application | application/json, application/x-www-form-urlencode |
+| multipart   | multipart/formed-data                              |
+
+다음은 요청 몸체에 담아 서버로 전송할 페이로드의 MIME 타입을 지정하는 예다.
+
+```javascript
+
+// XMLHttpRequest 객체 생성
+const xhr = new XMLHttpRequest();
+
+// HTTP 요청 초기화
+xhr.open('POST', '/users');
+
+// HTTP 요청 헤더 설정
+// 클라이언트가 서버로 전송할 데이터의 MIME 타입 지정: json
+xhr.setRequestHeader('content-type', 'application/json');
+
+// HTTP 요청 전송
+xhr.send(JSON.stringify({ id: 1, content: 'HTML', completed: false }));
+
+```
 
 ---
 
