@@ -221,6 +221,49 @@ public 폴더에 다음 post.html을 추가하고 브라우저에서 `http://loc
 
 ```html
 
+<!DOCTYPE html>
+<html>
+    <body>
+        <pre></pre>
+        <script>
+            // XMLHTTPRequest 객체 생성
+            const xhr = new XMLHttpRequest();
+
+            // HTTP 요청 초기화
+            // todos 리소스에 새로운 todo를 생성
+            xhr.open('POST', '/todos');
+
+            // 요청 몸체에 담아 서버로 전송할 페이로드의 MIME 타입을 지정
+            xhr.setRequestHeader('content-type', 'application/json');
+
+            // HTTP 요청 전송
+            // 새로운 todo를 생성하기 위해 페이로드를 서버에 전송해야 한다.
+            xhr.send(JSON.stringify({ id: 4, content: 'Angular', completed: false }));
+
+            // load 이벤트는 요청이 성공적으로 완료된 경우 발생한다.
+            xhr.onload = () => {
+                // status 프로퍼티 값이 200(OK) 또는 201(Created)이면 정상적으로 응답된 상태다.
+                if (xhr.status === 200 || xhr.status === 201) {
+                    document.querySelector('pre').textContent = xhr.response;
+                }
+                else {
+                    console.error('Error', xhr.status, xhr.statusText);
+                }
+            };
+        </script>
+    </body>
+</html>
+
+```
+
+### PATCH 요청
+
+PATCH는 특정 리소스의 일부를 수정할 때 사용한다. 다음 예제에서는 todos 리소스의 id로 todo를 특정하여 completed만 수정한다. PATCH 요청 시에는 setRequestHeader 메서드를 사용하여 요청 몸체에 담아 서버로 전송할 페이로드의 MIME 타입을 지정해야 한다.
+
+public 폴더에 다음 patch.html을 추가하고 브라우저에서 `http://localhost:3000/patch.html`로 접속한다.
+
+```html
+
 
 
 ```
