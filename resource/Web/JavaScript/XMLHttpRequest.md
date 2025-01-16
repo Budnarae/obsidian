@@ -22,6 +22,10 @@ const xhr = new XMLHttpRequest();
 
 ```
 
+## XMLHTTPRequest 객체의 프로퍼티와 메서드
+
+XMLHttpRequest 객체는 다양한 프로퍼티와 메서드를 제공한다. 대표적인 
+
 ---
 
 참고자료
