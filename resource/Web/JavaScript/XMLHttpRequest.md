@@ -24,7 +24,14 @@ const xhr = new XMLHttpRequest();
 
 ## XMLHTTPRequest 객체의 프로퍼티와 메서드
 
-XMLHttpRequest 객체는 다양한 프로퍼티와 메서드를 제공한다. 대표적인 
+XMLHttpRequest 객체는 다양한 프로퍼티와 메서드를 제공한다. 대표적인 프로퍼티와 메서드는 다음과 같다. 중요한 프로퍼티와 메서드는 볼드체로 표시했다.
+
+### XMLHttpRequest 객체의 프로토타입 프로퍼티
+
+| 프로토타입 프로퍼티 | 설명                                   |
+| ------------------- | -------------------------------------- |
+| readyState          | HTTP 요청의 현재 상태를 나타내는 정수. 다음과 같은 XMLHttpReques |
+|                     |                                        |
 
 ---
 
