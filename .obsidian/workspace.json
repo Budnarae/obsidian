@@ -11,15 +11,10 @@
             "id": "29fea7223ffdd170",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Web/JavaScript/디스트럭처링.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "디스트럭처링"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -189,8 +184,8 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/디스트럭처링.md",
+    "resource/Web/JavaScript/TDZ.md",
     "area/참고도서.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/CSS/CSS 선택자.md",
