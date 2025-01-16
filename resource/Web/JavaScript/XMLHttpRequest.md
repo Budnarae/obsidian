@@ -92,7 +92,36 @@ xhr.send();
 
 ```
 
-###
+### XMLHttpRequest.prototype.open
+
+open 메서드는 서버에 전송할 HTTP 요청을 초기화한다. open 메서드를 호출하는 방법은 다음과 같다. 
+
+```javascript
+
+xhr.open(method, url[, async]);
+
+```
+
+| 매개변수 | 설명                                                                    |
+| -------- | ----------------------------------------------------------------------- |
+| method   | HTTP 요청 메서드("GET", "POST", "PUT", "DELETE" 등)                     |
+| url      | HTTP 요청을 전송할 URL                                                  |
+| async    | 비동기 요청 여부. 옵션으로 기본값은 true이며, 비동기 방식으로 동작한다. |
+
+HTTP 요청 메서드는 클라이언트가 서버에게 요청의 종류와 목적(리소스에 대한 행위)을 알리는 방법이다.
+주로 5가지 요청 메서드(**GET, POST, PUT, PATCH, DELETE 등**)을 사용하여 CRUD를 구현하다.
+
+| HTTP 요청 메서드 | 종류           | 목적                  | 페이로드 |
+| ---------------- | -------------- | --------------------- | -------- |
+| GET              | index/retrieve | 모든/특정 리소스 취득 | X        |
+| POST             | create         | 리소스 생성           | O        |
+| PUT              | replace        | 리소스의 전체 교체    | O        |
+| PATCH            | modify         | 리소스의 일부 수정    | O        |
+| DELETE           | delete         | 모든/특정 리소스 삭제 | X         |
+
+### XMLHttpRequest.prototype.send
+
+send 메서드는ㄴ open 메서드로 초기홛
 
 ---
 
