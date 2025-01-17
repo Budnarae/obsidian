@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/프로미스.md",
+                "file": "resource/Web/JavaScript/XMLHttpRequest.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "프로미스"
+              "title": "XMLHttpRequest"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/JavaScript 기초.md",
+    "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/프로미스.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
     "resource/Web/JavaScript/REST API.md",
@@ -215,7 +216,6 @@
     "resource/Docker/도커.md",
     "resource/Language/C++/임시 객체.md",
     "resource/Language/C++/함수 오버로딩.md",
-    "resource/Language/C++/C++ 언어의 bool 자료형.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
