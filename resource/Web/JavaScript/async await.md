@@ -85,7 +85,33 @@ getGithubUserName('ungmo2');
 
 # 에러 처리
 
-비동기 처리를 위한 콜백 패턴의 단점 중 가장 심각한 것은 에러 처리가 곤란하는 
+비동기 처리를 위한 콜백 패턴의 단점 중 가장 심각한 것은 에러 처리가 곤란하다는 것이다.
+
+async/await에서 에러 처리는 try ...catch문을 사용할 수 있다. 콜백 함수를 인수로 전달받는 비동기 함수와는 달리 프로미스를 반환하는 비동기 함수는 명시적으로 호출할 수 있기 때문에 호출자가 명확하다.
+
+```javascript
+
+const fetch = require('node-fetch');
+
+const foo = async () => {
+	try
+	{
+		const wrongUrl = 'https://wrong.url';
+	
+		const response = await fetch(wrongUrl);
+		const data = await response.json();
+		console.log(data);
+	}
+	catch (err)
+	{
+		// TypeError: Failed to fetch
+		console.error(err);
+	}
+};
+
+foo();
+
+```
 
 ---
 
