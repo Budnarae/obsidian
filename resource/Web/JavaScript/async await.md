@@ -63,6 +63,14 @@ myClass.bar(5).then(v => console.log(v));   // 5
 
 ```
 
+클래스의 constructor 메서드는 async 메서드가 될 수 없다. 클래스의 constructor 메서드는 인스턴스를 반환해야 하지만 async 함수는 언제나 프로미스를 반환해야 한다.
+
+# await 키워드
+
+==await 키워드는 프로미스가 settled 상태(비동기 처리가 수행된 상태)가 될 때까지 대기하다가 settled 상태가 되면 프로미스가 resolve한 처리 결과를 반환한다.== await 키워드는 반드시 프로미스 앞에서 사용해야 한다.
+
+
+
 ---
 
 참고자료
