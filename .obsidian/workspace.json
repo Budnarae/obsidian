@@ -189,10 +189,10 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/async await.md",
-    "resource/Web/JavaScript/모듈.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/제너레이터.md",
+    "resource/Web/JavaScript/모듈.md",
+    "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/fetch.md",
