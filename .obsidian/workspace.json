@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/async await.md",
+                "file": "resource/Web/JavaScript/모듈.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "async await"
+              "title": "모듈"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/모듈.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
@@ -215,7 +216,6 @@
     "resource/Web/HTML/HTML.md",
     "resource/Docker/도커 명령어.md",
     "resource/Docker/도커 네트워크.md",
-    "resource/Docker/도커.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
