@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/제너레이터.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/fetch.md",
@@ -206,7 +206,6 @@
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/JSON.md",
     "area/참고도서.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/JavaScript",

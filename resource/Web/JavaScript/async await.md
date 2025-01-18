@@ -69,7 +69,23 @@ myClass.bar(5).then(v => console.log(v));   // 5
 
 ==await 키워드는 프로미스가 settled 상태(비동기 처리가 수행된 상태)가 될 때까지 대기하다가 settled 상태가 되면 프로미스가 resolve한 처리 결과를 반환한다.== await 키워드는 반드시 프로미스 앞에서 사용해야 한다.
 
+```javascript
 
+const fetch = require('node-fetch');
+
+const getGithubUserName = async id => {
+    const res = await fetch(`https://api.github.com/users/${id}`);  // 1
+    const { name } = await res.json();
+    console.log(name);
+};
+
+getGithubUserName('ungmo2');
+
+```
+
+# 에러 처리
+
+비동기 처리를 위한 콜백 패턴의 단점 중 가장 심각한 것은 에러 처리가 곤란하는 
 
 ---
 
