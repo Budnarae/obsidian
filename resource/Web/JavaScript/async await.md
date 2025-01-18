@@ -15,6 +15,26 @@ async/await는 [[프로미스]]를 기반으로 동작한다. async/await를 사
 
 ```javascript
 
+const fetch = require('node-fetch');
+
+async function fetchTodo() {
+    const url = 'https://jsonplaceholder.typicode.com/todos/1';
+
+    const response = await fetch(url);
+    const todo = await response.json();
+    console.log(todo);
+}
+
+fetchTodo();
+
+```
+
+# async 함수
+
+await 키워드는 반드시 async 함수 내부에서 사용해야 한다. async 함수는 async 키워드를 사용해 정의하며 언제나 프로미스를 반환한다. async 함수가 명시적으로 프로미스를 반환하지 않더라도 async 함수는 암묵적으로 resolve하는 프로세스를 반환한다.
+
+```javascript
+
 
 
 ```
