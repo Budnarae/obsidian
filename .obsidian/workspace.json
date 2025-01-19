@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
+                "file": "resource/Web/JavaScript/디스트럭처링.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "fetch"
+              "title": "디스트럭처링"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:()",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,16 +187,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "99cb3010a8824735",
+  "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/fetch.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
+    "resource/Web/WWW.md",
     "resource/Web/JavaScript/Ajax.md",
+    "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/모듈.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
-    "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
@@ -216,7 +216,6 @@
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Docker/도커 명령어.md",
-    "resource/Docker/도커 네트워크.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
