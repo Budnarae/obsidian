@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/디스트럭처링.md",
+                "file": "resource/Web/JavaScript/XMLHttpRequest.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "디스트럭처링"
+              "title": "XMLHttpRequest"
             }
           }
         ]
@@ -189,26 +189,26 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/TDZ.md",
+    "resource/Web/JavaScript/REST API.md",
+    "resource/Web/JavaScript/npm.md",
+    "resource/Web/JavaScript/JSON.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/fetch.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
-    "resource/Web/WWW.md",
-    "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/모듈.md",
+    "resource/Web/JavaScript/디스트럭처링.md",
+    "resource/Web/WWW.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
-    "resource/Web/JavaScript/REST API.md",
-    "resource/Web/JavaScript/npm.md",
     "재료/template/js 문서 임시 템플릿.md",
     "재료/template/참고자료.md",
     "재료/template/개요와 참고자료.md",
-    "resource/Web/JavaScript/JSON.md",
     "area/참고도서.md",
-    "resource/Web/JavaScript/TDZ.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
