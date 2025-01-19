@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/프로미스.md",
+                "file": "resource/Web/JavaScript/fetch.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "프로미스"
+              "title": "fetch"
             }
           }
         ]
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,14 +188,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29fea7223ffdd170",
+  "active": "99cb3010a8824735",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/Ajax.md",
+    "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/디스트럭처링.md",
-    "resource/Web/JavaScript/Ajax.md",
-    "resource/Web/JavaScript/프로미스.md",
-    "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
