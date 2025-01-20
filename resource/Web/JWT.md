@@ -28,9 +28,17 @@ JWT는 다음과 같은 방식으로 사용된다.
 
 # JWT의 활용
 
-1. 인증
-2. 정보 공유
-3. 
+1. ==인증 Authentication==
+2. 정보 공유 Information Exchange
+3. 권한 부여 Authorization
+4. 단일 로그인 Single Sign-On
+5. 서버 간 통신 Server-to-server communication
+
+가장 주된 활용처는 **로그인 기능**을 구현할 때 인증에 사용되는 것이다.
+
+# 쿠키 기반의 세션 인증 vs JWT
+
+세션 기반의 인증은 특정한 작업을 할 때마다 서버에 세션 ㅋ
 
 ---
 
