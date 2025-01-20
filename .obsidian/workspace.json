@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/보안/암호학/단방향 암호화.md",
+                "file": "resource/보안/암호학/양방향 암호화.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "단방향 암호화"
+              "title": "양방향 암호화"
             }
           }
         ]
@@ -189,14 +189,15 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "resource/보안/암호학/암호학.md",
+    "resource/보안/암호학/양방향 암호화.md",
+    "resource/보안/암호학/단방향 암호화.md",
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/도커/윈도우에서의 도커의 구조.png",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
     "재료/img/컨테이너/컨테이너의 구조.png",
     "재료/img/도커.zip",
-    "resource/보안/암호학/단방향 암호화.md",
     "resource/Docker.zip",
-    "resource/보안/암호학/암호학.md",
     "resource/Database/MySQL.md",
     "resource/보안/무제 파일.md",
     "resource/보안/암호학",
@@ -235,7 +236,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(12).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(11).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
