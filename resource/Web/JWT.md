@@ -1,0 +1,26 @@
+
+---
+
+#security #cryptograph #web
+
+_Json Web Token_
+
+---
+
+<iframe width="787" height="443" src="https://www.youtube.com/embed/36lpDzQzVXs" title="JWT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**JWT**는 Json Web Token의 약자이다. 자료를 [[JSON]] 형태로 다른 장치에게 안전하게 전송하기 위한 프로토콜이다.
+
+JWT는 다음의 세 가지 요소로 이루어져 있다.
+
+1. ㄴ
+2. payload : 실질적인 내용을 저장하는 부분이다.
+3. 
+
+---
+
+참고자료
+
+#참고링크/생활코딩 
+
+---

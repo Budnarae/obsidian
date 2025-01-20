@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Security/암호학/양방향 암호화.md",
+                "file": "resource/Web/JWT.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "양방향 암호화"
+              "title": "JWT"
             }
           }
         ]
@@ -187,10 +187,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Security/암호학/암호학.md",
     "resource/Security/암호학/양방향 암호화.md",
+    "resource/Web/JWT.md",
+    "resource/Security/암호학/암호학.md",
     "resource/Security/암호학/단방향 암호화.md",
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/도커/윈도우에서의 도커의 구조.png",
@@ -223,7 +224,6 @@
     "재료/template/js 문서 임시 템플릿.md",
     "재료/template/참고자료.md",
     "재료/template/개요와 참고자료.md",
-    "area/참고도서.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
