@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/2FA.md",
-                "mode": "preview",
+                "file": "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2FA"
+              "title": "42 oauth 기반 로그인 구현 방법"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Web/JWT.md",
+    "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "resource/Web/2FA.md",
+    "resource/Web/JWT.md",
     "resource/Security/암호학/양방향 암호화.md",
     "resource/Security/암호학/암호학.md",
     "resource/Security/암호학/단방향 암호화.md",
@@ -223,7 +224,6 @@
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
     "재료/template/js 문서 임시 템플릿.md",
-    "재료/template/참고자료.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
