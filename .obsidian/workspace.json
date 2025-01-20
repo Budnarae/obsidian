@@ -11,15 +11,12 @@
             "id": "29fea7223ffdd170",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "resource/보안/암호학/단방향 암호화.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
+                "file": "재료/img/컨테이너/컨테이너의 구조.png"
               },
-              "icon": "lucide-file",
-              "title": "단방향 암호화"
+              "icon": "lucide-image",
+              "title": "컨테이너의 구조"
             }
           }
         ]
@@ -187,10 +184,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29fea7223ffdd170",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/보안/암호학/암호학.md",
+    "재료/img/도커.zip",
+    "재료/img/도커 네트워크/도커 네트워크 구조.png",
+    "재료/img/도커/윈도우에서의 도커의 구조.png",
+    "재료/img/도커/도커의 구조.jpeg",
     "resource/보안/암호학/단방향 암호화.md",
+    "resource/Docker.zip",
+    "resource/보안/암호학/암호학.md",
     "resource/Database/MySQL.md",
     "resource/보안/무제 파일.md",
     "resource/보안/암호학",
@@ -217,7 +219,6 @@
     "재료/template/참고자료.md",
     "재료/template/개요와 참고자료.md",
     "area/참고도서.md",
-    "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
@@ -227,15 +228,11 @@
     "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
-    "재료/img/다중 접속 서버 구현 방식",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(12).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(11).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(10).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
