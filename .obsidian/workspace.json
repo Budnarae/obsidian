@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/REST API.md",
-                "mode": "preview",
+                "file": "resource/보안/암호학/암호학.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "REST API"
+              "title": "암호학"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -190,9 +189,16 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "resource/Database/MySQL.md",
+    "resource/보안/암호학/암호학.md",
+    "resource/보안/무제 파일.md",
+    "resource/보안/암호학",
+    "resource/보안/무제 폴더",
+    "resource/보안",
+    "resource/Database/데이터베이스.md",
+    "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/TDZ.md",
-    "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/npm.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
@@ -213,10 +219,6 @@
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
-    "project/42Seoul/inception/tls.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "resource/Web/HTML/HTML.md",
-    "resource/Docker/도커 명령어.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
@@ -226,8 +228,6 @@
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식",
-    "재료/img/다중 접속 서버 구현 방식.pdf",
-    "resource/Network/소켓 프로그래밍(리눅스)/다중 접속 서버 구현 방식.pdf",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
@@ -236,7 +236,6 @@
     "재료/img/다중 접속 서버 구현 방식_files/image(10).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
-    "재료/img/다중 접속 서버 구현 방식_files/sodar",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
