@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/XMLHttpRequest.md",
+                "file": "resource/Web/JavaScript/REST API.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "XMLHttpRequest"
+              "title": "REST API"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -189,6 +190,7 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/npm.md",
@@ -202,7 +204,6 @@
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/WWW.md",
-    "resource/Web/JavaScript/XMLHttpRequest.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
     "재료/template/js 문서 임시 템플릿.md",
