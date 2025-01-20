@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/보안/암호학/암호학.md",
+                "file": "resource/보안/암호학/단방향 암호화.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "암호학"
+              "title": "단방향 암호화"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "29fea7223ffdd170",
   "lastOpenFiles": [
-    "resource/Database/MySQL.md",
     "resource/보안/암호학/암호학.md",
+    "resource/보안/암호학/단방향 암호화.md",
+    "resource/Database/MySQL.md",
     "resource/보안/무제 파일.md",
     "resource/보안/암호학",
     "resource/보안/무제 폴더",
@@ -218,7 +219,6 @@
     "area/참고도서.md",
     "resource/Web/CSS/CSS 선택자.md",
     "resource/Web/JavaScript",
-    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
