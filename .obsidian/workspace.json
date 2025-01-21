@@ -26,16 +26,43 @@
             "id": "ffea0644db749fb8",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "ft_transcendence.pdf 번역본"
+            }
+          },
+          {
+            "id": "9ab269d935c9e14d",
+            "type": "leaf",
+            "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2025-01-21 11.52.17.excalidraw.md"
+                "file": "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2025-01-21 11.52.17.excalidraw"
+              "title": "페이지 흐름도.excalidraw"
+            }
+          },
+          {
+            "id": "4a057e3292e6ddfa",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "security.excalidraw"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -200,10 +227,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ffea0644db749fb8",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/모듈 설계",
+    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
-    "Excalidraw/Drawing 2025-01-21 11.52.17.excalidraw.md",
     "Excalidraw",
     "resource/Web/2FA.md",
     "resource/Web/JWT.md",
@@ -234,10 +265,6 @@
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/모듈.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
-    "resource/Web/WWW.md",
-    "재료/template/코드 블록 javascript.md",
-    "재료/template/코드 블록 html.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
