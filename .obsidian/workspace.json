@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "42 oauth 기반 로그인 구현 방법"
             }
+          },
+          {
+            "id": "ffea0644db749fb8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-01-21 11.52.17.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-01-21 11.52.17.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,9 +200,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29fea7223ffdd170",
+  "active": "ffea0644db749fb8",
   "lastOpenFiles": [
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
+    "Excalidraw/Drawing 2025-01-21 11.52.17.excalidraw.md",
+    "Excalidraw",
     "resource/Web/2FA.md",
     "resource/Web/JWT.md",
     "resource/Security/암호학/양방향 암호화.md",
@@ -223,13 +238,11 @@
     "resource/Web/WWW.md",
     "재료/template/코드 블록 javascript.md",
     "재료/template/코드 블록 html.md",
-    "재료/template/js 문서 임시 템플릿.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
     "resource/Web/HTML",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
-    "project/42Seoul/ft_transcendence",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
