@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "authentication.mjs"
+              "title": "page.mjs"
             }
           },
           {
@@ -201,10 +201,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md"
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md"
               },
               "icon": "lucide-list",
-              "title": "authentication.mjs 개요"
+              "title": "page.mjs 개요"
             }
           },
           {
@@ -249,13 +249,13 @@
   },
   "active": "5fc1ac41e49bcc58",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
