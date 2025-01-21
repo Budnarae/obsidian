@@ -83,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,10 +201,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md"
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md"
               },
               "icon": "lucide-list",
-              "title": "page.mjs 개요"
+              "title": "HTML 태그, 요소 그리고 속성 개요"
             }
           },
           {
@@ -247,10 +247,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5fc1ac41e49bcc58",
+  "active": "02b62761dfa1c897",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/JSON.md",
