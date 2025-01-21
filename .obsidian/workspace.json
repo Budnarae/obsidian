@@ -83,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -201,10 +201,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/모듈.md"
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md"
               },
               "icon": "lucide-list",
-              "title": "모듈 개요"
+              "title": "page.mjs 개요"
             }
           },
           {
@@ -247,8 +247,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c0042578299b06aa",
+  "active": "5fc1ac41e49bcc58",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
@@ -285,7 +286,6 @@
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/npm.md",
-    "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",

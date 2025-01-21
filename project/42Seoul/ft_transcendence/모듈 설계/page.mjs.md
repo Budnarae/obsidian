@@ -13,5 +13,9 @@
 
 # LoginPage
 
-- static renderLoginPage(ftOauthUrl) : DOM을 사용하여 화면에 로그인 페이지를 렌더링한다. 이 때, 버튼에 42 인증 페이지로의 링크를 부여하기 위해 42 Oauth url을 인자로 주어야 한다.
+- static renderLoginPage(ftOauthUrl) : 화면에 로그인 페이지를 렌더링한다. 이 때, 버튼에 42 인증 페이지로의 링크를 부여하기 위해 42 Oauth url을 인자로 주어야 한다.
 - static destroyLoginPage() : 로그인 페이지를 화면에서 지운다.
+
+# TwoFactorAuth
+
+- static renderTwoFactorAuth : 화면에 2fa(google otp) 인증 페이지를 렌더링한다. 이 때,
