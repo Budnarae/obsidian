@@ -402,7 +402,7 @@ if (key == 4)
 	console.log("key is 4");
 
 // 좌변이 거짓이어야만 우변이 실행됨
-key != 4 || console.log("key is 4");
+key != 4 || console.log("key is not 4");
 
 // 좌변이 참이어야만 우변이 실행됨
 key == 4 && console.log("key is 4");
