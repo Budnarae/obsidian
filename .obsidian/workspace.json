@@ -36,8 +36,24 @@
               "icon": "lucide-file",
               "title": "HTML 태그, 요소 그리고 속성"
             }
+          },
+          {
+            "id": "1a7a79beccae1e43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "CSS3 스타일 속성 기본"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,10 +172,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md"
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md"
               },
               "icon": "lucide-list",
-              "title": "JavaScript 기초 개요"
+              "title": "HTML 태그, 요소 그리고 속성 개요"
             }
           },
           {
@@ -187,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,10 +218,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9ab269d935c9e14d",
+  "active": "02b62761dfa1c897",
   "lastOpenFiles": [
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
+    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
@@ -241,7 +257,6 @@
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/npm.md",
     "resource/Web/JavaScript/fetch.md",
-    "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
