@@ -41,28 +41,19 @@
             "id": "9ab269d935c9e14d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md"
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/인증 모듈.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
               },
-              "icon": "excalidraw-icon",
-              "title": "페이지 흐름도.excalidraw"
-            }
-          },
-          {
-            "id": "4a057e3292e6ddfa",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "security.excalidraw"
+              "icon": "lucide-file",
+              "title": "인증 모듈"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,11 +218,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/모듈 설계",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/인증 모듈.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
+    "project/42Seoul/ft_transcendence/모듈 설계",
     "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
@@ -264,11 +257,9 @@
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/제너레이터.md",
-    "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
-    "resource/Web/HTML",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
