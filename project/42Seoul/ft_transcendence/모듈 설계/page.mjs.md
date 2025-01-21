@@ -18,4 +18,5 @@
 
 # TwoFactorAuth
 
-- static renderTwoFactorAuth : 화면에 2fa(google otp) 인증 페이지를 렌더링한다. 이 때,
+- static renderTwoFactorAuth() : 화면에 2fa(google otp) 인증 페이지를 렌더링한다.
+- static destroyTwoFactorAuth() : 2fa 인증 페이지를 화면에서 지운다.
