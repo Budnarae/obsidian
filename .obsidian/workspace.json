@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/인증 모듈.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "참고할만한 패키지들"
+              "title": "인증 모듈"
             }
           }
         ],
@@ -220,8 +220,8 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/모듈 설계/인증 모듈.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/인증 모듈.md",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
