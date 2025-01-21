@@ -8,36 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "29fea7223ffdd170",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "42 oauth 기반 로그인 구현 방법"
-            }
-          },
-          {
-            "id": "ffea0644db749fb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "ft_transcendence.pdf 번역본"
-            }
-          },
-          {
             "id": "9ab269d935c9e14d",
             "type": "leaf",
             "state": {
@@ -51,9 +21,23 @@
               "icon": "lucide-file",
               "title": "JavaScript 기초"
             }
+          },
+          {
+            "id": "02b62761dfa1c897",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "HTML 태그, 요소 그리고 속성"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,10 +156,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/inception/tls.md"
+                "file": "resource/Web/JavaScript/JavaScript 기초.md"
               },
               "icon": "lucide-list",
-              "title": "tls 개요"
+              "title": "JavaScript 기초 개요"
             }
           },
           {
@@ -199,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -221,6 +205,8 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
@@ -254,10 +240,8 @@
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/npm.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/async await.md",
-    "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
