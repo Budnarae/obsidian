@@ -3,8 +3,6 @@
 
 #42Seoul #ft_transcendence
 
-*authentication*
-
 ---
 
 # 개요
