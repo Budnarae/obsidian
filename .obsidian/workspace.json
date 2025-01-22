@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md",
-                "mode": "preview",
+                "file": "resource/Web/CSS/그리드.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "CSS3 스타일 속성 기본"
+              "title": "그리드"
             }
           },
           {
@@ -201,10 +201,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md"
+                "file": "resource/Web/CSS/그리드.md"
               },
               "icon": "lucide-list",
-              "title": "CSS3 스타일 속성 기본 개요"
+              "title": "그리드 개요"
             }
           },
           {
@@ -249,8 +249,8 @@
   },
   "active": "1a7a79beccae1e43",
   "lastOpenFiles": [
-    "resource/Web/CSS/그리드.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+    "resource/Web/CSS/그리드.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
