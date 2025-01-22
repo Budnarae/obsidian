@@ -38,6 +38,21 @@
             }
           },
           {
+            "id": "5819cdbff959a89c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "CSS3 스타일 속성 기본"
+            }
+          },
+          {
             "id": "1a7a79beccae1e43",
             "type": "leaf",
             "state": {
@@ -83,7 +98,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,10 +216,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md"
+                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md"
               },
               "icon": "lucide-list",
-              "title": "HTML 태그, 요소 그리고 속성 개요"
+              "title": "CSS3 스타일 속성 기본 개요"
             }
           },
           {
@@ -247,11 +262,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "02b62761dfa1c897",
+  "active": "5819cdbff959a89c",
   "lastOpenFiles": [
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/CSS/그리드.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
