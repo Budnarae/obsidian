@@ -38,18 +38,6 @@
             }
           },
           {
-            "id": "5819cdbff959a89c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "페이지 흐름도.excalidraw"
-            }
-          },
-          {
             "id": "1a7a79beccae1e43",
             "type": "leaf",
             "state": {
@@ -95,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,10 +201,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md"
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md"
               },
               "icon": "lucide-list",
-              "title": "페이지 흐름도.excalidraw 개요"
+              "title": "HTML 태그, 요소 그리고 속성 개요"
             }
           },
           {
@@ -259,11 +247,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5819cdbff959a89c",
+  "active": "02b62761dfa1c897",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
-    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
