@@ -82,8 +82,7 @@
               "title": "모듈"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JWT.md"
+                "file": "resource/Web/JavaScript/JavaScript 기초.md"
               },
               "icon": "lucide-list",
-              "title": "JWT 개요"
+              "title": "JavaScript 기초 개요"
             }
           },
           {
@@ -247,8 +246,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "02b62761dfa1c897",
+  "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
@@ -267,7 +267,6 @@
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "Excalidraw",
     "resource/Web/2FA.md",
-    "resource/Web/JWT.md",
     "resource/Security/암호학/양방향 암호화.md",
     "resource/Security/암호학/암호학.md",
     "resource/Security/암호학/단방향 암호화.md",
