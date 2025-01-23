@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md",
+                "file": "resource/Web/JavaScript/모듈.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript 기초"
+              "title": "모듈"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md"
+                "file": "resource/Web/JavaScript/모듈.md"
               },
               "icon": "lucide-list",
-              "title": "JavaScript 기초 개요"
+              "title": "모듈 개요"
             }
           },
           {
@@ -248,10 +248,10 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
