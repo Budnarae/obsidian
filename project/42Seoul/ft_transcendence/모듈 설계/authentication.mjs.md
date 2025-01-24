@@ -20,6 +20,6 @@
 
 # FtOauth
 
-- static isAlreadyAuth(url) : 현재 url에 code가 포함되어 있으면 code를, 그렇지 않으면 undefined를 반환한다.
+- static isAlreadyAuth() : 현재 url에 code가 포함되어 있으면 code를, 그렇지 않으면 undefined를 반환한다.
 - static getFtOauthUrl : 42 인증 페이지로의 url을 반환한다. url을 조합하기 위한 요소들은 .env 파일에서 `process.env.envVariable` 형식으로 가져온다.
 
