@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/async await.md",
+                "file": "resource/Web/JavaScript/fetch.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "async await"
+              "title": "fetch"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/async await.md"
+                "file": "resource/Web/JavaScript/fetch.md"
               },
               "icon": "lucide-list",
-              "title": "async await 개요"
+              "title": "fetch 개요"
             }
           },
           {
@@ -249,10 +249,12 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/fetch.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/모듈.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
@@ -284,8 +286,6 @@
     "resource/Security/암호학",
     "resource/보안/무제 폴더",
     "resource/Security",
-    "resource/Database/데이터베이스.md",
-    "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
