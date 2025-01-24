@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/프로미스.md",
+                "file": "resource/Web/JavaScript/async await.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "프로미스"
+              "title": "async await"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/프로미스.md"
+                "file": "resource/Web/JavaScript/async await.md"
               },
               "icon": "lucide-list",
-              "title": "프로미스 개요"
+              "title": "async await 개요"
             }
           },
           {
@@ -249,6 +249,8 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/Ajax.md",
+    "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JWT.md",
@@ -284,8 +286,6 @@
     "resource/Security",
     "resource/Database/데이터베이스.md",
     "resource/Web/JavaScript/REST API.md",
-    "resource/Web/JavaScript/XMLHttpRequest.md",
-    "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
