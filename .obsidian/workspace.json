@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/모듈.md",
+                "file": "resource/Web/JavaScript/프로미스.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "모듈"
+              "title": "프로미스"
             }
           },
           {
@@ -200,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/모듈.md"
+                "file": "resource/Web/JavaScript/프로미스.md"
               },
               "icon": "lucide-list",
-              "title": "모듈 개요"
+              "title": "프로미스 개요"
             }
           },
           {
@@ -231,7 +231,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,6 +249,7 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
@@ -258,7 +260,6 @@
     "resource/Web/CSS/그리드.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
-    "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
