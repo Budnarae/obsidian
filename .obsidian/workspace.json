@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md",
-                "mode": "preview",
+                "file": "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript 기초"
+              "title": "참고할만한 패키지들"
             }
           },
           {
@@ -249,17 +249,18 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/jwt module flow.md",
+    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/async await.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
@@ -282,7 +283,6 @@
     "재료/img/컨테이너/컨테이너의 구조.png",
     "재료/img/도커.zip",
     "resource/Docker.zip",
-    "resource/Database/MySQL.md",
     "resource/Security/암호학",
     "resource/보안/무제 폴더",
     "resource/Security",
