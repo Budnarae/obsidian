@@ -13,13 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+                "file": "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "참고할만한 패키지들"
+              "title": "authentication.mjs"
+            }
+          },
+          {
+            "id": "3678a421a7ca45f7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "project/42Seoul/ft_transcendence/jwt.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "jwt.excalidraw"
             }
           },
           {
@@ -82,7 +94,8 @@
               "title": "모듈"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -247,12 +260,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9ab269d935c9e14d",
+  "active": "3678a421a7ca45f7",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/jwt module flow.md",
-    "project/42Seoul/ft_transcendence/페이지 흐름도.excalidraw.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
+    "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
+    "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
+    "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
+    "project/42Seoul/ft_transcendence/jwt module flow.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/async await.md",
@@ -261,22 +280,16 @@
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JWT.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
-    "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/그리드.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
-    "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
-    "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "Excalidraw",
     "resource/Web/2FA.md",
     "resource/Security/암호학/양방향 암호화.md",
     "resource/Security/암호학/암호학.md",
-    "resource/Security/암호학/단방향 암호화.md",
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/도커/윈도우에서의 도커의 구조.png",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
