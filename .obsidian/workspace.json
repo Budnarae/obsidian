@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/XMLHttpRequest.md",
+                "file": "resource/Web/JavaScript/JSON.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "XMLHttpRequest"
+              "title": "JSON"
             }
           },
           {
@@ -265,6 +265,7 @@
   },
   "active": "3678a421a7ca45f7",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
@@ -292,7 +293,6 @@
     "Excalidraw",
     "resource/Web/2FA.md",
     "resource/Security/암호학/양방향 암호화.md",
-    "resource/Security/암호학/암호학.md",
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/도커/윈도우에서의 도커의 구조.png",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
