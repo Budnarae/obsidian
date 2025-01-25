@@ -11,15 +11,12 @@
             "id": "9ab269d935c9e14d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
+                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "authentication.mjs"
+              "icon": "excalidraw-icon",
+              "title": "page flow.excalidraw"
             }
           },
           {
@@ -97,8 +94,7 @@
               "title": "모듈"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,14 +259,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3678a421a7ca45f7",
+  "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
+    "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
@@ -286,7 +283,6 @@
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/그리드.md",
-    "resource/Web/JavaScript/JSON.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
