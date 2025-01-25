@@ -26,12 +26,15 @@
             "id": "3678a421a7ca45f7",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/jwt.excalidraw.md"
+                "file": "resource/Web/JavaScript/fetch.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               },
-              "icon": "excalidraw-icon",
-              "title": "jwt.excalidraw"
+              "icon": "lucide-file",
+              "title": "fetch"
             }
           },
           {
@@ -262,8 +265,8 @@
   },
   "active": "3678a421a7ca45f7",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
