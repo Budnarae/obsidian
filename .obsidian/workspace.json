@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
-                "mode": "preview",
+                "file": "project/42Seoul/ft_transcendence/참고할만한 것들.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "fetch"
+              "title": "참고할만한 것들"
             }
           },
           {
@@ -264,16 +264,16 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/async await.md",
-    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
-    "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
+    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
     "project/42Seoul/ft_transcendence/jwt module flow.md",
