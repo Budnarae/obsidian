@@ -11,12 +11,15 @@
             "id": "9ab269d935c9e14d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.md"
+                "file": "resource/Web/JavaScript/fetch.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               },
-              "icon": "excalidraw-icon",
-              "title": "page flow.excalidraw"
+              "icon": "lucide-file",
+              "title": "fetch"
             }
           },
           {
@@ -150,8 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -262,13 +264,13 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
     "resource/Web/JavaScript/async await.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "project/42Seoul/ft_transcendence/참고할만한 패키지들.md",
