@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/참고할만한 것들.md",
+                "file": "resource/Web/JavaScript/fetch.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "참고할만한 것들"
+              "title": "fetch"
             }
           },
           {
@@ -264,6 +264,7 @@
   },
   "active": "9ab269d935c9e14d",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
@@ -273,7 +274,6 @@
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
-    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
     "project/42Seoul/ft_transcendence/jwt module flow.md",
