@@ -4,97 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d3428080bae44967",
+        "id": "02e146ac0852e8d9",
         "type": "tabs",
         "children": [
           {
-            "id": "9ab269d935c9e14d",
+            "id": "b5f094793cfbe352",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
+                "file": "project/42Seoul/ft_transcendence/참고할만한 것들.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "fetch"
-            }
-          },
-          {
-            "id": "3678a421a7ca45f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Web/JavaScript/JSON.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "JSON"
-            }
-          },
-          {
-            "id": "02b62761dfa1c897",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Web/JWT.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "JWT"
-            }
-          },
-          {
-            "id": "1a7a79beccae1e43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Web/CSS/그리드.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "그리드"
-            }
-          },
-          {
-            "id": "5fc1ac41e49bcc58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "page.mjs"
-            }
-          },
-          {
-            "id": "c0042578299b06aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Web/JavaScript/모듈.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "모듈"
+              "title": "참고할만한 것들"
             }
           }
         ]
@@ -262,10 +187,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9ab269d935c9e14d",
+  "active": "b5f094793cfbe352",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "resource/Web/JavaScript/fetch.md",
+    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/JSON.md",
