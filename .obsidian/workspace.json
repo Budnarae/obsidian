@@ -11,12 +11,15 @@
             "id": "b5f094793cfbe352",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.png"
+                "file": "resource/Web/JavaScript/fetch.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "page flow.excalidraw"
+              "icon": "lucide-file",
+              "title": "fetch"
             }
           }
         ]
@@ -75,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -186,8 +190,8 @@
   },
   "active": "b5f094793cfbe352",
   "lastOpenFiles": [
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
