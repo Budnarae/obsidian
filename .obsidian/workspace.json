@@ -11,15 +11,12 @@
             "id": "b5f094793cfbe352",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "fetch"
+              "icon": "excalidraw-icon",
+              "title": "page flow.excalidraw"
             }
           }
         ]
@@ -191,9 +188,9 @@
   "active": "b5f094793cfbe352",
   "lastOpenFiles": [
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
+    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
-    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
