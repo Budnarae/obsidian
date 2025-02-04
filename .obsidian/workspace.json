@@ -34,8 +34,7 @@
               "title": "JavaScript 기초"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md",
+                "file": "project/42Seoul/ft_transcendence/socket io flow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JavaScript 기초 의 개요"
+              "title": "socket io flow 의 개요"
             }
           },
           {
@@ -204,8 +203,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f71dbe6274722c21",
+  "active": "865971b01334cf30",
   "lastOpenFiles": [
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/fetch.md",
@@ -214,7 +214,6 @@
     "2025-02-04 프론트 브리핑.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/REST API.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
