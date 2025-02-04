@@ -30,21 +30,9 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2025-02-04 18.13.47.excalidraw"
             }
-          },
-          {
-            "id": "f71dbe6274722c21",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-02-04 18.13.47.excalidraw"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,11 +201,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f71dbe6274722c21",
+  "active": "797995a365af6651",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
     "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/fetch.md",
