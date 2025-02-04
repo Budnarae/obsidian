@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "797995a365af6651",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-02-04 18.13.47.excalidraw"
+            }
+          },
+          {
             "id": "f71dbe6274722c21",
             "type": "leaf",
             "state": {
@@ -34,7 +46,8 @@
               "title": "JavaScript 기초"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -153,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/socket io flow.md",
+                "file": "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "socket io flow 의 개요"
+              "title": "Drawing 2025-02-04 18.13.47.excalidraw 의 개요"
             }
           },
           {
@@ -187,7 +201,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,10 +217,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "865971b01334cf30",
+  "active": "797995a365af6651",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
+    "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
@@ -230,7 +246,6 @@
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/그리드.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
     "재료/img/도커/도커의 구조.jpeg",
