@@ -4,22 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d85c0d766ecb41b2",
+        "id": "df1a1d04b0ec1979",
         "type": "tabs",
         "children": [
           {
-            "id": "1b5c11788e3394df",
+            "id": "865971b01334cf30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "file": "project/42Seoul/ft_transcendence/socket io flow.md"
               },
-              "icon": "lucide-file",
-              "title": "fetch"
+              "icon": "excalidraw-icon",
+              "title": "socket io flow"
             }
           }
         ]
@@ -141,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/fetch.md",
+                "file": "project/42Seoul/ft_transcendence/socket io flow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "fetch 의 개요"
+              "title": "socket io flow 의 개요"
             }
           },
           {
@@ -190,16 +187,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1b5c11788e3394df",
+  "active": "865971b01334cf30",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "project/42Seoul/ft_transcendence/socket io flow.md",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
+    "2025-02-04 프론트 브리핑.md",
+    "resource/Web/JavaScript/fetch.md",
     "resource/Web/JavaScript/JSON.md",
     "resource/Web/JavaScript/REST API.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
-    "2025-02-04 프론트 브리핑.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
-    "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md",
-    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/XMLHttpRequest.md",
