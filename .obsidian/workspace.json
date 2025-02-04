@@ -20,15 +20,15 @@
             }
           },
           {
-            "id": "9fb3edf12ee14bbd",
+            "id": "c5db718d424a7ba1",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "excalidraw",
               "state": {
-                "currentVersion": "1.8.4"
+                "file": "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-02-04 11.05.38.excalidraw"
             }
           }
         ],
@@ -198,11 +198,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9fb3edf12ee14bbd",
+  "active": "c5db718d424a7ba1",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "resource/Web/JavaScript/fetch.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "resource/Web/JavaScript/JSON.md",
