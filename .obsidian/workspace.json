@@ -11,12 +11,15 @@
             "id": "865971b01334cf30",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/socket io flow.md"
+                "file": "resource/Web/JavaScript/디스트럭처링.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "socket io flow"
+              "icon": "lucide-file",
+              "title": "디스트럭처링"
             }
           }
         ]
@@ -76,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -139,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/socket io flow.md",
+                "file": "resource/Web/JavaScript/디스트럭처링.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "socket io flow 의 개요"
+              "title": "디스트럭처링 의 개요"
             }
           },
           {
@@ -191,8 +193,8 @@
   },
   "active": "865971b01334cf30",
   "lastOpenFiles": [
-    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
+    "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "2025-02-04 프론트 브리핑.md",
