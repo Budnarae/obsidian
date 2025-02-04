@@ -11,12 +11,15 @@
             "id": "1b5c11788e3394df",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.md"
+                "file": "resource/Web/JavaScript/JavaScript 기초.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "page flow.excalidraw"
+              "icon": "lucide-file",
+              "title": "JavaScript 기초"
             }
           }
         ]
@@ -138,10 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/JavaScript/JavaScript 기초.md"
+                "file": "resource/Web/JavaScript/JavaScript 기초.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JavaScript 기초 개요"
+              "title": "JavaScript 기초 의 개요"
             }
           },
           {
@@ -169,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,8 +192,8 @@
   },
   "active": "1b5c11788e3394df",
   "lastOpenFiles": [
-    "2025-02-04 프론트 브리핑.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "2025-02-04 프론트 브리핑.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md",
     "resource/Web/JavaScript/fetch.md",
