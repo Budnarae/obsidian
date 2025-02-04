@@ -4,35 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "02e146ac0852e8d9",
+        "id": "d85c0d766ecb41b2",
         "type": "tabs",
         "children": [
           {
-            "id": "b5f094793cfbe352",
+            "id": "1b5c11788e3394df",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/page flow.excalidraw.md"
+                "file": "2025-02-04 프론트 브리핑.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "page flow.excalidraw"
-            }
-          },
-          {
-            "id": "c5db718d424a7ba1",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-02-04 11.05.38.excalidraw"
+              "icon": "lucide-file",
+              "title": "2025-02-04 프론트 브리핑"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -51,7 +41,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -88,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -198,11 +188,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c5db718d424a7ba1",
+  "active": "1b5c11788e3394df",
   "lastOpenFiles": [
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
-    "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
+    "2025-02-04 프론트 브리핑.md",
+    "Excalidraw/Drawing 2025-02-04 11.05.38.excalidraw.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
@@ -225,10 +216,8 @@
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/CSS/그리드.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.excalidraw.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/security.excalidraw.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
-    "resource/Web/2FA.md",
     "재료/img/도커/도커의 구조.jpeg",
     "재료/img/도커/윈도우에서의 도커의 구조.png",
     "재료/img/도커 네트워크/도커 네트워크 구조.png",
