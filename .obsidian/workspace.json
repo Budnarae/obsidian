@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "file": "project/42Seoul/inception/NGINX.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "HTML 태그, 요소 그리고 속성"
+              "title": "NGINX"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nginx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -141,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "file": "project/42Seoul/inception/NGINX.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": "입력"
               },
               "icon": "lucide-list",
-              "title": "HTML 태그, 요소 그리고 속성 의 개요"
+              "title": "NGINX 의 개요"
             }
           },
           {
@@ -192,6 +193,7 @@
   },
   "active": "d747e6a16214e783",
   "lastOpenFiles": [
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
@@ -218,7 +220,6 @@
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JWT.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
     "재료/img/도커/도커의 구조.jpeg",
