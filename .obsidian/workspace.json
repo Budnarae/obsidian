@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/inception/NGINX.md",
+                "file": "resource/Web/JavaScript/fetch.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "NGINX"
+              "title": "fetch"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nginx",
+                "query": "fetch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/inception/NGINX.md",
+                "file": "resource/Web/JavaScript/fetch.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": "입력"
               },
               "icon": "lucide-list",
-              "title": "NGINX 의 개요"
+              "title": "fetch 의 개요"
             }
           },
           {
@@ -193,6 +193,7 @@
   },
   "active": "d747e6a16214e783",
   "lastOpenFiles": [
+    "project/42Seoul/inception/NGINX.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
@@ -219,7 +220,6 @@
     "resource/Web/JavaScript/Ajax.md",
     "resource/Web/JavaScript/프로미스.md",
     "resource/Web/JavaScript/모듈.md",
-    "resource/Web/JWT.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
     "재료/img/도커/도커의 구조.jpeg",
