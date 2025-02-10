@@ -11,12 +11,15 @@
             "id": "d747e6a16214e783",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/socket io flow.md"
+                "file": "resource/Web/JavaScript/프로미스.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "socket io flow"
+              "icon": "lucide-file",
+              "title": "프로미스"
             }
           }
         ]
@@ -76,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/ft_transcendence/socket io flow.md",
+                "file": "resource/Web/JavaScript/프로미스.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": "입력"
               },
               "icon": "lucide-list",
-              "title": "socket io flow 의 개요"
+              "title": "프로미스 의 개요"
             }
           },
           {
@@ -172,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,13 +194,13 @@
   },
   "active": "d747e6a16214e783",
   "lastOpenFiles": [
+    "project/42Seoul/ft_transcendence/socket io flow.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
     "resource/Web/JavaScript/fetch.md",
     "project/42Seoul/inception/NGINX.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/JavaScript/JavaScript 기초.md",
-    "project/42Seoul/ft_transcendence/socket io flow.md",
     "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
     "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
     "resource/Web/JavaScript/디스트럭처링.md",
