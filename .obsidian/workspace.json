@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/CSS/그리드.md",
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "그리드"
+              "title": "HTML 태그, 요소 그리고 속성"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/CSS/그리드.md",
+                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "그리드 의 개요"
+              "title": "HTML 태그, 요소 그리고 속성 의 개요"
             }
           },
           {
@@ -192,9 +192,10 @@
   },
   "active": "d747e6a16214e783",
   "lastOpenFiles": [
-    "resource/Web/CSS/CSS 선택자.md",
-    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/HTML/HTML.md",
+    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
+    "resource/Web/CSS/CSS 선택자.md",
+    "resource/Web/CSS/그리드.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/JavaScript/프로미스.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
@@ -218,7 +219,6 @@
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "project/42Seoul/ft_transcendence/ft_transcendence.pdf 번역본.md",
     "project/42Seoul/ft_transcendence/ft_transcendence 개요.md",
-    "project/42Seoul/ft_transcendence/jwt module flow.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
     "재료/img/도커/도커의 구조.jpeg",
