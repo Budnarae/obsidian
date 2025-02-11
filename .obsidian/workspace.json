@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/CSS/그리드.md",
+                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "그리드"
+              "title": "CSS3 스타일 속성 기본"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/CSS/그리드.md",
+                "file": "resource/Web/CSS/CSS3 스타일 속성 기본.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "그리드 의 개요"
+              "title": "CSS3 스타일 속성 기본 의 개요"
             }
           },
           {
@@ -192,11 +192,11 @@
   },
   "active": "d747e6a16214e783",
   "lastOpenFiles": [
+    "resource/Web/CSS/그리드.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "resource/Web/CSS/CSS 선택자.md",
-    "resource/Web/CSS/그리드.md",
     "resource/Web/JavaScript/프로미스.md",
     "project/42Seoul/ft_transcendence/socket io flow.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
