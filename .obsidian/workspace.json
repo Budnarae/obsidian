@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Security/암호학/양방향 암호화.md",
+                "file": "resource/Web/JWT.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "양방향 암호화"
+              "title": "JWT"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Security/암호학/양방향 암호화.md",
+                "file": "resource/Web/JWT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "양방향 암호화 의 개요"
+              "title": "JWT 의 개요"
             }
           },
           {
@@ -208,8 +208,8 @@
   },
   "active": "b7ecd3d38d6b18bd",
   "lastOpenFiles": [
-    "resource/Security/암호학/단방향 암호화.md",
     "resource/Security/암호학/양방향 암호화.md",
+    "resource/Security/암호학/단방향 암호화.md",
     "resource/Security/암호학/암호학.md",
     "resource/Web/JWT.md",
     "resource/Web/CSS/CSS 선택자.md",
