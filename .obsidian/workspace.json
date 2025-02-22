@@ -4,37 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "42a81c5fecd4abc3",
+        "id": "b14267ac11bbadf1",
         "type": "tabs",
         "children": [
           {
-            "id": "b7ecd3d38d6b18bd",
+            "id": "e5a67516799a31a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/CSS/CSS 선택자.md",
+                "file": "resource/Web/WWW.md",
                 "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "backlinks": false,
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "CSS 선택자"
-            }
-          },
-          {
-            "id": "e75f9baf784d25b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Security/암호학/양방향 암호화.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "양방향 암호화"
+              "title": "WWW"
             }
           }
         ]
@@ -56,8 +41,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fetch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,13 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/inception/NGINX.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "resource/Web/HTML/HTML.md"
               },
               "icon": "lucide-list",
-              "title": "NGINX 의 개요"
+              "title": "HTML 개요"
             }
           },
           {
@@ -171,22 +152,12 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "dbe23c542e5b1e11",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -195,66 +166,66 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
+      "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b7ecd3d38d6b18bd",
+  "active": "e5a67516799a31a0",
   "lastOpenFiles": [
-    "project/42Seoul/inception/NGINX.md",
-    "project/42Seoul/inception/php-fpm.md",
-    "area/참고도서.md",
-    "archive/tmp.md",
-    "resource/Web/2FA.md",
     "resource/Web/JWT.md",
+    "resource/Web/2FA.md",
     "resource/Security/암호학/양방향 암호화.md",
     "resource/Security/암호학/단방향 암호화.md",
-    "resource/Security/암호학/암호학.md",
     "resource/Web/CSS/CSS 선택자.md",
-    "resource/Web/CSS/CSS3 스타일 속성 기본.md",
-    "resource/Web/CSS/그리드.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "resource/Web/HTML/HTML.md",
+    "재료/template/js 문서 임시 템플릿.md",
     "resource/Web/JavaScript/프로미스.md",
-    "project/42Seoul/ft_transcendence/socket io flow.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
-    "resource/Web/JavaScript/fetch.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
-    "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
-    "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
+    "resource/Web/JavaScript/제너레이터.md",
+    "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/디스트럭처링.md",
-    "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
-    "2025-02-04 프론트 브리핑.md",
-    "resource/Web/JavaScript/JSON.md",
+    "resource/Web/JavaScript/npm.md",
+    "resource/Web/JavaScript/fetch.md",
+    "resource/Web/JavaScript/async await.md",
+    "resource/Web/JavaScript/XMLHttpRequest.md",
+    "resource/Web/JavaScript/TDZ.md",
     "resource/Web/JavaScript/REST API.md",
+    "resource/Web/JavaScript/JavaScript 기초.md",
+    "resource/Web/JavaScript/JSON.md",
+    "resource/Web/JavaScript/Ajax.md",
+    "resource/Web/JavaScript",
+    "resource/Web/CSS/그리드.md",
+    "resource/Security/암호학/암호학.md",
+    "resource/Security/암호학",
+    "resource/Security",
+    "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
+    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
+    "project/42Seoul/ft_transcendence/socket io flow.md",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "project/42Seoul/ft_transcendence",
     "Excalidraw",
-    "재료/img/도커/도커의 구조.jpeg",
-    "재료/img/도커/윈도우에서의 도커의 구조.png",
-    "재료/img/도커 네트워크/도커 네트워크 구조.png",
-    "재료/img/컨테이너/컨테이너의 구조.png",
-    "재료/img/도커.zip",
-    "resource/Docker.zip",
-    "resource/Security/암호학",
-    "resource/보안/무제 폴더",
-    "resource/Security",
-    "resource/Web/JavaScript",
     "resource/Web/CSS",
     "resource/Web",
+    "resource/Web/HTML",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
+    "재료/img/멀티 프로세스 기반 서버",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(12).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(11).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(10).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(9).png",
+    "재료/img/다중 접속 서버 구현 방식_files/image(8).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
