@@ -337,4 +337,12 @@ sudo apt install docker
 
 _웹 프로그래밍 기초_
 
-다음의 스택을 사용하여 플레이어드
+플레이어들이 서로 ping pong 게임을 즐길 수 있는 웹페이지를 만드는 과제
+다음의 스택을 사용한다.
+
+- 프론트엔드 : **pure vanila javascript**, html, css, bootstrap, socket.io, three.js
+- 백엔드 : Django
+
+과제를 테스트하기 위해서는 `backend` 경로로 이동하여 `sudo make`하고 호스트에서 chrome을 사용하여 `https://localhost`로 접속하면 된다.
+
+`sudo make fclean`으로 자
