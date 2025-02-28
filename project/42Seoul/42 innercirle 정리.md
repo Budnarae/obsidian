@@ -44,7 +44,7 @@ VirtualBox를 사용하여 linux 가상 환경을 띄운 후, 그 환경에서 �
 
 # pipex
 
-_멀티 프로세싱, 파이프라인_
+_멀티 프로세싱, 프로세스 간 통신_
 
 **fork, pipe 시스템 콜**을 활용하여 쉘의 **파이프** 기능을 구현해보는 과제
 
@@ -220,3 +220,20 @@ sudo apt-get update && sudo apt-get install xorg libxext-dev zlib1g-dev libbsd-d
 - space : 투영법 변환(등각 투영 <-> 캐비넷 투영)
 - esc : 나가기
 
+# minishell
+
+_파일 입출력, 멀티 프로세스, 시그널 심화_
+
+제한된 기능의 **bash shell**을 구현하는 과제
+
+minishell 실행 파일은 `readline` 라이브러리에 의존성을 가지므로 아래의 명령어를 실행시킨 후 실행시켜야 한다.
+
+```shell
+
+sudo apt-get install libreadline-dev
+
+```
+
+microshell은 아래와 같은 기능을 가지고 있다.
+
+- 히스토리 저장 : 위, 아래 화살표를 이용해 
