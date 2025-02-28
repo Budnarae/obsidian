@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/42Seoul/42 innercirle 정리.md",
+                "file": "project/42Seoul/42 innercircle 정리/42 innercirle 정리.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
@@ -206,11 +206,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b7ecd3d38d6b18bd",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "project/42Seoul/무제.md",
+    "project/42Seoul/42 innercircle 정리",
+    "project/42Seoul/42 innercircle 정리/42 innercirle 정리.md",
     "재료/img/42 innercircle 정리/FdF.png",
     "재료/img/42 innercircle 정리/FDF.pdf",
-    "project/42Seoul/42 innercirle 정리.md",
     "재료/img/42 innercircle 정리",
     "resource/Linux/cmd/ssh.md",
     "conflict-files-obsidian-git.md",
@@ -235,7 +237,6 @@
     "resource/Web/JavaScript/JavaScript 기초.md",
     "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
     "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
-    "resource/Web/JavaScript/디스트럭처링.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
@@ -248,13 +249,11 @@
     "resource/Security/암호학",
     "resource/보안/무제 폴더",
     "resource/Security",
-    "resource/Web/JavaScript",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(13).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"

@@ -146,7 +146,7 @@ pa
 
 ```
 
-다음의 [링크](https://windowdong11.github.io/push_swap_visualizer/)를 활용하면 push_swap의 동작을 시각적으로 확인할 수 있다. 단, 이 저장소를 사용하는 사람들은 WSL 환경에서 push_swap을 실행시킬 것이므로 `push_swap [뒤섞인 숫자 나열] | clip`, `push_swap [뒤섞인 숫자 나열] | pbcopy`가 아닌 `push_swap [뒤섞인 숫자 나열] | xclip -selection clipboard`를 사용해야 한다.
+[push swap visualizer](https://windowdong11.github.io/push_swap_visualizer/)를 활용하면 push_swap의 동작을 시각적으로 확인할 수 있다. 단, 이 저장소를 사용하는 사람들은 WSL 환경에서 push_swap을 실행시킬 것이므로 `push_swap [뒤섞인 숫자 나열] | clip`, `push_swap [뒤섞인 숫자 나열] | pbcopy`가 아닌 `push_swap [뒤섞인 숫자 나열] | xclip -selection clipboard`를 사용해야 한다.
 
 # FdF
 
@@ -270,4 +270,7 @@ _멀티 스레드_
 
 ```
 
-`philo_bonus` 실행 파일은 멀티 스레드 대신 **멀티 프로세스, 세마포어**를 사용하여 구현한 철학자 ㅁ
+`philo_bonus` 실행 파일은 멀티 스레드 대신 **멀티 프로세스, 세마포어**를 사용하여 구현한 철학자 모델이다.
+
+phlio 또는 philo_bonus 파일의 실행결과를 [philosopher visualizer](https://nafuka11.github.io/philosophers-visualizer/)에 붙여넣기 하면 보다 시각적으로 결과를 확인할 수 있다.
+
