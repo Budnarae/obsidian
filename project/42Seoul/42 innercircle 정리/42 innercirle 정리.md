@@ -317,6 +317,25 @@ _C++ 기초_
 - 모듈 8 : Templated containers, iterators, algorithms
 - 모듈 9 : STL
 
+# ft_irc
+
+_socket programming_
+
+C++ 언어를 사용하여 **irc 서버**를 만드는 과제이다.
+irc란, **채팅 서버**를 만들기 위한 프로토콜이다.
+
+클라이언트와 통신하는 기능을 만들기 위해 **소켓 프로그래밍 socket programming**을, 정해진 프로토콜 대로 서버를 만들기 위해 **rfc 문서**를 보는 방법을 배우게 된다.
+
+`nc(netcat)` 같은 간단한 클라이언트 프로그램으로도 서버를 테스트할 수 있지만, 너무 빡세므로 제대로 된 irc 클라이언트를 설치하여 테스트하는 것을 권장한다.
+
+```shell
+
+sudo apt install irssi
+
+```
+
+그리고 먼저 서버를 실행시킨다
+
 # Inception
 
 _Docker_
@@ -345,4 +364,4 @@ _웹 프로그래밍 기초_
 
 과제를 테스트하기 위해서는 `backend` 경로로 이동하여 `sudo make`하고 호스트에서 chrome을 사용하여 `https://localhost`로 접속하면 된다.
 
-`sudo make fclean`으로 자
+`sudo make fclean`으로 MSA를 내릴 수 있다.
