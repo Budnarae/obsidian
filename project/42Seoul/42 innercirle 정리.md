@@ -15,7 +15,18 @@ strlcpy, strlcat 같은 c 라이브러리의 함수들을 직접 구현해보는
 
 _파일 입출력, static 변수_
 
-파일 디스크립터가 가리키는 파일로부터 데이터를 **한 줄**씩 추출하여 반환하는 기능을 가진 ㅏㅁ수를 만드는 함수. 이 때 `\n`, `EOF`
+다음의 기능과 형식을 가진 `get_next_line`이라는 함수를 만드는 과제
+
+```c
+
+// 입력값 : 파일 디스크립터
+// 반환값 : 파일로부터 문장 하나를 추출하여 반환.
+// n번째로 get_next_line을 호출하면 파일의 n번째 문장을 반환한다.
+char *get_next_line(int fd);
+
+```
+
+`/42_innercircle_course/get_next_line/` 경로의 tester 파일을 실행시키면 `get_next_line`의 동작을 확인할 수 있다.
 
 # ft_printf
 
