@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -209,8 +208,10 @@
   },
   "active": "b7ecd3d38d6b18bd",
   "lastOpenFiles": [
-    "resource/Linux/cmd/ssh.md",
+    "재료/img/42 innercircle 정리/FDF.pdf",
     "project/42Seoul/42 innercirle 정리.md",
+    "재료/img/42 innercircle 정리",
+    "resource/Linux/cmd/ssh.md",
     "conflict-files-obsidian-git.md",
     "resource/Web/CSS/CSS 선택자.md",
     "project/42Seoul/inception/NGINX.md",
@@ -235,7 +236,6 @@
     "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
     "resource/Web/JavaScript/디스트럭처링.md",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
-    "2025-02-04 프론트 브리핑.md",
     "project/42Seoul/ft_transcendence/모듈 설계",
     "Excalidraw",
     "재료/img/도커/도커의 구조.jpeg",
@@ -248,8 +248,6 @@
     "resource/보안/무제 폴더",
     "resource/Security",
     "resource/Web/JavaScript",
-    "resource/Web/CSS",
-    "resource/Web",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
