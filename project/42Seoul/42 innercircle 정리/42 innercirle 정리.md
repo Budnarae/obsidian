@@ -379,7 +379,7 @@ sudo apt install docker
 
 ```
 
-`sudo make build`로 MSA를 올릴 수 있고 `sudo make fclean`으로 내릴 수 있다.
+`sudo make build`로 MSA를 올릴 수 있고 호스트에서 `https://localhost`로 접속할 수 있다. `sudo make fclean`으로 MSA를 내릴 수 있다.
 
 # ft_transcendence
 
