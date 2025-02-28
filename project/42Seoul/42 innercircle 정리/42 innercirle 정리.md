@@ -274,3 +274,10 @@ _멀티 스레드_
 
 phlio 또는 philo_bonus 파일의 실행결과를 [philosopher visualizer](https://nafuka11.github.io/philosophers-visualizer/)에 붙여넣기 하면 보다 시각적으로 결과를 확인할 수 있다.
 
+# mimiRT
+
+_ray tracing_
+
+**phong lighting model**을 구현하는 과제이다.
+
+**minirt** 실행 파일은 **환경광(ambient lighting), 카메라, 광원, 구체, 평면, 원기둥** 정보가 담겨 있는 .rt 파일을 파싱하여 3차원으로 자
