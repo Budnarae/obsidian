@@ -48,6 +48,23 @@ _멀티 프로세싱_
 
 쉘의 **파이프** 기능을 구현해보는 과제
 
+```shell
+
+< infile ls -l | wc -l > outfile
+
+```
+
+과 같은 쉘의 파이프 기능을 아래와 같은 형식으로 구현한다.
+
+```shell
+
+./pipex infile "ls -l" "wc -l" outfile
+
+```
+
+2개 이상의 명령어를 이을 수도 있다.
+
+
 
 # push_swap
 
