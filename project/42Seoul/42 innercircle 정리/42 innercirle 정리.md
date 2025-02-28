@@ -5,6 +5,11 @@
 
 ---
 
+# 들어가기에 앞서
+
+1. 각 폴더마다 컴파일을 위한 Makefile이 존재하지만, 이미 make된 상태로 푸시하였으므로 별도로 Makefile을 실행시키지 않아도 됩니다.
+2. NetPractice, Born2beroot는 
+
 # Libft
 
 _C 기초_
@@ -358,7 +363,7 @@ sudo apt install irssi
 
 ```
 
-연결에 성공하였다면 
+연결에 성공하였다면 [rfc 2812](https://www.rfc-editor.org/rfc/rfc2812.html) 문서를 참고하여 irc 프로토콜의 다양한 명령어를 테스트하여보자.
 
 # Inception
 
