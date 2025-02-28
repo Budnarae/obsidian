@@ -172,7 +172,7 @@ cat 42.fdf
 
 ```
 
-아래의 예시와 같이 3차원의 형상으로 투사하는 과제이다.
+아래의 예시와 같이 3차원의 형상(wire frame이긴 하지만만)으로 투사하는 과제이다.
 
 ![[FdF.png]]
 
@@ -280,4 +280,19 @@ _ray tracing_
 
 **phong lighting model**을 구현하는 과제이다.
 
-**minirt** 실행 파일은 **환경광(ambient lighting), 카메라, 광원, 구체, 평면, 원기둥** 정보가 담겨 있는 .rt 파일을 파싱하여 3차원으로 자
+**miniRR** 실행 파일은 **환경광(ambient lighting), 카메라, 광원, 구체, 평면, 원기둥** 정보가 담겨 있는 .rt 파일을 파싱하여 3차원으로 렌더링할 수 있어야 한다. FdF의 wire frame 렌더링이 아닌, 보다 현실감 있는 3차원 렌더링으로 말이다.
+
+아래와 같이 사용한다.
+
+```shell
+
+./miniRT rtFileName.rt
+
+```
+
+예제 rt 파일은 `maps` 경로에 위치한다.
+
+# NetPractice
+
+_네트워크 기초_
+
