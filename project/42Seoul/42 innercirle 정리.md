@@ -32,7 +32,7 @@ char *get_next_line(int fd);
 
 _가변 인자_
 
-c 라이브러리의 `printf`의 기능을 제한적으로 구현하는 과제
+c 라이브러리의 `printf`의 기능을 제한적으로(type, flag, precision의 가짓수가 제한되어 있음) 구현하는 과제
 
 `/42_innercircle_course/ft_printf/` 경로의 `tester.c` 파일을 참조하여 tester 파일을 실행시키면 `ft_printf`의 동작을 확인할 수 있다.
 
