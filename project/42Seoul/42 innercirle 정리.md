@@ -178,7 +178,7 @@ cat 42.fdf
 
 map 파일의 숫자들은 다음과 같이 해석된다.
 
-- 숫자의 열 위치 : y축 좌표값
+- 숫자의 열 위치 : ㅌ축 좌표값
 - 숫자의 행 위치 : x축 좌표값
 - 숫자의 값 : z축 좌표값
 
@@ -204,6 +204,14 @@ sudo apt-get update && sudo apt-get install xorg libxext-dev zlib1g-dev libbsd-d
 
 - 위 화살표 : 확대
 - 아래 화살표 : 축소
+
 - A, D : y 축 회전
 - W, S : x 축 회전
 - Q, E : z 축 회전
+
+- I, K : x 축 이동
+- J, L :  y 축 이동
+- U, E : z 축 이동
+
+- space : 투영법 변환(등각 투영 <-> 캐비넷 투영)
+- esc : 나가기
