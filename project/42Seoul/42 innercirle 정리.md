@@ -26,7 +26,7 @@ char *get_next_line(int fd);
 
 ```
 
-`/42_innercircle_course/get_next_line/` 경로의 tester 파일을 실행시키면 `get_next_line`의 동작을 확인할 수 있다.
+`/42_innercircle_course/get_next_line/` 경로의  tester 파일을 실행시키면 `get_next_line`의 동작을 확인할 수 있다.
 
 # ft_printf
 
