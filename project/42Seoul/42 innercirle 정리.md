@@ -178,7 +178,9 @@ cat 42.fdf
 
 map 파일의 숫자들은 다음과 같이 해석된다.
 
-- 숫자의 
+- 숫자의 열 위치 : y축 좌표값
+- 숫자의 행 위치 : x축 좌표값
+- 숫자의 값 : z축 좌표값
 
 행렬을 통한 공간 변환, 브레젠험 알고리즘 같은 지식을 배우게 된다.
 
@@ -197,3 +199,11 @@ sudo apt-get update && sudo apt-get install xorg libxext-dev zlib1g-dev libbsd-d
 ./fdf ./test_maps/42.fdf
 
 ```
+
+창을 띄우는 데까지 성공했다면, 다음의 키들을 활용하여 추가 기능을 테스트할 수 있다.
+
+- 위 화살표 : 확대
+- 아래 화살표 : 축소
+- A, D : y 축 회전
+- W, S : x 축 회전
+- Q, E : z 축 회전
