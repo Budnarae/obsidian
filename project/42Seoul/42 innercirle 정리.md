@@ -32,7 +32,7 @@ char *get_next_line(int fd);
 
 _가변 인자_
 
-`VA_ARG`를 활용하여 c 라이브러리의 `printf`의 기능을 제한적으로(type, flag, precision의 가짓수가 제한되어 있음) 구현하는 과제
+**VA_ARG**를 활용하여 c 라이브러리의 `printf`의 기능을 제한적으로(type, flag, precision의 가짓수가 제한되어 있음) 구현하는 과제
 
 `/42_innercircle_course/ft_printf/` 경로의 `tester.c` 파일을 참조하여 tester 파일을 실행시키면 `ft_printf`의 동작을 확인할 수 있다.
 
@@ -46,7 +46,7 @@ VirtualBox를 사용하여 linux 가상 환경을 띄운 후, 그 환경에서 �
 
 _멀티 프로세싱_
 
-쉘의 **파이프** 기능을 구현해보는 과제
+**fork 시스템 콜**을 활용하여 쉘의 **파이프** 기능을 구현해보는 과제
 
 ```shell
 
@@ -146,7 +146,7 @@ pa
 
 ```
 
-다음의 [링크](https://windowdong11.github.io/push_swap_visualizer/)를 활용하면 push_swap의 동작을 시각적으로 확인할 수 있다.
+다음의 [링크](https://windowdong11.github.io/push_swap_visualizer/)를 활용하면 push_swap의 동작을 시각적으로 확인할 수 있다. 단, 이 저장소를 사용하는 사람들은 WSL 환경에서 push_swap을 실행시킬 것이므로 `push_swap [뒤섞인 숫자 나열] | clip`, `push_swap [뒤섞인 숫자 나열] | pbcopy`가 아닌 `push_swap [뒤섞인 숫자 나열] | xclip -selection clipboard`를 사용해야 한다.
 
 # FdF
 
