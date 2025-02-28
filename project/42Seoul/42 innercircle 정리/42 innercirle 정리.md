@@ -321,4 +321,20 @@ _C++ 기초_
 
 _Docker_
 
-**도커**를 사용하여 **MSA(micro service architecture)** 형식으로 wordpress 페이지를 띄우기 위한 
+**도커**를 사용하여 wordpress 페이지를 서비스하기 위한 **MSA(micro service architecture)**를 띄우는 과제.
+
+이 과제를 테스트하기 위해선 리눅스에 docker가 설치되어 있어야 한다.
+
+```shell
+
+sudo apt install docker
+
+```
+
+`sudo make build`로 MSA를 올릴 수 있고 `sudo make fclean`으로 내릴 수 있다.
+
+# ft_transcendence
+
+_웹 프로그래밍 기초_
+
+다음의 스택을 사용하여 플레이어드
