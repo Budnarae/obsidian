@@ -8,18 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1b2ed1bd857509a2",
+            "id": "e4842998e67b176e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "resource/Mathmetic/모듈러 산술.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
+                "currentVersion": "1.8.9"
               },
-              "icon": "lucide-file",
-              "title": "모듈러 산술"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
             }
           }
         ]
@@ -191,6 +188,46 @@
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
+  },
+  "floating": {
+    "id": "a55982d4c2647051",
+    "type": "floating",
+    "children": [
+      {
+        "id": "376a43bc4b60039a",
+        "type": "window",
+        "children": [
+          {
+            "id": "84abb3615b0ce8dd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1b2ed1bd857509a2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "resource/Mathmetic/모듈러 산술.md",
+                    "mode": "source",
+                    "source": true,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "모듈러 산술"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1486,
+        "y": 86,
+        "width": 602,
+        "height": 602,
+        "maximize": false,
+        "zoom": 1.5
+      }
+    ]
   },
   "active": "1b2ed1bd857509a2",
   "lastOpenFiles": [
