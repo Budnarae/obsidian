@@ -37,8 +37,7 @@
               "title": "리터럴"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,11 +194,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3a7772674e882bea",
+  "active": "dd07c2507d40c0f0",
   "lastOpenFiles": [
+    "resource/Language/C++/리터럴.md",
     "resource/Language/C++/자료형.md",
     "conflict-files-obsidian-git.md",
-    "resource/Language/C++/리터럴.md",
     "area/참고도서.md",
     "resource/Language/C++/const.md",
     "재료/미사용 template 저장 폴더/코드 블록 javascript.md",
