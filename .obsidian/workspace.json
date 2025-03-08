@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "resource/Language/C++/형 변환.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -141,10 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Web/HTML/HTML.md"
+                "file": "resource/Language/C++/형 변환.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "HTML 개요"
+              "title": "형 변환 의 개요"
             }
           },
           {
@@ -158,12 +161,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
