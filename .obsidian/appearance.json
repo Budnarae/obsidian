@@ -2,5 +2,6 @@
   "accentColor": "",
   "theme": "obsidian",
   "cssTheme": "",
-  "translucency": false
+  "translucency": false,
+  "showRibbon": true
 }
