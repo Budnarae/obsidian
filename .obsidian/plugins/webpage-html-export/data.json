@@ -17,7 +17,7 @@
   "logLevel": "warning",
   "minifyHTML": false,
   "makeNamesWebStyle": true,
-  "onlyExportModified": true,
+  "onlyExportModified": false,
   "deleteOldFiles": true,
   "addThemeToggle": true,
   "addOutline": true,
@@ -45,6 +45,8 @@
   "defaultMediaIcon": "lucide//file-image",
   "exportPath": "C:\\\\Users\\budnarae\\Desktop\\devlog",
   "filesToExport": [
-    []
+    [
+      "all"
+    ]
   ]
 }
