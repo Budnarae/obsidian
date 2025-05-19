@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
+                "file": "resource/Web/JavaScript/JavaScript 기초.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "HTML 태그, 요소 그리고 속성"
+              "title": "JavaScript 기초"
             }
           }
         ]
@@ -194,6 +194,7 @@
   },
   "active": "c6398d1e48449556",
   "lastOpenFiles": [
+    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/HTML/HTML.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
@@ -218,7 +219,6 @@
     "resource/Web/JavaScript/제너레이터.md",
     "resource/Web/JavaScript/모듈.md",
     "resource/Web/JavaScript/디스트럭처링.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
     "resource/Web/CSS/CSS3 스타일 속성 기본.md",
     "재료/미사용 template 저장 폴더",
     "area/오디세이세미나3_2025-1.pptx",
