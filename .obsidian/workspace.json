@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/42Seoul/inception/NGINX.md",
+                "file": "resource/Web/JavaScript/JavaScript 기초.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "NGINX 의 개요"
+              "title": "JavaScript 기초 의 개요"
             }
           },
           {
@@ -175,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
