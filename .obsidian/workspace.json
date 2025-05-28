@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6d2faef9220d3dce",
+        "id": "793ac7ed1ec0d5ee",
         "type": "tabs",
         "children": [
           {
-            "id": "d24b99a4db0292ec",
+            "id": "f4728a6d8b25bc03",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -136,12 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "area/참고도서.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "참고도서 의 개요"
             }
           },
           {
@@ -169,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
