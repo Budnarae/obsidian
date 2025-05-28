@@ -194,7 +194,6 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/index.md",
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
@@ -220,6 +219,7 @@
     "public/mutable 키워드.md",
     "public/listen.md",
     "public/LAN.md",
+    "public/JWT.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
