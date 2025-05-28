@@ -2,7 +2,7 @@
   "settingsVersion": "1.8.01",
   "makeOfflineCompatible": false,
   "inlineAssets": false,
-  "includePluginCSS": "dataview\nfile-explorer-note-count\ndashboard-navigator",
+  "includePluginCSS": "",
   "includeSvelteCSS": true,
   "titleProperty": "title",
   "customHeadContentPath": "",
