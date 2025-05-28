@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#computer_science",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,8 +196,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "99cb3010a8824735",
   "lastOpenFiles": [
+    "project/42Seoul/inception/tls.md",
+    "project/42Seoul/inception/php-fpm.md",
+    "project/42Seoul/inception/마이크로서비스.md",
+    "project/42Seoul/inception/캐시.md",
+    "project/42Seoul/inception/NGINX.md",
     "index.md",
     "resource/ANSI escape code.md",
     "_Index_of_구 저장소.md",
@@ -219,11 +225,6 @@
     "area/참고도서.md",
     "project/42Seoul/miniRT/miniRT.pdf.md",
     "resource/Docker/도커 네트워크.md",
-    "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
-    "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
-    "project/42Seoul/miniRT/메모장.md",
-    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
-    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
     "Ingredient/미사용 template 저장 폴더",
     "area/오디세이세미나3_2025-1.pptx",
     "project/4-2학기",
