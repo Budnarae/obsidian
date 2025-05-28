@@ -11,10 +11,15 @@
             "id": "db82d6230197c30b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "index"
             }
           }
         ]
@@ -49,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "_index_of_",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,12 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "index 의 개요"
             }
           },
           {
@@ -188,7 +193,7 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "db82d6230197c30b",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
     "_Index_of_구 저장소.md",
     "project/_Index_of_project.md",
