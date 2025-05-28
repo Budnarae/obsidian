@@ -8,5 +8,6 @@
   "file-explorer-note-count",
   "dashboard-navigator",
   "homepage",
-  "dataview"
+  "dataview",
+  "dataview-serializer"
 ]
