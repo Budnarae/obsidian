@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "resource/Web/HTML/HTML.md",
+                "file": "public/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "HTML의 백링크"
+              "title": "index 의 백링크"
             }
           },
           {
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "resource/Web/HTML/HTML.md",
+                "file": "public/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "HTML의 나가는 링크"
+              "title": "index 의 나가는 링크"
             }
           },
           {
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "public/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -168,12 +168,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "플러그인이 더 이상 활성화돼있지 않음"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -197,32 +197,32 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "private/42Seoul/inception/낙서장.md",
-    "public/모듈러 산술.md",
-    "private/42Seoul/miniRT/miniRT.pdf.md",
-    "public/ANSI escape code.md",
-    "public/디폴트 생성자.md",
-    "public/그래프.md",
-    "README.md",
-    "area/흑요석 공예.md",
-    "public/참고링크.md",
-    "public/참고도서.md",
-    "archive/tmp.md",
-    "private/42Seoul/NetPractice.md",
-    "private/42Seoul/microshell/microshell 문제 번역.md",
-    "public/마이크로서비스.md",
-    "public/42 innercirle 정리.md",
-    "public/캐시.md",
-    "public/NGINX.md",
+    "public/XMLHttpRequest.md",
+    "public/WWW.md",
+    "public/WAN.md",
+    "public/virtual 키워드.md",
+    "public/UDP.md",
+    "public/this.md",
+    "public/TDZ.md",
+    "public/TCP 소켓.md",
+    "public/static 키워드.md",
+    "public/ssh.md",
+    "public/socket.md",
+    "public/sockaddr_in.md",
+    "public/shutdown.md",
+    "public/select.md",
+    "public/REST API.md",
     "public/php-fpm.md",
-    "public/JSON.md",
-    "public/JavaScript 기초.md",
-    "public/IP 주소.md",
-    "public/IP.md",
-    "public/inet_ntoa.md",
-    "public/inet_aton.md",
-    "public/index.md",
-    "public/INADDR_ANY.md",
+    "public/OSI 참조 모델.md",
+    "public/npm.md",
+    "public/NIC.md",
+    "public/NGINX.md",
+    "public/new & delete.md",
+    "public/MySQL.md",
+    "public/mutable 키워드.md",
+    "public/listen.md",
+    "public/LAN.md",
+    "public/JWT.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
