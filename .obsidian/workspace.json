@@ -95,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "public/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -114,12 +113,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "public/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "index 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -143,13 +141,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -197,32 +194,32 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/XMLHttpRequest.md",
-    "public/WWW.md",
-    "public/WAN.md",
-    "public/virtual 키워드.md",
-    "public/UDP.md",
-    "public/this.md",
-    "public/TDZ.md",
-    "public/TCP 소켓.md",
-    "public/static 키워드.md",
-    "public/ssh.md",
-    "public/socket.md",
-    "public/sockaddr_in.md",
-    "public/shutdown.md",
-    "public/select.md",
-    "public/REST API.md",
-    "public/php-fpm.md",
-    "public/OSI 참조 모델.md",
-    "public/npm.md",
-    "public/NIC.md",
-    "public/NGINX.md",
-    "public/new & delete.md",
-    "public/MySQL.md",
-    "public/mutable 키워드.md",
-    "public/listen.md",
-    "public/LAN.md",
-    "public/JWT.md",
+    "public/htons.md",
+    "public/HTML 태그, 요소 그리고 속성.md",
+    "public/Half-close.md",
+    "public/friend 선언.md",
+    "public/fetch.md",
+    "public/explicit 키워드.md",
+    "public/envsubst.md",
+    "public/Dockerfile.md",
+    "public/CSS3 스타일 속성 기본.md",
+    "public/CSS 선택자.md",
+    "public/const.md",
+    "public/connect.md",
+    "public/Call-by-reference.md",
+    "public/C++ 언어의 bool 자료형.md",
+    "public/C++ 언어의 헤더파일 형식.md",
+    "public/C++ 언어의 변수 선언과 초기화.md",
+    "public/C++ 언어의 객체 배열.md",
+    "public/bind.md",
+    "public/async await.md",
+    "public/ANSI escape code.md",
+    "public/accept.md",
+    "public/a reference.md",
+    "public/호스트 바이트 순서.md",
+    "public/형 변환.md",
+    "public/허브.md",
+    "public/함수 오버로딩.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",

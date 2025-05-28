@@ -5,7 +5,7 @@ TABLE WITHOUT ID
   tag AS "태그",
   length(rows.file.link) AS "문서 수",
   rows.file.link AS "문서 목록"
-FROM ""
+FROM "public"
 WHERE file.tags 
   AND !contains(file.name, "Template") 
   AND !contains(file.name, "Excalidraw")
