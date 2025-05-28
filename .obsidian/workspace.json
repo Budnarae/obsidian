@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c4d95d84f3b2e0e6",
+        "id": "6d2faef9220d3dce",
         "type": "tabs",
         "children": [
           {
-            "id": "c6398d1e48449556",
+            "id": "d24b99a4db0292ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "resource/Language/C++/함수 오버라이딩.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "함수 오버라이딩"
+              "title": "새 탭"
             }
           }
         ]
@@ -54,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#language/cpp",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +70,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -142,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "resource/Language/C++/함수 오버라이딩.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "함수 오버라이딩 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -192,53 +185,53 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "99cb3010a8824735",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "resource/Language/C++/템플릿.md",
-    "resource/Language/C++/클래스 템플릿.md",
-    "resource/Language/C++/컨트롤 클래스.md",
-    "resource/Web/JavaScript/fetch.md",
-    "resource/Web/JavaScript/async await.md",
-    "resource/Web/JavaScript/JavaScript 기초.md",
-    "resource/Web/HTML/HTML 태그, 요소 그리고 속성.md",
-    "resource/Web/HTML/HTML.md",
+    "project/42Seoul/miniRT/miniRT.pdf.md",
+    "resource/Docker/도커 네트워크.md",
+    "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-04 18.24.22.excalidraw.md",
+    "project/42Seoul/miniRT/메모장.md",
+    "project/42Seoul/miniRT/flowchart/parseRtFile.excalidraw.md",
+    "project/42Seoul/miniRT/flowchart/main.excalidraw.md",
+    "project/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
+    "project/42Seoul/microshell/microshell 문제 번역.md",
+    "project/42Seoul/microshell/flowchart/parse_line-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
+    "project/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
+    "project/42Seoul/inception/tls.md",
+    "project/42Seoul/inception/php-fpm.md",
+    "project/42Seoul/inception/NGINX.md",
+    "project/42Seoul/inception/캐시.md",
+    "project/42Seoul/inception/마이크로서비스.md",
+    "project/42Seoul/inception/낙서장.md",
+    "project/42Seoul/ft_transcendence/socket io flow.md",
+    "project/42Seoul/ft_transcendence/page flow.excalidraw.md",
+    "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
+    "project/42Seoul/ft_transcendence/참고할만한 것들.md",
+    "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
-    "resource/Algorithm/브루트 포스.md",
-    "README.md",
-    "index.md",
-    "resource/ANSI escape code.md",
-    "resource/정확도와 정밀도.md",
-    "resource/Web/WWW.md",
-    "resource/Web/JWT.md",
-    "resource/Web/2FA.md",
-    "resource/Web/JavaScript/XMLHttpRequest.md",
-    "resource/Web/JavaScript/TDZ.md",
-    "resource/Web/JavaScript/REST API.md",
-    "resource/Web/JavaScript/npm.md",
-    "resource/Web/JavaScript/JSON.md",
-    "resource/Web/JavaScript/Ajax.md",
-    "resource/Web/JavaScript/프로미스.md",
-    "resource/Web/JavaScript/제너레이터.md",
-    "재료/미사용 template 저장 폴더",
+    "project/42Seoul/42 innercircle 정리/42 innercirle 정리.md",
+    "Ingredient/미사용 template 저장 폴더",
     "area/오디세이세미나3_2025-1.pptx",
     "project/4-2학기",
     "resource/Mathmetic",
     "resource/Algorithm",
     "project/42Seoul/42 innercircle 정리",
-    "재료/img/42 innercircle 정리/FdF.png",
+    "Ingredient/img/42 innercircle 정리/FdF.png",
     "재료/img/42 innercircle 정리/FDF.pdf",
-    "재료/img/42 innercircle 정리",
+    "Ingredient/img/42 innercircle 정리",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "project/42Seoul/ft_transcendence/모듈 설계",
-    "Excalidraw",
-    "재료/img/도커/도커의 구조.jpeg",
-    "재료/img/도커/윈도우에서의 도커의 구조.png",
-    "재료/img/도커 네트워크/도커 네트워크 구조.png",
-    "재료/img/컨테이너/컨테이너의 구조.png",
+    "Ingredient/Excalidraw",
+    "Ingredient/img/도커/도커의 구조.jpeg",
+    "Ingredient/img/도커/윈도우에서의 도커의 구조.png",
+    "Ingredient/img/도커 네트워크/도커 네트워크 구조.png",
+    "Ingredient/img/컨테이너/컨테이너의 구조.png",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
-    "재료/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
-    "재료/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
+    "Ingredient/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
+    "Ingredient/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
