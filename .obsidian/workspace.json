@@ -138,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "무제.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "무제 의 개요"
             }
           },
           {
@@ -189,6 +190,7 @@
   },
   "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "무제.canvas",
     "linux.md",
     "area/참고도서.md",
     "project/42Seoul/miniRT/miniRT.pdf.md",
@@ -214,7 +216,6 @@
     "project/42Seoul/ft_transcendence/jwt.excalidraw.md",
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
     "Ingredient/미사용 template 저장 폴더",
     "area/오디세이세미나3_2025-1.pptx",
     "project/4-2학기",
