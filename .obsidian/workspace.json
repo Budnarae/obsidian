@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "793ac7ed1ec0d5ee",
+        "id": "7542cb310bf127b9",
         "type": "tabs",
         "children": [
           {
-            "id": "f4728a6d8b25bc03",
+            "id": "490d1e256f714730",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -124,10 +124,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "태그"
             }
           },
           {
@@ -136,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "area/참고도서.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "참고도서 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -151,8 +152,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "플러그인이 더 이상 활성화돼있지 않음"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -166,12 +167,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,6 +189,8 @@
   },
   "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "linux.md",
+    "area/참고도서.md",
     "project/42Seoul/miniRT/miniRT.pdf.md",
     "resource/Docker/도커 네트워크.md",
     "Excalidraw/Drawing 2025-02-04 18.13.47.excalidraw.md",
@@ -213,8 +215,6 @@
     "project/42Seoul/ft_transcendence/참고할만한 것들.md",
     "project/42Seoul/ft_transcendence/42 oauth 기반 로그인 구현 방법.md",
     "project/42Seoul/ft_transcendence/모듈 설계/page.mjs.md",
-    "project/42Seoul/ft_transcendence/모듈 설계/authentication.mjs.md",
-    "project/42Seoul/42 innercircle 정리/42 innercirle 정리.md",
     "Ingredient/미사용 template 저장 폴더",
     "area/오디세이세미나3_2025-1.pptx",
     "project/4-2학기",
