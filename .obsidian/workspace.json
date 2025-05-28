@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "cd4227bcfc8efc55",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "d483d748792dda78",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#excalidraw",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,9 +192,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "d483d748792dda78",
   "lastOpenFiles": [
     "public/index.md",
+    "public/2FA.md",
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
@@ -219,7 +220,6 @@
     "public/MySQL.md",
     "public/mutable 키워드.md",
     "public/listen.md",
-    "public/LAN.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
