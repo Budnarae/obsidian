@@ -218,9 +218,8 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "85ad39003678b286",
   "lastOpenFiles": [
-    "index.md",
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
@@ -246,6 +245,7 @@
     "public/mutable 키워드.md",
     "public/listen.md",
     "public/LAN.md",
+    "public/JWT.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
