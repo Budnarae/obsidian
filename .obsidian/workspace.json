@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cd4227bcfc8efc55",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "d483d748792dda78",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,8 +192,9 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "d483d748792dda78",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/index.md",
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
@@ -219,7 +220,6 @@
     "public/mutable 키워드.md",
     "public/listen.md",
     "public/LAN.md",
-    "public/JWT.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
