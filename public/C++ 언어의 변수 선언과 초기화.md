@@ -14,7 +14,6 @@ int num = 20;
 int &ref = num;
 
 // C++ 에서의 새로운 형식의 변수 선언 및 초기화
-
 int num(20);
 int &ref(num);
 
