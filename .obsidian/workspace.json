@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/this.md",
+                "file": "public/가상 함수.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "this"
+              "title": "가상 함수"
             }
           }
         ]
@@ -194,7 +194,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/virtual 키워드.md",
     "index.md",
+    "public/this.md",
     "public/new & delete.md",
     "public/mutable 키워드.md",
     "public/friend 선언.md",
@@ -208,9 +210,7 @@
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
-    "public/virtual 키워드.md",
     "public/UDP.md",
-    "public/this.md",
     "public/TDZ.md",
     "public/TCP 소켓.md",
     "public/static 키워드.md",
