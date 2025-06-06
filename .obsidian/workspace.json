@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "public/C++ 언어의 변수 선언과 초기화.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "C++ 언어의 변수 선언과 초기화"
             }
           }
         ]
@@ -195,6 +195,10 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "index.md",
+    "public/Call-by-reference.md",
+    "public/C++ 언어의 헤더파일 형식.md",
+    "public/C++ 언어의 객체 배열.md",
+    "public/C++ 언어의 bool 자료형.md",
     "public/XMLHttpRequest.md",
     "public/WWW.md",
     "public/WAN.md",
@@ -216,10 +220,6 @@
     "public/NIC.md",
     "public/NGINX.md",
     "public/new & delete.md",
-    "public/MySQL.md",
-    "public/mutable 키워드.md",
-    "public/listen.md",
-    "public/LAN.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
