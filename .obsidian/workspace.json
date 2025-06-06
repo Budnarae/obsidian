@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/const.md",
+                "file": "public/mutable 키워드.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "const"
+              "title": "mutable 키워드"
             }
           }
         ]
@@ -195,6 +195,9 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "index.md",
+    "public/friend 선언.md",
+    "public/explicit 키워드.md",
+    "public/const.md",
     "public/C++ 언어의 변수 선언과 초기화.md",
     "public/Call-by-reference.md",
     "public/C++ 언어의 헤더파일 형식.md",
@@ -217,9 +220,6 @@
     "public/REST API.md",
     "public/php-fpm.md",
     "public/OSI 참조 모델.md",
-    "public/npm.md",
-    "public/NIC.md",
-    "public/NGINX.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
