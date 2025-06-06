@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/매개변수의 디폴트 값.md",
+                "file": "public/상속.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "매개변수의 디폴트 값"
+              "title": "상속"
             }
           }
         ]
@@ -195,6 +195,10 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "index.md",
+    "public/복사 생성자.md",
+    "public/상속.md",
+    "public/범위지정 연산자.md",
+    "public/매개변수의 디폴트 값.md",
     "public/디폴트 소멸자.md",
     "public/리터럴.md",
     "public/다중 상속.md",
@@ -216,10 +220,6 @@
     "public/explicit 키워드.md",
     "public/const.md",
     "public/C++ 언어의 변수 선언과 초기화.md",
-    "public/Call-by-reference.md",
-    "public/C++ 언어의 헤더파일 형식.md",
-    "public/C++ 언어의 객체 배열.md",
-    "public/C++ 언어의 bool 자료형.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
