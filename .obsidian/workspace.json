@@ -141,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "public/연산자 오버로딩.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "연산자 오버로딩 의 개요"
             }
           },
           {
@@ -170,12 +171,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,7 +193,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "5924d62a6df9bf10",
   "lastOpenFiles": [
     "index.md",
     "public/얕은 복사.md",
