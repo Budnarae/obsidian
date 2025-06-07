@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/상속.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "상속"
+              "title": "index"
             }
           }
         ]
@@ -194,9 +194,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/상속.md",
     "index.md",
     "public/복사 생성자.md",
-    "public/상속.md",
     "public/범위지정 연산자.md",
     "public/매개변수의 디폴트 값.md",
     "public/디폴트 소멸자.md",
