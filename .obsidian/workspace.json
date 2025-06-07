@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/조정자.md",
+                "file": "public/참조자.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "조정자"
+              "title": "참조자"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/조정자.md",
+                "file": "public/참조자.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "조정자 의 개요"
+              "title": "참조자 의 개요"
             }
           },
           {
@@ -196,6 +196,7 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "index.md",
+    "public/조정자.md",
     "public/정보은닉.md",
     "public/자료형.md",
     "public/임시 객체.md",
@@ -220,7 +221,6 @@
     "public/가상 소멸자.md",
     "public/구조체.md",
     "public/접근제어 지시자.md",
-    "public/가상 상속.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
