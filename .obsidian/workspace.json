@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "public/연산자 오버로딩.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "연산자 오버로딩"
             }
           }
         ]
@@ -195,10 +195,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/생성자.md",
     "index.md",
-    "public/상속.md",
+    "public/얕은 복사.md",
+    "public/소멸자.md",
     "public/멤버 이니셜라이저.md",
+    "public/생성자.md",
+    "public/상속.md",
     "public/시간 복잡도.md",
     "public/스타형 LAN.md",
     "public/복사 생성자.md",
@@ -219,8 +221,6 @@
     "public/추상 클래스.md",
     "public/가상 함수 테이블.md",
     "public/this.md",
-    "public/new & delete.md",
-    "public/mutable 키워드.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
