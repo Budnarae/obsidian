@@ -13,7 +13,7 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "OS 학기말 프로젝트 순서도.canvas",
+                "file": "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
                 "viewState": {
                   "x": -51.44398667555088,
                   "y": -358.6184334579342,
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS 학기말 프로젝트 순서도.canvas",
+                "file": "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -195,10 +195,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "54235aec19a2e868",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "ingredient/canvas",
     "index.md",
-    "OS 학기말 프로젝트 순서도.canvas",
+    "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
     "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
     "Ingredient/Excalidraw/Drawing 2025-06-09 14.19.09.excalidraw.md",
     "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
@@ -233,15 +234,15 @@
     "resource/기초 개념",
     "resource/cmd",
     "resource/C++",
-    "Ingredient/img/42 innercircle 정리/FdF.png",
+    "ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
-    "Ingredient/img/도커/도커의 구조.jpeg",
-    "Ingredient/img/도커/윈도우에서의 도커의 구조.png",
-    "Ingredient/img/도커 네트워크/도커 네트워크 구조.png",
-    "Ingredient/img/컨테이너/컨테이너의 구조.png",
+    "ingredient/img/도커/도커의 구조.jpeg",
+    "ingredient/img/도커/윈도우에서의 도커의 구조.png",
+    "ingredient/img/도커 네트워크/도커 네트워크 구조.png",
+    "ingredient/img/컨테이너/컨테이너의 구조.png",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
-    "Ingredient/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
-    "Ingredient/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
+    "ingredient/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
+    "ingredient/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
     "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
