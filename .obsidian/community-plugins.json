@@ -9,5 +9,6 @@
   "dashboard-navigator",
   "homepage",
   "dataview",
-  "dataview-serializer"
+  "dataview-serializer",
+  "advanced-canvas"
 ]

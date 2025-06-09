@@ -1,0 +1,22 @@
+{
+  "edges": [
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "startNode": "713724040a098a58",
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 675,
+      "id": "713724040a098a58",
+      "label": "Start Slide",
+      "ratio": 1.7777777777777777,
+      "type": "group",
+      "width": 1200,
+      "x": -600,
+      "y": -340
+    }
+  ]
+}

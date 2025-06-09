@@ -11,12 +11,17 @@
             "id": "54235aec19a2e868",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "canvas",
               "state": {
-                "file": "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md"
+                "file": "OS 학기말 프로젝트 순서도.canvas",
+                "viewState": {
+                  "x": -39.295294793974406,
+                  "y": -176.37994332551034,
+                  "zoom": -0.6666666666666667
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "OS 학기말 프로젝트 흐름도"
+              "icon": "lucide-layout-dashboard",
+              "title": "OS 학기말 프로젝트 순서도"
             }
           }
         ]
@@ -138,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
+                "file": "OS 학기말 프로젝트 순서도.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "OS 학기말 프로젝트 흐름도 의 개요"
+              "title": "OS 학기말 프로젝트 순서도 의 개요"
             }
           },
           {
@@ -168,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -190,17 +195,18 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "54235aec19a2e868",
   "lastOpenFiles": [
-    "Ingredient/Excalidraw/Drawing 2025-06-09 14.19.09.excalidraw.md",
+    "index.md",
+    "OS 학기말 프로젝트 순서도.canvas",
     "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
+    "Ingredient/Excalidraw/Drawing 2025-06-09 14.19.09.excalidraw.md",
     "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "Excalidraw",
     "private/운영체제 학기말 과제",
     "private/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "private/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
     "public/형 변환.md",
-    "index.md",
     "public/함수 오버로딩.md",
     "public/함수 오버라이딩.md",
     "public/템플릿.md",
@@ -219,7 +225,6 @@
     "public/예외 처리.md",
     "public/연산자 오버로딩.md",
     "public/얕은 복사.md",
-    "public/소멸자.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
@@ -228,7 +233,6 @@
     "resource/기초 개념",
     "resource/cmd",
     "resource/C++",
-    "무제.canvas",
     "Ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "Ingredient/img/도커/도커의 구조.jpeg",
