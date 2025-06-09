@@ -1,5 +1,35 @@
 {
   "edges": [
+    {
+      "fromNode": "c4490f9a9a561776",
+      "fromSide": "bottom",
+      "id": "90627806b2e42084",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "ed1263c7673d0caa",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "ed1263c7673d0caa",
+      "fromSide": "bottom",
+      "id": "07a9021e9c1e0966",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "9972818b85c35a3c",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9972818b85c35a3c",
+      "fromSide": "bottom",
+      "id": "18434bfc911f41c6",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "f0823eedcb177f34",
+      "toSide": "top"
+    }
   ],
   "metadata": {
     "frontmatter": {
@@ -9,14 +39,56 @@
   },
   "nodes": [
     {
-      "height": 675,
-      "id": "713724040a098a58",
-      "label": "Start Slide",
-      "ratio": 1.7777777777777777,
-      "type": "group",
-      "width": 1200,
-      "x": -600,
-      "y": -340
+      "height": 60,
+      "id": "c4490f9a9a561776",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "시작",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": -780
+    },
+    {
+      "height": 60,
+      "id": "ed1263c7673d0caa",
+      "styleAttributes": {
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "공유메모리, RWRock 초기화",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": -660
+    },
+    {
+      "height": 60,
+      "id": "9972818b85c35a3c",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "관리자 명령 입력",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": -540
+    },
+    {
+      "height": 60,
+      "id": "f0823eedcb177f34",
+      "styleAttributes": {
+        "shape": "diamond",
+        "textAlign": "center"
+      },
+      "text": "명령에 따른 처리",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": -420
     }
   ]
 }
