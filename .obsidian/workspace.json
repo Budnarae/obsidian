@@ -11,10 +11,12 @@
             "id": "54235aec19a2e868",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "type": "excalidraw",
+              "state": {
+                "file": "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "OS 학기말 프로젝트 흐름도"
             }
           }
         ]
@@ -136,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
+                "file": "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "mini_serv 억까 방지용 시트 의 개요"
+              "title": "OS 학기말 프로젝트 흐름도 의 개요"
             }
           },
           {
@@ -190,6 +192,10 @@
   },
   "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "Ingredient/Excalidraw/Drawing 2025-06-09 14.19.09.excalidraw.md",
+    "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
+    "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
+    "Excalidraw",
     "private/운영체제 학기말 과제",
     "private/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "private/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
@@ -214,8 +220,6 @@
     "public/연산자 오버로딩.md",
     "public/얕은 복사.md",
     "public/소멸자.md",
-    "public/멤버 이니셜라이저.md",
-    "public/생성자.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
@@ -225,8 +229,6 @@
     "resource/cmd",
     "resource/C++",
     "무제.canvas",
-    "Ingredient/미사용 template 저장 폴더",
-    "area/오디세이세미나3_2025-1.pptx",
     "Ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "Ingredient/img/도커/도커의 구조.jpeg",
