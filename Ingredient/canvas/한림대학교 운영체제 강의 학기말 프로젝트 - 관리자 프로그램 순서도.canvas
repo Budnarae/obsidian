@@ -46,10 +46,44 @@
       "fromNode": "f0823eedcb177f34",
       "fromSide": "bottom",
       "id": "de1ba7e36de8d6b0",
+      "label": "delete",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "853031046529a66d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f0823eedcb177f34",
+      "fromSide": "bottom",
+      "id": "8dbae4a1445f7b3f",
+      "label": "list",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "738067d8cfc24b62",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f0823eedcb177f34",
+      "fromSide": "bottom",
+      "id": "94cd5a3e6d87169b",
+      "label": "quit",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "9da01decd221931a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f0823eedcb177f34",
+      "fromSide": "bottom",
+      "id": "4889fea6e416f33d",
+      "label": "create",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a2d2395943132eb2",
       "toSide": "top"
     }
   ],
@@ -126,6 +160,30 @@
     },
     {
       "height": 60,
+      "id": "738067d8cfc24b62",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "서버 정보 출력",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": -180
+    },
+    {
+      "height": 60,
+      "id": "9da01decd221931a",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "관리자 프로그램 종료",
+      "type": "text",
+      "width": 260,
+      "x": 200,
+      "y": -180
+    },
+    {
+      "height": 60,
       "id": "b72b0beb9e412aa3",
       "styleAttributes": {
         "textAlign": "center"
@@ -133,7 +191,20 @@
       "text": "관리자 명령 매뉴얼 출력",
       "type": "text",
       "width": 260,
-      "x": -160,
+      "x": 560,
+      "y": -180
+    },
+    {
+      "height": 60,
+      "id": "a2d2395943132eb2",
+      "styleAttributes": {
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "",
+      "type": "text",
+      "width": 260,
+      "x": -880,
       "y": -180
     }
   ]
