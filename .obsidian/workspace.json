@@ -15,8 +15,8 @@
               "state": {
                 "file": "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
                 "viewState": {
-                  "x": -184.3329315185547,
-                  "y": -433.9999084472656,
+                  "x": -183.66627502441406,
+                  "y": -340.9999084472656,
                   "zoom": 0
                 }
               },
@@ -31,7 +31,7 @@
               "type": "markdown",
               "state": {
                 "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -39,7 +39,8 @@
               "title": "한림대학교 운영체제 강의 학기말 프로젝트"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
+                "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도 의 개요"
+              "title": "한림대학교 운영체제 강의 학기말 프로젝트 의 개요"
             }
           },
           {
@@ -193,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,10 +212,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "2f0e734c83b78d38",
   "lastOpenFiles": [
-    "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
+    "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "index.md",
     "ingredient/canvas",
     "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
