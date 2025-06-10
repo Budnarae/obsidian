@@ -152,7 +152,7 @@
       "styleAttributes": {
         "textAlign": "center"
       },
-      "text": "",
+      "text": "서버 종료",
       "type": "text",
       "width": 260,
       "x": -520,
@@ -201,7 +201,7 @@
         "shape": null,
         "textAlign": "center"
       },
-      "text": "",
+      "text": "서버 생성",
       "type": "text",
       "width": 260,
       "x": -880,

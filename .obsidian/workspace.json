@@ -15,8 +15,8 @@
               "state": {
                 "file": "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
                 "viewState": {
-                  "x": -276.33294677734375,
-                  "y": -269.3332214355469,
+                  "x": -58.999603271484375,
+                  "y": -466.66656494140625,
                   "zoom": 0
                 }
               },
@@ -193,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
