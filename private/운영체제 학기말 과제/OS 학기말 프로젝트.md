@@ -212,4 +212,24 @@ You are kicked off from <채널 이름> channel!
 옵션에 따라 두가지 기능을 하는 명령어이다.
 
 - user 옵션 : 자신의 사용자 이름을 변경한다.
-- channel 옵션 : 채널 관리자 전용 명령어. 
+- channel 옵션 : 채널 관리자 전용 명령어. 채널의 이름을 변경한다.
+
+```text
+
+/remove user <새로운 사용자 이름>
+
+```
+
+```text
+
+/remove channel <기존의 채널 이름> <새로운 채널 이름>
+
+```
+
+channel 옵션의 경우, channel의 모든 사용자에게 다음의 메세지를 송신한다.
+
+```text
+
+Channel operator of <기존의 채널 이름> renamed 
+
+```
