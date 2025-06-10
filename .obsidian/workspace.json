@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/예외 처리.md",
+                "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "예외 처리"
+              "title": "한림대학교 운영체제 강의 학기말 프로젝트"
             }
           }
         ],
@@ -97,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -159,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/예외 처리.md",
+                "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "예외 처리 의 개요"
+              "title": "한림대학교 운영체제 강의 학기말 프로젝트 의 개요"
             }
           },
           {
@@ -213,8 +214,8 @@
   },
   "active": "2f0e734c83b78d38",
   "lastOpenFiles": [
-    "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
     "public/예외 처리.md",
+    "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
     "index.md",
     "public/가상 함수.md",
     "public/상속.md",
