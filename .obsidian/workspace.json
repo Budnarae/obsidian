@@ -4,24 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "05a336e90e6983ec",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "54235aec19a2e868",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
-                "viewState": {
-                  "x": -51.44398667555088,
-                  "y": -358.6184334579342,
-                  "zoom": -1.1102230246251565e-16
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "OS 학기말 프로젝트 순서도"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -195,11 +193,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
     "ingredient/canvas",
     "index.md",
-    "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
     "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
     "Ingredient/Excalidraw/Drawing 2025-06-09 14.19.09.excalidraw.md",
     "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
@@ -233,7 +231,6 @@
     "resource/소켓 프로그래밍(리눅스)",
     "resource/기초 개념",
     "resource/cmd",
-    "resource/C++",
     "ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "ingredient/img/도커/도커의 구조.jpeg",
