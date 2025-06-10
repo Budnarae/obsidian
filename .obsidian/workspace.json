@@ -21,6 +21,23 @@
               "icon": "lucide-file",
               "title": "OS 학기말 프로젝트"
             }
+          },
+          {
+            "id": "be0956d8b513615b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "ingredient/canvas/OS 학기말 프로젝트 순서도.canvas",
+                "viewState": {
+                  "x": -30,
+                  "y": -570,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "OS 학기말 프로젝트 순서도"
+            }
           }
         ]
       }
