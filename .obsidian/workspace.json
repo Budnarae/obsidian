@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/상속.md",
+                "file": "public/가상 함수.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "상속"
+              "title": "가상 함수"
             }
           }
         ],
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/상속.md",
+                "file": "public/가상 함수.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "상속 의 개요"
+              "title": "가상 함수 의 개요"
             }
           },
           {
@@ -214,6 +214,7 @@
   "active": "2f0e734c83b78d38",
   "lastOpenFiles": [
     "index.md",
+    "public/상속.md",
     "public/가상 상속.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
@@ -242,7 +243,6 @@
     "public/이름공간.md",
     "public/범위지정 연산자.md",
     "public/예외 처리.md",
-    "public/연산자 오버로딩.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
