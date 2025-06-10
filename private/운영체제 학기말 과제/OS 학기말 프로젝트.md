@@ -157,13 +157,13 @@ broadcast from <메세지를 보낸 사용자의 이름> : <메세지 내용>
 
 ```
 
-### multicast
+### channelMsg
 
 채널의 모든 사용자에게 메세지를 보낸다.
 
 ```text
 
-/multicast <채널의 이름> <메세지 내용>
+/channelMsg <채널의 이름> <메세지 내용>
 
 ```
 
@@ -171,7 +171,7 @@ broadcast from <메세지를 보낸 사용자의 이름> : <메세지 내용>
 
 ```text
 
-
+<채널의 이름> channel msg from <메세지를 보낸 사용자의 이름> : <메세지 내용>
 
 ```
 
@@ -189,13 +189,39 @@ broadcast from <메세지를 보낸 사용자의 이름> : <메세지 내용>
 
 채널에 참여한다.
 
+```text
+
+/channel <참여하고자 하는 채널의 이름>
+
+```
+
 ### leave
 
 채널에서 나간다.
 
+```text
+
+/leave <나가고자 하는 채널의 이름>
+
+```
+
 ### kick
 
 채널 관리자 전용 명령어. 특정 사용자를 채널에서 추방한다.
+
+```text
+
+/kick <채널 이름> <추방하고자 하는 사용자 이름>
+
+```
+
+추방되는 대상은 다음의 형식의 메세지를 받는다.
+
+```text
+
+You are kicked off from <채널 이름> channel!
+
+```
 
 ### retitle
 
