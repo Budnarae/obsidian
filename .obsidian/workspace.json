@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -39,8 +39,7 @@
               "title": "한림대학교 운영체제 강의 학기말 프로젝트 순서도"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,10 +210,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "be0956d8b513615b",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 순서도.canvas",
+    "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "index.md",
     "ingredient/canvas",
     "Ingredient/Excalidraw/OS 학기말 프로젝트 흐름도.md",
