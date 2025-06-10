@@ -84,7 +84,7 @@ _OS term project_
 
 ### help
 
-관리자 명령 메뉴얼을 출력한다.
+관리자 명령 매뉴얼을 출력한다.
 
 ```text
 
@@ -93,17 +93,6 @@ _OS term project_
 ```
 
 ## 사용자 명령어
-
-%% - msg : 특정 사용자에게 1대1 메세지를 보낸다.
-	- broadcast : 서버에 있는 다른 모든 사용자들에게 메세지를 보낸다.
-	- isc : inter-server communication. 다른 서버의 사용자에게 1대1 메세지를 보낸다.
-	- channel : 채널을 만든다. 이 명령어를 통해 채널을 만든 사용자는 해당 채널의 관리자가 된다. 채널 관리자만이 채널 관리자 전용 명령어를 사용할 수 있다.
-	- join : 채널에 참여한다.
-	- leave : 채널에서 나간다.
-	- multicast : 채널의 모든 사용자에게 메세지를 보낸다.
-	- kick : 채널 관리자 전용 명령어. 특정 사용자를 채널에서 추방한다.
-	- retitle : 채널 관리자 전용 명령어. 채널의 이름을 변경한다.
-	- rename : 자신의 사용자 이름을 변경한다. %%
 
 ### msg
 
@@ -216,13 +205,13 @@ You are kicked off from <채널 이름> channel!
 
 ```text
 
-/remove user <새로운 사용자 이름>
+/rename user <새로운 사용자 이름>
 
 ```
 
 ```text
 
-/remove channel <기존의 채널 이름> <새로운 채널 이름>
+/rename channel <기존의 채널 이름> <새로운 채널 이름>
 
 ```
 
@@ -230,6 +219,52 @@ channel 옵션의 경우, channel의 모든 사용자에게 다음의 메세지�
 
 ```text
 
-Channel operator of <기존의 채널 이름> renamed 
+Channel operator of <기존의 채널 이름> renamed channel! Channel name is now <새로운 채널 이름>.
+
+```
+
+### list
+
+옵션에 따라 세가지 기능을 하는 명령어이다.
+
+- user 옵션 : 현재 서버의 모든 사용자들의 이름을 출력
+- channel 옵션 : 현재 서버의 모든 채널의 이름을 출력
+- server 옵션 : 관리자 프로그램이 관리하고 있는 모든 서버의 이름을 출력
+
+```text
+
+/list user
+
+```
+
+```text
+
+/list channel
+
+```
+
+```text
+
+/list server
+
+```
+
+### quit
+
+서버와의 접속을 끊고 클라이언트 프로그램을 종료한다.
+
+```text
+
+/quit
+
+```
+
+### help
+
+사용자 명령 매뉴얼을 출력한다.
+
+```text
+
+/help
 
 ```
