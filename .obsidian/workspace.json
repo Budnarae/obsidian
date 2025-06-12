@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/connect.md",
+                "file": "public/select.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "connect"
+              "title": "select"
             }
           }
         ],
@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -157,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/connect.md",
+                "file": "public/select.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "connect 의 개요"
+              "title": "select 의 개요"
             }
           },
           {
@@ -191,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,6 +214,8 @@
   "active": "16dd10dac4109e7a",
   "lastOpenFiles": [
     "index.md",
+    "public/accept.md",
+    "public/connect.md",
     "public/listen.md",
     "public/bind.md",
     "public/socket.md",
@@ -239,8 +243,6 @@
     "public/컨트롤 클래스.md",
     "public/추상 클래스.md",
     "public/참조자.md",
-    "public/조정자.md",
-    "public/정보은닉.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
