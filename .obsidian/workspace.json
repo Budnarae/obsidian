@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/TCP 소켓.md",
+                "file": "public/connect.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TCP 소켓"
+              "title": "connect"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/TCP 소켓.md",
+                "file": "public/connect.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TCP 소켓 의 개요"
+              "title": "connect 의 개요"
             }
           },
           {
@@ -211,8 +211,11 @@
   },
   "active": "16dd10dac4109e7a",
   "lastOpenFiles": [
-    "public/socket.md",
     "index.md",
+    "public/listen.md",
+    "public/bind.md",
+    "public/socket.md",
+    "public/TCP 소켓.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "public/예외 처리.md",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
@@ -238,9 +241,6 @@
     "public/참조자.md",
     "public/조정자.md",
     "public/정보은닉.md",
-    "public/자료형.md",
-    "public/임시 객체.md",
-    "public/인라인 함수.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
