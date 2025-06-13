@@ -75,12 +75,12 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -195,7 +195,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "99cb3010a8824735",
   "lastOpenFiles": [
     "index.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
