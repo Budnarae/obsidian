@@ -13,32 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/pthread_rwlock 시리즈.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "pthread_rwlock 시리즈"
-            }
-          },
-          {
-            "id": "99afa3c16f2c687a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "한림대학교 운영체제 강의 학기말 프로젝트"
+              "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "한림대학교 운영체제 강의 학기말 프로젝트 의 개요"
+              "title": "index 의 개요"
             }
           },
           {
@@ -210,10 +194,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "99afa3c16f2c687a",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/pthread_rwlock 시리즈.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
+    "public/pthread_rwlock 시리즈.md",
     "index.md",
     "public/select.md",
     "public/socket.md",
