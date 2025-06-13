@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/sockaddr_in.md",
+                "file": "public/listen.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "sockaddr_in"
+              "title": "listen"
             }
           }
         ],
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -172,13 +173,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/sockaddr_in.md",
+                "file": "public/listen.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "sockaddr_in 의 개요"
+              "title": "listen 의 개요"
             }
           },
           {
@@ -228,6 +229,8 @@
   "active": "f01a6f368fb563a7",
   "lastOpenFiles": [
     "index.md",
+    "public/sockaddr_in.md",
+    "public/bind.md",
     "public/fcntl.md",
     "public/pthread_rwlock 시리즈.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
@@ -237,7 +240,6 @@
     "public/accept.md",
     "public/connect.md",
     "public/listen.md",
-    "public/bind.md",
     "public/TCP 소켓.md",
     "public/예외 처리.md",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
@@ -257,7 +259,6 @@
     "public/함수 오버라이딩.md",
     "public/템플릿.md",
     "public/클래스 템플릿.md",
-    "public/클래스.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
