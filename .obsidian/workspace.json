@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
@@ -176,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
