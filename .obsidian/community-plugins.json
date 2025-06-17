@@ -10,5 +10,6 @@
   "homepage",
   "dataview",
   "dataview-serializer",
-  "advanced-canvas"
+  "advanced-canvas",
+  "better-export-pdf"
 ]
