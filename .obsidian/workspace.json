@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/dot NET.md",
+                "file": "public/Microsoft Introduction to .NET 문서 번역.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "dot NET"
+              "title": "Microsoft Introduction to .NET 문서 번역"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/dot NET.md",
+                "file": "public/Microsoft Introduction to .NET 문서 번역.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of dot NET"
+              "title": "Outline of Microsoft Introduction to .NET 문서 번역"
             }
           },
           {
@@ -199,7 +199,7 @@
   "lastOpenFiles": [
     "index.md",
     "public/정확도와 정밀도.md",
-    "public/dot NET.md",
+    "public/Microsoft Introduction to .NET 문서 번역.md",
     "private/교착 상태.md",
     "private/현문이 기말 과제.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
