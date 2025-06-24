@@ -12,7 +12,7 @@ _.NET tutorial_
 .NET 6부터 새로운 C# 콘솔 앱 프로젝트 템플릿은 Program.cs 파일에 다음 코드를 생성한다:
 C#
 
-```c#
+```C#
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -22,7 +22,7 @@ Console.WriteLine("Hello, World!");
 이 새로운 출력은 프로그램에 필요한 코드를 간소화하는 최신 C# 기능을 사용한다. .NET 5 및 이전 버전의 경우, 콘솔 앱 템플릿은 다음 코드를 생성한다:
 
 
-```c#
+```C#
 
 using System;
 
@@ -63,3 +63,50 @@ namespace MyApp
 만약 이전 형식을 선호한다면, 이 문서의 두 번째 예제에서 코드를 복사하여 튜토리얼을 그대로 진행할 수 있다.
 
 최상위 문에 대한 더 자세한 내용은 최상위 문 탐색 튜토리얼에서 알아볼 수 있다.
+
+# 암시적 using 지시문
+
+**암시적 using 지시문**이란 컴파일러가 프로젝트 타입에 따라 자동으로 특정 `using` 지시문들을 추가하는 것을 의미한다. 콘솔 애플리케이션의 경우, 다음 지시문들이 암시적으로 포함된다:
+
+- `using System;`
+- `using System.IO;`
+- `using System.Collections.Generic;`
+- `using System.Linq;`
+- `using System.Net.Http;`
+- `using System.Threading;`
+- `using System.Threading.Tasks;`
+
+다른 애플리케이션 타입들은 해당 타입에 공통적으로 사용되는 더 많은 네임스페이스를 포함한다.
+
+만약 암시적으로 포함되지 않은 `using` 지시문이 필요하다면, 최상위 문이 포함된 `.cs` 파일이나 다른 `.cs` 파일에 추가할 수 있다. 애플리케이션의 모든 `.cs` 파일에서 필요한 `using` 지시문이라면, **전역 using 지시문**을 사용하면 된다.
+
+# 암시적 `using` 지시문 비활성화
+
+이 동작을 제거하고 프로젝트의 모든 네임스페이스를 수동으로 제어하려면, 프로젝트 파일의 `<PropertyGroup>` 요소에 `<ImplicitUsings>disable</ImplicitUsings>`를 추가하면 된다.
+
+다음 예시를 참조한다:
+
+```XML
+
+<Project Sdk="Microsoft.NET.Sdk"> 
+	<PropertyGroup>
+		... 
+		<ImplicitUsings>disable</ImplicitUsings>
+	</PropertyGroup>
+</Project>
+
+```
+
+# 전역 using 지시문
+
+전역 using 지시문은 단일 파일이 아닌 전체 애플리케이션에 네임스페이스를 가져온다. 이러한 전역 지시문은 프로젝트 파일에 <Using> 항목을 추가하거나 코드 파일에 global using 지시문을 추가하여 적용할 수 있다.
+
+또한, <Using> 항목에 Remove 속성을 추가하여 특정 암시적 using 지시문을 제거할 수도 있다. 예를 들어, 암시적 using 지시문 기능이 <ImplicitUsings>enable</ImplicitUsings>로 켜져 있다면, 다음 <Using> 항목을 추가하여 System.Net.Http 네임스페이스를 암시적으로 가져오는 목록에서 제거할 수 있다:
+
+```XML
+
+<ItemGroup>
+	<Using Remove="System.Net.Http" />
+</ItemGroup>
+
+```

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f97a5cf79fd1a58f",
+        "id": "bbe90abb1c4813d1",
         "type": "tabs",
         "children": [
           {
-            "id": "bfa4346a2b5343cd",
+            "id": "2c39b59bb5a2c072",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -194,10 +194,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "bfa4346a2b5343cd",
+  "active": "2c39b59bb5a2c072",
   "lastOpenFiles": [
-    "public/Microsoft Introduction to .NET 문서 번역.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
+    "public/Microsoft Introduction to .NET 문서 번역.md",
     "index.md",
     "public/정확도와 정밀도.md",
     "private/교착 상태.md",
