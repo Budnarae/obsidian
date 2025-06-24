@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/Microsoft Introduction to .NET 문서 번역.md",
-                "mode": "preview",
+                "file": "public/Microsoft .NET 6 template changes 문서 번역.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Microsoft Introduction to .NET 문서 번역"
+              "title": "Microsoft .NET 6 template changes 문서 번역"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -142,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/Microsoft Introduction to .NET 문서 번역.md",
+                "file": "public/Microsoft .NET 6 template changes 문서 번역.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Microsoft Introduction to .NET 문서 번역"
+              "title": "Outline of Microsoft .NET 6 template changes 문서 번역"
             }
           },
           {
@@ -197,9 +196,10 @@
   },
   "active": "bfa4346a2b5343cd",
   "lastOpenFiles": [
+    "public/Microsoft Introduction to .NET 문서 번역.md",
+    "public/Microsoft .NET 6 template changes 문서 번역.md",
     "index.md",
     "public/정확도와 정밀도.md",
-    "public/Microsoft Introduction to .NET 문서 번역.md",
     "private/교착 상태.md",
     "private/현문이 기말 과제.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
@@ -227,7 +227,6 @@
     "private/운영체제 학기말 과제",
     "private/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "private/42Seoul/microshell/flowchart/main-flowchart.excalidraw.md",
-    "public/형 변환.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
