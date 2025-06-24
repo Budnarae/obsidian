@@ -12,7 +12,7 @@ _.NET tutorial_
 .NET 6부터 새로운 C# 콘솔 앱 프로젝트 템플릿은 Program.cs 파일에 다음 코드를 생성한다:
 C#
 
-```C#
+```cs
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -22,7 +22,7 @@ Console.WriteLine("Hello, World!");
 이 새로운 출력은 프로그램에 필요한 코드를 간소화하는 최신 C# 기능을 사용한다. .NET 5 및 이전 버전의 경우, 콘솔 앱 템플릿은 다음 코드를 생성한다:
 
 
-```C#
+```cs
 
 using System;
 
@@ -99,9 +99,9 @@ namespace MyApp
 
 # 전역 using 지시문
 
-전역 using 지시문은 단일 파일이 아닌 전체 애플리케이션에 네임스페이스를 가져온다. 이러한 전역 지시문은 프로젝트 파일에 <Using> 항목을 추가하거나 코드 파일에 global using 지시문을 추가하여 적용할 수 있다.
+전역 using 지시문은 단일 파일이 아닌 전체 애플리케이션에 네임스페이스를 가져온다. 이러한 전역 지시문은 프로젝트 파일에 \<Using> 항목을 추가하거나 코드 파일에 global using 지시문을 추가하여 적용할 수 있다.
 
-또한, <Using> 항목에 Remove 속성을 추가하여 특정 암시적 using 지시문을 제거할 수도 있다. 예를 들어, 암시적 using 지시문 기능이 <ImplicitUsings>enable</ImplicitUsings>로 켜져 있다면, 다음 <Using> 항목을 추가하여 System.Net.Http 네임스페이스를 암시적으로 가져오는 목록에서 제거할 수 있다:
+또한, \<Using> 항목에 Remove 속성을 추가하여 특정 암시적 using 지시문을 제거할 수도 있다. 예를 들어, 암시적 using 지시문 기능이 \<ImplicitUsings>enable\</ImplicitUsings>로 켜져 있다면, 다음 \<Using> 항목을 추가하여 System.Net.Http 네임스페이스를 암시적으로 가져오는 목록에서 제거할 수 있다:
 
 ```XML
 
@@ -110,3 +110,70 @@ namespace MyApp
 </ItemGroup>
 
 ```
+
+# 이전 프로그램 스타일 사용
+
+.NET SDK 6.0.300부터 콘솔 템플릿에 `--use-program-main` 옵션이 생겼다. 이 옵션을 사용하면 최상위 문을 사용하지 않고 `Main` 메서드를 가진 콘솔 프로젝트를 만들 수 있다.
+
+## .NET CLI에서 이전 스타일 사용
+
+`dotnet new console --use-program-main` 명령어를 사용한다.
+
+생성되는 `Program.cs` 파일은 다음과 같다:
+
+```cs
+
+namespace MyProject;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+```
+
+## Visual Studio에서 이전 스타일 사용
+
+새 프로젝트를 만들 때, "추가 정보" 설정 페이지로 이동한다. 이 페이지에서 **"최상위 문을 사용하지 않음"** 확인란을 선택한다.
+
+프로젝트가 생성된 후 `Program.cs` 파일의 내용은 다음과 같다:
+
+```cs
+
+namespace MyProject;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+```
+
+## Visual Studio에서 이전 프로그램 스타일 사용
+
+새 프로젝트를 만들 때, 설정 단계 중 "추가 정보" 페이지로 이동한다. 이 페이지에서 "최상위 문을 사용하지 않음" 확인란을 선택한다.
+
+이렇게 하면 Visual Studio에서 최상위 문을 사용하지 않는 방식으로 프로젝트가 생성된다. 프로젝트가 생성된 후 Program.cs 파일의 내용은 다음과 같다:
+
+```cs
+
+namespace MyProject;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+```
+
+## 참고 사항
+
+Visual Studio는 동일한 템플릿을 기반으로 다음 프로젝트를 만들 때 이 옵션의 값을 유지한다. 따라서 다음번에 콘솔 앱 프로젝트를 만들 때는 기본적으로 "최상위 문을 사용하지 않음" 확인란이 선택되어 있을 것이다. Program.cs 파일의 내용은 전역 Visual Studio 텍스트 편집기 설정이나 EditorConfig 파일에 정의된 코드 스타일에 따라 다를 수 있다.
+
+더 자세한 정보는 "EditorConfig로 이식 가능한 사용자 지정 편집기 설정 만들기" 및 "옵션, 텍스트 편집기, C#, 고급" 문서를 참조한다.
