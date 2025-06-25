@@ -11,10 +11,15 @@
             "id": "e0b07131e2f6ca22",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "public/Microsoft .NET 6 template changes 문서 번역.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "Microsoft .NET 6 template changes 문서 번역"
             }
           }
         ]
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "public/Microsoft .NET 6 template changes 문서 번역.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "Microsoft .NET 6 template changes 문서 번역 의 나가는 링크"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "public/Microsoft .NET 6 template changes 문서 번역.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "Microsoft .NET 6 template changes 문서 번역 의 개요"
             }
           },
           {
@@ -198,13 +205,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "9451ebdd0c0b6956",
+  "active": "e0b07131e2f6ca22",
   "lastOpenFiles": [
+    "public/Microsoft Introduction to .NET 문서 번역.md",
+    "public/Microsoft .NET 6 template changes 문서 번역.md",
     "language cpp.md",
     "conflict-files-obsidian-git.md",
     "index.md",
-    "public/Microsoft Introduction to .NET 문서 번역.md",
-    "public/Microsoft .NET 6 template changes 문서 번역.md",
     "private/교착 상태.md",
     "private/현문이 기말 과제.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
