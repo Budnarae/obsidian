@@ -194,12 +194,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
     "public/Microsoft Introduction to .NET 문서 번역.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
     "private/교착 상태.md",
-    "index.md",
     "private/현문이 기말 과제.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
     "public/listen.md",
