@@ -11,5 +11,8 @@
   "dataview",
   "dataview-serializer",
   "advanced-canvas",
-  "better-export-pdf"
+  "better-export-pdf",
+  "calendar",
+  "copilot",
+  "obsidian-local-images-plus"
 ]
