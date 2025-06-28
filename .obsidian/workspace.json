@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "private/올포랜드 입사지원서.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "올포랜드 입사지원서"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,11 +208,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
+    "private/올포랜드 입사지원서.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
     "public/Microsoft Introduction to .NET 문서 번역.md",
     "language cpp.md",
     "conflict-files-obsidian-git.md",
-    "index.md",
     "private/교착 상태.md",
     "private/현문이 기말 과제.md",
     "private/운영체제 학기말 과제/한림대학교 운영체제 강의 학기말 프로젝트.md",
@@ -237,7 +239,6 @@
     "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
     "Excalidraw",
     "private/운영체제 학기말 과제",
-    "private/42Seoul/microshell/flowchart/microshell-flowchart.excalidraw.md",
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
