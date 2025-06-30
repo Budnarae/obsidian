@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "093129f48c985256",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "6978758def4dae09",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "private/Libasem pdf 번역본.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Libasem pdf 번역본"
+              "title": "새 탭"
             }
           }
         ]
@@ -79,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,10 +201,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "6978758def4dae09",
   "lastOpenFiles": [
-    "index.md",
     "private/Libasem pdf 번역본.md",
+    "index.md",
     "private/올포랜드 입사지원서.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
     "public/Microsoft Introduction to .NET 문서 번역.md",
