@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/nasm assembly programming language tutorialspoint simply easy learning pdf 번역본.md",
+                "file": "public/assembly tutorial 요약본.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "nasm assembly programming language tutorialspoint simply easy learning pdf 번역본"
+              "title": "assembly tutorial 요약본"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/nasm assembly programming language tutorialspoint simply easy learning pdf 번역본.md",
+                "file": "public/assembly tutorial 요약본.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "nasm assembly programming language tutorialspoint simply easy learning pdf 번역본 의 개요"
+              "title": "assembly tutorial 요약본 의 개요"
             }
           },
           {
@@ -209,7 +209,7 @@
   },
   "active": "6978758def4dae09",
   "lastOpenFiles": [
-    "public/nasm assembly programming language tutorialspoint simply easy learning pdf 번역본.md",
+    "public/assembly tutorial 요약본.md",
     "private/Libasem pdf 번역본.md",
     "index.md",
     "private/올포랜드 입사지원서.md",
