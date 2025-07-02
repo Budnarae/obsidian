@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/assembly.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "assembly"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "microsoft",
+                "query": "assem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -209,9 +210,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/assembly tutorial 요약본.md",
-    "private/Libasem pdf 번역본.md",
     "index.md",
+    "public/assembly.md",
+    "private/Libasem pdf 번역본.md",
     "private/올포랜드 입사지원서.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
     "public/Microsoft Introduction to .NET 문서 번역.md",
