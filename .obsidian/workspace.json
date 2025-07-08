@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/크래프톤 정글 게임테크랩 지원서.md",
-                "mode": "source",
+                "file": "public/ssh.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "크래프톤 정글 게임테크랩 지원서"
+              "title": "ssh"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "32810acacf5537b1",
   "lastOpenFiles": [
-    "index.md",
     "private/크래프톤 정글 게임테크랩 지원서.md",
+    "index.md",
     "public/assembly.md",
     "private/Libasem pdf 번역본.md",
     "private/올포랜드 입사지원서.md",
