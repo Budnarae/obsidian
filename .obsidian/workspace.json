@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "mini_serv 억까 방지용 시트"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "private/크래프톤 정글 게임테크랩 지원서.md",
     "index.md",
+    "private/크래프톤 정글 게임테크랩 지원서.md",
     "public/ssh.md",
     "public/assembly.md",
     "private/Libasem pdf 번역본.md",
