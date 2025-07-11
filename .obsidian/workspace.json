@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/크래프톤 정글 게임테크랩 지원서.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "크래프톤 정글 게임테크랩 지원서"
+              "title": "index"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "private/크래프톤 정글 게임테크랩 지원서.md",
+    "index.md",
     "public/ssh.md",
     "public/assembly.md",
     "private/Libasem pdf 번역본.md",
