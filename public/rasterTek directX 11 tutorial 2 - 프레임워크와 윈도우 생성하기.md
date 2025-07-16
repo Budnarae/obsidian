@@ -263,9 +263,17 @@ Now let's take a look at the system class source file:
 
 In the class constructor I initialize the object pointers to null.
 
-클래스 생성자에서 필자는
+클래스 생성자에서 필자는 객체 포인터가 null을 가리키도록 했다.
 
-This is important because if the initialization of these objects fail then the Shutdown function further on will attempt to clean up those objects. If the objects are not null then it assumes they were valid created objects and that they need to be cleaned up. It is also good practice to initialize all pointers and variables to null in your applications. Some release builds will fail if you do not do so.
+This is important because if the initialization of these objects fail then the Shutdown function further on will attempt to clean up those objects.
+
+이 부분이 중요한 이유는 만약 이 객체들의 초기화가 실패했을 시 Shutdown 함수가 객체들을 정리하려 시도할 것이기 때문이다.
+
+If the objects are not null then it assumes they were valid created objects and that they need to be cleaned up.
+
+objects가 null이 아니라면 Shutdown은 
+
+It is also good practice to initialize all pointers and variables to null in your applications. Some release builds will fail if you do not do so.
 
 ```cpp
 
