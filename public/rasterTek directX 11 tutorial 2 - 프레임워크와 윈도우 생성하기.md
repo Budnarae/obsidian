@@ -940,6 +940,8 @@ private:
 
 I have kept this class entirely empty for now as we are just building the framework for this tutorial.
 
+나는 이 클래스를 통째로 비워놓았다. 이 튜토리얼을 진행하면서 이 프레임워크를 구축하게 될 것이다.
+
 ```cpp
 
 ////////////////////////////////////////////////////////////////////////////////
