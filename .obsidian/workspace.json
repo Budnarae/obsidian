@@ -206,8 +206,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "ingredient/img/3590ff275d3d893cb070696713b3ae57_MD5.gif",
+    "ingredient/img/44c97510716ea34f884225fb58ea11db_MD5.jpeg",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "private/42Seoul/matrix pdf 번역.md",
@@ -233,7 +235,6 @@
     "public/assembly.md",
     "private/올포랜드 입사지원서.md",
     "language cpp.md",
-    "conflict-files-obsidian-git.md",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
     "ingredient/canvas",
@@ -255,7 +256,6 @@
     "ingredient/img/멀티 프로세스 기반 서버/tcp 입출력 루틴 분할.png",
     "ingredient/img/다중 접속 서버 구현 방식/다중 접속 서버 구현 방식.jpg",
     "재료/img/다중 접속 서버 구현 방식_files/image(14).png",
-    "재료/img/다중 접속 서버 구현 방식_files/image(15).png",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
     "project/42Seoul/microshell/무제 파일.canvas"
