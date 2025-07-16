@@ -179,7 +179,7 @@ The definition of the class is fairly simple.
 
 We see the Initialize, Shutdown, and Run function that was called in WinMain defined here.
 
-우리는 헤더에서 정의된 초기화, 종료, 실행 함수가 WinMain 함수에서 실행되는 것을 보았다. 
+우리는 헤더에서 정의된 Initialize, Shutdown, Run 함수가 WinMain 함수에서 실행되는 것을 보았다. 
 
 There are also some private functions that will be called inside those functions.
 
@@ -187,9 +187,11 @@ There are also some private functions that will be called inside those functions
 
 We have also put a MessageHandler function in the class to handle the windows system messages that will get sent to the application while it is running.
 
-우리는 또한 
+우리는 또한 애플리케이션이 실행되는 동안 전송되는 윈도우 시스템 메시지를 제어하는 Messagehandler 함수 또한 클래스에 넣을 것이다.
 
 And finally, we have some private variables m_Input and m_Application which will be pointers to the two objects that will handle input and the graphics rendering.
+
+마지막으로, 우리는 private 멤버 변수인 m_Input, m_Applicaition을 선언할 것이며 각각 입력과 그
 
 ```cpp
 
