@@ -1,6 +1,7 @@
 ---
-tags: 
+tags:
   - directX11
+  - translation
 ---
 ---
 
