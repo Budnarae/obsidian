@@ -376,7 +376,17 @@ bool SystemClass::Initialize()
 
 ```
 
-The Shutdown function does the clean up. It shuts down and releases everything associated with the application and input object. As well it also shuts down the window and cleans up the handles associated with it.
+The Shutdown function does the clean up.
+
+Shutdown은 정리하지 않는다.
+
+It shuts down and releases everything associated with the application and input object.
+
+Shutdown은 application과 input 객체에 관련된 모든 것들을 종료하고 해제한다.
+
+As well it also shuts down the window and cleans up the handles associated with it.
+
+마찬가지로 Shutdown은 창을 종료하고 창과 관련있는 핸들들도 정리한다.
 
 ```cpp
 
