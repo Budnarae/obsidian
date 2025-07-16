@@ -726,9 +726,11 @@ You'll notice we tell windows the name of it when we initialize the window class
 
 I included it in this class file since we tie it directly into the system class by having it send all the messages to the MessageHandler function defined inside SystemClass.
 
-
+이 클래스를 시스템 클래스와 직접 연결하기 위해, 모든 메시지를 `SystemClass` 내부에 정의된 `MessageHandler` 함수로 전달하도록 구성했기 때문에 이 클래스 파일에 포함시켰다.
 
 This allows us to hook the messaging functionality straight into our class and keep the code clean.
+
+이렇게 하면 메시지 처리 기능을 우리의 클래스에 바로 연결할 수 있어 코드가 깔끔하게 유지된다.
 
 ```cpp
 
