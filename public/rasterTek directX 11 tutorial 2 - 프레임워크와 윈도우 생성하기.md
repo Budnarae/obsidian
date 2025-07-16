@@ -481,7 +481,17 @@ void SystemClass::Run()
 
 ```
 
-The following Frame function is where all the processing for our application is done. So far it is fairly simple, we check the input object to see if the user has pressed escape and wants to quit. If they don't want to quit then we call the application class object to do its frame processing which will render the graphics for that frame.
+The following Frame function is where all the processing for our application is done.
+
+다음의 Frame 함수는 애플리케이션을 위한 모든 처리가 이루어지는 곳이다.
+
+So far it is fairly simple, we check the input object to see if the user has pressed escape and wants to quit.
+
+지금까지는 비교적 간단하다. 사용자가 ESC 키를 눌러 종료를 원했는지 입력 객체를 통해 확인한다.
+
+If they don't want to quit then we call the application class object to do its frame processing which will render the graphics for that frame.
+
+사용자가 종료를 원하지 않는 경우에는 애플리케이션 클래스 객체를 호출하여 프레임 처리를 수행하게 되며, 이 과정에서 해당 프레임의 그래픽을 렌더링한다.
 
 ```cpp
 
