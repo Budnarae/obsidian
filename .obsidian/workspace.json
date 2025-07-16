@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
+                "file": "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "rasterTek directX 11 tutorial 1 - IDE 설치"
+              "title": "rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
+    "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "private/42Seoul/matrix pdf 번역.md",
     "private/42Seoul/SCOP pdf 번역.md",
     "private/42Seoul/Unity Piscine - Module 00 pdf 번역.md",
