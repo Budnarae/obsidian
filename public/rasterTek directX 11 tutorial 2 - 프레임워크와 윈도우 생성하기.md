@@ -1002,13 +1002,25 @@ So now we have a framework and a window that will pop up on the screen.
 
 This frame work will now be the base for all future tutorials so understanding this frame work is fairly important.
 
-이 프레임ㅇ
+이 프레임워크는 나중에 진행할 튜토리얼들의 토대가 되므로 이 프레임워크를 이해하는 것은 아주 중요하다.
 
-Please try the To Do exercise to make sure the code compiles and is working for you before moving on to the next tutorial. If you don't understand this frame work you should still be fine to move onto the other tutorials and they may make more sense to you later once the frame work is filled out more.
+Please try the To Do exercise to make sure the code compiles and is working for you before moving on to the next tutorial.
+
+다음 튜토리얼로 진행하기 전에 코드가 컴파일되며 의도한 동작을 하는지 확인하기 위해 실습을 하도록 하라.
+
+If you don't understand this frame work you should still be fine to move onto the other tutorials and they may make more sense to you later once the frame work is filled out more.
+
+이 프레임워크를 완전히 이해하지 못하더라도, 다른 튜토리얼로 넘어가는 데에는 문제가 없으며, 프레임워크가 더 완성되면 나중에 그것들이 더 잘 이해될 수도 있다.
 
 # 과제
 
-Change the FULL_SCREEN parameter to true in the applicationclass.h header then recompile and run the program. Press the escape key to quit after the window displays.
+Change the FULL_SCREEN parameter to true in the applicationclass.h header then recompile and run the program.
+
+`applicationclass.h` 헤더의 `FULL_SCREEN` 인자를 참으로 바꾸고 다시 컴파일하여 프로그램을 실행시켜 보아라.
+
+Press the escape key to quit after the window displays.
+
+창의 띄워진 후 esc 키를 눌러 종료시켜 보아라.
 
 # 참고자료
 
