@@ -115,7 +115,7 @@ After the Run function finishes, we then shut down the system object and do the 
 
 So, we have kept it very simple and encapsulated the entire application inside the system class. Now let's take a look at the system class header file.
 
-따라서, 우리는 전체 애플리케이션을 매우 단순하고 캡수
+따라서, 우리는 시스템 클래스 내의 전체 애플리케이션을 매우 단순하고 캡슐화된 상태로 유지할 수 있다. 이제, 시스템 클래스 헤더 파일을 살펴보도록 하자. 
 
 ==Systemclass.h==
 
@@ -129,7 +129,13 @@ So, we have kept it very simple and encapsulated the entire application inside t
 
 ```
 
-Here we define WIN32_LEAN_AND_MEAN. We do this to speed up the build process, it reduces the size of the Win32 header files by excluding some of the less used APIs.
+Here we define WIN32_LEAN_AND_MEAN.
+
+여기서 WIN32_LEAN_AND_MEAM을 정의한다.
+
+We do this to speed up the build process, it reduces the size of the Win32 header files by excluding some of the less used APIs.
+
+이 작업은 빌드 속도를 빠르게 하기 위해 수행되며, 자주 사용되지 않는 일부 API를 제외함으로써 Win32 헤더 파일의 크기를 줄여준다.
 
 ```cpp
 
@@ -140,7 +146,9 @@ Here we define WIN32_LEAN_AND_MEAN. We do this to speed up the build process, it
 
 ```
 
-We have included the headers to the other two classes in the frame work at this point so we can use them in the system class.
+We have included the headers to the other two classes in the framework at this point so we can use them in the system class.
+
+
 
 ```cpp
 
