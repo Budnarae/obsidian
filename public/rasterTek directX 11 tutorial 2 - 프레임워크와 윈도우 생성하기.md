@@ -580,13 +580,23 @@ We create the window using some default settings to initialize a plain black win
 
 The function will make either a small window or make a full screen window depending on a global variable called FULL_SCREEN.
 
-이 함수는 전역 변수 FULL_SCREEN이 호출되냐 마냐에 따라 작은 윈도우를 생성하거나, 전체 화면창을 생성한다.
+이 함수는 전역 변수 FULL_SCREEN의 값에 따라 작은 윈도우를 생성하거나, 전체 화면창을 생성한다.
 
 If this is set to true then we make the screen cover the entire user's desktop window.
 
+참으로 설정되어 있으면 전체 화면창을 생성한다.
 
+If it is set to false, we just make an 800x600 window in the middle of the screen.
 
-If it is set to false, we just make an 800x600 window in the middle of the screen. I placed the FULL_SCREEN global variable at the top of the applicationclass.h file in case you want to modify it. It will make sense later why I placed the global in that file instead of the header for this file.
+거짓으로 설정되어 있으면, 800x600 크기의 창을 스크린 중앙에 생성한다.
+
+I placed the FULL_SCREEN global variable at the top of the applicationclass.h file in case you want to modify it.
+
+나는 당신이 수정하고 싶을 경우를 상정하여 FULL_SCREEN 전역변수를 applicationclass.h 파일의 최상단에 배치했다.
+
+It will make sense later why I placed the global in that file instead of the header for this file.
+
+나중에 왜 그 전역 변수를 이 파일의 헤더가 아닌 해당 소스 파일에 넣었는지 이해가 될 것이다.
 
 ```cpp
 
