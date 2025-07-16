@@ -148,7 +148,7 @@ We do this to speed up the build process, it reduces the size of the Win32 heade
 
 We have included the headers to the other two classes in the framework at this point so we can use them in the system class.
 
-
+이 시점에서는 프레임워크의 다른 두 클래스에 대한 헤더 파일을 포함시켰기 때문에, 이제 시스템 클래스에서 그것들을 사용할 수 있다.
 
 ```cpp
 
@@ -161,6 +161,8 @@ We have included the headers to the other two classes in the framework at this p
 
 Windows.h is included so that we can call the functions to create/destroy windows and be able to use the other useful win32 functions.
 
+Windows.h가 포함되었기 때문에 이제 창을 생성하고 없애는 함수들을 호출할 수 있으며 다른 유용한 win32 함수들도 사용할 수 있다.
+
 ```cpp
 
 ///////////////////////
@@ -171,7 +173,15 @@ Windows.h is included so that we can call the functions to create/destroy window
 
 ```
 
-The definition of the class is fairly simple. We see the Initialize, Shutdown, and Run function that was called in WinMain defined here. There are also some private functions that will be called inside those functions. We have also put a MessageHandler function in the class to handle the windows system messages that will get sent to the application while it is running. And finally, we have some private variables m_Input and m_Application which will be pointers to the two objects that will handle input and the graphics rendering.
+The definition of the class is fairly simple.
+
+클래스의 정의는 꽤 단순하다.
+
+We see the Initialize, Shutdown, and Run function that was called in WinMain defined here.
+
+우리는 헤더에서 정의된 초기화, 종료, 실행 
+
+There are also some private functions that will be called inside those functions. We have also put a MessageHandler function in the class to handle the windows system messages that will get sent to the application while it is running. And finally, we have some private variables m_Input and m_Application which will be pointers to the two objects that will handle input and the graphics rendering.
 
 ```cpp
 
