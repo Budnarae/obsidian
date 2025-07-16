@@ -415,7 +415,15 @@ void SystemClass::Shutdown()
 
 ```
 
-The Run function is where our application will loop and do all the application processing until we decide to quit. The application processing is done in the Frame function which is called each loop. This is an important concept to understand as now the rest of our application must be written with this in mind. The pseudo code looks like the following:
+The Run function is where our application will loop and do all the application processing until we decide to quit.
+
+Run 함수는 우리가 종료할 때까지 반복문을 실행하며 애플리케이션 프로세스를 실행한다.
+
+The application processing is done in the Frame function which is called each loop.
+
+애플리케이션 프로세스는 매 반복마다 호출되는 Frame 함수에서 이루어진다
+
+This is an important concept to understand as now the rest of our application must be written with this in mind. The pseudo code looks like the following:
 
 while not done
     check for windows system messages
