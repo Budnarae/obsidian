@@ -421,9 +421,15 @@ Run 함수는 우리가 종료할 때까지 반복문을 실행하며 애플리�
 
 The application processing is done in the Frame function which is called each loop.
 
-애플리케이션 프로세스는 매 반복마다 호출되는 Frame 함수에서 이루어진다
+애플리케이션 프로세스는 매 반복마다 호출되는 Frame 함수에서 이루어진다.
 
-This is an important concept to understand as now the rest of our application must be written with this in mind. The pseudo code looks like the following:
+This is an important concept to understand as now the rest of our application must be written with this in mind.
+
+이것은 중요한 개념인데, 이제 나머지 애플리케이션을 작성할 때 이를 염두에 두어야 하기 때문이다.
+
+The pseudo code looks like the following:
+
+수도 코드는 다음과 같다.
 
 while not done
     check for windows system messages
