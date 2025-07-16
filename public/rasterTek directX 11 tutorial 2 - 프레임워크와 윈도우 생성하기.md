@@ -101,7 +101,11 @@ We create the system class and then initialize it.
 
 이제 시스템 클래스를 생성하고 초기화할 것이다.
 
-If it initializes with no problems then we call the system class Run function. The Run function will run its own loop and do all the application code until it completes. After the Run function finishes, we then shut down the system object and do the clean up of the system object. So, we have kept it very simple and encapsulated the entire application inside the system class. Now let's take a look at the system class header file.
+If it initializes with no problems then we call the system class Run function.
+
+aks
+
+The Run function will run its own loop and do all the application code until it completes. After the Run function finishes, we then shut down the system object and do the clean up of the system object. So, we have kept it very simple and encapsulated the entire application inside the system class. Now let's take a look at the system class header file.
 
   
 
