@@ -518,7 +518,19 @@ bool SystemClass::Frame()
 
 ```
 
-The MessageHandler function is where we direct the windows system messages into. This way we can listen for certain information that we are interested in. Currently we will just read if a key is pressed or if a key is released and pass that information on to the input object. All other information we will pass back to the windows default message handler.
+The MessageHandler function is where we direct the windows system messages into.
+
+MessageHandler 함수는 우리가 윈도우 시스템 메세지를 전달받아 처리하는 장소이다.
+
+This way we can listen for certain information that we are interested in.
+
+이를 통해 우리는 우리가 관심있는 특정 정보를 수신할 수 있다.
+
+Currently we will just read if a key is pressed or if a key is released and pass that information on to the input object.
+
+
+
+All other information we will pass back to the windows default message handler.
 
 ```cpp
 
