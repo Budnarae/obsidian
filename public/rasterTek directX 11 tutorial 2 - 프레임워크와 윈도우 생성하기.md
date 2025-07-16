@@ -996,7 +996,15 @@ bool ApplicationClass::Render()
 
 # 요약
 
-So now we have a framework and a window that will pop up on the screen. This frame work will now be the base for all future tutorials so understanding this frame work is fairly important. Please try the To Do exercise to make sure the code compiles and is working for you before moving on to the next tutorial. If you don't understand this frame work you should still be fine to move onto the other tutorials and they may make more sense to you later once the frame work is filled out more.
+So now we have a framework and a window that will pop up on the screen.
+
+이제 우리는 프레임워크와 스크린에 띄울 창을 갖추었다.
+
+This frame work will now be the base for all future tutorials so understanding this frame work is fairly important.
+
+이 프레임ㅇ
+
+Please try the To Do exercise to make sure the code compiles and is working for you before moving on to the next tutorial. If you don't understand this frame work you should still be fine to move onto the other tutorials and they may make more sense to you later once the frame work is filled out more.
 
 # 과제
 
