@@ -191,7 +191,7 @@ We have also put a MessageHandler function in the class to handle the windows sy
 
 And finally, we have some private variables m_Input and m_Application which will be pointers to the two objects that will handle input and the graphics rendering.
 
-마지막으로, 우리는 private 멤버 변수인 m_Input, m_Applicaition을 선언할 것이며 각각 입력과 그
+마지막으로, 각각 입력과 그래픽 렌더링을 담당하는 객체를 제어하는 포인터,  m_Input, m_Applicaition을 private 변수로 선언할 것이다.
 
 ```cpp
 
