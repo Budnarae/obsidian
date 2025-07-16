@@ -772,7 +772,17 @@ The input class handles the user input from the keyboard.
 
 input 클래스는 키보드를 이용한 사용자 입력을 다룬다.
 
-This class is given input from the SystemClass::MessageHandler function. The input object will store the state of each key in a keyboard array. When queried it will tell the calling functions if a certain key is pressed. Here is the header:
+This class is given input from the SystemClass::MessageHandler function.
+
+이 클래스는 `SystemClass::MessageHandler`로부터 입력을 받는다.
+
+The input object will store the state of each key in a keyboard array.
+
+`input` 객체는 키보드 배열에 각 키의 상태를 저장할 것이다.
+
+When queried it will tell the calling functions if a certain key is pressed. Here is the header:
+
+이 객체는 요청한 함수에게 특정 키가 눌렸는지 아닌지를 알려줄 것이다. 아래는 헤더이다.
 
 ```cpp
 
