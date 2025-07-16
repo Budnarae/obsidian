@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/42Seoul/SCOP pdf 번역.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SCOP pdf 번역"
+              "title": "index"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -209,6 +208,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "private/42Seoul/SCOP pdf 번역.md",
     "index.md",
     "private/교착 상태.md",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
@@ -216,7 +216,6 @@
     "ingredient/img/44c97510716ea34f884225fb58ea11db_MD5.jpeg",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
     "private/42Seoul/matrix pdf 번역.md",
-    "private/42Seoul/SCOP pdf 번역.md",
     "private/42Seoul/Unity Piscine - Module 00 pdf 번역.md",
     "private/42Seoul/Unity Piscine - Module 01 pdf 번역.md",
     "private/42Seoul/Unity Piscine - Quick Presentation pdf 번역.md",
