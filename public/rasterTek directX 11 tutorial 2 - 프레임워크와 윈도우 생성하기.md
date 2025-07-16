@@ -528,9 +528,11 @@ This way we can listen for certain information that we are interested in.
 
 Currently we will just read if a key is pressed or if a key is released and pass that information on to the input object.
 
-
+현재로서는 키가 눌렸는지 떼졌는지 여부를 읽어 input 객체를 통해 전달받는다.
 
 All other information we will pass back to the windows default message handler.
+
+다른 모든 정보는 윈도우의 기본 메세지 핸들러로 전달받는다.
 
 ```cpp
 
