@@ -328,10 +328,21 @@ SystemClass::~SystemClass()
 
 ```
 
-The following Initialize function does all the setup for the application. It first calls InitializeWindows which will create the window for our application to use. It also creates and initializes both the input and application objects that the application will use for handling user input and rendering graphics to the screen.
+The following Initialize function does all the setup for the application.
+
+후술하는 Initialize 함수는 애플리케이션을 위한 모든 설정을 수행한다.
+
+It first calls InitializeWindows which will create the window for our application to use.
+
+Initialize는 처음에 우리의 애플리케이션이 사용할 창을 만드는 InitializeWindows를 호출한다.
+
+It also creates and initializes both the input and application objects that the application will use for handling user input and rendering graphics to the screen.
+
+InitializeWindows는 또한 사용자의 입력을 처리하고 그래픽을 스크린에 렌더링하는 input 객체와 application 객체를 생성하고 초기화한다.
 
 ```cpp
 
+// InitializeWin
 bool SystemClass::Initialize()
 {
 	int screenWidth, screenHeight;
