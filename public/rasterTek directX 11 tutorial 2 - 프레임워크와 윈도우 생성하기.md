@@ -244,9 +244,11 @@ static SystemClass* ApplicationHandle = 0;
 
 The WndProc function and ApplicationHandle pointer are also included in this class file so we can re-direct the windows system messaging into our MessageHandler function inside the system class.
 
+WndProc 함수와 ApplicationHandle 포인터 또한 클래스 파일에 포함되며 따라서 우리는 system 클래스 내부의 MessageHandler 함수로 윈도우 시스템 메세지를 리다이렉트할 수 있다.
+
 Now let's take a look at the system class source file:
 
-  
+이제 시스템 클래스 소스 파일을 보도록 하자.  
 
 ==Systemclass.cpp==
 
@@ -259,7 +261,11 @@ Now let's take a look at the system class source file:
 
 ```
 
-In the class constructor I initialize the object pointers to null. This is important because if the initialization of these objects fail then the Shutdown function further on will attempt to clean up those objects. If the objects are not null then it assumes they were valid created objects and that they need to be cleaned up. It is also good practice to initialize all pointers and variables to null in your applications. Some release builds will fail if you do not do so.
+In the class constructor I initialize the object pointers to null.
+
+클래스 생성자에서 필자는
+
+This is important because if the initialization of these objects fail then the Shutdown function further on will attempt to clean up those objects. If the objects are not null then it assumes they were valid created objects and that they need to be cleaned up. It is also good practice to initialize all pointers and variables to null in your applications. Some release builds will fail if you do not do so.
 
 ```cpp
 
