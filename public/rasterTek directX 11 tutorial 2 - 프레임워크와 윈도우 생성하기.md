@@ -340,9 +340,10 @@ It also creates and initializes both the input and application objects that the 
 
 InitializeWindows는 또한 사용자의 입력을 처리하고 그래픽을 스크린에 렌더링하는 input 객체와 application 객체를 생성하고 초기화한다.
 
+InitializeWin
+
 ```cpp
 
-// InitializeWin
 bool SystemClass::Initialize()
 {
 	int screenWidth, screenHeight;
