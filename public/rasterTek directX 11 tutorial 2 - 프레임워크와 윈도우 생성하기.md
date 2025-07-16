@@ -271,9 +271,11 @@ This is important because if the initialization of these objects fail then the S
 
 If the objects are not null then it assumes they were valid created objects and that they need to be cleaned up.
 
-objects가 null이 아니라면 Shutdown은 
+객체들이 null이 아니라면, 그것들은 유효하게 생성된 객체라고 간주되어 정리 작업이 필요하다고 판단하게 된다.
 
 It is also good practice to initialize all pointers and variables to null in your applications. Some release builds will fail if you do not do so.
+
+모든 포인터와 변수를 null로 초기화하는 것은 좋은 프로그래밍 습관이다. 그렇지 않으면 일부 릴리스 빌드에서 실패할 수 있다.
 
 ```cpp
 
@@ -285,7 +287,13 @@ SystemClass::SystemClass()
 
 ```
 
-Here I create an empty copy constructor and empty class destructor. In this class I don't have need of them but if not defined some compilers will generate them for you, and in which case I'd rather they be empty.
+Here I create an empty copy constructor and empty class destructor.
+
+아래의 예시에서 비어있는 복사 생성자와 비어있는 소멸자를 만들었다.
+
+In this class I don't have need of them but if not defined some compilers will generate them for you, and in which case I'd rather they be empty.
+
+이 클래스에서는 복사생성자와 소멸자를 필요로 하지 않으며, 만약 정의하지 않는다면 몇몇 컴파일러는 자동으로 
 
 You will also notice I don't do any object clean up in the class destructor. I instead do all my object clean up in the Shutdown function you will see further down. The reason being is that I don't trust it to be called. Certain windows functions like ExitThread() are known for not calling your class destructors resulting in memory leaks. You can of course call safer versions of these functions now but I'm just being careful when programming on windows.
 
