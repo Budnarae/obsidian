@@ -566,7 +566,11 @@ LRESULT CALLBACK SystemClass::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam
 
 ```
 
-The InitializeWindows function is where we put the code to build the window we will use to render to. It returns screenWidth and screenHeight back to the calling function so we can make use of them throughout the application. We create the window using some default settings to initialize a plain black window with no borders. The function will make either a small window or make a full screen window depending on a global variable called FULL_SCREEN. If this is set to true then we make the screen cover the entire user's desktop window. If it is set to false, we just make an 800x600 window in the middle of the screen. I placed the FULL_SCREEN global variable at the top of the applicationclass.h file in case you want to modify it. It will make sense later why I placed the global in that file instead of the header for this file.
+The InitializeWindows function is where we put the code to build the window we will use to render to.
+
+
+
+It returns screenWidth and screenHeight back to the calling function so we can make use of them throughout the application. We create the window using some default settings to initialize a plain black window with no borders. The function will make either a small window or make a full screen window depending on a global variable called FULL_SCREEN. If this is set to true then we make the screen cover the entire user's desktop window. If it is set to false, we just make an 800x600 window in the middle of the screen. I placed the FULL_SCREEN global variable at the top of the applicationclass.h file in case you want to modify it. It will make sense later why I placed the global in that file instead of the header for this file.
 
 ```cpp
 
