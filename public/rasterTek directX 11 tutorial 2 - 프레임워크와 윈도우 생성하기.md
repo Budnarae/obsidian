@@ -103,11 +103,19 @@ We create the system class and then initialize it.
 
 If it initializes with no problems then we call the system class Run function.
 
-aks
+만약 문제없이 초기화되었다면 그 다음에 우리는 시스템 클래스 실행 함수를 호출할 것이다.
 
-The Run function will run its own loop and do all the application code until it completes. After the Run function finishes, we then shut down the system object and do the clean up of the system object. So, we have kept it very simple and encapsulated the entire application inside the system class. Now let's take a look at the system class header file.
+The Run function will run its own loop and do all the application code until it completes.
 
-  
+실행 함수는 자신의 반복문을 호출한 후 완료될 때까지 모든 애플리케이션 코드를 실행시킬 것이다.
+
+After the Run function finishes, we then shut down the system object and do the clean up of the system object.
+
+실행 함수가 종료된 후에, 우리는 시스템 객체를 종료시킨 후에 시스템 객체에 대한 정리 작업을 수행한다.
+
+So, we have kept it very simple and encapsulated the entire application inside the system class. Now let's take a look at the system class header file.
+
+따라서, 우리는 전체 애플리케이션을 매우 단순하고 캡수
 
 ==Systemclass.h==
 
