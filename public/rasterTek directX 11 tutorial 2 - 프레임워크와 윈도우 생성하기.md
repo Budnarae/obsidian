@@ -716,7 +716,19 @@ void SystemClass::ShutdownWindows()
 
 ```
 
-The WndProc function is where windows sends its messages to. You'll notice we tell windows the name of it when we initialize the window class with wc.lpfnWndProc = WndProc in the InitializeWindows function above. I included it in this class file since we tie it directly into the system class by having it send all the messages to the MessageHandler function defined inside SystemClass. This allows us to hook the messaging functionality straight into our class and keep the code clean.
+The WndProc function is where windows sends its messages to.
+
+WndProc 함수는 창이 메세지를 보내는 곳이다.
+
+You'll notice we tell windows the name of it when we initialize the window class with wc.lpfnWndProc = WndProc in the InitializeWindows function above.
+
+위의 `InitializeWindows` 함수에서 `wc.lpfnWndProc = WndProc`로 윈도우 클래스를 초기화할 때, 윈도우에게 해당 함수의 이름을 알려주는 것을 볼 수 있다.
+
+I included it in this class file since we tie it directly into the system class by having it send all the messages to the MessageHandler function defined inside SystemClass.
+
+
+
+This allows us to hook the messaging functionality straight into our class and keep the code clean.
 
 ```cpp
 
