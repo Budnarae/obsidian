@@ -309,9 +309,11 @@ The reason being is that I don't trust it to be called.
 
 Certain windows functions like ExitThread() are known for not calling your class destructors resulting in memory leaks.
 
-ExitThread() 같은 윈도우 함수는 당신이 만든 소멸자를 호출할 것
+ExitThread() 같은 윈도우 함수는 당신이 만든 소멸자를 호출하지 않는 것으로 알려져 있으며 이는 메모리 누수의 원인이 된다.
 
 You can of course call safer versions of these functions now but I'm just being careful when programming on windows.
+
+물론 지금은 이 함수들의 더 안전한 버전을 호출할 수도 있지만, 나는 윈도우에서 프로그래밍할 때 조심하는 편이다.
 
 ```cpp
 
