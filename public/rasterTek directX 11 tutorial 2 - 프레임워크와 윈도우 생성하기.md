@@ -293,9 +293,25 @@ Here I create an empty copy constructor and empty class destructor.
 
 In this class I don't have need of them but if not defined some compilers will generate them for you, and in which case I'd rather they be empty.
 
-이 클래스에서는 복사생성자와 소멸자를 필요로 하지 않으며, 만약 정의하지 않는다면 몇몇 컴파일러는 자동으로 
+이 클래스에서는 복사생성자와 소멸자를 필요로 하지 않는다. 만약 정의하지 않는다면 몇몇 컴파일러는 자동으로 저들을 생성해주는데, 그럴 경우 차라리 빈 상태로 존재하는 것이 낫다.
 
-You will also notice I don't do any object clean up in the class destructor. I instead do all my object clean up in the Shutdown function you will see further down. The reason being is that I don't trust it to be called. Certain windows functions like ExitThread() are known for not calling your class destructors resulting in memory leaks. You can of course call safer versions of these functions now but I'm just being careful when programming on windows.
+You will also notice I don't do any object clean up in the class destructor.
+
+당신은 또한 소멸자에서 어떠한 객체도 정리하지 않았다는 것을 눈치챘을 것이다. 
+
+I instead do all my object clean up in the Shutdown function you will see further down.
+
+대신에 나는 후술할 Shutdown 함수에서 객체 정리 작업을 수행한다.
+
+The reason being is that I don't trust it to be called.
+
+왜냐하면 소멸자가 호출될 것이라 확신할 수 없기 때문이다.
+
+Certain windows functions like ExitThread() are known for not calling your class destructors resulting in memory leaks.
+
+ExitThread() 같은 윈도우 함수는 당신이 만든 소멸자를 호출할 것
+
+You can of course call safer versions of these functions now but I'm just being careful when programming on windows.
 
 ```cpp
 
