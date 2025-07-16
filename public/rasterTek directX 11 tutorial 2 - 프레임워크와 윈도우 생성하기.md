@@ -685,6 +685,8 @@ void SystemClass::InitializeWindows(int& screenWidth, int& screenHeight)
 
 ShutdownWindows does just that. It returns the screen settings back to normal and releases the window and the handles associated with it.
 
+ShutdownWindows는 이름 그대로의 작업을 한다. 이 함수는 화면 설정을 원래대로 되돌리고, 윈도우와 그에 관련된 핸들을 해제한다.
+
 ```cpp
 
 void SystemClass::ShutdownWindows()
