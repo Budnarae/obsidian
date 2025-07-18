@@ -155,9 +155,21 @@ GPU는 정확한 속성을 버퍼로부터 추출하기 위해서 정점 레이�
 
 To accomplish this requires the use of an input layout.
 
-이것을 ㅅ
+이 작업을 수행하려면 입력 레이아웃을 사용해야 한다.
 
-In Direct3D 11, an input layout is a Direct3D object that describes the structure of vertices in a way that can be understood by the GPU. Each vertex attribute can be described with the D3D11_INPUT_ELEMENT_DESC structure. An application defines an array of one or more D3D11_INPUT_ELEMENT_DESC, then uses that array to create the input layout object which describes the vertex as a whole. We will now look at the fields of D3D11_INPUT_ELEMENT_DESC in detail.
+In Direct3D 11, an input layout is a Direct3D object that describes the structure of vertices in a way that can be understood by the GPU.
+
+Direct3D 11에서, 입력 레이아웃은 GPU가 읽을 수 있는 방식으로 정점 구조체를 정의하는 Direct3D 객체이다.
+
+Each vertex attribute can be described with the D3D11_INPUT_ELEMENT_DESC structure.
+
+각 정점 특성은 D3D11_INPUT_ELEMENT_DESC 구조체에 의해 정의된다.
+
+An application defines an array of one or more D3D11_INPUT_ELEMENT_DESC, then uses that array to create the input layout object which describes the vertex as a whole.
+
+응용프로그램은 하나 또는 그 이상의 D3D11_INPUT_ELEMENT_DESC를 정의
+
+We will now look at the fields of D3D11_INPUT_ELEMENT_DESC in detail.
 
 |   |   |
 |---|---|
