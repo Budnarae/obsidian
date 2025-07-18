@@ -66,9 +66,25 @@ How do we pass this information to the GPU?
 
 In Direct3D 11, vertex information such as position is stored in a buffer resource.
 
-Direct3D 11에서, 위
+Direct3D 11에서, 위치와 같은 정점 정보는 버퍼 리소스에 저장된다.
 
-A buffer that is used to store vertex information is called, not surprisingly, a vertex buffer. We must create a vertex buffer large enough for three vertices and fill it with the vertex positions. In Direct3D 11, the application must specify a buffer size in bytes when creating a buffer resource. We know the buffer has to be large enough for three vertices, but how many bytes does each vertex need? To answer that question requires an understanding of vertex layout.
+A buffer that is used to store vertex information is called, not surprisingly, a vertex buffer.
+
+정점 정보를 저장하기 위한 버퍼는, 예상했듯이, 정점 버퍼로 불린다.
+
+We must create a vertex buffer large enough for three vertices and fill it with the vertex positions.
+
+정점 버퍼는 세 개의 삼각형을 저장하기에 충분한 크기로 생성되어야 하며 정점 정보로 채워져야 한다.
+
+In Direct3D 11, the application must specify a buffer size in bytes when creating a buffer resource.
+
+Direct3D 11에서, 실행프로그램은 버퍼 리소스를 생성할 때 바이트 단위로 버퍼의 크기를 특정해야 한다.
+
+We know the buffer has to be large enough for three vertices, but how many bytes does each vertex need?
+
+
+
+To answer that question requires an understanding of vertex layout.
 
 # Input Layout
 
