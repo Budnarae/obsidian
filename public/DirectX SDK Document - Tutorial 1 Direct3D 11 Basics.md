@@ -31,4 +31,11 @@ The first steps of creating the window and message loop are identical in Direct3
 
 See DIrect3D 10 Tutorial 00: Win32 Basics for an introduction to this process.
 
+이 단계에 대해 소개한 [[DirectX SDK Document - Tutorial 0 Win32 Basics]]을 보도록 하자.
+
+Now that we have a window that is displaying, we can continue to set up a Direct3D 11 device.
+
+이제 우리는 창을 얻었으므로, 계속해서 Direct3D 11 장치를 설정해보자.
+
+SetUp is necessary if we are going to render any 3D scene.
 
