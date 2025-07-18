@@ -314,6 +314,42 @@ The problem with **GetMessage()** is that if there is no message in the queue fo
 
 Thus, instead of doing something like rendering, our application is waiting within **GetMessage()** when the message queue is empty.
 
+그러므로, 메시지 큐가 비었을 때 응용프로그램은 렌더링을 하는 대신, **GetMessage()** 함수에서 대기하고 있게 된다.
+
+We can solve this problem by using **PeekMessage()** instead of **GetMessage()**.
+
+**GetMessage()** 대신  **PeekMessage()**를 사용하여 이 문제를 해결할 수 있다.
+
+**PeekMessage()** can retrieve a message like **GetMessage()** does, but when there is no message waiting, **PeekMessage()** returns immediately instead of blocking.
+
+ **PeekMessage()**는 **GetMessage()**와 같이 메시지를 수신하지만, 수신할 메시지가 없으면  **PeekMessage()**는 블록되는 대신 즉시 반환한다.
+
+We can then take this time to do some rendering.
+
+그러면 우리는 렌더링할 시간을 확보하였다.
+
+The modified message loop, which uses **PeekMessage()**, looks like this:
+
+**PeekMessage()**를 사용하여 수정한 메시지 루프는 다음과 같다.
+
+```cpp
+
+MSG msg = {0};
+while( WM_QUIT != msg.message )
+{
+	if( PeekMessage( &msg, NULL, 0, 0, PM_REMOVE ) )
+	{
+		TranslateMessage( &msg );
+		DispatchMessage( &msg );
+	}
+	else
+	{
+		Render();  // Do some rendering
+	}
+}
+
+```
+
+# The Rendering code
 
 
-We can solve this problem by using **PeekMessage()** instead of **GetMessage()**. **PeekMessage()** can retrieve a message like **GetMessage()** does, but when there is no message waiting, **PeekMessage()** returns immediately instead of blocking. We can then take this time to do some rendering. The modified message loop, which uses **PeekMessage()**, looks like this:
