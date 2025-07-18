@@ -39,3 +39,22 @@ Now that we have a window that is displaying, we can continue to set up a Direct
 
 SetUp is necessary if we are going to render any 3D scene.
 
+3차원 장면을 렌더링하는데 설정은 필수적이다.
+
+The first thing to do is to create three objects: a device, an immediate context, and a swap chain.
+
+첫번째로 해야할 일은 3개의 객체를 만드는 것이다: 장치, 즉시 컨텍스트, 스왑 체인.
+
+THe immediate context is a new object in Direct3D 11.
+
+즉시 컨텍스트는 Direct3D 11의 새로운 객체이다.
+
+---
+
+In Direct3D 10, the device object was used to perform both rendering and resource creation.
+
+DIrect3D 10에서, 장치 객체는 렌더링과 리소스 생성을 둘 다 수행했다.
+
+In Direct3D 11, the immeidate context is used by the application to perform rendering onto a buffer, and the device contains methods to create resources.
+
+Direct3D 11에서, 즉시 컨텍스트는
