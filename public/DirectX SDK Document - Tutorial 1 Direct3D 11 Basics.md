@@ -63,7 +63,7 @@ Direct3D 11에서 즉시 컨텍스트는 응용프로그램이 버퍼에 렌더�
 
 The swap chain is responsible for taking the buffer to which the device renders, and displaying the content, on the actual monitor screen.
 
-스왑 체인은 장치가 렌더링한 버퍼를 가져와서 실제 모니터 화면에 내용을 보여주는 역할을 한다.
+스왑 체인은 장치가 렌더링하는 버퍼를 저장하며, 버퍼의 내용을 실제 모니터 화면에 내용을 보여주는 역할을 한다.
 
 The swap chain contians two or more buffers, mainly the front and the back.
 
@@ -87,8 +87,22 @@ The back buffer is the render target to which the device will draw.
 
 Once it finishes the drawing operation, the swap chain will present the backbuffer by swapping the two buffers.
 
-한번 그리기를 수행할 
+한번 그리기를 수행하면, 장치는 백 버퍼를 보존하기 위해 두 개의 버퍼를 뒤바꾼다.
 
-The back buffer becones the front buffer, and vice versa.
+The back buffer becomes the front buffer, and vice versa.
 
+백 버퍼는 프론트 버퍼가 되고, 프론트 버퍼는 백 버퍼가 된다.
 
+---
+
+To create the swap chain, we fill out a DXGI_SWAPCHAIN_DESC structure that describes the swap chain we are about to create.
+
+스왑 체인을 만들기 위해, 우리가 만들 스왑 체인을 나타내는 DXGI_SWAPCHAIN_DESC 구조체를 작성한다.
+
+A few fields are worth mentioning.
+
+몇몇 필드는 언급할 가치가 있다.
+
+**BackBufferUsage** is a flag that tells the application how the back buffer will be used.
+
+**BackBufferUsage**는
