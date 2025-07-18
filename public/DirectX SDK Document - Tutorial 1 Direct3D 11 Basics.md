@@ -178,9 +178,21 @@ We can cast that chunk of memory to an array of integers, an array of floats, a 
 
 The raw memory itself is not very useful to us if we don't know its type.
 
-원시 메모리는 그것의 타입을 알 수 없다면 우리에게 그닥 쓸모있지 ㅏㅇ
+원시 메모리는 그것의 타입을 알 수 없다면 우리에게 그닥 쓸모있지 않다.
 
-Direct3D 11 resource views act in a similar way. For instance, a 2D texture, analogous to the raw memory chunk, is the raw underlying resource. Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource. Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
+Direct3D 11 resource views act in a similar way.
+
+Direct3D 11 리소스 뷰는 비슷한 원리로 동작한다.
+
+For instance, a 2D texture, analogous to the raw memory chunk, is the raw underlying resource.
+
+예를 들어, 2차원 텍스처는, 원시 메모리 덩어리와 비슷하게, 원시 저수준 리소스이다.
+
+Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource.
+
+우리는 리소스를 사용하여 그래픽스 파이프라인에 자
+
+Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
 
 ---
 
