@@ -57,7 +57,7 @@ DIrect3D 10에서, 장치 객체는 렌더링과 리소스 생성을 둘 다 수
 
 In Direct3D 11, the immeidate context is used by the application to perform rendering onto a buffer, and the device contains methods to create resources.
 
-Direct3D 11에서 즉시 컨텍스트는 응용프로그램이 버퍼에 렌더링할 때 사용하고, 장치는 리소스를 생성하는 메서드를 가진다.
+Direct3D 11에서 즉시 컨텍스트는 응용프로그램이 버퍼에 렌더링할 때 사용하고, 장치는 리소스를 생성하는 메서드를 포함한다.
 
 ---
 

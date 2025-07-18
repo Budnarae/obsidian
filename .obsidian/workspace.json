@@ -52,7 +52,8 @@
               "title": "DirectX SDK Document - Tutorial 0 Win32 Basics"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
+                "file": "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DirectX SDK Document - Tutorial 0 Win32 Basics 의 개요"
+              "title": "DirectX SDK Document - Tutorial 1 Direct3D 11 Basics 의 개요"
             }
           },
           {
@@ -237,10 +238,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "cc5a935ad9a7e997",
+  "active": "a8ab773ffb988a21",
   "lastOpenFiles": [
-    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
+    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "재료/이미지/5478909835ac62f41e01f5591baa3a9a_MD5.jpeg",
     "Pasted image 20250718145530.png",
