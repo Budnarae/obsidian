@@ -31,7 +31,7 @@ Direct3D 10에 대한 구체적인 내용에 들어가기 전에, 먼저 애플�
 
 Three things are involved:
 
-세가지 요소가 동반된다.
+세가지 과정이 동반된다.
 
 1. Register a window class.
 

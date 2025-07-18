@@ -13,13 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
-                "mode": "source",
+                "file": "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 2 Rendering a Triangle"
+              "title": "DirectX SDK Document - Tutorial 0 Win32 Basics"
+            }
+          },
+          {
+            "id": "a8ab773ffb988a21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "DirectX SDK Document - Tutorial 1 Direct3D 11 Basics"
             }
           },
           {
@@ -69,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:DirectX11",
+                "query": "tag:directX11",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -159,13 +173,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
+                "file": "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DirectX SDK Document - Tutorial 2 Rendering a Triangle 의 개요"
+              "title": "DirectX SDK Document - Tutorial 0 Win32 Basics 의 개요"
             }
           },
           {
@@ -225,6 +239,9 @@
   },
   "active": "cc5a935ad9a7e997",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
+    "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
+    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "재료/이미지/5478909835ac62f41e01f5591baa3a9a_MD5.jpeg",
     "Pasted image 20250718145530.png",
     "재료/이미지/9cc6e1ed3d0d535a5f3c3812b5acd537_MD5.jpeg",
@@ -233,9 +250,6 @@
     "재료/이미지",
     "재료",
     "Pasted image 20250718145347.png",
-    "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
-    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
-    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "ingredient/ai role/번역가.md",
@@ -271,7 +285,6 @@
     "resource/CSS",
     "ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
-    "ingredient/img/도커/도커의 구조.jpeg",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
