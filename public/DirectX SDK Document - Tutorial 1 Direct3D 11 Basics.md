@@ -25,4 +25,10 @@ The elements include setting up a window and a device object, and then displayin
 
 ## Setting up The Direct3D 11 Device
 
-THe first steps of creating the window and message loop are identical in Direct3D 9, DirectX3D 10, 
+The first steps of creating the window and message loop are identical in Direct3D 9, Direct3D 10, and DIrectD3 11.
+
+창과 메시지 루프를 만드는 첫번째 단계는 Direct3D 9, 10, 11에서 모두 동일하다.
+
+See DIrect3D 10 Tutorial 00: Win32 Basics for an introduction to this process.
+
+
