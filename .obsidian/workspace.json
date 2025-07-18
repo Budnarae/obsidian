@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ed9bc8aa8f554ee2",
+        "id": "9fa95d3f22ffbe42",
         "type": "tabs",
         "children": [
           {
-            "id": "8d9f613cfbff93f2",
+            "id": "a163693a6c0c1912",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "public/무제.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "무제"
             }
           }
         ]
@@ -74,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/크래프톤 정글 게임테크랩 지원서.md",
+                "file": "public/무제.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "크래프톤 정글 게임테크랩 지원서 의 개요"
+              "title": "무제 의 개요"
             }
           },
           {
@@ -168,17 +172,17 @@
             }
           },
           {
-            "id": "9451ebdd0c0b6956",
+            "id": "25b2a15df11ebd9c",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "copilot-chat-view",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -202,9 +206,26 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "8d9f613cfbff93f2",
+  "active": "a163693a6c0c1912",
   "lastOpenFiles": [
+    "public/무제.md",
+    "ingredient/ai role/번역가.md",
+    "ingredient/ai role/Translate to Chinese.md",
+    "ingredient/ai role/Summarize.md",
+    "ingredient/ai role/Simplify.md",
+    "ingredient/ai role/Rewrite as tweet thread.md",
+    "ingredient/ai role/Rewrite as press release.md",
+    "ingredient/ai role/Remove URLs.md",
+    "ingredient/ai role/Make shorter.md",
+    "ingredient/ai role/Make longer.md",
+    "ingredient/ai role/Generate table of contents.md",
+    "ingredient/ai role/Generate glossary.md",
+    "ingredient/ai role/Fix grammar and spelling.md",
+    "ingredient/ai role/Explain like I am 5.md",
+    "ingredient/ai role/Emojify.md",
     "index.md",
+    "ingredient/ai role/Rewrite as tweet.md",
+    "ingredient/ai role",
     "private/42Seoul/matrix pdf 번역.md",
     "private/42Seoul/SCOP pdf 번역.md",
     "private/교착 상태.md",
@@ -216,22 +237,6 @@
     "private/42Seoul/Unity Piscine - Module 01 pdf 번역.md",
     "private/42Seoul/Unity Piscine - Quick Presentation pdf 번역.md",
     "private/42Seoul/miniRT/miniRT.pdf.md",
-    "public/matrix pdf 번역.md",
-    "public/Unity Piscine - Quick Presentation pdf 번역.md",
-    "public/Unity Piscine - Module 01 pdf 번역.md",
-    "public/Unity Piscine - Module 00 pdf 번역.md",
-    "public/SCOP pdf 번역.md",
-    "private/42Seoul/Libasem pdf 번역본.md",
-    "private/현문이 기말 과제.md",
-    "public/REST API.md",
-    "public/Microsoft .NET 6 template changes 문서 번역.md",
-    "public/Microsoft Introduction to .NET 문서 번역.md",
-    "private/42Seoul/mini_serv/mini_serv 억까 방지용 시트.md",
-    "private/크래프톤 정글 게임테크랩 지원서.md",
-    "public/ssh.md",
-    "public/assembly.md",
-    "private/올포랜드 입사지원서.md",
-    "language cpp.md",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
     "ingredient/canvas",
@@ -242,7 +247,6 @@
     "resource/CSS",
     "resource/암호학",
     "resource/소켓 프로그래밍(리눅스)",
-    "resource/기초 개념",
     "ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/ft_transcendence/page flow.excalidraw.png",
     "ingredient/img/도커/도커의 구조.jpeg",
