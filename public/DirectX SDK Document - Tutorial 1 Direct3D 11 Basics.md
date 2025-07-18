@@ -70,3 +70,25 @@ The swap chain contians two or more buffers, mainly the front and the back.
 스왑 체인은 두 개 이상의 버퍼를 포함하는데, 주로 프론트 버퍼와 백 버퍼이다.
 
 These are textures to which the device renders in order to display on the monitor.
+
+이들은 장치가 모니터에 표시하기 위해 렌더링할 텍스처들이다.
+
+The front buffer is what is being presented currently to the user.
+
+프론트 버퍼는 현재 사용자에게 보여지고 있는 버퍼이다.
+
+This buffer is read-only and cannot be modified.
+
+이 버퍼는 읽기 전용이며 수정이 불가능하다.
+
+The back buffer is the render target to which the device will draw.
+
+백 버퍼는 장치가 그리기를 수행할 렌더 타켓이다.
+
+Once it finishes the drawing operation, the swap chain will present the backbuffer by swapping the two buffers.
+
+한번 그리기를 수행할 
+
+The back buffer becones the front buffer, and vice versa.
+
+
