@@ -105,4 +105,12 @@ A few fields are worth mentioning.
 
 **BackBufferUsage** is a flag that tells the application how the back buffer will be used.
 
-**BackBufferUsage**는
+**BackBufferUsage**는 응용프로그램에게 백버퍼가 어떻게 사용될지 알려주는 플래그이다.
+
+In this case, we want to render to the back buffer, so we'll set **BackBufferUsage** to DXGI_USAGE_RENDER_TARGET_OUTPUT.
+
+이 튜토리얼에서 우리는 백 버퍼에 렌더링하기를 원하므로 **BackBufferUsage**를 DXGI_USAGE_RENDER_TARGET_OUTPUT로 설정할 것이다.
+
+The **OutputWindow** field represents the window that sampling, SampleDesc's Count is set to 1 and Quality to 0 to have multi-sampling disabled.
+
+**OutputWindow** 필드는 샘플링이 적용될 윈도우를 나타내고, SampleDesc의 Count는 1로, Quality는 0으로 설정해서 멀티샘플링을 비활성화한다.
