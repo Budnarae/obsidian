@@ -220,6 +220,18 @@ This description is normally the second parameter to **CreateRenderTargetView**.
 
 However, for these tutorials, the default render target view will suffice.
 
-하지만, 이 튜토리얼을 위해, 
+하지만, 이 튜토리얼을 위해서는 기본 렌더 타깃 뷰로 족하다.
 
-The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
+The default render target view can be obtained by passing NULL as the second parameter.
+
+기본 렌더 타깃 뷰는 두번째 파라미터에 NULL을 전달함으로서 얻을 수 있다.
+
+Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline.
+
+랜덤 타깃 뷰를 생성하면, 우리는 즉시 컨텍스트에서 **OMSetRenderTargets()**를 호출하여 파이프라인에 바인드할 수 있다.
+
+This ensures the output that the pipeline renders gets written to the back buffer.
+
+이를 통해 파이프라인이 렌더링한 결과물이 백 버퍼에 작성됨을 보장할 수 있다.
+
+The code to create and set the render target view is as follows:
