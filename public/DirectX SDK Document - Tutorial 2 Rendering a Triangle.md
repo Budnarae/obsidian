@@ -157,6 +157,8 @@ To accomplish this requires the use of an input layout.
 
 이 작업을 수행하려면 입력 레이아웃을 사용해야 한다.
 
+---
+
 In Direct3D 11, an input layout is a Direct3D object that describes the structure of vertices in a way that can be understood by the GPU.
 
 Direct3D 11에서, 입력 레이아웃은 GPU가 읽을 수 있는 방식으로 정점 구조체를 정의하는 Direct3D 객체이다.
@@ -167,9 +169,11 @@ Each vertex attribute can be described with the D3D11_INPUT_ELEMENT_DESC structu
 
 An application defines an array of one or more D3D11_INPUT_ELEMENT_DESC, then uses that array to create the input layout object which describes the vertex as a whole.
 
-응용프로그램은 하나 또는 그 이상의 D3D11_INPUT_ELEMENT_DESC를 정의
+응용프로그램은 하나 또는 그 이상의 D3D11_INPUT_ELEMENT_DESC를 정의하며, 그 배열을 사용해 정점 전체를 정의하는 입력 레이아웃 객체를 생성한다.
 
 We will now look at the fields of D3D11_INPUT_ELEMENT_DESC in detail.
+
+D3D11_INPUT_ELEMENT_DESC의 필드들을 세부적으로 살펴보자
 
 |   |   |
 |---|---|
