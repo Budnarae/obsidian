@@ -258,6 +258,18 @@ DIrect3D 11로 렌더하기 위해 마지막으로 설정할 것은 뷰포트를
 
 The viewport maps clip space coordinates, where X and Y range from -1 to 1 and Z ranges from 0 to 1, to render target space, sometimes known as pixel space.
 
+뷰포트는 목표 공간을 렌더하기 위한, x y 범위는 \[-1, 1]이며 z 범위는 \[0, 1]인 클립 좌표계(때때로 픽셀 좌표계로 불리기도 한다)를 사상한다.
 
+In Direct3D 9, if the application does not set up a viewport, a default viewport is set up to be the same size as the render target.
 
-In Direct3D 9, if the application does not set up a viewport, a default viewport is set up to be the same size as the render target. In Direct3D 11, no viewport is set by default. Therefore, we must do so before we can see anything on the screen. Since we would like to use the entire render target for the output, we set the top left point to (0, 0) and width and height to be identical to the render target's size. To do this, use the following code:
+Direct3D 9에서, 만약 응용프로그램이 뷰포트를 설정하지 않으면, 기본 뷰포트는 렌더 목표와 똑같은 크기로 설정된다.
+
+In Direct3D 11, no viewport is set by default.
+
+DIrect3D 11에서, 뷰포트는 기본적으로 설정되어있지 않다.
+
+Therefore, we must do so before we can see anything on the screen.
+
+그러므로, 우리는 
+
+Since we would like to use the entire render target for the output, we set the top left point to (0, 0) and width and height to be identical to the render target's size. To do this, use the following code:
