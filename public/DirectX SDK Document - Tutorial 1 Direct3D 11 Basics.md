@@ -115,7 +115,6 @@ The **OutputWindow** field represents the window that the swap chain will use to
 
 **OutputWindow** 필드는 스왑 체인이 화면에 이미지를 표시하기 위한 창을 나타낸다.
 
-
 SampleDesc is used to enable multi-sampling.
 
 SampleDesc는 멀티 샘플링을 가능하게 하기 위해 사용된다.
@@ -123,6 +122,8 @@ SampleDesc는 멀티 샘플링을 가능하게 하기 위해 사용된다.
 Since this tutorial does not use multi-sampling, SampleDesc's Count is set to 1 and Quality to 0 to have multi-sampling disabled.
 
 이 튜토리얼은 멀티샘플링을 사용하지 않으므로, SampleDesc의 Count는 1로, Quality는 0으로 설정해서 멀티샘플링을 비활성화한다.
+
+---
 
 Once the description has been filled out, we can call the D3D11CreateDeviceAndSwapChain function to create both the device and the swap chain for us.
 
@@ -151,6 +152,8 @@ if( FAILED( D3D11CreateDeviceAndSwapChain( NULL, D3D_DRIVER_TYPE_HARDWARE, NULL,
 }
 
 ```
+
+---
 
 The next thing we need to do is to create a render view.
 
@@ -252,6 +255,8 @@ g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, NULL );
 
 ```
 
+---
+
 The last thing we need to set up before Direct3D 11 can render is initialize the viewport.
 
 DIrect3D 11로 렌더하기 위해 마지막으로 설정할 것은 뷰포트를 초기화하는 것이다.
@@ -270,6 +275,25 @@ DIrect3D 11에서, 뷰포트는 기본적으로 설정되어있지 않다.
 
 Therefore, we must do so before we can see anything on the screen.
 
-그러므로, 우리는 
+그러므로, 우리는 화면에 뭐라도 보기 위해서는 뷰포트를 설정해야 한다.
 
-Since we would like to use the entire render target for the output, we set the top left point to (0, 0) and width and height to be identical to the render target's size. To do this, use the following code:
+Since we would like to use the entire render target for the output, we set the top left point to (0, 0) and width and height to be identical to the render target's size.
+
+만약 우리가 전체 렌더 타깃을 출력하기를 바란다면, 좌상단 점을 (0, 0)으로 설정하고 넓이와 높이를 렌더 타깃 크기와 동일하게 설정하면 된다.
+
+To do this, use the following code:
+
+이를 위해, 다음의 코드를 사용하자:
+
+```cpp
+
+D3D11_VIEWPORT vp;
+vp.Width = (FLOAT)width;
+vp.Height = (FLOAT)height;
+vp.MinDepth = 0.0f;
+vp.MaxDepth = 1.0f;
+vp.TopLeftX = 0;
+vp.TopLeftY = 0;
+g_pImmediateContext->RSSetViewports( 1, &vp );
+
+```
