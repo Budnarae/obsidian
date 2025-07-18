@@ -124,16 +124,38 @@ Therefore, we define our vertex structure with a single field of the type XMFLOA
 
 This type is a vector of three floating-points components, which is typically the data type used for position in 3D.
 
+이 타입은 세 개의 부동소수점 요소로 이루어진 벡터로, 일반적으로 3D 공간에서 위치를 표현할 때 사용하는 데이터 타입이다.
 
+```cpp
 
 struct SimpleVertex
 {
     XMFLOAT3 Pos;  // Position
 };
 
+```
+
 ---
 
-We now have a structure that represents our vertex. That takes care of storing vertex information in system memory in our application. However, when we feed the GPU the vertex buffer containing our vertices, we are just feeding it a chunk of memory. The GPU must also know about the vertex layout in order to extract correct attributes out from the buffer. To accomplish this requires the use of an input layout.
+We now have a structure that represents our vertex.
+
+이제 정점을 나타내는 구조체를 얻었다.
+
+That takes care of storing vertex information in system memory in our application.
+
+이 구조체를 사용하여 정점 정보를 응용프로그램의 시스템 메모리에 저장할 수 있다.
+
+However, when we feed the GPU the vertex buffer containing our vertices, we are just feeding it a chunk of memory.
+
+하지만, 우리가 정점을 저장하고 있는 정점 버퍼를 GPU에 제공할 때, 우리는 단지 메모리 덩어리를 제공하는 것이다.
+
+The GPU must also know about the vertex layout in order to extract correct attributes out from the buffer.
+
+GPU는 정확한 속성을 버퍼로부터 추출하기 위해서 정점 레이아웃에 관해서도 알아야 한다.
+
+To accomplish this requires the use of an input layout.
+
+이것을 ㅅ
 
 In Direct3D 11, an input layout is a Direct3D object that describes the structure of vertices in a way that can be understood by the GPU. Each vertex attribute can be described with the D3D11_INPUT_ELEMENT_DESC structure. An application defines an array of one or more D3D11_INPUT_ELEMENT_DESC, then uses that array to create the input layout object which describes the vertex as a whole. We will now look at the fields of D3D11_INPUT_ELEMENT_DESC in detail.
 
