@@ -56,6 +56,8 @@ We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the 
 
 ![[9cc6e1ed3d0d535a5f3c3812b5acd537_MD5.jpeg]]
 
+---
+
 So now we know that we must pass three positions to the GPU in order to render a triangle.
 
 이제 GPU에 삼각형의 세 점의 정보를 넘겨야 한다는 사실을 알았을 것이다.
@@ -100,16 +102,36 @@ More often than not, it also has other attributes as well, such as a normal, one
 
 Vertex layout defines how these attributes lie in memory: what data type each attribute uses, what size each attribute has, and the order of the attributes in memory.
 
-정점 레이아웃은 이러한 특성 정보들이 어떠한 방식으로 메모리에 위치하는지를 정의한다: 각각의 특성들이 어떠한 자료형을 사용하는지, 각 특성의 크기는 얼마인지, 그리고 특성들으
+정점 레이아웃은 이러한 특성 정보들이 어떠한 방식으로 메모리에 위치하는지를 정의한다: 각각의 특성들이 어떠한 자료형을 사용하는지, 각 특성의 크기는 얼마인지, 그리고 특성들은 어떠한 순서로 정렬되는지 등등.
 
-Because the attributes usually have different types, similar to the fields in a C structure, a vertex is usually represented by a structure. The size of the vertex is conveniently obtained from the size of the structure.
+Because the attributes usually have different types, similar to the fields in a C structure, a vertex is usually represented by a structure.
 
-In this tutorial, we are only working with the position of the vertices. Therefore, we define our vertex structure with a single field of the type XMFLOAT3. This type is a vector of three floating-points components, which is typically the data type used for position in 3D.
+보통 속성들은 서로 다른 타입이기 때문에, C 구조체의 필드들처럼, 정점은 보통 구조체로 표현된다.
+
+The size of the vertex is conveniently obtained from the size of the structure.
+
+정점의 크기는 구조체의 크기로부터 적절히 얻어질 수 있다.
+
+---
+
+In this tutorial, we are only working with the position of the vertices.
+
+이 튜토리얼에서, 우리는 정점의 위치만을 가지고 작업한다.
+
+Therefore, we define our vertex structure with a single field of the type XMFLOAT3.
+
+그러므로, 우리는 정점을 XMFLOAT3 타입의 단일 필드만 가진 구조체로 정의한다.
+
+This type is a vector of three floating-points components, which is typically the data type used for position in 3D.
+
+
 
 struct SimpleVertex
 {
     XMFLOAT3 Pos;  // Position
 };
+
+---
 
 We now have a structure that represents our vertex. That takes care of storing vertex information in system memory in our application. However, when we feed the GPU the vertex buffer containing our vertices, we are just feeding it a chunk of memory. The GPU must also know about the vertex layout in order to extract correct attributes out from the buffer. To accomplish this requires the use of an input layout.
 
