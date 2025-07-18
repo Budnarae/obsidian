@@ -57,4 +57,16 @@ DIrect3D 10에서, 장치 객체는 렌더링과 리소스 생성을 둘 다 수
 
 In Direct3D 11, the immeidate context is used by the application to perform rendering onto a buffer, and the device contains methods to create resources.
 
-Direct3D 11에서, 즉시 컨텍스트는
+Direct3D 11에서 즉시 컨텍스트는 응용프로그램이 버퍼에 렌더링할 때 사용하고, 장치는 리소스를 생성하는 메서드를 가진다.
+
+---
+
+The swap chain is responsible for taking the buffer to which the device renders, and displaying the content, on the actual monitor screen.
+
+스왑 체인은 장치가 렌더링한 버퍼를 가져와서 실제 모니터 화면에 내용을 보여주는 역할을 한다.
+
+The swap chain contians two or more buffers, mainly the front and the back.
+
+스왑 체인은 두 개 이상의 버퍼를 포함하는데, 주로 프론트 버퍼와 백 버퍼이다.
+
+These are textures to which the device renders in order to display on the monitor.
