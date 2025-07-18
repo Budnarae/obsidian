@@ -235,3 +235,29 @@ This ensures the output that the pipeline renders gets written to the back buffe
 이를 통해 파이프라인이 렌더링한 결과물이 백 버퍼에 작성됨을 보장할 수 있다.
 
 The code to create and set the render target view is as follows:
+
+렌더 타깃을 생성하고 설정하는 코드는 다음과 같다:
+
+```cpp
+
+// Create a render target view
+ID3D11Texture2D *pBackBuffer;
+if( FAILED( g_pSwapChain->GetBuffer( 0, __uuidof( ID3D11Texture2D ), (LPVOID*)&pBackBuffer ) ) )
+	return FALSE;
+hr = g_pd3dDevice->CreateRenderTargetView( pBackBuffer, NULL, &g_pRenderTargetView );
+pBackBuffer->Release();
+if( FAILED( hr ) )
+	return FALSE;
+g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, NULL );
+
+```
+
+The last thing we need to set up before Direct3D 11 can render is initialize the viewport.
+
+DIrect3D 11로 렌더하기 위해 마지막으로 설정할 것은 뷰포트를 초기화하는 것이다.
+
+The viewport maps clip space coordinates, where X and Y range from -1 to 1 and Z ranges from 0 to 1, to render target space, sometimes known as pixel space.
+
+
+
+In Direct3D 9, if the application does not set up a viewport, a default viewport is set up to be the same size as the render target. In Direct3D 11, no viewport is set by default. Therefore, we must do so before we can see anything on the screen. Since we would like to use the entire render target for the output, we set the top left point to (0, 0) and width and height to be identical to the render target's size. To do this, use the following code:
