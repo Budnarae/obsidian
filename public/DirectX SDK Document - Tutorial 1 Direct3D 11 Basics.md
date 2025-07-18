@@ -200,6 +200,26 @@ C의 타입캐스트가 메모리 덩어리를 다른 방식으로 사용하도�
 
 We need to create a render target view because we would like to bind the back buffer of our swap chain as a render target.
 
-우리는 렌더 타겟을 
+우리는 스왑체인의 백 버퍼를 렌더 타깃으로서 바인드할 것이기 때문에 렌더 타깃을 만들어야 한다.
 
-This enables Direct3D 11 to render onto it. We first call **GetBuffer()** to get the back buffer object. Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describes the render target view to be created. This description is normally the second parameter to **CreateRenderTargetView**. However, for these tutorials, the default render target view will suffice. The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
+This enables Direct3D 11 to render onto it.
+
+이로서 Direct3D 11은 그 위에 렌더링할 수 있다.
+
+We first call **GetBuffer()** to get the back buffer object.
+
+우리는 백 버퍼 객체를 가져오기 위해 처음에 **GetBuffer()**를 호출한다.
+
+Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describes the render target view to be created.
+
+선택적으로, 생성할 렌더 타겟 뷰를 정의하는 D3D11_RENDERTARGETVIEW_DESC 구조체를 작성할 수 있다. 
+
+This description is normally the second parameter to **CreateRenderTargetView**.
+
+보통 두번째 파라미터인 **CreateRenderTargetView**를 통해 정의된다.
+
+However, for these tutorials, the default render target view will suffice.
+
+하지만, 이 튜토리얼을 위해, 
+
+The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
