@@ -111,6 +111,15 @@ In this case, we want to render to the back buffer, so we'll set **BackBufferUsa
 
 이 튜토리얼에서 우리는 백 버퍼에 렌더링하기를 원하므로 **BackBufferUsage**를 DXGI_USAGE_RENDER_TARGET_OUTPUT로 설정할 것이다.
 
-The **OutputWindow** field represents the window that sampling, SampleDesc's Count is set to 1 and Quality to 0 to have multi-sampling disabled.
+The **OutputWindow** field represents the window that the swap chain will use to present images on the screen.
 
-**OutputWindow** 필드는 샘플링이 적용될 윈도우를 나타내고, SampleDesc의 Count는 1로, Quality는 0으로 설정해서 멀티샘플링을 비활성화한다.
+**OutputWindow** 필드는 스왑 체인이 화면에 이미지를 표시하기 위한 창을 나타낸다.
+
+
+SampleDesc is used to enable multi-sampling.
+
+SampleDesc는 멀티 샘플링을 가능하게 하기 위해 사용된다.
+
+Since this tutorial does not use multi-sampling, SampleDesc's Count is set to 1 and Quality to 0 to have multi-sampling disabled.
+
+이 튜토리얼은 멀티샘플링을 사용하지 않으므로, SampleDesc의 Count는 1로, Quality는 0으로 설정해서 멀티샘플링을 비활성화한다.
