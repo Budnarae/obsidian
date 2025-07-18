@@ -350,6 +350,37 @@ while( WM_QUIT != msg.message )
 
 ```
 
-# The Rendering code
+# The Rendering Code
+
+Rendering is done in the **Render()** function.
+
+렌더링은 **Render()** 함수에서 수행된다.
+
+In this tutorial, we will render the simplest scene possible, which is to fill the screen with a single color.
+
+이 튜토리얼에서, 우리는 가장 단순한 장면 - 화면을 단일 색깔로 채운 것 -을 렌더링 할 것이다.
+
+In Direct3D 11, an easy way to fill the render target with a single color is to use the immediate context's **ClearRenderTargetView()** method.
+
+Direct3D 11에서, 렌더 목표를 단일 색상으로 채우는 가장 쉬운 방법은 즉시 컨텍스트의 **ClearRenderTargetView()** 메소드를 사용하는 것이다.
+
+First, we define an array of four floats that describe the color with which we would like to fill the screen.
 
 
+
+Then, we pass it to **ClearRenderTargetView()**. In this example, we choose a shade of blue. Once we fill our back buffer, we call the swap chain's **Present()** method to complete the rendering. **Present()** is responsible for displaying the swap chain's back buffer content onto the screen so that the user can see it. The **Render()** function looks like this:
+
+```cpp
+
+void Render()
+{
+	//
+	// Clear the backbuffer
+	//
+	float ClearColor[4] = { 0.0f, 0.125f, 0.6f, 1.0f }; // RGBA
+	g_pd3dDevice->ClearRenderTargetView( g_pRenderTargetView, ClearColor );
+
+	g_pSwapChain->Present( 0, 0 );
+}
+
+```
