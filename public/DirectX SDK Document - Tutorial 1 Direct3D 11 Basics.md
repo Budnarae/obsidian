@@ -207,7 +207,7 @@ We need to create a render target view because we would like to bind the back bu
 
 This enables Direct3D 11 to render onto it.
 
-이로서 Direct3D 11은 그 위에 렌더링할 수 있다.
+이를 통해 Direct3D 11은 렌더 타깃 위위에 렌더링할 수 있다.
 
 We first call **GetBuffer()** to get the back buffer object.
 
