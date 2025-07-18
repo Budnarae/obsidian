@@ -82,13 +82,27 @@ Direct3D 11에서, 실행프로그램은 버퍼 리소스를 생성할 때 바�
 
 We know the buffer has to be large enough for three vertices, but how many bytes does each vertex need?
 
-
+버퍼가 세 개의 정점을 담을 사이즈여야 한다는 것을 알겠는데, 그래서 각 정점은 몇 바이트를 차지하는가?
 
 To answer that question requires an understanding of vertex layout.
 
+이 질문에 답변하기 위해선 정점 레이아웃에 대한 이해가 선행되어야 한다.
+
 # Input Layout
 
-A vertex has a position. More often than not, it also has other attributes as well, such as a normal, one or more colors, texture coordinates (used for texture mapping), and so on. Vertex layout defines how these attributes lie in memory: what data type each attribute uses, what size each attribute has, and the order of the attributes in memory. Because the attributes usually have different types, similar to the fields in a C structure, a vertex is usually represented by a structure. The size of the vertex is conveniently obtained from the size of the structure.
+A vertex has a position.
+
+정점은 위치 정보를 가진다.
+
+More often than not, it also has other attributes as well, such as a normal, one or more colors, texture coordinates (used for texture mapping), and so on.
+
+대부분의 경우, 정점은 위치 외에도 법선, 하나 이상의 색상, 텍스처 좌표(텍스처 매핑에 사용됨) 등과 같은 다른 속성들도 함께 가진다.
+
+Vertex layout defines how these attributes lie in memory: what data type each attribute uses, what size each attribute has, and the order of the attributes in memory.
+
+정점 레이아웃은 이러한 특성 정보들이 어떠한 방식으로 메모리에 위치하는지를 정의한다: 각각의 특성들이 어떠한 자료형을 사용하는지, 각 특성의 크기는 얼마인지, 그리고 특성들으
+
+Because the attributes usually have different types, similar to the fields in a C structure, a vertex is usually represented by a structure. The size of the vertex is conveniently obtained from the size of the structure.
 
 In this tutorial, we are only working with the position of the vertices. Therefore, we define our vertex structure with a single field of the type XMFLOAT3. This type is a vector of three floating-points components, which is typically the data type used for position in 3D.
 
