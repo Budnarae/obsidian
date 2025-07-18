@@ -44,15 +44,31 @@ GPU가 삼각형을 렌더링하기 위해서는, GPU에게 삼각형의 세 정
 
 For a 2D example, let's say we wish to render a triangle such as that in figure 1.
 
-2차원 공간에 관한 예시로, figure 1에 있는 삼각형을 렌더하고자 한다고 가자
+2차원 공간에 관한 예시로, 그림 1에 있는 삼각형을 렌더하고자 한다고 가정해보자.
 
 We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the GPU, and then the GPU has enough information to render the triangle that we want.
 
+우리는 (0, 0) (0, 1) (1, 0) 위치에 있는 세 점점을 GPU에 전달한다. 그러면 GPU는 삼각형을 렌더하기 위한 충분한 정보를 가진다.
+
 **Figure 1.  A triangle in 2D defined by its three vertices**
+
+**그림 1. 세 개의 정점으로 정의된 2차원 삼각형**
 
 ![[9cc6e1ed3d0d535a5f3c3812b5acd537_MD5.jpeg]]
 
-So now we know that we must pass three positions to the GPU in order to render a triangle. How do we pass this information to the GPU? In Direct3D 11, vertex information such as position is stored in a buffer resource. A buffer that is used to store vertex information is called, not surprisingly, a vertex buffer. We must create a vertex buffer large enough for three vertices and fill it with the vertex positions. In Direct3D 11, the application must specify a buffer size in bytes when creating a buffer resource. We know the buffer has to be large enough for three vertices, but how many bytes does each vertex need? To answer that question requires an understanding of vertex layout.
+So now we know that we must pass three positions to the GPU in order to render a triangle.
+
+이제 GPU에 삼각형의 세 점의 정보를 넘겨야 한다는 사실을 알았을 것이다.
+
+How do we pass this information to the GPU?
+
+어떻게 이 정보들을 GPU에 넘길 수 있을까?
+
+In Direct3D 11, vertex information such as position is stored in a buffer resource.
+
+Direct3D 11에서, 위
+
+A buffer that is used to store vertex information is called, not surprisingly, a vertex buffer. We must create a vertex buffer large enough for three vertices and fill it with the vertex positions. In Direct3D 11, the application must specify a buffer size in bytes when creating a buffer resource. We know the buffer has to be large enough for three vertices, but how many bytes does each vertex need? To answer that question requires an understanding of vertex layout.
 
 # Input Layout
 
