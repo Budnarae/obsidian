@@ -72,9 +72,7 @@ return FALSE;
 g_hInst = hInstance; // Store instance handle in our global variable
 RECT rc = { 0, 0, 640, 480 };
 AdjustWindowRect( &rc, WS_OVERLAPPEDWINDOW, FALSE );
-g_hWnd = CreateWindow( szWindowClass, L"Direct3D 10 Tutorial 0: Setting Up Window", WS_OVERLAPPEDWINDOW,
-					   CW_USEDEFAULT, CW_USEDEFAULT, rc.right - rc.left, rc.bottom - rc.top, NULL, NULL,
-					   hInstance, NULL);
+g_hWnd = CreateWindow( szWindowClass, L"Direct3D 10 Tutorial 0: Setting Up Window", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, rc.right - rc.left, rc.bottom - rc.top, NULL, NULL, hInstance, NULL);
 
 if( !g_hWnd )
 	return FALSE;
