@@ -34,7 +34,19 @@ A triangle is defined by its three points, also called vertices.
 
 삼각형은 정점이라 불리는 세 개의 점으로 정의된다.
 
-A set of three vertices with unique positions define a unique triangle. In order for a GPU to render a triangle, we must tell it about the position of the triangle's three vertices. For a 2D example, let's say we wish to render a triangle such as that in figure 1. We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the GPU, and then the GPU has enough information to render the triangle that we want.
+A set of three vertices with unique positions define a unique triangle.
+
+세 개의 고유한 위치를 지닌 정점들의 집합은 하나의 고유한 삼각형을 정의한다.
+
+In order for a GPU to render a triangle, we must tell it about the position of the triangle's three vertices.
+
+GPU가 삼각형을 렌더링하기 위해서는, GPU에게 삼각형의 세 정점의 위치를 전달해야 한다.
+
+For a 2D example, let's say we wish to render a triangle such as that in figure 1.
+
+2차원 공간에 관한 예시로, figure 1에 있는 삼각형을 렌더하고자 한다고 가자
+
+We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the GPU, and then the GPU has enough information to render the triangle that we want.
 
 **Figure 1.  A triangle in 2D defined by its three vertices**
 
