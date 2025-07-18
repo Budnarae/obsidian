@@ -297,3 +297,23 @@ vp.TopLeftY = 0;
 g_pImmediateContext->RSSetViewports( 1, &vp );
 
 ```
+
+# Modifying the Message Loop
+
+We have set up the window and Direct3D 11 device, and we are ready to render.
+
+창과 Direct3d 11 장치를 설정하였으니, 이제 렌더링할 차례다.
+
+However, there is still a problem with our message loop: it uses **GetMessage()** to get messages.
+
+하지만, 메시지 루프와 관련해서 문제가 하나 남아있다: 메시지를 수신하기 위해서는 **GetMessage()** 함수를 사용한다.
+
+The problem with **GetMessage()** is that if there is no message in the queue for the application window, **GetMessage()** blocks and does not return until a message is available.
+
+문제는, 응용프로그램 창의 큐에 어떠한 메세지도 없으면, **GetMessage()**는 블록되고 메시지를 수신할 때까지 반환하지 않는다는 것이다.
+
+Thus, instead of doing something like rendering, our application is waiting within **GetMessage()** when the message queue is empty.
+
+
+
+We can solve this problem by using **PeekMessage()** instead of **GetMessage()**. **PeekMessage()** can retrieve a message like **GetMessage()** does, but when there is no message waiting, **PeekMessage()** returns immediately instead of blocking. We can then take this time to do some rendering. The modified message loop, which uses **PeekMessage()**, looks like this:
