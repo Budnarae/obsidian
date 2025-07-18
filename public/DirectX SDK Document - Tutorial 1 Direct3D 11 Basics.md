@@ -123,3 +123,41 @@ SampleDesc는 멀티 샘플링을 가능하게 하기 위해 사용된다.
 Since this tutorial does not use multi-sampling, SampleDesc's Count is set to 1 and Quality to 0 to have multi-sampling disabled.
 
 이 튜토리얼은 멀티샘플링을 사용하지 않으므로, SampleDesc의 Count는 1로, Quality는 0으로 설정해서 멀티샘플링을 비활성화한다.
+
+Once the description has been filled out, we can call the D3D11CreateDeviceAndSwapChain function to create both the device and the swap chain for us.
+
+작성이 끝나면, 우리는 D3D11CreateDeviceAndSwapChain 함수를 호출하여 장치와 스왑 체인을
+생성할 수 있다.
+
+```cpp
+
+DXGI_SWAP_CHAIN_DESC sd;
+ZeroMemory( &sd, sizeof(sd) );
+sd.BufferCount = 1;
+sd.BufferDesc.Width = 640;
+sd.BufferDesc.Height = 480;
+sd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+sd.BufferDesc.RefreshRate.Numerator = 60;
+sd.BufferDesc.RefreshRate.Denominator = 1;
+sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
+sd.OutputWindow = g_hWnd;
+sd.SampleDesc.Count = 1;
+sd.SampleDesc.Quality = 0;
+sd.Windowed = TRUE;
+
+if( FAILED( D3D11CreateDeviceAndSwapChain( NULL, D3D_DRIVER_TYPE_HARDWARE, NULL, 0, featureLevels, numFeatureLevels, D3D11_SDK_VERSION, &sd, &g_pSwapChain, &g_pd3dDevice, NULL, &g_pImmediateContext ) ) )
+{
+	return FALSE;
+}
+
+```
+
+The next thing we need to do is to create a render view.
+
+다음으로 할 일은 렌더 뷰를 만드는 것이다.
+
+A render target view is a type of resource view in Direct3D 11.
+
+Direct3D 11에서 렌더 타겟 뷰는 리소스 뷰의 한 종류이다.
+
+A resource view allows a resource to be bound t
