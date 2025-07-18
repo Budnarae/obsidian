@@ -125,4 +125,10 @@ LRESULT CALLBACK WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam 
 
 ```
 
-These are the minimum steps required to set up
+These are the minimum steps required to set up the window object which is required by every Windows application.
+
+이는 모든 윈도우 응용프로그램에 필요한 창 객체를 설정하는 최소한의 단계이다.
+
+If we complie and run this code, we will see a window with a blank white background.
+
+이 코드를 컴파일하여 실행시키면, 우리는 빈 하얀 배경을 가진 창을 보게 될 것이다.
