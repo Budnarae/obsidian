@@ -8,24 +8,33 @@ tags:
 
 # Summary
 
-In the previous tutorial, we built a minimal Direct3D 11 application that outputs a single color to the window. In this tutorial, we will extend the application to render a single triangle on the screen. We will go through the process to set up the data structures associated with a triangle.
+In the previous tutorial, we built a minimal Direct3D 11 application that outputs a single color to the window.
+
+이전 튜토리얼에서, 우리는 화면을 단일 색상으로 채워 출력하는 간단한 Direct3D 11 실행프로그램을 만들었다.
+
+In this tutorial, we will extend the application to render a single triangle on the screen.
+
+이 튜토리얼에서, 우리는 단일 삼각형을 화면에 그리도록 실행프로그램을 확장할 것이다.
+
+We will go through the process to set up the data structures associated with a triangle.
+
+우리는 삼각형과 관련된 자료 구조체를 설정하는 과정을 살펴볼 것이다.
 
 The outcome of this tutorial is a window with a triangle rendered to the center of the window.
 
-# Source
+이 튜토리얼의 결과물은 화면 정중앙에 삼각형을 렌더링하는 것이다.
 
-(SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial02
+==Source==
 
-- [Elements of a Triangle](d3d11_Tutorial_02.htm#Elements_of_a_Triangle)
-    
-- [Input Layout](d3d11_Tutorial_02.htm#Input_Layout)
-    
-- [Rendering the Triangle](d3d11_Tutorial_02.htm#Rendering_the_Triangle)
-    
+`(SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial02`
 
 # Elements of a Triangle
 
-A triangle is defined by its three points, also called vertices. A set of three vertices with unique positions define a unique triangle. In order for a GPU to render a triangle, we must tell it about the position of the triangle's three vertices. For a 2D example, let's say we wish to render a triangle such as that in figure 1. We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the GPU, and then the GPU has enough information to render the triangle that we want.
+A triangle is defined by its three points, also called vertices.
+
+삼각형은 정점이라 불리는 세 개의 점으로 정의된다.
+
+A set of three vertices with unique positions define a unique triangle. In order for a GPU to render a triangle, we must tell it about the position of the triangle's three vertices. For a 2D example, let's say we wish to render a triangle such as that in figure 1. We would pass three vertices with the positions (0, 0) (0, 1) and (1, 0) to the GPU, and then the GPU has enough information to render the triangle that we want.
 
 **Figure 1.  A triangle in 2D defined by its three vertices**
 
