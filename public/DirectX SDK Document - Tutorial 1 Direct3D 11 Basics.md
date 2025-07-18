@@ -366,9 +366,27 @@ Direct3D 11에서, 렌더 목표를 단일 색상으로 채우는 가장 쉬운 
 
 First, we define an array of four floats that describe the color with which we would like to fill the screen.
 
+첫 단계에, 우리는 화면을 채우는 데 사용할 색상을 크기 4짜리 실수 배열로 정의한다.
 
+Then, we pass it to **ClearRenderTargetView()**.
 
-Then, we pass it to **ClearRenderTargetView()**. In this example, we choose a shade of blue. Once we fill our back buffer, we call the swap chain's **Present()** method to complete the rendering. **Present()** is responsible for displaying the swap chain's back buffer content onto the screen so that the user can see it. The **Render()** function looks like this:
+그 다음, 그것을 **ClearRenderTargetView()**에 전달한다.
+
+In this example, we choose a shade of blue.
+
+예제에서는 파란색 색조를 선택하였다.
+
+Once we fill our back buffer, we call the swap chain's **Present()** method to complete the rendering.
+
+백 버퍼를 채우면, 렌더링을 마무리하기 위해 스왑 체인의 **Present()** 메소드를 호출한다.
+
+**Present()** is responsible for displaying the swap chain's back buffer content onto the screen so that the user can see it.
+
+**Present()**는 스왑 체인의 내용물을 화면에 띄워 사용자가 그것을 볼 수 있게 하는 역할을 담당한다.
+
+The **Render()** function looks like this:
+
+**Render()** 함수는 다음과 같다:
 
 ```cpp
 
