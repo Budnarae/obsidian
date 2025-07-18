@@ -115,7 +115,6 @@ A B C C B D
 
 Notice that B and C appear twice in the vertex buffer because they are shared by both triangles.
 
-[[5478909835ac62f41e01f5591baa3a9a_MD5.jpeg|Open: Pasted image 20250718145530.png]]
 ![[5478909835ac62f41e01f5591baa3a9a_MD5.jpeg]]
 
 Figure 3a contains a square made up of two triangles; figure 3b contains a pentagonal shape made up of three triangles.
