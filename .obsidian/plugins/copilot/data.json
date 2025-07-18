@@ -329,5 +329,6 @@
   "passMarkdownImages": true,
   "enableCustomPromptTemplating": true,
   "allowAdditionalContext": true,
-  "enableWordCompletion": false
+  "enableWordCompletion": false,
+  "suggestedDefaultCommands": true
 }
