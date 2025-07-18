@@ -160,4 +160,28 @@ A render target view is a type of resource view in Direct3D 11.
 
 Direct3D 11에서 렌더 타겟 뷰는 리소스 뷰의 한 종류이다.
 
-A resource view allows a resource to be bound t
+A resource view allows a resource to be bound to the graphics pipeline at a specific stage.
+
+리소스 뷰는 리소스를 그래픽 파이프라인의 특정 단계에 바인딩할 수 있도록 해준다.
+
+Think of resource views as typecast in C.
+
+리소스 뷰를 C의 타입캐스트로 생각해보자.
+
+A chunk of raw memory in C can be cast to any data type.
+
+C에서 원시 메모리 덩어리는 어떠한 타입으로든 캐스트될 수 있다.
+
+We can cast that chunk of memory to an array of integers, an array of floats, a structure, an array of structures, and so on.
+
+우리는 메모리 덩어리를 정수 배열, 실수 배열, 구조체, 구조체 배열 등등으로 캐스트할 수 있다.
+
+The raw memory itself is not very useful to us if we don't know its type.
+
+원시 메모리는 그것의 타입을 알 수 없다면 우리에게 그닥 쓸모있지 ㅏㅇ
+
+Direct3D 11 resource views act in a similar way. For instance, a 2D texture, analogous to the raw memory chunk, is the raw underlying resource. Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource. Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
+
+---
+
+We need to create a render target view because we would like to bind the back buffer of our swap chain as a render target. This enables Direct3D 11 to render onto it. We first call **GetBuffer()** to get the back buffer object. Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describes the render target view to be created. This description is normally the second parameter to **CreateRenderTargetView**. However, for these tutorials, the default render target view will suffice. The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
