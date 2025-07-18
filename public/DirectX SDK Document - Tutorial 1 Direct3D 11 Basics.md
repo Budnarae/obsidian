@@ -190,10 +190,16 @@ For instance, a 2D texture, analogous to the raw memory chunk, is the raw underl
 
 Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource.
 
-우리는 리소스를 사용하여 그래픽스 파이프라인에 자
+리소스를 준비한 뒤에는, 해당 텍스처를 그래픽 파이프라인의 여러 단계에 서로 다른 포맷으로 바인딩하기 위해 다양한 리소스 뷰를 생성할 수 있다. 예를 들어, 렌더링할 대상인 렌더 타겟으로, 깊이 정보를 받을 깊이 스텐실 버퍼로, 또는 일반 텍스처 리소스로 사용할 수 있다.
 
 Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
 
+C의 타입캐스트가 메모리 덩어리를 다른 방식으로 사용하도록 허용하는 것처럼, Direct3D 11 또한 리소스 뷰를 그렇게 처리한다.
+
 ---
 
-We need to create a render target view because we would like to bind the back buffer of our swap chain as a render target. This enables Direct3D 11 to render onto it. We first call **GetBuffer()** to get the back buffer object. Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describes the render target view to be created. This description is normally the second parameter to **CreateRenderTargetView**. However, for these tutorials, the default render target view will suffice. The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
+We need to create a render target view because we would like to bind the back buffer of our swap chain as a render target.
+
+우리는 렌더 타겟을 
+
+This enables Direct3D 11 to render onto it. We first call **GetBuffer()** to get the back buffer object. Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describes the render target view to be created. This description is normally the second parameter to **CreateRenderTargetView**. However, for these tutorials, the default render target view will suffice. The default render target view can be obtained by passing NULL as the second parameter. Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline. This ensures the output that the pipeline renders gets written to the back buffer. The code to create and set the render target view is as follows:
