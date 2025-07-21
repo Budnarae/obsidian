@@ -45,7 +45,7 @@ The first thing to do is to create three objects: a device, an immediate context
 
 첫번째로 해야할 일은 3개의 객체를 만드는 것이다: 장치, 즉시 컨텍스트, 스왑 체인.
 
-THe immediate context is a new object in Direct3D 11.
+The immediate context is a new object in Direct3D 11.
 
 즉시 컨텍스트는 Direct3D 11의 새로운 객체이다.
 
