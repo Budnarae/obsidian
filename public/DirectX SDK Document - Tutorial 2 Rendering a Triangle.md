@@ -327,21 +327,29 @@ Direct3D 11에서 정점 버퍼를 만들기 위해서, 우리는 두 개의 구
 
 D3D11_BUFFER_DESC describes the vertex buffer object to be created, and D3D11_SUBRESOURCE_DATA describes the actual data that will be copied to the vertex buffer during creation.
 
-
+`D3D11_BUFFER_DESC`는 생성할 정점 버퍼 객체를 기술하고, `D3D11_SUBRESOURCE_DATA`는 생성 시 정점 버퍼로 복사될 실제 데이터를 기술한다.
 
 The creation and initialization of the vertex buffer is done at once so that we don't need to initialize the buffer later.
 
+정점 버퍼의 생성과 초기화는 한 번에 이루어진다. 이는 나중에 버퍼를 다시 초기화할 필요가 없도록 하기 위함이다.
 
 The data that will be copied to the vertex buffer is vertices, an array of threeSimpleVertex structures.
 
+정점 버퍼로 복사될 데이터는 `threeSimpleVertex` 구조체 배열인 `vertices`이다.
 
 The coordinates in the vertices array are chosen so that we see a triangle in the middle of our application window when rendered with our shaders.
 
+`vertices` 배열의 좌표는 셰이더로 렌더링했을 때 애플리케이션 창 중앙에 삼각형이 보이도록 선택된다.
 
 After the vertex buffer is created, we can call **ID3D11DeviceContext::IASetVertexBuffers()** to bind it to the device.
 
+정점 버퍼가 생성된 후, 우리는 `ID3D11DeviceContext::IASetVertexBuffers()`를 호출하여 이를 장치에 바인딩할 수 있다.
 
 The complete code is shown here:
+
+완성된 코드는 다음과 같다:
+
+```cpp
 
 // Create vertex buffer
 SimpleVertex vertices[] =
@@ -368,13 +376,23 @@ UINT stride = sizeof( SimpleVertex );
 UINT offset = 0;
 g_pImmediateContext->IASetVertexBuffers( 0, 1, &g_pVertexBuffer, &stride, &offset );
 
+```
+
 ## Primitive Topology
 
-Primitive topology refers to how the GPU obtains the three vertices it requires to render a triangle. We discussed above that in order to render a single triangle, the application needs to send three vertices to the GPU. Therefore, the vertex buffer has three vertices in it. What if we want to render two triangles? One way is to send 6 vertices to the GPU. The first three vertices define the first triangle and the second three vertices define the second triangle. This topology is called a triangle list. Triangle lists have the advantage of being easy to understand, but in certain cases they are very inefficient. Such cases occur when successively rendered triangles share vertices. For instance, figure 3a left shows a square made up of two triangles: A B C and C B D. (By convention, triangles are typically defined by listing their vertices in clockwise order.) If we send these two triangles to the GPU using a triangle list, our vertex buffer would like this:
+Primitive topology refers to how the GPU obtains the three vertices it requires to render a triangle. We discussed above that in order to render a single triangle, the application needs to send three vertices to the GPU. Therefore, the vertex buffer has three vertices in it. What if we want to render two triangles? One way is to send 6 vertices to the GPU. The first three vertices define the first triangle and the second three vertices define the second triangle. This topology is called a triangle list. 
+
+프리미티브 토폴로지는 GPU가 삼각형을 렌더링하는 데 필요한 세 개의 정점을 얻는 방식을 의미한다. 위에서 언급했듯이, 하나의 삼각형을 렌더링하려면 애플리케이션은 GPU에 세 개의 정점을 보내야 한다. 따라서 정점 버퍼에는 세 개의 정점이 들어 있다. 만약 두 개의 삼각형을 렌더링하고 싶다면 어떨까? 한 가지 방법은 GPU에 6개의 정점을 보내는 것이다. 처음 세 개의 정점은 첫 번째 삼각형을 정의하고, 다음 세 개의 정점은 두 번째 삼각형을 정의한다. 이러한 토폴로지를 **삼각형 목록(triangle list)**이라고 한다.
+
+Triangle lists have the advantage of being easy to understand, but in certain cases they are very inefficient. Such cases occur when successively rendered triangles share vertices. For instance, figure 3a left shows a square made up of two triangles: A B C and C B D. (By convention, triangles are typically defined by listing their vertices in clockwise order.) If we send these two triangles to the GPU using a triangle list, our vertex buffer would like this:
+
+삼각형 목록은 이해하기 쉽다는 장점이 있지만, 특정 경우에는 매우 비효율적이다. 이러한 경우는 연속적으로 렌더링되는 삼각형이 정점을 공유할 때 발생한다. 예를 들어, 그림 3a 왼쪽은 두 개의 삼각형(A B C와 C B D)으로 이루어진 사각형을 보여준다. (관례상, 삼각형은 일반적으로 정점을 시계 방향으로 나열하여 정의한다.) 만약 이 두 삼각형을 삼각형 목록을 사용하여 GPU에 보낸다면, 정점 버퍼는 다음과 같을 것이다:
 
 A B C C B D
 
 Notice that B and C appear twice in the vertex buffer because they are shared by both triangles.
+
+B와 C는 두 삼각형이 공유하기 때문에 정점 버퍼에 두 번 나타나는 것을 알 수 있다.
 
 ![[5478909835ac62f41e01f5591baa3a9a_MD5.jpeg]]
 
