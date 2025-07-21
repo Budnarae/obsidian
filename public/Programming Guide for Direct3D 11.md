@@ -59,9 +59,15 @@ Each device can use one or more device contexts, depending on the functionality 
 
 A device context contains the circumstance or setting in which a device is used.
 
-`device context`는 장치가 사용되는 상황 또는 설정ㅇ
+`device context`는 장치가 사용되는 상황 또는 설정을 포함한다.
 
-More specifically, a device context is used to set pipeline state and generate rendering commands using the resources owned by a device. Direct3D 11 implements two types of device contexts, one for immediate rendering and the other for deferred rendering; both contexts are represented with an [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) interface.
+More specifically, a device context is used to set pipeline state and generate rendering commands using the resources owned by a device.
+
+더 자세히 말하자면, `device context`는 파이프라인의 상태를 설정하거나, 디바이스가 보유한 리소스를 사용한 렌더링 명령어를 생성하는데 사용된다.
+
+Direct3D 11 implements two types of device contexts, one for immediate rendering and the other for deferred rendering; both contexts are represented with an [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) interface.
+
+Direct3D 11은 두 종류의 `device context`를 가진다. 하나는 즉시 렌더링을 위한 것이고 하나는 지연 렌더링을 위한 것이다; 두 개의 ``
 
 [](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#immediate-context)
 
