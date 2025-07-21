@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "329dcdd2de0b5853",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "569e997d4a27a28f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Direct3D 11 MSDN - How To; Create a Reference Device"
             }
           }
         ]
@@ -75,8 +75,7 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,16 +172,6 @@
             }
           },
           {
-            "id": "25b2a15df11ebd9c",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
-          },
-          {
             "id": "89fbd2591f414ba6",
             "type": "leaf",
             "state": {
@@ -191,14 +180,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "66ee0f866c3d126c",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Smart Connections"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 316.5,
-    "collapsed": true
+    "width": 316.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,15 +212,18 @@
       "webpage-html-export:Export Vault to HTML": false,
       "homepage:Open homepage": false,
       "copilot:Open Copilot Chat": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
+      "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Open: View Smart Connections": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "66ee0f866c3d126c",
   "lastOpenFiles": [
+    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
+    "index.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
-    "index.md",
     "d3d11_Tutorial_02.htm.md",
     "재료/이미지/5478909835ac62f41e01f5591baa3a9a_MD5.jpeg",
     "Pasted image 20250718145530.png",
@@ -255,7 +256,6 @@
     "private/교착 상태.md",
     "ingredient/img/3590ff275d3d893cb070696713b3ae57_MD5.gif",
     "ingredient/img/44c97510716ea34f884225fb58ea11db_MD5.jpeg",
-    "private/42Seoul/Unity Piscine - Module 00 pdf 번역.md",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
     "ingredient/canvas",
