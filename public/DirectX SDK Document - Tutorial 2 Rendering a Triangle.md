@@ -457,6 +457,8 @@ To use these shaders we must call **ID3D11DeviceContext::VSSetShader()** and **I
 
 The first parameter to **Draw()** is the number of vertices to send to the GPU, and the second parameter is the index of the first vertex to begin sending. Because we are rendering one triangle and we are rendering from the beginning of the vertex buffer, we use 3 and 0 for the two parameters, respectively. The entire triangle-rendering code looks like the following:
 
+`Draw()`의 첫 번째 매개변수는 GPU로 보낼 정점의 수이고, 두 번째 매개변수는 보내기 시작할 첫 번째 정점의 인덱스이다. 우리는 하나의 삼각형을 렌더링하고 정점 버퍼의 처음부터 렌더링하므로, 두 매개변수에 각각 3과 0을 사용한다. 전체 삼각형 렌더링 코드는 다음과 같다:
+
 ```cpp
 
 // Render a triangle 
