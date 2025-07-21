@@ -189,13 +189,41 @@ The word can be in any form that a C identifier can, and can be anything that we
 
 For instance, a good semantic name for the vertex's position is POSITION. Semantic names are not case-sensitive.
 
-SemanticIndex
+예를 들어, 정점의 위치에 대한 좋은 의미론적 이름은 POSITION이다. 의미론적 이름은 대소문자를 구분하지 않는다.
 
-Semantic index supplements semantic name. A vertex may have multiple attributes of the same nature. For example, it may have 2 sets of texture coordinates or 2 sets of colors. Instead of using semantic names that have numbers appended, such as "COLOR0" and "COLOR1", the two elements can share a single semantic name, "COLOR", with different semantic indices 0 and 1.
+==SemanticIndex==
 
-Format
+==의미론적 인덱스스==
 
-Format defines the data type to be used for this element. For instance, a format of DXGI_FORMAT_R32G32B32_FLOAT has three 32-bit floating point numbers, making the element 12-byte long. A format of DXGI_FORMAT_R16G16B16A16_UINT has four 16-bit unsigned integers, making the element 8 bytes long.
+Semantic index supplements semantic name.
+
+의미론적 인덱스는 의미론적 이름(semantic name)을 보충한다.
+
+A vertex may have multiple attributes of the same nature.
+
+하나의 정점은 동일한 성격의 여러 특성을 가질 수 있다.
+
+For example, it may have 2 sets of texture coordinates or 2 sets of colors.
+
+예를 들어, 정점은 두 세트의 텍스처 좌표 또는 두 세트의 색상을 가질 수 있다.
+
+Instead of using semantic names that have numbers appended, such as "COLOR0" and "COLOR1", the two elements can share a single semantic name, "COLOR", with different semantic indices 0 and 1.
+
+"COLOR0"과 "COLOR1"처럼 숫자가 덧붙여진 의미론적 이름을 사용하는 대신, 두 요소는 "COLOR"라는 단일 의미론적 이름을 공유하고, 각각 0과 1의 다른 **의미론적 인덱스**를 가질 수 있다.
+
+==Format==
+
+==형식==
+
+Format defines the data type to be used for this element.
+
+형식은 요소를 표현하기 위해 사용할 자료형을 정의한다.
+
+For instance, a format of DXGI_FORMAT_R32G32B32_FLOAT has three 32-bit floating point numbers, making the element 12-byte long.
+
+예를 들어, DXGI_FORMAT_R32G32B32_FLOAT의 형식은 32 비트 부동소수점 
+
+A format of DXGI_FORMAT_R16G16B16A16_UINT has four 16-bit unsigned integers, making the element 8 bytes long.
 
 InputSlot
 
