@@ -113,20 +113,26 @@ When you create a deferred context, it does not inherit any state from the immed
 
 To get a deferred context, call [**ID3D11Device::CreateDeferredContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createdeferredcontext).
 
-지연 컨텍스트를 가져오기 위해선, 
+지연 컨텍스트를 가져오기 위해선, **ID3D11Device::CreateDeferredContext**를 호출한다.
 
 Any context -- immediate or deferred -- can be used on any thread as long as the context is only used in one thread at a time.
 
-[](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#threading-considerations)
+즉시 그리고 지연 컨텍스트는 어떠한 스레드에 의해서도 사용될 수 있지만 하나의 스레드는 한 번에 하나의 컨테스트만 사용할 수 있다.
 
 ## Threading Considerations
 
 This table highlights the differences in the threading model in Direct3D 11 from prior versions of Direct3D.
 
+이 단락은 Direct3D 11의 스레딩 모델과 이전 버전 Direct3D의 스레딩 모델 간의 차이를 강조한다.
+
 Differences between Direct3D 11 and previous versions of Direct3D:  
-All [**ID3D11Device**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11device) interface methods are free-threaded, which means it is safe to have multiple threads call the functions at the same time.  
+All [**ID3D11Device**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11device) interface methods are free-threaded, which means it is safe to have multiple threads call the functions at the same time. 
+
+이전 버전의 Direct3D와 11 버전의 차이:
+모든 **ID3D11Device** 인터페이스의 메소드들은 여러 스레드에 의해 동시에 호출되어도 안전하다.
 
 - All [**ID3D11DeviceChild**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild)-derived interfaces ([**ID3D11Buffer**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer), [**ID3D11Query**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11query), etc.) are free-threaded.
+- 모든 **ID3D11DeviceChild**를 상속하는 인터페이스들은 **ID3D11Buffer**, **ID3D11Query**
 - Direct3D 11 splits resource creating and rendering into two interfaces. Map, Unmap, Begin, End, and GetData are implemented on [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) because [**ID3D11Device**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11device) strongly defines the order of operations. [**ID3D11Resource**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11resource) and [**ID3D11Asynchronous**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11asynchronous) interfaces also implement methods for free-threaded operations.
 - The [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) methods (except for those that exist on [**ID3D11DeviceChild**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild)) are not free-threaded, that is, they require single threading. Only one thread may safely be calling any of its methods (Draw, Copy, Map, etc.) at a time.
 - In general, free-threading minimizes the number of synchronization primitives used as well as their duration. However, an application that uses synchronization held for a long time can directly impact how much concurrency an application can expect to achieve.
