@@ -151,3 +151,53 @@ ID3D10Device implements all create and rendering functionality as does ID3D9Devi
 Map and Unmap are implemented on ID3D10Resource-derived interfaces, Begin, End, and GetData are implemented on ID3D10Asynchronous-derived interfaces.
 
 맵과 언맵은 ID3D10Resource 파생 인터페이스에서 구현되고, 시작, 종료, 데이터 가져오기는 ID3D10Asynchronous 파생 인터페이스에서 구현된다.
+
+# Software Layers
+
+The Direct3D 11 runtime is constructed with layers, starting with the basic functionality at the core and building optional and developer-assist functionality in outer layers.
+
+Direct3D 11 실행시간은 여러 층으로 구성되어 있다. 중심부에는 근본적인 기능들이 있고 바깥쪽 층에는 선택적이며 개발자 의존적인 기능들이 있다.
+
+This section describes the functionality of each layer.
+
+
+
+As a general rule, layers add functionality, but do not modify existing behavior. For example, core functions will have the same return values independent of the debug layer being instantiated, although additional debug output may be provided if the debug layer is instantiated.
+
+To create layers when a device is created, call D3D11CreateDevice or D3D11CreateDeviceAndSwapChain and supply one or more D3D11_CREATE_DEVICE_FLAG values.
+
+Direct3D 11 provides the following runtime layers:
+
+## Core Layer
+
+The core layer exists by default; providing a very thin mapping between the API and the device driver, minimizing overhead for high-frequency calls. As the core layer is essential for performance, it only performs critical validation. The remaining layers are optional.
+
+## Debug Layer
+
+The debug layer provides extensive additional parameter and consistency validation (such as validating shader linkage and resource binding, validating parameter consistency, and reporting error descriptions).
+
+To create a device that supports the debug layer, you must install the DirectX SDK (to get D3D11SDKLayers.dll), and then specify the D3D11_CREATE_DEVICE_DEBUG flag when calling the D3D11CreateDevice function or the D3D11CreateDeviceAndSwapChain function. If you run your application with the debug layer enabled, the application will be substantially slower. But, to ensure that your application is clean of errors and warnings before you ship it, use the debug layer. For more info, see Using the debug layer to debug apps.
+
+ Note
+
+For Windows 7 with Platform Update for Windows 7 (KB2670838) or Windows 8.x, to create a device that supports the debug layer, install the Windows Software Development Kit (SDK) for Windows 8.x to get D3D11_1SDKLayers.dll.
+
+ Note
+
+For Windows 10, to create a device that supports the debug layer, enable the "Graphics Tools" optional feature. Go to the Settings panel, under System, Apps & features, Manage optional Features, Add a feature, and then look for "Graphics Tools".
+
+ Note
+
+For info about how to debug DirectX apps remotely, see Debugging DirectX apps remotely.
+
+ 
+
+Alternately, you can enable/disable the debug flag using the DirectX Control Panel included as part of the DirectX SDK.
+
+When the debug layer lists memory leaks, it outputs a list of object interface pointers along with their friendly names. The default friendly name is "<unnamed>". You can set the friendly name by using the ID3D11DeviceChild::SetPrivateData method and the WKPDID_D3DDebugObjectName GUID that is in D3Dcommon.h. For example, to name pTexture with a SDKLayer name of mytexture.jpg, use the following code:
+
+
+Copy
+const char c_szName[] = "mytexture.jpg";
+pTexture->SetPrivateData( WKPDID_D3DDebugObjectName, sizeof( c_szName ) - 1, c_szName );
+Typically, you should compile these calls out of your production version.
