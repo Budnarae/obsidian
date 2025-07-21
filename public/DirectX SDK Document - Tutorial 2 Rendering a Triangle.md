@@ -282,7 +282,27 @@ For now, we will just concentrate on creating the Direct3D 11 vertex layout obje
 
 지금은 테크닉을 위한 Direct3D 11 정점 레이아웃 객체를 생성하는데 집중하도록 한다.
 
-However, we will learn that the vertex shaders are tightly coupled with this vertex layout. The reason is that creating a vertex layout object requires the vertex shader's input signature. We use the ID3DBlob object returned from D3DX11CompileFromFile to retrieve the binary data that represents the input signature of the vertex shader. Once we have this data, we can call **ID3D11Device::CreateInputLayout()** to create a vertex layout object, and **ID3D11DeviceContext::IASetInputLayout()** to set it as the active vertex layout. The code to do all of that is shown below:
+However, we will learn that the vertex shaders are tightly coupled with this vertex layout.
+
+하지만, 우리는 정점 셰이더가 정점 레이아웃과 깊게 연관되어 있다는 사실을 배울 것이다.
+
+The reason is that creating a vertex layout object requires the vertex shader's input signature.
+
+왜냐하면 정점 레이아웃 객체를 생성하기 위해서는 정점 셰이더 입력 시그니처가 필요하기 때문이다.
+
+We use the ID3DBlob object returned from D3DX11CompileFromFile to retrieve the binary data that represents the input signature of the vertex shader.
+
+우리는 `D3DX11CompileFromFile`에서 반환된 `ID3DBlob` 객체를 사용하여 정점 셰이더의 입력 시그니처를 나타내는 이진 데이터를 검색한다.
+
+Once we have this data, we can call **ID3D11Device::CreateInputLayout()** to create a vertex layout object, and **ID3D11DeviceContext::IASetInputLayout()** to set it as the active vertex layout.
+
+이 데이터를 확보하면, 우리는 `ID3D11Device::CreateInputLayout()`을 호출하여 **정점 레이아웃 객체**를 생성할 수 있다. 그리고 이어서 `ID3D11DeviceContext::IASetInputLayout()`을 호출하여 이를 **활성 정점 레이아웃**으로 설정한다.
+
+한 번 우리가 이러한 데이터를 가지면, 
+
+The code to do all of that is shown below:
+
+이 모든 것을 수행한 코드는 아래와 같다:
 
 // Create the input layout
 if( FAILED( g_pd3dDevice->CreateInputLayout( layout, numElements, pVSBlob->GetBufferPointer(), 
