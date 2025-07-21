@@ -398,31 +398,70 @@ B와 C는 두 삼각형이 공유하기 때문에 정점 버퍼에 두 번 나�
 
 Figure 3a contains a square made up of two triangles; figure 3b contains a pentagonal shape made up of three triangles.
 
-We can make the vertex buffer smaller if we can tell the GPU that when rendering the second triangle, instead of fetching all three vertices from the vertex buffer, use 2 of the vertices from the previous triangle and fetch only 1 vertex from the vertex buffer. As it turns out, this is supported by Direct3D, and the topology is called triangle strip. When rendering a triangle strip, the very first triangle is defined by the first three vertices in the vertex buffer. The next triangle is defined by the last two vertices of the previous triangle plus the next vertex in the vertex buffer. Taking the square in figure 3a as an example, using triangle strip, the vertex buffer would look like:
+그림 3a에는 두 개의 삼각형으로 이루어진 사각형이 있고, 그림 3b에는 세 개의 삼각형으로 이루어진 오각형 모양이 있다.
+
+We can make the vertex buffer smaller if we can tell the GPU that when rendering the second triangle, instead of fetching all three vertices from the vertex buffer, use 2 of the vertices from the previous triangle and fetch only 1 vertex from the vertex buffer. As it turns out, this is supported by Direct3D, and the topology is called triangle strip.
+
+두 번째 삼각형을 렌더링할 때 GPU가 정점 버퍼에서 세 정점을 모두 가져오는 대신, 이전 삼각형의 정점 중 두 개를 사용하고 정점 버퍼에서 하나의 정점만 가져오도록 지정하면 정점 버퍼 크기를 줄일 수 있다. Direct3D는 이러한 방식을 지원하며, 이를 **삼각형 스트립(triangle strip)** 토폴로지라고 한다.
+
+When rendering a triangle strip, the very first triangle is defined by the first three vertices in the vertex buffer. The next triangle is defined by the last two vertices of the previous triangle plus the next vertex in the vertex buffer. Taking the square in figure 3a as an example, using triangle strip, the vertex buffer would look like:
+
+삼각형 스트립을 렌더링할 때, 첫 번째 삼각형은 정점 버퍼의 처음 세 정점으로 정의된다. 다음 삼각형은 이전 삼각형의 마지막 두 정점에 정점 버퍼의 다음 정점을 더하여 정의된다. 그림 3a의 사각형을 예로 들면, 삼각형 스트립을 사용하면 정점 버퍼는 다음과 같이 구성된다:
 
 A B C D
 
-The first three vertices, A B C, define the first triangle. The second triangle is defined by B and C, the last two vertices of the first triangle, plus D. Thus, by using the triangle strip topology, the vertex buffer size has gone from 6 vertices to 4 vertices. Similarly, for three triangles such as those in figure 3b, using triangle list would require a vertex buffer such as:
+The first three vertices, A B C, define the first triangle. The second triangle is defined by B and C, the last two vertices of the first triangle, plus D. Thus, by using the triangle strip topology, the vertex buffer size has gone from 6 vertices to 4 vertices.
+
+처음 세 정점인 A, B, C는 첫 번째 삼각형을 정의한다. 두 번째 삼각형은 첫 번째 삼각형의 마지막 두 정점인 B와 C에 정점 D를 더하여 정의된다. 따라서 삼각형 스트립 토폴로지를 사용하면 정점 버퍼 크기가 6개 정점에서 4개 정점으로 줄어든다.
+
+Similarly, for three triangles such as those in figure 3b, using triangle list would require a vertex buffer such as:
+
+마찬가지로 그림 3b와 같이 세 개의 삼각형의 경우, 삼각형 목록을 사용하면 다음과 같은 정점 버퍼가 필요하다:
 
 A B C C B D C D E
 
 Using triangle strip, the size of the vertex buffer is dramatically reduced:
 
+삼각형 스트립을 사용하면 정점 버퍼의 크기가 극적으로 감소한다:
+
 A B C D E
 
-You may have noticed that in the triangle strip example, the second triangle is defined as B C D. These three vertices do not form a clockwise order. This is a natural phenomenon from using triangle strips. To overcome this, the GPU automatically swaps the order of the two vertices coming from the previous triangle. It only does this for the second triangle, fourth triangle, sixth triangle, eighth triangle, and so on. This ensures that every triangle is defined by vertices in the correct winding order (clockwise, in this case). Besides triangle list and triangle strip, Direct3D 11 supports many other types of primitive topology. We will not discuss them in this tutorial.
+You may have noticed that in the triangle strip example, the second triangle is defined as B C D. These three vertices do not form a clockwise order. This is a natural phenomenon from using triangle strips. To overcome this, the GPU automatically swaps the order of the two vertices coming from the previous triangle. It only does this for the second triangle, fourth triangle, sixth triangle, eighth triangle, and so on. This ensures that every triangle is defined by vertices in the correct winding order (clockwise, in this case).
+
+삼각형 스트립 예시에서 두 번째 삼각형이 B C D로 정의된다는 것을 눈치챘을 수도 있다. 이 세 정점은 시계 방향 순서를 이루지 않는다. 이는 삼각형 스트립 사용의 자연스러운 현상이다. 이를 극복하기 위해 GPU는 이전 삼각형에서 오는 두 정점의 순서를 자동으로 바꾼다. 이는 두 번째, 네 번째, 여섯 번째, 여덟 번째 삼각형 등 짝수 번째 삼각형에 대해서만 수행된다. 이를 통해 모든 삼각형이 올바른 와인딩 순서(이 경우 시계 방향)로 정점에 의해 정의되도록 보장한다.
+
+Besides triangle list and triangle strip, Direct3D 11 supports many other types of primitive topology. We will not discuss them in this tutorial.
+
+삼각형 목록과 삼각형 스트립 외에도 Direct3D 11은 다른 많은 종류의 프리미티브 토폴로지를 지원한다. 이 튜토리얼에서는 이들을 다루지 않을 것이다.
 
 In our code, we have one triangle, so it doesn't really matter what we specify. However, we must specify something, so we chose a triangle list.
+
+우리 코드에는 하나의 삼각형만 있으므로 어떤 토폴로지를 지정하든 큰 차이는 없다. 하지만 무언가는 지정해야 하므로 우리는 삼각형 목록을 선택했다.
+
+```cpp
 
 // Set primitive topology
 g_pImmediateContext->IASetPrimitiveTopology( D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST );
 
+```
+
 # Rendering the Triangle
 
-The final item missing is the code that does the actual rendering of the triangle. We have created two shaders to for rendering, the vertex shader and pixel shader. The vertex shader is responsible for transforming the individual vertices of the triangles to their correct locations. And the pixel shader is responsible for calculating the final output color for each pixel of the triangle. This is covered in more detail in the next tutorial. To use these shaders we must call **ID3D11DeviceContext::VSSetShader()** and **ID3D11DeviceContext::PSSetShader()** respectively. The last thing that we do is call **ID3D11DeviceContext::Draw()**, which commands the GPU to render using the current vertex buffer, vertex layout, and primitive topology. The first parameter to **Draw()** is the number of vertices to send to the GPU, and the second parameter is the index of the first vertex to begin sending. Because we are rendering one triangle and we are rendering from the beginning of the vertex buffer, we use 3 and 0 for the two parameters, respectively. The entire triangle-rendering code looks like the following:
+The final item missing is the code that does the actual rendering of the triangle. We have created two shaders to for rendering, the vertex shader and pixel shader. The vertex shader is responsible for transforming the individual vertices of the triangles to their correct locations. And the pixel shader is responsible for calculating the final output color for each pixel of the triangle. This is covered in more detail in the next tutorial.
+
+이제 마지막 남은 항목은 삼각형을 실제로 렌더링하는 코드이다. 우리는 렌더링을 위해 **정점 셰이더**와 **픽셀 셰이더** 두 가지 셰이더를 만들었다. 정점 셰이더는 삼각형의 개별 정점을 올바른 위치로 변환하는 역할을 담당한다. 픽셀 셰이더는 삼각형의 각 픽셀에 대한 최종 출력 색상을 계산하는 역할을 한다. 이 내용은 다음 튜토리얼에서 더 자세히 다룬다.
+
+To use these shaders we must call **ID3D11DeviceContext::VSSetShader()** and **ID3D11DeviceContext::PSSetShader()** respectively. The last thing that we do is call **ID3D11DeviceContext::Draw()**, which commands the GPU to render using the current vertex buffer, vertex layout, and primitive topology.
+
+이 셰이더들을 사용하려면 각각 `ID3D11DeviceContext::VSSetShader()`와 `ID3D11DeviceContext::PSSetShader()`를 호출해야 한다. 마지막으로 할 일은 `ID3D11DeviceContext::Draw()`를 호출하는 것이다. 이 호출은 현재 정점 버퍼, 정점 레이아웃, 그리고 프리미티브 토폴로지를 사용하여 렌더링하도록 GPU에 명령한다.
+
+The first parameter to **Draw()** is the number of vertices to send to the GPU, and the second parameter is the index of the first vertex to begin sending. Because we are rendering one triangle and we are rendering from the beginning of the vertex buffer, we use 3 and 0 for the two parameters, respectively. The entire triangle-rendering code looks like the following:
+
+```cpp
 
 // Render a triangle 
 g_pImmediateContext->VSSetShader( g_pVertexShader, NULL, 0 );
 g_pImmediateContext->PSSetShader( g_pPixelShader, NULL, 0 );
 g_pImmediateContext->Draw( 3, 0 );
 
+```
