@@ -48,15 +48,20 @@ Each application must have at least one device, most applications only create on
 
 Create a device for one of the hardware drivers installed on your machine by calling [**D3D11CreateDevice**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) or [**D3D11CreateDeviceAndSwapChain**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) and specify the driver type with the [**D3D_DRIVER_TYPE**](https://learn.microsoft.com/en-us/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type) flag.
 
-
+당신의 기기 위에 설치된 하드웨어 드라이브 중 하나를 위한 `device`를 생성하기 위해 **D3D11CreateDevice** 또는 **D3D11CreateDeviceandSwapChain**을 호출한다.
+**D3D_DRIVER_TYPE** 플래그로 드라이버의 타입을 특정한다.
 
 Each device can use one or more device contexts, depending on the functionality desired.
 
-[](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#device-context)
+각각의 `device`는  원하는 기능에 따라 하나 혹은 그 이상의 `device contexts`를 사용할 수 있다.
 
 ## Device Context
 
-A device context contains the circumstance or setting in which a device is used. More specifically, a device context is used to set pipeline state and generate rendering commands using the resources owned by a device. Direct3D 11 implements two types of device contexts, one for immediate rendering and the other for deferred rendering; both contexts are represented with an [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) interface.
+A device context contains the circumstance or setting in which a device is used.
+
+`device context`는 장치가 사용되는 상황 또는 설정ㅇ
+
+More specifically, a device context is used to set pipeline state and generate rendering commands using the resources owned by a device. Direct3D 11 implements two types of device contexts, one for immediate rendering and the other for deferred rendering; both contexts are represented with an [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) interface.
 
 [](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#immediate-context)
 
