@@ -173,21 +173,21 @@ An application defines an array of one or more D3D11_INPUT_ELEMENT_DESC, then us
 
 We will now look at the fields of D3D11_INPUT_ELEMENT_DESC in detail.
 
-D3D11_INPUT_ELEMENT_DESC의 필드들을 세부적으로 살펴보자
+D3D11_INPUT_ELEMENT_DESC의 필드들을 세부적으로 살펴보자.
 
-|   |   |
-|---|---|
-|SemanticName|Semantic name is a string containing a word that describes the nature or purpose (or semantics) of this element. The word can be in any form that a C identifier can, and can be anything that we choose. For instance, a good semantic name for the vertex's position is POSITION. Semantic names are not case-sensitive.|
-|SemanticIndex|Semantic index supplements semantic name. A vertex may have multiple attributes of the same nature. For example, it may have 2 sets of texture coordinates or 2 sets of colors. Instead of using semantic names that have numbers appended, such as "COLOR0" and "COLOR1", the two elements can share a single semantic name, "COLOR", with different semantic indices 0 and 1.|
-|Format|Format defines the data type to be used for this element. For instance, a format of DXGI_FORMAT_R32G32B32_FLOAT has three 32-bit floating point numbers, making the element 12-byte long. A format of DXGI_FORMAT_R16G16B16A16_UINT has four 16-bit unsigned integers, making the element 8 bytes long.|
-|InputSlot|As mentioned previously, a Direct3D 11 application passes vertex data to the GPU via the use of vertex buffer. In Direct3D 11, multiple vertex buffers can be fed to the GPU simultaneously, 16 to be exact. Each vertex buffer is bound to an input slot number ranging from 0 to 15. The InputSlot field tells the GPU which vertex buffer it should fetch for this element.|
-|AlignedByteOffset|A vertex is stored in a vertex buffer, which is simply a chunk of memory. The AlignedByteOffset field tells the GPU the memory location to start fetching the data for this element.|
-|InputSlotClass|This field usually has the value D3D11_INPUT_PER_VERTEX_DATA. When an application uses instancing, it can set an input layout's InputSlotClass to D3D11_INPUT_PER_INSTANCE_DATA to work with vertex buffer containing instance data. Instancing is an advanced Direct3D topic and will not be discussed here. For our tutorial, we will use D3D11_INPUT_PER_VERTEX_DATA exclusively.|
-|InstanceDataStepRate|This field is used for instancing. Since we are not using instancing, this field is not used and must be set to 0.|
+==SemanticName==
 
-SemanticName
+==의미론적인 이름==
 
-Semantic name is a string containing a word that describes the nature or purpose (or semantics) of this element. The word can be in any form that a C identifier can, and can be anything that we choose. For instance, a good semantic name for the vertex's position is POSITION. Semantic names are not case-sensitive.
+Semantic name is a string containing a word that describes the nature or purpose (or semantics) of this element.
+
+Semantic name은 해당 요소의 본질이나 목적(또는 의미론)을 설명하는 단어를 포함하는 문자열이다.
+
+The word can be in any form that a C identifier can, and can be anything that we choose.
+
+그 단어는 C 식별자가 될 수 있는 어떤 형태라도 가능하며, 우리가 선택하는 어떤 것이든 될 수 있다.
+
+For instance, a good semantic name for the vertex's position is POSITION. Semantic names are not case-sensitive.
 
 SemanticIndex
 
