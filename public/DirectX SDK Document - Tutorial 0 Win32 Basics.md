@@ -25,7 +25,7 @@ Every Windows application requires at least one window object.
 
 모든 윈도우 응용프로그램은 최소 하나의 창 객체를 필요로 한다.
 
-Before even getting to the DIrect3D 10 specifics, our application must have a working window object.
+Before even getting to the Direct3D 10 specifics, our application must have a working window object.
 
 Direct3D 10에 대한 구체적인 내용에 들어가기 전에, 먼저 애플리케이션에 제대로 동작하는 윈도우 객체가 있어야 한다.
 
