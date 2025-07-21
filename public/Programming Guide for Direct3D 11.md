@@ -95,9 +95,25 @@ There are two ways to get an immediate context:
 
 ### Deferred Context
 
-A deferred context records GPU commands into a [command list](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-command-list). A deferred context is primarily used for multithreading and is not necessary for a single-threaded application. A deferred context is generally used by a worker thread instead of the main rendering thread. When you create a deferred context, it does not inherit any state from the immediate context.
+A deferred context records GPU commands into a [command list](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-command-list).
+
+지연 컨텍스트는 GPU 명령어를 명령어 목록에 기록한다.
+
+A deferred context is primarily used for multithreading and is not necessary for a single-threaded application.
+
+지연 컨텍스트는 멀티 스레딩을 위해 주로 사용되며 싱글 스레드에서는 필수적이지 않다.
+
+A deferred context is generally used by a worker thread instead of the main rendering thread.
+
+지연 컨텍스트는 일반적으로 핵심 렌더링 스레드 대신 작업자 스레드에 의해 사용된다.
+
+When you create a deferred context, it does not inherit any state from the immediate context.
+
+지연 컨텍스트를 생성할 때, 즉시 컨텍스트의 어떠한 상태도 상속하지 않는다.
 
 To get a deferred context, call [**ID3D11Device::CreateDeferredContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createdeferredcontext).
+
+지연 컨텍스트를 가져오기 위해선, 
 
 Any context -- immediate or deferred -- can be used on any thread as long as the context is only used in one thread at a time.
 
