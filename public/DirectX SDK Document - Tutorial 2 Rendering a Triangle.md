@@ -221,17 +221,27 @@ Format defines the data type to be used for this element.
 
 For instance, a format of DXGI_FORMAT_R32G32B32_FLOAT has three 32-bit floating point numbers, making the element 12-byte long.
 
-예를 들어, DXGI_FORMAT_R32G32B32_FLOAT의 형식은 32 비트 부동소수점 
+예를 들어, `DXGI_FORMAT_R32G32B32_FLOAT` 형식은 세 개의 32비트 부동 소수점 숫자를 가지므로, 이 요소의 길이는 12바이트가 된다.
 
 A format of DXGI_FORMAT_R16G16B16A16_UINT has four 16-bit unsigned integers, making the element 8 bytes long.
 
-InputSlot
+`DXGI_FORMAT_R16G16B16A16_UINT` 형식은 네 개의 16비트 부호 없는 정수를 가지므로, 이 요소의 길이는 8바이트가 된다.
+
+==InputSlot==
+
+==입력 슬롯==
 
 As mentioned previously, a Direct3D 11 application passes vertex data to the GPU via the use of vertex buffer. In Direct3D 11, multiple vertex buffers can be fed to the GPU simultaneously, 16 to be exact. Each vertex buffer is bound to an input slot number ranging from 0 to 15. The InputSlot field tells the GPU which vertex buffer it should fetch for this element.
 
-AlignedByteOffset
+앞서 언급했듯이, Direct3D 11 애플리케이션은 정점 버퍼를 사용하여 GPU에 정점 데이터를 전달한다. Direct3D 11에서는 여러 개의 정점 버퍼를 동시에 GPU에 공급할 수 있는데, 정확히는 16개이다. 각 정점 버퍼는 0부터 15까지의 입력 슬롯 번호에 바인딩된다. `InputSlot` 필드는 GPU에 이 요소를 위해 어떤 정점 버퍼를 가져와야 하는지 알려준다.
+
+==AlignedByteOffset==
+
+==정렬된 바이트 오프셋==
 
 A vertex is stored in a vertex buffer, which is simply a chunk of memory. The AlignedByteOffset field tells the GPU the memory location to start fetching the data for this element.
+
+정점은 단순히 메모리 덩어리인 정점 버퍼에 저장된다. `AlignedByteOffset` 필드는 GPU에 이 요소에 대한 데이터를 가져오기 시작할 메모리 위치를 알려준다.
 
 InputSlotClass
 
