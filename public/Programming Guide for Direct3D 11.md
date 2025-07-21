@@ -172,17 +172,31 @@ For example, core functions will have the same return values independent of the 
 
 To create layers when a device is created, call D3D11CreateDevice or D3D11CreateDeviceAndSwapChain and supply one or more D3D11_CREATE_DEVICE_FLAG values.
 
-장치가 생성되었을때 층들을 생성하기 위해서
+장치를 생성할 때 층을 생성하려면 D3D11CreateDevice 또는 D3D11CreateDeviceAndSwapChain을 호출하고 하나 이상의 D3D11_CREATE_DEVICE_FLAG 값을 제공해야한다..
 
 Direct3D 11 provides the following runtime layers:
 
+Direct3D 11은 다음의 실행시간 층들을 제공한다.
+
 ## Core Layer
 
-The core layer exists by default; providing a very thin mapping between the API and the device driver, minimizing overhead for high-frequency calls. As the core layer is essential for performance, it only performs critical validation. The remaining layers are optional.
+The core layer exists by default; providing a very thin mapping between the API and the device driver, minimizing overhead for high-frequency calls.
+
+`core` 층은 기본적으로 존재한다; API와 장치 드라이버 사이에 아주 얇은 사상을 제공하며, 잦은 호출에 따른 오버헤드를 최소화한다.
+
+As the core layer is essential for performance, it only performs critical validation.
+
+`core` 층은 성능을 위해 필수적이며, 오직 중요 유효성 검사만 수행한다.
+
+The remaining layers are optional.
+
+나머지 층들은 선택적이다.
 
 ## Debug Layer
 
 The debug layer provides extensive additional parameter and consistency validation (such as validating shader linkage and resource binding, validating parameter consistency, and reporting error descriptions).
+
+
 
 To create a device that supports the debug layer, you must install the DirectX SDK (to get D3D11SDKLayers.dll), and then specify the D3D11_CREATE_DEVICE_DEBUG flag when calling the D3D11CreateDevice function or the D3D11CreateDeviceAndSwapChain function. If you run your application with the debug layer enabled, the application will be substantially slower. But, to ensure that your application is clean of errors and warnings before you ship it, use the debug layer. For more info, see Using the debug layer to debug apps.
 
