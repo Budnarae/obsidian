@@ -67,20 +67,31 @@ More specifically, a device context is used to set pipeline state and generate r
 
 Direct3D 11 implements two types of device contexts, one for immediate rendering and the other for deferred rendering; both contexts are represented with an [**ID3D11DeviceContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) interface.
 
-Direct3D 11은 두 종류의 `device context`를 가진다. 하나는 즉시 렌더링을 위한 것이고 하나는 지연 렌더링을 위한 것이다; 두 개의 ``
-
-[](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#immediate-context)
+Direct3D 11은 두 종류의 `device context`를 가진다. 하나는 즉시 렌더링을 위한 것이고 하나는 지연 렌더링을 위한 것이다; 두 개의 `context` 모두 **ID3D11DeviceContext** 인터페이스를 사용하여 나타내진다.
 
 ### Immediate Context
 
-An immediate context renders directly to the driver. Each device has one and only one immediate context which can retrieve data from the GPU. An immediate context can be used to immediately render (or play back) a [command list](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-command-list).
+An immediate context renders directly to the driver.
+
+즉시 컨텍스트는 즉각적으로 드라이버에 렌더한다.
+
+Each device has one and only one immediate context which can retrieve data from the GPU.
+
+각 장치는 GPU로부터 자료를 받아들일 수 있는 즉시 컨텍스트를 '하나' 보유하고 있다.
+
+An immediate context can be used to immediately render (or play back) a [command list](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-render-multi-thread-command-list).
+
+즉각적인 컨텍스트를 사용하여 명령 목록을 즉시 렌더링(또는 재생)할 수 있다.
 
 There are two ways to get an immediate context:
+
+즉시 컨텍스트를 가져올 수 있는 방법은 2가지가 있다.
 
 - By calling either [**D3D11CreateDevice**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) or [**D3D11CreateDeviceAndSwapChain**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain).
 - By calling [**ID3D11Device::GetImmediateContext**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-getimmediatecontext).
 
-[](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#deferred-context)
+- **D3D11CreateDevice**나 **D3D11CreateDeviceAndSwapChain**을 호출하는 것.
+- **ID3D11Device::GetImmediateContext**를 호출하는 것.
 
 ### Deferred Context
 
