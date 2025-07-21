@@ -243,16 +243,25 @@ A vertex is stored in a vertex buffer, which is simply a chunk of memory. The Al
 
 정점은 단순히 메모리 덩어리인 정점 버퍼에 저장된다. `AlignedByteOffset` 필드는 GPU에 이 요소에 대한 데이터를 가져오기 시작할 메모리 위치를 알려준다.
 
-InputSlotClass
+==InputSlotClass==
+
+==입력 슬롯 클래스==
 
 This field usually has the value D3D11_INPUT_PER_VERTEX_DATA. When an application uses instancing, it can set an input layout's InputSlotClass to D3D11_INPUT_PER_INSTANCE_DATA to work with vertex buffer containing instance data. Instancing is an advanced Direct3D topic and will not be discussed here. For our tutorial, we will use D3D11_INPUT_PER_VERTEX_DATA exclusively.
 
-InstanceDataStepRate
+이 필드는 일반적으로 D3D11_INPUT_PER_VERTEX_DATA 값을 가진다. 애플리케이션이 인스턴싱을 사용할 경우, 인스턴스 데이터를 포함하는 정점 버퍼와 함께 작동하도록 입력 레이아웃의 InputSlotClass를 D3D11_INPUT_PER_INSTANCE_DATA로 설정할 수 있다. 인스턴싱은 고급 Direct3D 주제이므로 여기서는 다루지 않는다. 이 튜토리얼에서는 D3D11_INPUT_PER_VERTEX_DATA만 사용한다.
+
+==InstanceDataStepRate==
 
 This field is used for instancing. Since we are not using instancing, this field is not used and must be set to 0.
 
+이 필드는 인스턴싱에 사용된다. 우리는 인스턴싱을 사용하지 않으므로, 이 필드는 사용되지 않으며 0으로 설정해야 한다.
 
 Now we can define our D3D11_INPUT_ELEMENT_DESC array and create the input layout:
+
+이제 `D3D11_INPUT_ELEMENT_DESC` 배열을 정의하고 입력 레이아웃을 생성하도록 하자.
+
+```cpp
 
 // Define the input layout
 D3D11_INPUT_ELEMENT_DESC layout[] =
@@ -261,9 +270,19 @@ D3D11_INPUT_ELEMENT_DESC layout[] =
 };
 UINT numElements = ARRAYSIZE(layout);
 
+```
+
 ## Vertex Layout
 
-In the next tutorial, we will explain the technique object and the associated shaders. For now, we will just concentrate on creating the Direct3D 11 vertex layout object for the technique. However, we will learn that the vertex shaders are tightly coupled with this vertex layout. The reason is that creating a vertex layout object requires the vertex shader's input signature. We use the ID3DBlob object returned from D3DX11CompileFromFile to retrieve the binary data that represents the input signature of the vertex shader. Once we have this data, we can call **ID3D11Device::CreateInputLayout()** to create a vertex layout object, and **ID3D11DeviceContext::IASetInputLayout()** to set it as the active vertex layout. The code to do all of that is shown below:
+In the next tutorial, we will explain the technique object and the associated shaders.
+
+다음 튜토리얼에서는 테크닉 객체와 그와 관련된 셰이더에 대해 설명한다.
+
+For now, we will just concentrate on creating the Direct3D 11 vertex layout object for the technique.
+
+지금은 테크닉을 위한 Direct3D 11 정점 레이아웃 객체를 생성하는데 집중하도록 한다.
+
+However, we will learn that the vertex shaders are tightly coupled with this vertex layout. The reason is that creating a vertex layout object requires the vertex shader's input signature. We use the ID3DBlob object returned from D3DX11CompileFromFile to retrieve the binary data that represents the input signature of the vertex shader. Once we have this data, we can call **ID3D11Device::CreateInputLayout()** to create a vertex layout object, and **ID3D11DeviceContext::IASetInputLayout()** to set it as the active vertex layout. The code to do all of that is shown below:
 
 // Create the input layout
 if( FAILED( g_pd3dDevice->CreateInputLayout( layout, numElements, pVSBlob->GetBufferPointer(), 
