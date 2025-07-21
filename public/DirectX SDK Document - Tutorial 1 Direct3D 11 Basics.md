@@ -207,7 +207,7 @@ We need to create a render target view because we would like to bind the back bu
 
 This enables Direct3D 11 to render onto it.
 
-이를 통해 Direct3D 11은 렌더 타깃 위위에 렌더링할 수 있다.
+이를 통해 Direct3D 11은 렌더 타깃 위에 렌더링할 수 있다.
 
 We first call **GetBuffer()** to get the back buffer object.
 
@@ -259,7 +259,7 @@ g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, NULL );
 
 The last thing we need to set up before Direct3D 11 can render is initialize the viewport.
 
-DIrect3D 11로 렌더하기 위해 마지막으로 설정할 것은 뷰포트를 초기화하는 것이다.
+Direct3D 11로 렌더하기 위해 마지막으로 설정할 것은 뷰포트를 초기화하는 것이다.
 
 The viewport maps clip space coordinates, where X and Y range from -1 to 1 and Z ranges from 0 to 1, to render target space, sometimes known as pixel space.
 
