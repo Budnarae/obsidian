@@ -21,7 +21,7 @@
   "smart_view_filter": {
     "render_markdown": true,
     "show_full_path": false,
-    "expanded_view": false,
+    "expanded_view": true,
     "results_limit": "20"
   },
   "excluded_headings": "",
