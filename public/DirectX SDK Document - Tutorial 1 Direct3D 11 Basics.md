@@ -87,7 +87,7 @@ The back buffer is the render target to which the device will draw.
 
 Once it finishes the drawing operation, the swap chain will present the backbuffer by swapping the two buffers.
 
-한번 그리기를 수행하면, 장치는 백 버퍼를 보존하기 위해 두 개의 버퍼를 뒤바꾼다.
+한번 그리기를 수행하면, 장치는 백 버퍼를 표시하기 위해 두 개의 버퍼를 뒤바꾼다.
 
 The back buffer becomes the front buffer, and vice versa.
 
