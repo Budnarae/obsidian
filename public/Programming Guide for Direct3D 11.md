@@ -30,13 +30,27 @@ Use a shared resource to share data between multiple devices, with the constrain
 
 The Direct3D 11 object model separates resource creation and rendering functionality into a device and one or more contexts; this separation is designed to facilitate multithreading.
 
-
+Direct3D 11의 객체 모델은 리소스 생성과 렌더링 기능을 `device`와 하나 또는 그 이상의 `contexts`로 분할한다; 이러한 분할은 멀티 스레딩을 용이하게 하기 위해 설계되었다.
 
 ## Device
 
-A device is used to create resources and to enumerate the capabilities of a display adapter. In Direct3D 11, a device is represented with an [**ID3D11Device**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11device) interface.
+A device is used to create resources and to enumerate the capabilities of a display adapter.
 
-Each application must have at least one device, most applications only create one device. Create a device for one of the hardware drivers installed on your machine by calling [**D3D11CreateDevice**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) or [**D3D11CreateDeviceAndSwapChain**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) and specify the driver type with the [**D3D_DRIVER_TYPE**](https://learn.microsoft.com/en-us/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type) flag. Each device can use one or more device contexts, depending on the functionality desired.
+`device`는 리소스를 생성하고 디스플레이 어댑터의 기능을 열거하기 위해 사용된다.
+
+In Direct3D 11, a device is represented with an [**ID3D11Device**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nn-d3d11-id3d11device) interface.
+
+Direct3D 11에서, `device`는 **ID3D11Device** 인터페이스에 의해 나타내진다.
+
+Each application must have at least one device, most applications only create one device.
+
+각 실행프로그램은 적어도 하나의 `device`를 보유해야 하며, 대부분의 실행프로그램은 딱 하나의 `device`만 생성한다.
+
+Create a device for one of the hardware drivers installed on your machine by calling [**D3D11CreateDevice**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice) or [**D3D11CreateDeviceAndSwapChain**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) and specify the driver type with the [**D3D_DRIVER_TYPE**](https://learn.microsoft.com/en-us/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type) flag.
+
+
+
+Each device can use one or more device contexts, depending on the functionality desired.
 
 [](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-intro#device-context)
 
