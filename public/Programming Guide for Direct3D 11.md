@@ -160,11 +160,19 @@ Direct3D 11 실행시간은 여러 층으로 구성되어 있다. 중심부에�
 
 This section describes the functionality of each layer.
 
+이번 단원에서는 각 층의 기능들에 대해 서술한다.
 
+As a general rule, layers add functionality, but do not modify existing behavior.
 
-As a general rule, layers add functionality, but do not modify existing behavior. For example, core functions will have the same return values independent of the debug layer being instantiated, although additional debug output may be provided if the debug layer is instantiated.
+일반적인 규칙에 따라, 층들은 기능을 추가하지만, 기존에 존재하는 동작을 수정하진 않는다.
+
+For example, core functions will have the same return values independent of the debug layer being instantiated, although additional debug output may be provided if the debug layer is instantiated.
+
+예를 들어서, 핵심 함수들은 디버그 계층이 객체화되면 추가적인 디버그 출력을 가지는 데도 불구하고, 디버그 계층의 객체화 여부와는 독립적으로 같은 반환값을 가진다.
 
 To create layers when a device is created, call D3D11CreateDevice or D3D11CreateDeviceAndSwapChain and supply one or more D3D11_CREATE_DEVICE_FLAG values.
+
+장치가 생성되었을때 층들을 생성하기 위해서
 
 Direct3D 11 provides the following runtime layers:
 
