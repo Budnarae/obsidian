@@ -31,9 +31,11 @@
   "smart_chat_threads": {
     "chat_model": {
       "adapter": "ollama",
-      "ollama": {}
+      "ollama": {
+        "model_key": "undefined"
+      }
     },
-    "active_thread_key": "",
+    "active_thread_key": "Untitled Chat 2025-07-21 14-54-05",
     "system_prompt": "",
     "detect_self_referential": true,
     "review_context": true,

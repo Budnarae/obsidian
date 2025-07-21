@@ -1,0 +1,2 @@
+
+"smart_completions:Untitled Chat 2025-07-21 14-54-05-1753077245575": {"completion":{"request":{"messages":[{"role":"user","content":[{"type":"text","text":"hi"}]}]},"responses":[],"chat_model":{"platform_key":"ollama"}},"key":"Untitled Chat 2025-07-21 14-54-05-1753077245575","thread_key":"Untitled Chat 2025-07-21 14-54-05","stream":true,"context_key":"1753077245575","class_name":"SmartCompletion","user_message":"hi","new_user_message":true},
