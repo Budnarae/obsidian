@@ -146,8 +146,8 @@ ID3D10Device interface methods are not designed to be free-threaded.
 
 ID3D10Device implements all create and rendering functionality as does ID3D9Device in Direct3D 9.
 
-`ID3D10Device`는 Direct3D 9버전의 `ID3D9Device`
+`ID3D10Device`는 Direct3D 9버전의 `ID3D9Device`와 마찬가지 방법으로 생성과 렌더링 기능을 구현한다.
 
 Map and Unmap are implemented on ID3D10Resource-derived interfaces, Begin, End, and GetData are implemented on ID3D10Asynchronous-derived interfaces.
 
-
+맵과 언맵은 ID3D10Resource 파생 인터페이스에서 구현되고, 시작, 종료, 데이터 가져오기는 ID3D10Asynchronous 파생 인터페이스에서 구현된다.
