@@ -358,7 +358,7 @@ Rendering is done in the **Render()** function.
 
 In this tutorial, we will render the simplest scene possible, which is to fill the screen with a single color.
 
-이 튜토리얼에서, 우리는 가장 단순한 장면 - 화면을 단일 색깔로 채운 것 -을 렌더링 할 것이다.
+이 튜토리얼에서, 우리는 가장 단순한 장면 - 화면을 단일 색깔로 채운 것 - 을 렌더링 할 것이다.
 
 In Direct3D 11, an easy way to fill the render target with a single color is to use the immediate context's **ClearRenderTargetView()** method.
 
