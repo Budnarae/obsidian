@@ -24,6 +24,32 @@ The graphics pipeline for Microsoft Direct3D 11 supports the same stages as the�
 
 You can use the Direct3D 11API to configure all of the stages.
 
-당신은 Direct3D 11 API를 사용하여 모든 단계들을 configure
+당신은 Direct3D 11 API를 사용하여 모든 단계들을 구성할 수 있다.
 
-Stages that feature common shader cores (the rounded rectangular blocks) are programmable by using the [HLSL](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl) programming language. As you will see, this makes the pipeline extremely flexible and adaptable.
+Stages that feature common shader cores (the rounded rectangular blocks) are programmable by using the [HLSL](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl) programming language.
+
+공통 셰이더 코어(둥근 직사각형 블록)가 있는 스테이지는 HLSL 언어를 사용하여 프로그래밍할 수 있다.
+
+As you will see, this makes the pipeline extremely flexible and adaptable.
+
+당신이 앞으로 보게 될 것처럼, 이러한 특성은 파이프라인을 매우 유연하고 적응성 있게 만든다.
+
+# Input-Assembler Stage
+
+The Direct3D 10 and higher API separates functional areas of the pipeline into stages; the first stage in the pipeline is the input-assembler (IA) stage.
+
+Direct3D 10과 그보다 높은 버전의 API는 pipeline의 기능적인 영역들을 단계(stage)들로 분할한다; 파이프라인의 첫번째 단계는 input-assembler (IA) 단계이다.
+
+The purpose of the input-assembler stage is to read primitive data (points, lines and/or triangles) from user-filled buffers and assemble the data into primitives that will be used by the other pipeline stages.
+
+input-assembler 단계의 목적은 
+
+The IA stage can assemble vertices into several different [primitive types](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-primitive-topologies) (such as line lists, triangle strips, or primitives with adjacency). New primitive types (such as a line list with adjacency or a triangle list with adjacency) have been added to support the geometry shader.
+
+Adjacency information is visible to an application only in a geometry shader. If a geometry shader were invoked with a triangle including adjacency, for instance, the input data would contain 3 vertices for each triangle and 3 vertices for adjacency data per triangle.
+
+When the input-assembler stage is requested to output adjacency data, the input data must include adjacency data. This may require providing a dummy vertex (forming a degenerate triangle), or perhaps by flagging in one of the vertex attributes whether the vertex exists or not. This would also need to be detected and handled by a geometry shader, although culling of degenerate geometry will happen in the rasterizer stage.
+
+While assembling primitives, a secondary purpose of the IA is to attach [system-generated values](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) to help make shaders more efficient. System-generated values are text strings that are also called semantics. All three shader stages are constructed from a common shader core, and the shader core uses system-generated values (such as a primitive id, an instance id, or a vertex id) so that a shader stage can reduce processing to only those primitives, instances, or vertices that have not already been processed.
+
+As shown in the [pipeline-block diagram](https://learn.microsoft.com/en-us/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages), once the IA stage reads data from memory (assembles the data into primitives and attaches system-generated values), the data is output to the [vertex shader stage](https://learn.microsoft.com/en-us/previous-versions//bb205146\(v=vs.85\)).
