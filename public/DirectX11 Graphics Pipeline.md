@@ -134,6 +134,52 @@ For an example of a simple vertex and pixel shader that draws a single triangle,
 
 For help with creating a vertex buffer, see [How to: Create a vertex buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-vertex-how-to).
 
-정점 버퍼를 생성하기를 원한다면, '정점 버퍼 생성하는 법을 참고하도록 하자'.
+정점 버퍼를 생성하기를 원한다면, '정점 버퍼 생성하는 법'을 참고하도록 하자.
 
 For help with creating an index buffer, see [How to: Create an index buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to).
+
+인덱스 버퍼 만드는 법에 대해서 도움이 필요하다면, '인덱스 버퍼 만드는 법'을 참고하도록 하자.
+
+## Create the Input-Layout Object
+
+The input-layout object encapsulates the input state of the IA stage.
+
+입력 레이아웃 객체는 IA 단계의 입력 상태를 캡슐화한다.
+
+This includes a description of the input data that is bound to the IA stage.
+
+이것은 IA 단계에 종속된 입력 데이터에 대한 설명을 포함한다.
+
+The data is streamed into the IA stage from memory, from one or more vertex buffers.
+
+데이터는 메모리에서, 하나 이상의 정점 버퍼에서 IA 단계로 흘러들어간다. 
+
+The description identifies the input data that is bound from one or more vertex buffers and gives the runtime the ability to check the input data types against the shader input parameter types.
+
+
+
+This type checking not only verifies that the types are compatible, but also that each of the elements that the shader requires is available in the buffer resources.
+
+An input-layout object is created from an array of input-element descriptions and a pointer to the compiled shader (see [**ID3D11Device::CreateInputLayout**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createinputlayout)). The array contains one or more input elements; each input element describes a single vertex-data element from a single vertex buffer. The entire set of input-element descriptions describes all of the vertex-data elements from all of the vertex buffers that will be bound to the IA stage.
+
+The following layout description describes a single vertex buffer that contains three vertex-data elements:
+
+Copy
+
+```
+D3D11_INPUT_ELEMENT_DESC layout[] =
+{
+    { L"POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, 
+          D3D11_INPUT_PER_VERTEX_DATA, 0 },
+    { L"TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 12, 
+          D3D11_INPUT_PER_VERTEX_DATA, 0 },
+    { L"NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 20, 
+          D3D11_INPUT_PER_VERTEX_DATA, 0 },
+};
+```
+
+An input-element description describes each element contained by a single vertex in a vertex buffer, including size, type, location, and purpose. Each row identifies the type of data by using the semantic, the semantic index, and the data format. A [semantic](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) is a text string that identifies how the data will be used. In this example, the first row identifies 3-component position data (_xyz_, for example); the second row identifies 2-component texture data (_UV_, for example); and the third row identifies normal data.
+
+In this example of an input-element description, the semantic index (which is the second parameter) is set to zero for all three rows. The semantic index helps distinguish between two rows that use the same semantics. Since there are no similar semantics in this example, the semantic index can be set to its default value, zero.
+
+The third parameter is the _format_. The format (see [**DXGI_FORMAT**](https://learn.microsoft.com/en-us/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)) specifies the number of components per element, and the data type, which defines the size of the data for each element. The format can be fully typed at the time of resource creation, or you may create a resource by using a **DXGI_FORMAT**, which identifies the number of components in an element, but leaves the data type undefined.
