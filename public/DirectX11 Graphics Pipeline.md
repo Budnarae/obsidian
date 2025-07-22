@@ -118,6 +118,22 @@ Index buffers are optional; they provide indices to vertices from the vertex buf
 
 You may create one or more vertex buffers and, optionally, an index buffer.
 
-After you create the buffer resources, you need to create an input-layout object to describe the data layout to the IA stage, and then you need to bind the buffer resources to the IA stage. Creating and binding buffers is not necessary if your shaders don't use buffers. For an example of a simple vertex and pixel shader that draws a single triangle, see [Using the Input-Assembler Stage without Buffers](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage-no-buffers).
+당신은 하나 혹은 그 이상의 정점 버퍼를 만들게 될 것이며, 선택적으로, 인덱스 버퍼도 만들 수 있다.
 
-For help with creating a vertex buffer, see [How to: Create a vertex buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-vertex-how-to). For help with creating an index buffer, see [How to: Create an index buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to).
+After you create the buffer resources, you need to create an input-layout object to describe the data layout to the IA stage, and then you need to bind the buffer resources to the IA stage.
+
+버퍼 리소스를 만든 후에, IA 단계에 데이터 레이아웃을 알려주기 위한 입력 레이아웃 객체를 만들어야 하며, 그런 후에 버퍼 리소스를 IA 단계에 바인딩해야 한다.
+
+Creating and binding buffers is not necessary if your shaders don't use buffers.
+
+당신의 셰이더가 버퍼를 사용하지 않는다면 버퍼를 생성하고 바인딩할 필요는 없다.
+
+For an example of a simple vertex and pixel shader that draws a single triangle, see [Using the Input-Assembler Stage without Buffers](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage-no-buffers).
+
+단순한 정점 셰이더와 픽셀 셰이더로 단일 삼각형을 그리는 예제가 필요하다면 '버퍼 없이 IA 단계 사용하기'를 보도록 하자.
+
+For help with creating a vertex buffer, see [How to: Create a vertex buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-vertex-how-to).
+
+정점 버퍼를 생성하기를 원한다면, '정점 버퍼 생성하는 법을 참고하도록 하자'.
+
+For help with creating an index buffer, see [How to: Create an index buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to).
