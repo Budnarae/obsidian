@@ -156,9 +156,11 @@ The data is streamed into the IA stage from memory, from one or more vertex buff
 
 The description identifies the input data that is bound from one or more vertex buffers and gives the runtime the ability to check the input data types against the shader input parameter types.
 
-
+입력 레이아웃 객체의 설명은 하나 이상의 버텍스 버퍼에서 바인딩된 입력 데이터를 식별하고 런타임이 셰이더 입력 파라미터 유형과 비교하여 입력 데이터 유형을 확인할 수 있는 기능을 제공한다.
 
 This type checking not only verifies that the types are compatible, but also that each of the elements that the shader requires is available in the buffer resources.
+
+
 
 An input-layout object is created from an array of input-element descriptions and a pointer to the compiled shader (see [**ID3D11Device::CreateInputLayout**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createinputlayout)). The array contains one or more input elements; each input element describes a single vertex-data element from a single vertex buffer. The entire set of input-element descriptions describes all of the vertex-data elements from all of the vertex buffers that will be bound to the IA stage.
 
