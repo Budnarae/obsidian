@@ -193,7 +193,7 @@ For instance, a good semantic name for the vertex's position is POSITION. Semant
 
 ==SemanticIndex==
 
-==의미론적 인덱스스==
+==의미론적 인덱스==
 
 Semantic index supplements semantic name.
 
