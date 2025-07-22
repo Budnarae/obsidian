@@ -70,8 +70,20 @@ This may require providing a dummy vertex (forming a degenerate triangle), or pe
 
 This would also need to be detected and handled by a geometry shader, although culling of degenerate geometry will happen in the rasterizer stage.
 
-이는 또한 기하학 셰이더에 의해 감지되고 조작되어야 하며, 
+비록 퇴화 기하 도형이 래스터라이저 단계에서 걸러진다 하더라도 ,이는 또한 기하학 셰이더에 의해 감지되고 조작되어야 한다.
 
-While assembling primitives, a secondary purpose of the IA is to attach [system-generated values](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) to help make shaders more efficient. System-generated values are text strings that are also called semantics. All three shader stages are constructed from a common shader core, and the shader core uses system-generated values (such as a primitive id, an instance id, or a vertex id) so that a shader stage can reduce processing to only those primitives, instances, or vertices that have not already been processed.
+While assembling primitives, a secondary purpose of the IA is to attach [system-generated values](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) to help make shaders more efficient.
+
+프리미티브를 조합하는 것에 더불어, IA의 두 번째 목적은 셰이더를 더 효과적으로 만들기 위해 시스템에 의해 생성된 값을 부착하는 것이다.
+
+System-generated values are text strings that are also called semantics.
+
+시스템에 의해 생성된 값은 의미론(semantics)이라고도 불리는 문자열이다.
+
+All three shader stages are constructed from a common shader core, and the shader core uses system-generated values (such as a primitive id, an instance id, or a vertex id) so that a shader stage can reduce processing to only those primitives, instances, or vertices that have not already been processed.
+
+세 셰이더 스테이지는 모두 공통 셰이더 코어로 구성되며, 셰이더 코어는 시스템 생성 값(예: 프리미티브 ID, 인스턴스 ID 또는 버텍스 ID)을 사용하여 셰이더 단계에서 아직 처리되지 않은 프리미티브, 인스턴스 또는 버텍스만 처리하도록 축소할 수 있다.
 
 As shown in the [pipeline-block diagram](https://learn.microsoft.com/en-us/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages), once the IA stage reads data from memory (assembles the data into primitives and attaches system-generated values), the data is output to the [vertex shader stage](https://learn.microsoft.com/en-us/previous-versions//bb205146\(v=vs.85\)).
+
+파이프라인 블록 다이어그램에서 보여지듯이, 한번 IA 단계가 메모리로부터 값을 읽으면 ()
