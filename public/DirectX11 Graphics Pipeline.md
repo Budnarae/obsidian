@@ -86,4 +86,16 @@ All three shader stages are constructed from a common shader core, and the shade
 
 As shown in the [pipeline-block diagram](https://learn.microsoft.com/en-us/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages), once the IA stage reads data from memory (assembles the data into primitives and attaches system-generated values), the data is output to the [vertex shader stage](https://learn.microsoft.com/en-us/previous-versions//bb205146\(v=vs.85\)).
 
-파이프라인 블록 다이어그램에서 보여지듯이, 한번 IA 단계가 메모리로부터 값을 읽으면 ()
+파이프라인 블록 다이어그램에서 보여지듯이, 한번 IA 단계가 메모리로부터 값을 읽으면 (그리고 데이터를 프리미티브로 조립하고, 시스템 생성값을 부착하면), 출력 데이터는 vertex shader stage로 넘어간다.
+
+# Getting Started with the Input-Assembler Stage
+
+There are a few steps necessary to initialize the input-assembler (IA) stage.
+
+IA 단계를 초기화하게 위해 필수적인 몇몇 과정들이 있다.
+
+For example, you need to create buffer resources with the vertex data that the pipeline needs, tell the IA stage where the buffers are and what type of data they contain, and specify the type of primitives to assemble from the data.
+
+예를 들어 파이프라인이 필요로 하는, 정점 정보를 가지고 있는 버퍼 리소스를 
+
+The basic steps involved in setting up the IA stage, shown in the following table, are covered in this topic.
