@@ -160,7 +160,7 @@ The description identifies the input data that is bound from one or more vertex 
 
 This type checking not only verifies that the types are compatible, but also that each of the elements that the shader requires is available in the buffer resources.
 
-
+타입 확인 절차는 타입이 호환되는지 검증하는데 그치지 않고, 셰이더가 요구하는 모든 원소가 버퍼 리소스에서 사용가능한지도 확인한다.
 
 An input-layout object is created from an array of input-element descriptions and a pointer to the compiled shader (see [**ID3D11Device::CreateInputLayout**](https://learn.microsoft.com/en-us/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createinputlayout)). The array contains one or more input elements; each input element describes a single vertex-data element from a single vertex buffer. The entire set of input-element descriptions describes all of the vertex-data elements from all of the vertex buffers that will be bound to the IA stage.
 
