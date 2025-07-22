@@ -42,11 +42,23 @@ Direct3D 10과 그보다 높은 버전의 API는 pipeline의 기능적인 영역
 
 The purpose of the input-assembler stage is to read primitive data (points, lines and/or triangles) from user-filled buffers and assemble the data into primitives that will be used by the other pipeline stages.
 
-input-assembler 단계의 목적은 
+input-assembler 단계의 목적은 프리미티브 정보(점, 선, 그리고 삼각형)를 사용자 정의 버퍼로부터 읽은 후 데이터를 프리미티브로 조합하는 것이다. 그리고 이러한 프리미티브들은 다른 파이프라인 단계들에 의해 사용되게 된다.
 
-The IA stage can assemble vertices into several different [primitive types](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-primitive-topologies) (such as line lists, triangle strips, or primitives with adjacency). New primitive types (such as a line list with adjacency or a triangle list with adjacency) have been added to support the geometry shader.
+The IA stage can assemble vertices into several different [primitive types](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-primitive-topologies) (such as line lists, triangle strips, or primitives with adjacency).
 
-Adjacency information is visible to an application only in a geometry shader. If a geometry shader were invoked with a triangle including adjacency, for instance, the input data would contain 3 vertices for each triangle and 3 vertices for adjacency data per triangle.
+IA 단계는 정점들을 여러 개의 다른 프리미티브 타입들로 조합할 수 있다 (선 목록, 삼각형 스트립 또는 인접성이 있는 기본 요소 등등)
+
+New primitive types (such as a line list with adjacency or a triangle list with adjacency) have been added to support the geometry shader.
+
+새로운 프리미티브 타입(예: 인접성이 있는 선 목록 또는 인접성이 있는 삼각형 목록)들은 기하학 셰이더를 지원하기 위해서 추가되었다.
+
+Adjacency information is visible to an application only in a geometry shader.
+
+인접 정보는 오로지 기하학 셰이더에서만 볼 수 있다.
+
+If a geometry shader were invoked with a triangle including adjacency, for instance, the input data would contain 3 vertices for each triangle and 3 vertices for adjacency data per triangle.
+
+만약 기하학 셰이더가  invoked
 
 When the input-assembler stage is requested to output adjacency data, the input data must include adjacency data. This may require providing a dummy vertex (forming a degenerate triangle), or perhaps by flagging in one of the vertex attributes whether the vertex exists or not. This would also need to be detected and handled by a geometry shader, although culling of degenerate geometry will happen in the rasterizer stage.
 
