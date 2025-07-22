@@ -88,7 +88,7 @@ As shown in the [pipeline-block diagram](https://learn.microsoft.com/en-us/wind
 
 파이프라인 블록 다이어그램에서 보여지듯이, 한번 IA 단계가 메모리로부터 값을 읽으면 (그리고 데이터를 프리미티브로 조립하고, 시스템 생성값을 부착하면), 출력 데이터는 vertex shader stage로 넘어간다.
 
-# Getting Started with the Input-Assembler Stage
+## Getting Started with the Input-Assembler Stage
 
 There are a few steps necessary to initialize the input-assembler (IA) stage.
 
@@ -96,6 +96,28 @@ IA 단계를 초기화하게 위해 필수적인 몇몇 과정들이 있다.
 
 For example, you need to create buffer resources with the vertex data that the pipeline needs, tell the IA stage where the buffers are and what type of data they contain, and specify the type of primitives to assemble from the data.
 
-예를 들어 파이프라인이 필요로 하는, 정점 정보를 가지고 있는 버퍼 리소스를 
+예를 들어 파이프라인이 필요로 하는, 정점 정보를 가지고 있는 버퍼 리소스를 생성해야 하며, IA 단계에게 버퍼가 어디에 있고 버퍼가 무슨 자료형을 포함하는지를 알려줘야 하며, 데이터로부터 어떤 프리미티브를 조합할지 알려줘야 한다.
 
 The basic steps involved in setting up the IA stage, shown in the following table, are covered in this topic.
+
+이 주제에서는 다음 표에 나와 있는 IA 단계 설정과 관련된 기본 단계를 다룬다.
+
+## Create Input Buffers
+
+There are two types of input buffers: [vertex buffers](https://learn.microsoft.com/en-us/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) and index buffers.
+
+두 종류의 입력 버퍼가 있다: 정점 버퍼와 인덱스 버퍼이다.
+
+Vertex buffers supply vertex data to the IA stage.
+
+정점 버퍼는 정점의 정보를 IA 단계에 공급한다.
+
+Index buffers are optional; they provide indices to vertices from the vertex buffer.
+
+인덱스 버퍼는 선택의 영역이다; 이 버퍼는 정점 버퍼의 정점에 인덱스를 부여한다.
+
+You may create one or more vertex buffers and, optionally, an index buffer.
+
+After you create the buffer resources, you need to create an input-layout object to describe the data layout to the IA stage, and then you need to bind the buffer resources to the IA stage. Creating and binding buffers is not necessary if your shaders don't use buffers. For an example of a simple vertex and pixel shader that draws a single triangle, see [Using the Input-Assembler Stage without Buffers](https://learn.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage-no-buffers).
+
+For help with creating a vertex buffer, see [How to: Create a vertex buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-vertex-how-to). For help with creating an index buffer, see [How to: Create an index buffer](https://learn.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to).
