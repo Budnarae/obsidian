@@ -197,7 +197,7 @@ Once we have that resource we can create different resource views to bind that t
 
 Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
 
-C의 타입캐스트가 메모리 덩어리를 다른 방식으로 사용하도록 허용하는 것처럼, Direct3D 11의 리소스 뷰 그렇게 처리한다.
+C의 타입캐스트가 메모리 덩어리를 다른 방식으로 사용하도록 허용하는 것처럼, Direct3D 11의 리소스 뷰 또한 그렇게 동작작한다.
 
 ---
 
@@ -231,7 +231,7 @@ The default render target view can be obtained by passing NULL as the second par
 
 Once we have created the render target view, we can call **OMSetRenderTargets()** on the immediate context to bind it to the pipeline.
 
-랜덤 타깃 뷰를 생성하면, 우리는 즉시 컨텍스트에서 **OMSetRenderTargets()**를 호출하여 파이프라인에 바인드할 수 있다.
+랜더 타깃 뷰를 생성하면, 우리는 즉시 컨텍스트에서 **OMSetRenderTargets()**를 호출하여 파이프라인에 바인드할 수 있다.
 
 This ensures the output that the pipeline renders gets written to the back buffer.
 
