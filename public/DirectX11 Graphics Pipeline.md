@@ -58,9 +58,19 @@ Adjacency information is visible to an application only in a geometry shader.
 
 If a geometry shader were invoked with a triangle including adjacency, for instance, the input data would contain 3 vertices for each triangle and 3 vertices for adjacency data per triangle.
 
-만약 기하학 셰이더가  invoked
+만약 기하학 셰이더가 인접성을 포함하여 삼각형을 호출한다면, 예를 들어, 입력 데이터는 삼각형의 세 점의 정보를 나타내는 세 개의 정점과 그 점에 대응되는 인접성 정보를 나타내는 세 개의 정점을 가진다.
 
-When the input-assembler stage is requested to output adjacency data, the input data must include adjacency data. This may require providing a dummy vertex (forming a degenerate triangle), or perhaps by flagging in one of the vertex attributes whether the vertex exists or not. This would also need to be detected and handled by a geometry shader, although culling of degenerate geometry will happen in the rasterizer stage.
+When the input-assembler stage is requested to output adjacency data, the input data must include adjacency data.
+
+input-assenbler 단계가 인접성 정보를 출력하도록 요청받았을 때, 입력 정보는 반드시 인접성 정보를 포함해야 한다.
+
+This may require providing a dummy vertex (forming a degenerate triangle), or perhaps by flagging in one of the vertex attributes whether the vertex exists or not.
+
+이를 위해서는 더미 정점(퇴화된 삼각형을 형성)를 제공하거나 버텍스의 존재 여부에 관계없이 정점 속성 중 하나에 플래그를 지정해야 할 수도 있다.
+
+This would also need to be detected and handled by a geometry shader, although culling of degenerate geometry will happen in the rasterizer stage.
+
+이는 또한 기하학 셰이더에 의해 감지되고 조작되어야 하며, 
 
 While assembling primitives, a secondary purpose of the IA is to attach [system-generated values](https://learn.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) to help make shaders more efficient. System-generated values are text strings that are also called semantics. All three shader stages are constructed from a common shader core, and the shader core uses system-generated values (such as a primitive id, an instance id, or a vertex id) so that a shader stage can reduce processing to only those primitives, instances, or vertices that have not already been processed.
 
