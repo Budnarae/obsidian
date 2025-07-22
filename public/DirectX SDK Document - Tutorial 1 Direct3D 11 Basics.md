@@ -173,31 +173,7 @@ Think of resource views as typecast in C.
 
 A chunk of raw memory in C can be cast to any data type.
 
-C에서 원시 메모리 덩어리는 어떠한 타입으로든 캐스트될 수 있다.
-
-We can cast that chunk of memory to an array of integers, an array of floats, a structure, an array of structures, and so on.
-
-우리는 메모리 덩어리를 정수 배열, 실수 배열, 구조체, 구조체 배열 등등으로 캐스트할 수 있다.
-
-The raw memory itself is not very useful to us if we don't know its type.
-
-원시 메모리는 그것의 타입을 알 수 없다면 우리에게 그닥 쓸모있지 않다.
-
-Direct3D 11 resource views act in a similar way.
-
-Direct3D 11 리소스 뷰는 비슷한 원리로 동작한다.
-
-For instance, a 2D texture, analogous to the raw memory chunk, is the raw underlying resource.
-
-예를 들어, 2차원 텍스처는, 원시 메모리 덩어리와 비슷하게, 원시 저수준 리소스이다.
-
-Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource.
-
-리소스를 준비한 뒤에는, 해당 텍스처를 그래픽 파이프라인의 여러 단계에 서로 다른 포맷으로 바인딩하기 위해 다양한 리소스 뷰를 생성할 수 있다. 예를 들어, 렌더링할 대상인 렌더 타겟으로, 깊이 정보를 받을 깊이 스텐실 버퍼로, 또는 일반 텍스처 리소스로 사용할 수 있다.
-
-Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
-
-C의 타입캐스트가 메모리 덩어리를 다른 방식으로 사용하도록 허용하는 것처럼, Direct3D 11의 리소스 뷰 또한 그렇게 동작작한다.
+C에서 원시 메모리 덩어리는 어떠한 타입으로든작한다.
 
 ---
 
@@ -382,7 +358,7 @@ Once we fill our back buffer, we call the swap chain's **Present()** method to c
 
 **Present()** is responsible for displaying the swap chain's back buffer content onto the screen so that the user can see it.
 
-**Present()**는 스왑 체인의 내용물을 화면에 띄워 사용자가 그것을 볼 수 있게 하는 역할을 담당한다.
+**Present()**는 스왑 체인의 백 버퍼 내용물을 화면에 띄워 사용자가 그것을 볼 수 있게 하는 역할을 담당한다.
 
 The **Render()** function looks like this:
 
