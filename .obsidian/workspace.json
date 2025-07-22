@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX11 Graphics Pipeline.md",
+                "file": "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX11 Graphics Pipeline"
+              "title": "DirectX SDK Document - Tutorial 0 Win32 Basics"
             }
           }
         ]
@@ -206,14 +206,14 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
+    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "public/DirectX11 Graphics Pipeline.md",
+    "index.md",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/Programming Guide for Direct3D 11.md",
-    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "d3d11_Tutorial_02.htm.md",
     "재료/이미지/5478909835ac62f41e01f5591baa3a9a_MD5.jpeg",
     "Pasted image 20250718145530.png",
