@@ -197,9 +197,23 @@ As mentioned above, the semantics in HLSL describe the nature of the data.
 
 In our shader above, we choose POSITION as the semantics of the Pos input parameter because this parameter will contain the vertex position.
 
-위의 셰이더에서 
+위의 셰이더에서 입력 파라미터 Pos의 semantic으로 POSITION을 사용했다. 왜냐하면 이 파라미터는 정점의 위치 정보를 포함하기 때문이다. 
 
-The return value's semantics, SV_POSITION, is a pre-defined semantics with special meaning. This semantics tells the graphics pipeline that the data associated with the semantics defines the clip-space position. This position is needed by the GPU in order to drawn pixels on the screen. (We will discuss clip-space in the next tutorial.) In our shader, we take the input position data and output the exact same data back to the pipeline.
+The return value's semantics, SV_POSITION, is a pre-defined semantics with special meaning.
+
+반환 값의 semantic인 SV_POSITION은 특별한 의미를 가진 사전 정의된 semantic이다.
+
+This semantics tells the graphics pipeline that the data associated with the semantics defines the clip-space position.
+
+이 시맨틱은 그래픽 파이프라인에 시맨틱과 관련된 데이터가 클립-공간 위치를 정의한다고 알려준다.
+
+This position is needed by the GPU in order to drawn pixels on the screen. (We will discuss clip-space in the next tutorial.)
+
+이 위치 정보는 GPU가 화면에 픽셀을 그리는 데에 필요하다. (클립 좌표계에 대해서는 다음 튜토리얼 때 다룬다.)
+
+In our shader, we take the input position data and output the exact same data back to the pipeline.
+
+셰이더에서, ㄴ
 
 ## Pixel Shaders
 
