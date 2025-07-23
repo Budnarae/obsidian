@@ -171,7 +171,35 @@ float4 VS( float4 Pos : POSITION ) : SV_POSITION
 
 ```
 
-This vertex shader looks a lot like a C function. HLSL uses C-like syntax to make learning easier for C/C++ programmers. We can see that this vertex shader, named VS, takes a parameter of float4 type and returns a float4 value. In HLSL, a float4 is a 4-component vector where each component is a floating-point number. The colons define the semantics of the parameter as well as the return value. As mentioned above, the semantics in HLSL describe the nature of the data. In our shader above, we choose POSITION as the semantics of the Pos input parameter because this parameter will contain the vertex position. The return value's semantics, SV_POSITION, is a pre-defined semantics with special meaning. This semantics tells the graphics pipeline that the data associated with the semantics defines the clip-space position. This position is needed by the GPU in order to drawn pixels on the screen. (We will discuss clip-space in the next tutorial.) In our shader, we take the input position data and output the exact same data back to the pipeline.
+This vertex shader looks a lot like a C function.
+
+정점 셰이더는 C 함수를 닮았다.
+
+HLSL uses C-like syntax to make learning easier for C/C++ programmers.
+
+HLSL은 C/C++ 프로그래머들의 학습을 용이하게 하기 위해 C와 비슷한 문법을 사용한다. 
+
+We can see that this vertex shader, named VS, takes a parameter of float4 type and returns a float4 value.
+
+VS라 명명된 이 정점 셰이더가 float4 타입으로 파라미터를 입력받아 float4 값을 반환하는 것을 볼 수 있을 것이다.
+
+In HLSL, a float4 is a 4-component vector where each component is a floating-point number.
+
+HLSL에서, float4는 4개의 요소로 구성된 벡터이다. 각 요소는 부동소수점 수이다.
+
+The colons define the semantics of the parameter as well as the return value.
+
+:는 파라미터와 반환값의 semantic을 정의한다.
+
+As mentioned above, the semantics in HLSL describe the nature of the data.
+
+위에서 언급했듯이 HLSL의 semantic은 데이터의 특성을 설명한다.
+
+In our shader above, we choose POSITION as the semantics of the Pos input parameter because this parameter will contain the vertex position.
+
+위의 셰이더에서 
+
+The return value's semantics, SV_POSITION, is a pre-defined semantics with special meaning. This semantics tells the graphics pipeline that the data associated with the semantics defines the clip-space position. This position is needed by the GPU in order to drawn pixels on the screen. (We will discuss clip-space in the next tutorial.) In our shader, we take the input position data and output the exact same data back to the pipeline.
 
 ## Pixel Shaders
 
