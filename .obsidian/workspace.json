@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "무제.md",
+                "file": "public/DirectX API.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "무제"
+              "title": "DirectX API"
             }
           }
         ],
@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -202,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5
+    "width": 316.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,8 +224,9 @@
   },
   "active": "01f3edbb71087931",
   "lastOpenFiles": [
+    "d3d11_Tutorial_02.htm.md",
+    "public/DirectX API.md",
     "index.md",
-    "무제.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
@@ -231,7 +234,6 @@
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/Programming Guide for Direct3D 11.md",
-    "d3d11_Tutorial_02.htm.md",
     "재료/이미지/5478909835ac62f41e01f5591baa3a9a_MD5.jpeg",
     "Pasted image 20250718145530.png",
     "재료/이미지/9cc6e1ed3d0d535a5f3c3812b5acd537_MD5.jpeg",
