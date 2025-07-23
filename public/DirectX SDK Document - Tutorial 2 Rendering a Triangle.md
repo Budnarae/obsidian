@@ -323,7 +323,7 @@ One thing that we will also need to do during initialization is to create the ve
 
 To create a vertex buffer in Direct3D 11, we fill in two structures, D3D11_BUFFER_DESC and D3D11_SUBRESOURCE_DATA, and then call **ID3D11Device::CreateBuffer()**.
 
-Direct3D 11에서 정점 버퍼를 만들기 위해서, 우리는 두 개의 구조체, D3D11_BUFFER_DESC와 D3D11_SUBRESOURCE_DATA를 초기화하였으며 **ID3D11Device::CreateBuffer()**를 호출했다.
+Direct3D 11에서 정점 버퍼를 만들기 위해서, 두 개의 구조체, D3D11_BUFFER_DESC와 D3D11_SUBRESOURCE_DATA를 초기화하였으며 **ID3D11Device::CreateBuffer()**를 호출했다.
 
 D3D11_BUFFER_DESC describes the vertex buffer object to be created, and D3D11_SUBRESOURCE_DATA describes the actual data that will be copied to the vertex buffer during creation.
 
