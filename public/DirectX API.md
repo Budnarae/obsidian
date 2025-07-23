@@ -75,15 +75,17 @@ Direct3D 셰이더가 렌더링 대상 보기를 처리할 수 있도록 비디�
 
 ## ID3D11DeviceContext
 
-The ID3D11DeviceContext interface represents a device context which generates rendering commands.
+ID3D11DeviceContext 인터페이스는 렌더링 명령을 생성하는 디바이스 컨텍스트를 나타냅니다.
 
-Note  The latest version of this interface is ID3D11DeviceContext4 introduced in the Windows 10 Creators Update. Applications targetting Windows 10 Creators Update should use the ID3D11DeviceContext4 interface instead of ID3D11DeviceContext.
+> 참고
+> 이 인터페이스의 최신 버전은 Windows 10 크리에이터스 업데이트에 도입된 ID3D11DeviceContext4입니다. Windows 10 크리에이터스 업데이트를 대상으로 하는 애플리케이션은 ID3D11DeviceContext 대신 ID3D11DeviceContext4 인터페이스를 사용해야 합니다.
  
-Inheritance
-The ID3D11DeviceContext interface inherits from ID3D11DeviceChild. ID3D11DeviceContext also has these types of members:
+### Inheritance
 
-Methods
-The ID3D11DeviceContext interface has these methods.
+ID3D11DeviceContext 인터페이스는 ID3D11DeviceChild에서 상속합니다. ID3D11DeviceContext는 ID3D11DeviceChild의 멤버 또한 보유합니다:
+
+### Methods
+
 
 ---
 
