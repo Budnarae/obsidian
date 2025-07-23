@@ -78,13 +78,43 @@ It is run once for every vertex passed to the GPU via vertex buffers.
 
 A geometry shader takes a primitive as input, and is run once for every primitive passed to the GPU.
 
-기하 셰이더는 프리미티브(점, 선, 삼각형 등)을 입력으로 받고, 입력받은 모든 프리미티브에 대해 한 번씩 실행된다
+기하 셰이더는 프리미티브을 입력으로 받고, 입력받은 모든 프리미티브에 대해 한 번씩 실행된다.
 
-A primitive is a point, a line, or a triangle. A pixel shader takes a pixel (or sometimes called a fragment) as input, and is run once for each pixel of a primitive that we wish to render. Together, vertex, geometry, and pixel shaders are where the meat of the action occurs. When rendering with Direct3D 11, the GPU must have a valid vertex shader and pixel shader. Geometry shader is an advanced feature in Direct3D 11 and is optional, so we will not discuss geometry shaders in this tutorial. In Direct3D 11 there are also hull and domain shaders for tessellation and compute shaders for compute. For more information about these, see the other samples.
+A primitive is a point, a line, or a triangle.
+
+프리미티브는 점, 선, 삼각형이다.
+
+A pixel shader takes a pixel (or sometimes called a fragment) as input, and is run once for each pixel of a primitive that we wish to render.
+
+픽셀 셰이더는 픽셀(또는 조각이라 불리는)을 입력받고, 렌더링하고자 하는 프리미티브의 각 픽셀에 대해 한 번씩 실행된다.
+
+Together, vertex, geometry, and pixel shaders are where the meat of the action occurs.
+
+정점, 기하, 픽셀 셰이더는 함께 액션의 핵심을 이루는 곳이다.
+
+When rendering with Direct3D 11, the GPU must have a valid vertex shader and pixel shader.
+
+Direct3D 11로 렌더링을 수행할 때, GPU는 반드시 유효한 정점 셰이더와 픽셀 셰이더를 가져야 한다.
+
+Geometry shader is an advanced feature in Direct3D 11 and is optional, so we will not discuss geometry shaders in this tutorial.
+
+기하 셰이더는 Direct3D 11의 발전된 특성으로 필수적이지 않으며, 따라서 이번 튜토리얼에서는 기하 셰이더에 대해 논하지 않을 것이다.
+
+In Direct3D 11 there are also hull and domain shaders for tessellation and compute shaders for compute.
+
+Direct3D 11에는 또한 테셀레이션을 위한 헐, 도메인 셰이더와 계산을 위한 컴퓨트 셰이더가 있다.
+
+For more information about these, see the other samples.
+
+이것들에 대한 정보가 더 필요하다면, 다른 샘플들을 보도록 하자.
 
 ## Vertex Shaders
 
-Vertex shaders are short programs that are executed by the GPU on vertices. Think of vertex shaders as C functions that take each vertex as input, process the input, and then output the modified vertex. After the application passes vertex data to the GPU in the form of a vertex buffer, the GPU iterates through the vertices in the vertex buffer, and executes the active vertex shader once for each vertex, passing the vertex's data to the vertex shader as input parameters.
+Vertex shaders are short programs that are executed by the GPU on vertices.
+
+정점 셰이더는 GPU에 의해 정점을 대상으로 실행되는 장
+
+Think of vertex shaders as C functions that take each vertex as input, process the input, and then output the modified vertex. After the application passes vertex data to the GPU in the form of a vertex buffer, the GPU iterates through the vertices in the vertex buffer, and executes the active vertex shader once for each vertex, passing the vertex's data to the vertex shader as input parameters.
 
 While a vertex shader can be used to carry out many tasks, the most important job of a vertex shader is transformation. Transformation is the process of converting vectors from one coordinate system to another. For example, a triangle in a 3D scene may have its vertices at the positions (0, 0, 0) (1, 0, 0) (0, 1, 0). When the triangle is drawn on a 2D texture buffer, the GPU has to know the 2D coordinates of the points on the buffer that the vertices should be drawn at. It is transformation that helps us accomplish this. Transformation will be discussed in detail in the next tutorial. For this tutorial, we will be using a simple vertex shader that does nothing except passing the input data through as output.
 
