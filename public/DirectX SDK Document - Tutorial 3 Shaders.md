@@ -112,11 +112,33 @@ For more information about these, see the other samples.
 
 Vertex shaders are short programs that are executed by the GPU on vertices.
 
-정점 셰이더는 GPU에 의해 정점을 대상으로 실행되는 장
+정점 셰이더는 GPU에 의해 정점을 대상으로 실행되는 작은 프로그램이다.
 
-Think of vertex shaders as C functions that take each vertex as input, process the input, and then output the modified vertex. After the application passes vertex data to the GPU in the form of a vertex buffer, the GPU iterates through the vertices in the vertex buffer, and executes the active vertex shader once for each vertex, passing the vertex's data to the vertex shader as input parameters.
+Think of vertex shaders as C functions that take each vertex as input, process the input, and then output the modified vertex.
 
-While a vertex shader can be used to carry out many tasks, the most important job of a vertex shader is transformation. Transformation is the process of converting vectors from one coordinate system to another. For example, a triangle in a 3D scene may have its vertices at the positions (0, 0, 0) (1, 0, 0) (0, 1, 0). When the triangle is drawn on a 2D texture buffer, the GPU has to know the 2D coordinates of the points on the buffer that the vertices should be drawn at. It is transformation that helps us accomplish this. Transformation will be discussed in detail in the next tutorial. For this tutorial, we will be using a simple vertex shader that does nothing except passing the input data through as output.
+정점 셰이더를 C 함수와 마찬가지라고 생각해보자. 정점을 입력받고, 처리해서, 수정된 정점을 출력하는 것이다.
+
+After the application passes vertex data to the GPU in the form of a vertex buffer, the GPU iterates through the vertices in the vertex buffer, and executes the active vertex shader once for each vertex, passing the vertex's data to the vertex shader as input parameters.
+
+실행프로그램이 정점 버퍼의 형태로 정점 데이터를 GPU에 전달하면 GPU는 정점 버퍼의 정점을 순회하며, 각 정점에 대해 활성 정점 셰이더를 한 번 실행하여 정점 데이터를 입력 파라미터로 정점 셰이더에 전달한다.
+
+While a vertex shader can be used to carry out many tasks, the most important job of a vertex shader is transformation.
+
+정점 셰이더는 많은 작업에 사용되지만, 정점 셰이더의 가장 중요한 일은 변환을 수행하는 것이다.
+
+Transformation is the process of converting vectors from one coordinate system to another.
+
+변환은 정점을 한 좌표계에서 다른 좌표계로 변환하는 과정이다.
+
+For example, a triangle in a 3D scene may have its vertices at the positions (0, 0, 0) (1, 0, 0) (0, 1, 0).
+
+예를 들어, 3차원 공간의 삼각형이 (0, 0, 0) (1, 0, 0) (0, 1, 0) 정점들로 이루어져 있다고 가정하자.
+
+When the triangle is drawn on a 2D texture buffer, the GPU has to know the 2D coordinates of the points on the buffer that the vertices should be drawn at.
+
+
+
+It is transformation that helps us accomplish this. Transformation will be discussed in detail in the next tutorial. For this tutorial, we will be using a simple vertex shader that does nothing except passing the input data through as output.
 
 In the Direct3D 11 tutorials, we will write our shaders in High-Level Shading Language (HLSL). Recall that our vertex data has a 3D position element, and the vertex shader will do no processing on the input at all. The resulting vertex shader looks like the following:
 
