@@ -18,9 +18,11 @@ Now, we will actually step through the graphics pipeline and look at how each st
 
 The concept of shaders and the effect system will be explained.
 
-셰이더와 효과 시스템의 컨셉을
+셰이더와 효과 시스템의 컨셉을 설명할 것이다.
 
 Note that this tutorial shares the same source code as the previous one, but will emphasize a different section.
+
+이번 튜토리얼은 이전 튜토리얼과 소스코드를 공유하지만, 좀 다른 부분을 자세히 볼 것이다.
 
 ## Source
 
@@ -28,9 +30,29 @@ Note that this tutorial shares the same source code as the previous one, but wil
 
 # The Graphics Pipeline
 
-In the previous tutorial, we set up the vertex buffer, and then we associated a vertex layout with a vertex shader. Now, we will explain what a shader is and how it works. To fully understand the individual shaders, we will take a step back and look at the whole graphical pipeline.
+In the previous tutorial, we set up the vertex buffer, and then we associated a vertex layout with a vertex shader.
 
-In Tutorial 2, when we called **VSSetShader()** and **PSSetShader()**, we actually bound our shader to a stage in the pipeline. Then, when we called **Draw**, we start processing the vertex data passed into the graphics pipeline. The following sections describe in detail what happens after the **Draw** command.
+이전 튜토리얼에서 정점 버퍼를 설정하고 정점 레이아웃을 정점 셰이더와 연결했다.
+
+Now, we will explain what a shader is and how it works.
+
+이제 셰이더의 정의와 동작을 설명할 것이다.
+
+To fully understand the individual shaders, we will take a step back and look at the whole graphical pipeline.
+
+개개의 셰이더를 완전히 이해하기 위해서, 일단 한걸음 물러나 전체 그래픽 파이프라인을 살펴보도록 하자.
+
+In Tutorial 2, when we called **VSSetShader()** and **PSSetShader()**, we actually bound our shader to a stage in the pipeline.
+
+[[DirectX SDK Document - Tutorial 2 Rendering a Triangle | tutorial 2]]에서, `VSSetShader()`와 `PSSetShader()`를 호출하여 셰이더를 파이프라인의 각 스테이지에 바인드했다.
+
+Then, when we called **Draw**, we start processing the vertex data passed into the graphics pipeline.
+
+그런다음, `Draw()`를 호출하여 정점 정보를 그래픽 파이프라인에 넘겨 처리했다.
+
+The following sections describe in detail what happens after the **Draw** command.
+
+다음 단락은 `Draw()` 명령을 호출했
 
 # Shaders
 
