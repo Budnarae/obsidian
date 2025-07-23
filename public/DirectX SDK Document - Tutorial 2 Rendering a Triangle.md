@@ -284,7 +284,7 @@ For now, we will just concentrate on creating the Direct3D 11 vertex layout obje
 
 However, we will learn that the vertex shaders are tightly coupled with this vertex layout.
 
-하지만, 우리는 정점 셰이더가 정점 레이아웃과 깊게 연관되어 있다는 사실을 배울 것이다.
+하지만, 나중에 정점 셰이더가 정점 레이아웃과 깊게 연관되어 있다는 사실을 배울 것이다.
 
 The reason is that creating a vertex layout object requires the vertex shader's input signature.
 
