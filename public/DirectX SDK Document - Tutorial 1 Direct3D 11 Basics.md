@@ -173,7 +173,7 @@ Think of resource views as typecast in C.
 
 A chunk of raw memory in C can be cast to any data type.
 
-C에서 원시 메모리 덩어리는 어떠한 타입으로든작한다.
+C에서 원시 메모리 덩어리는 어떠한 타입으로든 작한다.
 
 ---
 
