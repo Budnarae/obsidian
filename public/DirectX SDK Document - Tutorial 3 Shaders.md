@@ -48,15 +48,39 @@ In Tutorial 2, when we called **VSSetShader()** and **PSSetShader()**, we actual
 
 Then, when we called **Draw**, we start processing the vertex data passed into the graphics pipeline.
 
-그런다음, `Draw()`를 호출하여 정점 정보를 그래픽 파이프라인에 넘겨 처리했다.
+그런 다음, `Draw()`를 호출하여 정점 정보를 그래픽 파이프라인에 넘겨 처리했다.
 
 The following sections describe in detail what happens after the **Draw** command.
 
-다음 단락은 `Draw()` 명령을 호출했
+다음 단락은 `Draw()` 명령을 호출했을 때 어떤 일이 일어나는지 자세히 서술할 것이다.
 
 # Shaders
 
-In Direct3D 11, shaders reside in different stages of the graphics pipeline. They are short programs that, executed by the GPU, take certain input data, process that data, and then output the result to the next stage of the pipeline. Direct3D 11 supports three basic types of shaders: vertex shader, geometry shader, and pixel shader. A vertex shader takes a vertex as input. It is run once for every vertex passed to the GPU via vertex buffers. A geometry shader takes a primitive as input, and is run once for every primitive passed to the GPU. A primitive is a point, a line, or a triangle. A pixel shader takes a pixel (or sometimes called a fragment) as input, and is run once for each pixel of a primitive that we wish to render. Together, vertex, geometry, and pixel shaders are where the meat of the action occurs. When rendering with Direct3D 11, the GPU must have a valid vertex shader and pixel shader. Geometry shader is an advanced feature in Direct3D 11 and is optional, so we will not discuss geometry shaders in this tutorial. In Direct3D 11 there are also hull and domain shaders for tessellation and compute shaders for compute. For more information about these, see the other samples.
+In Direct3D 11, shaders reside in different stages of the graphics pipeline.
+
+Direct3D 11에서 셰이더는 그래픽 파이프라인의 여러 단계에 존재한다.
+
+They are short programs that, executed by the GPU, take certain input data, process that data, and then output the result to the next stage of the pipeline.
+
+셰이더는 GPU에 의해 실행되는 작은 프로그램이다. 셰이더는 입력 데이터를 받아 처리하여 결과값을 파이프라인의 다음 스테이지로 넘긴다.
+
+Direct3D 11 supports three basic types of shaders: vertex shader, geometry shader, and pixel shader.
+
+Direct3D 11은 3개의 기본 셰이더를 지원한다: 정점 셰이더, 기하 셰이더, 픽셀 셰이더.
+
+A vertex shader takes a vertex as input.
+
+정점 셰이더는 정점을 입력으로 받는다.
+
+It is run once for every vertex passed to the GPU via vertex buffers.
+
+정점 셰이더는 정점 버퍼를 통해 GPU에 넘겨진 모든 정점에 대해 한 번씩 실행된다.
+
+A geometry shader takes a primitive as input, and is run once for every primitive passed to the GPU.
+
+기하 셰이더는 프리미티브(점, 선, 삼각형 등)을 입력으로 받고, 입력받은 모든 프리미티브에 대해 한 번씩 실행된다
+
+A primitive is a point, a line, or a triangle. A pixel shader takes a pixel (or sometimes called a fragment) as input, and is run once for each pixel of a primitive that we wish to render. Together, vertex, geometry, and pixel shaders are where the meat of the action occurs. When rendering with Direct3D 11, the GPU must have a valid vertex shader and pixel shader. Geometry shader is an advanced feature in Direct3D 11 and is optional, so we will not discuss geometry shaders in this tutorial. In Direct3D 11 there are also hull and domain shaders for tessellation and compute shaders for compute. For more information about these, see the other samples.
 
 ## Vertex Shaders
 
