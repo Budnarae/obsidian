@@ -279,9 +279,13 @@ Since pixel shaders output color values, the output of our pixel shader will be 
 
 픽셀 셰이더는 색상 값을 출력하므로 픽셀 셰이더의 출력은 float4가 된다.
 
-We give the output the semantics SV_TARGET to signify outputting to the render target format. The pixel shader looks like the following:
+We give the output the semantics SV_TARGET to signify outputting to the render target format.
 
+출력에 렌더링 타깃 형식으로 출력한다는 의미로 SV_TARGET 시맨틱을 부여한다.
 
+The pixel shader looks like the following:
+
+픽셀 셰이더는 아래와 같다:
 
 ```hlsl
 
@@ -294,8 +298,13 @@ float4 PS( float4 Pos : SV_POSITION ) : SV_Target
 
 ## Creating the Shaders
 
-In the application code, we will need to create a vertex shader and a pixel shader object. These objects represent our shaders, and are created by calling **D3DX11CompileFromFile()**. The code is demonstrated below:
+In the application code, we will need to create a vertex shader and a pixel shader object.
 
+실행프로그램 코드에서, 우리는 정점 셰이더와 픽셀 셰이더 객체를 생성해야 한다.
+
+These objects represent our shaders, and are created by calling **D3DX11CompileFromFile()**. The code is demonstrated below:
+
+이 객체들은 셰이더들을 나타내며, `D3DX11CompileFromFile()`을 호출함으로서 생성할 수 있다. 코드는 아래와 같다.
   
 ```cpp
 
@@ -311,4 +320,12 @@ if( FAILED( D3DX11CompileFromFile( "Tutorial03.fx", NULL, NULL, "PS", "ps_4_0", 
 
 # Putting It Together
 
-After walking through the graphics pipeline, we can start to understand the process of rendering the triangle we created at the beginning of Tutorial 2. Creating Direct3D applications requires two distinct steps. The first would be creating the source data in vertex data, as we've done in Tutorial 2. The second stage would be to create the shaders which would transform that data for rendering, which we showed in this tutorial.
+After walking through the graphics pipeline, we can start to understand the process of rendering the triangle we created at the beginning of Tutorial 2.
+
+그래픽 파이프라인을 체득함으로서, 이제 튜토리얼 2의 초반부에서 생성했던 삼각형을 렌더하는 과정을 이해할 수 있을 것이다.
+
+Creating Direct3D applications requires two distinct steps.
+
+Direct3D 
+
+The first would be creating the source data in vertex data, as we've done in Tutorial 2. The second stage would be to create the shaders which would transform that data for rendering, which we showed in this tutorial.
