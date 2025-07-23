@@ -241,9 +241,25 @@ Figure 2 shows an illustration of this.
 
 **Figure 2. Left: What we would like to draw. Right: What is actually on the screen.**
 
-****
+**그림 2. 왼쪽:그리고자 하는 대상. 오른쪽: 스크린에 실제로 띄웠을 때**
 
-The process of converting a triangle defined by three vertices to a bunch of pixels covered by the triangle is called rasterization. The GPU first determines what pixels are covered by the triangle being rendered. Then it invokes the active pixel shader for each of these pixels. A pixel shader's primary purpose is to compute the color that each pixel should have. The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline. The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
+The process of converting a triangle defined by three vertices to a bunch of pixels covered by the triangle is called rasterization.
+
+세 개의 꼭지점으로 정의된 삼각형을 삼각형이 덮는 픽셀 무리로 변환하는 과정을 래스터화라고 한다.
+
+The GPU first determines what pixels are covered by the triangle being rendered.
+
+처음에 GPU는 어떤 픽셀들이 렌더하고자 하는 삼각형에 둘러쌓여있는지 결정한다.
+
+Then it invokes the active pixel shader for each of these pixels.
+
+그런 다음 각각의 픽셀들에 대해 활성되어 있는 픽셀 셰이더를 호출한다.
+
+A pixel shader's primary purpose is to compute the color that each pixel should have.
+
+픽셀 셰이더의 기본적인 ㄴ
+
+The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline. The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
 
 The vertex shader we created above outputs a float4 with the semantics SV_POSITION. This will be the input of our pixel shader. Since pixel shaders output color values, the output of our pixel shader will be a float4. We give the output the semantics SV_TARGET to signify outputting to the render target format. The pixel shader looks like the following:
 
