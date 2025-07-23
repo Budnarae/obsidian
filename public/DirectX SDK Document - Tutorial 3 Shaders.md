@@ -213,15 +213,35 @@ This position is needed by the GPU in order to drawn pixels on the screen. (We w
 
 In our shader, we take the input position data and output the exact same data back to the pipeline.
 
-셰이더에서, ㄴ
+이번 단원의 셰이더에서, 입력으로 위치 정보를 받아 정확히 똑같은 데이터를 출력해 파이프라인으로 전달했다.
 
 ## Pixel Shaders
 
-Modern computer monitors are commonly raster display, which means the screen is actually a two-dimensional grid of small dots called pixels. Each pixel contains a color independent of other pixels. When we render a triangle on the screen, we don't really render a triangle as one entity. Rather, we light up the group of pixels that are covered by the triangle's area. Figure 2 shows an illustration of this.
+Modern computer monitors are commonly raster display, which means the screen is actually a two-dimensional grid of small dots called pixels.
+
+현대 컴퓨터의 모니터는 보통 디스플레이를 래스터한다. 즉 스크린은 픽셀이라 부르는 작은 점들이 2차원 평면의 형태로 나열된 것이다.
+
+Each pixel contains a color independent of other pixels.
+
+각 픽셀은 다른 픽셀들과는 독립적으로 색상을 보유한다.
+
+When we render a triangle on the screen, we don't really render a triangle as one entity.
+
+스크린에 삼각형을 렌더할 때, 하나의 독립체로서 렌더하지 않는다.
+
+Rather, we light up the group of pixels that are covered by the triangle's area.
+
+대신, 삼각형 영역으로 둘러싸인 픽셀들을 빛나게 한다.
+
+Figure 2 shows an illustration of this.
+
+그림 2는 이를 나타낸 것이다.
 
 ![[83909e09315bc3a0d0ce3fe2f7747373_MD5.jpeg]]
 
 **Figure 2. Left: What we would like to draw. Right: What is actually on the screen.**
+
+****
 
 The process of converting a triangle defined by three vertices to a bunch of pixels covered by the triangle is called rasterization. The GPU first determines what pixels are covered by the triangle being rendered. Then it invokes the active pixel shader for each of these pixels. A pixel shader's primary purpose is to compute the color that each pixel should have. The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline. The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
 
