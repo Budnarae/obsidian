@@ -333,9 +333,9 @@ The creation and initialization of the vertex buffer is done at once so that we 
 
 정점 버퍼의 생성과 초기화는 한 번에 이루어진다. 이는 나중에 버퍼를 다시 초기화할 필요가 없도록 하기 위함이다.
 
-The data that will be copied to the vertex buffer is vertices, an array of threeSimpleVertex structures.
+The data that will be copied to the vertex buffer is vertices, an array of three SimpleVertex structures.
 
-정점 버퍼로 복사될 데이터는 `threeSimpleVertex` 구조체 배열인 `vertices`이다.
+정점 버퍼로 복사될 데이터는 SimpleVertex 3개로 이루어진 구조체 배열인 `vertices`이다.
 
 The coordinates in the vertices array are chosen so that we see a triangle in the middle of our application window when rendered with our shaders.
 
