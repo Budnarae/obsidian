@@ -173,7 +173,31 @@ Think of resource views as typecast in C.
 
 A chunk of raw memory in C can be cast to any data type.
 
-C에서 원시 메모리 덩어리는 어떠한 타입으로든 작한다.
+C에서 원시 메모리 덩어리는 어떠한 타입으로든 캐스트 될 수 있다.
+
+We can cast that chunk of memory to an array of integers, an array of floats, a structure, an array of structures, and so on.
+
+우리는 메모리 덩어리를 정수 배열, 실수 배열, 구조체, 구조체 배열, 그 외 등등으로 캐스트할 수 있다.
+
+The raw memory itself is not very useful to us if we don't know its type.
+
+원시 메모리 그 자체는 타입을 알 수 없다면 그닥 쓸모있지 않다.
+
+Direct3D 11 resource views act in a similar way.
+
+Direct3D 11의 리소스도 비슷한 원리로 기능한다.
+
+For instance, a 2D texture, analogous to the raw memory chunk, is the raw underlying resource.
+
+예를 들어, 2D texture는 원시 메모리 덩어리에 비유할 수 있다. 원시 저수준 리소스이다.
+
+Once we have that resource we can create different resource views to bind that texture to different stages in the graphics pipeline with different formats: as a render target to which to render, as a depth stencil buffer that will receive depth information, or as a texture resource.
+
+리소스가 확보되면 다양한 리소스 뷰를 생성하여 해당 텍스처를 렌더링할 렌더 대상, 깊이 정보를 수신할 깊이 스텐실 버퍼 또는 텍스처 리소스 등 다양한 포맷으로 그래픽 파이프라인의 여러 단계에 바인딩할 수 있다.
+
+Where C typecasts allow a memory chunk to be used in a different manner, so do Direct3D 11 resource views.
+
+C 타입캐스트가 메모리 청크를 다른 방식으로 사용할 수 있도록 허용하는 것처럼, Direct3D 11 리소스 뷰도 마찬가지이다.
 
 ---
 
@@ -195,7 +219,7 @@ Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describe
 
 This description is normally the second parameter to **CreateRenderTargetView**.
 
-보통 두번째 파라미터인 **CreateRenderTargetView**를 통해 정의된다.
+**CreateRenderTargetView**의 두번째 파라미터터를 통해 정의된다.
 
 However, for these tutorials, the default render target view will suffice.
 
