@@ -4,7 +4,7 @@ tags:
   - translation
 ---
 
-![](d3d10_Tutorial03.jpg)
+![[7fa0daea1cf9f3859e206a516f12cb10_MD5.jpeg]]
 
 # Summary
 
@@ -14,16 +14,7 @@ Note that this tutorial shares the same source code as the previous one, but wil
 
 ## Source
 
-(SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial03
-
-## Navigation
-
-- [The Graphics Pipeline](d3d11_Tutorial_03.htm#The_Graphics_Pipeline)
-    
-- [Shaders](d3d11_Tutorial_03.htm#Shaders)
-    
-- [Putting It Together](d3d11_Tutorial_03.htm#Putting_It_Together)
-    
+`(SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial03`
 
 # The Graphics Pipeline
 
@@ -43,10 +34,14 @@ While a vertex shader can be used to carry out many tasks, the most important jo
 
 In the Direct3D 11 tutorials, we will write our shaders in High-Level Shading Language (HLSL). Recall that our vertex data has a 3D position element, and the vertex shader will do no processing on the input at all. The resulting vertex shader looks like the following:
 
-    float4 VS( float4 Pos : POSITION ) : SV_POSITION
-    {
-        return Pos;
-    }
+```hlsl
+
+float4 VS( float4 Pos : POSITION ) : SV_POSITION
+{
+	return Pos;
+}
+
+```
 
 This vertex shader looks a lot like a C function. HLSL uses C-like syntax to make learning easier for C/C++ programmers. We can see that this vertex shader, named VS, takes a parameter of float4 type and returns a float4 value. In HLSL, a float4 is a 4-component vector where each component is a floating-point number. The colons define the semantics of the parameter as well as the return value. As mentioned above, the semantics in HLSL describe the nature of the data. In our shader above, we choose POSITION as the semantics of the Pos input parameter because this parameter will contain the vertex position. The return value's semantics, SV_POSITION, is a pre-defined semantics with special meaning. This semantics tells the graphics pipeline that the data associated with the semantics defines the clip-space position. This position is needed by the GPU in order to drawn pixels on the screen. (We will discuss clip-space in the next tutorial.) In our shader, we take the input position data and output the exact same data back to the pipeline.
 
@@ -54,29 +49,39 @@ This vertex shader looks a lot like a C function. HLSL uses C-like syntax to mak
 
 Modern computer monitors are commonly raster display, which means the screen is actually a two-dimensional grid of small dots called pixels. Each pixel contains a color independent of other pixels. When we render a triangle on the screen, we don't really render a triangle as one entity. Rather, we light up the group of pixels that are covered by the triangle's area. Figure 2 shows an illustration of this.
 
-![](d3d10_Tutorial03_Figure2_Rasterization.png) Figure 2. Left: What we would like to draw. Right: What is actually on the screen.
+![[83909e09315bc3a0d0ce3fe2f7747373_MD5.jpeg]]
+
+**Figure 2. Left: What we would like to draw. Right: What is actually on the screen.**
 
 The process of converting a triangle defined by three vertices to a bunch of pixels covered by the triangle is called rasterization. The GPU first determines what pixels are covered by the triangle being rendered. Then it invokes the active pixel shader for each of these pixels. A pixel shader's primary purpose is to compute the color that each pixel should have. The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline. The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
 
 The vertex shader we created above outputs a float4 with the semantics SV_POSITION. This will be the input of our pixel shader. Since pixel shaders output color values, the output of our pixel shader will be a float4. We give the output the semantics SV_TARGET to signify outputting to the render target format. The pixel shader looks like the following:
 
-    float4 PS( float4 Pos : SV_POSITION ) : SV_Target
-    {
-        return float4( 1.0f, 1.0f, 0.0f, 1.0f );    // Yellow, with Alpha = 1
-    }
+```hlsl
+
+float4 PS( float4 Pos : SV_POSITION ) : SV_Target
+{
+	return float4( 1.0f, 1.0f, 0.0f, 1.0f );    // Yellow, with Alpha = 1
+}
+
+```
 
 ## Creating the Shaders
 
 In the application code, we will need to create a vertex shader and a pixel shader object. These objects represent our shaders, and are created by calling **D3DX11CompileFromFile()**. The code is demonstrated below:
 
   
-    // Create the vertex shader
-    if( FAILED( D3DX11CompileFromFile( "Tutorial03.fx", NULL, NULL, "VS", "vs_4_0", D3DCOMPILE_ENABLE_STRICTNESS, NULL, NULL, &pVSBlob, &pErrorBlob, NULL ) ) )
-        return FALSE;
+```cpp
 
-    // Create the pixel shader
-    if( FAILED( D3DX11CompileFromFile( "Tutorial03.fx", NULL, NULL, "PS", "ps_4_0", D3DCOMPILE_ENABLE_STRICTNESS, NULL, NULL, &pPSBlob, &pErrorBlob, NULL ) ) )
-        return FALSE;
+// Create the vertex shader
+if( FAILED( D3DX11CompileFromFile( "Tutorial03.fx", NULL, NULL, "VS", "vs_4_0", D3DCOMPILE_ENABLE_STRICTNESS, NULL, NULL, &pVSBlob, &pErrorBlob, NULL ) ) )
+	return FALSE;
+
+// Create the pixel shader
+if( FAILED( D3DX11CompileFromFile( "Tutorial03.fx", NULL, NULL, "PS", "ps_4_0", D3DCOMPILE_ENABLE_STRICTNESS, NULL, NULL, &pPSBlob, &pErrorBlob, NULL ) ) )
+	return FALSE;
+
+```
 
 # Putting It Together
 

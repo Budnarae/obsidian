@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DirectX SDK Document - Tutorial 3 Shaders.md",
-                "mode": "preview",
+                "file": "public/DirectX SDK Document - Tutorial 3 Shaders.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
@@ -205,12 +205,14 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "DirectX SDK Document - Tutorial 3 Shaders.md",
+    "재료/이미지/83909e09315bc3a0d0ce3fe2f7747373_MD5.jpeg",
+    "Pasted image 20250723174643.png",
+    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
+    "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "d3d11_Tutorial_03.htm.md",
     "index.md",
-    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX API.md",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
@@ -241,7 +243,6 @@
     "ingredient/ai role/Make longer.md",
     "ingredient/ai role/Generate table of contents.md",
     "ingredient/ai role/Generate glossary.md",
-    "ingredient/ai role/Fix grammar and spelling.md",
     "ingredient/ai role",
     "ingredient/img/3590ff275d3d893cb070696713b3ae57_MD5.gif",
     "ingredient/img/44c97510716ea34f884225fb58ea11db_MD5.jpeg",
@@ -253,7 +254,6 @@
     "resource/JavaScript",
     "resource/HTML",
     "resource/CSS",
-    "ingredient/img/42 innercircle 정리/FdF.png",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
