@@ -8,7 +8,17 @@ tags:
 
 # Summary
 
-In the previous tutorial, we set up a vertex buffer and passed one triangle to the GPU. Now, we will actually step through the graphics pipeline and look at how each stage works. The concept of shaders and the effect system will be explained.
+In the previous tutorial, we set up a vertex buffer and passed one triangle to the GPU.
+
+이전 튜토리얼에서, 정점 버퍼를 설정한 후 GPU에 삼각형 하나를 전달했다.
+
+Now, we will actually step through the graphics pipeline and look at how each stage works.
+
+이제, 그래픽 파이프라인 실제 그래픽 파이프라인을 살펴보고 각 스테이지가 어떻게 동작하는지 알아볼 것이다.
+
+The concept of shaders and the effect system will be explained.
+
+셰이더와 효과 시스템의 컨셉을
 
 Note that this tutorial shares the same source code as the previous one, but will emphasize a different section.
 
