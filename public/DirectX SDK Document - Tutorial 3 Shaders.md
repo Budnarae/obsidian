@@ -136,11 +136,31 @@ For example, a triangle in a 3D scene may have its vertices at the positions (0,
 
 When the triangle is drawn on a 2D texture buffer, the GPU has to know the 2D coordinates of the points on the buffer that the vertices should be drawn at.
 
+2D 텍스처 버퍼에 삼각형을 그릴 때 GPU는 버퍼에서 꼭지점이 그려져야 하는 지점의 2D 좌표를 알고 있어야 한다.
 
+It is transformation that helps us accomplish this.
 
-It is transformation that helps us accomplish this. Transformation will be discussed in detail in the next tutorial. For this tutorial, we will be using a simple vertex shader that does nothing except passing the input data through as output.
+변환을 통해 이를 달성할 수 있다.
 
-In the Direct3D 11 tutorials, we will write our shaders in High-Level Shading Language (HLSL). Recall that our vertex data has a 3D position element, and the vertex shader will do no processing on the input at all. The resulting vertex shader looks like the following:
+Transformation will be discussed in detail in the next tutorial.
+
+변환에 대한 자세한 내용은 다음 튜토리얼에서 논의될 것이다.
+
+For this tutorial, we will be using a simple vertex shader that does nothing except passing the input data through as output.
+
+이 튜토리얼에서는 입력 데이터를 출력으로 전달하는 것 외에는 아무것도 하지 않는 간단한 정점 셰이더를 사용할 것이다.
+
+In the Direct3D 11 tutorials, we will write our shaders in High-Level Shading Language (HLSL).
+
+이 Direct3D 11 튜토리얼에서, 고수준 셰이딩 언어(HLSL)로 셰이더들을 작성할 것이다.
+
+Recall that our vertex data has a 3D position element, and the vertex shader will do no processing on the input at all.
+
+우리의 정점 정보는 3차원 위치 속성을 포함하고 있음을 되새기자. 그리고 정점 셰이더는 입력에 대해 어떠한 처리도 하지 않는다.
+
+The resulting vertex shader looks like the following:
+
+이러한 일을 하는 정점 셰이더는 다음과 같다:
 
 ```hlsl
 
