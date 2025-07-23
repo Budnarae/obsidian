@@ -257,11 +257,31 @@ Then it invokes the active pixel shader for each of these pixels.
 
 A pixel shader's primary purpose is to compute the color that each pixel should have.
 
-픽셀 셰이더의 기본적인 ㄴ
+픽셀 셰이더의 기본적인 목적은 각 픽셀이 어떤 색상을 보유해야 하는지를 계산하는 것이다.
 
-The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline. The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
+The shader takes certain input about the pixel being colored, computes the pixel's color, then outputs that color back to the pipeline.
 
-The vertex shader we created above outputs a float4 with the semantics SV_POSITION. This will be the input of our pixel shader. Since pixel shaders output color values, the output of our pixel shader will be a float4. We give the output the semantics SV_TARGET to signify outputting to the render target format. The pixel shader looks like the following:
+셰이더는 채색되는 픽셀에 대한 특정 입력을 받아 픽셀의 색을 계산한 다음 해당 색을 파이프라인으로 다시 출력한다.
+
+The input that it takes comes from the active geometry shader, or, if a geometry shader is not present, such as the case in this tutorial, the input comes directly from the vertex shader.
+
+입력은 활성 기하 셰이더로부터 받으며, 이번 튜토리얼의 경우처럼 기하 셰이더가 존재하지 않을 경우 바로 정점 셰이더로부터 입력을 받는다.
+
+The vertex shader we created above outputs a float4 with the semantics SV_POSITION.
+
+위에서 만든 정점 셰이더는 SV_POSITION이라는 시맨틱을 동반하여 float4 값을 출력한다.
+
+This will be the input of our pixel shader.
+
+이는 곧 픽셀 셰이더의 입력이 된다.
+
+Since pixel shaders output color values, the output of our pixel shader will be a float4.
+
+픽셀 셰이더는 색상 값을 출력하므로 픽셀 셰이더의 출력은 float4가 된다.
+
+We give the output the semantics SV_TARGET to signify outputting to the render target format. The pixel shader looks like the following:
+
+
 
 ```hlsl
 
