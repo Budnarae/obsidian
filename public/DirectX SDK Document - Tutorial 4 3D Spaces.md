@@ -542,13 +542,22 @@ FOVy와 Aspect가 있으면 FOVx는 계산할 수 있다.
 
 This aspect ratio is usually obtained from the ratio of the render target width to height.
 
-이 
+이 가로 세로 비율은 보통 렌더 타켓의 너비와 높이를 통해 얻는다.
 
 Zn and Zf are the near and far Z values in view space, respectively.
 
+Zn과 Zf는 각각 뷰공간의 근 Z와 원 Z의 값이다.
 # Using Transformation
 
-In the previous tutorial, we wrote a program that renders a single triangle to screen. When we create the vertex buffer, the vertex positions that we use are directly in projection space so that we don't have to perform any transformation. Now that we have an understanding of 3D space and transformation, we are going to modify the program so that the vertex buffer is defined in object space, as it should be. Then, we will modify our vertex shader to transform the vertices from object space to projection space.
+In the previous tutorial, we wrote a program that renders a single triangle to screen.
+
+이전 튜토리얼에서, 우리는 삼각형 하나를 화면에 띄우는 프로그램을 작성했다.
+
+When we create the vertex buffer, the vertex positions that we use are directly in projection space so that we don't have to perform any transformation.
+
+정점 버퍼를 생성할 때, 우리가 어떠한 변환도 수행하지 않았기 때문에
+
+Now that we have an understanding of 3D space and transformation, we are going to modify the program so that the vertex buffer is defined in object space, as it should be. Then, we will modify our vertex shader to transform the vertices from object space to projection space.
 
 ## Modifying the Vertex Buffer
 
