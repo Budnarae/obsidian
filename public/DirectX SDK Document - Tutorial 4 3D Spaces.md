@@ -496,15 +496,37 @@ $d/h$는 FOV의 절반의 코탄젠트 값이다.
 
 With scaling, the top of the view frustum becomes h/d * d/h = 1.
 
-크기 조정
+스케일링을 통해 절두체의 상단은 $h/d * d/h = 1$이 된다.
 
-Anything greater than 1 will be clipped by the GPU. This is what we want.
+Anything greater than 1 will be clipped by the GPU.
 
+1보다 큰 값은 GPU에 의해 걸러지게 된다.
 
+This is what we want.
 
-A similar tweak is generally done for the Z coordinate in projection space as well. We would like the near and far Z planes to be at 0 and 1 in projection space, respectively. When Z = near-Z value in 3D space, Z should be 0 in projection space; when Z = far-Z in 3D space, Z should be 1 in projection space. After this is done, any Z values outside [0 1] will be clipped out by the GPU.
+이것이 우리가 원하는 것이다.
 
-In Direct3D 11, the easiest way to obtain a projection matrix is to call the **XMMatrixPerspectiveFovLH()** method. We simply supply 4 parameters—FOVy, Aspect, Zn, and Zf—and get back a matrix that does everything necessary as mentioned above. FOVy is the field of view in Y direction. Aspect is the aspect ratio, which is ratio of view space width to height. From FOVy and Aspect, FOVx can be computed. This aspect ratio is usually obtained from the ratio of the render target width to height. Zn and Zf are the near and far Z values in view space, respectively.
+A similar tweak is generally done for the Z coordinate in projection space as well.
+
+유사한 조정이 일반적으로 투영 공간의 Z 좌표에도 이루어진다.
+
+We would like the near and far Z planes to be at 0 and 1 in projection space, respectively.
+
+우리는 근 Z면과 원 Z면이 각각 투영 공간의 0과 1에 위치하기를 바란다.
+
+When Z = near-Z value in 3D space, Z should be 0 in projection space; when Z = far-Z in 3D space, Z should be 1 in projection space.
+
+3D 공간에서 Z가 근거리 Z값일 때, 투영 공간에서 Z는 0이어야 하며; 3D 공간에서 Z가 원거리 Z값일 때, 투영 공간에서 Z는 1이어야한다.
+
+After this is done, any Z values outside [0 1] will be clipped out by the GPU.
+
+이 과정을 통해 \[0, 1] 범위를 넘어가는 Z 값은 GPU에 의해 걸러지게 된다.
+
+In Direct3D 11, the easiest way to obtain a projection matrix is to call the **XMMatrixPerspectiveFovLH()** method.
+
+Direct3D 11에서 투영 행렬을 얻는 가장 쉬운 방법은 **XMMatrixPerspectiveForL**
+
+We simply supply 4 parameters—FOVy, Aspect, Zn, and Zf—and get back a matrix that does everything necessary as mentioned above. FOVy is the field of view in Y direction. Aspect is the aspect ratio, which is ratio of view space width to height. From FOVy and Aspect, FOVx can be computed. This aspect ratio is usually obtained from the ratio of the render target width to height. Zn and Zf are the near and far Z values in view space, respectively.
 
 # Using Transformation
 
