@@ -524,9 +524,11 @@ After this is done, any Z values outside [0 1] will be clipped out by the GPU.
 
 In Direct3D 11, the easiest way to obtain a projection matrix is to call the **XMMatrixPerspectiveFovLH()** method.
 
-Direct3D 11에서 투영 행렬을 얻는 가장 쉬운 방법은 **XMMatrixPerspectiveForL**
+Direct3D 11에서 투영 행렬을 얻는 가장 쉬운 방법은 **XMMatrixPerspectiveForLH()**이다.
 
-We simply supply 4 parameters—FOVy, Aspect, Zn, and Zf—and get back a matrix that does everything necessary as mentioned above. FOVy is the field of view in Y direction. Aspect is the aspect ratio, which is ratio of view space width to height. From FOVy and Aspect, FOVx can be computed. This aspect ratio is usually obtained from the ratio of the render target width to height. Zn and Zf are the near and far Z values in view space, respectively.
+우리는 단순히 네 개의 매개변수—FOVy, Aspect, Zn, 그리고 Zf—를 제공하고, 위에서 언급한 모든 작업을 수행하는 행렬을 얻는다.
+
+FOVy is the field of view in Y direction. Aspect is the aspect ratio, which is ratio of view space width to height. From FOVy and Aspect, FOVx can be computed. This aspect ratio is usually obtained from the ratio of the render target width to height. Zn and Zf are the near and far Z values in view space, respectively.
 
 # Using Transformation
 
