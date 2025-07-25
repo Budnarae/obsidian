@@ -434,15 +434,35 @@ The view frustum is a 4-sided pyramid with its top cut off.
 
 Clipping against this volume is complicated because to clip against one view frustum plane, the GPU must compare every vertex to the plane's equation.
 
-이 볼륨에 대하여 클리핑을 시도하는 것으나 복잡하다. 왜냐하면 하나의 절두체 평면에 대해 클리핑하려면 GPU가 모든 꼭짓점을 평면의 방정식과 비교해야 하기 때문이다.
+절두체에 대하여 클리핑을 시도하는 것으나 복잡하다. 왜냐하면 하나의 절두체 평면에 대해 클리핑하려면 GPU가 모든 꼭짓점을 평면의 방정식과 비교해야 하기 때문이다.
 
-Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume. The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space. This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space. Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
+Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume.
+
+대신, GPU는 일반적으로 먼저 투영 변환을 수행한 다음, 절두체 영역에 대해 클리핑을 수행한다.
+
+The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space.
+
+투영 변환이 절두체에 미치는 영향은, 피라미드 형태의 뷰 절두체가 투영 공간에서 박스 형태로 변환된다는 것이다.
+
+This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space.
+
+왜냐하면, 이전에 언급했듯이, 투영 공간에서 X, Y 좌표는 3차원 공간의 X/Z, Y/Z 비에 대응되기 때문이다.
+
+Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
+
+그러므로, 점 a와 점 b는 투영 공간에서 동일한 X, Y 좌표를 가진다. 이것이 절두체가 박스 형태가 되는 이유이다.
 
 **Figure 6.  View Frustum**
 
+**보기 6. 절두체**
+
 ![[c2f10f53be9a4768502d0236ccadc174_MD5.jpeg]]
 
-Suppose that the tips of the two trees lie exactly on the top view frustum edge. Further suppose that d = 2h. The Y coordinate along the top edge in projection space will then be 0.5 (because h/d = 0.5). Therefore, any Y values post-projection that are greater than 0.5 will be clipped by the GPU. The problem here is that 0.5 is determined by the vertical field of view chosen by the program, and different FOV values result in different values that the GPU has to clip against. To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1. In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out. To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h. d/h is also the cotangent of half of FOV. With scaling, the top of the view frustum becomes h/d * d/h = 1. Anything greater than 1 will be clipped by the GPU. This is what we want.
+Suppose that the tips of the two trees lie exactly on the top view frustum edge.
+
+
+
+Further suppose that d = 2h. The Y coordinate along the top edge in projection space will then be 0.5 (because h/d = 0.5). Therefore, any Y values post-projection that are greater than 0.5 will be clipped by the GPU. The problem here is that 0.5 is determined by the vertical field of view chosen by the program, and different FOV values result in different values that the GPU has to clip against. To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1. In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out. To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h. d/h is also the cotangent of half of FOV. With scaling, the top of the view frustum becomes h/d * d/h = 1. Anything greater than 1 will be clipped by the GPU. This is what we want.
 
 A similar tweak is generally done for the Z coordinate in projection space as well. We would like the near and far Z planes to be at 0 and 1 in projection space, respectively. When Z = near-Z value in 3D space, Z should be 0 in projection space; when Z = far-Z in 3D space, Z should be 1 in projection space. After this is done, any Z values outside [0 1] will be clipped out by the GPU.
 
