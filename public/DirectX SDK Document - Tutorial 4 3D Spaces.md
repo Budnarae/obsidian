@@ -14,11 +14,19 @@ In the previous tutorial, we successfully rendered a triangle in the center of o
 
 We haven't paid much attention to the vertex positions that we have picked in our vertex buffer.
 
-정점 좌표의 
+정점 버퍼에 넣었던 정점 좌표에 대해서 그다지 주의를 기울이지 않았었다.
 
 In this tutorial, we will delve into the details of 3D positions and transformation.
 
-The outcome of this tutorial will be a 3D object rendered to screen. Whereas previous tutorials focused on rendering a 2D object onto a 3D world, here we show a 3D object.
+이번 튜토리얼에서, 3차원 좌표와 변환의 세부사항에 대해서 자세히 알아볼 것이다.
+
+The outcome of this tutorial will be a 3D object rendered to screen.
+
+이번 튜토리얼이 끝나면 스크린에 3차원 물체를 그릴 수 있을 것이다.
+
+Whereas previous tutorials focused on rendering a 2D object onto a 3D world, here we show a 3D object.
+
+이전 튜토리얼에서는 3차원 공간에 2차원 물체를 그리는데 집중했지만, 이번에는 3차원 물체를 띄울 것이다.
 
 ## Source
 
@@ -26,7 +34,13 @@ The outcome of this tutorial will be a 3D object rendered to screen. Whereas pre
 
 # 3D Spaces
 
-In the previous tutorial, the vertices of the triangle were placed strategically to perfectly align themselves on the screen. However, this will not always be the case. Thus, we need a system to denote objects in 3D space and a system to display them.
+In the previous tutorial, the vertices of the triangle were placed strategically to perfectly align themselves on the screen.
+
+이전 강의에서 삼각형의 꼭짓점들을 화면에 완벽히 정렬되도록 전략적으로 배치했다.
+
+However, this will not always be the case. Thus, we need a system to denote objects in 3D space and a system to display them.
+
+아지만
 
 In the real world, objects exist in 3D space. This means that to place an object in a particular position in the world, we would need to use a coordinate system and define three coordinates that correspond to the position. In computer graphics, 3D spaces are most commonly in Cartesian coordinate system. In this coordinate system, three axes, X, Y, and Z, perpendicular to each other, dictate the coordinate that each point in the space has. This coordinate system is further divided into left-handed and right-handed systems. In a left-handed system, when X axis points to the right and Y axis points to up, Z axis points forward. In a right-handed system, with the same X and Y axes, Z axis points backward.
 
