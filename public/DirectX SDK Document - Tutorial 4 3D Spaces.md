@@ -268,13 +268,34 @@ In this space, visible content has X and Y coordinates ranging from -1 to 1, and
 
 Screen space is often used to refer to locations in the frame buffer.
 
-스크린 공간은 
+스크린 공간은 보통 프레임 버퍼 내의 위치를 나타내는 데 사용된다다.
 
-Because frame buffer is usually a 2D texture, screen space is a 2D space. The top-left corner is the origin with coordinates (0, 0). The positive X goes to right and positive Y goes down. For a buffer that is w pixels wide and h pixels high, the most lower-right pixel has the coordinates (w - 1, h - 1).
+Because frame buffer is usually a 2D texture, screen space is a 2D space.
 
+프레임 버퍼는 일반적으로 2D 텍스처이기 때문에, 스크린 공간은 2차원 공간이다.
+
+The top-left corner is the origin with coordinates (0, 0).
+
+좌측 상단의 구석은 원점 (0, 0)이다.
+
+The positive X goes to right and positive Y goes down.
+
+X축 양의 방향은 오른쪽이며 Y축 양의 방향은 아래쪽이다.
+
+For a buffer that is w pixels wide and h pixels high, the most lower-right pixel has the coordinates (w - 1, h - 1).
+
+w 픽셀만큼의 넓이, h 픽셀만큼의 높이를 가지는 버퍼의 최우측-하단 픽셀의 좌표는 (w - 1, h - 1)이다.
 # Space-to-space Transformation
 
-Transformation is most commonly used to convert vertices from one space to another. In 3D computer graphics, there are logically three such transformations in the pipeline: world, view, and projection transformation. Individual transformation operations such as translation, rotation, and scaling are covered in the next tutorial.
+Transformation is most commonly used to convert vertices from one space to another.
+
+변환은 정점을 하나의 공간에서 다른 공간으로 옮기는 데 보통 사용된다.
+
+In 3D computer graphics, there are logically three such transformations in the pipeline: world, view, and projection transformation.
+
+3차원 컴퓨터 그래픽스에서, 
+
+Individual transformation operations such as translation, rotation, and scaling are covered in the next tutorial.
 
 ## World Transformation
 
