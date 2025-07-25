@@ -339,19 +339,40 @@ Therefore, the view matrix must perform the opposite transformation that we appl
 
 For example, if we want to move the camera 5 units towards the -Z direction, we would need to compute a view matrix that translates vertices for 5 units along the +Z direction.
 
-예를 들어, 우리가 카메라를 -Z 방향으로 5만큼 이동시키기를 바라면, 우리는 뷰 행렬이 정점들을 +Z축 방향으로 움직이게끔 나
+예를 들어, 우리가 카메라를 -Z 방향으로 5만큼 이동시키기를 바라면, 우리는 뷰 행렬이 정점들을 +Z축 방향으로 움직이게끔 계산할 필요가 있다.
 
-Although the camera has moved backward, the vertices, from the camera's point of view, have moved forward. In XNA Math a convenient API call **XMMatrixLookAtLH()** is often used to compute a view matrix. We would simply need to tell it where the viewer is, where it's looking at, and the direction representing the viewer's top, also called the up-vector, to obtain a corresponding view matrix.
+Although the camera has moved backward, the vertices, from the camera's point of view, have moved forward.
 
+비록 카메라가 뒤쪽으로 움직였지만, 카메라의 시점에서 볼 때 정점들은 앞으로 움직인 것이다. 
+
+In XNA Math a convenient API call **XMMatrixLookAtLH()** is often used to compute a view matrix.
+
+XNA Math에서는 뷰 행렬을 계산하기 위해 편리한 API 호출인 **XMMatrixLookAtLH()**가 자주 사용된다.
+
+We would simply need to tell it where the viewer is, where it's looking at, and the direction representing the viewer's top, also called the up-vector, to obtain a corresponding view matrix.
+
+단순히 관찰자가 어디에 있는지, 어디를 바라보는지, 그리고 관찰자의 위쪽을 나타내는 방향(업 벡터라고도 불리는)을 알려주기만 하면, 이에 해당하는 뷰 행렬을 얻을 수 있다.
 ## Projection Transformation
 
-Projection transformation converts vertices from 3D spaces such as world and view spaces to projection space. In projection space, X and Y coordinates of a vertex are obtained from the X/Z and Y/Z ratios of this vertex in 3D space.
+Projection transformation converts vertices from 3D spaces such as world and view spaces to projection space.
+
+투영 변환은 정점을 월드 또는 뷰 공간 같은 3차원 공간에서 투영 공간으로 변환한다.
+
+In projection space, X and Y coordinates of a vertex are obtained from the X/Z and Y/Z ratios of this vertex in 3D space.
+
+투영 공간에서, 정점의 X Y 좌표는 3차원 공간의 X/Z 그리고 Y/Z 비율을 통해서 얻는다.
 
 **Figure 5.  Projection**
 
+**보기 5. 투영**
+
 ![[4a1db7da28644535f2e4be2ee5bf3ce8_MD5.jpeg]]
 
-In 3D space, things appear in perspective. That is, the closer an object is, the larger it appears. As shown, the tip of a tree that is h units tall at d units away from the viewer's eye will appear at the same point as the tip of another tree 2h units tall and 2d units away. Therefore, where a vertex appears on a 2D screen is directly related to its X/Z and Y/Z ratios.
+In 3D space, things appear in perspective.
+
+3차원 공간엣
+
+That is, the closer an object is, the larger it appears. As shown, the tip of a tree that is h units tall at d units away from the viewer's eye will appear at the same point as the tip of another tree 2h units tall and 2d units away. Therefore, where a vertex appears on a 2D screen is directly related to its X/Z and Y/Z ratios.
 
 One of the parameters that defines a 3D space is called the field-of-view (FOV). FOV denotes which objects are visible from a particular position, while looking in a particular direction. Humans have a FOV that is forward-looking (we can't see what is behind us), and we can't see objects that are too close or too far away. In computer graphics, the FOV is contained in a view frustum. The view frustum is defined by 6 planes in 3D. Two of these planes are parallel to the XY plane. These are called the near-Z and far-Z planes. The other four planes are defined by the viewer's horizontal and vertical field of view. The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
 
