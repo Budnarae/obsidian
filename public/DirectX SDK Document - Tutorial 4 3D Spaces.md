@@ -664,13 +664,19 @@ Thus, you see 12 total triangles defined here.
 
 따라서, 여기에서 총 12개의 삼각형이 정의되어 있는 것을 볼 수 있다.
 
-Since each vertex is explicitly listed, and no two triangles are sharing edges (at least, in the way it has been defined), this is considered a triangle list. In total, for 12 triangles in a triangle list, we will require a total of 36 vertices.
+Since each vertex is explicitly listed, and no two triangles are sharing edges (at least, in the way it has been defined), this is considered a triangle list.
+
+각 꼭짓점이 명시적으로 나열되어 있고, 정의 방식상 어떤 두 삼각형도 모서리를 공유하지 않기 때문에, 이것은 **트라이앵글 리스트(triangle list)**로 간주된다.
+
+In total, for 12 triangles in a triangle list, we will require a total of 36 vertices.
 
 트라이앵글 리스트 방식에서는 하나의 삼각형당 세 개의 꼭짓점이 필요하므로, 12개의 삼각형을 위해 총 36개의 꼭짓점이 필요하다.
 
-각 꼭짓점이 명시적으로 나열되어 있고, 정의 방식상 어떤 두 삼각형도 모서리를 공유하지 않기 때문에, 이것은 **트라이앵글 리스트(triangle list)**로 간주되다.
+The creation of the index buffer is very similar to the vertex buffer, where we specified parameters such as size and type in a structure, and called CreateBuffer.
 
-The creation of the index buffer is very similar to the vertex buffer, where we specified parameters such as size and type in a structure, and called CreateBuffer. The type is D3D11_BIND_INDEX_BUFFER, and since we declared our array using DWORD, we will use sizeof(DWORD).
+
+
+The type is D3D11_BIND_INDEX_BUFFER, and since we declared our array using DWORD, we will use sizeof(DWORD).
 
 ```cpp
 
