@@ -1,6 +1,6 @@
 {
   "strictLineBreaks": false,
-  "livePreview": false,
+  "livePreview": true,
   "readableLineLength": true,
   "spellcheck": false,
   "alwaysUpdateLinks": true,

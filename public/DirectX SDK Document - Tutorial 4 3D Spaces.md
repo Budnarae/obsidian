@@ -56,15 +56,39 @@ In computer graphics, 3D spaces are most commonly in Cartesian coordinate system
 
 In this coordinate system, three axes, X, Y, and Z, perpendicular to each other, dictate the coordinate that each point in the space has.
 
-이 좌표계에서, 
+이 좌표계에서 서로 직교하는 축 X, Y, Z는 점의 공간에서의 좌표를 지시한다(나타낸다.)
 
-This coordinate system is further divided into left-handed and right-handed systems. In a left-handed system, when X axis points to the right and Y axis points to up, Z axis points forward. In a right-handed system, with the same X and Y axes, Z axis points backward.
+This coordinate system is further divided into left-handed and right-handed systems.
+
+좌표계는 왼손 좌표계와 오른손 좌표계로 나뉜다.
+
+In a left-handed system, when X axis points to the right and Y axis points to up, Z axis points forward.
+
+왼손 좌표계에서 X축은 왼쪽을 가리키며, Y 축은 위쪽, Z 축은 앞쪽을 나타낸다.
+
+In a right-handed system, with the same X and Y axes, Z axis points backward.
+
+오른손 좌표계에서, X, Y 축은 동일하며, Z 축은 뒤쪽을 나타낸다.
 
 **Figure 1.  Left-handed versus right-handed coordinate systems**
 
+**보기 1. 왼손 좌표계와 오른손 좌표계**
+
 ![[43c1de14aa5fe28103dd0737993b6ea2_MD5.jpeg]]
 
-Now that we have talked about the coordinate system, consider 3D spaces. A point has different coordinates in different spaces. As an example in 1D, suppose we have a ruler and we note the point, P, at the 5-inch mark of the ruler. Now, if we move the ruler 1 inch to the right, the same point lies on the 4-inch mark. By moving the ruler, the frame of reference has changed. Therefore, while the point hasn't moved, it has a new coordinate.
+Now that we have talked about the coordinate system, consider 3D spaces.
+
+이제 좌표계에 대해 이야기했으니 3D 공간에 대해 고민해보자.
+
+A point has different coordinates in different spaces.
+
+한 점은 서로 다른 공간에서 다른 좌표를 가진다.
+
+As an example in 1D, suppose we have a ruler and we note the point, P, at the 5-inch mark of the ruler.
+
+1차원 공간을 예로 들면, 자를 가지고 있고 그 위에 점 
+
+Now, if we move the ruler 1 inch to the right, the same point lies on the 4-inch mark. By moving the ruler, the frame of reference has changed. Therefore, while the point hasn't moved, it has a new coordinate.
 
 **Figure 2.  Spaces illustration in 1D**
 

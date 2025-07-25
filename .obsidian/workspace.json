@@ -15,7 +15,7 @@
               "state": {
                 "file": "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
