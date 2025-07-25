@@ -211,15 +211,39 @@ As we see, world space is so-called because they tell us where objects are in re
 
 View space, sometimes called camera space, is similar to world space in that it is typically used for the entire scene.
 
-이따금 카메라 공간으로 불리는 뷰 공간은 월드 공간과 
+이따금 카메라 공간으로 불리는 뷰 공간은 전체 장면을 표현하기 위해 쓰인다는 점에서 월드 공간과 유사하다.
 
-However, in view space, the origin is at the viewer or camera. The view direction (where the viewer is looking) defines the positive Z axis. An "up" direction defined by the application becomes the positive Y axis as shown below.
+However, in view space, the origin is at the viewer or camera.
+
+하지만 뷰 공간에서 원점은 관찰자 또는 카메라이다.
+
+The view direction (where the viewer is looking) defines the positive Z axis.
+
+관찰자 또는 카메라가 보고 있는 방향이 뷰 공간의 양의 Z축을 정의한다.
+
+An "up" direction defined by the application becomes the positive Y axis as shown below.
+
+애플리케이션에 의해 정의된 "위쪽" 방향은 아래에 보이는 것처럼 양의 Y축이 된다.
 
 **Figure 4.  The same object in world space (left) and in view space (right)**
 
+**보기 4. 같은 물체가 월드 공간(왼쪽) 그리고 뷰 공간(오른쪽)에 있는 모습**
+
 ![[66d8eba891f570497fd8a3ef5fb549d1_MD5.jpeg]]
 
-The left image shows a scene that consists of a human-like object and a viewer (camera) looking at the object. The origin and axes that are used by world space are shown in red. The right image shows the view space in relation to world space. The view space axes are shown in blue. For clearer illustration, the view space does not have the same orientation as the world space in the left image to readers. Note that in view space, the viewer is looking in the Z direction.
+The left image shows a scene that consists of a human-like object and a viewer (camera) looking at the object.
+
+왼쪽 그림은 사람 모양의 물체와 그 물체를 바라보는 관찰자(카메라)로 이루어진다.
+
+The origin and axes that are used by world space are shown in red.
+
+월드 공간의 원점과 축은 빨간색으로 나타냈다.
+
+The right image shows the view space in relation to world space.
+
+오른쪽 그림은 월드 공간에 대응되는 뷰 공간이다.
+
+The view space axes are shown in blue. For clearer illustration, the view space does not have the same orientation as the world space in the left image to readers. Note that in view space, the viewer is looking in the Z direction.
 
 ## Projection Space
 
