@@ -302,7 +302,7 @@ Individual transformation operations such as translation, rotation, and scaling 
 
 World transformation, as the name suggests, converts vertices from object space to world space.
 
-
+월드 변환은 그 이름에서 알 수 있듯이, 정점을 오브젝트 공간에서 월드 공간으로 전환하는 것이다
 
 It usually consists of one or more scaling, rotation, and translation, based on the size, orientation, and position we would like to give to the object. Every object in the scene has its own world transformation matrix. This is because each object has its own size, orientation, and position.
 
