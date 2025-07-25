@@ -327,9 +327,21 @@ Recall from earlier discussion that view space is what the world appears from th
 
 In view space, the viewer is located at origin looking out along the positive Z axis.
 
-뷰 공간에서, 관찰자는 원점에 위치해 있으며 
+뷰 공간에서, 관찰자는 원점에 위치해 있으며 양의 z 축 방향을 바라본다.
 
-It is worth noting that although view space is the world from the viewer's frame of reference, view transformation matrix is applied to vertices, not the viewer. Therefore, the view matrix must perform the opposite transformation that we apply to our viewer or camera. For example, if we want to move the camera 5 units towards the -Z direction, we would need to compute a view matrix that translates vertices for 5 units along the +Z direction. Although the camera has moved backward, the vertices, from the camera's point of view, have moved forward. In XNA Math a convenient API call **XMMatrixLookAtLH()** is often used to compute a view matrix. We would simply need to tell it where the viewer is, where it's looking at, and the direction representing the viewer's top, also called the up-vector, to obtain a corresponding view matrix.
+It is worth noting that although view space is the world from the viewer's frame of reference, view transformation matrix is applied to vertices, not the viewer.
+
+뷰 공간이 관찰자의 기준 틀에서 본 세계임에도 불구하고, 뷰 변환 행렬은 관찰자가 아니라 꼭짓점들에 적용된다는 점을 주목할 필요가 있다.
+
+Therefore, the view matrix must perform the opposite transformation that we apply to our viewer or camera.
+
+그러므로, 뷰 행렬은 관찰자나 카메라에 수행되는 변환의 반대되는 변환을 수행해야 한다.
+
+For example, if we want to move the camera 5 units towards the -Z direction, we would need to compute a view matrix that translates vertices for 5 units along the +Z direction.
+
+예를 들어, 우리가 카메라를 -Z 방향으로 5만큼 이동시키기를 바라면, 우리는 뷰 행렬이 정점들을 +Z축 방향으로 움직이게끔 나
+
+Although the camera has moved backward, the vertices, from the camera's point of view, have moved forward. In XNA Math a convenient API call **XMMatrixLookAtLH()** is often used to compute a view matrix. We would simply need to tell it where the viewer is, where it's looking at, and the direction representing the viewer's top, also called the up-vector, to obtain a corresponding view matrix.
 
 ## Projection Transformation
 
