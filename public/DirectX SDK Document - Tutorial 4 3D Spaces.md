@@ -178,13 +178,42 @@ It is used to define spatial relationship between objects that we wish to render
 
 To visualize world space, we could imagine that we are standing in the south-western corner of a rectangular room facing north.
 
-월드 좌표계를 시각화하기 위해서, 우리가 직사각형 방의 남서쪽 구석에서 북
+월드 좌표계를 시각화하기 위해서, 우리가 직사각형 방의 남서쪽 구석에서 북쪽을 향해 보고 서있다고 가정해보자.
 
-We define the corner that our feet are standing at to be the origin, (0, 0, 0). The X axis goes to our right; the Y axis goes up; and the Z axis goes forward, the same direction as we are facing. When we do this, every position in the room can be identified with a set of XYZ coordinates. For instance, there may be a chair 5 feet in front and 2 feet to the right of us. There may be a light on the 8-foot-high ceiling directly on top of the chair. We can then refer to the position of the chair as (2, 0, 5) and the position of the light as (2, 8, 5). As we see, world space is so-called because they tell us where objects are in relation to each other in the world.
+We define the corner that our feet are standing at to be the origin, (0, 0, 0).
 
+그리고 우리가 서있는 구석을 원점 (0, 0, 0) 이라고 생각해보자.
+
+The X axis goes to our right; the Y axis goes up; and the Z axis goes forward, the same direction as we are facing.
+
+x축은 우리의 오른쪽을 향해 뻗으며, Y는 위로, Z는 우리가 보고 있는 방향인 앞으로 뻗는다.
+
+When we do this, every position in the room can be identified with a set of XYZ coordinates.
+
+이렇게 했을 때, 방 안의 모든 물체는 XYZ 좌표의 집합으로 나타낼 수 있다.
+
+For instance, there may be a chair 5 feet in front and 2 feet to the right of us.
+
+예를 들어, 의자가 나를 기준으로 5피트 앞쪽, 그리고 2피트 오른쪽에 있을 수 있다.
+
+There may be a light on the 8-foot-high ceiling directly on top of the chair.
+
+의자 바로 위, 8피트 높이의 천장에 조명이 있을 수 있다.
+
+We can then refer to the position of the chair as (2, 0, 5) and the position of the light as (2, 8, 5).
+
+그렇다면 의자의 위치를 (2, 0, 5), 조명의 위치를 (2, 8, 5)로 나타낼 수 있다.
+
+As we see, world space is so-called because they tell us where objects are in relation to each other in the world.
+
+이렇듯, 월드 공간은 물체들이 세계 안에서 서로 어떻게 위치하는지를 알려주기 때문에 그렇게 불린다.
 ## View Space
 
-View space, sometimes called camera space, is similar to world space in that it is typically used for the entire scene. However, in view space, the origin is at the viewer or camera. The view direction (where the viewer is looking) defines the positive Z axis. An "up" direction defined by the application becomes the positive Y axis as shown below.
+View space, sometimes called camera space, is similar to world space in that it is typically used for the entire scene.
+
+이따금 카메라 공간으로 불리는 뷰 공간은 월드 공간과 
+
+However, in view space, the origin is at the viewer or camera. The view direction (where the viewer is looking) defines the positive Z axis. An "up" direction defined by the application becomes the positive Y axis as shown below.
 
 **Figure 4.  The same object in world space (left) and in view space (right)**
 
