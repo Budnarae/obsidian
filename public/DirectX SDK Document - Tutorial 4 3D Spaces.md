@@ -86,23 +86,51 @@ A point has different coordinates in different spaces.
 
 As an example in 1D, suppose we have a ruler and we note the point, P, at the 5-inch mark of the ruler.
 
-1차원 공간을 예로 들면, 자를 가지고 있고 그 위에 점 
+1차원 공간을 예로 들면, 자를 가지고 있고 그 위의 5인치 지점에 점 P를 찍는다고 고려하자.
 
-Now, if we move the ruler 1 inch to the right, the same point lies on the 4-inch mark. By moving the ruler, the frame of reference has changed. Therefore, while the point hasn't moved, it has a new coordinate.
+Now, if we move the ruler 1 inch to the right, the same point lies on the 4-inch mark.
+
+이제, 우리가 자를 1인치 우측으로 옮기면, 같은 점은 4인치 지점에 위치하게 된다.
+
+By moving the ruler, the frame of reference has changed.
+
+자를 옮김으로서, 기준 틀이 변경되었다.
+
+Therefore, while the point hasn't moved, it has a new coordinate.
+
+그러므로, 점이 움직이지 않았음에도, 점은 새로운 좌표를 가지게 되었다.
 
 **Figure 2.  Spaces illustration in 1D**
 
+**보기 2. 1차원 공간의 시각화화**
+
 ![[6ec1b25d24b1cd09ec81b1b0af4bf7ea_MD5.jpeg]]
 
-In 3D, a space is typically defined by an origin and three unique axes from the origin: X, Y and Z. There are several spaces commonly used in computer graphics: object space, world space, view space, projection space, and screen space.
+In 3D, a space is typically defined by an origin and three unique axes from the origin: X, Y and Z.
+
+3차원에서, 공간은 일반적으로 원점과 원점에서 뻗어나가는 세 개의 고유한 축 X, Y, Z로 정의된다.
+
+There are several spaces commonly used in computer graphics: object space, world space, view space, projection space, and screen space.
+
+컴퓨터 그래픽스에서 일반적으로 사용되는 좌표계들은 다음과 같다: 오브젝트 좌표계, 월드 좌표계, 뷰 좌표계, 투영 좌표계, 스크린 좌표계
 
 **Figure 3.  A cube defined in object space**
+
+**보기 3. 오브젝트 공간에 정의된 육면체체**
 
 ![[96406e8cfcd2a4132eec85735dcf0781_MD5.jpeg]]
 
 ## Object Space
 
-Notice that the cube is centered on the origin. Object space, also called model space, refers to the space used by artists when they create the 3D models. Usually, artists create models that are centered around the origin so that it is easier to perform transformations such as rotations to the models, as we will see when we discuss transformation. The eight vertices have the following coordinates:
+Notice that the cube is centered on the origin.
+
+육면체의 중점은 원점이라고 가정한다.
+
+Object space, also called model space, refers to the space used by artists when they create the 3D models.
+
+모델 
+
+Usually, artists create models that are centered around the origin so that it is easier to perform transformations such as rotations to the models, as we will see when we discuss transformation. The eight vertices have the following coordinates:
 
 ```
 
