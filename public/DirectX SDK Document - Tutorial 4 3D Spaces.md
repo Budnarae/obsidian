@@ -256,11 +256,21 @@ Note that in view space, the viewer is looking in the Z direction.
 뷰 공간에서는 관찰자가 바라보는 방향이 Z 축이 된다는 사실을 알아두자.
 ## Projection Space
 
-Projection space refers to the space after applying projection transformation from view space. In this space, visible content has X and Y coordinates ranging from -1 to 1, and Z coordinate ranging from 0 to 1.
+Projection space refers to the space after applying projection transformation from view space.
+
+투영 공간은 뷰 공간에 투영 변환을 실행한 결과이다.
+
+In this space, visible content has X and Y coordinates ranging from -1 to 1, and Z coordinate ranging from 0 to 1.
+
+이 공간에서, 보이는(다른 물체에 가려지지 않은 걸 말하는듯) 물체는 [-1, 1] 범위의 x, y좌표를 가지며, z 좌표의 범위는 [0, 1]이다.
 
 ## Screen Space
 
-Screen space is often used to refer to locations in the frame buffer. Because frame buffer is usually a 2D texture, screen space is a 2D space. The top-left corner is the origin with coordinates (0, 0). The positive X goes to right and positive Y goes down. For a buffer that is w pixels wide and h pixels high, the most lower-right pixel has the coordinates (w - 1, h - 1).
+Screen space is often used to refer to locations in the frame buffer.
+
+스크린 공간은 
+
+Because frame buffer is usually a 2D texture, screen space is a 2D space. The top-left corner is the origin with coordinates (0, 0). The positive X goes to right and positive Y goes down. For a buffer that is w pixels wide and h pixels high, the most lower-right pixel has the coordinates (w - 1, h - 1).
 
 # Space-to-space Transformation
 
