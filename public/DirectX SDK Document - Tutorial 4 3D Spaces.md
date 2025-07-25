@@ -528,7 +528,23 @@ Direct3D 11에서 투영 행렬을 얻는 가장 쉬운 방법은 **XMMatrixPers
 
 우리는 단순히 네 개의 매개변수—FOVy, Aspect, Zn, 그리고 Zf—를 제공하고, 위에서 언급한 모든 작업을 수행하는 행렬을 얻는다.
 
-FOVy is the field of view in Y direction. Aspect is the aspect ratio, which is ratio of view space width to height. From FOVy and Aspect, FOVx can be computed. This aspect ratio is usually obtained from the ratio of the render target width to height. Zn and Zf are the near and far Z values in view space, respectively.
+FOVy is the field of view in Y direction.
+
+FOVy는 FOV의 y 방향이다.
+
+Aspect is the aspect ratio, which is ratio of view space width to height.
+
+Aspect는 가로 세로 비율로, 뷰 공간의 너비와 높이의 비를 나타낸다.
+
+From FOVy and Aspect, FOVx can be computed.
+
+FOVy와 Aspect가 있으면 FOVx는 계산할 수 있다.
+
+This aspect ratio is usually obtained from the ratio of the render target width to height.
+
+이 
+
+Zn and Zf are the near and far Z values in view space, respectively.
 
 # Using Transformation
 
