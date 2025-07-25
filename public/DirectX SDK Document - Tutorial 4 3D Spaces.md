@@ -243,8 +243,17 @@ The right image shows the view space in relation to world space.
 
 오른쪽 그림은 월드 공간에 대응되는 뷰 공간이다.
 
-The view space axes are shown in blue. For clearer illustration, the view space does not have the same orientation as the world space in the left image to readers. Note that in view space, the viewer is looking in the Z direction.
+The view space axes are shown in blue.
 
+뷰 공간의 축들은 파란색으로 나타냈다.
+
+For clearer illustration, the view space does not have the same orientation as the world space in the left image to readers.
+
+더 명확한 그림을 위해, 뷰 공간은 왼쪽 이미지의 월드 공간과 동일한 방향 설정을 가지지 않는다.
+
+Note that in view space, the viewer is looking in the Z direction.
+
+뷰 공간에서는 관찰자가 바라보는 방향이 Z 축이 된다는 사실을 알아두자.
 ## Projection Space
 
 Projection space refers to the space after applying projection transformation from view space. In this space, visible content has X and Y coordinates ranging from -1 to 1, and Z coordinate ranging from 0 to 1.
