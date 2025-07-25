@@ -476,9 +476,31 @@ Therefore, any Y values post-projection that are greater than 0.5 will be clippe
 
 The problem here is that 0.5 is determined by the vertical field of view chosen by the program, and different FOV values result in different values that the GPU has to clip against.
 
+문제는 0.5가 프로그램에서 선택한 수직 시야(FOV)에 의해 결정되며, 서로 다른 FOV 값들은 GPU가 클리핑해야 하는 값들도 다르게 만든다.
+
+To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1.
+
+과정을 더 간편히 하기 위해, 3차원 프로그램은 일반적으로 정점의 투영된 X, Y 값의 크기를 조정하여 가시 범위 내의 X Y 값이 [-1, 1]에 위치하도록 한다.
+
+In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out.
+
+다르게 말하면, [-1, 1] 범위 밖의 좌표는 걸러져 나간단 뜻이다.
+
+To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h.
+
+이 클리핑 방식을 작동시키기 위해, 투영 행렬은 투영된 꼭짓점들의 X와 Y 좌표를 h/d의 역수인 d/h로 스케일해야 한다.
+
+d/h is also the cotangent of half of FOV.
+
+$d/h$는 FOV의 절반의 코탄젠트 값이다.
+
+With scaling, the top of the view frustum becomes h/d * d/h = 1.
+
+크기 조정
+
+Anything greater than 1 will be clipped by the GPU. This is what we want.
 
 
-To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1. In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out. To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h. d/h is also the cotangent of half of FOV. With scaling, the top of the view frustum becomes h/d * d/h = 1. Anything greater than 1 will be clipped by the GPU. This is what we want.
 
 A similar tweak is generally done for the Z coordinate in projection space as well. We would like the near and far Z planes to be at 0 and 1 in projection space, respectively. When Z = near-Z value in 3D space, Z should be 0 in projection space; when Z = far-Z in 3D space, Z should be 1 in projection space. After this is done, any Z values outside [0 1] will be clipped out by the GPU.
 
