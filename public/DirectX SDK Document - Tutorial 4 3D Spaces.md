@@ -592,11 +592,35 @@ SimpleVertex vertices[] =
 
 If you notice, all we did was specify the eight points on the cube, but we didn't actually describe the individual triangles.
 
-알아차렸을수도 있겠지만, 우리가 한 일은 큐브의 여덟 개 점을 지정한 것뿐이고, 실제로 개별 삼각형들을 정의하지는 않았다. 이 상태 그대로 데이터를 전달하면 출력 결과는 기대한 대로 나오지 않다. 큐브를 구성하는 삼각형들을 이 여덟 개의 점들을 통해 명시해주어야 하다.
+알아차렸을수도 있겠지만, 우리가 한 일은 큐브의 여덟 개 점을 지정한 것뿐이고, 실제로 개별 삼각형들을 정의하지는 않았다.
 
-If we passed this in as-is, the output would not be what we expect. We will need to specify the triangles that form the cube through these eight points.
+If we passed this in as-is, the output would not be what we expect.
 
-On a cube, many triangles will be sharing the same vertex and it would be a waste of space to redefine the same points over and over again. As such, there is a method to specify just the eight points, and then let Direct3D know which points to pick for a triangle. This is done through an index buffer. An index buffer will contain a list, which will refer to the index of vertices in the buffer, to specify which points to use in each triangle. The code below shows which points make up each of our triangles.
+이 상태 그대로 데이터를 전달하면 출력 결과는 기대한 대로 나오지 않는다.
+
+We will need to specify the triangles that form the cube through these eight points.
+
+큐브를 구성하는 삼각형들을 이 여덟 개의 점들을 통해 명시해주어야 한다.
+
+On a cube, many triangles will be sharing the same vertex and it would be a waste of space to redefine the same points over and over again.
+
+큐브에서는 여러 삼각형들이 동일한 꼭짓점을 공유하게 되며, 동일한 점들을 반복해서 다시 정의하는 것은 메모리 낭비가 된다. 
+
+As such, there is a method to specify just the eight points, and then let Direct3D know which points to pick for a triangle.
+
+따라서, 여덟 개의 점만 정의한 후, 어떤 점들을 사용해 삼각형을 만들지 Direct3D에 알려주는 방식이 존재한다.
+
+This is done through an index buffer.
+
+이 방식은 인덱스 버퍼(index buffer)를 사용한다.
+
+An index buffer will contain a list, which will refer to the index of vertices in the buffer, to specify which points to use in each triangle.
+
+인덱스 버퍼는 각 삼각형을 구성하는 꼭짓점들이 꼭짓점 버퍼 내에서 어떤 인덱스를 가지는지를 참조하는 리스트를 포함한다.
+
+The code below shows which points make up each of our triangles.
+
+아래 코드에서는 각 삼각형을 구성하는 점들이 어떤 것인지 보여주다.
 
 ```cpp
 
@@ -624,9 +648,27 @@ WORD indices[] =
 
 ```
 
-As you can see, the first triangle is defined by points 3, 1, and 0. This means that the first triangle has vertices at: ( -1.0f, 1.0f, 1.0f ),( 1.0f, 1.0f, -1.0f ), and ( -1.0f, 1.0f, -1.0f ), respectively. There are six faces on the cube, and each face is comprised of two triangles. Thus, you see 12 total triangles defined here.
+As you can see, the first triangle is defined by points 3, 1, and 0.
+
+보이듯이, 첫번째 삼각형은 점 3, 1, 0으로 정의된다.
+
+This means that the first triangle has vertices at: ( -1.0f, 1.0f, 1.0f ),( 1.0f, 1.0f, -1.0f ), and ( -1.0f, 1.0f, -1.0f ), respectively.
+
+이는 첫 번째 삼각형이 각각 ( -1.0f, 1.0f, 1.0f ), ( 1.0f, 1.0f, -1.0f ), 그리고 ( -1.0f, 1.0f, -1.0f ) 위치에 있는 꼭짓점들로 이루어져 있음을 의미한다. 
+
+There are six faces on the cube, and each face is comprised of two triangles.
+
+큐브에는 여섯 개의 면이 있으며, 각 면은 두 개의 삼각형으로 구성된다.
+
+Thus, you see 12 total triangles defined here.
+
+따라서, 여기에서 총 12개의 삼각형이 정의되어 있는 것을 볼 수 있다.
 
 Since each vertex is explicitly listed, and no two triangles are sharing edges (at least, in the way it has been defined), this is considered a triangle list. In total, for 12 triangles in a triangle list, we will require a total of 36 vertices.
+
+트라이앵글 리스트 방식에서는 하나의 삼각형당 세 개의 꼭짓점이 필요하므로, 12개의 삼각형을 위해 총 36개의 꼭짓점이 필요하다.
+
+각 꼭짓점이 명시적으로 나열되어 있고, 정의 방식상 어떤 두 삼각형도 모서리를 공유하지 않기 때문에, 이것은 **트라이앵글 리스트(triangle list)**로 간주되다.
 
 The creation of the index buffer is very similar to the vertex buffer, where we specified parameters such as size and type in a structure, and called CreateBuffer. The type is D3D11_BIND_INDEX_BUFFER, and since we declared our array using DWORD, we will use sizeof(DWORD).
 
