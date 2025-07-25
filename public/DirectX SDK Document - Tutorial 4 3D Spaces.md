@@ -460,9 +460,25 @@ Therefore, point a and point b will have the same X and Y coordinates in project
 
 Suppose that the tips of the two trees lie exactly on the top view frustum edge.
 
+두 나무의 꼭대기가 정확히 뷰 절두체 상단 가장자리에 위치한다고 가정하자.
+
+Further suppose that d = 2h.
+
+나아가 $d = 2h$라고 가정하자
+
+The Y coordinate along the top edge in projection space will then be 0.5 (because h/d = 0.5).
+
+그러면 절두체의 상단 평면에 걸처 있는 Y좌표는 0.5일 것이다. 왜냐하면 $h / d = 0.5$이기 때문이다.
+
+Therefore, any Y values post-projection that are greater than 0.5 will be clipped by the GPU.
+
+따라서, 투영 후 Y 값이 0.5보다 큰 모든 값은 GPU에 의해 클리핑된다.
+
+The problem here is that 0.5 is determined by the vertical field of view chosen by the program, and different FOV values result in different values that the GPU has to clip against.
 
 
-Further suppose that d = 2h. The Y coordinate along the top edge in projection space will then be 0.5 (because h/d = 0.5). Therefore, any Y values post-projection that are greater than 0.5 will be clipped by the GPU. The problem here is that 0.5 is determined by the vertical field of view chosen by the program, and different FOV values result in different values that the GPU has to clip against. To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1. In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out. To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h. d/h is also the cotangent of half of FOV. With scaling, the top of the view frustum becomes h/d * d/h = 1. Anything greater than 1 will be clipped by the GPU. This is what we want.
+
+To make the process more convenient, 3D programs generally scale the projected X and Y values of vertices so that the visible X and Y values range from -1 to 1. In other words, anything with X or Y coordinate that's outside the [-1 1] range will be clipped out. To make this clipping scheme work, the projection matrix must scale the X and Y coordinates of projected vertices by the inverse of h/d, or d/h. d/h is also the cotangent of half of FOV. With scaling, the top of the view frustum becomes h/d * d/h = 1. Anything greater than 1 will be clipped by the GPU. This is what we want.
 
 A similar tweak is generally done for the Z coordinate in projection space as well. We would like the near and far Z planes to be at 0 and 1 in projection space, respectively. When Z = near-Z value in 3D space, Z should be 0 in projection space; when Z = far-Z in 3D space, Z should be 1 in projection space. After this is done, any Z values outside [0 1] will be clipped out by the GPU.
 
