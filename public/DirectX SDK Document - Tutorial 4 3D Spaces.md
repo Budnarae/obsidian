@@ -390,9 +390,35 @@ One of the parameters that defines a 3D space is called the field-of-view (FOV).
 
 FOV denotes which objects are visible from a particular position, while looking in a particular direction.
 
-FOV
+FOV는 특정 위치에서 특정 방향을 바라볼 때 어떤 객체들이 보이는지 나타낸다.
 
-Humans have a FOV that is forward-looking (we can't see what is behind us), and we can't see objects that are too close or too far away. In computer graphics, the FOV is contained in a view frustum. The view frustum is defined by 6 planes in 3D. Two of these planes are parallel to the XY plane. These are called the near-Z and far-Z planes. The other four planes are defined by the viewer's horizontal and vertical field of view. The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
+Humans have a FOV that is forward-looking (we can't see what is behind us), and we can't see objects that are too close or too far away.
+
+인간은 앞을 향한 시야(FOV)를 가지며, 뒤에 있는 것은 볼 수 없고, 너무 가깝거나 너무 멀리 있는 객체도 볼 수 없다.
+
+In computer graphics, the FOV is contained in a view frustum.
+
+컴퓨터 그래픽스에서, FOV는 절두체에 포함된다.
+
+The view frustum is defined by 6 planes in 3D.
+
+절두체는 3차원 공간에서 6개의 평면으로 정의된다.
+
+Two of these planes are parallel to the XY plane.
+
+이 평면 중 2개는 XY 평면과 평행하다.
+
+These are called the near-Z and far-Z planes.
+
+이것들을 근거리 Z면, 원거리 Z면이라 부른다.
+
+The other four planes are defined by the viewer's horizontal and vertical field of view.
+
+나머지 4개의 평면은 관찰자의 수평 및 수직 시야(Field of View)에 의해 정의된다.
+
+The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
+
+
 
 The GPU filters out objects that are outside the view frustum so that it does not have to spend time rendering something that will not be displayed. This process is called clipping. The view frustum is a 4-sided pyramid with its top cut off. Clipping against this volume is complicated because to clip against one view frustum plane, the GPU must compare every vertex to the plane's equation. Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume. The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space. This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space. Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
 
