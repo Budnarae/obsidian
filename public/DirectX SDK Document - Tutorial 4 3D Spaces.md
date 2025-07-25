@@ -370,11 +370,29 @@ In projection space, X and Y coordinates of a vertex are obtained from the X/Z a
 
 In 3D space, things appear in perspective.
 
-3차원 공간엣
+3차원 공간에서, 물체는 원근법으로 나타내어진다.
 
-That is, the closer an object is, the larger it appears. As shown, the tip of a tree that is h units tall at d units away from the viewer's eye will appear at the same point as the tip of another tree 2h units tall and 2d units away. Therefore, where a vertex appears on a 2D screen is directly related to its X/Z and Y/Z ratios.
+That is, the closer an object is, the larger it appears.
 
-One of the parameters that defines a 3D space is called the field-of-view (FOV). FOV denotes which objects are visible from a particular position, while looking in a particular direction. Humans have a FOV that is forward-looking (we can't see what is behind us), and we can't see objects that are too close or too far away. In computer graphics, the FOV is contained in a view frustum. The view frustum is defined by 6 planes in 3D. Two of these planes are parallel to the XY plane. These are called the near-Z and far-Z planes. The other four planes are defined by the viewer's horizontal and vertical field of view. The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
+물체가 가까이 있을수록 커보인단 소리다.
+
+As shown, the tip of a tree that is h units tall at d units away from the viewer's eye will appear at the same point as the tip of another tree 2h units tall and 2d units away.
+
+보기에서, 관찰자의 눈으로부터 d 만큼 떨어져있는 h 높이의 나무의 꼭대기는 2d만큼 떨어져 있는 2h 높이의 나무의 꼭대기와 동일한 지점에 나타내게 된다.
+
+Therefore, where a vertex appears on a 2D screen is directly related to its X/Z and Y/Z ratios.
+
+그러므로 2차원 스크린의 정점은 X/Z 그리고 Y/Z 비율에 대응된다.
+
+One of the parameters that defines a 3D space is called the field-of-view (FOV).
+
+3D 공간을 정의하는 매개변수 중 하나는 시야(Field-of-View, FOV)이다.
+
+FOV denotes which objects are visible from a particular position, while looking in a particular direction.
+
+FOV
+
+Humans have a FOV that is forward-looking (we can't see what is behind us), and we can't see objects that are too close or too far away. In computer graphics, the FOV is contained in a view frustum. The view frustum is defined by 6 planes in 3D. Two of these planes are parallel to the XY plane. These are called the near-Z and far-Z planes. The other four planes are defined by the viewer's horizontal and vertical field of view. The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
 
 The GPU filters out objects that are outside the view frustum so that it does not have to spend time rendering something that will not be displayed. This process is called clipping. The view frustum is a 4-sided pyramid with its top cut off. Clipping against this volume is complicated because to clip against one view frustum plane, the GPU must compare every vertex to the plane's equation. Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume. The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space. This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space. Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
 
