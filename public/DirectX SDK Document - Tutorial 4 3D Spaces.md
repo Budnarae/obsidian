@@ -157,13 +157,30 @@ Because object space is what artists typically use when they design and create m
 
 An application can create a vertex buffer to represent such a model and initialize the buffer with the model data.
 
+실행 프로그램은 그러한 모델을 나타내는 정점 버퍼를 생성할 수 있으며 모델의 데이터를 사용하여 버퍼를 초기화할 수 있다.
 
+Therefore, the vertices in the vertex buffer will usually be in object space as well.
 
-Therefore, the vertices in the vertex buffer will usually be in object space as well. This also means that the vertex shader receives input vertex data in object space.
+그러므로, 정점 버퍼의 정점들은 일반적으로 오브젝트 공간에 위치한다.
 
+This also means that the vertex shader receives input vertex data in object space.
+
+이는 또한 정점 셰이더가 오브젝트 공간의 정점을 입력으로 받는다는 의미이기도 하다.
 ## World Space
 
-World space is a space shared by every object in the scene. It is used to define spatial relationship between objects that we wish to render. To visualize world space, we could imagine that we are standing in the south-western corner of a rectangular room facing north. We define the corner that our feet are standing at to be the origin, (0, 0, 0). The X axis goes to our right; the Y axis goes up; and the Z axis goes forward, the same direction as we are facing. When we do this, every position in the room can be identified with a set of XYZ coordinates. For instance, there may be a chair 5 feet in front and 2 feet to the right of us. There may be a light on the 8-foot-high ceiling directly on top of the chair. We can then refer to the position of the chair as (2, 0, 5) and the position of the light as (2, 8, 5). As we see, world space is so-called because they tell us where objects are in relation to each other in the world.
+World space is a space shared by every object in the scene.
+
+월드 좌표계는 장면을 구성하는 모든 물체들이 공유하는 좌표계이다.
+
+It is used to define spatial relationship between objects that we wish to render.
+
+월드 좌표계는 우리가 그리고자 하는 물체들간의 공간적인 관계를 정의한다.
+
+To visualize world space, we could imagine that we are standing in the south-western corner of a rectangular room facing north.
+
+월드 좌표계를 시각화하기 위해서, 우리가 직사각형 방의 남서쪽 구석에서 북
+
+We define the corner that our feet are standing at to be the origin, (0, 0, 0). The X axis goes to our right; the Y axis goes up; and the Z axis goes forward, the same direction as we are facing. When we do this, every position in the room can be identified with a set of XYZ coordinates. For instance, there may be a chair 5 feet in front and 2 feet to the right of us. There may be a light on the 8-foot-high ceiling directly on top of the chair. We can then refer to the position of the chair as (2, 0, 5) and the position of the light as (2, 8, 5). As we see, world space is so-called because they tell us where objects are in relation to each other in the world.
 
 ## View Space
 
