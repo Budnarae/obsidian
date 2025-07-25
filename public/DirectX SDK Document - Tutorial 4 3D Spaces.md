@@ -418,9 +418,25 @@ The other four planes are defined by the viewer's horizontal and vertical field 
 
 The wider the FOV is, the wider the frustum volume is, and the more objects the viewer sees.
 
+FOV가 넓어질수록, 절두차의 부피가 커지며, 관찰자가 바라보는 물체도 커진다.
 
+The GPU filters out objects that are outside the view frustum so that it does not have to spend time rendering something that will not be displayed.
 
-The GPU filters out objects that are outside the view frustum so that it does not have to spend time rendering something that will not be displayed. This process is called clipping. The view frustum is a 4-sided pyramid with its top cut off. Clipping against this volume is complicated because to clip against one view frustum plane, the GPU must compare every vertex to the plane's equation. Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume. The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space. This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space. Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
+GPU는 절두체 바깥의 물체를 걸러내므로 그려지지 않을 물체를 렌더링하는데 시간을 허비하지 않는다.
+
+This process is called clipping.
+
+이 절차를 클리핑이라 불린다.
+
+The view frustum is a 4-sided pyramid with its top cut off.
+
+절두체는 윗부분이 잘려나간 사각뿔과 같다.
+
+Clipping against this volume is complicated because to clip against one view frustum plane, the GPU must compare every vertex to the plane's equation.
+
+이 볼륨에 대하여 클리핑을 시도하는 것으나 복잡하다. 왜냐하면 하나의 절두체 평면에 대해 클리핑하려면 GPU가 모든 꼭짓점을 평면의 방정식과 비교해야 하기 때문이다.
+
+Instead, the GPU generally performs projection transformation first, and then clips against the view frustum volume. The effect of projection transformation on the view frustum is that the pyramid shaped view frustum becomes a box in projection space. This is because, as mentioned previously, in projection space the X and Y coordinates are based on the X/Z and Y/Z in 3D space. Therefore, point a and point b will have the same X and Y coordinates in projection space, which is why the view frustum becomes a box.
 
 **Figure 6.  View Frustum**
 
