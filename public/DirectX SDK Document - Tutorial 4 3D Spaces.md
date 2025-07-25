@@ -555,13 +555,24 @@ In the previous tutorial, we wrote a program that renders a single triangle to s
 
 When we create the vertex buffer, the vertex positions that we use are directly in projection space so that we don't have to perform any transformation.
 
-정점 버퍼를 생성할 때, 우리가 어떠한 변환도 수행하지 않았기 때문에
+정점 버퍼를 생성할 때, 우리가 어떠한 변환도 수행하지 않았기 때문에 정점의 위치는 바로 투영 공간에서 사용되었다.
 
-Now that we have an understanding of 3D space and transformation, we are going to modify the program so that the vertex buffer is defined in object space, as it should be. Then, we will modify our vertex shader to transform the vertices from object space to projection space.
+Now that we have an understanding of 3D space and transformation, we are going to modify the program so that the vertex buffer is defined in object space, as it should be.
 
+이제 3차원 공간과 변환에 대해 이해하였으므로, 정점 버퍼가 오브젝트 공간을 정의하도록 수정해보자.
+
+Then, we will modify our vertex shader to transform the vertices from object space to projection space.
+
+그런 다음, 정점 셰이더가 정점을 오브젝트 공간에서 투영 공간으로 옮기게 하도록 수정할 것이다.
 ## Modifying the Vertex Buffer
 
-Since we started representing things in three dimensions, we have changed the flat triangle from the previous tutorial to a cube. This will allow us to demonstrate these concepts much clearer.
+Since we started representing things in three dimensions, we have changed the flat triangle from the previous tutorial to a cube.
+
+우리가 사물을 3차원으로 표현하기 시작했기 때문에, 이전 튜토리얼의 평면 삼각형을 큐브로 변경했다.
+
+This will allow us to demonstrate these concepts much clearer.
+
+ 이는 배운운 개념들을 훨씬 더 명확하게 시연할 수 있게 해줄 것이다.
 
 ```cpp
 
@@ -579,7 +590,11 @@ SimpleVertex vertices[] =
 
 ```
 
-If you notice, all we did was specify the eight points on the cube, but we didn't actually describe the individual triangles. If we passed this in as-is, the output would not be what we expect. We will need to specify the triangles that form the cube through these eight points.
+If you notice, all we did was specify the eight points on the cube, but we didn't actually describe the individual triangles.
+
+알아차렸을수도 있겠지만, 우리가 한 일은 큐브의 여덟 개 점을 지정한 것뿐이고, 실제로 개별 삼각형들을 정의하지는 않았다. 이 상태 그대로 데이터를 전달하면 출력 결과는 기대한 대로 나오지 않다. 큐브를 구성하는 삼각형들을 이 여덟 개의 점들을 통해 명시해주어야 하다.
+
+If we passed this in as-is, the output would not be what we expect. We will need to specify the triangles that form the cube through these eight points.
 
 On a cube, many triangles will be sharing the same vertex and it would be a waste of space to redefine the same points over and over again. As such, there is a method to specify just the eight points, and then let Direct3D know which points to pick for a triangle. This is done through an index buffer. An index buffer will contain a list, which will refer to the index of vertices in the buffer, to specify which points to use in each triangle. The code below shows which points make up each of our triangles.
 
