@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 3 Shaders.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 3 Shaders"
+              "title": "index"
             }
           }
         ]
@@ -207,8 +207,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
+    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "재료/이미지/83909e09315bc3a0d0ce3fe2f7747373_MD5.jpeg",
     "Pasted image 20250723174643.png",
     "d3d11_Tutorial_03.htm.md",

@@ -326,6 +326,12 @@ After walking through the graphics pipeline, we can start to understand the proc
 
 Creating Direct3D applications requires two distinct steps.
 
-Direct3D 
+Direct3D 실행프로그램을 생성하기 위해서는 두개의 별개의 과정이 필요하다.
 
-The first would be creating the source data in vertex data, as we've done in Tutorial 2. The second stage would be to create the shaders which would transform that data for rendering, which we showed in this tutorial.
+The first would be creating the source data in vertex data, as we've done in Tutorial 2.
+
+첫번째는 정점 데이터 안에 소스 데이터를 생성하는 것이다. 튜토리얼 2에서 이것을 수행했다.
+
+The second stage would be to create the shaders which would transform that data for rendering, which we showed in this tutorial.
+
+두번째 단계는 렌더링을 위해 데이터를 변환하는 셰이더를 생성하는 것이다. 이번 튜토리얼에서 이것을 수행했다.
