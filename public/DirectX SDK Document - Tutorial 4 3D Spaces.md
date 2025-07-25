@@ -293,13 +293,18 @@ Transformation is most commonly used to convert vertices from one space to anoth
 
 In 3D computer graphics, there are logically three such transformations in the pipeline: world, view, and projection transformation.
 
-3차원 컴퓨터 그래픽스에서, 
+3D 컴퓨터 그래픽스에서 파이프라인에는 논리적으로 세 가지 변환, 즉 월드 변환, 뷰 변환, 그리고 투영 변환이 있다.
 
 Individual transformation operations such as translation, rotation, and scaling are covered in the next tutorial.
 
+이동, 회전, 스케일링 같은 개개의 변환 연산은 다음 튜토리얼에서 다루도록 한다.
 ## World Transformation
 
-World transformation, as the name suggests, converts vertices from object space to world space. It usually consists of one or more scaling, rotation, and translation, based on the size, orientation, and position we would like to give to the object. Every object in the scene has its own world transformation matrix. This is because each object has its own size, orientation, and position.
+World transformation, as the name suggests, converts vertices from object space to world space.
+
+
+
+It usually consists of one or more scaling, rotation, and translation, based on the size, orientation, and position we would like to give to the object. Every object in the scene has its own world transformation matrix. This is because each object has its own size, orientation, and position.
 
 ## View Transformation
 
