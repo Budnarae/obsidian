@@ -128,9 +128,15 @@ Notice that the cube is centered on the origin.
 
 Object space, also called model space, refers to the space used by artists when they create the 3D models.
 
-모델 
+모델 공간이라고도 불리는 오브젝트 공간은 아티스트들이 3차원 모델을 만들때 사용하는 공간이다. 
 
-Usually, artists create models that are centered around the origin so that it is easier to perform transformations such as rotations to the models, as we will see when we discuss transformation. The eight vertices have the following coordinates:
+Usually, artists create models that are centered around the origin so that it is easier to perform transformations such as rotations to the models, as we will see when we discuss transformation.
+
+일반적으로, 아티스트들은 모델의 중앙이 원점에 위치하도록 한다. 왜냐하면 그렇게 하는 것이 모델에 회전과 같은 변환을 부여하기 더 쉽기 때문이다. 변환에 대해 논할 때 이것을 알아볼 것이다.
+
+The eight vertices have the following coordinates:
+
+(6면체를 구성하는) 8개의 정점들은 다음과 같다:
 
 ```
 
@@ -145,7 +151,15 @@ Usually, artists create models that are centered around the origin so that it is
 
 ```
 
-Because object space is what artists typically use when they design and create models, the models that are stored on disk are also in object space. An application can create a vertex buffer to represent such a model and initialize the buffer with the model data. Therefore, the vertices in the vertex buffer will usually be in object space as well. This also means that the vertex shader receives input vertex data in object space.
+Because object space is what artists typically use when they design and create models, the models that are stored on disk are also in object space.
+
+오브젝트 공간은 아티스트들이 모델을 디자인하고 생성하는데 사용하기 때문에, 디스크에 저장되어 있는 모델들 또한 오브젝트 공간에 있다.
+
+An application can create a vertex buffer to represent such a model and initialize the buffer with the model data.
+
+
+
+Therefore, the vertices in the vertex buffer will usually be in object space as well. This also means that the vertex shader receives input vertex data in object space.
 
 ## World Space
 
