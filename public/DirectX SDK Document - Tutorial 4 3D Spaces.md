@@ -302,13 +302,32 @@ Individual transformation operations such as translation, rotation, and scaling 
 
 World transformation, as the name suggests, converts vertices from object space to world space.
 
-월드 변환은 그 이름에서 알 수 있듯이, 정점을 오브젝트 공간에서 월드 공간으로 전환하는 것이다
+월드 변환은 그 이름에서 알 수 있듯이, 정점을 오브젝트 공간에서 월드 공간으로 전환하는 것이다.
 
-It usually consists of one or more scaling, rotation, and translation, based on the size, orientation, and position we would like to give to the object. Every object in the scene has its own world transformation matrix. This is because each object has its own size, orientation, and position.
+It usually consists of one or more scaling, rotation, and translation, based on the size, orientation, and position we would like to give to the object.
 
+월드 변환은 보통 하나 혹은 그 이상의 스케일링, 회전, 이동으로 구성되어 있으며 각 동작은 우리가 물체에 부여하고자 하는 크기, 방향, 위치와 연관되어 있다.
+
+Every object in the scene has its own world transformation matrix.
+
+장면의 모든 물체는 각기 고유의 월드 변환 행렬을 가진다.
+
+This is because each object has its own size, orientation, and position.
+
+왜냐하면 각 오브젝트는 고유의 크기, 방향, 위치를 가지기 때문이다.
 ## View Transformation
 
-After vertices are converted to world space, view transformation converts those vertices from world space to view space. Recall from earlier discussion that view space is what the world appears from the viewer's (or camera's) perspective. In view space, the viewer is located at origin looking out along the positive Z axis.
+After vertices are converted to world space, view transformation converts those vertices from world space to view space.
+
+정점들이 월드 공간으로 변환된 후, 뷰 변환이 정점들을 월드 공간에서 뷰 공간으로 이동시킨다.
+
+Recall from earlier discussion that view space is what the world appears from the viewer's (or camera's) perspective.
+
+앞서 논의한 바와 같이, 뷰 공간은 관찰자(또는 카메라)의 관점에서 세계가 보이는 공간이다.
+
+In view space, the viewer is located at origin looking out along the positive Z axis.
+
+뷰 공간에서, 관찰자는 원점에 위치해 있으며 
 
 It is worth noting that although view space is the world from the viewer's frame of reference, view transformation matrix is applied to vertices, not the viewer. Therefore, the view matrix must perform the opposite transformation that we apply to our viewer or camera. For example, if we want to move the camera 5 units towards the -Z direction, we would need to compute a view matrix that translates vertices for 5 units along the +Z direction. Although the camera has moved backward, the vertices, from the camera's point of view, have moved forward. In XNA Math a convenient API call **XMMatrixLookAtLH()** is often used to compute a view matrix. We would simply need to tell it where the viewer is, where it's looking at, and the direction representing the viewer's top, also called the up-vector, to obtain a corresponding view matrix.
 
