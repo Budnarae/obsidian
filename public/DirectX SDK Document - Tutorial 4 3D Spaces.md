@@ -40,9 +40,25 @@ In the previous tutorial, the vertices of the triangle were placed strategically
 
 However, this will not always be the case. Thus, we need a system to denote objects in 3D space and a system to display them.
 
-아지만
+그러나, 이것이 항상 유효하지는 않다. 따라서, 3D 공간에서 객체들을 나타내는 시스템과 그것들을 표시하는 시스템이 필요하다.
 
-In the real world, objects exist in 3D space. This means that to place an object in a particular position in the world, we would need to use a coordinate system and define three coordinates that correspond to the position. In computer graphics, 3D spaces are most commonly in Cartesian coordinate system. In this coordinate system, three axes, X, Y, and Z, perpendicular to each other, dictate the coordinate that each point in the space has. This coordinate system is further divided into left-handed and right-handed systems. In a left-handed system, when X axis points to the right and Y axis points to up, Z axis points forward. In a right-handed system, with the same X and Y axes, Z axis points backward.
+In the real world, objects exist in 3D space.
+
+현실세계에서 물체는 3차원 공간에 존재한다.
+
+This means that to place an object in a particular position in the world, we would need to use a coordinate system and define three coordinates that correspond to the position.
+
+이것은 물체를 세계의 특정 좌표에 배치할 때, 좌표계를 사용할 필요가 있으며 위치에 대응되는 3차원 좌표가 정의되어야 함을 의미한다.
+
+In computer graphics, 3D spaces are most commonly in Cartesian coordinate system.
+
+컴퓨터 그래픽스에서, 3차원 공간은 보통 카르테시안 좌표계이다.
+
+In this coordinate system, three axes, X, Y, and Z, perpendicular to each other, dictate the coordinate that each point in the space has.
+
+이 좌표계에서, 
+
+This coordinate system is further divided into left-handed and right-handed systems. In a left-handed system, when X axis points to the right and Y axis points to up, Z axis points forward. In a right-handed system, with the same X and Y axes, Z axis points backward.
 
 **Figure 1.  Left-handed versus right-handed coordinate systems**
 
