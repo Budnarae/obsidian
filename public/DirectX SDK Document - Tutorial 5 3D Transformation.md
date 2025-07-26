@@ -196,20 +196,36 @@ p  0  0  0
 
 where p, q, and r are the scaling factor along the X, Y, and Z direction, respectively.
 
-
+p, q, r은 각각 X, Y, Z 방향에 대응되는 배율 인자이다.
 
 The figure below shows the effect of scaling by 2 along the X axis and scaling by 0.5 along the Y axis.
 
+아래 보기는 X 방향으로 2배, Y 방향으로 0.5배 배율 변환을 실행한 예시이다.
+
 **Figure 4.  The effect of Scaling**
+
+**보기 4. 배율의 효과**
 
 [[55969b12301be3d937029fe63e4ad0eb_MD5.jpeg|Open: Pasted image 20250726152538.png]]
 ![[55969b12301be3d937029fe63e4ad0eb_MD5.jpeg]]
 
 # Multiple Transformations
 
-To apply multiple transformations to a vector, we can simply multiply the vector by the first transformation matrix, then multiply the resulting vector by the second transformation matrix, and so on. Because vector and matrix multiplication is associative, we can also multiply all of the matrices first, then multiply the vector by the product matrix and obtain an identical result. The figure below shows how the cube would end up if we combine a rotation and a translation transformation together.
+To apply multiple transformations to a vector, we can simply multiply the vector by the first transformation matrix, then multiply the resulting vector by the second transformation matrix, and so on.
+
+벡터에 여러 변환을 적용하려면 벡터에 첫 번째 변환 행렬을 곱한 다음 결과 벡터에 두 번째 변환 행렬을 곱하는 식으로 하면 된다.
+
+Because vector and matrix multiplication is associative, we can also multiply all of the matrices first, then multiply the vector by the product matrix and obtain an identical result.
+
+벡터와 행렬 곱셈은 결합 법칙이 성립하므로로 모든 행렬을 먼저 곱한 다음 벡터에 곱셈 행렬을 곱하여 동일한 결과를 얻을 수도 있다.
+
+The figure below shows how the cube would end up if we combine a rotation and a translation transformation together.
+
+아래 그림은 회전과 이동 변환을 함께 결합하면 큐브가 어떻게 완성되는지 보여준다.
 
 **Figure 5.  The effect of rotation and translation**
+
+**보기 5. 회전과 이동의 효과**
 
 [[d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg|Open: Pasted image 20250726152557.png]]
 ![[d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg]]
