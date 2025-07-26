@@ -811,9 +811,19 @@ These three matrices will store the transformation to be used when we render.
 
 Before rendering, we copy the values of these matrices to the shader constant buffer.
 
-렌더링 전에, 이 행렬들의 값들을 셰이더의 상수 
+렌더링 전에, 이 행렬들의 값들을 셰이더의 상수 버퍼에 복사할 것이다.
 
-Then, when we initiate the rendering by calling **Draw()**, our vertex shader reads the matrices stored in the constant buffer. In addition to the matrices, we also need an ID3D11Buffer object that represents the constant buffer. Therefore, our global variables will have the following addition:
+Then, when we initiate the rendering by calling **Draw()**, our vertex shader reads the matrices stored in the constant buffer.
+
+그런 후, **Draw()**를 호출하여 렌더링을 시작할 때, 정점 셰이더는 상수 버퍼에 있는 행렬들을 읽을 것이다.
+
+In addition to the matrices, we also need an ID3D11Buffer object that represents the constant buffer.
+
+행렬에 더하여, 우리는 상수 버퍼를 나타내는 `ID3D11Buffer` 객체가 필요하다.
+
+Therefore, our global variables will have the following addition:
+
+그러므로, 전역 변수들은 다음과 같다:
 
 ```cpp
 
@@ -825,6 +835,8 @@ XMMATRIX g_Projection;
 ```
 
 To create the ID3D11Buffer object, we use **ID3D11Device::CreateBuffer()** and specify D3D11_BIND_CONSTANT_BUFFER.
+
+`ID3D11Bufffer` 객체를 생성하기 위하여, `ID3D11Device::CreateBuffer()`를 사용하고 `D3D11_BIND_CONSTANT_BUFFER`를 정의할 것이다.
 
 ```cpp
 
@@ -839,7 +851,19 @@ if( FAILED(g_pd3dDevice->CreateBuffer( &bd, NULL, &g_pConstantBuffer ) ) )
 
 ```
 
-The next thing that we need to do is come up with three matrices that we will use to do the transformation. We want the triangle to be sitting on origin, parallel to the XY plane. This is exactly how it is stored in the vertex buffer in object space. Therefore, the world transformation needs to do nothing, and we initialize the world matrix to an identity matrix. We would like to set up our camera so that it is situated at [0 1 -5], looking at the point [0 1 0]. We can call **XMMatrixLookAtLH()** to conveniently compute a view matrix for us using the up vector [0 1 0] since we would like the +Y direction to always stay at top. Finally, to come up with a projection matrix, we call **XMMatrixPerspectiveFovLH()**, with a 90 degree vertical field of view (pi/2), an aspect ratio of 640/480 which is from our back buffer size, and near and far Z at 0.1 and 110, respectively. This means that anything closer than 0.1 or further than 110 will not be visible on the screen. These three matrices are stored in the global variables g_World, g_View, and g_Projection.
+The next thing that we need to do is come up with three matrices that we will use to do the transformation.
+
+다음으로 해야 할 일은 변환을 수행하는 데 사용할 세 개의 행렬을 만드는 것이다.
+
+We want the triangle to be sitting on origin, parallel to the XY plane.
+
+삼각형이 원점에 XY 평면과 평행하게 놓이기를 원한다.
+
+This is exactly how it is stored in the vertex buffer in object space.
+
+
+
+Therefore, the world transformation needs to do nothing, and we initialize the world matrix to an identity matrix. We would like to set up our camera so that it is situated at [0 1 -5], looking at the point [0 1 0]. We can call **XMMatrixLookAtLH()** to conveniently compute a view matrix for us using the up vector [0 1 0] since we would like the +Y direction to always stay at top. Finally, to come up with a projection matrix, we call **XMMatrixPerspectiveFovLH()**, with a 90 degree vertical field of view (pi/2), an aspect ratio of 640/480 which is from our back buffer size, and near and far Z at 0.1 and 110, respectively. This means that anything closer than 0.1 or further than 110 will not be visible on the screen. These three matrices are stored in the global variables g_World, g_View, and g_Projection.
 
 ## Updating Constant Buffers
 
