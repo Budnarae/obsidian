@@ -162,21 +162,43 @@ sinΐ  0   cosΐ  0
 
 Figure 6 shows the effect of rotating a cube centered at origin for 45 degrees about the Y axis.
 
+보기 6은 Y축을 따라서 원점 중앙에 위치한 큐브를 45도 회전시킨 효과를 보여준다.
+
 **Figure 3.  The effect of rotation about the Y axis**
+
+**보기 3. Y 축을 따라 회전한 효과과**
 
 [[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg|Open: Pasted image 20250726152515.png]]
 ![[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg]]
 
 # Scaling
 
-Scaling refers to enlarging or shrinking the size of vector components along axis directions. For example, a vector can be scaled up along all directions or scaled down along the X axis only. To scale, we usually apply the scaling matrix below:
+Scaling refers to enlarging or shrinking the size of vector components along axis directions.
 
-    p  0  0  0
-    0  q  0  0
-    0  0  r  0
-    0  0  0  1
+배율은 축의 방향을 따라서 벡터 구성요소의 크기를 키우거나 줄이는 것을 말한다.
 
-where p, q, and r are the scaling factor along the X, Y, and Z direction, respectively. The figure below shows the effect of scaling by 2 along the X axis and scaling by 0.5 along the Y axis.
+For example, a vector can be scaled up along all directions or scaled down along the X axis only.
+
+예를 들어, 벡터는 모든 방향을 따라서 확대될 수도 있고 X축 방향으로만 축소될 수도 있다.
+
+To scale, we usually apply the scaling matrix below:
+
+배율을 위해서, 보통 아래와 같은 꼴의 행렬을 사용한다:
+
+```text
+
+p  0  0  0
+0  q  0  0
+0  0  r  0
+0  0  0  1
+
+```
+
+where p, q, and r are the scaling factor along the X, Y, and Z direction, respectively.
+
+
+
+The figure below shows the effect of scaling by 2 along the X axis and scaling by 0.5 along the Y axis.
 
 **Figure 4.  The effect of Scaling**
 
