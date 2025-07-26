@@ -400,11 +400,27 @@ Without it, the smaller orbiting cube would still be drawn on top of the larger 
 
 The depth buffer allows Direct3D to keep track of the depth of every pixel drawn to the screen.
 
+깊이 버퍼를 사용하면 Direct3D가 화면에 그려지는 모든 픽셀의 깊이를 추적할 수 있다.
 
+The default behavior of the depth buffer in Direct3D 11 is to check every pixel being drawn to the screen against the value stored in the depth buffer for that screen-space pixel.
 
-The default behavior of the depth buffer in Direct3D 11 is to check every pixel being drawn to the screen against the value stored in the depth buffer for that screen-space pixel. If the depth of the pixel being rendered is less than or equal to the value already in the depth buffer, the pixel is drawn and the value in the depth buffer is updated to the depth of the newly drawn pixel. On the other hand, if the pixel being draw has a depth greater than the value already in the depth buffer, the pixel is discarded and the depth value in the depth buffer remains unchanged.
+Direct3D 11에서 뎁스 버퍼의 기본 동작은 화면에 그려지는 모든 픽셀을 해당 화면 공간 픽셀에 대해 뎁스 버퍼에 저장된 값과 비교하여 확인하는 것이다.
 
-The following code in the sample creates a depth buffer (a DepthStencil texture). It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
+If the depth of the pixel being rendered is less than or equal to the value already in the depth buffer, the pixel is drawn and the value in the depth buffer is updated to the depth of the newly drawn pixel.
+
+렌더링되는 픽셀의 깊이가 이미 깊이 버퍼에 있는 값보다 작거나 같으면 픽셀이 그려지고 깊이 버퍼의 값이 새로 그려진 픽셀의 깊이로 업데이트된다.
+
+On the other hand, if the pixel being draw has a depth greater than the value already in the depth buffer, the pixel is discarded and the depth value in the depth buffer remains unchanged.
+
+반면에 그리려는 픽셀의 깊이가 이미 깊이 버퍼에 있는 값보다 큰 경우 픽셀은 삭제되고 깊이 버퍼의 깊이 값은 변경되지 않는다.
+
+The following code in the sample creates a depth buffer (a DepthStencil texture).
+
+샘플의 다음 코드는 깊이 버퍼(DepthStencil 텍스처)를 생성한다.
+
+It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
+
+It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
 
       
     // Create depth stencil texture
