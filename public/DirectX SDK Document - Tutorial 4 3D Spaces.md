@@ -792,11 +792,28 @@ In the vertex shader, each **mul()** applies one transformation to the input pos
 
 정점 셰이더에서, 각각의 **mul()**은 위치 정보에 하나의 변환을 적용한다.
 
-The world, view, and projection transformations are applied in that order sequentially. This is necessary because vector and matrix multiplication is not commutative.
+The world, view, and projection transformations are applied in that order sequentially.
 
+월드, 뷰, 투영 변환은 순차적으로 적용된다.
+
+This is necessary because vector and matrix multiplication is not commutative.
+
+이렇게 해야만 하는 이유는 벡터와 행렬 간의 곱셈은 교환법칙이 성립하지 않기 때문이다.
 ## Setting up the Matrices
 
-We have updated our vertex shader to transform using matrices, but we also need to define three matrices in our program. These three matrices will store the transformation to be used when we render. Before rendering, we copy the values of these matrices to the shader constant buffer. Then, when we initiate the rendering by calling **Draw()**, our vertex shader reads the matrices stored in the constant buffer. In addition to the matrices, we also need an ID3D11Buffer object that represents the constant buffer. Therefore, our global variables will have the following addition:
+We have updated our vertex shader to transform using matrices, but we also need to define three matrices in our program.
+
+셰이더를 행렬을 사용하도록 수정했으니, 프로그램에서 세 개의 행렬을 정의할 필요가 있다.
+
+These three matrices will store the transformation to be used when we render.
+
+세 개의 행렬은 렌더링할 때 사용할 변환을 저장한다.
+
+Before rendering, we copy the values of these matrices to the shader constant buffer.
+
+렌더링 전에, 이 행렬들의 값들을 셰이더의 상수 
+
+Then, when we initiate the rendering by calling **Draw()**, our vertex shader reads the matrices stored in the constant buffer. In addition to the matrices, we also need an ID3D11Buffer object that represents the constant buffer. Therefore, our global variables will have the following addition:
 
 ```cpp
 
