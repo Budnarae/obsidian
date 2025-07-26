@@ -9,9 +9,23 @@ tags:
 
 # Summary
 
-In the previous tutorial, we rendered a cube from model space to the screen. In this tutorial, we will extend the concept of transformations and demonstrate simple animation that can be achieved with these transformations.
+In the previous tutorial, we rendered a cube from model space to the screen.
 
-The outcome of this tutorial will be an object that orbits around another. It would be useful to demonstrate the transformations and how they can be combined to achieve the desired effect. Future tutorials will be building on this foundation as we introduce new concepts.
+이전 튜토리얼에서, 모델 공간의 큐브를 화면에 띄워보았다.
+
+In this tutorial, we will extend the concept of transformations and demonstrate simple animation that can be achieved with these transformations.
+
+이 튜토리얼에서, 변환의 컨셉을 확장하고 이러한 변환들을 통해 얻을 수 있는 간단한 애니메이션을 시연해볼 것이다.
+
+The outcome of this tutorial will be an object that orbits around another.
+
+이 튜토리얼의 결과는 다른 물체 주위를 도는 물체가 될 것이다.
+
+It would be useful to demonstrate the transformations and how they can be combined to achieve the desired effect.
+
+
+
+Future tutorials will be building on this foundation as we introduce new concepts.
 
 # Source
 
@@ -42,13 +56,15 @@ If we apply this to a cube object centered at origin, the result is that the box
 
 **Figure 1.  The effect of translation**
 
-![](d3d10_Tutorial05_Figure5_Translation.png)
+[[64db42eb4ec42b245b1a3dee65829b2a_MD5.jpeg|Open: Pasted image 20250726152423.png]]
+![[64db42eb4ec42b245b1a3dee65829b2a_MD5.jpeg]]
 
 In 3D, a space is typically defined by an origin and three unique axes from the origin: X, Y and Z. There are several spaces commonly used in computer graphics: object space, world space, view space, projection space, and screen space.
 
 **Figure 2.  A cube defined in object space**
 
-![](d3d10_Tutorial04_Figure3_CubeInObjectSpace.png)
+[[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg|Open: Pasted image 20250726152440.png]]
+![[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg]]
 
 # Rotation
 
@@ -63,7 +79,8 @@ Figure 6 shows the effect of rotating a cube centered at origin for 45 degrees a
 
 **Figure 3.  The effect of rotation about the Y axis**
 
-![](d3d10_Tutorial05_Figure6_Rotation.png)
+[[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg|Open: Pasted image 20250726152515.png]]
+![[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg]]
 
 # Scaling
 
@@ -78,7 +95,8 @@ where p, q, and r are the scaling factor along the X, Y, and Z direction, respec
 
 **Figure 4.  The effect of Scaling**
 
-![](d3d10_Tutorial05_Figure7_Scaling.png)
+[[55969b12301be3d937029fe63e4ad0eb_MD5.jpeg|Open: Pasted image 20250726152538.png]]
+![[55969b12301be3d937029fe63e4ad0eb_MD5.jpeg]]
 
 # Multiple Transformations
 
@@ -86,7 +104,8 @@ To apply multiple transformations to a vector, we can simply multiply the vector
 
 **Figure 5.  The effect of rotation and translation**
 
-![](d3d10_Tutorial05_Figure8_TwoTransformations.png)
+[[d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg|Open: Pasted image 20250726152557.png]]
+![[d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg]]
 
 # Creating the Orbit
 
