@@ -124,19 +124,41 @@ There are several spaces commonly used in computer graphics: object space, world
 
 **Figure 2.  A cube defined in object space**
 
-**보기 2. 오브젝트 **
+**보기 2. 오브젝트 공간에 정의된 큐브**
 
 [[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg|Open: Pasted image 20250726152440.png]]
 ![[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg]]
 
 # Rotation
 
-Rotation refers to rotating vertices about an axis going through the origin. Three such axes are the X, Y, and Z axes in the space. An example in 2D would be rotating the vector [1 0] 90 degrees counter-clockwise. The result from the rotation is the vector [0 1]. The matrix used for rotating ΐ degrees clockwise about the Y axis looks like this:
+Rotation refers to rotating vertices about an axis going through the origin.
 
-    cosΐ  0  -sinΐ   0
-     0    1     0    0
-    sinΐ  0   cosΐ  0
-     0    0     0    1
+회전 변환은 원점에서 뻗어나간 축을 기준으로 정점들을 회전시키는 것이다.
+
+Three such axes are the X, Y, and Z axes in the space.
+
+공간에는 X, Y, Z 세 개의 축이 있다.
+
+An example in 2D would be rotating the vector \[1 0] 90 degrees counter-clockwise.
+
+벡터 \[1, 0]을 시계 방향으로 90도 회전시키는 2차원 공간 예시를 들어보자.
+
+The result from the rotation is the vector \[0 1].
+
+회전의 결과는 벡터 \[0, 1]이다.
+
+The matrix used for rotating ΐ degrees clockwise about the Y axis looks like this:
+
+Y 축을 기준으로 ΐ도 만큼 시계 방향으로 회전시키는 행렬은 아래와 같다.
+
+```text
+
+cosΐ  0  -sinΐ   0
+ 0    1     0    0
+sinΐ  0   cosΐ  0
+ 0    0     0    1
+ 
+```
 
 Figure 6 shows the effect of rotating a cube centered at origin for 45 degrees about the Y axis.
 
