@@ -52,13 +52,32 @@ There are typically three types of primitive transformation that can be performe
 
 In addition to those, projection transformation is used to go from view space to projection space.
 
-이러한 변환들에 더하여, 
+이러한 변환들에 더하여, 뷰 공간에서 투영 공간으로 옮기는 투영 변환이 있다.
 
-The XNA Math library contains APIs that can conveniently construct a matrix for many purposes such as translation, rotation, scaling, world-to-view transformation, view-to-projection transformation, and so on. An application can then use these matrices to transform vertices in its scene. A basic understanding of matrix transformations is required. We will briefly look at some examples below.
+The XNA Math library contains APIs that can conveniently construct a matrix for many purposes such as translation, rotation, scaling, world-to-view transformation, view-to-projection transformation, and so on.
 
+XNA 수학 라이브러리는 이동, 회전, 배율, 월드-뷰 변환, 뷰-투영 변환 등 다양한 용도를 가진 행렬들을 편리하게 만들게 해주는 API를 포함한다.
+
+An application can then use these matrices to transform vertices in its scene.
+
+실행프로그램은 씬의 정점들을 변환하기 위해 이러한 행렬들을 사용한다.
+
+A basic understanding of matrix transformations is required.
+
+행렬 변환에 대한 기본적인 이해가 필요하다.
+
+We will briefly look at some examples below.
+
+간단히 몇가지 예제를 살펴보자.
 # Translation
 
-Translation refers to moving or displacing for a certain distance in space. In 3D, the matrix used for translation has the form
+Translation refers to moving or displacing for a certain distance in space.
+
+이동은 공간에서 일정 거리를 이동하거나 변위하는 것을 말한다.
+
+In 3D, the matrix used for translation has the form
+
+3차원에
 
     1  0  0  0
     0  1  0  0
