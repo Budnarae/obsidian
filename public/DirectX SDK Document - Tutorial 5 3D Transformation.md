@@ -289,9 +289,23 @@ The second cube will be orbiting around the first one.
 
 To demonstrate multiple transformations, a scaling factor, and its own axis spin will be added.
 
+여러 변환을 보여주기 위해 스케일링 계수와 자체 축 스핀이 추가된다.
 
+The formula used is shown right below the code (in comments).
 
-The formula used is shown right below the code (in comments). First the cube will be scale down to 30% size, and then it will be rotated along its spin axis (the Z axis in this case). To simulate the orbit, it will get translated away from the origin, and then rotated along the Y axis. The desired effect can be achieved by using four separate matrices with its individual transformation (mScale, mSpin, mTranslate, mOrbit), then multiplied together.
+사용된 방정식은 우측 하단의 아래 코드에 있다.
+
+First the cube will be scale down to 30% size, and then it will be rotated along its spin axis (the Z axis in this case).
+
+먼저 큐브를 30% 크기로 줄인다. 그런 후 스스로의 축(이 경우에는 Z축)을 따라 돌게 한다.
+
+To simulate the orbit, it will get translated away from the origin, and then rotated along the Y axis.
+
+궤도를 구현하기 위해서, 큐브는 원점으로부터 떨어진채 Y축을 따라 돌게 될 것이다.
+
+The desired effect can be achieved by using four separate matrices with its individual transformation (mScale, mSpin, mTranslate, mOrbit), then multiplied together.
+
+의도된 효과는 4개의 별도의 행렬(각각 mScale, mSpin, mTranslate, mOrbit에 대응하는 변환을 나타내는)
 
       
     // 2nd Cube:  Rotate around origin
