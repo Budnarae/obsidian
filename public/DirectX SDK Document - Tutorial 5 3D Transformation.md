@@ -166,7 +166,7 @@ Figure 6 shows the effect of rotating a cube centered at origin for 45 degrees a
 
 **Figure 3.  The effect of rotation about the Y axis**
 
-**보기 3. Y 축을 따라 회전한 효과과**
+**보기 3. Y 축을 따라 회전한 효과**
 
 [[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg|Open: Pasted image 20250726152515.png]]
 ![[34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg]]
@@ -232,7 +232,17 @@ The figure below shows how the cube would end up if we combine a rotation and a 
 
 # Creating the Orbit
 
-In this tutorial, we will be transforming two cubes. The first one will rotate in place, while the second one will rotate around the first, while spinning on its own axis. The two cubes will have its own world transformation matrix associated with it, and this matrix will be reapplied to it in every frame rendered.
+In this tutorial, we will be transforming two cubes.
+
+이번 튜토리얼에서, 두 개의 큐브에 변환을 적용할 것이다.
+
+The first one will rotate in place, while the second one will rotate around the first, while spinning on its own axis.
+
+첫번째 큐브는 제자리에서 회전하도록 할 것이며, 두번째 큐브는 자신의 축을 따라 자전하면서 첫번째 큐브 주위를 공전하도록 할 것이다.
+
+The two cubes will have its own world transformation matrix associated with it, and this matrix will be reapplied to it in every frame rendered.
+
+두 개의 큐브는 고유의 월드 변환 행렬을 가질 것이며, 이 행렬들은 모든 프레임마다 나
 
 There are functions within XNA Math that will assist in the creation of the rotation, translation, and scaling matrices.
 
