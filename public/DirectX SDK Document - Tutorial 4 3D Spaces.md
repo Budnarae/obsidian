@@ -750,11 +750,21 @@ The three variables that we will use are the world, view, and projection transfo
 
 Once we have declared the matrices that we will need, we update our vertex shader to transform the input position by using the matrices.
 
+이제 필요한 행렬들을 선언했으니, 정점 셰이더가 입력으로 받은 위치 정보를 행렬을 사용하여 변환하도록 수정해보자.
 
+A vector is transformed by multiplying the vector by a matrix.
 
-A vector is transformed by multiplying the vector by a matrix. In HLSL, this is done using the **mul()** intrinsic function. Our variable declaration and new vertex shader are shown below:
+벡터는 행렬을 곱함으로서 변환된다.
 
-```cpp
+In HLSL, this is done using the **mul()** intrinsic function.
+
+HLSL에서는 **mul()** 내재 함수를 사용하여 이 작업을 수행합니다.
+
+Our variable declaration and new vertex shader are shown below:
+
+이러한 사항들이 반영된 새로운 셰이더는 다음과 같다.
+
+```hlsl
 
 cbuffer ConstantBuffer : register( b0 )
 {
@@ -778,7 +788,11 @@ VS_OUTPUT VS( float4 Pos : POSITION, float4 Color : COLOR )
 
 ```
 
-In the vertex shader, each **mul()** applies one transformation to the input position. The world, view, and projection transformations are applied in that order sequentially. This is necessary because vector and matrix multiplication is not commutative.
+In the vertex shader, each **mul()** applies one transformation to the input position.
+
+정점 셰이더에서, 각각의 **mul()**은 위치 정보에 하나의 변환을 적용한다.
+
+The world, view, and projection transformations are applied in that order sequentially. This is necessary because vector and matrix multiplication is not commutative.
 
 ## Setting up the Matrices
 
