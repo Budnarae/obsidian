@@ -894,9 +894,15 @@ We have the matrices, and now we must write them to the constant buffer when ren
 
 To update the buffer, we can use the **ID3D11DeviceContext::UpdateSubresource()** API and pass it a pointer to the matrices stored in the same order as the shader's constant buffer.
 
-정점을 갱신하기 위해, **ID3D11DeviceContext::UpdateSubresource()** API를 사용한다. 
+버퍼를 업데이트하려면 **ID3D11DeviceContext::UpdateSubresource()** API를 사용하여 셰이더의 상수 버퍼와 동일한 순서로 저장된 행렬에 대한 포인터를 전달하면 된다.
 
-To help do this, we will create a structure that has the same layout as the constant buffer in the shader. Also, because matrices are arranged differently in memory in C++ and HLSL, we must transpose the matrices before updating them.
+To help do this, we will create a structure that has the same layout as the constant buffer in the shader.
+
+이를 위해서, 셰이더의 상수 버퍼와 똑같은 레이아웃을 가진 구조체를 생성할 것이다.
+
+Also, because matrices are arranged differently in memory in C++ and HLSL, we must transpose the matrices before updating them.
+
+또한, C++과 HLSL 간 행렬이 메모리에 정렬되어 있는 방식이 다르기 때문에, 행렬을 전치시켜서 전달해야 한다(한쪽은 행 벡터 한쪽은 열 벡터로 사용하는 듯).
 
 ```cpp
 
