@@ -697,9 +697,11 @@ if( FAILED( g_pd3dDevice->CreateBuffer( &bd, &InitData, &g_pIndexBuffer ) ) )
 
 Once we created this buffer, we will need to set it so that Direct3D knows to refer to this index buffer when generating the triangles.
 
-이 버퍼를 생성한 후에는 Direct3D가 트라이앵글을 생성할 때 이 인덱스 버퍼를 참조하도록 설정해야 합니다.
+이 버퍼를 생성한 후에는 Direct3D가 삼각형을 생성할 때 이 인덱스 버퍼를 참조하도록 설정해야 한다.
 
 We specify the pointer to the buffer, the format, and the offset in the buffer to start referencing from.
+
+버퍼를 가리키는 포인터, 형식, 버퍼의 어느 지점으로부터 참조를 시작할지 지정하는 오프셋이 필요하다.
 
 ```cpp
 
@@ -710,7 +712,23 @@ g_pImmediateContext->IASetIndexBuffer( g_pIndexBuffer, DXGI_FORMAT_R16_UINT, 0 )
 
 ## Modifying the Vertex Shader
 
-In our vertex shader from the previous tutorial, we take the input vertex position and output the same position without any modification. We can do this because the input vertex position is already defined in projection space. Now, because the input vertex position is defined in object space, we must transform it before outputting from the vertex shader. We do this with three steps: transform from object to world space, transform from world to view space, and transform from view to projection space. The first thing that we need to do is declare three constant buffer variables. Constant buffers are used to store data that the application needs to pass to shaders. Before rendering, the application usually writes important data to constant buffers, and then during rendering the data can be read from within the shaders. In an FX file, constant buffer variables are declared like global variables in a C++ struct. The three variables that we will use are the world, view, and projection transformation matrices of the HLSL type "matrix."
+In our vertex shader from the previous tutorial, we take the input vertex position and output the same position without any modification.
+
+이전 튜토리얼에서 사용했던 정점 셰이더에서, 정점의 위치를 입력받고 어떠한 수정 없이 동일한 위치를 출력했다.
+
+We can do this because the input vertex position is already defined in projection space.
+
+그렇게 할 수 있었던 이유는 입력 정점 위치가 이미 투영 공간에 정의되어 있었기 때문이다.
+
+Now, because the input vertex position is defined in object space, we must transform it before outputting from the vertex shader.
+
+이제는 입력 정점의 위치가 오브젝트 좌표계에 정의되어 있으므로, 정점 셰이더를 통해 변환하여 출력해야 한다.
+
+We do this with three steps: transform from object to world space, transform from world to view space, and transform from view to projection space.
+
+이를 위해 세가지 단계를 거친다: 오브젝트 공간에서 월드 공간으로의 변환, 월드 공간에서 뷰 공간으로의 변환, 뷰 공간에서 투영 공간으로으
+
+The first thing that we need to do is declare three constant buffer variables. Constant buffers are used to store data that the application needs to pass to shaders. Before rendering, the application usually writes important data to constant buffers, and then during rendering the data can be read from within the shaders. In an FX file, constant buffer variables are declared like global variables in a C++ struct. The three variables that we will use are the world, view, and projection transformation matrices of the HLSL type "matrix."
 
 Once we have declared the matrices that we will need, we update our vertex shader to transform the input position by using the matrices. A vector is transformed by multiplying the vector by a matrix. In HLSL, this is done using the **mul()** intrinsic function. Our variable declaration and new vertex shader are shown below:
 
