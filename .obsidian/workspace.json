@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
-                "mode": "preview",
+                "file": "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 4 3D Spaces"
+              "title": "DirectX SDK Document - Tutorial 5 3D Transformation"
             }
           }
         ]
@@ -208,8 +208,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
+    "재료/이미지/4e6681295c8988ce3e1188ea76afffae_MD5.jpeg",
+    "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
+    "index.md",
+    "Pasted image 20250726152301.png",
     "Pasted image 20250725144227.png",
     "재료/이미지/c2f10f53be9a4768502d0236ccadc174_MD5.jpeg",
     "Pasted image 20250725144158.png",
@@ -218,8 +221,6 @@
     "재료/이미지/66d8eba891f570497fd8a3ef5fb549d1_MD5.jpeg",
     "Pasted image 20250725144101.png",
     "재료/이미지/96406e8cfcd2a4132eec85735dcf0781_MD5.jpeg",
-    "Pasted image 20250725144023.png",
-    "재료/이미지/6ec1b25d24b1cd09ec81b1b0af4bf7ea_MD5.jpeg",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "d3d11_Tutorial_03.htm.md",
@@ -244,7 +245,6 @@
     "ingredient/ai role/Remove URLs.md",
     "ingredient/ai role/Make shorter.md",
     "ingredient/ai role/Make longer.md",
-    "ingredient/ai role/Generate table of contents.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
