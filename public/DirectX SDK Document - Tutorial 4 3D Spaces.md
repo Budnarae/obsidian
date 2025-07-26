@@ -861,9 +861,25 @@ We want the triangle to be sitting on origin, parallel to the XY plane.
 
 This is exactly how it is stored in the vertex buffer in object space.
 
+이것이 정확히 오브젝트 공간의 삼각형이 정점 버퍼에 저장되는 방식이다.
 
+Therefore, the world transformation needs to do nothing, and we initialize the world matrix to an identity matrix.
 
-Therefore, the world transformation needs to do nothing, and we initialize the world matrix to an identity matrix. We would like to set up our camera so that it is situated at [0 1 -5], looking at the point [0 1 0]. We can call **XMMatrixLookAtLH()** to conveniently compute a view matrix for us using the up vector [0 1 0] since we would like the +Y direction to always stay at top. Finally, to come up with a projection matrix, we call **XMMatrixPerspectiveFovLH()**, with a 90 degree vertical field of view (pi/2), an aspect ratio of 640/480 which is from our back buffer size, and near and far Z at 0.1 and 110, respectively. This means that anything closer than 0.1 or further than 110 will not be visible on the screen. These three matrices are stored in the global variables g_World, g_View, and g_Projection.
+그러므로, 월드 변환은 아무것도 할 필요가 없으며, 우리는 월드 행렬을 항등 행렬로 초기화할 것이다.
+
+We would like to set up our camera so that it is situated at \[0 1 -5], looking at the point \[0 1 0].
+
+카메라가 \[0, 1, 5]에 놓여져 있고, \[0, 1, 0] 지점을 바라보고 있다고 가정하자.
+
+We can call **XMMatrixLookAtLH()** to conveniently compute a view matrix for us using the up vector \[0 1 0] since we would like the +Y direction to always stay at top.
+
+**XMMatrixLookAtLH()**를 호출하여 편리하게 뷰 행렬을 계산할 수 있다. 이때 업 벡터는 \[0, 1, 0]을 사용할 것이다. +Y 축 방향이 항상 위를 가리킨다고 가정할 것이기 때문이다.
+
+Finally, to come up with a projection matrix, we call **XMMatrixPerspectiveFovLH()**, with a 90 degree vertical field of view (pi/2), an aspect ratio of 640/480 which is from our back buffer size, and near and far Z at 0.1 and 110, respectively.
+
+마지막으로 투영 행렬을 만들기 위해 **XMMatrixPerspectiveFovLH()**를 호출하여 90도 수직 시야(pi/2), 화면비는 백 버퍼 크기에서 가져온 640/480, 근거리 및 원거리 Z는 각각 0.1과 110으로 설정합니다.
+
+This means that anything closer than 0.1 or further than 110 will not be visible on the screen. These three matrices are stored in the global variables g_World, g_View, and g_Projection.
 
 ## Updating Constant Buffers
 
