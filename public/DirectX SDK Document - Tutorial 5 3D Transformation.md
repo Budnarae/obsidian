@@ -262,9 +262,19 @@ The first cube will be spinning in place and act as the center for the orbit.
 
 The cube has a rotation along the Y axis applied to the associated world matrix.
 
-큐브는 월드 ㅈ
+큐브는 연관된 월드 매트릭스에 Y축을 따라 회전이 적용된다.
 
-This is done by calling the **XMMatrixRotationY** function shown in the following code. The cube is rotated by a set amount each frame. Since the cubes are suppose to continuously rotate, the value which the rotation matrix is based on gets incremented with every frame.
+This is done by calling the **XMMatrixRotationY** function shown in the following code.
+
+이는 다음 코드와 같이 **XMMatrixRotationY** 함수를 호출함으로서 구현할 수 있다.
+
+The cube is rotated by a set amount each frame.
+
+큐브는 매 프레임마다 설정된 양만큼 회전한다.
+
+Since the cubes are suppose to continuously rotate, the value which the rotation matrix is based on gets incremented with every frame.
+
+
 
       
     // 1st Cube: Rotate around the origin
