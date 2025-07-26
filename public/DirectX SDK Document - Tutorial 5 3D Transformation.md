@@ -420,40 +420,51 @@ The following code in the sample creates a depth buffer (a DepthStencil texture)
 
 It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
 
-It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
+또한 Direct3D 11이 뎁스 스텐실 텍스처로 사용할 수 있도록 깊이 버퍼의 뎁스 스텐실 뷰를 생성한다.
 
-      
-    // Create depth stencil texture
-    D3D11_TEXTURE2D_DESC descDepth;
-    ZeroMemory( &descDepth, sizeof(descDepth) );
-    descDepth.Width = width;
-    descDepth.Height = height;
-    descDepth.MipLevels = 1;
-    descDepth.ArraySize = 1;
-    descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
-    descDepth.SampleDesc.Count = 1;
-    descDepth.SampleDesc.Quality = 0;
-    descDepth.Usage = D3D11_USAGE_DEFAULT;
-    descDepth.BindFlags = D3D11_BIND_DEPTH_STENCIL;
-    descDepth.CPUAccessFlags = 0;
-    descDepth.MiscFlags = 0;
-    hr = g_pd3dDevice->CreateTexture2D( &descDepth, NULL, &g_pDepthStencil );
-    if( FAILED(hr) )
-        return hr;
+```cpp
 
-    // Create the depth stencil view
-    D3D11_DEPTH_STENCIL_VIEW_DESC descDSV;
-    ZeroMemory( &descDSV, sizeof(descDSV) );
-    descDSV.Format = descDepth.Format;
-    descDSV.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D;
-    descDSV.Texture2D.MipSlice = 0;
-    hr = g_pd3dDevice->CreateDepthStencilView( g_pDepthStencil, &descDSV, &g_pDepthStencilView );
-    if( FAILED(hr) )
-        return hr;
+// Create depth stencil texture
+D3D11_TEXTURE2D_DESC descDepth;
+ZeroMemory( &descDepth, sizeof(descDepth) );
+descDepth.Width = width;
+descDepth.Height = height;
+descDepth.MipLevels = 1;
+descDepth.ArraySize = 1;
+descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+descDepth.SampleDesc.Count = 1;
+descDepth.SampleDesc.Quality = 0;
+descDepth.Usage = D3D11_USAGE_DEFAULT;
+descDepth.BindFlags = D3D11_BIND_DEPTH_STENCIL;
+descDepth.CPUAccessFlags = 0;
+descDepth.MiscFlags = 0;
+hr = g_pd3dDevice->CreateTexture2D( &descDepth, NULL, &g_pDepthStencil );
+if( FAILED(hr) )
+	return hr;
 
-In order to use this newly created depth stencil buffer, the tutorial must bind it to the device. This is done by passing the depth stencil view to the third parameter of the **OMSetRenderTargets** function.
+// Create the depth stencil view
+D3D11_DEPTH_STENCIL_VIEW_DESC descDSV;
+ZeroMemory( &descDSV, sizeof(descDSV) );
+descDSV.Format = descDepth.Format;
+descDSV.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D;
+descDSV.Texture2D.MipSlice = 0;
+hr = g_pd3dDevice->CreateDepthStencilView( g_pDepthStencil, &descDSV, &g_pDepthStencilView );
+if( FAILED(hr) )
+	return hr;
+	
+```
 
-    g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, g_pDepthStencilView );
+In order to use this newly created depth stencil buffer, the tutorial must bind it to the device.
+
+새로 만들어진 깊이 스텐실 버퍼를 사용하기 위해선 `device`에 바인딩해야 한다.
+
+This is done by passing the depth stencil view to the third parameter of the **OMSetRenderTargets** function.
+
+뎁스 스텐실 뷰를 **OMSetRenderTargets** 함수의 세번째 인자로 넘김으로서 이를 충족할 수 있다.
+
+```
+g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, g_pDepthStencilView );
+```
 
 As with the render target, we must also clear the depth buffer before rendering. This ensures that depth values from previous frames do not incorrectly discard pixels in the current frame. In the code below the tutorial is actually setting the depth buffer to be the maximum amount (1.0).
 
