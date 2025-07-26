@@ -305,22 +305,45 @@ To simulate the orbit, it will get translated away from the origin, and then rot
 
 The desired effect can be achieved by using four separate matrices with its individual transformation (mScale, mSpin, mTranslate, mOrbit), then multiplied together.
 
-의도된 효과는 4개의 별도의 행렬(각각 mScale, mSpin, mTranslate, mOrbit에 대응하는 변환을 나타내는)
+의도된 효과는 4개의 별도의 행렬(각각 mScale, mSpin, mTranslate, mOrbit에 대응하는 변환을 나타내는)을 사용하고, 곱함으로서 얻을 수 있다.
 
-      
-    // 2nd Cube:  Rotate around origin
-    XMMATRIX mSpin = XMMatrixRotationZ( -t );
-    XMMATRIX mOrbit = XMMatrixRotationY( -t * 2.0f );
-    XMMATRIX mTranslate = XMMatrixTranslation( -4.0f, 0.0f, 0.0f );
-    XMMATRIX mScale = XMMatrixScaling( 0.3f, 0.3f, 0.3f );
-    g_World2 = mScale * mSpin * mTranslate * mOrbit;
+```cpp
+  
+// 2nd Cube:  Rotate around origin
+XMMATRIX mSpin = XMMatrixRotationZ( -t );
+XMMATRIX mOrbit = XMMatrixRotationY( -t * 2.0f );
+XMMATRIX mTranslate = XMMatrixTranslation( -4.0f, 0.0f, 0.0f );
+XMMATRIX mScale = XMMatrixScaling( 0.3f, 0.3f, 0.3f );
+g_World2 = mScale * mSpin * mTranslate * mOrbit;
 
-An important point to note is that these operations are not commutative. The order in which the transformations are applied matter. Experiment with the order of transformation and observe the results.
+```
 
-Since all the transformation functions will create a new matrix from the parameters, the amount at which they rotate has to be incremented. This is done by updating the "time" variable.
+An important point to note is that these operations are not commutative.
 
-    // Update our time
-    t += XM_PI * 0.0125f;
+위 연산 간에는 교환 법칙이 성립하지 않는다는 사실을 기억해야한다.
+
+The order in which the transformations are applied matter.
+
+변환이 적용되는 순서는 중요하다.
+
+Experiment with the order of transformation and observe the results.
+
+변환 순서를 실험하고 결과를 관찰해보라.
+
+Since all the transformation functions will create a new matrix from the parameters, the amount at which they rotate has to be incremented.
+
+모든 변환 함수는 매개변수에서 새로운 행렬을 생성하기 때문에 회전하는 양을 증가시켜야 한다.
+
+This is done by updating the "time" variable.
+
+"time" 변수를 갱신시킴으로서 이를 충족할 수 있다.
+
+```cpp
+
+// Update our time
+t += XM_PI * 0.0125f;
+
+```
 
 Before the rendering calls are made, the constant buffer must be updated for the shaders. Note that the world matrix is unique to each cube, and thus, changes for every object that gets passed into it.
 
