@@ -877,13 +877,26 @@ We can call **XMMatrixLookAtLH()** to conveniently compute a view matrix for us 
 
 Finally, to come up with a projection matrix, we call **XMMatrixPerspectiveFovLH()**, with a 90 degree vertical field of view (pi/2), an aspect ratio of 640/480 which is from our back buffer size, and near and far Z at 0.1 and 110, respectively.
 
-마지막으로 투영 행렬을 만들기 위해 **XMMatrixPerspectiveFovLH()**를 호출하여 90도 수직 시야(pi/2), 화면비는 백 버퍼 크기에서 가져온 640/480, 근거리 및 원거리 Z는 각각 0.1과 110으로 설정합니다.
+마지막으로 투영 행렬을 만들기 위해 **XMMatrixPerspectiveFovLH()**를 호출하여 90도 수직 시야(pi/2), 화면비는 백 버퍼 크기에서 가져온 640/480, 근거리 및 원거리 Z는 각각 0.1과 110으로 설정한다.
 
-This means that anything closer than 0.1 or further than 110 will not be visible on the screen. These three matrices are stored in the global variables g_World, g_View, and g_Projection.
+This means that anything closer than 0.1 or further than 110 will not be visible on the screen.
 
+이는 \[0.1, 110] 범위에 포함되지 않은 물체는 화면에 그려지지 않을 것임을 의미한다.
+
+These three matrices are stored in the global variables g_World, g_View, and g_Projection.
+
+새 개의 행렬은 전역 변수 `g_World, g_View, g_Projection`에 저장된다.
 ## Updating Constant Buffers
 
-We have the matrices, and now we must write them to the constant buffer when rendering so that the GPU can read them. To update the buffer, we can use the **ID3D11DeviceContext::UpdateSubresource()** API and pass it a pointer to the matrices stored in the same order as the shader's constant buffer. To help do this, we will create a structure that has the same layout as the constant buffer in the shader. Also, because matrices are arranged differently in memory in C++ and HLSL, we must transpose the matrices before updating them.
+We have the matrices, and now we must write them to the constant buffer when rendering so that the GPU can read them.
+
+행렬들을 만들었으니, 이제 이것들을 상수 버퍼에 저장하여 렌더링할 때 GPU가 이것들을 읽을 수 있게 해야한다.
+
+To update the buffer, we can use the **ID3D11DeviceContext::UpdateSubresource()** API and pass it a pointer to the matrices stored in the same order as the shader's constant buffer.
+
+정점을 갱신하기 위해, **ID3D11DeviceContext::UpdateSubresource()** API를 사용한다. 
+
+To help do this, we will create a structure that has the same layout as the constant buffer in the shader. Also, because matrices are arranged differently in memory in C++ and HLSL, we must transpose the matrices before updating them.
 
 ```cpp
 
