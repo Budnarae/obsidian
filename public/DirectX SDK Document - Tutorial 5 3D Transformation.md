@@ -462,13 +462,28 @@ This is done by passing the depth stencil view to the third parameter of the **O
 
 뎁스 스텐실 뷰를 **OMSetRenderTargets** 함수의 세번째 인자로 넘김으로서 이를 충족할 수 있다.
 
-```
+```cpp
+
 g_pImmediateContext->OMSetRenderTargets( 1, &g_pRenderTargetView, g_pDepthStencilView );
+
 ```
 
-As with the render target, we must also clear the depth buffer before rendering. This ensures that depth values from previous frames do not incorrectly discard pixels in the current frame. In the code below the tutorial is actually setting the depth buffer to be the maximum amount (1.0).
+As with the render target, we must also clear the depth buffer before rendering.
 
-      
-    //
-    // Clear the depth buffer to 1.0 (max depth)
-    //
+렌더 타깃이 그러했듯이, 깊이 버퍼를 사용하기 전에도 깔끔히 정리해야 한다.
+
+This ensures that depth values from previous frames do not incorrectly discard pixels in the current frame.
+
+이렇게 하면 이전 프레임의 깊이 값이 현재 프레임의 픽셀을 잘못 버리지 않는다.
+
+In the code below the tutorial is actually setting the depth buffer to be the maximum amount (1.0).
+
+아래 코드에서는 실제로 깊이 버퍼를 최대 값(1.0)으로 설정하고 있다.
+
+```cpp
+
+//
+// Clear the depth buffer to 1.0 (max depth)
+//
+
+```
