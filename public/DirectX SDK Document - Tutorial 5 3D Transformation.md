@@ -77,31 +77,54 @@ Translation refers to moving or displacing for a certain distance in space.
 
 In 3D, the matrix used for translation has the form
 
-3차원에
+3차원에서, 이동을 위한 행렬은 다음과 같은 형태를 가진다.
 
-    1  0  0  0
-    0  1  0  0
-    0  0  1  0
-    a  b  c  1
+```text
 
-where (a, b, c) is the vector that defines the direction and distance to move. For example, to move a vertex -5 unit along the X axis (negative X direction), we can multiply it with this matrix:
+1  0  0  0
+0  1  0  0
+0  0  1  0
+a  b  c  1
 
-      
-    1  0  0  0
-    0  1  0  0
-    0  0  1  0
-   -5  0  0  1
+```
+
+where (a, b, c) is the vector that defines the direction and distance to move.
+
+(a,b,c)는 움직일 방향과 거리를 규정하는 벡터이다.
+
+For example, to move a vertex -5 unit along the X axis (negative X direction), we can multiply it with this matrix:
+
+예를 들어, 정점을 x축으로(x축의 음의 방향으로) -5 단위만큼 움직이게 하기 위해 다음의 행렬을 곱한다.
+
+```text
+  
+1  0  0  0
+0  1  0  0
+0  0  1  0
+-5  0  0  1
+
+```
 
 If we apply this to a cube object centered at origin, the result is that the box is moved 5 units towards the negative X axis, as figure 5 shows, after translation is applied.
+
+이를 원점을 중심으로 한 큐브 객체에 적용하면 그림 5에 표시된 것처럼 변환이 적용된 후 상자가 음의 X축으로 5단위 이동하는 결과가 나타난난다.
 
 **Figure 1.  The effect of translation**
 
 [[64db42eb4ec42b245b1a3dee65829b2a_MD5.jpeg|Open: Pasted image 20250726152423.png]]
 ![[64db42eb4ec42b245b1a3dee65829b2a_MD5.jpeg]]
 
-In 3D, a space is typically defined by an origin and three unique axes from the origin: X, Y and Z. There are several spaces commonly used in computer graphics: object space, world space, view space, projection space, and screen space.
+In 3D, a space is typically defined by an origin and three unique axes from the origin: X, Y and Z.
+
+3차원에서 공간은 원점과 원점에서 뻗어나가는 세 개의 고유한 축: X, Y, Z로 구성된다.
+
+There are several spaces commonly used in computer graphics: object space, world space, view space, projection space, and screen space.
+
+컴퓨터 그래픽스에서 흔히 사용되는 공간들이 있다: 오브젝트 공간, 월드 공간, 뷰 공간, 투영 공간, 스크린 공간.
 
 **Figure 2.  A cube defined in object space**
+
+**보기 2. 오브젝트 **
 
 [[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg|Open: Pasted image 20250726152440.png]]
 ![[0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg]]
