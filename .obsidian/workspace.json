@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "DirectX SDK Document - Tutorial 4 3D Spaces"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,6 +208,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "Pasted image 20250725144227.png",
     "재료/이미지/c2f10f53be9a4768502d0236ccadc174_MD5.jpeg",
@@ -219,7 +221,6 @@
     "Pasted image 20250725144023.png",
     "재료/이미지/6ec1b25d24b1cd09ec81b1b0af4bf7ea_MD5.jpeg",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
-    "index.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "d3d11_Tutorial_03.htm.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",

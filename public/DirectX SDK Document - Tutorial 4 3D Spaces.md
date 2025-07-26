@@ -674,16 +674,18 @@ In total, for 12 triangles in a triangle list, we will require a total of 36 ver
 
 The creation of the index buffer is very similar to the vertex buffer, where we specified parameters such as size and type in a structure, and called CreateBuffer.
 
-
+인덱스 버퍼의 생성은 버텍스 버퍼와 매우 유사하며, 구조체에 크기 및 유형과 같은 매개 변수를 지정하고 CreateBuffer를 호출한다.
 
 The type is D3D11_BIND_INDEX_BUFFER, and since we declared our array using DWORD, we will use sizeof(DWORD).
+
+타입은 `D3D11_BIND_INDEX_BUFFER`을 사용할 것이며, 배열을 `DWORD`로 선언했기 때문에 `sizeof(DWORD)`를 사용한다.
 
 ```cpp
 
 D3D11_BUFFER_DESC bd;
 ZeroMemory( &bd, sizeof(bd) );
 bd.Usage = D3D11_USAGE_DEFAULT;
-bd.ByteWidth = sizeof( WORD ) * 36;        // 36 vertices needed for 12 triangles in a triangle list
+bd.ByteWidth = sizeof( DWORD ) * 36;        // 36 vertices needed for 12 triangles in a triangle list
 bd.BindFlags = D3D11_BIND_INDEX_BUFFER;
 bd.CPUAccessFlags = 0;
 bd.MiscFlags = 0;
@@ -693,7 +695,11 @@ if( FAILED( g_pd3dDevice->CreateBuffer( &bd, &InitData, &g_pIndexBuffer ) ) )
         
 ```
 
-Once we created this buffer, we will need to set it so that Direct3D knows to refer to this index buffer when generating the triangles. We specify the pointer to the buffer, the format, and the offset in the buffer to start referencing from.
+Once we created this buffer, we will need to set it so that Direct3D knows to refer to this index buffer when generating the triangles.
+
+이 버퍼를 생성한 후에는 Direct3D가 트라이앵글을 생성할 때 이 인덱스 버퍼를 참조하도록 설정해야 합니다.
+
+We specify the pointer to the buffer, the format, and the offset in the buffer to start referencing from.
 
 ```cpp
 
