@@ -726,11 +726,33 @@ Now, because the input vertex position is defined in object space, we must trans
 
 We do this with three steps: transform from object to world space, transform from world to view space, and transform from view to projection space.
 
-이를 위해 세가지 단계를 거친다: 오브젝트 공간에서 월드 공간으로의 변환, 월드 공간에서 뷰 공간으로의 변환, 뷰 공간에서 투영 공간으로으
+이를 위해 세가지 단계를 거친다: 오브젝트 공간에서 월드 공간으로의 변환, 월드 공간에서 뷰 공간으로의 변환, 뷰 공간에서 투영 공간으로의 변환.
 
-The first thing that we need to do is declare three constant buffer variables. Constant buffers are used to store data that the application needs to pass to shaders. Before rendering, the application usually writes important data to constant buffers, and then during rendering the data can be read from within the shaders. In an FX file, constant buffer variables are declared like global variables in a C++ struct. The three variables that we will use are the world, view, and projection transformation matrices of the HLSL type "matrix."
+The first thing that we need to do is declare three constant buffer variables.
 
-Once we have declared the matrices that we will need, we update our vertex shader to transform the input position by using the matrices. A vector is transformed by multiplying the vector by a matrix. In HLSL, this is done using the **mul()** intrinsic function. Our variable declaration and new vertex shader are shown below:
+해야할 첫 번째 일은 세 개의 상수 버퍼 변수를 선언하는 것이다.
+
+Constant buffers are used to store data that the application needs to pass to shaders.
+
+상수 버퍼는 실행프로그램이 셰이더로 넘겨야 하는 데이터를 저장하기 위해 사용된다. 
+
+Before rendering, the application usually writes important data to constant buffers, and then during rendering the data can be read from within the shaders.
+
+렌더링 전에 실행프로그램은 일반적으로 중요한 데이터를 상수 버퍼에 쓰고, 렌더링하는 동안 셰이더 내에서 데이터를 읽을 수 있다.
+
+In an FX file, constant buffer variables are declared like global variables in a C++ struct.
+
+FX 파일에서 상수 버퍼 변수는 C++ 구조체의 전역 변수처럼 선언된다.
+
+The three variables that we will use are the world, view, and projection transformation matrices of the HLSL type "matrix."
+
+우리가 사용할 세 개의 변수는 월드, 뷰, 투영 변환 행렬이며 HLSL의 'matrix(행렬)' 타입으로 선언된다.
+
+Once we have declared the matrices that we will need, we update our vertex shader to transform the input position by using the matrices.
+
+
+
+A vector is transformed by multiplying the vector by a matrix. In HLSL, this is done using the **mul()** intrinsic function. Our variable declaration and new vertex shader are shown below:
 
 ```cpp
 
