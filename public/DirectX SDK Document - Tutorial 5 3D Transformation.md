@@ -15,7 +15,7 @@ In the previous tutorial, we rendered a cube from model space to the screen.
 
 In this tutorial, we will extend the concept of transformations and demonstrate simple animation that can be achieved with these transformations.
 
-이 튜토리얼에서, 변환의 컨셉을 확장하고 이러한 변환들을 통해 얻을 수 있는 간단한 애니메이션을 시연해볼 것이다.
+이 튜토리얼에서, 변환의 개념을 확장하고 이러한 변환들을 통해 얻을 수 있는 간단한 애니메이션을 시연해볼 것이다.
 
 The outcome of this tutorial will be an object that orbits around another.
 
@@ -23,17 +23,38 @@ The outcome of this tutorial will be an object that orbits around another.
 
 It would be useful to demonstrate the transformations and how they can be combined to achieve the desired effect.
 
-
+변환을 시현하고 원하는 효과를 얻기 위해 변환을 조합하는 방법을 배우는 것은 유용할 것이다.
 
 Future tutorials will be building on this foundation as we introduce new concepts.
 
+향후 튜토리얼에서는 이러한 기반을 바탕으로 새로운 개념을 소개할 예정이다.
 # Source
 
 (SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial05
 
 # Transformation
 
-In 3D graphics, transformation is often used to operate on vertices and vectors. It is also used to convert them in one space to another. Transformation is performed by way of multiplication with a matrix. There are typically three types of primitive transformation that can be performed on vertices: translation (where it lies in space relative to the origin), rotation (its direction in relation to the x, y, z frame), and scaling (its distance from origin). In addition to those, projection transformation is used to go from view space to projection space. The XNA Math library contains APIs that can conveniently construct a matrix for many purposes such as translation, rotation, scaling, world-to-view transformation, view-to-projection transformation, and so on. An application can then use these matrices to transform vertices in its scene. A basic understanding of matrix transformations is required. We will briefly look at some examples below.
+In 3D graphics, transformation is often used to operate on vertices and vectors.
+
+3차원 그래픽스에서, 변환은 정점들과 벡터들에 대한 작업에 보통 사용된다.
+
+It is also used to convert them in one space to another.
+
+변환은 또한 정점들과 벡터들을 한 공간에서 다른 공간으로 변환시키기 위해서도 사용된다.
+
+Transformation is performed by way of multiplication with a matrix.
+
+변환은 행렬 간 곱셈에 의해 이루어진다.
+
+There are typically three types of primitive transformation that can be performed on vertices: translation (where it lies in space relative to the origin), rotation (its direction in relation to the x, y, z frame), and scaling (its distance from origin).
+
+일반적으로 정점에 대해 수행할 수 있는 기본 변환에는 이동(원점을 기준으로 공간에 놓이는 위치), 회전(x, y, z 프레임에 대한 방향), 배율(원점과의 거리) 등 세 가지 유형이 있다.
+
+In addition to those, projection transformation is used to go from view space to projection space.
+
+이러한 변환들에 더하여, 
+
+The XNA Math library contains APIs that can conveniently construct a matrix for many purposes such as translation, rotation, scaling, world-to-view transformation, view-to-projection transformation, and so on. An application can then use these matrices to transform vertices in its scene. A basic understanding of matrix transformations is required. We will briefly look at some examples below.
 
 # Translation
 
