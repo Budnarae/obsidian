@@ -345,43 +345,64 @@ t += XM_PI * 0.0125f;
 
 ```
 
-Before the rendering calls are made, the constant buffer must be updated for the shaders. Note that the world matrix is unique to each cube, and thus, changes for every object that gets passed into it.
+Before the rendering calls are made, the constant buffer must be updated for the shaders.
 
-      
-    //
-    // Update variables for the first cube
-    //
-    ConstantBuffer cb1;
-    cb1.mWorld = XMMatrixTranspose( g_World1 );
-    cb1.mView = XMMatrixTranspose( g_View );
-    cb1.mProjection = XMMatrixTranspose( g_Projection );
-    g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb1, 0, 0 );
+렌더링 호출이 이루어지기 전에 셰이더에 대한 상수 버퍼를 업데이트해야 한다.
 
-    //
-    // Render the first cube
-    //
-    g_pImmediateContext->VSSetShader( g_pVertexShader, NULL, 0 );
-    g_pImmediateContext->VSSetConstantBuffers( 0, 1, &g_pConstantBuffer );
-    g_pImmediateContext->PSSetShader( g_pPixelShader, NULL, 0 );
-    g_pImmediateContext->DrawIndexed( 36, 0, 0 );
+Note that the world matrix is unique to each cube, and thus, changes for every object that gets passed into it.
 
-    //
-    // Update variables for the second cube
-    //
-    ConstantBuffer cb2;
-    cb2.mWorld = XMMatrixTranspose( g_World2 );
-    cb2.mView = XMMatrixTranspose( g_View );
-    cb2.mProjection = XMMatrixTranspose( g_Projection );
-    g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb2, 0, 0 );
+월드 행렬은 각 큐브마다 고유하며, 따라서 객체가 전달될 때마다 변경된다.
 
-    //
-    // Render the second cube
-    //
-    g_pImmediateContext->DrawIndexed( 36, 0, 0 );
+```cpp
+
+//
+// Update variables for the first cube
+//
+ConstantBuffer cb1;
+cb1.mWorld = XMMatrixTranspose( g_World1 );
+cb1.mView = XMMatrixTranspose( g_View );
+cb1.mProjection = XMMatrixTranspose( g_Projection );
+g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb1, 0, 0 );
+
+//
+// Render the first cube
+//
+g_pImmediateContext->VSSetShader( g_pVertexShader, NULL, 0 );
+g_pImmediateContext->VSSetConstantBuffers( 0, 1, &g_pConstantBuffer );
+g_pImmediateContext->PSSetShader( g_pPixelShader, NULL, 0 );
+g_pImmediateContext->DrawIndexed( 36, 0, 0 );
+
+//
+// Update variables for the second cube
+//
+ConstantBuffer cb2;
+cb2.mWorld = XMMatrixTranspose( g_World2 );
+cb2.mView = XMMatrixTranspose( g_View );
+cb2.mProjection = XMMatrixTranspose( g_Projection );
+g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb2, 0, 0 );
+
+//
+// Render the second cube
+//
+g_pImmediateContext->DrawIndexed( 36, 0, 0 );
+
+```
 
 # The Depth Buffer
 
-There is one other important addition to this tutorial, and that is the depth buffer. Without it, the smaller orbiting cube would still be drawn on top of the larger center cube when it went around the back of the latter. The depth buffer allows Direct3D to keep track of the depth of every pixel drawn to the screen. The default behavior of the depth buffer in Direct3D 11 is to check every pixel being drawn to the screen against the value stored in the depth buffer for that screen-space pixel. If the depth of the pixel being rendered is less than or equal to the value already in the depth buffer, the pixel is drawn and the value in the depth buffer is updated to the depth of the newly drawn pixel. On the other hand, if the pixel being draw has a depth greater than the value already in the depth buffer, the pixel is discarded and the depth value in the depth buffer remains unchanged.
+There is one other important addition to this tutorial, and that is the depth buffer.
+
+이 튜토리얼에서 다룰 한 가지 중요한 주제가 더 있다. 바로 깊이 버퍼이다.
+
+Without it, the smaller orbiting cube would still be drawn on top of the larger center cube when it went around the back of the latter.
+
+깊이 버퍼 없이는, 커다란 중심 큐브를 공전하는 작은 큐브가 중심 큐브의 뒤쪽으로 들어가 가려짐에도 중심 큐브보다 앞쪽에 있는 것처럼 그려질수도 있다.
+
+The depth buffer allows Direct3D to keep track of the depth of every pixel drawn to the screen.
+
+
+
+The default behavior of the depth buffer in Direct3D 11 is to check every pixel being drawn to the screen against the value stored in the depth buffer for that screen-space pixel. If the depth of the pixel being rendered is less than or equal to the value already in the depth buffer, the pixel is drawn and the value in the depth buffer is updated to the depth of the newly drawn pixel. On the other hand, if the pixel being draw has a depth greater than the value already in the depth buffer, the pixel is discarded and the depth value in the depth buffer remains unchanged.
 
 The following code in the sample creates a depth buffer (a DepthStencil texture). It also creates a DepthStencilView of the depth buffer so that Direct3D 11 knows to use it as a Depth Stencil texture.
 
