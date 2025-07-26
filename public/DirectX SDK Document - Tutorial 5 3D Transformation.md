@@ -242,15 +242,29 @@ The first one will rotate in place, while the second one will rotate around the 
 
 The two cubes will have its own world transformation matrix associated with it, and this matrix will be reapplied to it in every frame rendered.
 
-두 개의 큐브는 고유의 월드 변환 행렬을 가질 것이며, 이 행렬들은 모든 프레임마다 나
+두 개의 큐브는 고유의 월드 변환 행렬을 가질 것이며, 이 행렬들은 모든 프레임마다 다시 적용되기를 반복할 것이다.
 
 There are functions within XNA Math that will assist in the creation of the rotation, translation, and scaling matrices.
+
+XNA Math의 함수들은 회전, 이동, 배율 행렬을 만드는 것을 보조한다.
 
 - Rotations performed around the X, Y. and Z axis are accomplished with the functions **XMMatrixRotationX**, **XMMatrixRotationY**, and **XMMatrixRotationZ**, respectively. They create basic rotation matrices that rotate around one of the primary axis. Complex rotations around other axis can be done by multiplying together several of them.
 - Translations can be performed by invoking the **XMMatrixTranslation** function. This function will create a matrix that will translate points specified by the parameters.
 - Scaling is done with **XMMatrixScaling**. It scales only along the primary axes. If scaling along arbitrary axis is desired, then the scaling matrix can be multiplied with an appropriate rotation matrix to achieve the effect.
 
-The first cube will be spinning in place and act as the center for the orbit. The cube has a rotation along the Y axis applied to the associated world matrix. This is done by calling the **XMMatrixRotationY** function shown in the following code. The cube is rotated by a set amount each frame. Since the cubes are suppose to continuously rotate, the value which the rotation matrix is based on gets incremented with every frame.
+ - X, Y, Z 축을 중심으로 한 회전은 각각 **XMMatrixRotationX**, **XMMatrixRotationY**, **XMMatrixRotationZ** 함수를 사용하여 수행합니다. 이 함수는 기본 축 중 하나를 중심으로 회전하는 기본 회전 행렬을 생성한다. 다른 축을 중심으로 복잡한 회전은 여러 축을 함께 곱하여 수행할 수 있습니다.
+- 이동은 **XMMatrixTranslation** 함수를 호출하여 수행할 수 있다. 이 함수는 파라미터로 지정된 포인트를 이동하는 행렬을 생성합니다.
+- 스케일링은 **XMMatrixScaling**으로 수행된다. 이 함수는 주 축을 따라서만 스케일을 조정한다. 임의의 축을 따라 스케일링이 필요한 경우 스케일링 행렬에 적절한 회전 행렬을 곱하여 효과를 얻을 수 있다.
+
+The first cube will be spinning in place and act as the center for the orbit.
+
+첫번째 큐브는 제자리에서 돌면서 궤도의 중심 역할을 수행한다.
+
+The cube has a rotation along the Y axis applied to the associated world matrix.
+
+큐브는 월드 ㅈ
+
+This is done by calling the **XMMatrixRotationY** function shown in the following code. The cube is rotated by a set amount each frame. Since the cubes are suppose to continuously rotate, the value which the rotation matrix is based on gets incremented with every frame.
 
       
     // 1st Cube: Rotate around the origin
