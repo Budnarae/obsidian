@@ -274,13 +274,24 @@ The cube is rotated by a set amount each frame.
 
 Since the cubes are suppose to continuously rotate, the value which the rotation matrix is based on gets incremented with every frame.
 
+큐브들은 지속적으로 회전하도록 규정되어 있기 때문에, 회전 행렬의 기반이 되는 값은 매 프레임마다 조금씩 증가한다.
+
+```cpp
+
+// 1st Cube: Rotate around the origin
+g_World1 = XMMatrixRotationY( t );
+
+```
+
+The second cube will be orbiting around the first one.
+
+두번째 큐브는 첫번째 큐브 주위를 회전할 것이다.
+
+To demonstrate multiple transformations, a scaling factor, and its own axis spin will be added.
 
 
-      
-    // 1st Cube: Rotate around the origin
-    g_World1 = XMMatrixRotationY( t );
 
-The second cube will be orbiting around the first one. To demonstrate multiple transformations, a scaling factor, and its own axis spin will be added. The formula used is shown right below the code (in comments). First the cube will be scale down to 30% size, and then it will be rotated along its spin axis (the Z axis in this case). To simulate the orbit, it will get translated away from the origin, and then rotated along the Y axis. The desired effect can be achieved by using four separate matrices with its individual transformation (mScale, mSpin, mTranslate, mOrbit), then multiplied together.
+The formula used is shown right below the code (in comments). First the cube will be scale down to 30% size, and then it will be rotated along its spin axis (the Z axis in this case). To simulate the orbit, it will get translated away from the origin, and then rotated along the Y axis. The desired effect can be achieved by using four separate matrices with its individual transformation (mScale, mSpin, mTranslate, mOrbit), then multiplied together.
 
       
     // 2nd Cube:  Rotate around origin
