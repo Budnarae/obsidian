@@ -117,24 +117,35 @@ The top left corner of the texture corresponds to (0,0) and the bottom right cor
 
 In this example, we're having the whole texture spread across each side of the cube.
 
-이번 예제에서, 전체 텍스처를 큐브의 각 편에 걸쳐 펼칠 것이다.
+이번 예제에서, 전체 텍스처를 큐브의 각 면에 펼칠 것이다.
 
 This simplifies the definition of the coordinates, without confusion.
 
-
+이것은 왜곡 없이 좌표 정의를 단순화시킨다.
 
 However, it is entirely possible to specify the texture to stretch across all six faces, although it's more difficult to define the points, and it will appear stretched and distorted.
 
+그러나 텍스처가 여섯 면 모두에 걸쳐 늘어나도록 지정하는 것은 전적으로 가능하지만, 점을 정의하기가 더 어렵고 늘어지고 왜곡된 것처럼 보일 수 있다.
+
 First, we updated the structure used to define our vertices to include the texture coordinates.
 
-    
+먼저 정점을 정의하기 위한 구조체를 텍스처 좌표를 포함하도록 수정한다.
+
+```cpp
+
 struct SimpleVertex
 {
-    XMFLOAT3 Pos;
-    XMFLOAT2 Tex;
+XMFLOAT3 Pos;
+XMFLOAT2 Tex;
 };
 
+```
+
 Next, we updated the input layout to the shaders to also include these coordinates.
+
+그 다음 셰이더에 전달하는 입력 레이아웃도 텍스처 좌표들을 포함하도록 수정한다.
+
+```cpp
 
 // Define the input layout
 D3D11_INPUT_ELEMENT_DESC layout[] =
@@ -143,7 +154,11 @@ D3D11_INPUT_ELEMENT_DESC layout[] =
     { "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
 };
 
+```
+
 Since the input layout changed, the corresponding vertex shader input must also be modified to match the addition.
+
+입력 레이아웃이 변경되었기 때무에, 대응되는 정점 셰이더의 입력도 
 
 struct VS_INPUT
 {
