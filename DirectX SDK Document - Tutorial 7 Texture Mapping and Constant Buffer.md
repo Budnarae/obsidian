@@ -59,17 +59,31 @@ Since our example is a cube, it is easy to determine the coordinates needed to m
 
 Texture coordinates are defined at the vertices, and are then interpolated for individual pixels on a surface.
 
-텍스처 좌표는 정점에 정의
+텍스처 좌표는 정점에 정의되어 있으며, 표면의 개개의 픽셀에 대해 보간된다.
 
 ## Creating a Shader Resource from the Texture and Sampler State
 
 The texture is a 2D image that is retrieved from file and used to create a shader-resource view, so that it can be read from a shader.
 
-     
-hr = D3DX11CreateShaderResourceViewFromFile( g_pd3dDevice, L"seafloor.dds", NULL, NULL, 
-         &g_pTextureRV, NULL );
+텍스처는 파일로부터 읽어들이는 2차원 이미지이다. 텍스처는 `shader-resource view`를 만들기 위해 사용되며, 따라서 셰이더에 의해 읽힐 수 있다.
 
-We also need to create a sampler state that controls how the shader handles filtering, MIPs, and addressing. For this tutorial we will enable simple sampler state that enables linear filtering and wrap addressing. To create the sampler state, we will use **ID3D11Device::CreateSamplerState()**.
+```cpp
+
+hr = D3DX11CreateShaderResourceViewFromFile( g_pd3dDevice, L"seafloor.dds", NULL, NULL, &g_pTextureRV, NULL );
+
+```
+
+We also need to create a sampler state that controls how the shader handles filtering, MIPs, and addressing.
+
+또한 셰이더가 필터링, MIP 및 어드레싱을 처리하는 방법을 제어하는 샘플러 상태를 만들어야 한다.
+
+For this tutorial we will enable simple sampler state that enables linear filtering and wrap addressing.
+
+이번 튜토리얼에서 우리는 간단한 샘플러 상태를 만들어 볼 것이다. 샘플러 상태는 선형 필터링과 주소 래핑을 가능하게 한다.
+
+To create the sampler state, we will use **ID3D11Device::CreateSamplerState()**.
+
+샘
 
      
     // Create the sample state
