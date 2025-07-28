@@ -90,28 +90,52 @@ Since it's an approximation, no matter where an object is, the direction in whic
 
 근사치이므로 물체가 어디에 있든 빛이 물체를 향해 비추는 방향은 동일하다.
 
-An example of this light source is the sun. The sun is always seen to be shining in the same direction for all objects in a scene. In addition, the intensity of the light on individual objects is not taken into consideration.
+An example of this light source is the sun.
+
+해를 이 광원의 예시로 들 수 있다.
+
+The sun is always seen to be shining in the same direction for all objects in a scene.
+
+태양은 장면의 모든 오브젝트에 대해 항상 같은 방향으로 비추는 것으로 보인다.
+
+In addition, the intensity of the light on individual objects is not taken into consideration.
+
+또한 개별 물체에 대한 빛의 강도는 고려되지 않는다.
 
 Other types of light include point lights, which radiate uniform light from their centers, and spot lights, which are directional but not uniform across all objects.
 
+다른 유형의 조명으로는 중앙에서 균일한 빛을 발산하는 포인트 조명과 방향성은 있지만 모든 물체에 균일하지 않은 스팟 조명이 있다.
 # Initializing the Lights
 
-In this tutorial, there will be two light sources. One will be statically placed above and behind the cube, and another one will be orbiting the center cube. Note that the orbiting cube in the previous tutorial has been replaced with this light source.
+In this tutorial, there will be two light sources.
+
+이번 튜토리얼에는 두개의 광원이 있을 것이다.
+
+One will be statically placed above and behind the cube, and another one will be orbiting the center cube.
+
+하나는 고정적으로 큐브의 후상단에 위치할 것이고, 나머지 하나는 중심 큐브를 따라 궤도를 회전하는 큐브이다.
+
+Note that the orbiting cube in the previous tutorial has been replaced with this light source.
+
+이전 튜토리얼의 궤도를 따라 돌던 큐브는 광원으로 대체되었다는 것을 인지하자.
 
 Since lighting is computed by the shaders, the variables would have to be declared and then bound to the variables within the technique. In this sample, we just require the direction of the light source, as well as its color value. The first light is grey and not moving, while the second one is an orbiting red light.
 
-      
-    // Setup our lighting parameters
-    XMFLOAT4 vLightDirs[2] =
-    {
-        XMFLOAT4( -0.577f, 0.577f, -0.577f, 1.0f ),
-        XMFLOAT4( 0.0f, 0.0f, -1.0f, 1.0f ),
-    };
-    XMFLOAT4 vLightColors[2] =
-    {
-        XMFLOAT4( 0.5f, 0.5f, 0.5f, 1.0f ),
-        XMFLOAT4( 0.5f, 0.0f, 0.0f, 1.0f )
-    };
+```cpp
+
+// Setup our lighting parameters
+XMFLOAT4 vLightDirs[2] =
+{
+	XMFLOAT4( -0.577f, 0.577f, -0.577f, 1.0f ),
+	XMFLOAT4( 0.0f, 0.0f, -1.0f, 1.0f ),
+};
+XMFLOAT4 vLightColors[2] =
+{
+	XMFLOAT4( 0.5f, 0.5f, 0.5f, 1.0f ),
+	XMFLOAT4( 0.5f, 0.0f, 0.0f, 1.0f )
+};
+
+```
 
 The orbiting light is rotated just like the cube in the last tutorial. The rotation matrix applied will change the direction of the light, to show the effect that it is always shining towards the center. Note that function **XMVector3Transform** is used to multiply a matrix with a vector. In the previous tutorial, we multiplied just the transformation matrices into the world matrix, then passed into the shader for transformation. However, for simplicity's sake in this case, we're actually doing the world transform of the light in the CPU.
 
