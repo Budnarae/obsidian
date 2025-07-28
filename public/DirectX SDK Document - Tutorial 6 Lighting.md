@@ -211,26 +211,59 @@ Once we have all the data set up and the shader properly fed with data, we can c
 
 We'll be using the dot product rule discussed previously.
 
+앞서 설명한 내적을 사용할 것이다.
 
+Once we've taken the dot product of the light versus the normal, it can then be multiplied with the color of the light to calculate the effect of that light.
 
-Once we've taken the dot product of the light versus the normal, it can then be multiplied with the color of the light to calculate the effect of that light. That value is passed through the saturate function, which converts the range to [0, 1]. Finally, the results from the two separate lights are summed together to create the final pixel color.
+빛과 노멀의 내적을 구한다음, 빛의 색을 곱하여 해당 빛의 효과를 계산할 수 있다.
 
-Consider that the material of the surface itself is not factored into this light calculation. The final color of the surface is a result of the light's colors.
+That value is passed through the saturate function, which converts the range to \[0, 1].
 
-      
-    //
-    // Pixel Shader
-    //
-    float4 PS( PS_INPUT input) : SV_Target
-    {
-        float4 finalColor = 0;
-        
-        //do NdotL lighting for 2 lights
-        for(int i=0; i<2; i++)
-        {
-            finalColor += saturate( dot( (float3)vLightDir[i],input.Norm) * vLightColor[i] );
-        }
-        return finalColor;
-    }
+이 값은 포화 함수를 통과하여 범위를 \[0, 1]로 변환합니다.
 
-Once through the pixel shader, the pixels will be modulated by the lights, and you can see the effect of each light on the cube surface. Note that the light in this case looks flat because pixels on the same surface will have the same normal. Diffuse is a very simple and easy lighting model to compute. You can use more complex lighting models to achieve richer and more realistic materials.
+Finally, the results from the two separate lights are summed together to create the final pixel color.
+
+마지막으로 두 개의 개별 조명에서 얻은 결과를 합산하여 최종 픽셀 색상을 생성한다.
+
+Consider that the material of the surface itself is not factored into this light calculation.
+
+표면 자체의 재질은 이 광원 계산에 고려되지 않는다는 점을 생각하라.
+
+The final color of the surface is a result of the light's colors.
+
+표면의 최종 색은 빛의 색에 따라 결정된다.
+
+```cpp
+
+//
+// Pixel Shader
+//
+float4 PS( PS_INPUT input) : SV_Target
+{
+	float4 finalColor = 0;
+	
+	//do NdotL lighting for 2 lights
+	for(int i=0; i<2; i++)
+	{
+		finalColor += saturate( dot( (float3)vLightDir[i],input.Norm) * vLightColor[i] );
+	}
+	return finalColor;
+}
+
+```
+
+Once through the pixel shader, the pixels will be modulated by the lights, and you can see the effect of each light on the cube surface.
+
+픽셀 셰이더를 통과하면 픽셀이 조명에 의해 변조되고 큐브 표면에서 각 조명의 효과를 확인할 수 있다.
+
+Note that the light in this case looks flat because pixels on the same surface will have the same normal.
+
+이 경우 같은 표면의 픽셀은 동일한 법선을 갖기 때문에 빛이 평평해 보인다.
+
+Diffuse is a very simple and easy lighting model to compute.
+
+디퓨즈는 매우 간단하고 계산하기 쉬운 조명 모델이다.
+
+You can use more complex lighting models to achieve richer and more realistic materials.
+
+더 복잡한 조명 모델을 사용하여 더 풍부하고 사실적인 머티리얼을 구현할 수 있다.
