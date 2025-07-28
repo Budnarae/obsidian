@@ -158,7 +158,9 @@ D3D11_INPUT_ELEMENT_DESC layout[] =
 
 Since the input layout changed, the corresponding vertex shader input must also be modified to match the addition.
 
-입력 레이아웃이 변경되었기 때무에, 대응되는 정점 셰이더의 입력도 
+입력 레이아웃이 변경되었기 때무에, 대응되는 정점 셰이더의 입력도 추가사항이 반영되도록 수정해야 한다.
+
+```hlsl
 
 struct VS_INPUT
 {
@@ -166,9 +168,26 @@ struct VS_INPUT
     float2 Tex : TEXCOORD;
 };
 
-Finally, we are ready to include texture coordinates in our vertices we defined back in Tutorial 4. Note the second parameter input is a D3DXVECTOR2 containing the texture coordinates. Each vertex on the cube will correspond to a corner of the texture. This creates a simple mapping where each vertex gets (0,0) (0,1) (1,0) or (1,1) as the coordinate.
+```
 
-     
+Finally, we are ready to include texture coordinates in our vertices we defined back in Tutorial 4.
+
+마침내, 튜토리얼 4에서 정의했던 정점에 텍스처 좌표를 추가할 준비가 되었다.
+
+Note the second parameter input is a D3DXVECTOR2 containing the texture coordinates. 
+
+두번째 파라미터 `D3DXVECTOR2`는 텍스처 좌표를 포함한다는 사실을 기억하자.
+
+Each vertex on the cube will correspond to a corner of the texture.
+
+큐브의 각 정점은 텍스처의 꼭지점에 대응한다.
+
+This creates a simple mapping where each vertex gets (0,0) (0,1) (1,0) or (1,1) as the coordinate.
+
+이렇게 하면 각 정점이 (0,0) (0,1) (1,0) 또는 (1,1)을 좌표로 받는 간단한 매핑이 생성된다.
+
+```cpp
+
 // Create vertex buffer
 SimpleVertex vertices[] =
 {
@@ -203,7 +222,11 @@ SimpleVertex vertices[] =
     { XMFLOAT3( -1.0f, 1.0f, 1.0f ), XMFLOAT2( 0.0f, 1.0f ) },
 };
 
+```
+
 When we sample the texture, we will need to modulate it with a material color for the geometry underneath.
+
+우리가 텍스처를 샘플링할 때, 텍스처를 그 아래 지오메트리의 머티리얼 색상으로 변조해야 한다.
 
 ## Bind Texture as Shader Resource
 
