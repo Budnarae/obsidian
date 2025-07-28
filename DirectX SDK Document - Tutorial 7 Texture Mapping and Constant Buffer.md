@@ -83,26 +83,47 @@ For this tutorial we will enable simple sampler state that enables linear filter
 
 To create the sampler state, we will use **ID3D11Device::CreateSamplerState()**.
 
-샘
+샘플러 상태를 생성하기 위해서, **ID3D11Device::CreateSamplerState()**를 사용한다.
 
-     
-    // Create the sample state
-    D3D11_SAMPLER_DESC sampDesc;
-    ZeroMemory( &sampDesc, sizeof(sampDesc) );
-    sampDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_LINEAR;
-    sampDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;
-    sampDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;
-    sampDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;
-    sampDesc.ComparisonFunc = D3D11_COMPARISON_NEVER;
-    sampDesc.MinLOD = 0;
-    sampDesc.MaxLOD = D3D11_FLOAT32_MAX;
-    hr = g_pd3dDevice->CreateSamplerState( &sampDesc, &g_pSamplerLinear );
+```cpp
+ 
+// Create the sample state
+D3D11_SAMPLER_DESC sampDesc;
+ZeroMemory( &sampDesc, sizeof(sampDesc) );
+sampDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_LINEAR;
+sampDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;
+sampDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;
+sampDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;
+sampDesc.ComparisonFunc = D3D11_COMPARISON_NEVER;
+sampDesc.MinLOD = 0;
+sampDesc.MaxLOD = D3D11_FLOAT32_MAX;
+hr = g_pd3dDevice->CreateSamplerState( &sampDesc, &g_pSamplerLinear );
+
+```
 
 ## Defining the Coordinates
 
-Before we can map the image onto our cube, we must first define the texture coordinates on each of the vertices of the cube. Since images can be of any size, the coordinate system used has been normalized to [0, 1]. The top left corner of the texture corresponds to (0,0) and the bottom right corner maps to (1,1).
+Before we can map the image onto our cube, we must first define the texture coordinates on each of the vertices of the cube.
 
-In this example, we're having the whole texture spread across each side of the cube. This simplifies the definition of the coordinates, without confusion. However, it is entirely possible to specify the texture to stretch across all six faces, although it's more difficult to define the points, and it will appear stretched and distorted.
+이미지를 큐브에 매핑하기 위해선, 먼저 큐브의 각 정점의 텍스처 좌표들을 정의해야 한다.
+
+Since images can be of any size, the coordinate system used has been normalized to \[0, 1]. 
+
+이미지는 어떠한 크기도 될 수 있기 때문에, 좌표는 \[0, 1] 범위로 정규화된다.
+
+The top left corner of the texture corresponds to (0,0) and the bottom right corner maps to (1,1).
+
+텍스처의 좌측 상단은 (0, 0) 좌표로 대응되며 우측 하단은 (1, 1) 좌표로 대응된다.
+
+In this example, we're having the whole texture spread across each side of the cube.
+
+이번 예제에서, 전체 텍스처를 큐브의 각 편에 걸쳐 펼칠 것이다.
+
+This simplifies the definition of the coordinates, without confusion.
+
+
+
+However, it is entirely possible to specify the texture to stretch across all six faces, although it's more difficult to define the points, and it will appear stretched and distorted.
 
 First, we updated the structure used to define our vertices to include the texture coordinates.
 
