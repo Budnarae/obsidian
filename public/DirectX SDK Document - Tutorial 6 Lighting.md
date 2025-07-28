@@ -153,37 +153,65 @@ The orbiting light is rotated just like the cube in the last tutorial.
 
 The rotation matrix applied will change the direction of the light, to show the effect that it is always shining towards the center.
 
-회전 행렬은 빛의 방향의 변화를 적용하며, 
+회전 행렬은 빛의 방향의 변화를 적용하며, 빛이 항상 중앙을 비추게끔 하는 효과가 있다.
 
-Note that function **XMVector3Transform** is used to multiply a matrix with a vector. In the previous tutorial, we multiplied just the transformation matrices into the world matrix, then passed into the shader for transformation. However, for simplicity's sake in this case, we're actually doing the world transform of the light in the CPU.
+Note that function **XMVector3Transform** is used to multiply a matrix with a vector.
 
-      
-    // Rotate the second light around the origin
-    XMMATRIX mRotate = XMMatrixRotationY( -2.0f * t );
-    XMVECTOR vLightDir = XMLoadFloat4( &vLightDirs[1] );
-    vLightDir = XMVector3Transform( vLightDir, mRotate );
-    XMStoreFloat4( &vLightDirs[1], vLightDir );
+**XMVector3Transform** 함수는 행렬과 벡터의 곱셈에 쓰인다는 사실을 기억하자.
 
-The lights' direction and color are both passed into the shader just like the matrices. The associated variable is called to set, and the parameter is passed in.
+In the previous tutorial, we multiplied just the transformation matrices into the world matrix, then passed into the shader for transformation.
 
-      
-    //
-    // Update matrix variables and lighting variables
-    //
-    ConstantBuffer cb1;
-    cb1.mWorld = XMMatrixTranspose( g_World );
-    cb1.mView = XMMatrixTranspose( g_View );
-    cb1.mProjection = XMMatrixTranspose( g_Projection );
-    cb1.vLightDir[0] = vLightDirs[0];
-    cb1.vLightDir[1] = vLightDirs[1];
-    cb1.vLightColor[0] = vLightColors[0];
-    cb1.vLightColor[1] = vLightColors[1];
-    cb1.vOutputColor = XMFLOAT4(0, 0, 0, 0);
-    g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb1, 0, 0 );
+이전 튜토리얼에서는 변환 행렬을 월드 행렬에 곱한 후에, 변환을 위한 셰이더에 전달하였다.
+
+However, for simplicity's sake in this case, we're actually doing the world transform of the light in the CPU.
+
+그러나 이 경우 단순화를 위해 실제로는 CPU에서 빛의 월드 변환을 수행한다.
+
+```cpp
+
+// Rotate the second light around the origin
+XMMATRIX mRotate = XMMatrixRotationY( -2.0f * t );
+XMVECTOR vLightDir = XMLoadFloat4( &vLightDirs[1] );
+vLightDir = XMVector3Transform( vLightDir, mRotate );
+XMStoreFloat4( &vLightDirs[1], vLightDir );
+
+```
+
+The lights' direction and color are both passed into the shader just like the matrices.
+
+빛의 방향과 색상은 행렬과 마찬가지로 셰이더에 전달된다.
+
+The associated variable is called to set, and the parameter is passed in.
+
+관련 변수를 호출하여 설정하고 매개변수를 전달한다.
+
+```cpp
+  
+//
+// Update matrix variables and lighting variables
+//
+ConstantBuffer cb1;
+cb1.mWorld = XMMatrixTranspose( g_World );
+cb1.mView = XMMatrixTranspose( g_View );
+cb1.mProjection = XMMatrixTranspose( g_Projection );
+cb1.vLightDir[0] = vLightDirs[0];
+cb1.vLightDir[1] = vLightDirs[1];
+cb1.vLightColor[0] = vLightColors[0];
+cb1.vLightColor[1] = vLightColors[1];
+cb1.vOutputColor = XMFLOAT4(0, 0, 0, 0);
+g_pImmediateContext->UpdateSubresource( g_pConstantBuffer, 0, NULL, &cb1, 0, 0 );
+
+```
 
 # Rendering the Lights in the Pixel Shader
 
-Once we have all the data set up and the shader properly fed with data, we can compute the lambertian lighting term on each pixel from the light sources. We'll be using the dot product rule discussed previously.
+Once we have all the data set up and the shader properly fed with data, we can compute the lambertian lighting term on each pixel from the light sources.
+
+모든 데이터를 설정하고 셰이더에 데이터를 제대로 공급하면 광원으로부터 각 픽셀의 램버트 조명 항을 계산할 수 있다.
+
+We'll be using the dot product rule discussed previously.
+
+
 
 Once we've taken the dot product of the light versus the normal, it can then be multiplied with the color of the light to calculate the effect of that light. That value is passed through the saturate function, which converts the range to [0, 1]. Finally, the results from the two separate lights are summed together to create the final pixel color.
 
