@@ -36,9 +36,24 @@
               "icon": "lucide-file",
               "title": "DirectX SDK Document - Tutorial 6 Lighting"
             }
+          },
+          {
+            "id": "c798d105f0ad4cf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -221,12 +236,15 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b5f8e7c91c88c03d",
+  "active": "c798d105f0ad4cf6",
   "lastOpenFiles": [
+    "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
+    "Pasted image 20250728160243.png",
+    "public/DirectX SDK Document - Tutorial 6 Lighting.md",
+    "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "재료/이미지/4353e841252db1deef3dd9f47b0c3c3a_MD5.jpeg",
     "Pasted image 20250728143956.png",
     "재료/이미지/642bb0483c2868b445df8e624a08af19_MD5.jpeg",
-    "public/DirectX SDK Document - Tutorial 6 Lighting.md",
     "Pasted image 20250728143926.png",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "index.md",
@@ -235,8 +253,6 @@
     "재료/이미지/55969b12301be3d937029fe63e4ad0eb_MD5.jpeg",
     "Pasted image 20250726152538.png",
     "재료/이미지/34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg",
-    "Pasted image 20250726152515.png",
-    "재료/이미지/0a55d7a46a9d38605ac796827c66c46b_MD5.jpeg",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
@@ -260,7 +276,6 @@
     "ingredient/ai role/Rewrite as tweet thread.md",
     "ingredient/ai role/Rewrite as press release.md",
     "ingredient/ai role/Remove URLs.md",
-    "ingredient/ai role/Make shorter.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
