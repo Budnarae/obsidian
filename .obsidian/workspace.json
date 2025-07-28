@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
-                "mode": "source",
+                "file": "public/DirectX SDK Document - Tutorial 6 Lighting.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer"
+              "title": "DirectX SDK Document - Tutorial 6 Lighting"
             }
           }
         ],
@@ -238,10 +238,10 @@
   },
   "active": "c798d105f0ad4cf6",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
     "Pasted image 20250728160243.png",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
-    "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "재료/이미지/4353e841252db1deef3dd9f47b0c3c3a_MD5.jpeg",
     "Pasted image 20250728143956.png",
     "재료/이미지/642bb0483c2868b445df8e624a08af19_MD5.jpeg",
@@ -252,7 +252,6 @@
     "Pasted image 20250726152557.png",
     "재료/이미지/55969b12301be3d937029fe63e4ad0eb_MD5.jpeg",
     "Pasted image 20250726152538.png",
-    "재료/이미지/34bc925d2c2df5677b5d2a654e2f6018_MD5.jpeg",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
