@@ -21,17 +21,40 @@ The technique used will be lambertian lighting.
 
 The outcome of this tutorial will modify the previous example to include a light source.
 
-이번 튜토
+이번 튜토리얼의 결과는 이전 튜토리얼의 예제에 광원을 추가하도록 수정한 것이다.
 
-This light source will be attached to the cube in orbit. The effects of the light can be seen on the center cube.
+This light source will be attached to the cube in orbit.
 
+광원은 궤도에 있는 큐브에 부착될 것이다.
+
+The effects of the light can be seen on the center cube.
+
+빛의 효과는 중앙의 큐브를 통해 확인할 수 있을 것이다.
 # Source
 
 (SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial06
 
 # Lighting
 
-In this tutorial, the most basic type of lighting will be introduced: lambertian lighting. Lambertian lighting has uniform intensity irrespective of the distance away from the light. When the light hits the surface, the amount of light reflected is calculated by the angle of incidence the light has on the surface. When a light is shined directly on a surface, it is shown to reflect all the light back, with maximum intensity. However, as the angle of the light is increased, the intensity of the light will fade away.
+In this tutorial, the most basic type of lighting will be introduced: lambertian lighting.
+
+이번 튜토리얼에서, 가장 단순한 형태의 조명: 램버시안 조명을 소개할 것이다.
+
+Lambertian lighting has uniform intensity irrespective of the distance away from the light.
+
+램버시안 조명은 빛으로부터의 거리에 관계없이 균일한 강도를 갖는다.
+
+When the light hits the surface, the amount of light reflected is calculated by the angle of incidence the light has on the surface.
+
+빛이 표면에 부딫힐 때, 반사되는 빛의 양은 빛이 표면에 닿는 입사각에 따라 계산된다.
+
+When a light is shined directly on a surface, it is shown to reflect all the light back, with maximum intensity.
+
+빛을 표면에 직접 비추면 모든 빛이 최대 강도로 반사되는 것으로 표시된다.
+
+However, as the angle of the light is increased, the intensity of the light will fade away.
+
+하지만, 빛의 각도가 증가할수록, 빛의 강도는 줄어든다.
 
 To calculate the intensity that a light has on a surface, the angle between the light direction and the normal of the surface has to be calculated. The normal for a surface is defined as a vector that is perpendicular to the surface. The calculation of the angle can be done with a simple dot product, which will return the projection of the light direction vector onto the normal. The wider the angle, the smaller the projection will be. Thus, this gives us the correct function to modulate the diffused light with.
 
