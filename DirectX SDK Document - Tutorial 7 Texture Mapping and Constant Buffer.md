@@ -230,21 +230,39 @@ When we sample the texture, we will need to modulate it with a material color fo
 
 ## Bind Texture as Shader Resource
 
-A texture and sampler state are objects like the constant buffers that we have seen in previous tutorials. Before they can be used by the shader, they need to be set with the **ID3D11DeviceContext::PSSetSamplers()** and **ID3D11DeviceContext::PSSetShaderResources()** APIs.
+A texture and sampler state are objects like the constant buffers that we have seen in previous tutorials.
 
-     
-    g_pImmediateContext->PSSetShaderResources( 0, 1, &g_pTextureRV );
-    g_pImmediateContext->PSSetSamplers( 0, 1, &g_pSamplerLinear );
+텍스처와 샘플러 상태는 이전 튜토리얼에서 살펴본 상수 버퍼와 같은 객체이다.
+
+Before they can be used by the shader, they need to be set with the **ID3D11DeviceContext::PSSetSamplers()** and **ID3D11DeviceContext::PSSetShaderResources()** APIs.
+
+셰이더에서 사용하려면 **ID3D11DeviceContext::PSSetSamplers()** 및 **ID3D11DeviceContext::PSSetShaderResources()** API를 사용하여 설정해야 한다.
+
+```cpp
+ 
+g_pImmediateContext->PSSetShaderResources( 0, 1, &g_pTextureRV );
+g_pImmediateContext->PSSetSamplers( 0, 1, &g_pSamplerLinear );
+
+```
 
 There we go, now we're ready to use the texture within the shader.
 
+이제 셰이더 내에서 텍스처를 사용할 준비가 되었다.
 ## Applying the Texture
 
 To map the texture on top of the geometry, we will be calling a texture lookup function within the pixel shader. The function **Sample** will perform a texture lookup of a 2D texture, and then return the sampled color. The pixel shader shown below calls this function and multiplies it by the underlying mesh color (or material color), and then outputs the final color.
 
+지오메트리 위에 텍스처를 매핑하기 위해 픽셀 셰이더 내에서 텍스처 룩업 함수를 호출할 것입니다. **Sample** 함수는 2D 텍스처의 텍스처 룩업을 수행한 다음 샘플링된 색상을 반환합니다. 아래 표시된 픽셀 셰이더는 이 함수를 호출하여 기본 메쉬 색상(또는 머티리얼 색상)을 곱한 다음 최종 색상을 출력합니다.
+
 - txDiffuse is the object storing our texture that we passed in from the code above, when we bound the resource view g_pTextureRV to it.
 - samLinear will be described below; it is the sampler specifications for the texture lookup.
 - input.Tex is the coordinates of the texture that we have specified in the source.
+
+- txDiffuse는 위 코드에서 리소스 뷰 g_pTextureRV를 바인딩할 때 전달한 텍스처를 저장하는 객체입니다.
+- 아래에서 설명할 샘리니어는 텍스처 룩업을 위한 샘플러 사양입니다.
+- input.Tex는 소스에서 지정한 텍스처의 좌표입니다.
+
+```hlsl
 
 // Pixel Shader
 float4 PS( PS_INPUT input) : SV_Target
@@ -252,7 +270,13 @@ float4 PS( PS_INPUT input) : SV_Target
     return txDiffuse.Sample( samLinear, input.Tex ) * vMeshColor;
 }
 
+```
+
 Another thing we must remember to do is to pass the texture coordinates through the vertex shader. If we don't, the data is lost when it gets to the pixel shader. Here, we just copy the input's coordinates to the output, and let the hardware handle the rest.
+
+또 한 가지 기억해야 할 것은 텍스처 좌표를 버텍스 셰이더로 전달하는 것입니다. 그렇지 않으면 데이터가 픽셀 셰이더에 도달할 때 데이터가 손실됩니다. 여기서는 입력의 좌표만 출력으로 복사하고 나머지는 하드웨어가 처리하도록 합니다.
+
+```hlsl
 
 // Vertex Shader
 PS_INPUT VS( VS_INPUT input )
@@ -266,6 +290,8 @@ PS_INPUT VS( VS_INPUT input )
     return output;
 }
 
+```
+
 # Constant Buffers
 
 In Direct3D 11, an application can use a constant buffer to set shader constants (shader variables). Constant buffers are declared using a syntax similar to C-style structs. Constant buffers reduce the bandwidth required to update shader constants by allowing shader constants to be grouped together and committed at the same time, rather than making individual calls to commit each constant separately.
@@ -274,29 +300,44 @@ In the previous tutorials, we used a single constant buffer to hold all of the s
 
 The following constant buffers are defined in this tutorial's .fx file.
 
-    cbuffer cbNeverChanges
-    {
-        matrix View;
-    };
-    
-    cbuffer cbChangeOnResize
-    {
-        matrix Projection;
-    };
-    
-    cbuffer cbChangesEveryFrame
-    {
-        matrix World;
-        float4 vMeshColor;
-    };
+Direct3D 11에서 애플리케이션은 상수 버퍼를 사용하여 셰이더 상수(셰이더 변수)를 설정할 수 있습니다. 상수 버퍼는 C 스타일 구조체와 유사한 구문을 사용하여 선언됩니다. 상수 버퍼는 각 상수를 개별적으로 커밋하기 위해 개별적으로 호출하는 대신 셰이더 상수를 그룹화하여 동시에 커밋할 수 있도록 하여 셰이더 상수 업데이트에 필요한 대역폭을 줄여줍니다.
+
+이전 튜토리얼에서는 하나의 상수 버퍼에 필요한 모든 셰이더 상수를 저장하는 방법을 사용했습니다. 하지만 상수 버퍼를 효율적으로 사용하는 가장 좋은 방법은 셰이더 변수를 업데이트 빈도에 따라 상수 버퍼로 구성하는 것입니다. 이렇게 하면 애플리케이션에서 셰이더 상수를 업데이트하는 데 필요한 대역폭을 최소화할 수 있습니다. 예를 들어, 이 튜토리얼에서는 상수를 매 프레임마다 변경되는 변수, 창 크기가 변경될 때만 변경되는 변수, 한 번 설정된 후 변경되지 않는 변수의 세 가지 구조로 그룹화합니다.
+
+이 튜토리얼의 .fx 파일에는 다음과 같은 상수 버퍼가 정의되어 있습니다.
+
+```hlsl
+
+cbuffer cbNeverChanges
+{
+	matrix View;
+};
+
+cbuffer cbChangeOnResize
+{
+	matrix Projection;
+};
+
+cbuffer cbChangesEveryFrame
+{
+	matrix World;
+	float4 vMeshColor;
+};
+
+```
 
 To work with these constant buffers, you need to create a ID3D11Buffer object for each one. Then you can call **ID3D11DeviceContext::UpdateSubresource()** to update each constant buffer when needed without affecting the other constant buffers.
 
-    
-    //
-    // Update variables that change once per frame
-    //
-    CBChangesEveryFrame cb;
-    cb.mWorld = XMMatrixTranspose( g_World );
-    cb.vMeshColor = g_vMeshColor;
-    g_pImmediateContext->UpdateSubresource( g_pCBChangesEveryFrame, 0, NULL, &cb, 0, 0 );
+이러한 상수 버퍼로 작업하려면 각 버퍼에 대해 ID3D11Buffer 오브젝트를 생성해야 합니다. 그런 다음 다른 상수 버퍼에 영향을 주지 않고 필요할 때 **ID3D11DeviceContext::UpdateSubresource()**를 호출하여 각 상수 버퍼를 업데이트할 수 있습니다.
+
+```cpp
+
+//
+// Update variables that change once per frame
+//
+CBChangesEveryFrame cb;
+cb.mWorld = XMMatrixTranspose( g_World );
+cb.vMeshColor = g_vMeshColor;
+g_pImmediateContext->UpdateSubresource( g_pCBChangesEveryFrame, 0, NULL, &cb, 0, 0 );
+
+```
