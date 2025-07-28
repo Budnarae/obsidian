@@ -119,7 +119,17 @@ Note that the orbiting cube in the previous tutorial has been replaced with this
 
 이전 튜토리얼의 궤도를 따라 돌던 큐브는 광원으로 대체되었다는 것을 인지하자.
 
-Since lighting is computed by the shaders, the variables would have to be declared and then bound to the variables within the technique. In this sample, we just require the direction of the light source, as well as its color value. The first light is grey and not moving, while the second one is an orbiting red light.
+Since lighting is computed by the shaders, the variables would have to be declared and then bound to the variables within the technique.
+
+조명은 셰이더에 의해 계산되기 때문에, 변수를 선언한 다음 테크닉의 변수에 바인딩해야 한다.
+
+In this sample, we just require the direction of the light source, as well as its color value.
+
+이번 예제에서, 우리는 광원의 방향과 색상이 필요한다.
+
+The first light is grey and not moving, while the second one is an orbiting red light.
+
+첫번째 광원은 회색이고 움직이지 않으며, 두번째 광원은 붉은 색이며 궤도를 따라 회전한다.
 
 ```cpp
 
@@ -137,7 +147,15 @@ XMFLOAT4 vLightColors[2] =
 
 ```
 
-The orbiting light is rotated just like the cube in the last tutorial. The rotation matrix applied will change the direction of the light, to show the effect that it is always shining towards the center. Note that function **XMVector3Transform** is used to multiply a matrix with a vector. In the previous tutorial, we multiplied just the transformation matrices into the world matrix, then passed into the shader for transformation. However, for simplicity's sake in this case, we're actually doing the world transform of the light in the CPU.
+The orbiting light is rotated just like the cube in the last tutorial.
+
+두번째 광원은 저번 예제의 큐브처럼 궤도를 따라 회전한다.
+
+The rotation matrix applied will change the direction of the light, to show the effect that it is always shining towards the center.
+
+회전 행렬은 빛의 방향의 변화를 적용하며, 
+
+Note that function **XMVector3Transform** is used to multiply a matrix with a vector. In the previous tutorial, we multiplied just the transformation matrices into the world matrix, then passed into the shader for transformation. However, for simplicity's sake in this case, we're actually doing the world transform of the light in the CPU.
 
       
     // Rotate the second light around the origin
