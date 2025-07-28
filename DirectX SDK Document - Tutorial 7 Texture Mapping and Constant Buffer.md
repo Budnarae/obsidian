@@ -14,19 +14,32 @@ In the previous tutorial, we introduced lighting to our project.
 
 Now we will build on that by adding textures to our cube.
 
-이제 
+이제 큐브에 텍스처를 추가하여 프로젝트를 빌드해 볼 것이다.
 
 Also, we will introduce the concept of constant buffers, and explain how you can use buffers to speed up processing by minimizing bandwidth usage.
 
+또한 상수 버퍼의 개념을 소개하고 버퍼를 사용하여 대역폭 사용량을 최소화하여 처리 속도를 높일 수 있는 방법을 설명한다.
+
 The purpose of this tutorial is to modify the center cube to have a texture mapped onto it.
 
+이번 튜토리얼의 목적은 중앙의 큐브에 텍스처를 매핑하도록 수정하는 것이다.
 # Source
 
 (SDK root)\Samples\C++\Direct3D11\Tutorials\Tutorial07
 
 # Texture Mapping
 
-Texture mapping refers to the projection of a 2D image onto 3D geometry. We can think of it as wrapping a present, by placing decorative paper over an otherwise bland box. To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
+Texture mapping refers to the projection of a 2D image onto 3D geometry.
+
+텍스처 매핑은 2D 이미지를 3D 기하 세계에 투영하는 것을 말한다.
+
+We can think of it as wrapping a present, by placing decorative paper over an otherwise bland box.
+
+단조로운 상자에 장식 종이를 덮어 선물을 포장하는 것과 같다.
+
+To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
+
+To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
 
 The trick is to properly align the coordinates of the model with the texture. For complex models, it is difficult to determine the coordinates for the textures by hand. Thus, 3D modeling packages generally will export models with corresponding texture coordinates. Since our example is a cube, it is easy to determine the coordinates needed to match the texture. Texture coordinates are defined at the vertices, and are then interpolated for individual pixels on a surface.
 
