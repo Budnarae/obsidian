@@ -259,7 +259,7 @@ To map the texture on top of the geometry, we will be calling a texture lookup f
 - input.Tex is the coordinates of the texture that we have specified in the source.
 
 - txDiffuse는 위 코드에서 리소스 뷰 g_pTextureRV를 바인딩할 때 전달한 텍스처를 저장하는 객체입니다.
-- 아래에서 설명할 샘리니어는 텍스처 룩업을 위한 샘플러 사양입니다.
+- 아래에서 설명할 samLinear는 텍스처 룩업을 위한 샘플러 사양입니다.
 - input.Tex는 소스에서 지정한 텍스처의 좌표입니다.
 
 ```hlsl
