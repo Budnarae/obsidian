@@ -39,9 +39,27 @@ We can think of it as wrapping a present, by placing decorative paper over an ot
 
 To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
 
-To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
+이렇게 하려면 기하도형 표면의 점이 2D 이미지와 어떻게 대응하는지 지정해야 합니다.
 
-The trick is to properly align the coordinates of the model with the texture. For complex models, it is difficult to determine the coordinates for the textures by hand. Thus, 3D modeling packages generally will export models with corresponding texture coordinates. Since our example is a cube, it is easy to determine the coordinates needed to match the texture. Texture coordinates are defined at the vertices, and are then interpolated for individual pixels on a surface.
+The trick is to properly align the coordinates of the model with the texture.
+
+방법은 모델의 좌표를 텍스처로 적절히 정렬하는 것이다.
+
+For complex models, it is difficult to determine the coordinates for the textures by hand.
+
+복잡한 모델의 경우, 텍스처를 위한 좌표를 직접 계산하는 것은 어렵다.
+
+Thus, 3D modeling packages generally will export models with corresponding texture coordinates.
+
+그러므로, 3차원 모델링 패키지는 일반적으로 대응되는 텍스처 좌표를 동반하여 모델을 제공한다.
+
+Since our example is a cube, it is easy to determine the coordinates needed to match the texture.
+
+우리의 예시가 큐브이기 때문에, 좌표를 텍스처와 맞물리기가 쉽다.
+
+Texture coordinates are defined at the vertices, and are then interpolated for individual pixels on a surface.
+
+텍스처 좌표는 정점에 정의
 
 ## Creating a Shader Resource from the Texture and Sampler State
 
