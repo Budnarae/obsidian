@@ -49,6 +49,56 @@
       "toFloating": false,
       "toNode": "7534292e6e12eae8",
       "toSide": "top"
+    },
+    {
+      "fromNode": "123a397c00a72fe8",
+      "fromSide": "right",
+      "id": "fb528739cb46a325",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "125188f291fce4c3",
+      "fromSide": "right",
+      "id": "7ae628ab1106d9a6",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "01ca3f9062436123",
+      "fromSide": "right",
+      "id": "222c8ec3e750dfba",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "right",
+      "id": "9fc61346921b99e2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "06941715118b8d20",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "right",
+      "id": "0c6b7edb4ab07bc4",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "31a7ec4139c27e81",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -167,19 +217,6 @@
     },
     {
       "height": 60,
-      "id": "06941715118b8d20",
-      "styleAttributes": {
-        "shape": "pill",
-        "textAlign": "center"
-      },
-      "text": "Device",
-      "type": "text",
-      "width": 260,
-      "x": 340,
-      "y": -840
-    },
-    {
-      "height": 60,
       "id": "123a397c00a72fe8",
       "styleAttributes": {
         "shape": "parallelogram",
@@ -189,7 +226,7 @@
       "type": "text",
       "width": 260,
       "x": -60,
-      "y": -960
+      "y": -1200
     },
     {
       "height": 60,
@@ -202,7 +239,7 @@
       "type": "text",
       "width": 260,
       "x": -60,
-      "y": -840
+      "y": -1080
     },
     {
       "height": 60,
@@ -215,7 +252,46 @@
       "type": "text",
       "width": 260,
       "x": -60,
-      "y": -720
+      "y": -960
+    },
+    {
+      "height": 100,
+      "id": "80d60145b7a20c47",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "D3D11CreateDeviceAndSwapChain",
+      "type": "text",
+      "width": 300,
+      "x": 300,
+      "y": -1100
+    },
+    {
+      "height": 60,
+      "id": "06941715118b8d20",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "Device",
+      "type": "text",
+      "width": 260,
+      "x": 670,
+      "y": -1160
+    },
+    {
+      "height": 60,
+      "id": "31a7ec4139c27e81",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "SwapChain",
+      "type": "text",
+      "width": 260,
+      "x": 670,
+      "y": -1000
     }
   ]
 }
