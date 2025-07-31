@@ -99,6 +99,16 @@
       "toFloating": false,
       "toNode": "31a7ec4139c27e81",
       "toSide": "left"
+    },
+    {
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "right",
+      "id": "502653b6e0a46259",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "da99a89f4b404e15",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -107,6 +117,15 @@
     "version": "1.0-1.0"
   },
   "nodes": [
+    {
+      "height": 1040,
+      "id": "e39be3ab76607879",
+      "label": "Resources",
+      "type": "group",
+      "width": 680,
+      "x": -320,
+      "y": -260
+    },
     {
       "height": 640,
       "id": "00464cd421a61072",
@@ -117,21 +136,12 @@
       "y": -260
     },
     {
-      "height": 360,
-      "id": "e39be3ab76607879",
-      "label": "Resources",
-      "type": "group",
-      "width": 360,
-      "x": 40,
-      "y": -260
-    },
-    {
-      "height": 80,
+      "height": 380,
       "id": "4ace8d08e6b9596a",
       "label": "Buffer",
       "type": "group",
-      "width": 240,
-      "x": 100,
+      "width": 560,
+      "x": -260,
       "y": -200
     },
     {
@@ -140,8 +150,8 @@
       "label": "Texture",
       "type": "group",
       "width": 240,
-      "x": 100,
-      "y": -40
+      "x": -120,
+      "y": 400
     },
     {
       "height": 60,
@@ -226,33 +236,7 @@
       "type": "text",
       "width": 260,
       "x": -60,
-      "y": -1200
-    },
-    {
-      "height": 60,
-      "id": "125188f291fce4c3",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "D3D_FEATURE_LEVEL",
-      "type": "text",
-      "width": 260,
-      "x": -60,
-      "y": -1080
-    },
-    {
-      "height": 60,
-      "id": "01ca3f9062436123",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "DXGI_SWAP_CHAIN_DESC",
-      "type": "text",
-      "width": 260,
-      "x": -60,
-      "y": -960
+      "y": -820
     },
     {
       "height": 100,
@@ -265,9 +249,53 @@
       "type": "text",
       "width": 300,
       "x": 300,
-      "y": -1100
+      "y": -720
     },
     {
+      "height": 60,
+      "id": "125188f291fce4c3",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D_FEATURE_LEVEL",
+      "type": "text",
+      "width": 260,
+      "x": -60,
+      "y": -700
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "da99a89f4b404e15",
+      "styleAttributes": {
+        "border": null,
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "DeviceContext",
+      "type": "text",
+      "width": 260,
+      "x": 670,
+      "y": -700
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "31a7ec4139c27e81",
+      "styleAttributes": {
+        "border": null,
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "SwapChain",
+      "type": "text",
+      "width": 260,
+      "x": 670,
+      "y": -580
+    },
+    {
+      "color": "1",
       "height": 60,
       "id": "06941715118b8d20",
       "styleAttributes": {
@@ -278,20 +306,33 @@
       "type": "text",
       "width": 260,
       "x": 670,
-      "y": -1160
+      "y": -820
     },
     {
       "height": 60,
-      "id": "31a7ec4139c27e81",
+      "id": "01ca3f9062436123",
       "styleAttributes": {
-        "shape": "pill",
+        "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "SwapChain",
+      "text": "DXGI_SWAP_CHAIN_DESC",
       "type": "text",
       "width": 260,
-      "x": 670,
-      "y": -1000
+      "x": -60,
+      "y": -580
+    },
+    {
+      "height": 60,
+      "id": "0ec96cdc8493c296",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "BackBuffer (ID3D11Texture2D)",
+      "type": "text",
+      "width": 260,
+      "x": -190,
+      "y": -160
     }
   ]
 }
