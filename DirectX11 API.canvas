@@ -111,24 +111,56 @@
       "toSide": "left"
     },
     {
-      "fromNode": "0ec96cdc8493c296",
-      "fromSide": "bottom",
-      "id": "3a0073418c4d32a2",
+      "fromFloating": false,
+      "fromNode": "31a7ec4139c27e81",
+      "fromSide": "right",
+      "id": "4328c54f2c58d00a",
+      "label": "GetBuffer",
       "styleAttributes": {
       },
       "toFloating": false,
-      "toNode": "595206cd8a4c1e60",
-      "toSide": "top"
+      "toNode": "0ec96cdc8493c296",
+      "toSide": "left"
     },
     {
-      "fromNode": "595206cd8a4c1e60",
-      "fromSide": "bottom",
-      "id": "2ca217fe4c388f2e",
+      "fromNode": "06941715118b8d20",
+      "fromSide": "right",
+      "id": "aff8168952ec8960",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0a2882dbc5e965f2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0ec96cdc8493c296",
+      "fromSide": "right",
+      "id": "fc20f342deb2df90",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0a2882dbc5e965f2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0a2882dbc5e965f2",
+      "fromSide": "right",
+      "id": "f21e5417c411332c",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "abbf87f436258546",
-      "toSide": "top"
+      "toSide": "left"
+    },
+    {
+      "fromNode": "14017d2c6cb04951",
+      "fromSide": "right",
+      "id": "ae5180de6a1411bb",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0a2882dbc5e965f2",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -143,7 +175,7 @@
       "id": "e39be3ab76607879",
       "label": "Resources",
       "type": "group",
-      "width": 1120,
+      "width": 1400,
       "x": 320,
       "y": -250
     },
@@ -180,7 +212,7 @@
       "label": "Graphics Pipeline",
       "type": "group",
       "width": 400,
-      "x": 1560,
+      "x": 1840,
       "y": -250
     },
     {
@@ -198,8 +230,8 @@
       "label": "View",
       "type": "group",
       "width": 440,
-      "x": 930,
-      "y": -120
+      "x": 1200,
+      "y": -110
     },
     {
       "height": 100,
@@ -324,33 +356,6 @@
       "y": -80
     },
     {
-      "color": "1",
-      "height": 60,
-      "id": "595206cd8a4c1e60",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "CreateRenderTargetView",
-      "type": "text",
-      "width": 260,
-      "x": 470,
-      "y": 40
-    },
-    {
-      "height": 60,
-      "id": "abbf87f436258546",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ID3D11RenderTargetView",
-      "type": "text",
-      "width": 260,
-      "x": 470,
-      "y": 170
-    },
-    {
       "height": 60,
       "id": "1eff90d7acfdd2d6",
       "styleAttributes": {
@@ -359,7 +364,7 @@
       "text": "생략\n",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": -30
     },
     {
@@ -371,7 +376,7 @@
       "text": "Rasterizer (RS)",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": 70
     },
     {
@@ -383,7 +388,7 @@
       "text": "Pixel Shader (PS)",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": 170
     },
     {
@@ -395,7 +400,7 @@
       "text": "Output Merger (OM)",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": 270
     },
     {
@@ -407,7 +412,7 @@
       "text": "Input Assembler (IA)",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": -230
     },
     {
@@ -419,8 +424,44 @@
       "text": "Vertex Shader(VS)",
       "type": "text",
       "width": 260,
-      "x": 1640,
+      "x": 1920,
       "y": -130
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "0a2882dbc5e965f2",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateRenderTargetView\n",
+      "type": "text",
+      "width": 260,
+      "x": 880,
+      "y": -80
+    },
+    {
+      "height": 80,
+      "id": "abbf87f436258546",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "RenderTargetView (ID3D11RenderTargetView)",
+      "type": "text",
+      "width": 260,
+      "x": 1280,
+      "y": -80
+    },
+    {
+      "height": 60,
+      "id": "170ad5b0c2ecf9cc",
+      "text": "D3D11_BU",
+      "type": "text",
+      "width": 280,
+      "x": -1150,
+      "y": 600
     }
   ]
 }
