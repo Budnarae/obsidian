@@ -51,24 +51,26 @@
       "toSide": "top"
     },
     {
+      "fromFloating": false,
       "fromNode": "123a397c00a72fe8",
-      "fromSide": "right",
+      "fromSide": "bottom",
       "id": "fb528739cb46a325",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "80d60145b7a20c47",
-      "toSide": "left"
+      "toSide": "top"
     },
     {
-      "fromNode": "434b743c567a9a97",
-      "fromSide": "left",
+      "fromFloating": false,
+      "fromNode": "125188f291fce4c3",
+      "fromSide": "bottom",
       "id": "7ae628ab1106d9a6",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "80d60145b7a20c47",
-      "toSide": "left"
+      "toSide": "top"
     },
     {
       "fromFloating": false,
@@ -79,7 +81,7 @@
       },
       "toFloating": false,
       "toNode": "80d60145b7a20c47",
-      "toSide": "left"
+      "toSide": "top"
     },
     {
       "fromNode": "80d60145b7a20c47",
@@ -112,28 +114,6 @@
       "toSide": "left"
     },
     {
-      "fromFloating": false,
-      "fromNode": "31a7ec4139c27e81",
-      "fromSide": "right",
-      "id": "4328c54f2c58d00a",
-      "label": "GetBuffer",
-      "styleAttributes": {
-      },
-      "toFloating": false,
-      "toNode": "0ec96cdc8493c296",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "06941715118b8d20",
-      "fromSide": "right",
-      "id": "aff8168952ec8960",
-      "styleAttributes": {
-      },
-      "toFloating": false,
-      "toNode": "0a2882dbc5e965f2",
-      "toSide": "left"
-    },
-    {
       "fromNode": "0ec96cdc8493c296",
       "fromSide": "right",
       "id": "fc20f342deb2df90",
@@ -154,34 +134,26 @@
       "toSide": "left"
     },
     {
+      "fromFloating": false,
       "fromNode": "14017d2c6cb04951",
-      "fromSide": "right",
+      "fromSide": "bottom",
       "id": "ae5180de6a1411bb",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "0a2882dbc5e965f2",
-      "toSide": "left"
+      "toSide": "top"
     },
     {
-      "fromNode": "06941715118b8d20",
-      "fromSide": "right",
-      "id": "40bac8e4bf2b3569",
-      "styleAttributes": {
-      },
-      "toFloating": false,
-      "toNode": "55b49ae27993020a",
-      "toSide": "left"
-    },
-    {
+      "fromFloating": false,
       "fromNode": "170ad5b0c2ecf9cc",
-      "fromSide": "right",
+      "fromSide": "bottom",
       "id": "fd6a88c322d78bbc",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "55b49ae27993020a",
-      "toSide": "left"
+      "toSide": "top"
     },
     {
       "fromNode": "55b49ae27993020a",
@@ -191,16 +163,6 @@
       },
       "toFloating": false,
       "toNode": "fabdc4e139e20f6d",
-      "toSide": "left"
-    },
-    {
-      "fromNode": "06941715118b8d20",
-      "fromSide": "right",
-      "id": "1d7e12378ad12eb1",
-      "styleAttributes": {
-      },
-      "toFloating": false,
-      "toNode": "b5848ad2304f074d",
       "toSide": "left"
     },
     {
@@ -214,13 +176,24 @@
       "toSide": "left"
     },
     {
+      "fromFloating": false,
       "fromNode": "3170efdc8a505cf6",
-      "fromSide": "right",
+      "fromSide": "bottom",
       "id": "9d6821eea0eacd1b",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "b5848ad2304f074d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1ca8823d9f10e80b",
+      "fromSide": "right",
+      "id": "0d76c1992e80576d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0ec96cdc8493c296",
       "toSide": "left"
     }
   ],
@@ -236,7 +209,7 @@
       "id": "e39be3ab76607879",
       "label": "Resources",
       "type": "group",
-      "width": 1400,
+      "width": 1580,
       "x": 320,
       "y": -250
     },
@@ -273,7 +246,7 @@
       "label": "Graphics Pipeline",
       "type": "group",
       "width": 400,
-      "x": 1840,
+      "x": 2080,
       "y": -250
     },
     {
@@ -282,7 +255,7 @@
       "label": "Buffer",
       "type": "group",
       "width": 440,
-      "x": 400,
+      "x": 580,
       "y": -120
     },
     {
@@ -291,7 +264,7 @@
       "label": "View",
       "type": "group",
       "width": 440,
-      "x": 1200,
+      "x": 1380,
       "y": -110
     },
     {
@@ -352,66 +325,43 @@
       "y": 40
     },
     {
-      "color": "3",
       "height": 60,
-      "id": "0ec96cdc8493c296",
+      "id": "125188f291fce4c3",
       "styleAttributes": {
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "BackBuffer (ID3D11Texture2D)",
+      "text": "D3D_FEATURE_LEVEL",
       "type": "text",
       "width": 260,
-      "x": 470,
-      "y": -80
+      "x": -380,
+      "y": -600
     },
     {
       "height": 60,
-      "id": "1eff90d7acfdd2d6",
+      "id": "01ca3f9062436123",
       "styleAttributes": {
+        "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "생략\n",
+      "text": "DXGI_SWAP_CHAIN_DESC",
       "type": "text",
       "width": 260,
-      "x": 1920,
-      "y": -30
+      "x": -80,
+      "y": -600
     },
     {
       "height": 60,
-      "id": "d248dcb34f377c64",
+      "id": "123a397c00a72fe8",
       "styleAttributes": {
+        "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "Rasterizer (RS)",
+      "text": "D3D_DRIVER_TYPE",
       "type": "text",
       "width": 260,
-      "x": 1920,
-      "y": 70
-    },
-    {
-      "height": 60,
-      "id": "623113583cd9f56d",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "Pixel Shader (PS)",
-      "type": "text",
-      "width": 260,
-      "x": 1920,
-      "y": 170
-    },
-    {
-      "height": 60,
-      "id": "7534292e6e12eae8",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "Output Merger (OM)",
-      "type": "text",
-      "width": 260,
-      "x": 1920,
-      "y": 270
+      "x": -680,
+      "y": -600
     },
     {
       "height": 60,
@@ -422,7 +372,7 @@
       "text": "Input Assembler (IA)",
       "type": "text",
       "width": 260,
-      "x": 1920,
+      "x": 2160,
       "y": -230
     },
     {
@@ -434,8 +384,169 @@
       "text": "Vertex Shader(VS)",
       "type": "text",
       "width": 260,
-      "x": 1920,
+      "x": 2160,
       "y": -130
+    },
+    {
+      "height": 60,
+      "id": "1eff90d7acfdd2d6",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "생략\n",
+      "type": "text",
+      "width": 260,
+      "x": 2160,
+      "y": -30
+    },
+    {
+      "height": 60,
+      "id": "d248dcb34f377c64",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Rasterizer (RS)",
+      "type": "text",
+      "width": 260,
+      "x": 2160,
+      "y": 70
+    },
+    {
+      "height": 60,
+      "id": "623113583cd9f56d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Pixel Shader (PS)",
+      "type": "text",
+      "width": 260,
+      "x": 2160,
+      "y": 170
+    },
+    {
+      "height": 60,
+      "id": "7534292e6e12eae8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Output Merger (OM)",
+      "type": "text",
+      "width": 260,
+      "x": 2160,
+      "y": 270
+    },
+    {
+      "height": 60,
+      "id": "0ec96cdc8493c296",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "BackBuffer (ID3D11Texture2D)",
+      "type": "text",
+      "width": 260,
+      "x": 650,
+      "y": -80
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "b5848ad2304f074d",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateRasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 1060,
+      "y": 320
+    },
+    {
+      "height": 60,
+      "id": "2d53f21d267bda44",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ID3D11RasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 1460,
+      "y": 320
+    },
+    {
+      "height": 80,
+      "id": "abbf87f436258546",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "RenderTargetView (ID3D11RenderTargetView)",
+      "type": "text",
+      "width": 260,
+      "x": 1460,
+      "y": -90
+    },
+    {
+      "height": 60,
+      "id": "fabdc4e139e20f6d",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "VertexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 1460,
+      "y": 20
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "1ca8823d9f10e80b",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "GetBuffer",
+      "type": "text",
+      "width": 120,
+      "x": 380,
+      "y": -80
+    },
+    {
+      "height": 60,
+      "id": "14017d2c6cb04951",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "D3D11_RENDER_TARGET_VIEW_DESC",
+      "type": "text",
+      "width": 280,
+      "x": 730,
+      "y": -540
+    },
+    {
+      "height": 60,
+      "id": "3170efdc8a505cf6",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "D3D11_RASTERIZER_DESC",
+      "type": "text",
+      "width": 280,
+      "x": 1370,
+      "y": -540
+    },
+    {
+      "height": 60,
+      "id": "170ad5b0c2ecf9cc",
+      "text": "D3D11_BUFFER_DESC",
+      "type": "text",
+      "width": 280,
+      "x": 1060,
+      "y": -540
     },
     {
       "color": "1",
@@ -448,7 +559,7 @@
       "text": "CreateRenderTargetView\n",
       "type": "text",
       "width": 260,
-      "x": 880,
+      "x": 1060,
       "y": -80
     },
     {
@@ -462,133 +573,8 @@
       "text": "CreateBuffer",
       "type": "text",
       "width": 260,
-      "x": 880,
+      "x": 1080,
       "y": 20
-    },
-    {
-      "height": 80,
-      "id": "abbf87f436258546",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "RenderTargetView (ID3D11RenderTargetView)",
-      "type": "text",
-      "width": 260,
-      "x": 1280,
-      "y": -90
-    },
-    {
-      "height": 60,
-      "id": "fabdc4e139e20f6d",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "VertexBuffer(ID3D11Buffer)",
-      "type": "text",
-      "width": 260,
-      "x": 1280,
-      "y": 20
-    },
-    {
-      "color": "1",
-      "height": 60,
-      "id": "b5848ad2304f074d",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "CreateRasterizeState",
-      "type": "text",
-      "width": 260,
-      "x": 880,
-      "y": 320
-    },
-    {
-      "height": 60,
-      "id": "2d53f21d267bda44",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ID3D11RasterizeState",
-      "type": "text",
-      "width": 260,
-      "x": 1280,
-      "y": 320
-    },
-    {
-      "height": 60,
-      "id": "123a397c00a72fe8",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "D3D_DRIVER_TYPE",
-      "type": "text",
-      "width": 260,
-      "x": -670,
-      "y": -840
-    },
-    {
-      "height": 60,
-      "id": "125188f291fce4c3",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "D3D_FEATURE_LEVEL",
-      "type": "text",
-      "width": 260,
-      "x": -670,
-      "y": -720
-    },
-    {
-      "height": 60,
-      "id": "01ca3f9062436123",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "DXGI_SWAP_CHAIN_DESC",
-      "type": "text",
-      "width": 260,
-      "x": -670,
-      "y": -600
-    },
-    {
-      "height": 60,
-      "id": "14017d2c6cb04951",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "D3D11_RENDER_TARGET_VIEW_DESC",
-      "type": "text",
-      "width": 280,
-      "x": 860,
-      "y": -840
-    },
-    {
-      "height": 60,
-      "id": "170ad5b0c2ecf9cc",
-      "text": "D3D11_BUFFER_DESC",
-      "type": "text",
-      "width": 280,
-      "x": 860,
-      "y": -720
-    },
-    {
-      "height": 60,
-      "id": "3170efdc8a505cf6",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "D3D11_RASTERIZER_DESC",
-      "type": "text",
-      "width": 280,
-      "x": 860,
-      "y": -600
     }
   ]
 }
