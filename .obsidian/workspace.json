@@ -11,15 +11,17 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
+                "file": "DirectX11 API.canvas",
+                "viewState": {
+                  "x": 593.8889007568359,
+                  "y": 43.88883267508635,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
             }
           }
         ]
@@ -79,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,6 +210,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
+    "DirectX11 API.canvas",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
@@ -216,7 +221,6 @@
     "재료/이미지/642bb0483c2868b445df8e624a08af19_MD5.jpeg",
     "Pasted image 20250728143926.png",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
-    "index.md",
     "재료/이미지/d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg",
     "Pasted image 20250726152557.png",
     "재료/이미지/55969b12301be3d937029fe63e4ad0eb_MD5.jpeg",

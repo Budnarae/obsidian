@@ -1,0 +1,125 @@
+{
+  "edges": [
+    {
+      "fromNode": "a24d18ca4cfcc64d",
+      "fromSide": "bottom",
+      "id": "a9347b2610478d71",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2a3b13564008cef2",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2a3b13564008cef2",
+      "fromSide": "bottom",
+      "id": "9b5e70b2a7d78922",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "1eff90d7acfdd2d6",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1eff90d7acfdd2d6",
+      "fromSide": "bottom",
+      "id": "38d58217a356271d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d248dcb34f377c64",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 400,
+      "id": "00464cd421a61072",
+      "label": "Graphics Pipeline",
+      "type": "group",
+      "width": 400,
+      "x": 460,
+      "y": -260
+    },
+    {
+      "height": 360,
+      "id": "e39be3ab76607879",
+      "label": "Resources",
+      "type": "group",
+      "width": 360,
+      "x": 60,
+      "y": -240
+    },
+    {
+      "height": 80,
+      "id": "4ace8d08e6b9596a",
+      "label": "Buffer",
+      "type": "group",
+      "width": 240,
+      "x": 120,
+      "y": -180
+    },
+    {
+      "height": 80,
+      "id": "6b29955e990148e5",
+      "label": "Texture",
+      "type": "group",
+      "width": 240,
+      "x": 120,
+      "y": -20
+    },
+    {
+      "height": 60,
+      "id": "a24d18ca4cfcc64d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Input Assembler (IA)",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": -240
+    },
+    {
+      "height": 60,
+      "id": "2a3b13564008cef2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Vertex Shader(VS)",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": -140
+    },
+    {
+      "height": 60,
+      "id": "1eff90d7acfdd2d6",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "생략\n",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": -40
+    },
+    {
+      "height": 60,
+      "id": "d248dcb34f377c64",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Ras",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": 80
+    }
+  ]
+}
