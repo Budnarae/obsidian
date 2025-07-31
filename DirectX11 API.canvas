@@ -164,6 +164,58 @@
       "width": 260,
       "x": 540,
       "y": 260
+    },
+    {
+      "height": 60,
+      "id": "06941715118b8d20",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "Device",
+      "type": "text",
+      "width": 260,
+      "x": 340,
+      "y": -840
+    },
+    {
+      "height": 60,
+      "id": "123a397c00a72fe8",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D_DRIVER_TYPE",
+      "type": "text",
+      "width": 260,
+      "x": -60,
+      "y": -960
+    },
+    {
+      "height": 60,
+      "id": "125188f291fce4c3",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D_FEATURE_LEVEL",
+      "type": "text",
+      "width": 260,
+      "x": -60,
+      "y": -840
+    },
+    {
+      "height": 60,
+      "id": "01ca3f9062436123",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DXGI_SWAP_CHAIN_DESC",
+      "type": "text",
+      "width": 260,
+      "x": -60,
+      "y": -720
     }
   ]
 }
