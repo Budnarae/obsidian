@@ -39,7 +39,7 @@ We can think of it as wrapping a present, by placing decorative paper over an ot
 
 To do this, we have to specify how the points on the surface of the geometry correspond with the 2D image.
 
-이렇게 하려면 기하도형 표면의 점이 2D 이미지와 어떻게 대응하는지 지정해야 합니다.
+이렇게 하려면 기하도형 표면의 점이 2D 이미지와 어떻게 대응하는지 지정해야 한다.
 
 The trick is to properly align the coordinates of the model with the texture.
 
