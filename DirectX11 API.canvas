@@ -593,11 +593,11 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "",
+      "text": "ConstantBuffer(ID3D11Buffer)",
       "type": "text",
       "width": 260,
-      "x": 1300,
-      "y": 180
+      "x": 1460,
+      "y": 120
     }
   ]
 }
