@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
+                "file": "private/42Seoul/SCOP pdf 번역.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer"
+              "title": "SCOP pdf 번역"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,10 +208,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "DirectX11 API.canvas",
     "index.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
-    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
     "Pasted image 20250728160243.png",
     "재료/이미지/4353e841252db1deef3dd9f47b0c3c3a_MD5.jpeg",
