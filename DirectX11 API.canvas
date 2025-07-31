@@ -29,6 +29,26 @@
       "toFloating": false,
       "toNode": "d248dcb34f377c64",
       "toSide": "top"
+    },
+    {
+      "fromNode": "d248dcb34f377c64",
+      "fromSide": "bottom",
+      "id": "c18bad760f558857",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "623113583cd9f56d",
+      "fromSide": "bottom",
+      "id": "e6a8c4d0214e9fb7",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7534292e6e12eae8",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -38,7 +58,7 @@
   },
   "nodes": [
     {
-      "height": 400,
+      "height": 640,
       "id": "00464cd421a61072",
       "label": "Graphics Pipeline",
       "type": "group",
@@ -52,8 +72,8 @@
       "label": "Resources",
       "type": "group",
       "width": 360,
-      "x": 60,
-      "y": -240
+      "x": 40,
+      "y": -260
     },
     {
       "height": 80,
@@ -61,8 +81,8 @@
       "label": "Buffer",
       "type": "group",
       "width": 240,
-      "x": 120,
-      "y": -180
+      "x": 100,
+      "y": -200
     },
     {
       "height": 80,
@@ -70,8 +90,8 @@
       "label": "Texture",
       "type": "group",
       "width": 240,
-      "x": 120,
-      "y": -20
+      "x": 100,
+      "y": -40
     },
     {
       "height": 60,
@@ -115,11 +135,35 @@
       "styleAttributes": {
         "textAlign": "center"
       },
-      "text": "Ras",
+      "text": "Rasterizer (RS)",
       "type": "text",
       "width": 260,
       "x": 540,
-      "y": 80
+      "y": 60
+    },
+    {
+      "height": 60,
+      "id": "623113583cd9f56d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Pixel Shader (PS)",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": 160
+    },
+    {
+      "height": 60,
+      "id": "7534292e6e12eae8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Output Merger (OM)",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": 260
     }
   ]
 }
