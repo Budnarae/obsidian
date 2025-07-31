@@ -82,7 +82,7 @@ You’re free to use any langages (C / C++ / Rust preferred )
 
 You’re free to choose between OpenGL, Vulkan, Metal and the MinilibX
 
-당신은 OpenGl, Vulkan, Metal 그리고 MinilibX 중 하나를 자유롭게 선택할 수 있습니다(MinilibX는 도대체 왜 끼워넣었으며 DirectX는 왜 유기했는가).
+당신은 OpenGL, Vulkan, Metal 그리고 MinilibX 중 하나를 자유롭게 선택할 수 있습니다(MinilibX는 도대체 왜 끼워넣었으며 DirectX는 왜 유기했는가).
 
 Have a classic Makefile (everything you usually put in there).
 
