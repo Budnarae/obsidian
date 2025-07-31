@@ -472,6 +472,16 @@
       "toFloating": false,
       "toNode": "fa808f2655d17ee4",
       "toSide": "left"
+    },
+    {
+      "fromNode": "7534292e6e12eae8",
+      "fromSide": "bottom",
+      "id": "194f29c3ddf915bd",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "f2e2d67e74f36a61",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -1186,6 +1196,20 @@
       "width": 260,
       "x": 700,
       "y": 780
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f2e2d67e74f36a61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Draw",
+      "type": "text",
+      "width": 260,
+      "x": 2100,
+      "y": 960
     }
   ]
 }
