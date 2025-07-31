@@ -135,8 +135,8 @@ First, we updated the structure used to define our vertices to include the textu
 
 struct SimpleVertex
 {
-XMFLOAT3 Pos;
-XMFLOAT2 Tex;
+	XMFLOAT3 Pos;
+	XMFLOAT2 Tex;
 };
 
 ```
@@ -158,7 +158,7 @@ D3D11_INPUT_ELEMENT_DESC layout[] =
 
 Since the input layout changed, the corresponding vertex shader input must also be modified to match the addition.
 
-입력 레이아웃이 변경되었기 때무에, 대응되는 정점 셰이더의 입력도 추가사항이 반영되도록 수정해야 한다.
+입력 레이아웃이 변경되었기 때문에, 대응되는 정점 셰이더의 입력도 추가사항이 반영되도록 수정해야 한다.
 
 ```hlsl
 
