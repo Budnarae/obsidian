@@ -214,13 +214,13 @@
       "y": -250
     },
     {
-      "height": 520,
+      "height": 220,
       "id": "434b743c567a9a97",
       "label": "DESC",
       "type": "group",
-      "width": 2440,
+      "width": 2740,
       "x": -720,
-      "y": -960
+      "y": -660
     },
     {
       "height": 780,
@@ -575,6 +575,18 @@
       "width": 260,
       "x": 1080,
       "y": 20
+    },
+    {
+      "height": 60,
+      "id": "1fd47f6e4d2ae818",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "",
+      "type": "text",
+      "width": 260,
+      "x": 1840,
+      "y": -500
     }
   ]
 }
