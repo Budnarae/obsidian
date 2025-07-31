@@ -205,6 +205,17 @@
       "toFloating": false,
       "toNode": "a4919e9fe67e463f",
       "toSide": "left"
+    },
+    {
+      "fromNode": "6e3380f1aa332406",
+      "fromSide": "right",
+      "id": "33d679473c73184c",
+      "label": "cpu를 통해 gpu의 상수 버퍼에 접근",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -598,6 +609,20 @@
       "width": 260,
       "x": 1460,
       "y": 120
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "6e3380f1aa332406",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Map",
+      "type": "text",
+      "width": 260,
+      "x": 1060,
+      "y": 460
     }
   ]
 }
