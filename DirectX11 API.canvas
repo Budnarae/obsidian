@@ -210,7 +210,19 @@
       "fromNode": "6e3380f1aa332406",
       "fromSide": "right",
       "id": "33d679473c73184c",
-      "label": "cpu를 통해 gpu의 상수 버퍼에 접근",
+      "label": "cpu를 통해 gpu의 상수 버퍼에 접근하게끔 함",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "7b47eec875f81929",
+      "fromSide": "right",
+      "id": "05e879bf0ebffa48",
+      "label": "cpu의 상수버퍼 접근 차단",
       "styleAttributes": {
       },
       "toFloating": false,
@@ -226,7 +238,7 @@
   },
   "nodes": [
     {
-      "height": 1040,
+      "height": 1530,
       "id": "e39be3ab76607879",
       "label": "Resources",
       "type": "group",
@@ -622,7 +634,21 @@
       "type": "text",
       "width": 260,
       "x": 1060,
-      "y": 460
+      "y": 880
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "7b47eec875f81929",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Unmap",
+      "type": "text",
+      "width": 260,
+      "x": 1060,
+      "y": 680
     }
   ]
 }
