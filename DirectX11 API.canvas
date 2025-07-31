@@ -870,6 +870,19 @@
       "width": 260,
       "x": 1940,
       "y": -200
+    },
+    {
+      "height": 60,
+      "id": "25612ad884f798c0",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Shader file(.hlsl, .fx)",
+      "type": "text",
+      "width": 260,
+      "x": 240,
+      "y": -600
     }
   ]
 }
