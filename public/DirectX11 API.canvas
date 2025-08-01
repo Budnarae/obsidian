@@ -553,6 +553,48 @@
       "toFloating": false,
       "toNode": "24d5889d9cd4cd39",
       "toSide": "left"
+    },
+    {
+      "fromNode": "24d5889d9cd4cd39",
+      "fromSide": "right",
+      "id": "35e719283c9d7e15",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7ff27f0920e59827",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "7ff27f0920e59827",
+      "fromSide": "right",
+      "id": "9a42babe6d32b5c5",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "e097791d0aa9be33",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7ff27f0920e59827",
+      "fromSide": "right",
+      "id": "2f11924df23e14e5",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "f03fe44265b623d2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7534292e6e12eae8",
+      "fromSide": "bottom",
+      "id": "1d29701d714fbb90",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0421a5d54460b9cc",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -608,7 +650,7 @@
       "y": -250
     },
     {
-      "height": 510,
+      "height": 570,
       "id": "6b29955e990148e5",
       "label": "View",
       "type": "group",
@@ -1391,11 +1433,52 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "CreateBuffer",
+      "text": "CreateDepthStencilView",
       "type": "text",
       "width": 260,
       "x": 700,
       "y": 150
+    },
+    {
+      "height": 60,
+      "id": "7ff27f0920e59827",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 1140,
+      "y": 360
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f03fe44265b623d2",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "ClearDepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 1270,
+      "y": 730
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0421a5d54460b9cc",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "DrawIndexed",
+      "type": "text",
+      "width": 260,
+      "x": 2100,
+      "y": 1080
     }
   ]
 }
