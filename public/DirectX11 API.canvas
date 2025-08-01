@@ -525,6 +525,7 @@
       "toSide": "left"
     },
     {
+      "fromFloating": false,
       "fromNode": "0cef86914dc4c535",
       "fromSide": "right",
       "id": "ac00395800f02211",
