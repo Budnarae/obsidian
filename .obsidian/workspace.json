@@ -39,8 +39,7 @@
               "title": "DirectX11 API"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,11 +222,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ca4b1e4e138a2110",
   "lastOpenFiles": [
+    "public/DirectX11 API.canvas",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
-    "public/DirectX11 API.canvas",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",

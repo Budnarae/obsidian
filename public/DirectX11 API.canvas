@@ -503,6 +503,26 @@
       "toFloating": false,
       "toNode": "81cac63f3ff03368",
       "toSide": "left"
+    },
+    {
+      "fromNode": "81cac63f3ff03368",
+      "fromSide": "right",
+      "id": "4085d7e8380280f2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "238ae015ddc79d16",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "238ae015ddc79d16",
+      "fromSide": "right",
+      "id": "08d7aca18149dcae",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a24d18ca4cfcc64d",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -1267,7 +1287,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "IASetInBuffers",
+      "text": "IASetIndexBuffers",
       "type": "text",
       "width": 260,
       "x": 1720,
