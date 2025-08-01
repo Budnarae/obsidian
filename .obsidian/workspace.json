@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
+                "file": "public/DirectX SDK Document - Tutorial 3 Shaders.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DirectX SDK Document - Tutorial 2 Rendering a Triangle"
+              "title": "DirectX SDK Document - Tutorial 3 Shaders"
             }
           },
           {
@@ -240,6 +240,7 @@
   },
   "active": "ca4b1e4e138a2110",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/DirectX11 API.canvas",
@@ -250,7 +251,6 @@
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
-    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/Programming Guide for Direct3D 11.md",
     "private/42Seoul/SCOP pdf 번역.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
