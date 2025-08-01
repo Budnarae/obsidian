@@ -626,6 +626,56 @@
       "toFloating": false,
       "toNode": "0bd9324e9ef83916",
       "toSide": "top"
+    },
+    {
+      "fromNode": "0bd9324e9ef83916",
+      "fromSide": "right",
+      "id": "00ab55592d6ede1c",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "31aeb1d6b49e4949",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "88064e8414efc74a",
+      "fromSide": "right",
+      "id": "2c9cee40f97d6f4e",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "cbe740b673a92245",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "cbe740b673a92245",
+      "fromSide": "right",
+      "id": "d95748545c2c969e",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2c70f45390d48acc",
+      "fromSide": "right",
+      "id": "ff29724d4aed803c",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "31aeb1d6b49e4949",
+      "fromSide": "right",
+      "id": "442b738f5c5b90a1",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2c70f45390d48acc",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -1262,20 +1312,6 @@
       "y": -20
     },
     {
-      "color": "2",
-      "height": 60,
-      "id": "93be25923b353cc1",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "PSSetShader",
-      "type": "text",
-      "width": 260,
-      "x": 1720,
-      "y": 510
-    },
-    {
       "height": 60,
       "id": "2d53f21d267bda44",
       "styleAttributes": {
@@ -1352,34 +1388,6 @@
       "width": 260,
       "x": 1140,
       "y": 360
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "e097791d0aa9be33",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "OMSetRenderTargets",
-      "type": "text",
-      "width": 260,
-      "x": 1720,
-      "y": 670
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "82a2d69c6363fa61",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "OMSetBlendState",
-      "type": "text",
-      "width": 260,
-      "x": 1720,
-      "y": 780
     },
     {
       "color": "2",
@@ -1535,15 +1543,15 @@
       "y": 450
     },
     {
-      "height": 60,
+      "height": 90,
       "id": "88064e8414efc74a",
       "styleAttributes": {
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "DepthStencilBuffer (ID3D11ShaderResourceView)",
+      "text": "Shader Resource(ID3D11ShaderResourceView)",
       "type": "text",
-      "width": 260,
+      "width": 290,
       "x": 250,
       "y": 450
     },
@@ -1568,11 +1576,94 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "",
+      "text": "CreateSamplerState",
       "type": "text",
       "width": 260,
-      "x": 720,
-      "y": -320
+      "x": -120,
+      "y": 810
+    },
+    {
+      "height": 60,
+      "id": "31aeb1d6b49e4949",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Sampler State (ID3D11SamplerState)",
+      "type": "text",
+      "width": 260,
+      "x": 250,
+      "y": 810
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "93be25923b353cc1",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetShader",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 450
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "82a2d69c6363fa61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "OMSetBlendState",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 860
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "e097791d0aa9be33",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "OMSetRenderTargets",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 750
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "cbe740b673a92245",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetShaderResources",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 540
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "2c70f45390d48acc",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetSamplers",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 640
     }
   ]
 }

@@ -60,9 +60,9 @@
               "state": {
                 "file": "public/DirectX11 API.canvas",
                 "viewState": {
-                  "x": 862.8535780192586,
-                  "y": 108.63190112876664,
-                  "zoom": -0.8725870471253951
+                  "x": 1333.1470200332865,
+                  "y": 894.2372805161748,
+                  "zoom": -1.4281426173981473
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -253,10 +253,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "1318c59533703e2f",
+  "active": "3a33f7e7251f7001",
   "lastOpenFiles": [
-    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX11 API.canvas",
+    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
