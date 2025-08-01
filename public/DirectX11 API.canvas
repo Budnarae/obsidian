@@ -523,6 +523,16 @@
       "toFloating": false,
       "toNode": "a24d18ca4cfcc64d",
       "toSide": "left"
+    },
+    {
+      "fromNode": "0cef86914dc4c535",
+      "fromSide": "right",
+      "id": "ac00395800f02211",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -1292,6 +1302,20 @@
       "width": 260,
       "x": 1720,
       "y": -70
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0cef86914dc4c535",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "UpdateResource",
+      "type": "text",
+      "width": 260,
+      "x": 700,
+      "y": 900
     }
   ]
 }

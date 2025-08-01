@@ -26,20 +26,19 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 1463.025301683985,
-                  "y": 263.7841610540734,
-                  "zoom": -0.7868360039655939
-                }
+                "file": "public/DirectX SDK Document - Tutorial 3 Shaders.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "DirectX SDK Document - Tutorial 3 Shaders"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,14 +221,14 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "ca4b1e4e138a2110",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
+    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX11 API.canvas",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
-    "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
-    "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "index.md",
     "public/DirectX11 Graphics Pipeline.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
