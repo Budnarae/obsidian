@@ -29,7 +29,7 @@ The first steps of creating the window and message loop are identical in Direct3
 
 창과 메시지 루프를 만드는 첫번째 단계는 Direct3D 9, 10, 11에서 모두 동일하다.
 
-See DIrect3D 10 Tutorial 00: Win32 Basics for an introduction to this process.
+See Direct3D 10 Tutorial 00: Win32 Basics for an introduction to this process.
 
 이 단계에 대해 소개한 [[DirectX SDK Document - Tutorial 0 Win32 Basics]]을 보도록 하자.
 
