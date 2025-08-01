@@ -268,7 +268,7 @@ In this space, visible content has X and Y coordinates ranging from -1 to 1, and
 
 Screen space is often used to refer to locations in the frame buffer.
 
-스크린 공간은 보통 프레임 버퍼 내의 위치를 나타내는 데 사용된다다.
+스크린 공간은 보통 프레임 버퍼 내의 위치를 나타내는 데 사용된다.
 
 Because frame buffer is usually a 2D texture, screen space is a 2D space.
 
