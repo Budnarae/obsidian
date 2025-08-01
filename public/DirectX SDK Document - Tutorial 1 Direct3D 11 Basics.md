@@ -302,7 +302,7 @@ g_pImmediateContext->RSSetViewports( 1, &vp );
 
 We have set up the window and Direct3D 11 device, and we are ready to render.
 
-창과 Direct3d 11 장치를 설정하였으니, 이제 렌더링할 차례다.
+창과 Direct3D 11 장치를 설정하였으니, 이제 렌더링할 차례다.
 
 However, there is still a problem with our message loop: it uses **GetMessage()** to get messages.
 
