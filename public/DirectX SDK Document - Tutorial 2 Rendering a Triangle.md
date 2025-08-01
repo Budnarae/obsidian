@@ -298,8 +298,6 @@ Once we have this data, we can call **ID3D11Device::CreateInputLayout()** to cre
 
 이 데이터를 확보하면, 우리는 `ID3D11Device::CreateInputLayout()`을 호출하여 **정점 레이아웃 객체**를 생성할 수 있다. 그리고 이어서 `ID3D11DeviceContext::IASetInputLayout()`을 호출하여 이를 **활성 정점 레이아웃**으로 설정한다.
 
-한 번 우리가 이러한 데이터를 가지면, 
-
 The code to do all of that is shown below:
 
 이 모든 것을 수행한 코드는 아래와 같다:
