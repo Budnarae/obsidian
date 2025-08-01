@@ -51,6 +51,23 @@
               "icon": "lucide-file",
               "title": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer"
             }
+          },
+          {
+            "id": "1318c59533703e2f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "public/DirectX11 API.canvas",
+                "viewState": {
+                  "x": 532.041801988636,
+                  "y": 405.74512854979713,
+                  "zoom": -0.8725870471253951
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
+            }
           }
         ],
         "currentTab": 2
