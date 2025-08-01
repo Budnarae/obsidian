@@ -36,9 +36,26 @@
               "icon": "lucide-file",
               "title": "DirectX SDK Document - Tutorial 5 3D Transformation"
             }
+          },
+          {
+            "id": "3a33f7e7251f7001",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "public/DirectX11 API.canvas",
+                "viewState": {
+                  "x": 1093.7572414546253,
+                  "y": 147.24101647965506,
+                  "zoom": -0.8725870471253951
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -221,14 +238,14 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "3a33f7e7251f7001",
   "lastOpenFiles": [
-    "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
+    "public/DirectX11 API.canvas",
+    "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
-    "public/DirectX11 API.canvas",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "index.md",
     "public/DirectX11 Graphics Pipeline.md",
