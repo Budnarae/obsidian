@@ -243,6 +243,7 @@
       "toSide": "left"
     },
     {
+      "fromFloating": false,
       "fromNode": "abbf87f436258546",
       "fromSide": "right",
       "id": "23df8f4314b305d2",
@@ -492,6 +493,16 @@
       "toFloating": false,
       "toNode": "fff9cf85e68b4e84",
       "toSide": "top"
+    },
+    {
+      "fromNode": "55b49ae27993020a",
+      "fromSide": "right",
+      "id": "2d263e80de882af5",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "81cac63f3ff03368",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -547,6 +558,15 @@
       "y": -250
     },
     {
+      "height": 510,
+      "id": "6b29955e990148e5",
+      "label": "View",
+      "type": "group",
+      "width": 440,
+      "x": 1060,
+      "y": -120
+    },
+    {
       "height": 200,
       "id": "8da87659fd016780",
       "label": "Shader",
@@ -554,15 +574,6 @@
       "width": 1020,
       "x": 480,
       "y": 1400
-    },
-    {
-      "height": 380,
-      "id": "6b29955e990148e5",
-      "label": "View",
-      "type": "group",
-      "width": 440,
-      "x": 1060,
-      "y": -120
     },
     {
       "height": 150,
@@ -727,20 +738,6 @@
       "y": -80
     },
     {
-      "color": "1",
-      "height": 60,
-      "id": "b5848ad2304f074d",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "CreateRasterizeState",
-      "type": "text",
-      "width": 260,
-      "x": 700,
-      "y": 330
-    },
-    {
       "color": "2",
       "height": 60,
       "id": "7b47eec875f81929",
@@ -769,19 +766,6 @@
       "y": 780
     },
     {
-      "height": 60,
-      "id": "2d53f21d267bda44",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ID3D11RasterizeState",
-      "type": "text",
-      "width": 260,
-      "x": 1080,
-      "y": 330
-    },
-    {
       "color": "1",
       "height": 60,
       "id": "0a2882dbc5e965f2",
@@ -794,18 +778,6 @@
       "width": 260,
       "x": 700,
       "y": -80
-    },
-    {
-      "height": 60,
-      "id": "28c83cea01a04512",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "D3D11_VIEWPORT",
-      "type": "text",
-      "width": 260,
-      "x": 1210,
-      "y": 420
     },
     {
       "color": "1",
@@ -1055,19 +1027,6 @@
       "y": -90
     },
     {
-      "height": 60,
-      "id": "a4919e9fe67e463f",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ConstantBuffer(ID3D11Buffer)",
-      "type": "text",
-      "width": 260,
-      "x": 1140,
-      "y": 140
-    },
-    {
       "color": "2",
       "height": 60,
       "id": "62f21b8f1a77c3d5",
@@ -1108,20 +1067,6 @@
       "width": 260,
       "x": 1400,
       "y": -360
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "fa808f2655d17ee4",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "VSSetShader",
-      "type": "text",
-      "width": 260,
-      "x": 1720,
-      "y": -20
     },
     {
       "color": "2",
@@ -1234,6 +1179,99 @@
       "width": 260,
       "x": 2300,
       "y": 960
+    },
+    {
+      "height": 60,
+      "id": "28c83cea01a04512",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "D3D11_VIEWPORT",
+      "type": "text",
+      "width": 260,
+      "x": 1210,
+      "y": 540
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "b5848ad2304f074d",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateRasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 700,
+      "y": 450
+    },
+    {
+      "height": 60,
+      "id": "2d53f21d267bda44",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ID3D11RasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 1080,
+      "y": 450
+    },
+    {
+      "height": 60,
+      "id": "81cac63f3ff03368",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "IndexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 1140,
+      "y": 140
+    },
+    {
+      "height": 60,
+      "id": "a4919e9fe67e463f",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ConstantBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 1140,
+      "y": 240
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "fa808f2655d17ee4",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "VSSetShader",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": 30
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "238ae015ddc79d16",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "IASetInBuffers",
+      "type": "text",
+      "width": 260,
+      "x": 1720,
+      "y": -70
     }
   ]
 }
