@@ -41,17 +41,15 @@
             "id": "3a33f7e7251f7001",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 800.9889634794783,
-                  "y": 462.1233362484712,
-                  "zoom": -1.9836981876708994
-                }
+                "file": "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer"
             }
           }
         ],
@@ -240,8 +238,8 @@
   },
   "active": "3a33f7e7251f7001",
   "lastOpenFiles": [
-    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX11 API.canvas",
+    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
