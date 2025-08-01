@@ -219,7 +219,7 @@ Optionally, we can fill in a D3D11_RENDERTARGETVIEW_DESC structure that describe
 
 This description is normally the second parameter to **CreateRenderTargetView**.
 
-**CreateRenderTargetView**의 두번째 파라미터터를 통해 정의된다.
+**CreateRenderTargetView**의 두번째 파라미터를 통해 정의된다.
 
 However, for these tutorials, the default render target view will suffice.
 
