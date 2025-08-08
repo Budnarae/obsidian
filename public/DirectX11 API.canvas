@@ -1675,7 +1675,7 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_render_target_view_desc)",
+      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_render_target_view_desc)",
       "type": "text",
       "width": 300,
       "x": 1460,
