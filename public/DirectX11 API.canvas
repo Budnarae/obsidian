@@ -832,7 +832,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "D3D11CreateDeviceAndSwapChain",
+      "text": "[D3D11CreateDeviceAndSwapChain](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain)",
       "type": "text",
       "width": 300,
       "x": -1440,
