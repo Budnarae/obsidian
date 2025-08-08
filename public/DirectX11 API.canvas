@@ -1072,7 +1072,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "CreateRenderTargetView\n",
+      "text": "[CreateRenderTargetView](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createrendertargetview)\n",
       "type": "text",
       "width": 260,
       "x": 1870,
@@ -1675,10 +1675,10 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "D3D11_RENDER_TARGET_VIEW_DESC",
+      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_render_target_view_desc)",
       "type": "text",
-      "width": 280,
-      "x": 1480,
+      "width": 300,
+      "x": 1460,
       "y": 2765
     }
   ]
