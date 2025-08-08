@@ -15,9 +15,9 @@
               "state": {
                 "file": "public/DirectX11 API.canvas",
                 "viewState": {
-                  "x": 720,
-                  "y": 510,
-                  "zoom": -1.9836981876708994
+                  "x": 502.81265257428817,
+                  "y": -13.337396384095403,
+                  "zoom": -0.8725870471253951
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -39,8 +39,7 @@
               "title": "SCOP pdf 번역"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,8 +222,9 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "3c6ea8c76d3190af",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "private/42Seoul/SCOP pdf 번역.md",
     "public/DirectX11 API.canvas",
     "index.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
@@ -237,7 +237,6 @@
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/DirectX11 Graphics Pipeline.md",
     "public/Programming Guide for Direct3D 11.md",
-    "private/42Seoul/SCOP pdf 번역.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
     "Pasted image 20250728160243.png",
     "재료/이미지/4353e841252db1deef3dd9f47b0c3c3a_MD5.jpeg",
