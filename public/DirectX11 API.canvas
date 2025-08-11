@@ -1716,7 +1716,7 @@
       "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
       "type": "text",
       "width": 280,
-      "x": 1100,
+      "x": 1240,
       "y": 40
     },
     {
@@ -1726,11 +1726,11 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "",
+      "text": "[D3D11_SUBRESOURCE_DATA](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_subresource_data)",
       "type": "text",
       "width": 260,
-      "x": 1200,
-      "y": 210
+      "x": 1240,
+      "y": 180
     }
   ]
 }
