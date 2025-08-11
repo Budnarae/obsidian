@@ -1070,7 +1070,7 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "D3D11_BUFFER_DESC",
+      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
       "type": "text",
       "width": 280,
       "x": 1600,
