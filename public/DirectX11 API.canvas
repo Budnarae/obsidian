@@ -150,13 +150,13 @@
     {
       "fromFloating": false,
       "fromNode": "170ad5b0c2ecf9cc",
-      "fromSide": "top",
+      "fromSide": "right",
       "id": "fd6a88c322d78bbc",
       "styleAttributes": {
       },
       "toFloating": false,
       "toNode": "55b49ae27993020a",
-      "toSide": "bottom"
+      "toSide": "left"
     },
     {
       "fromNode": "55b49ae27993020a",
@@ -718,6 +718,17 @@
       "toFloating": false,
       "toNode": "fff9cf85e68b4e84",
       "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "deb4eeba2d9f3295",
+      "fromSide": "right",
+      "id": "981318e50a65cee8",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "55b49ae27993020a",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -1062,19 +1073,6 @@
       "width": 260,
       "x": 1610,
       "y": 130
-    },
-    {
-      "height": 60,
-      "id": "170ad5b0c2ecf9cc",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
-      "type": "text",
-      "width": 280,
-      "x": 1600,
-      "y": 240
     },
     {
       "color": "1",
@@ -1707,6 +1705,32 @@
       "width": 260,
       "x": 2320,
       "y": 1995
+    },
+    {
+      "height": 60,
+      "id": "170ad5b0c2ecf9cc",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1100,
+      "y": 40
+    },
+    {
+      "height": 60,
+      "id": "deb4eeba2d9f3295",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "",
+      "type": "text",
+      "width": 260,
+      "x": 1200,
+      "y": 210
     }
   ]
 }
