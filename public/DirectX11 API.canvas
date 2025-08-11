@@ -1057,7 +1057,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "CreateBuffer",
+      "text": "[CreateBuffer](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer)",
       "type": "text",
       "width": 260,
       "x": 1610,
