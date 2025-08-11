@@ -736,6 +736,15 @@
       "y": -280
     },
     {
+      "height": 3195,
+      "id": "00464cd421a61072",
+      "label": "Graphics Pipeline",
+      "type": "group",
+      "width": 400,
+      "x": 3680,
+      "y": -40
+    },
+    {
       "height": 1620,
       "id": "8da87659fd016780",
       "label": "Shader",
@@ -752,15 +761,6 @@
       "width": 440,
       "x": 2240,
       "y": -20
-    },
-    {
-      "height": 3195,
-      "id": "00464cd421a61072",
-      "label": "Graphics Pipeline",
-      "type": "group",
-      "width": 400,
-      "x": 3680,
-      "y": -40
     },
     {
       "height": 755,
@@ -1362,20 +1362,6 @@
     {
       "color": "2",
       "height": 60,
-      "id": "82a2d69c6363fa61",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "OMSetBlendState",
-      "type": "text",
-      "width": 260,
-      "x": 3218,
-      "y": 3050
-    },
-    {
-      "color": "2",
-      "height": 60,
       "id": "f03fe44265b623d2",
       "styleAttributes": {
         "shape": "circle",
@@ -1575,32 +1561,6 @@
     },
     {
       "height": 60,
-      "id": "7534292e6e12eae8",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "Output Merger (OM)",
-      "type": "text",
-      "width": 260,
-      "x": 3760,
-      "y": 3035
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "f2e2d67e74f36a61",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "Draw",
-      "type": "text",
-      "width": 260,
-      "x": 3558,
-      "y": 3280
-    },
-    {
-      "height": 60,
       "id": "a67019427055d8ee",
       "styleAttributes": {
         "shape": "parallelogram",
@@ -1678,6 +1638,46 @@
       "width": 300,
       "x": 1460,
       "y": 2765
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "82a2d69c6363fa61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "OMSetBlendState",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 3050
+    },
+    {
+      "height": 60,
+      "id": "7534292e6e12eae8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Output Merger (OM)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 3035
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f2e2d67e74f36a61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Draw",
+      "type": "text",
+      "width": 260,
+      "x": 3558,
+      "y": 3280
     },
     {
       "color": "2",
