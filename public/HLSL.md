@@ -84,7 +84,16 @@ hlsl
 
 복사편집
 
-`HLSLmatrix g_mWorldViewProjection; void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position) {     // OutPos에 기여하므로 연산이 precise로 처리됨     OutPos = mul(float4(InPos, 1.0), g_mWorldViewProjection); }`
+```hlsl
+
+HLSLmatrix g_mWorldViewProjection;
+void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
+{
+    // OutPos에 기여하므로 연산이 precise로 처리됨
+    OutPos = mul(float4(InPos, 1.0), g_mWorldViewProjection);
+}
+
+```
 
 ---
 
