@@ -357,3 +357,7 @@ cbuffer MyBuffer
 ```
 
 packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
+
+### packoffset
+
+선택적인 키워드 쉐이더 상수이다
