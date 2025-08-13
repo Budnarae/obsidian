@@ -392,4 +392,5 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 컴파일러는 전역 상수(global constants)와 uniform constants에 대해 조금 다르게 동작한다.
 
-- **global constant** : 전역 변수(global variable)는 컴파일러에 의하여 전역 상수(global constant)로서 `$Global cbuffer`에 추가된다. 자동적으로 포장된 요소는(packoffset 없이 선언되었다는 말) 마지막으로 수동으로 포장된 변수 뒤에 나타난ㄷ
+- **global constant** : 전역 변수(global variable)는 컴파일러에 의하여 전역 상수(global constant)로서 `$Global cbuffer`에 추가된다. 자동적으로 포장된 요소는(packoffset 없이 선언되었다는 말) 마지막으로 수동으로 포장된 변수 뒤에 나타난다. 당신은 전역 상수를 포장할 때 타입을 섞어서 사용해도 된다(You may mix types when packing global constants).
+- **uniform constant** : 함수의 파라미터 목록 내부의 uniform parameter는 쉐이더가 effects framework 밖에서 추가될 때 컴파일러에 의하여 `$Param` 상수 버퍼에 추가된다. 
