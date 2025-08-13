@@ -345,6 +345,15 @@ cbuffer MyBuffer
 
 패킹된 요소는 겹칠 수 있으며, 컴파일러는 오류나 경고를 출력하지 않습니다. 아래 예시에서 `Element2`와 `Element3`는 `Element1.x`와 `Element1.y`와 겹칩니다.
 
-`cbuffer MyBuffer {     float4 Element1 : packoffset(c0);     float1 Element2 : packoffset(c0);     float1 Element3 : packoffset(c0.y); }`
+```hlsl
+
+cbuffer MyBuffer
+{
+    float4 Element1 : packoffset(c0);
+    float1 Element2 : packoffset(c0);
+    float1 Element3 : packoffset(c0.y);
+}
+
+```
 
 packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
