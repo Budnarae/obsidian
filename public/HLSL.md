@@ -407,7 +407,31 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 cbuffer MyBuffer
 {
-    float4 Element1 : pack
+    float4 Element1 : packoffset(c0);
+    float1 Element2 : packoffset(c1);
+    float1 Element3 : packoffset(c1.y);
 }
 
 ```
+
+### register
+
+쉐이더 변수를 특정 레지스터에 지정하는 데 사용하는 키워드이며, 필수적이지 않다. 다음의 문법을 따른다.
+
+```text
+
+: register ( [shader_profile], Type#[subcomponent] )
+
+```
+
+#### Parameters
+
+==register==
+
+키워드가 필요하다.
+
+==[shader_profile]==
+
+선택적인 쉐이더 프로필이며, 쉐이더 타겟이 될 수도 있고 단순히 ps 또는 vs가 될수도 있다.
+
+
