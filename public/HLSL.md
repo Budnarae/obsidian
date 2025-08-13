@@ -257,7 +257,33 @@ void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
 이펙트 프레임워크를 사용하면 리플렉션과 초기값 설정을 자동으로 처리할 수 있습니다.  
 예를 들어 `ID3DX11EffectPass::Apply` 메서드를 사용할 수 있습니다.
 
-### 중요한 사항
+>**중요한 사항**
+>
+>이 기능(기본 초기값 리플렉션 포함)은 Direct3D 12에서 제거되었습니다.
+>즉, Direct3D 12부터는 기본 초기값 리플렉션을 지원하지 않습니다.
 
-- 이 기능(기본 초기값 리플렉션 포함)은 Direct3D 12에서 제거되었습니다.
-- 즉, Direct3D 12부터는 기본 초기값 리플렉션을 지원하지 않습니다.
+##### Examples
+
+다음은 쉐이더 변수 선언의 여러 예시이다.
+
+```hlsl
+
+float fVar;
+
+```
+
+```hlsl
+
+float4 color;
+
+int iVar[3];
+
+uniform float4 position : SV_POSITION;
+
+// Default initializers; supported up to Direct3D 11.
+
+float fVar = 3.1f;
+int iVar[3] = {1, 2, 3};
+const float4 lightDirection = {0, 0, 1};
+
+```
