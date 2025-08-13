@@ -525,4 +525,16 @@ Buffer<float4> g_Buffer;
 
 ```
 
+버퍼에서 데이터를 읽을 때는, 하나의 입력 매개변수(정수 인덱스)를 받는 `Load` HLSL 내장 함수의 오버로드 버전을 사용한다. 버퍼는 요소의 배열처럼 접근되므로, 이 예제는 두 번째 요소를 읽는다.
 
+```hlsl
+
+float4 bufferData = g_Buffer.Load( 1 );
+
+```
+
+버퍼로 데이터를 출력하기 위해서는 stream-output stage를 사용한다.
+
+##### Remarks
+
+호환되는 타입의 buffer shader resource view( SRV )는 버퍼로부터 정확히 값을 로드하는 데 필요하다. 로드는 부분적으로 타입 변환을 수행할 수 있으며, 예를 들어 `RGBA8_UNORM` 버퍼는 `float4` 변수로 로드될 수 있다. 구조체를 담고 있는 버퍼에 대해서는 대신 StructuredBuffer를 사용한다.
