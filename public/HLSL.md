@@ -552,4 +552,16 @@ HLSL은 다음의 스칼라 자료형을 지원한다.
 | float     | 32 비트 부동소수                                                                                                                                                                                                                                                                        |
 | double    | 64 비트 부동소수. 이 자료형은 스트림의 입력 또는 출력으로 사용할 수 없다. 쉐이더 간 double 값을 전달하기 위해서, 각 double 변수를 uint 자료형의 pair로 선언한다. 그런 다음, asuint 함수를 사용하여 각 double 값을 uint의 쌍으로 패킹한 후 asdouble 함수를 사용하여 uint의 쌍을 double로 |
 
-윈도우 8부터, HLSL은 최소 정확도 스칼라 자료형(minimum precision scalar data types)을 지원한다. 그래픽 드라이버는 최소 정확도 스칼라 자료형을 더 높은 정확도를 사용하거나 정의된 비트
+Windows 8부터 HLSL은 최소 정밀도(minimum precision) 스칼라 데이터 타입도 지원한다. 그래픽 드라이버는 지정된 비트 정밀도 이상인 임의의 정밀도를 사용하여 최소 정밀도 스칼라 데이터를 구현할 수 있다. 특정 하드웨어 정밀도에 의존한 클램핑(clamping)이나 래핑(wrapping) 동작에 의존하지 않는 것이 권장된다. 예를 들어, 그래픽 드라이버는 `min16float` 값을 32비트 전체 정밀도로 연산할 수도 있다.
+
+| data type  | description                         |
+| ---------- | ----------------------------------- |
+| min16float | minimum 16-bit floating point value |
+| min10float | minimum 10-bit floating point value |
+| min16int   | minimum 16-bit signed integer.      |
+| min12int   | minimum 12-bit signed integer.      |
+| min16uint  | minimum 16-bit unsigned integer.    |
+
+스칼라 리터럴에 대해 더 많은 정보를 원한다면, [Grammer](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-grammar)를 참고하라.
+
+
