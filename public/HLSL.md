@@ -373,4 +373,14 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 #### Parameters
 
+==packoffset==
 
+키워드를 필요로 한다.
+
+==c==
+
+패킹은 상수 레지스터(c)에만 적용될 수 있다.
+
+==[Subcomponent][.component]==
+
+선택적인 하위 구성요소와 구성요소이다.
