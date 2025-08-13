@@ -214,14 +214,14 @@ void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
 
 ---
 
-### Register
+==Register==
 
 셰이더 변수를 특정 레지스터에 수동 할당하기 위한 선택적 키워드입니다.  
 자세한 내용은 `register (DirectX HLSL)` 참고 바랍니다.
 
 ---
 
-### Annotation(s)
+==Annotation(s)==
 
 전역 변수에 붙일 수 있는 선택적 메타데이터(문자열 형태)입니다.  
 이 어노테이션은 효과 프레임워크에서 사용하며 HLSL 컴파일러는 무시합니다.  
