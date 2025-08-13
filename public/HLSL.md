@@ -229,50 +229,35 @@ void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
 
 ---
 
-### Initial_Value
+==Initial_Value==
 
 선택적 초기 값들입니다. 초기 값의 개수는 변수 타입(Type)의 구성 요소 수와 일치해야 합니다.
 
 - `extern`으로 표시된 전역 변수는 리터럴 값으로 반드시 초기화해야 합니다.
-    
 - `static`으로 표시된 변수는 상수로 초기화해야 합니다.
-    
 
----
-
-### 전역 변수 초기화 및 컴파일 동작
+==전역 변수 초기화 및 컴파일 동작==
 
 - `static` 또는 `extern`으로 표시되지 않은 전역 변수는 셰이더에 컴파일되지 않습니다.
-    
 - 컴파일러는 전역 변수에 기본값을 자동으로 설정하지 않고, 최적화에도 사용하지 않습니다.
-    
 - 이런 전역 변수를 초기화하려면, 셰이더 리플렉션(reflection)을 사용해 값을 얻고, 그 값을 상수 버퍼에 복사해야 합니다.
     
 
 예를 들어:
 
-- `ID3D11ShaderReflection::GetVariableByName` 메서드로 변수를 찾고,
-    
-- `ID3D11ShaderReflectionVariable::GetDesc` 메서드로 변수 설명을 얻고,
-    
-- `D3D11_SHADER_VARIABLE_DESC` 구조체의 `DefaultValue` 멤버에서 초기 값을 얻습니다.
-    
-- 그리고 초기값을 복사할 상수 버퍼는 CPU 쓰기 권한(`D3D11_CPU_ACCESS_WRITE`)으로 생성되어야 합니다.
-    
+1. `ID3D11ShaderReflection::GetVariableByName` 메서드로 변수를 찾고
+2. `ID3D11ShaderReflectionVariable::GetDesc` 메서드로 변수 설명을 얻고
+3. `D3D11_SHADER_VARIABLE_DESC` 구조체의 `DefaultValue` 멤버에서 초기 값을 얻습니다.
+4. 그리고 초기값을 복사할 상수 버퍼는 CPU 쓰기 권한(`D3D11_CPU_ACCESS_WRITE`)으로 생성되어야 합니다.
 
 상수 버퍼 생성 방법은 How to: Create a Constant Buffer 문서를 참고하세요.
 
----
-
-### 이펙트 프레임워크 사용
+==이펙트 프레임워크 사용==
 
 이펙트 프레임워크를 사용하면 리플렉션과 초기값 설정을 자동으로 처리할 수 있습니다.  
 예를 들어 `ID3DX11EffectPass::Apply` 메서드를 사용할 수 있습니다.
 
----
-
 ### 중요한 사항
 
 - 이 기능(기본 초기값 리플렉션 포함)은 Direct3D 12에서 제거되었습니다.
-    
 - 즉, Direct3D 12부터는 기본 초기값 리플렉션을 지원하지 않습니다.
