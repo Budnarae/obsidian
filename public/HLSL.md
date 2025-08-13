@@ -41,4 +41,22 @@ C와 유사하게,
 3. 사용자 메타 데이터를 부여할 수 있다.
 4. 여러 표준 자료형이 존재한다.
 
-C와 다른 점도 존재한다. HLSL에는 3차원 그래픽 데이터를 연산하기 위해 행렬 수학을 필요로 하는 4차원 벡터의 성능을 극대
+C와 다른 점도 존재한다. HLSL에는 3차원 그래픽 데이터를 연산하기 위해 행렬 수학을 필요로 하는 4차원 벡터의 성능을 극대화하기 위해 추가적으로 정의된 자료형들이 존재한다.
+
+#### Variable syntax
+
+기본적인 형식은 아래와 같다.
+
+```text
+
+[Storage Class][Type_Modifier] Type Name [Index][:Semantic][:Packoffset][:Register]; [Annotations][=Initial_Value]
+
+```
+
+##### Parameters
+
+==Storage_Class==
+
+선택적인 요소이며, 컴파일러에게 변수의 범위와 수명에 관한 정보를 전달하기 위해 사용한다. 이 한정자는 순서의 제한 없이 사용할 수 있다.
+
+**extern** : 
