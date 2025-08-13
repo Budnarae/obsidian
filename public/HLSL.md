@@ -290,4 +290,61 @@ const float4 lightDirection = {0, 0, 1};
 
 ##### Group shared
 
-HLSL은 compute shader의 스레드들이 공유 메모리를 통해 값을 교환하는 것을 허용한다. HLSL은
+HLSL은 컴퓨트 셰이더의 쓰레드들이 공유 메모리를 통해 값을 교환할 수 있게 합니다. HLSL은 `GroupMemoryBarrierWithGroupSync`와 같은 장벽 프리미티브를 제공하여 셰이더 내에서 공유 메모리의 읽기와 쓰기 순서를 올바르게 보장하고 데이터 경쟁을 방지합니다.
+
+> **참고**  
+> 하드웨어는 쓰레드를 그룹(워프 또는 웨이브프론트) 단위로 실행하며, 같은 그룹에 속한 쓰레드만 동기화하는 경우 장벽 동기화를 생략할 수 있어 성능을 높일 수 있습니다. 하지만 다음 이유들로 이 생략을 강력히 권장하지 않습니다:
+> 
+> - 이 생략은 비포터블한(non-portable) 코드를 만들며, 일부 하드웨어에서는 작동하지 않고 보통 더 작은 그룹 단위로 쓰레드를 실행하는 소프트웨어 래스터라이저에서는 작동하지 않습니다.
+>     
+> - 이 생략으로 얻는 성능 향상은 모든 쓰레드 장벽을 사용할 때보다 미미합니다.
+> 
+> Direct3D 10에서는 `groupshared`에 쓰기 시 쓰레드 동기화가 없으므로, 각 쓰레드는 배열 내 단일 위치에만 쓸 수 있습니다. 쓰기 시 충돌을 방지하려면 `SV_GroupIndex` 시스템 값을 이용해 배열 인덱스를 지정해야 합니다. 읽기 측면에서는 모든 쓰레드가 배열 전체에 접근할 수 있습니다.
+
+``` hlsl
+
+struct GSData
+{
+    float4 Color;
+    float Factor;
+}
+
+groupshared GSData data[5*5*1];
+
+[numthreads(5,5,1)]
+void main(uint index : SV_GroupIndex)
+{
+    data[index].Color = (float4)0;
+    data[index].Factor = 2.0f;
+    GroupMemoryBarrierWithGroupSync();
+    ...
+}
+
+```
+
+---
+
+##### Packing
+
+레지스터 경계를 넘지 않도록 충분히 큰 크기를 가진 벡터 및 스칼라 하위 컴포넌트를 패킹합니다. 예를 들어, 다음은 모두 유효합니다:
+
+```hlsl
+
+cbuffer MyBuffer
+{
+    float4 Element1 : packoffset(c0);
+    float1 Element2 : packoffset(c1);
+    float1 Element3 : packoffset(c1.y);
+}
+
+```
+
+패킹 타입을 혼합할 수 없습니다.
+
+`register` 키워드처럼, `packoffset`도 특정 타겟에 지정할 수 있습니다. 하위 컴포넌트 패킹은 `packoffset` 키워드에서만 가능하며, `register` 키워드에서는 불가능합니다. `cbuffer` 선언 내에서 `register` 키워드는 Direct3D 10 타겟에 대해 무시되며, 이는 크로스 플랫폼 호환성을 위해서입니다.
+
+패킹된 요소는 겹칠 수 있으며, 컴파일러는 오류나 경고를 출력하지 않습니다. 아래 예시에서 `Element2`와 `Element3`는 `Element1.x`와 `Element1.y`와 겹칩니다.
+
+`cbuffer MyBuffer {     float4 Element1 : packoffset(c0);     float1 Element2 : packoffset(c0);     float1 Element3 : packoffset(c0.y); }`
+
+packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
