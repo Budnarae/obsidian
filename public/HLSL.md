@@ -394,3 +394,20 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 - **global constant** : 전역 변수(global variable)는 컴파일러에 의하여 전역 상수(global constant)로서 `$Global cbuffer`에 추가된다. 자동적으로 포장된 요소는(packoffset 없이 선언되었다는 말) 마지막으로 수동으로 포장된 변수 뒤에 나타난다. 당신은 전역 상수를 포장할 때 타입을 섞어서 사용해도 된다(You may mix types when packing global constants).
 - **uniform constant** : 함수의 파라미터 목록 내부의 uniform parameter는 쉐이더가 effects framework 밖에서 컴파일 될 때 컴파일러에 의하여 `$Param` 상수 버퍼에 추가된다. 효과(Effect) 프레임워크 내부에서 컴파일될 때, uniform 상수는 전역 범위에서 정의된 uniform 변수로 해석되어야 한다. uniform 상수는 수동으로 오프셋을 적용할 수 없다. 이들은 전역 변수로 다시 연결되는 셰이더의 특수화(specialization)에만 사용하는 것이 권장되며, 애플리케이션 데이터를 셰이더로 전달하는 수단으로 사용해서는 안 된다.
+
+[여기](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-packing-rules)에 몇몇 추가적인 예시들이 있다.
+
+#### Examples
+
+다음은 수동으로 쉐이더 상수(shader constants)를 포장하는 여러 예제들이다.
+
+벡터와 스칼라의 하위 구성 요소를 패킹할 때, 레지스터 경계를 넘어가지 않도록 충분히 큰 크기를 사용해야 한다. 예를 들어, 다음은 모두 유효하다.
+
+```hlsl
+
+cbuffer MyBuffer
+{
+    float4 Element1 : pack
+}
+
+```
