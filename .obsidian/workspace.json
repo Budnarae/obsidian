@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 1676.1392670358932,
-                  "y": 1812.9126911752312,
-                  "zoom": -2.3924209297177423
-                }
+                "file": "public/무제.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "무제"
             }
           }
         ]
@@ -209,10 +207,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "재료/이미지/Pasted image 20250725144227.png",
     "index.md",
-    "주민등록표 등본.pdf",
+    "public/무제.md",
     "public/DirectX11 API.canvas",
+    "재료/이미지/Pasted image 20250725144227.png",
+    "주민등록표 등본.pdf",
     "private/42Seoul/SCOP pdf 번역.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
