@@ -482,7 +482,15 @@ sampler myVar : register( ps, s[2] )
 
 HLSL은 많은 내부 자료형을 지원한다. 다음의 표는 쉐이더 변수를 정의할 때 사용하는 타입들을 보여준다.
 
-| Use this intrinsic type | To define this shader variable |
-| ----------------------- | ------------------------------ |
-| Scalar                  | 단일 요소 스칼라               |
-| V                        |                                |
+| Use this intrinsic type    | To define this shader variable                          |
+| -------------------------- | ------------------------------------------------------- |
+| Scalar                     | 단일 요소 스칼라                                        |
+| Vector, Matrix             | 다수 요소 벡터와 행렬                                   |
+| Sampler, Texture or Buffer | 샘플러, 텍스처, 버퍼 객체                               |
+| Struct, User Defined       | 커스텀 구조체 또는 typedef                              |
+| Array                      | 대부분의 다른 타입을 포함하는 리터럴 스칼라 표현식 선언 |
+| State Object               | 상태 객체의 HLSL 표현식                                 |
+
+#### Buffer type
+
+버퍼 타입을 자
