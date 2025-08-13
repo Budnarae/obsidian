@@ -386,4 +386,10 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 선택적인 하위 구성요소(subcomponent)와 구성요소(component)이다.
 하위 구성요소는 레지스터 번호이며, 정수이다. 구성요소(component)는 \[.xyzw]의 형태를 하고 있다.
 
-변수를 쉐이더 상수를 수동으로 포장(pack)하고 싶을 
+변수를 선언할 때 쉐이더 상수를 수동으로 포장(pack)하고 싶으면 이 키워드를 사용한다.
+
+상수를 포장할 때는, 상수의 타입을 섞어서 사용하면 안된다(의역 : When packing a constant, you cannot mix constant types).
+
+컴파일러는 전역 상수(global constants)와 uniform constants에 대해 조금 다르게 동작한다.
+
+- **global constant** : 전역 변수(global variable)는 컴파일러에 의하여 전역 상수(global constant)로서 `$Global cbuffer`에 추가된다. 자동적으로 포장된 요소는(packoffset 없이 선언되었다는 말) 마지막으로 수동으로 포장된 변수 뒤에 나타난ㄷ
