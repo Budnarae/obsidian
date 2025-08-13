@@ -450,5 +450,39 @@ cbuffer MyBuffer
 
 #### Remarks
 
-스페이스로 분할하여 동일한 변수 선언에 하나 혹은 그 이상
+공백으로 분할하여 동일한 변수 선언에 하나 혹은 그 이상의 레지스터 지정을 추가할 수 있다.
 
+전역 스코프의 Direct3D 10 변수를 대상으로, 레지스터 키워드는 packoffset (DirectX HLSL) 키워드와 동일하게 동작한다.
+
+#### Examples
+
+다음에 몇몇 예시가 있다.
+
+```hlsl
+
+sampler myVar : register( ps_5_0, s );
+
+```
+
+```hlsl
+
+sampler myVar : register( vs, s[8] );
+
+```
+
+```hlsl
+
+sampler myVar : register( ps, s[2] )
+              : register( ps_5_0, s[0] )
+              : register( vs, s[8] );
+
+```
+
+### Data Types
+
+HLSL은 많은 내부 자료형을 지원한다. 다음의 표는 쉐이더 변수를 정의할 때 사용하는 타입들을 보여준다.
+
+| Use this intrinsic type | To define this shader variable |
+| ----------------------- | ------------------------------ |
+| Scalar                  | 단일 요소 스칼라               |
+| V                        |                                |
