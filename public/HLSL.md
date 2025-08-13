@@ -383,4 +383,7 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 ==[Subcomponent][.component]==
 
-선택적인 하위 구성요소와 구성요소이다.
+선택적인 하위 구성요소(subcomponent)와 구성요소(component)이다.
+하위 구성요소는 레지스터 번호이며, 정수이다. 구성요소(component)는 \[.xyzw]의 형태를 하고 있다.
+
+변수를 쉐이더 상수를 수동으로 포장(pack)하고 싶을 
