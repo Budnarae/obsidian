@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/무제.md",
-                "mode": "preview",
-                "source": false,
+                "file": "public/HLSL.md",
+                "mode": "source",
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "무제"
+              "title": "HLSL"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:directX11",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 310.5,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -207,14 +208,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "ingredient/template/참고자료.md",
+    "ingredient/template/개요.md",
+    "ingredient/template/개요와 참고자료.md",
+    "public/2FA.md",
+    "public/42 innercirle 정리.md",
+    "public/DirectX SDK Document - Tutorial 6 Lighting.md",
+    "public/HLSL.md",
     "index.md",
-    "public/무제.md",
     "public/DirectX11 API.canvas",
     "재료/이미지/Pasted image 20250725144227.png",
     "주민등록표 등본.pdf",
     "private/42Seoul/SCOP pdf 번역.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
-    "public/DirectX SDK Document - Tutorial 6 Lighting.md",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
@@ -242,11 +248,6 @@
     "재료",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "ingredient/ai role/번역가.md",
-    "ingredient/ai role/Translate to Chinese.md",
-    "ingredient/ai role/Summarize.md",
-    "ingredient/ai role/Simplify.md",
-    "ingredient/ai role/Rewrite as tweet thread.md",
-    "ingredient/ai role/Rewrite as press release.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
