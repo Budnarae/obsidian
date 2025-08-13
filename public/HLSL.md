@@ -360,4 +360,17 @@ packoffset을 사용하는 예제는 HLSLWithoutFX10 Sample을 참고하세요.
 
 ### packoffset
 
-선택적인 키워드 쉐이더 상수이다
+선택적이다(필수적이지 않다).
+키워드를 포장(packing)하는 쉐이더 상수이다.
+
+다음의 문법을 사용한다.
+
+```text
+
+: packoffset( c[Subcomponent][.component] )
+
+```
+
+#### Parameters
+
+
