@@ -287,3 +287,7 @@ int iVar[3] = {1, 2, 3};
 const float4 lightDirection = {0, 0, 1};
 
 ```
+
+##### Group shared
+
+HLSL은 compute shader의 스레드들이 공유 메모리를 통해 값을 교환하는 것을 허용한다. HLSL은
