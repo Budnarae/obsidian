@@ -173,4 +173,16 @@ The compiler may seek to surface runtime-imposed limits to the user for improved
 
 ==1==    An HLSL program constructed according to the syntax rules, diagnosable semantic rules, and the One Definition Rule.
 
-==1==    무
+==1==    문법 규칙, 진단 가능한 의미 규칙 그리고 하나의 정의 규칙에 따라 구성된 HLSL 프로그램.
+
+### 1.4.9 Runtime Implementation
+
+==1==    A runtime implementation refers to a full-stack implementation of a software runtime that can facilitate the execution of HLSL programs.
+
+런타임 구현체는 HLSL 프로그램의 실행을 용이하게 하는 소프트웨어 런타임의 풀스택 구현체를 가리킨다.
+
+This broad definition includes libraries and device driver implementations.
+
+이 광범위한 정의는 라이브러리와 장치 드라이버 구현체를 포함한다.
+
+The HLSL specification does not distinguish between the user-facing programming interface
