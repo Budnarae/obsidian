@@ -185,4 +185,14 @@ This broad definition includes libraries and device driver implementations.
 
 이 광범위한 정의는 라이브러리와 장치 드라이버 구현체를 포함한다.
 
-The HLSL specification does not distinguish between the user-facing programming interface
+The HLSL specification does not distinguish between the user-facing programming interfaces and the vendor-specific backing implementation.
+
+HLSL 명세는 사용자 대면 프로그래밍 인터페이스와 벤더별 백킹 구현체를 구분하지 않는다.
+
+## 1.5 Runtime Targeting
+
+==1==   HLSL emerged from the evolution of DirectX to grant greater control over GPU geometry and color processing.
+
+HLSL은 GPU의 도형과 색상 처리에 대한 더 큰 제어권을 부여하기 위한 DirectX의 발전으로부터 등장했다.
+
+It gained polularity because it targeted a common hardware description which all conform
