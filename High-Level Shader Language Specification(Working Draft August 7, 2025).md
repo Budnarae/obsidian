@@ -197,6 +197,12 @@ HLSL은 GPU의 도형과 색상 처리에 대한 더 큰 제어권을 부여하�
 
 It gained polularity because it targeted a common hardware description which all conforming drivers were required to support.
 
-HLSL은 모든 호환 드라이버가 지원해야 하는 표준 하드웨어 사양을 대상으로 했기 때문에 인기를 얻었다.
+HLSL은 모든 호환 드라이버가 지원해야 하는 공통 하드웨어 사양을 대상으로 했기 때문에 인기를 얻었다.
 
-This common hardware description, called a Shader M
+This common hardware description, called a Shader Model, is an integral part of the description for HLSL.
+
+쉐이더 모델이라 불리는 이 공통 하드웨어 사양은 곧 HLSL 사양의 필수적인 부분이다.
+
+Some HLSL features require specific Shader Model features, and are only supported by compilers when targeting those Shader Model versions or later.
+
+몇몇 HLSL 기능은 특정 쉐이더 모델의 기능을 요구하며, 그러한 쉐이더 모델 버전 이상을 대상 컴파일러에 의해서만 지원을 받을 수 있다.
