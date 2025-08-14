@@ -87,8 +87,21 @@ The following referenced documents provide significant influence on this documen
 
 ## 1.3 Terms and definitions
 
-==1== This document aims to use terms consistent with their definitions in ISO C standard (2011) and ISO C++ standard (2011).
+==1==    This document aims to use terms consistent with their definitions in ISO C standard (2011) and ISO C++ standard (2011).
 
-==1== 이 문서는 ISO C 표준(2011)과 ISO C++ 표준(2011)에서의 정의와 일치하는 용어를 사용하는 것을 목표로 한다.
+==1==    이 문서는 ISO C 표준(2011)과 ISO C++ 표준(2011)에서의 정의와 일치하는 용어를 사용하는 것을 목표로 한다.
 
 In cases where the definitions are unclear, or where this document diverges from ISO C standard (2011) and ISO C++ standard (2011), the definitions in this section, the remaining sections in this chapter, and the attached glossary (13) supersede other sources.
+
+정의가 불분명한 경우나 이 문서가 ISO C 표준(2011) 및 ISO C++ 표준(2011)에서 벗어나는 경우, 이 섹션, 이 장의 나머지 섹션들, 그리고 첨부된 용어집(13)의 정의가 다른 출처들을 대체한다.
+
+## 1.4 Common Definitions
+
+==1==    The following definitions are consistent between HLSL and the ISO C standard (2011) and ISO C++ standard (2011) specifications, however they are included here for reader convenience.
+
+다음의 정의들은 HLSL, ISO C 표준 (2011) 그리고 ISO C++ 표준 (2011) 명세서에서 일관되게 사용되지만, 독자의 편의를 위해 아래에 별첨한다.
+
+### 1.4.1 Correct Data
+
+==1==    Data is correct if it represents values that have specified or unspecified but not undefined behavior for all the operations in which it is used.
+
