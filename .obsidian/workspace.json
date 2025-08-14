@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "public/DirectX SDK Document - Tutorial 3 Shaders.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "DirectX SDK Document - Tutorial 3 Shaders"
             }
           }
         ]
@@ -207,6 +207,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
+    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
+    "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
+    "index.md",
     "public/HLSL.md",
     "ingredient/template/참고자료.md",
     "ingredient/template/개요.md",
@@ -214,18 +218,15 @@
     "public/2FA.md",
     "public/42 innercirle 정리.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
-    "index.md",
     "public/DirectX11 API.canvas",
     "재료/이미지/Pasted image 20250725144227.png",
     "주민등록표 등본.pdf",
     "private/42Seoul/SCOP pdf 번역.md",
-    "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/DirectX SDK Document - Tutorial 5 3D Transformation.md",
     "public/DirectX SDK Document - Tutorial 4 3D Spaces.md",
     "public/DirectX SDK Document - Tutorial 2 Rendering a Triangle.md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
-    "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/DirectX11 Graphics Pipeline.md",
     "public/Programming Guide for Direct3D 11.md",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
@@ -242,7 +243,6 @@
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
     "public/Microsoft .NET 6 template changes 문서 번역.md",
     "d3d11_Tutorial_02.htm.md",
-    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "재료/이미지",
     "재료",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
