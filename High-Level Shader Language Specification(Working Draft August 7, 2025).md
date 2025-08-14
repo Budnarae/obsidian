@@ -105,3 +105,14 @@ In cases where the definitions are unclear, or where this document diverges from
 
 ==1==    Data is correct if it represents values that have specified or unspecified but not undefined behavior for all the operations in which it is used.
 
+==1==    데이터가 사용되는 모든 연산에서 정의되지 않은 동작이 아닌 명시된 또는 명시되지 않은 동작을 가지는 값들을 나타낸다면, 그 데이터는 올바르다.
+
+Data that is the result of undefined behavior is not correct, and may be treated as undefined.
+
+정의되지 않은 동작의 결과인 데이터는 올바르지 않으며, 정의되지 않은 것으로 취급될 수 있다.
+
+### 1.4.2 Diagnostic Message
+
+==1==    An implementation define message belonging to a subset of the implementation's output messages which communicates diagnostic information to the user.
+
+==1==    
