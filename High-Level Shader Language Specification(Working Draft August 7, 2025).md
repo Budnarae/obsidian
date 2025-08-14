@@ -195,4 +195,6 @@ HLSL 명세는 사용자 대면 프로그래밍 인터페이스와 벤더별 백
 
 HLSL은 GPU의 도형과 색상 처리에 대한 더 큰 제어권을 부여하기 위한 DirectX의 발전으로부터 등장했다.
 
-It gained polularity because it targeted a common hardware description which all conform
+It gained polularity because it targeted a common hardware description which all conforming drivers were required to support.
+
+HLSL은 일반적인 하드웨어 
