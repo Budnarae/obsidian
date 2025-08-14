@@ -7,7 +7,7 @@ _들어가는 말_
 
 ---
 
-# Introduction
+# 1 Introduction
 
 ==1==    The High Level Shader Language(HLSL) is the GPU programming language provided in conjunction with the DirectX runtime.
 
@@ -58,4 +58,20 @@ This will only be done in instance where there is an intent to alter implementat
 이러한 일은 구현된 동작을 미래에 대체할 의도가 있을 때에만 일어날 것이다.
 
 Since this document and the implementations are living sources, one or the other may be ahead in different regards at any point in time.
+
+이 문서와 앞서 언급한 참조들은 계속 발전하는(갱신되는) 자료이므로, 어느 시점에서든 서로 다른 측면에서 한쪽이 다른 쪽보다 앞서 있을 수 있다.
+
+# 1.1 Scope
+
+==1==    This document specifies the requirements for implementations of HLSL.
+
+이 문서는 HLSL의 구현에 대한 요구사항들을 명시한다.
+
+The HLSL specification is based on and highly influenced by the specifications for the C Programming Language (C) and the C++ Programming Language (C++)
+
+HLSL 명세서는 C와 C++ 프로그래밍 언어의 명세서에 기반하며 많은 영향을 받았다.
+
+==2==    This document covers both describing the language grammar and semantics for HLSL, and (in later sections) the standard library of data types used in shader programming.
+
+
 
