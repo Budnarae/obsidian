@@ -171,4 +171,6 @@ The compiler may seek to surface runtime-imposed limits to the user for improved
 
 ### 1.4.8 Well-formed Program
 
-==1==    An HLSL program constructed according to the syntax rules, diagnosable semantic rules, and the One
+==1==    An HLSL program constructed according to the syntax rules, diagnosable semantic rules, and the One Definition Rule.
+
+==1==    무
