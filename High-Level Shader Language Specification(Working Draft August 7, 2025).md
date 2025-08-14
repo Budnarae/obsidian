@@ -205,4 +205,12 @@ This common hardware description, called a Shader Model, is an integral part of 
 
 Some HLSL features require specific Shader Model features, and are only supported by compilers when targeting those Shader Model versions or later.
 
-몇몇 HLSL 기능은 특정 쉐이더 모델의 기능을 요구하며, 그러한 쉐이더 모델 버전 이상을 대상 컴파일러에 의해서만 지원을 받을 수 있다.
+몇몇 HLSL 기능은 특정 쉐이더 모델의 기능을 요구하며, 해당 쉐이더 모델 버전 이상을 대상으로 할 때만 컴파일러에 의해서 지원을 받을 수 있다.
+
+## 1.6 Single Program Multiple Data Programming Model
+
+==1==    HLSL uses a Single Program Multiple Data (SPMD) programming model where a program describes operations on a single element of data, but when the program executes it executes across more than one element at a time.
+
+==1==    HLSL은 단일 프로그램 다중 데이터 (SPMD) 프로그래밍 모델을 사용한다. 이 모델에서는 프로그램이 데이터 하나에 대한 연산을 기술하지만, 실제 실행될 때는 한 번에 여러 데이터 요소에 대해 수행된다.
+
+This programming moel is useful due to GPUs largely being Single Instruction Multiple Data (SIMD) hardware architectures where each instruction natively execut
