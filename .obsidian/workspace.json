@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/HLSL.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "HLSL"
+              "title": "index"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -208,13 +207,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/HLSL.md",
     "ingredient/template/참고자료.md",
     "ingredient/template/개요.md",
     "ingredient/template/개요와 참고자료.md",
     "public/2FA.md",
     "public/42 innercirle 정리.md",
     "public/DirectX SDK Document - Tutorial 6 Lighting.md",
-    "public/HLSL.md",
     "index.md",
     "public/DirectX11 API.canvas",
     "재료/이미지/Pasted image 20250725144227.png",
