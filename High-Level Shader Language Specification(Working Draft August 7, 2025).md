@@ -35,7 +35,7 @@ The language is also influenced to a lesser degree by other polular graphics and
 
 ==3==    HLSL has two reference implementations which this specification draws heavily from.
 
-HLSL은 이 명세서가 많은 부분을 참조하는 두 개의 참조를 가지고 있다.
+HLSL은 이 명세서가 많은 부분을 참조하는 두 개의 참조 구현들을 가지고 있다.
 
 The original reference implementation Legacy DirectX Shader Compiler (FXC) has been in use since DirectX 9.
 
@@ -121,8 +121,14 @@ Data that is the result of undefined behavior is not correct, and may be treated
 
 ==1==    A program that is not well-formed, for which the implementation is expected to return unsuccessfully and produce one or more diagnostic messages.
 
-==1==    성공적으로 반환하지 못하고 하나 이상의 경고 메시지를 출력할 것으로 예상되는 잘 짜여지지 못한 프로그램이다.
+==1==    성공적으로 반환하지 못하고 하나 이상의 경고 메시지를 출력할 것으로 예상되는 올바르지 않은 형태의 프로그램이다.
 
 ### 1.4.4 Implementation-defined Behavior
 
-==1==    Beha
+==1==    Behavior of a well-formed program and correct data which may vary by the implementation, and the implementation is expected to document the behavior.
+
+==1==    올바른 형태의 프로그램과 정확한 데이터의 동작이다. 구현체에 따라 달라질 수 있으며, 구현체는 그 동작을 문서화해야 한다.
+
+### 1.4.5 Implementation Limits
+
+==1==    
