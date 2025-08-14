@@ -19,7 +19,7 @@ Over many years its use has expanded to cover every major rendering API across a
 
 Despite its polularity and long history HLSL has never had a formal language specification.
 
-그 중요성과 오랜 역사에도 불구하고 HLSL은 그동안 공식적인 언어 명세(정의)를 가지지 않았다.
+그 중요성과 오랜 역사에도 불구하고 HLSL은 그동안 공식적인 언어 명세서를 가지지 않았다.
 
 This document seeks to change that.
 
@@ -35,4 +35,11 @@ The language is also influenced to a lesser degree by other polular graphics and
 
 ==3==    HLSL has two reference implementations which this specification draws heavily from.
 
+HLSL은 이 명세서가 많은 부분을 참조하는 두 개의 참조를 가지고 있다.
+
+The original reference implementation Legacy DirectX Shader Compiler (FXC) has been in use since DirectX 9.
+
+원래의 참조인 기존 DirectX 쉐이더 컴파일러 (FXC)는 DirectX 9부터 사용되어 왔다.
+
+The more recent reference implementation DirectX Shader Compiler (DXC) has been the primary shader compiler since DirectX 12.
 
