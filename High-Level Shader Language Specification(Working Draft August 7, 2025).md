@@ -87,4 +87,8 @@ The following referenced documents provide significant influence on this documen
 
 ## 1.3 Terms and definitions
 
-==1== This document aims to use terms consistent with their definitions in ISO C standa
+==1== This document aims to use terms consistent with their definitions in ISO C standard (2011) and ISO C++ standard (2011).
+
+==1== 이 문서는 ISO C 표준(2011)과 ISO C++ 표준(2011)에서의 정의와 일치하는 용어를 사용하는 것을 목표로 한다.
+
+In cases where the definitions are unclear, or where this document diverges from ISO C standard (2011) and ISO C++ standard (2011), the definitions in this section, the remaining sections in this chapter, and the attached glossary (13) supersede other sources.
