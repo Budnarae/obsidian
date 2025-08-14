@@ -249,7 +249,7 @@ The separation of host and device in this specification is useful for defining t
 
 ==1==    A Lane represents a single computed element in an SPMD program.
 
-==1==    래인(Lane)은 SPMD 프로그램에서 단일 연산되는 요소를 말한다.
+==1==    레인(Lane)은 SPMD 프로그램에서 단일 연산되는 요소를 말한다.
 
 In a traditional programming model it would be analogous to a thread of execution, however it differs in one key way.
 
@@ -261,6 +261,8 @@ In multi-threaded programming threads advance independent of each other.
 
 In SPMD programs, a group of Lanes may execute instructions in lockstep because each instruction may be a SIMD instruction computing the results for multiple Lanes simultaneously, or synchronizing execution across multiple Lanes or Waves.
 
-
+SPMD 프로그램에서는 여러 레인 그룹이 동기화되어 명령을 실행할 수 있다. 이는 각 명령이 여러 레인의 결과를 동시에 계산하는 SIMD 명령이거나, 여러 레인 또는 웨이브 간 실행을 동기화하는 명령일 수 있기 때문이다.
 
 A Lane has an associated lane state which denotes the execution status of the lane (1.6.1.7).
+
+레인은 레인의 실행 상태를 나타내는 연관 실행 상태를 가진다 (1.6.1.7).
