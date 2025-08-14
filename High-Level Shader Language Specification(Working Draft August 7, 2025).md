@@ -213,4 +213,13 @@ Some HLSL features require specific Shader Model features, and are only supporte
 
 ==1==    HLSL은 단일 프로그램 다중 데이터 (SPMD) 프로그래밍 모델을 사용한다. 이 모델에서는 프로그램이 데이터 하나에 대한 연산을 기술하지만, 실제 실행될 때는 한 번에 여러 데이터 요소에 대해 수행된다.
 
-This programming moel is useful due to GPUs largely being Single Instruction Multiple Data (SIMD) hardware architectures where each instruction natively execut
+This programming model is useful due to GPUs largely being Single Instruction Multiple Data (SIMD) hardware architectures where each instruction natively executes across multiple data elements at the same time.
+
+이 프로그래밍 모델은 GPU가 주로 단일 명령 다중 데이터(SIMD) 하드웨어 아키텍처이기 때문에 유용하다. SIMD 구조에서는 하나의 명령이 동시에 여러 데이터 요소에 대해 본래대로 실행된다.
+
+==2==    There are many different terms of art for describing the elements of a GPU architecture and the way they relate to the SPMD program model.
+
+==2==    GPU 아키텍처의 구성 요소와 이들이 SPMD 프로그램 모델과 어떻게 연관되는지를 설명할 때 사용되는 전문 용어가 많이 있다.
+
+In this document we will use the terms as defined in the following subsections.
+
