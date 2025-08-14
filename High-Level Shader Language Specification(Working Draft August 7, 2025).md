@@ -233,4 +233,10 @@ In this document we will use the terms as defined in the following subsections.
 
 ==1==    HLSL은 데이터 병렬 프로그래밍 언어이며 더 큰 시스템의 보조 연산장치를 프로그래밍하기 위해 설계되었다.
 
-In this context the host refers to the primary processing unit that runs the application which in turn uses a runtime to execute HLSL programs on a supported
+In this context the host refers to the primary processing unit that runs the application which in turn uses a runtime to execute HLSL programs on a supported device.
+
+이러한 맥락에서 호스트는 주 연산 장치를 나타낸다. 주 연산 장치는 어플리케이션을 실행하며 그에 따라 지원되는 장치에서 HLSL 프로그램을 실행시키는 런타임을 실행한다.
+
+There is no strict requirement that the host and device be different physical hardware, although they commonly are.
+
+
