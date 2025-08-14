@@ -277,4 +277,28 @@ The size of a Wave is defined as the maximum number of active Lanes the Wave sup
 
 웨이브의 크기는 웨이브가 지원하는 활성 레인의 최대 수로 정의된다.
 
-Wave sizes vary by hardware architecture, and are required to be powers of two. The number of active Lanes in a Wave can be any value between one and the Wave size.
+Wave sizes vary by hardware architecture, and are required to be powers of two.
+
+웨이브의 크기는 하드웨어 아키텍처에 따라 다르며, 2의 제곱수여야 한다.
+
+The number of active Lanes in a Wave can be any value between one and the Wave size.
+
+활성 레인의 수는 1과 웨이브의 크기 사이의 어떠한 값도 될 수 있다.
+
+==2==    Some hardware implementations support multiple Wave sizes.
+
+==2==    몇몇 하드웨어 구현체는 여러 웨이브 크기를 지원한다.
+
+There is no overall minimum wave size requirement, although some language features do have minimum Lane size requirements.
+
+전체적인 최소 웨이브 크기 요구사항은 없지만, 일부 언어 기능은 최소 레인 크기 요구사항을 가진진다.
+
+==3==    HLSL is explicitly designed to run on hardware with arbitrary Wave sizes.
+
+HLSL은 임의의 웨이브 크기를 가지고 하드웨어에서 실행하도록 명시적으로 설계되었다.
+
+Hardware architectures may implement Waves as Single Instruction Multiple Thread (SIMT) where each thread executes instructions in lockstep.
+
+하드웨어 
+
+This is not a requirement of the model. Some constructs in HLSL require synchronized execution. Such constructs will explicitly specify that requirement.
