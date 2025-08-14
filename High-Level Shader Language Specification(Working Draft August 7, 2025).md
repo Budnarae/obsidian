@@ -33,17 +33,35 @@ The language is also influenced to a lesser degree by other polular graphics and
 
 이 언어는 또한 다른 유명한 그래픽 및 병렬 프로그래밍 언어들에 의해서도 더 적은 정도로 영향받았다.
 
+>**구현체(implementation)란**
+>
+>특정 표준이나 명세를 실제로 구현한 소프트웨어나 시스템을 의미합니다.
+>
+>**HLSL 맥락에서:**
+>
+>- **FXC (DirectX Shader Compiler)**: Microsoft의 기존 HLSL 컴파일러
+>- **DXC (DirectX Shader Compiler)**: Microsoft의 새로운 HLSL 컴파일러
+>- **기타 third-party HLSL 컴파일러들**
+>
+>**일반적인 예시:**
+>
+>- **C++ 구현체**: GCC, Clang, MSVC 등
+>- **Java 구현체**: Oracle JDK, OpenJDK 등
+>- **웹브라우저**: Chrome, Firefox, Safari (각각 HTML/CSS/JS 표준의 구현체)
+
+
+
 ==3==    HLSL has two reference implementations which this specification draws heavily from.
 
 HLSL은 이 명세서가 많은 부분을 참조하는 두 개의 참조 구현들을 가지고 있다.
 
 The original reference implementation Legacy DirectX Shader Compiler (FXC) has been in use since DirectX 9.
 
-원래의 참조인 구형 DirectX 쉐이더 컴파일러 (FXC)는 DirectX 9부터 사용되어 왔다.
+원래의 참조 구현인 구형 DirectX 쉐이더 컴파일러 (FXC)는 DirectX 9부터 사용되어 왔다.
 
 The more recent reference implementation DirectX Shader Compiler (DXC) has been the primary shader compiler since DirectX 12.
 
-더 최근의 참조인 DirectX 쉐이더 컴파일러 (DXC)는 DirectX 12부터 주된 쉐이더 컴파일러로 자리잡았다.
+더 최근의 참조 구현인 DirectX 쉐이더 컴파일러 (DXC)는 DirectX 12부터 주된 쉐이더 컴파일러로 자리잡았다.
 
 ==4==    In writing this specification bias is leaned toward the language behavior of DXC rather than the behavior of FXC, although that can vary by context.
 
@@ -51,21 +69,21 @@ The more recent reference implementation DirectX Shader Compiler (DXC) has been 
 
 ==5==    In very rare instances this spec will be aspirational, and may diverge from both reference implementation behaviors.
 
-==5==    매우 드문 경우에 이 명세서는 이상적인 목표를 제시할 수 있으며, 두 참조의 동작 모두에서 벗어날 수 있다.
+==5==    매우 드문 경우에 이 명세서는 이상적인 목표를 제시할 수 있으며, 두 참조 구현현의 동작 모두에서 벗어날 수 있다.
 
 This will only be done in instance where there is an intent to alter implementation behavior in the future.
 
-이러한 일은 구현된 동작을 미래에 대체할 의도가 있을 때에만 일어날 것이다.
+이러한 일은 구현체의 동작을 미래에 대체할 의도가 있을 때에만 일어날 것이다.
 
 Since this document and the implementations are living sources, one or the other may be ahead in different regards at any point in time.
 
-이 문서와 앞서 언급한 참조들은 계속 발전하는(갱신되는) 자료이므로, 어느 시점에서든 서로 다른 측면에서 한쪽이 다른 쪽보다 앞서 있을 수 있다.
+이 문서와 앞서 언급한 참조 구현들은 계속 발전하는(갱신되는) 소스이므로, 어느 시점에서든 서로 다른 측면에서 한쪽이 다른 쪽보다 앞서 있을 수 있다.
 
 ## 1.1 Scope
 
 ==1==    This document specifies the requirements for implementations of HLSL.
 
-이 문서는 HLSL의 구현에 대한 요구사항들을 명시한다.
+이 문서는 HLSL의 구현체에 대한 요구사항들을 명시한다.
 
 The HLSL specification is based on and highly influenced by the specifications for the C Programming Language (C) and the C++ Programming Language (C++)
 
@@ -131,4 +149,8 @@ Data that is the result of undefined behavior is not correct, and may be treated
 
 ### 1.4.5 Implementation Limits
 
-==1==    
+==1==    Restrictions imposed upon programs by the implementation of either the compiler or runtime environment.
+
+컴파일러 또는 실행환경의 구현체에 의해 프로그램에게 강요되는 제한이다.
+
+The compiler may seek to surface runtime-imposed limits to the user for improved user experience.
