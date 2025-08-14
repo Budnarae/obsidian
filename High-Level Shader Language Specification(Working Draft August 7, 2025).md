@@ -115,4 +115,14 @@ Data that is the result of undefined behavior is not correct, and may be treated
 
 ==1==    An implementation define message belonging to a subset of the implementation's output messages which communicates diagnostic information to the user.
 
-==1==    
+==1==    구현체에서 정의한 메시지로, 구현체의 출력 메시지의 부분집합에 속하며 사용자에게 진단 정보를 전달한다.
+
+### 1.4.3 Ill-formed Program
+
+==1==    A program that is not well-formed, for which the implementation is expected to return unsuccessfully and produce one or more diagnostic messages.
+
+==1==    성공적으로 반환하지 못하고 하나 이상의 경고 메시지를 출력할 것으로 예상되는 잘 짜여지지 못한 프로그램이다.
+
+### 1.4.4 Implementation-defined Behavior
+
+==1==    Beha
