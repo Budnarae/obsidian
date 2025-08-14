@@ -61,7 +61,7 @@ Since this document and the implementations are living sources, one or the other
 
 이 문서와 앞서 언급한 참조들은 계속 발전하는(갱신되는) 자료이므로, 어느 시점에서든 서로 다른 측면에서 한쪽이 다른 쪽보다 앞서 있을 수 있다.
 
-# 1.1 Scope
+## 1.1 Scope
 
 ==1==    This document specifies the requirements for implementations of HLSL.
 
@@ -73,5 +73,18 @@ HLSL 명세서는 C와 C++ 프로그래밍 언어의 명세서에 기반하며 �
 
 ==2==    This document covers both describing the language grammar and semantics for HLSL, and (in later sections) the standard library of data types used in shader programming.
 
+==2==    이 문서는 HLSL의 언어 문법과 의미론을 설명하는 것과 (이후 목차에서) 셰이더 프로그래밍에서 사용되는 데이터 타입들의 표준 라이브러리 모두를 다룬다. 
 
+## 1.2 Normative References
 
+The following referenced documents provide significant influence on this document and should be used in conjunction with interpreting this standard.
+
+다음 참조 문서들은 이 문서에 상당한 영향을 제공하며, 이 표준을 해석하는 데 있어서 함께 사용되어야 한다.
+
+- ISO C standard (2011), Programming languages - C
+- ISO C++ standard (2011), Programming languages - C++
+- [DirectX Specifications](https://microsoft.github.io/DirectX-Specs/)
+
+## 1.3 Terms and definitions
+
+==1== This document aims to use terms consistent with their definitions in ISO C standa
