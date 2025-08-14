@@ -197,4 +197,6 @@ HLSL은 GPU의 도형과 색상 처리에 대한 더 큰 제어권을 부여하�
 
 It gained polularity because it targeted a common hardware description which all conforming drivers were required to support.
 
-HLSL은 일반적인 하드웨어 
+HLSL은 모든 호환 드라이버가 지원해야 하는 표준 하드웨어 사양을 대상으로 했기 때문에 인기를 얻었다.
+
+This common hardware description, called a Shader M
