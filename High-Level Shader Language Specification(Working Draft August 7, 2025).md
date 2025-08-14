@@ -39,7 +39,15 @@ HLSL은 이 명세서가 많은 부분을 참조하는 두 개의 참조를 가�
 
 The original reference implementation Legacy DirectX Shader Compiler (FXC) has been in use since DirectX 9.
 
-원래의 참조인 기존 DirectX 쉐이더 컴파일러 (FXC)는 DirectX 9부터 사용되어 왔다.
+원래의 참조인 구형 DirectX 쉐이더 컴파일러 (FXC)는 DirectX 9부터 사용되어 왔다.
 
 The more recent reference implementation DirectX Shader Compiler (DXC) has been the primary shader compiler since DirectX 12.
+
+더 최근의 참조인 DirectX 쉐이더 컴파일러 (DXC)는 DirectX 12부터 주된 쉐이더 컴파일러로 자리잡았다.
+
+==4==    In writing this specification bias is leaned toward the language behavior of DXC rather than the behavior of FXC, although that can vary by context.
+
+==4==    이 명세서를 작성함에 있어서 편향은 FXC의 동작보다는 DXC의 언어 동작 쪽으로 기울어져 있으나, 이는 상황에 따라 달라질 수 있다.
+
+==5==    In very rare instances this spec will be aspirational, and may diverge from both reference implementation behaviors.
 
