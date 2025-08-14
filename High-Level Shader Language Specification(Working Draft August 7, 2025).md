@@ -299,6 +299,16 @@ HLSL은 임의의 웨이브 크기를 가지고 하드웨어에서 실행하도�
 
 Hardware architectures may implement Waves as Single Instruction Multiple Thread (SIMT) where each thread executes instructions in lockstep.
 
-하드웨어 
+하드웨어 아키텍처들은 웨이브를 단일 명령 다중 스레드 (SIMT)로 구현할 수도 있다. 이 경우 각 스레드는 동기화된 상태로 명령을 실행한다.
 
-This is not a requirement of the model. Some constructs in HLSL require synchronized execution. Such constructs will explicitly specify that requirement.
+This is not a requirement of the model.
+
+이것은 모델의 요구 사항이 아니다.
+
+Some constructs in HLSL require synchronized execution.
+
+HLSL의 일부 구성 요소는 동기화된 실행을 요구한다.
+
+Such constructs will explicitly specify that requirement.
+
+이러한 구성 요소는 해당 요구 사항을 명시적으로 지정한다.
