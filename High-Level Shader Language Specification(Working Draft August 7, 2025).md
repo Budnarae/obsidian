@@ -223,3 +223,14 @@ This programming model is useful due to GPUs largely being Single Instruction Mu
 
 In this document we will use the terms as defined in the following subsections.
 
+이 문서에서는 다음 하위 절에서 정의된 용어들을 사용한다.
+
+### 1.6.1 SPMD Terminology
+
+#### 1.6.1.1 Host and Device
+
+==1==    HLSL is a data-parallel programming language designed for programming auxilary processors in a larger system.
+
+==1==    HLSL은 데이터 병렬 프로그래밍 언어이며 더 큰 시스템의 보조 연산장치를 프로그래밍하기 위해 설계되었다.
+
+In this context the host refers to the primary processing unit that runs the application which in turn uses a runtime to execute HLSL programs on a supported
