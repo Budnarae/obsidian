@@ -51,3 +51,11 @@ The more recent reference implementation DirectX Shader Compiler (DXC) has been 
 
 ==5==    In very rare instances this spec will be aspirational, and may diverge from both reference implementation behaviors.
 
+==5==    매우 드문 경우에 이 명세서는 이상적인 목표를 제시할 수 있으며, 두 참조의 동작 모두에서 벗어날 수 있다.
+
+This will only be done in instance where there is an intent to alter implementation behavior in the future.
+
+이러한 일은 구현된 동작을 미래에 대체할 의도가 있을 때에만 일어날 것이다.
+
+Since this document and the implementations are living sources, one or the other may be ahead in different regards at any point in time.
+
