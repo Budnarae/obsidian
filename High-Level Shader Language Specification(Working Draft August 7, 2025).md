@@ -35,7 +35,7 @@ The language is also influenced to a lesser degree by other polular graphics and
 
 >**구현체(implementation)란**
 >
->특정 표준이나 명세를 실제로 구현한 소프트웨어나 시스템을 의미합니다.
+>특정 표준이나 명세를 실제로 구현한 소프트웨어나 시스템을 의미한다.
 >
 >**HLSL 맥락에서:**
 >
@@ -48,8 +48,8 @@ The language is also influenced to a lesser degree by other polular graphics and
 >- **C++ 구현체**: GCC, Clang, MSVC 등
 >- **Java 구현체**: Oracle JDK, OpenJDK 등
 >- **웹브라우저**: Chrome, Firefox, Safari (각각 HTML/CSS/JS 표준의 구현체)
-
-
+>
+>_출처 : claude_
 
 ==3==    HLSL has two reference implementations which this specification draws heavily from.
 
@@ -117,7 +117,7 @@ In cases where the definitions are unclear, or where this document diverges from
 
 ==1==    The following definitions are consistent between HLSL and the ISO C standard (2011) and ISO C++ standard (2011) specifications, however they are included here for reader convenience.
 
-다음의 정의들은 HLSL, ISO C 표준 (2011) 그리고 ISO C++ 표준 (2011) 명세서에서 일관되게 사용되지만, 독자의 편의를 위해 아래에 별첨한다.
+다음의 정의들은 HLSL, ISO C 표준 (2011) 그리고 ISO C++ 표준 (2011) 명세서에서 일관되게 사용되지만, 읽는 이이의 편의를 위해 아래에 별첨한다.
 
 ### 1.4.1 Correct Data
 
@@ -154,3 +154,11 @@ Data that is the result of undefined behavior is not correct, and may be treated
 컴파일러 또는 실행환경의 구현체에 의해 프로그램에게 강요되는 제한이다.
 
 The compiler may seek to surface runtime-imposed limits to the user for improved user experience.
+
+컴파일러는 향상된 사용자 경험을 위해 런타임이 부과하는 제한사항들을 사용자에게 노출시키려 할 수 있다.
+
+### 1.4.6 Undefined Behavior
+
+==1==    Behavior of invalid program constructs or incorrect data for which this standard imposes no requirements, or does not sufficiently detail.
+
+==1==    유효하지 않은 프로그램 구조나 부정확한 데이터의 동작으로, 이 표준이 요구사항을 부과하지 않거나 충분히 상세하게 기술하지 않는다.
