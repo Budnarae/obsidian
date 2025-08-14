@@ -162,3 +162,13 @@ The compiler may seek to surface runtime-imposed limits to the user for improved
 ==1==    Behavior of invalid program constructs or incorrect data for which this standard imposes no requirements, or does not sufficiently detail.
 
 ==1==    유효하지 않은 프로그램 구조나 부정확한 데이터의 동작으로, 이 표준이 요구사항을 부과하지 않거나 충분히 상세하게 기술하지 않는다.
+
+### 1.4.7 Unspecified Behavior
+
+==1==    Behavior of a well-formed program and correct data which may vary by the implementation, and the implementation is not expected to document the behavior.
+
+==1==    올바른 형태의 프로그램과 정확한 데이터의 동작으로, 구현체에 따라 달라질 수 있다.  그리고 구현체는 이 동작을 문서화하지 않는다.
+
+### 1.4.8 Well-formed Program
+
+==1==    An HLSL program constructed according to the syntax rules, diagnosable semantic rules, and the One
