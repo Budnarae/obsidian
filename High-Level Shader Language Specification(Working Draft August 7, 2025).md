@@ -239,4 +239,14 @@ In this context the host refers to the primary processing unit that runs the app
 
 There is no strict requirement that the host and device be different physical hardware, although they commonly are.
 
+호스트와 장치가 반드시 서로 다른 물리적 하드웨어일 필요는 없지만, 일반적으로는 그렇다.
 
+The separation of host and device in this specification is useful for defining the execution and memory model as well as specific semantics of language constructs.
+
+이 명세서에서의 호스트와 장치의 분리는 실행 및 메모리 모델뿐만 아니라 언어 구조의 구체적인 의미를 정의하는 데에도 유용하다.
+
+#### 1.6.1.2 Lane
+
+==1==    A Lane represents a single computed element in an SPMD program.
+
+==1==    
