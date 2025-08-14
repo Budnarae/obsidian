@@ -265,4 +265,16 @@ SPMD 프로그램에서는 여러 레인 그룹이 동기화되어 명령을 실
 
 A Lane has an associated lane state which denotes the execution status of the lane (1.6.1.7).
 
-레인은 레인의 실행 상태를 나타내는 연관 실행 상태를 가진다 (1.6.1.7).
+하나의 레인은 연관된 레인 상태를 가지며, 이 상태는 레인의 실행 상태를 나타낸다(1.6.1.7).
+
+#### 1.6.1.3 Wave
+
+==1==    A grouping of Lanes for execution is called a Wave.
+
+==1==    실행을 위해 레인을 묶은 그룹을 웨이브라고 한다.
+
+The size of a Wave is defined as the maximum number of active Lanes the Wave supports.
+
+웨이브의 크기는 웨이브가 지원하는 활성 레인의 최대 수로 정의된다.
+
+Wave sizes vary by hardware architecture, and are required to be powers of two. The number of active Lanes in a Wave can be any value between one and the Wave size.
