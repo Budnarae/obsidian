@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "High-Level Shader Language Specification(Working Draft August 7, 2025)"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "hlsl spe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,13 +209,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "public/HLSL.md",
+    "index.md",
+    "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
-    "index.md",
     "ingredient/template/참고자료.md",
     "ingredient/template/개요.md",
     "ingredient/template/개요와 참고자료.md",

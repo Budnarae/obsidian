@@ -312,3 +312,15 @@ HLSL의 일부 구성 요소는 동기화된 실행을 요구한다.
 Such constructs will explicitly specify that requirement.
 
 이러한 구성 요소는 해당 요구 사항을 명시적으로 지정한다.
+
+#### 1.6.1.4 Quad
+
+==1==    A Quad is a subdivision of four Lanes in a Wave which are computing adjacent values.
+
+==1==    쿼드(Quad)는 인접한 값들을 계산하는 4개의 레인의 하위 구분이다.
+
+In pixel shaders a Quad may represent four adjacent pixels and Quad operations allow passing data between adjacent Lanes.
+
+
+
+In compute shaders quads may be one or two dimensional depending on the workload dimensionality. Quad operations require four active Lanes.
