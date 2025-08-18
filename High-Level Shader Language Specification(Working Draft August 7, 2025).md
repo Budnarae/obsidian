@@ -405,4 +405,22 @@ A Lane may be predicated off when control flow for the Lanes in a Wave diverge a
 
 ==6==    The diagram blow illustrates the state transitions between Lane states:
 
-아래의 다이어그램은 레인 상태 간의 상태 젆
+아래의 다이어그램은 레인 상태 간의 상태 전환을 시각화한 것이다.
+
+![[357f8be712c1ea04a541a6b3c523895e_MD5.jpeg]]
+
+### 1.6.2 SPMD Execution Model
+
+==1==    A runtime implementation shall provide an implementation-defined mechanism for defining a Dispatch.
+
+==1==    런타임 구현체는 디스패치를 정의하기 위한 구현체가 정의한 메커니즘을 제공해야 한다.
+
+A runtime shall manage hardware resources and schedule execution to conform to the behaviors defined in this specification in an implementation-defined way.
+
+런타임은 하드웨어 자원을 관리해야 하며 구현체 정의 방식을 통하여 이 명세에서 정의한 동작을 구성하기 위한 실행을 스케줄링해야 한다.
+
+A runtime implementation may sort the Thread Groups of a Dispatch into Waves in an implementation-defined way. During execution no guarantees are made that all Lanes in a Wave are actively executing.
+
+
+
+2 Wave, Quad, and Thread Group operations require execution synchronization of applicable active and helper Lanes as defined by the individual operation.
