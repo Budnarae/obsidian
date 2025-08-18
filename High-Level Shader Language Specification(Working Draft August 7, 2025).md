@@ -501,6 +501,20 @@ Reads and writes to Thread Group Memory, may occur in any order except as restri
 
 ==1==    Device memory is memory available to all Lanes executing on the device.
 
-==1==    장치 메모리는 
+==1==    장치 메모리는 장치 위해서 실행하는 모든 레인에 의해 사용될 수 있는 메모리이다.
 
-This memory may be read or written to by multiple Thread Groups that are executing concurrently. Reads and writes to device memory may occur in any order except as restricted by synchronization intrinsics or other memory annotations. Some device memory may be visible to the host. Device memory that is visible to the host may have additional synchronization concerns for host visibility.
+This memory may be read or written to by multiple Thread Groups that are executing concurrently.
+
+이 메모리는 비동기적으로 실행하는 여러 개의 스레드 그룹들에 의해 읽히거나 쓰일 수 있다.
+
+Reads and writes to device memory may occur in any order except as restricted by synchronization intrinsics or other memory annotations.
+
+장치 메모리에 대한 읽기 또는 쓰기는 동기화 내장 함수나 다른 메모리 주석에 의해 제한되는 경우를 말고는 임의의 순서로 발생할 수 있다.
+
+Some device memory may be visible to the host.
+
+일부 장치 메모리는 호스트에서 볼 수 있다.
+
+Device memory that is visible to the host may have additional synchronization concerns for host visibility.
+
+
