@@ -551,5 +551,35 @@ The distinction between source and header files is social and not technical.
 
 An implementation will construct a translation unit from a single source file and any included source or header files referenced via the #include preprocessing directive conforming to the ISO C standard (2011) preprocessor specification.
 
+구현체는 단일 소스 파일과 ISO C 표준(2011) 전처리기 명세를 준수하는 #include 전처리 지시어를 통해 참조되는 포함된 소스 또는 헤더 파일들로부터 번역 단위를 구성할 것이다.
 
-==2== An implementation may implicitly include additional sources as required to expose the HLSL library functionality as defined in (13).
+==2==    An implementation may implicitly include additional sources as required to expose the HLSL library functionality as defined in (13).
+
+==2==    구현체는 (13)에서 정의한 HLSL 라이브러리 기능을 노출하기 위해 암시적으로 추가적인 소스를 추가할 수 있다.
+
+## 2.2 Phases of Translation
+
+==1==    HLSL inherits the phases of translation from ISO C++ standard (2011), with minor alterations, specifically the removal of support for trigraph and digraph sequences.
+
+==1==    HLSL은 ISO C++ 표준(2011)의 번역 과정을 상속한다.
+
+Below is a description of the phases.
+
+아래는 과정들에 대한 설명이다.
+
+1. Source files are characters that are mapped to the basic source character set in an implementation-defined manner.
+2. Any sequence of backslash (\) immediately followed by a new line is deleted, resulting in splicing lines together.
+3. Tokenization occurs and comments are isolated. If a source file ends in a partial comment or preprocessor token the
+program is ill-formed and a diagnostic shall be issued. Each comment block shall be treated as a single white-space
+character.
+4. Preprocessing directives are executed, macros are expanded, pragma and other unary operator expressions are
+executed. Processing of #include directives results in all preceding steps being executed on the resolved file, and
+can continue recursively. Finally all preprocessing directives are removed from the source.
+5. Character and string literal specifiers are converted into the appropriate character set for the execution environment.
+6. Adjacent string literal tokens are concatenated.
+7. White-space is no longer significant. Syntactic and semantic analysis occurs translating the whole translation unit
+into an implementation-defined representation.
+8. The translation unit is processed to determine required instantiations, the definitions of the required instantiations
+are located, and the translation and instantiation units are merged. The program is ill-formed if any required
+instantiation cannot be located or fails during instantiation.
+9. External references are resolved, library references linked, and all translation output is collected into a single output.
