@@ -467,7 +467,7 @@ Shader Model features are fully documented in the DirectX Specifications, and th
 
 ==1==    HLSL programs manipulate data stored in four distinct memory spaces: thread, threadgroup, device and constant.
 
-HLSL 프로그램들은 4개의 구분된 메모리 공간: 스레드, 스레드 그룹, 장치와 상수
+HLSL 프로그램들은 4개의 구분된 메모리 공간: 스레드, 스레드 그룹, 장치(device)와 상수에 저장된 메모리를 다룬다.
 
 #### 1.7.1.1 Thread Memory
 
@@ -482,3 +482,25 @@ It is the default memory space used to store local variables.
 Thread memory cannot be directly read from other threads without the use of intrinsics to synchronize execution and memory.
 
 스레드 메모리는 실행과 메모리를 동기화하는 내장 함수를 사용하지 않고는 다른 스레드에서 직접 읽을 수 없다.
+
+#### 1.7.1.2 Thread Group Memory
+
+==1==     Thread Group memory is denoted in HLSL with the groupshared keyword.
+
+스레드 그룹 메모리는 HLSL에서 groupshared 키워드로 표시된다.
+
+The underlying memory for any declaration annotated with groupshared is shared across an entire Thread Group.
+
+groupshared로 주석이 달린 모든 선언의 기저 메모리는 전체 스레드 그룹에 걸쳐 공유된다.
+
+Reads and writes to Thread Group Memory, may occur in any order except as restricted by synchronization intrinsics or other memory annotations.
+
+스레드 그룹 메모리에 대한 읽기와 쓰기는 동기화 내장 함수나 다른 메모리 주석에 의해 제한되는 경우를 제외하고는 임의의 순서로 발생할 수 있다.
+
+#### 1.7.1.3 Device Memory
+
+==1==    Device memory is memory available to all Lanes executing on the device.
+
+==1==    장치 메모리는 
+
+This memory may be read or written to by multiple Thread Groups that are executing concurrently. Reads and writes to device memory may occur in any order except as restricted by synchronization intrinsics or other memory annotations. Some device memory may be visible to the host. Device memory that is visible to the host may have additional synchronization concerns for host visibility.
