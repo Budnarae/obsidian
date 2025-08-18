@@ -317,7 +317,7 @@ Such constructs will explicitly specify that requirement.
 
 ==1==    A Quad is a subdivision of four Lanes in a Wave which are computing adjacent values.
 
-==1==    쿼드(Quad)는 인접한 값들을 계산하는 4개의 레인의 하위 구분이다.
+==1==    쿼드(Quad)는 인접한 값들을 계산하는 웨이브의 4개 레인의 하위 구분이다.
 
 In pixel shaders a Quad may represent four adjacent pixels and Quad operations allow passing data between adjacent Lanes.
 
@@ -339,7 +339,7 @@ Quad operations require four active Lanes.
 
 Thread Groups are independent of SIMD hardware specifications.
 
-스레드 그룹은 하드웨어의 SIMD 명세세와는 독립적이다.
+스레드 그룹은 하드웨어의 SIMD 명세와는 독립적이다.
 
 The dimensions of a Thread Group are defined in three dimensions.
 
@@ -356,3 +356,9 @@ If a Thread Group’s size is not a whole multiple of the hardware Wave size, th
 ==2==    If a Thread Group size is smaller than the Wave size , or if the Thread Group size is not an even multiple of the Wave size, the remaining Lane are inactive Lanes.
 
 ==2==    만약 스레드 그룹의 크기가 웨이브의 크기보다 작다면, 또는 스레드 그룹의 크기가 웨이브 크기의 짝수 배가 아니라면, 남는 레인은 비활성 레인이 된다.
+
+#### 1.6.1.6 Dispatch
+
+==1==    A grouping of Thread Groups which represents the full execution of a HLSL program and results in a completed result for all input data elements.
+
+==1==    스레드 그룹들의 그룹
