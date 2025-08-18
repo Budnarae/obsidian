@@ -361,4 +361,14 @@ If a Thread Group’s size is not a whole multiple of the hardware Wave size, th
 
 ==1==    A grouping of Thread Groups which represents the full execution of a HLSL program and results in a completed result for all input data elements.
 
-==1==    스레드 그룹들의 그룹
+==1==    스레드 그룹들의 그룹은 HLSL 프로그램의 전체 실행을 나타내며 입력 데이터 요소에 대하 완료된 결과를 산출한다.
+
+#### 1.6.1.7 Lane States
+
+==1==    Lanes may be in four primary states: active, helper, inactive, and predicated off.
+
+레인은 4개의 주요 상태를 가질 수 있다: 활성, 헬퍼, 비활성 그리고 predicated off
+
+> predicated off는 GPU/병ㄹ
+
+2 An active Lane is enabled to perform computations and produce output results based on the initial launch conditions and program control flow. 3 A helper Lane is a lane which would not be executed by the initial launch conditions except that its computations are required for adjacent pixel operations in pixel fragment shaders. A helper Lane will execute all computations but will not perform writes to buffers, and any outputs it produces are discarded. Helper lanes may be required for Lane-cooperative operations to execute correctly. 4 A inactive Lane is a lane that is not executed by the initial launch conditions. This can occur if there are insufficient inputs to fill all Lanes in the Wave, or to reduce per-thread memory requirements or register pressure. 5 A predicated off Lane is a lane that is not being executed due to program control flow. A Lane may be predicated off when control flow for the Lanes in a Wave diverge and one or more lanes are temporarily not executing. 6 The diagram blow illustrates the state transitions between Lane states:
