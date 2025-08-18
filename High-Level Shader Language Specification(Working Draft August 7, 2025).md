@@ -581,13 +581,32 @@ Below is a description of the phases.
 
 4. Preprocessing directives are executed, macros are expanded, pragma and other unary operator expressions are executed. Processing of #include directives results in all preceding steps being executed on the resolved file, and can continue recursively. Finally all preprocessing directives are removed from the source.
 
-전처리 지시어가 실행되고, 매크로가 확장되며, pragma 및 기타 단항 연산자 표현식들이 실행됩니다. #include 지시어 처리는 해결된 파일에서 모든 이전 단계들이 실행되는 결과를 가져오며, 재귀적으로 계속될 수 있습니다. 마지막으로 모든 전처리 지시어가 소스에서 제거됩니다.
+전처리 지시어가 실행되고, 매크로가 확장되며, pragma 및 기타 단항 연산자 표현식들이 실행된다. #include 지시어 처리는 해결된 파일에서 모든 이전 단계들이 실행되는 결과를 가져오며, 재귀적으로 계속될 수 있다. 마지막으로 모든 전처리 지시어가 소스에서 제거된다.
 
 5. Character and string literal specifiers are converted into the appropriate character set for the execution environment.
+
+문자 및 문자열 리터럴 지정자들이 실행 환경에 적합한 문자 집합으로 변환된다.
+
 6. Adjacent string literal tokens are concatenated.
-7. White-space is no longer significant. Syntactic and semantic analysis occurs translating the whole translation unit
-into an implementation-defined representation.
-8. The translation unit is processed to determine required instantiations, the definitions of the required instantiations
-are located, and the translation and instantiation units are merged. The program is ill-formed if any required
-instantiation cannot be located or fails during instantiation.
+
+인접한 문자열 리터럴 토큰들이 연결된다.
+
+7. White-space is no longer significant. Syntactic and semantic analysis occurs translating the whole translation unit into an implementation-defined representation.
+
+공백은 의미를 상실한다. 구문 및 의미 분석이 발생하여 전체 번역 단위를 구현체가 정의한 표현으로 번역한다.
+
+8. The translation unit is processed to determine required instantiations, the definitions of the required instantiations are located, and the translation and instantiation units are merged. The program is ill-formed if any required instantiation cannot be located or fails during instantiation.
+
+번역 단위가 처리되어 필요한 인스턴스화를 결정하고, 필요한 인스턴스화의 정의가 찾아지며, 번역 및 인스턴스화 단위들이 병합된다. 필요한 인스턴스화를 찾을 수 없거나 인스턴스화 중에 실패하면 프로그램은 올바르지 않은 형태이다.
+
 9. External references are resolved, library references linked, and all translation output is collected into a single output.
+
+외부 참조가 해결되고, 라이브러리 참조가 링크되며, 모든 번역 출력이 단일 출력으로 수집된다.
+
+### 2.3 Character Sets
+
+==1==    The basic source character set is a subset of the ASCII character set.
+
+==1==    
+
+The table below lists the valid characters and their ASCII values:
