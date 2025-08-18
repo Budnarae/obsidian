@@ -331,4 +331,24 @@ Quad operations require four active Lanes.
 
 쿼드 연산은 네 개의 활성 레인이 필요하다.
 
-#### 1.5.1
+#### 1.6.1.5 Thread Group
+
+==1==    A grouping of Lanes executing the same shader to produce a combined result is called a Thread Group.
+
+결합된 결과를 생성하기 위해 동일한 셰이더를 실행하는 레인들의 그룹을 스레드 그룹이라고 한다.
+
+Thread Groups are independent of SIMD hardware specifications.
+
+스레드 그룹은 하드웨어의 SIMD 명세세와는 독립적이다.
+
+The dimensions of a Thread Group are defined in three dimensions.
+
+스레드 그룹의 차원은 3차원으로 정의되어 있다.
+
+The maximum extent along each dimension of a Thread Group, and the total size of a Thread Group are implementation limits defined by the runtime and enforced by the compiler.
+
+스레드 그룹의 각 차원의 최대치, 그리고 스레드 그룹의 총 크기를 시행 한계(implementation limit)라 한다. 시행 한계는 런타임에 정의되며 컴파일러에 의해 
+
+If a Thread Group’s size is not a whole multiple of the hardware Wave size, the unused hardware Lanes are implicitly inactive.
+
+==2==    If a Thread Group size is smaller than the Wave size , or if the Thread Group size is not an even multiple of the Wave size, the remaining Lane are inactive Lanes.
