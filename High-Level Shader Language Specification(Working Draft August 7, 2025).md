@@ -347,8 +347,12 @@ The dimensions of a Thread Group are defined in three dimensions.
 
 The maximum extent along each dimension of a Thread Group, and the total size of a Thread Group are implementation limits defined by the runtime and enforced by the compiler.
 
-스레드 그룹의 각 차원의 최대치, 그리고 스레드 그룹의 총 크기를 시행 한계(implementation limit)라 한다. 시행 한계는 런타임에 정의되며 컴파일러에 의해 
+스레드 그룹의 각 차원의 최대치, 그리고 스레드 그룹의 총 크기를 시행 한계(implementation limit)라 한다. 시행 한계는 런타임에 정의되며 컴파일러에 의해 강제된다.
 
 If a Thread Group’s size is not a whole multiple of the hardware Wave size, the unused hardware Lanes are implicitly inactive.
 
+스레드 그룹의 크기가 하드웨어 웨이브 크기의 전체 배수가 아닐 경우, 사용되지 않은 하드웨어 레인들은 암묵적으로 비활성된다.
+
 ==2==    If a Thread Group size is smaller than the Wave size , or if the Thread Group size is not an even multiple of the Wave size, the remaining Lane are inactive Lanes.
+
+==2==    만약 스레드 그룹의 크기가 웨이브의 크기보다 작다면, 또는 스레드 그룹의 크기가 웨이브 크기의 짝수 배가 아니라면, 남는 레인은 비활성 레인이 된다.
