@@ -321,6 +321,14 @@ Such constructs will explicitly specify that requirement.
 
 In pixel shaders a Quad may represent four adjacent pixels and Quad operations allow passing data between adjacent Lanes.
 
+픽셀 셰이더에서 쿼드는 4개의 인접한 픽셀을 나타낼 수 있다. 쿼드 연산을 통해 인접한 레인들 간에 데이터를 전달할 수 있다.
 
+In compute shaders quads may be one or two dimensional depending on the workload dimensionality.
 
-In compute shaders quads may be one or two dimensional depending on the workload dimensionality. Quad operations require four active Lanes.
+컴퓨트 셰이더에서 쿼드는 작업의 차원성에 따라 1차원 또는 2차원일 수 있다.
+
+Quad operations require four active Lanes.
+
+쿼드 연산은 네 개의 활성 레인이 필요하다.
+
+#### 1.5.1
