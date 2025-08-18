@@ -393,6 +393,16 @@ Helper lanes may be required for Lane-cooperative operations to execute correctl
 
 This can occur if there are insufficient inputs to fill all Lanes in the Wave, or to reduce per-thread memory requirements or register pressure.
 
+비활성 레인은 입력이 충분치 못해 웨이브의 모든 레인을 채우지 못하거나, 각 스레드의 메모리 요구량이나 레지스터 부하를 감소시키기 위해 생길 수 있다.
 
+==5==    A predicated off Lane is a lane that is not being executed due to program control flow.
 
-5 A predicated off Lane is a lane that is not being executed due to program control flow. A Lane may be predicated off when control flow for the Lanes in a Wave diverge and one or more lanes are temporarily not executing. 6 The diagram blow illustrates the state transitions between Lane states:
+predicated off 레인은 프로그램 제어 흐름에 의해 실행되지 않는 레인이다.
+
+A Lane may be predicated off when control flow for the Lanes in a Wave diverge and one or more lanes are temporarily not executing.
+
+웨이브 내 레인들의 제어 흐름이 분기되어 하나 이상의 레인이 일시적으로 실행되지 않을 때 레인이 프레디케이트 오프될 수 있다.
+
+==6==    The diagram blow illustrates the state transitions between Lane states:
+
+아래의 다이어그램은 레인 상태 간의 상태 젆
