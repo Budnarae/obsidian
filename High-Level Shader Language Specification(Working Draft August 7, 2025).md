@@ -367,8 +367,32 @@ If a Thread Group’s size is not a whole multiple of the hardware Wave size, th
 
 ==1==    Lanes may be in four primary states: active, helper, inactive, and predicated off.
 
-레인은 4개의 주요 상태를 가질 수 있다: 활성, 헬퍼, 비활성 그리고 predicated off
+레인은 4개의 주요 상태를 가질 수 있다: 활성, 헬퍼, 비활성 그리고 predicated off.
 
-> predicated off는 GPU/병ㄹ
+> predicated off는 GPU/병렬 프로그래밍에서 사용되는 말로 **조건부로 비활성화된 상태, 조건문(if, while 등)에 의해 실행이 일시적으로 마스킹된 레인**을 의미한다.
 
-2 An active Lane is enabled to perform computations and produce output results based on the initial launch conditions and program control flow. 3 A helper Lane is a lane which would not be executed by the initial launch conditions except that its computations are required for adjacent pixel operations in pixel fragment shaders. A helper Lane will execute all computations but will not perform writes to buffers, and any outputs it produces are discarded. Helper lanes may be required for Lane-cooperative operations to execute correctly. 4 A inactive Lane is a lane that is not executed by the initial launch conditions. This can occur if there are insufficient inputs to fill all Lanes in the Wave, or to reduce per-thread memory requirements or register pressure. 5 A predicated off Lane is a lane that is not being executed due to program control flow. A Lane may be predicated off when control flow for the Lanes in a Wave diverge and one or more lanes are temporarily not executing. 6 The diagram blow illustrates the state transitions between Lane states:
+==2==    An active Lane is enabled to perform computations and produce output results based on the initial launch conditions and program control flow.
+
+활성 레인은 초기 실행 조건과 프로그램 제어 흐름을 바탕으로 계산을 수행하고 출력 결과를 생성할 수 있도록 활성화되어 있다.
+
+==3== A helper Lane is a lane which would not be executed by the initial launch conditions except that its computations are required for adjacent pixel operations in pixel fragment shaders.
+
+헬퍼 레인은 초기 실행 조건에서는 실행되지 않을 레인이지만, 픽셀 프래그먼트 셰이더에서 인접 픽셀 연산을 위해 그 계산이 필요한 레인이다.
+
+A helper Lane will execute all computations but will not perform writes to buffers, and any outputs it produces are discarded.
+
+헬퍼 레인은 모든 계산을 실행하지만 버퍼에 쓰기 작업을 수행하지 않으며, 생성하는 모든 출력은 폐기된다.
+
+Helper lanes may be required for Lane-cooperative operations to execute correctly.
+
+헬퍼 레인은 레인 협력 연산이 올바르게 실행되기 위해 필요할 수 있습니다.
+
+==4==    A inactive Lane is a lane that is not executed by the initial launch conditions.
+
+비활성 레인은 초기 실행 조건에 따라 실행되지 않는 레인이다.
+
+This can occur if there are insufficient inputs to fill all Lanes in the Wave, or to reduce per-thread memory requirements or register pressure.
+
+
+
+5 A predicated off Lane is a lane that is not being executed due to program control flow. A Lane may be predicated off when control flow for the Lanes in a Wave diverge and one or more lanes are temporarily not executing. 6 The diagram blow illustrates the state transitions between Lane states:
