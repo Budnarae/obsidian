@@ -561,20 +561,28 @@ An implementation will construct a translation unit from a single source file an
 
 ==1==    HLSL inherits the phases of translation from ISO C++ standard (2011), with minor alterations, specifically the removal of support for trigraph and digraph sequences.
 
-==1==    HLSL은 ISO C++ 표준(2011)의 번역 과정을 상속한다.
+==1==    HLSL은 트라이그래프와 다이그래프 시퀀스 지원 제거라는 사소한 변경을 제외하고는 ISO C++ 표준(2011)의 번역 과정을 상속한다.
 
 Below is a description of the phases.
 
-아래는 과정들에 대한 설명이다.
+아래는 단계들에 대한 설명이다.
 
 1. Source files are characters that are mapped to the basic source character set in an implementation-defined manner.
+
+소스 파일은 구현체가 정의한 방식으로 기본 소스 문자 집합에 매핑되는 문자들이다.
+
 2. Any sequence of backslash (\) immediately followed by a new line is deleted, resulting in splicing lines together.
-3. Tokenization occurs and comments are isolated. If a source file ends in a partial comment or preprocessor token the
-program is ill-formed and a diagnostic shall be issued. Each comment block shall be treated as a single white-space
-character.
-4. Preprocessing directives are executed, macros are expanded, pragma and other unary operator expressions are
-executed. Processing of #include directives results in all preceding steps being executed on the resolved file, and
-can continue recursively. Finally all preprocessing directives are removed from the source.
+
+백슬래시(\\) 바로 뒤에 새 줄이 오는 모든 시퀀스는 삭제되어, 줄들이 연결된다.
+
+3. Tokenization occurs and comments are isolated. If a source file ends in a partial comment or preprocessor token the program is ill-formed and a diagnostic shall be issued. Each comment block shall be treated as a single white-space character.
+
+토큰화가 발생하고 주석들이 분리된다. 소스 파일이 부분 주석이나 전처리기 토큰으로 끝나면 프로그램은 올바르지 않은 형태이며 진단 메시지가 발행되어야 한다. 각 주석 블록은 단일 공백 문자로 취급되어야 합니다.
+
+4. Preprocessing directives are executed, macros are expanded, pragma and other unary operator expressions are executed. Processing of #include directives results in all preceding steps being executed on the resolved file, and can continue recursively. Finally all preprocessing directives are removed from the source.
+
+전처리 지시어가 실행되고, 매크로가 확장되며, pragma 및 기타 단항 연산자 표현식들이 실행됩니다. #include 지시어 처리는 해결된 파일에서 모든 이전 단계들이 실행되는 결과를 가져오며, 재귀적으로 계속될 수 있습니다. 마지막으로 모든 전처리 지시어가 소스에서 제거됩니다.
+
 5. Character and string literal specifiers are converted into the appropriate character set for the execution environment.
 6. Adjacent string literal tokens are concatenated.
 7. White-space is no longer significant. Syntactic and semantic analysis occurs translating the whole translation unit
