@@ -429,4 +429,22 @@ During execution no guarantees are made that all Lanes in a Wave are actively ex
 
 ==2==    Wave, Quad, and Thread Group operations require execution synchronization of applicable active and helper Lanes as defined by the individual operation.
 
-웨이브, 쿼드, 스레드 그룹 연산은 단일 연산에 의해 정의된 연관된 활성 그리고 헬퍼 레인들의 실행 동기화가 필요하다.
+웨이브, 쿼드, 그리고 스레드 그룹 연산들은 개별 연산에서 정의한 대로 해당하는 활성 및 헬퍼 레인들의 실행 동기화를 필요로 한다.
+
+### 1.6.3 Optimization Restrictions
+
+==1==    An optimizing compiler may not optimize code generation such that it changes the behavior of a well-formed program except in the presence of implementation-defined or unspecified behavior.
+
+최적화 컴파일러는 구현체가 정의한 동작이나 명시되지 않은 동작이 존재하는 경우를 제외하고는 올바른 형태의 프로그램의 동작을 변경하는 방식으로 코드 생성을 최적화해서는 안된다.
+
+==2==    The presence of Wave, Quad, or Thread Group operations may further limit the valid transformations of a program.
+
+웨이브, 쿼드, 또는 스레드 그룹 연산들의 존재는 프로그램의 유효한 변환을 더욱 제한할 수 있다.
+
+Specifically, control flow operations which result in changing which Lanes, Quads, or Waves are actively executing are illegal in the presence of cooperative operations if the optimization alters the behavior of the program.
+
+구체적으로, 어떤 레인, 쿼드, 또는 웨이브가 활성적으로 실행되고 있는지를 변경시키는 제어 흐름 연산들은, 최적화가 프로그램의 동작을 변경시키는 경우 협력적 연산들이 존재할 때 불법이다.
+
+### 1.7 HLSL Memory Models
+
+==1== sk
