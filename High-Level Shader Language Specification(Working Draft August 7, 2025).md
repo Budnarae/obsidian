@@ -417,10 +417,16 @@ A Lane may be predicated off when control flow for the Lanes in a Wave diverge a
 
 A runtime shall manage hardware resources and schedule execution to conform to the behaviors defined in this specification in an implementation-defined way.
 
-런타임은 하드웨어 자원을 관리해야 하며 구현체 정의 방식을 통하여 이 명세에서 정의한 동작을 구성하기 위한 실행을 스케줄링해야 한다.
+런타임은 구현체가 정의한 방식으로 하드웨어 리소스를 관리하고 실행을 스케줄링하여 이 명세서에서 정의한 동작들을 준수해야 한다.
 
-A runtime implementation may sort the Thread Groups of a Dispatch into Waves in an implementation-defined way. During execution no guarantees are made that all Lanes in a Wave are actively executing.
+A runtime implementation may sort the Thread Groups of a Dispatch into Waves in an implementation-defined way.
 
+런타임 구현체는 구현체가 정의한 방식으로 디스패치의 스레드 그룹들을 웨이브로 정렬할 수 있다.
 
+During execution no guarantees are made that all Lanes in a Wave are actively executing.
 
-2 Wave, Quad, and Thread Group operations require execution synchronization of applicable active and helper Lanes as defined by the individual operation.
+실행 동안 웨이브의 모든 레인이 활성되어 실행된다는 보장은 없다.
+
+==2==    Wave, Quad, and Thread Group operations require execution synchronization of applicable active and helper Lanes as defined by the individual operation.
+
+웨이브, 쿼드, 스레드 그룹 연산은 단일 연산에 의해 정의된 연관된 활성 그리고 헬퍼 레인들의 실행 동기화가 필요하다.
