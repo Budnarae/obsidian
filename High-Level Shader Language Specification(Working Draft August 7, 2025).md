@@ -517,4 +517,22 @@ Some device memory may be visible to the host.
 
 Device memory that is visible to the host may have additional synchronization concerns for host visibility.
 
+호스트에서 볼 수 있는 장치 메모리는 호스트 가시성을 위한 추가적인 동기화 고려사항을 가질 수 있다.
 
+#### 1.7.1.4 Constant Memory
+
+==1==    Constant memory is similar to device memory in that it is available to all Lanes executing on the device.
+
+==1==    상수 메모리는 장치에서 실행하는 모든 레인에 의해 사용될 수 있다는 점에서 장치 메모리와 유사하다.
+
+Constant memory is read-only, and an implementation can assume that constant memory is immutable and cannot change during execution.
+
+상수 메모리는 읽기 전용이다. 구현체는 상수 메모리가 불변이고 실행 중에 변경될 수 없다고 가정할 수 있다.
+
+### 1.7.2 Memory Spaces
+
+_TODO_
+
+==1==    The alignment requirements of an offset into device memory space is the size in bytes of the largest scalar type contained in the given aggregate type.
+
+장치 메모리 공간으로의 오프셋 정렬 요구사항은 주어진 집합 타입에 포함된 가장 큰 스칼라 타입의 바이트 단위 크기입니다.
