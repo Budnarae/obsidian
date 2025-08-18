@@ -536,3 +536,20 @@ _TODO_
 ==1==    The alignment requirements of an offset into device memory space is the size in bytes of the largest scalar type contained in the given aggregate type.
 
 장치 메모리 공간으로의 오프셋 정렬 요구사항은 주어진 집합 타입에 포함된 가장 큰 스칼라 타입의 바이트 단위 크기입니다.
+
+# Lexical Conventions
+
+## 2.1 Unit of Translation
+
+==1==    The text of HLSL programs is collected in source and header files.
+
+HLSL 프로그램의 텍스트는 소스 파일과 헤더 파일에서 수집된다.
+
+The distinction between source and header files is social and not technical.
+
+소스의 헤더 파일의 구분은 사회적인 것이지 기술적인 것이 아니다.
+
+An implementation will construct a translation unit from a single source file and any included source or header files referenced via the #include preprocessing directive conforming to the ISO C standard (2011) preprocessor specification.
+
+
+==2== An implementation may implicitly include additional sources as required to expose the HLSL library functionality as defined in (13).
