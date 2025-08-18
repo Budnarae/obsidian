@@ -462,3 +462,23 @@ This optimized for the common case in early shaders where data being processed o
 Shader Model features are fully documented in the DirectX Specifications, and this document will not attempt to elaborate further.
 
 셰이더 모델 기능들은 DirectX 명세서에 완전히 문서화되어 있으며, 이 문서에서는 더 자세히 설명하지 않을 것이다.
+
+### 1.7.1 Memory Spaces
+
+==1==    HLSL programs manipulate data stored in four distinct memory spaces: thread, threadgroup, device and constant.
+
+HLSL 프로그램들은 4개의 구분된 메모리 공간: 스레드, 스레드 그룹, 장치와 상수
+
+#### 1.7.1.1 Thread Memory
+
+==1==    Thread memory is local to the Lane.
+
+==1==    스레드 메모리는 레인에 지역적이다.
+
+It is the default memory space used to store local variables.
+
+스레드 메모리는 지역 변수를 저장하기 위해 사용하는 디폴트 메모리 공간이다.
+
+Thread memory cannot be directly read from other threads without the use of intrinsics to synchronize execution and memory.
+
+스레드 메모리는 실행과 메모리를 동기화하는 내장 함수를 사용하지 않고는 다른 스레드에서 직접 읽을 수 없다.
