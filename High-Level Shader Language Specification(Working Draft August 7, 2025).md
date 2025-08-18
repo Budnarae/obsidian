@@ -257,7 +257,7 @@ In a traditional programming model it would be analogous to a thread of executio
 
 In multi-threaded programming threads advance independent of each other.
 
-멀티 스레드 프로그래밍에서 스레드들이 서로 독립적으로 진행한다.
+멀티 스레드 프로그래밍에서는 스레드들이 서로 독립적으로 진행한다.
 
 In SPMD programs, a group of Lanes may execute instructions in lockstep because each instruction may be a SIMD instruction computing the results for multiple Lanes simultaneously, or synchronizing execution across multiple Lanes or Waves.
 
