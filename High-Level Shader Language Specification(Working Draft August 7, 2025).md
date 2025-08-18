@@ -603,10 +603,26 @@ Below is a description of the phases.
 
 외부 참조가 해결되고, 라이브러리 참조가 링크되며, 모든 번역 출력이 단일 출력으로 수집된다.
 
-### 2.3 Character Sets
+## 2.3 Character Sets
 
 ==1==    The basic source character set is a subset of the ASCII character set.
 
-==1==    
+==1==    기본 소스 문자 집합은 아스키 문자 집합의 부분 집합이다.
 
 The table below lists the valid characters and their ASCII values:
+
+아래의 표는 유효한 문자들과 그 문자들의 아스키 값들의 목록이다.
+
+![[150b48146db85007835fe110b37c0a6a_MD5.jpeg]]
+
+==2==    An implementation may allow source files to be written in alternate extended character sets as long as that set is a superset of the basic character set.
+
+구현체는 소스 파일이 기본 문자 집합의 상위 집합인 한 대안적인 확장 문자 집합으로 작성되는 것을 허용할 수 있다.
+
+The translation character set is an extended character set or the basic character set as chosen by the implementation.
+
+번역 문자 집합은 구현체가 선택한 확장 문자 집합 또는 기본 문자 집합이다.
+
+## 2.4 Preprocessing Tokens
+
+
