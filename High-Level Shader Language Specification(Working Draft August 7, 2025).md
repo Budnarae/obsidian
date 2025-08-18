@@ -451,8 +451,14 @@ Specifically, control flow operations which result in changing which Lanes, Quad
 
 셰이더 모델 5.0 이하에서 메모리 액세스는 128비트 경계에 정렬된 128비트 슬롯에서 동작한다.
 
-Thisoptimized for the common case in early shaders where data being processed on the GPU was usually 4-element vectors of 32-bit data types.
+This optimized for the common case in early shaders where data being processed on the GPU was usually 4-element vectors of 32-bit data types.
 
+이는 GPU에서 처리되는 데이터가 일반적으로 32비트 데이터 타입의 4개 요소 벡터였던 초기 셰이더의 일반적인 경우에 최적화된 것이다.
 
+==2==    On modern hardware memory access restrictions are loosened, and reads of 32-bit multiples are supported starting with Shader Model 5.1 and reads of 16-bit multiples are supported with Shader Model 6.0.
 
-==2==    On modern hardware memory access restrictions are loosened, and reads of 32-bit multiples are supported starting with Shader Model 5.1 and reads of 16-bit multiples are supported with Shader Model 6.0. Shader Model features are fully documented in the DirectX Specifications, and this document will not attempt to elaborate further.
+==2==    현대 하드웨어에서는 메모리 액세스 제한이 완화되어, 32비트 배수 읽기는 셰이더 모델 5.1부터 지원되고 16비트 배수 읽기는 셰이더 모델 6.0부터 지원된다.
+
+Shader Model features are fully documented in the DirectX Specifications, and this document will not attempt to elaborate further.
+
+셰이더 모델 기능들은 DirectX 명세서에 완전히 문서화되어 있으며, 이 문서에서는 더 자세히 설명하지 않을 것이다.
