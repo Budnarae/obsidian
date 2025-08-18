@@ -447,4 +447,12 @@ Specifically, control flow operations which result in changing which Lanes, Quad
 
 ### 1.7 HLSL Memory Models
 
-==1== sk
+==1==    Memory accesses for Shader Model 5.0 and earlier operate on 128-bit slots aligned on 128-bit boundaries.
+
+셰이더 모델 5.0 이하에서 메모리 액세스는 128비트 경계에 정렬된 128비트 슬롯에서 동작한다.
+
+Thisoptimized for the common case in early shaders where data being processed on the GPU was usually 4-element vectors of 32-bit data types.
+
+
+
+==2==    On modern hardware memory access restrictions are loosened, and reads of 32-bit multiples are supported starting with Shader Model 5.1 and reads of 16-bit multiples are supported with Shader Model 6.0. Shader Model features are fully documented in the DirectX Specifications, and this document will not attempt to elaborate further.
