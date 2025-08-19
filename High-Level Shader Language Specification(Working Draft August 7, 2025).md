@@ -930,13 +930,26 @@ This specification includes all necessary definitions for clarity.
 
 ==1==    개체(entity)는 값, 객체, 함수, 열거형, 타입, 클래스 멤버, 비트 필드(bit-field), 템플릿, 템플릿 특수화, 네임스페이스 또는 팩이다.
 
-2 A name is a use of an identifier (5.2.4), operator-function-id (??), conversion-function-id (10.2), or template-id (11)
-that denotes any entity or label (6.1).
-3 Every name that denotes an entity is introduced by a declaration. Every name that denotes a label is introduced by
-a labeled statement (6.1)1
-.
-4 A variable is introduced by the declaration of a reference other than a non-static data member of an object. The
-variable’s name denotes the reference or object.
+==2==    A name is a use of an identifier (5.2.4), operator-function-id (??), conversion-function-id (10.2), or template-id (11) that denotes any entity or label (6.1).
+
+==2==    이름은 어떤 개체나 레이블(6.1)을 나타내는 식별자(5.2.4), 연산자 함수 아이디(??), 변환 함수 아이디(10.2), 또는 템플릿 아이디(11)의 사용이다.
+
+==3==    Every name that denotes an entity is introduced by a declaration.
+
+개체를 나타내는 모든 이름은 선언에 의해 도입된다.
+
+Every name that denotes a label is introduced by a labeled statement (6.1).
+
+레이블을 나타내는 이름은 레이블 문에 의해 도입된다. 
+
+>HLSL does not have goto, and labeled statements are only valid within switch statements.
+>HLSL은 goto 키워드가 없으며, 레이블 문은 스위치 문 내에서만 유효하다.
+
+==4==    A variable is introduced by the declaration of a reference other than a non-static data member of an object.
+
+==4==    
+
+The variable’s name denotes the reference or object.
 5 Whenever a name is encountered it is necessary to determine if the name denotes an entity that is a type or template.
 The process for determining if a name refers to a type or template is called name lookup.
 6 Two names are the same name if:
