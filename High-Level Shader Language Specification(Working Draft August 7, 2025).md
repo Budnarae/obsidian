@@ -1159,4 +1159,5 @@ If a variable, function, or another entity with the same name is declared in sev
 - declarations contained within an export-declaration-group (7.7)
 
 - 진입점 함수들 (3.7)
-- 
+- _export_ 키워드로 표시된 함수들 (7.7)
+- 내보내기 선언 그룹 (7.7) 내에 포함된 선언들
