@@ -1007,7 +1007,11 @@ A declaration may also have effects such as:
 
 - it declares a function without specifying the function’s body (7.5),
 - it is a parameter declaration in a function declaration that does not specify the function’s body (7.5),
-- it is a global or namespace member declaration without the static specifier2,
+- it is a global or namespace member declaration without the static specifier,
+
+> Global variable declarations are implicitly constant and external in HLSL.
+> 전역 변수 선언들은 
+
 - it declares a static data member in a class definition,
 - it is a class name declaration,
 - it is a template parameter,
@@ -1060,5 +1064,19 @@ static int i;                     // defines N::i
 
 ```cpp
 
+int a;                  // declares a
+const int c;            // declares c
+X anX;                  // declares anX
+int f(int);             // declares f
+struct S;               // declares S
+typedef int Int;        // declares Int
+using N::d;             // declares d
+using Float = float;    // declares Float
+cbuffer CB {            // does not declare CB
+    int z;              // declares z
+}
+tbuffer TB {            // does not declare TB
+    int w;              // declares w
+}
 
 ```
