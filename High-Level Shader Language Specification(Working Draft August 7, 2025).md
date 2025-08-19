@@ -1216,6 +1216,16 @@ HLSL의 다음 엔티티들은 내부 연결성을 가진다.
 
 ==1==    An entity with no linkage can be referred to only from the scope it is in.
 
-==1==    연결이 없는 엔티티는 오직 그것의 스코프 안에서만 접근이 가능하다
+==1==    연결이 없는 엔티티는 오직 그것의 스코프 안에서만 접근이 가능하다.
 
-==2==    Any of the following entites declared at function scope or block scopes derived from function scope have no linkage:  local variables  local classes and their member functions  other entities declared at function scope or block scopes derived from function scope that such as typedefs, enumerations, and enumerators
+==2==    Any of the following entites declared at function scope or block scopes derived from function scope have no linkage:
+
+==2==    함수 스코프 또는 함수 내부의 블록 스코프에서 선언된 다음의 엔티티들은 연결을 가지지 않는다:
+
+- local variables
+- local classes and their member functions
+- other entities declared at function scope or block scopes derived from function scope that such as typedefs, enumerations, and enumerators
+
+- 지역 변수들
+- 지역 클래스들과 그것들의 멤버 함수들
+- `typedefs, enumerations, enumerators`같은 다른 엔티티들이 함수 스코프 또는 함수 내부의 블록 스코프 내부에서 선언된 경우
