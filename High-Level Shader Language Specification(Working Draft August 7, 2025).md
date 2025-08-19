@@ -1148,12 +1148,15 @@ If a variable, function, or another entity with the same name is declared in sev
 
 ==1==    Entities with program linkage can be referred to from other partially linked programs or a runtime implementation.
 
-
+==1==    프로그램 연결성을 갖는 개체들은 다른 부분적으로 연결된 프로그램들이나 런타임 구현체로부터 참조될 수 있습니다.
 
 ==2==    The following entities have program linkage:
 
-
+다음의 엔티티들은 프로그램 연결성을 갖는다:
 
 - entry point functions (3.7)
 - functions marked with _export_ keyword (7.7)
-- declar
+- declarations contained within an export-declaration-group (7.7)
+
+- 진입점 함수들 (3.7)
+- 
