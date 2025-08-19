@@ -1161,3 +1161,20 @@ If a variable, function, or another entity with the same name is declared in sev
 - 진입점 함수들 (3.7)
 - _export_ 키워드로 표시된 함수들 (7.7)
 - 내보내기 선언 그룹 (7.7) 내에 포함된 선언들
+
+### 3.6.2 External Linkage
+
+==1==    Entities with external linkage can be referred to from the scopes in the other translation units and enable linking between them.
+
+
+
+==2==    The following entities in HLSL have external linkage:
+
+
+
+- global variables that are not marked static or groupshared
+
+> 
+
+- static data members of classes or template classes
+
