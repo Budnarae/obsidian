@@ -1116,17 +1116,24 @@ A program built from a single translation unit, bypassing a linking step is call
 
 A program is said to be partially linked, when it contains at least one unresolved external declaration or at least one exported declaration that is not an entry point.
 
-4 An implementation may generate programs as fully linked or partially linked as requested by the user, and a runtime
-may allow fully linked or partially linked programs as the implementation allows.
-5 A name has linkage if it can refer to the same entity as a name introduced by a declaration in another scope. If
-a variable, function, or another entity with the same name is declared in several scopes, but does not have sufficient
-linkage, then several instances of the entity are generated.
- A name with no linkage may not be referred to by names from any other scope.
- A name with internal linkage may be referred to by names from other scopes within the same translation unit.
- A name with external linkage may be referred to by names from other scopes within the same translation unit, and
-by names from scopes of other translation units.
- A name with program linkage may be referred to by names from other scopes within the same translation unit,
-by names from scopes of other translation units, by names from scopes of other programs, and by a runtime
+프로그램이 최소 하나의 해결되지 않은 외부 선언을 포함하거나 최소 하나의 진입점이 아닌 내보낸 선언이 있을 때 부분적으로 링크되었다고 한다.
+
+==4==    An implementation may generate programs as fully linked or partially linked as requested by the user, and a runtime may allow fully linked or partially linked programs as the implementation allows.
+
+==4==    구현체는 사용자의 요청에 따라 프로그램을 완전히 연결되거나 부분적으로 연결된 형태로 생성할 수 있으며, 런타임은 구현체가 허용하는 대로 완전히 연결되거나 부분적으로 연결된 프로그램을 허용할 수 있다.
+
+==5==    A name has linkage if it can refer to the same entity as a name introduced by a declaration in another scope.
+
+==5==    이름이 다른 범위의 선언에 의해 도입된 이름과 동일한 개체를 참조할 수 있는 경우 그 이름은 연결성을 갖는다.
+
+If a variable, function, or another entity with the same name is declared in several scopes, but does not have sufficient linkage, then several instances of the entity are generated.
+
+동일한 이름의 변수, 함수, 또는 다른 개체가 여러 범위에서 선언되지만 충분한 연결성을 갖지 않는 경우, 해당 개체의 여러 인스턴스가 생성된다.
+
+- A name with no linkage may not be referred to by names from any other scope.
+- A name with internal linkage may be referred to by names from other scopes within the same translation unit.
+- A name with external linkage may be referred to by names from other scopes within the same translation unit, and by names from scopes of other translation units.
+- A name with program linkage may be referred to by names from other scopes within the same translation unit, by names from scopes of other translation units, by names from scopes of other programs, and by a runtime
 implementation.
-6 When merging translation units through linking or generating a freestanding program only names with program linkage
-must be retained in the final program.
+
+==6==    When merging translation units through linking or generating a freestanding program only names with program linkage must be retained in the final program.
