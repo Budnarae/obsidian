@@ -1170,7 +1170,7 @@ If a variable, function, or another entity with the same name is declared in sev
 
 ==2==    The following entities in HLSL have external linkage:
 
-==2==     HLSL의 다음 엔티티들은 외부 연결을 가진다.
+==2==     HLSL의 다음 엔티티들은 외부 연결을 가진다:
 
 - global variables that are not marked static or groupshared
 
@@ -1182,4 +1182,24 @@ static이나 groupshared로 표시되지 않은 전역 변수
 
 - static data members of classes or template classes
 
-클래스의 정적 데이터 멤버 또는 템
+클래스 또는 템플릿 클래스의 정적 데이터 멤버
+
+==3==    Linkage of functions (including template functions) that are not entry points or marked with export keyword is implementation dependent.
+
+진입점이 아니고 export 키워드로 표시되지 않은 템플릿 함수들을 비롯한 함수들의 연결은 구현체에 의존적이다.
+
+> In DXC today functions that are not entry points or exported have internal linkage by default. This can be overriden by -default-linkage compiler option.
+> 
+> 오늘날 진입점에 있지 않고 export 키워드가 없는 DXC의 함수들은 기본적으로 내부 연결성을 갖는다. 이는 컴파일러 옵션의 -default-linkage에 의해서 덮어씌워질 수 있다.
+
+### 3.6.3 Internal Linkage
+
+==1==    Entities with internal linkage can be referred to from all scopes in the current translation unit.
+
+==1==    
+
+2 The following entities in HLSL have internal linkage:
+ global variables marked as static or groupshared
+ all entities declared in an unnamed namespace or a namespace within an unnamed namespace
+ enumerations
+ classes or template classes, their member functions, and nested classes and enumerations
