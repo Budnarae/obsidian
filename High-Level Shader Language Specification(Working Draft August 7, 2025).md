@@ -1143,3 +1143,17 @@ If a variable, function, or another entity with the same name is declared in sev
 ==6==    When merging translation units through linking or generating a freestanding program only names with program linkage must be retained in the final program.
 
 ==6==    연결을 통해 번역 단위를 병합하거나 독립형 프로그램을 생성할 때, 프로그램 연결성을 갖는 이름들만이 최종 프로그램에서 유지되어야 합니다.
+
+### 3.6.1 Program Linkage
+
+==1==    Entities with program linkage can be referred to from other partially linked programs or a runtime implementation.
+
+
+
+==2==    The following entities have program linkage:
+
+
+
+- entry point functions (3.7)
+- functions marked with _export_ keyword (7.7)
+- declar
