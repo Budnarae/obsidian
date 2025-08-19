@@ -646,18 +646,52 @@ It is specified here only for completeness.
 
 관련한 내용은 오로지 문서의 완전성만을 위하여 수록되었다.
 
-==1== Each preprocessing token that is converted to a token shall have the lexical form of a keyword, an identifier, a constant, a string literal or an operator or punctuator.
+==1==    Each preprocessing token that is converted to a token shall have the lexical form of a keyword, an identifier, a constant, a string literal or an operator or punctuator.
 
-토큰으로 변환되는 각 전처리 토큰은 키워드, 식별자, 상수, 문자열 리터럴 또는 연산자나 구두점의 어휘적 형태를 가져야 한다.
+==1==    토큰으로 변환되는 각 전처리 토큰은 키워드, 식별자, 상수, 문자열 리터럴 또는 연산자나 구두점의 어휘적 형태를 가져야 한다.
 
-==2== Preprocessing tokens are the minimal lexical elements of the language during translation phases 3 through 6 (2.2).
+==2==    Preprocessing tokens are the minimal lexical elements of the language during translation phases 3 through 6 (2.2).
 
-
+==2==    전처리 토큰은 번역 단계 3부터 6까지(2.2) 동안 언어의 최소 어휘 요소이다.
 
 Preprocessing tokens can be separated by whitespace in the form of comments, white space characters, or both.
 
-
+전처리 토큰은 주석, 공백 문자 또는 둘 다의 형태로 공백에 의해 분리될 수 있습니다.
 
 White space may appear within a preprocessing token only as part of a header name or between the quotation characters in a character constant or string literal.
 
-==3== Header name preprocessing tokens are only recognized within #include preprocessing directives, has include expressions, and implementation-defined locations within #pragma directives. In those contexts, a sequence of characters that could be either a header name or a string literal is recognized as a header name.
+공백은 헤더 이름의 일부로서 또는 문자 상수나 문자열 리터럴의 따옴표 문자들 사이에서만 전처리 토큰 내에 나타날 수 있다.
+
+==3==    Header name preprocessing tokens are only recognized within \#include preprocessing directives, has include expressions, and implementation-defined locations within \#pragma directives.
+
+헤더 이름 전처리 토큰은 \#include 전처리 지시어, has include 표현식, 그리고 \#pragma 지시어 내의 구현체가 정의한 위치들 내에서만 인식됩니다.
+
+In those contexts, a sequence of characters that could be either a header name or a string literal is recognized as a header name.
+
+이러한 맥락에서, 헤더 이름 또는 문자열 리터럴 중 하나가 될 수 있는 문자 시퀀스는 헤더 이름으로 인식됩니다.
+
+## 2.5 Tokens
+
+```text
+
+token:
+	identifier
+	keyword
+	literal
+	operator-or-punctuator
+
+```
+
+==1==    There are five kinds of tokens: identifiers, keywords, literals, and operators or punctuators.
+
+==1==    토큰에는 다섯 종류가 있습니다: 식별자, 키워드, 리터럴, 그리고 연산자나 구두점이다.
+
+All whitespace characters and comments are ignored except as they separate tokens.
+
+모든 공백 문자와 주석은 토큰을 분리하는 역할을 제외하고는 무시됩니다.
+
+## 2.6 Comments
+
+==1==    The characters /\* start a comment which terminates with the characters \*/. The characters // start a comment which terminates at the next new line.
+
+/\* 문자들은 \*/ 문자들로 종료되는 주석을 시작한다. // 문자들은 다음 새 줄에서 종료되는 주석을 시작한다.
