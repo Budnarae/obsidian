@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "High-Level Shader Language Specification(Working Draft August 7, 2025)"
+              "title": "index"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -209,13 +208,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "재료/이미지/150b48146db85007835fe110b37c0a6a_MD5.jpeg",
     "Pasted image 20250818171013.png",
     "재료/이미지/357f8be712c1ea04a541a6b3c523895e_MD5.jpeg",
     "Pasted image 20250818155231.png",
     "public/HLSL.md",
     "index.md",
-    "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "public/DirectX SDK Document - Tutorial 3 Shaders.md",
     "public/DirectX SDK Document - Tutorial 7 Texture Mapping and Constant Buffer.md",
     "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
@@ -241,7 +240,6 @@
     "재료/이미지/4353e841252db1deef3dd9f47b0c3c3a_MD5.jpeg",
     "Pasted image 20250728143956.png",
     "재료/이미지/642bb0483c2868b445df8e624a08af19_MD5.jpeg",
-    "Pasted image 20250728143926.png",
     "d3d11_Tutorial_03.htm.md",
     "public/DirectX API.md",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
