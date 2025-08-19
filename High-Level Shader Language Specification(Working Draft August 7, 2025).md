@@ -625,4 +625,39 @@ The translation character set is an extended character set or the basic characte
 
 ## 2.4 Preprocessing Tokens
 
+```text
 
+preprocessing-token:
+	header-name
+	identifier
+	pp-number
+	character-literal
+	string-literal
+	preprocessing-op-or-punc
+	each non-whitespace character from the translation character set that cannot be one of the above
+
+```
+
+The preprocessor is inherited from C++ 11 with no grammar extensions.
+
+전처리기는 문법의 확장 없이 C++ 11로부터 계승되었다.
+
+It is specified here only for completeness.
+
+관련한 내용은 오로지 문서의 완전성만을 위하여 수록되었다.
+
+==1== Each preprocessing token that is converted to a token shall have the lexical form of a keyword, an identifier, a constant, a string literal or an operator or punctuator.
+
+토큰으로 변환되는 각 전처리 토큰은 키워드, 식별자, 상수, 문자열 리터럴 또는 연산자나 구두점의 어휘적 형태를 가져야 한다.
+
+==2== Preprocessing tokens are the minimal lexical elements of the language during translation phases 3 through 6 (2.2).
+
+
+
+Preprocessing tokens can be separated by whitespace in the form of comments, white space characters, or both.
+
+
+
+White space may appear within a preprocessing token only as part of a header name or between the quotation characters in a character constant or string literal.
+
+==3== Header name preprocessing tokens are only recognized within #include preprocessing directives, has include expressions, and implementation-defined locations within #pragma directives. In those contexts, a sequence of characters that could be either a header name or a string literal is recognized as a header name.
