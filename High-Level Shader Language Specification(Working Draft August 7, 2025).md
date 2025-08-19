@@ -898,4 +898,14 @@ scalar-element-sequence-r:
 
 ⁴이는 FXC와 DXC의 구현체와는 상당히 다르지만, 공식 문서 및 GLSL의 동작과 일치합니다. 또한 기존 동작들보다 구현하기 훨씬 간단하고 더 규칙적입니다.
 
-# Basic Concecp
+# Basic Concepts
+
+==1==    HLSL inherits a significant portion of its language semantics from C and C++.
+
+==1==    HLSL는 언어 의미(semantics)의 중요한 부분을 C와 C++로부터 상속했다. 
+
+Some of this is a result of intentional adoption of syntax early in the development of the language and some a side-effect of the Clang-based implementation of DXC.
+
+
+
+2 This chapter includes a lot of definitions that are inherited from C and C++. Some are identical to C or C++, others are slightly different. HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++. This specification includes all necessary definitions for clarity
