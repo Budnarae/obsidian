@@ -918,6 +918,30 @@ Some are identical to C or C++, others are slightly different.
 
 HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++.
 
+HLSL은 C, C++의 부분집합도 상위집합도 아니다. 그리고 C, C++의 용어로 단순하게 설명할 수도 없다.
 
+This specification includes all necessary definitions for clarity.
 
-This specification includes all necessary definitions for clarity
+이 명세서에서는 명확성을 위해 모든 필수적인 정의를 포함하였다.
+
+## 3.1 Preamble
+
+==1==    An entity is a value, object, function, enumerator, type, class member, bit-field, template, template specialization, namespace, or pack.
+
+==1==    개체(entity)는 값, 객체, 함수, 열거형, 타입, 클래스 멤버, 비트 필드(bit-field), 템플릿, 템플릿 특수화, 네임스페이스 또는 팩이다.
+
+2 A name is a use of an identifier (5.2.4), operator-function-id (??), conversion-function-id (10.2), or template-id (11)
+that denotes any entity or label (6.1).
+3 Every name that denotes an entity is introduced by a declaration. Every name that denotes a label is introduced by
+a labeled statement (6.1)1
+.
+4 A variable is introduced by the declaration of a reference other than a non-static data member of an object. The
+variable’s name denotes the reference or object.
+5 Whenever a name is encountered it is necessary to determine if the name denotes an entity that is a type or template.
+The process for determining if a name refers to a type or template is called name lookup.
+6 Two names are the same name if:
+ they are identifiers comprised of the same character sequence, or
+ they are operator-function-ids formed with the same operator, or
+ they are conversion-function-ids formed with the same type, or
+ they are template-ids that refer to the same class or function.
+
