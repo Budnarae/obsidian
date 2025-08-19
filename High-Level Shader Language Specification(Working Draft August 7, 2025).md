@@ -1196,10 +1196,26 @@ static이나 groupshared로 표시되지 않은 전역 변수
 
 ==1==    Entities with internal linkage can be referred to from all scopes in the current translation unit.
 
-==1==    
+==1==    내부 연결을 가진 개체는 현재 변역 단위의 모든 범위에서 참조될 수 있다.
 
-2 The following entities in HLSL have internal linkage:
- global variables marked as static or groupshared
- all entities declared in an unnamed namespace or a namespace within an unnamed namespace
- enumerations
- classes or template classes, their member functions, and nested classes and enumerations
+==2==    The following entities in HLSL have internal linkage:
+
+HLSL의 다음 엔티티들은 내부 연결성을 가진다.
+
+- global variables marked as static or groupshared
+- all entities declared in an unnamed namespace or a namespace within an unnamed namespace
+- enumerations
+- classes or template classes, their member functions, and nested classes and enumerations
+
+- static 또는 groupshared라고 표시된 전역변수
+- 이름이 없는 이름공간 또는 이름이 없는 이름공간 안의 이름공간에서 선언된 모든 엔티티
+- 열거형
+- 클래스 또는 템플릿 클래스와 그들의 멤버 함수, 중첩된 클래스와 열거형
+
+### 3.6.4 No Linkage
+
+==1==    An entity with no linkage can be referred to only from the scope it is in.
+
+==1==    연결이 없는 엔티티는 오직 그것의 스코프 안에서만 접근이 가능하다
+
+==2==    Any of the following entites declared at function scope or block scopes derived from function scope have no linkage:  local variables  local classes and their member functions  other entities declared at function scope or block scopes derived from function scope that such as typedefs, enumerations, and enumerators
