@@ -999,22 +999,42 @@ A declaration may also have effects such as:
 
 - 정적 어서션(assertion) 검증 (7)
 - 속성 사용 (7), 그리고
-- 템플릿 인스턴스화 제어(11.1).
+- 템플릿 인스턴스화 제어 (11.1).
 
-2 A declaration is a definition unless:
+==2==    A declaration is a definition unless:
 
- it declares a function without specifying the function’s body (7.5),
- it is a parameter declaration in a function declaration that does not specify the function’s body (7.5),
- it is a global or namespace member declaration without the static specifier2
-,
- it declares a static data member in a class definition,
- it is a class name declaration,
- it is a template parameter,
- it is a typedef declaration (7),
- it is an alias-declaration (7),
- it is a using-declaration (7),
- it is a static assert-declaration (7),
- it is an empty-declaration (7),
- or a using-directive (7).
-3 The two examples below are adapted from ISO C++ standard (2011) [basic.def]. All but one of the following are
-definitions:
+선언은 다음의 경우를 제외하고는 정의이다.
+
+- it declares a function without specifying the function’s body (7.5),
+- it is a parameter declaration in a function declaration that does not specify the function’s body (7.5),
+- it is a global or namespace member declaration without the static specifier2,
+- it declares a static data member in a class definition,
+- it is a class name declaration,
+- it is a template parameter,
+- it is a typedef declaration (7),
+- it is an alias-declaration (7),
+- it is a using-declaration (7),
+- it is a static assert-declaration (7),
+- it is an empty-declaration (7),
+- or a using-directive (7).
+
+- 함수의 본문을 지정하지 않고 함수를 선언하는 경우(7.5),
+- 함수의 본문을 지정하지 않는 함수 선언에서의 매개변수 선언인 경우(7.5),
+- static 지정자가 없는 전역 또는 네임스페이스 멤버 선언인 경우²,
+- 클래스 정의에서 정적 데이터 멤버를 선언하는 경우,
+- 클래스 이름 선언인 경우,
+- 템플릿 매개변수인 경우,
+- typedef 선언인 경우(7),
+- 별칭 선언인 경우(7),
+- using 선언인 경우(7),
+- 정적 단언 선언인 경우(7),
+- 빈 선언인 경우(7),
+- 또는 using 지시어인 경우(7).
+
+==3==    The two examples below are adapted from ISO C++ standard (2011) \[basic.def].
+
+==3==    아래의 예시는 ISO C++ 표준 (2011)의 \[basic.def] 절에서 가져온 것이다.
+
+All but one of the following are definitions:
+
+다음 중 하나를 제외하고는 모두 정의이다.
