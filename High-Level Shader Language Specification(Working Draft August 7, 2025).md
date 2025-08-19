@@ -1106,11 +1106,16 @@ translation-unit:
 
 ==2==    단일 프로그램은 하나 이상의 번역 단위가 같이 링크된 것이다.
 
-A program built from a single translation unit, bypassing
-a linking step is called freestanding.
-3 A program is said to be fully linked, when it contains no unresolved external declarations, and all exported declarations
-are entry point declarations (3.7). A program is said to be partially linked, when it contains at least one unresolved external
-declaration or at least one exported declaration that is not an entry point.
+A program built from a single translation unit, bypassing a linking step is called freestanding.
+
+단일 번역 단위에서 빌드된, 링킹 단계를 건너뛴 프로그램은 프리스탠딩(freestanding)이라 불린다.
+
+==3==    A program is said to be fully linked, when it contains no unresolved external declarations, and all exported declarations are entry point declarations (3.7).
+
+==3==    프로그램이 해결되지 않은 외부 선언을 포함하지 않고, 모든 내보낸 선언이 진입점 선언(3.7)일 때 완전히 링크되었다고 말한다.
+
+A program is said to be partially linked, when it contains at least one unresolved external declaration or at least one exported declaration that is not an entry point.
+
 4 An implementation may generate programs as fully linked or partially linked as requested by the user, and a runtime
 may allow fully linked or partially linked programs as the implementation allows.
 5 A name has linkage if it can refer to the same entity as a name introduced by a declaration in another scope. If
