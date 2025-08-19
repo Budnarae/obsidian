@@ -981,3 +981,40 @@ The process for determining if a name refers to a type or template is called nam
 
 ## 3.2 Declarations and definitions
 
+==1==    A declaration (7) may introduce one or more names into a translation unit or redeclare names introduced by previous declarations.
+
+==1==    선언(7)은 번역 단위에 하나 이상의 이름을 도입하거나 이전 선언에 의해 도입된 이름을 재선언할 수 있다.
+
+If a declaration introduces names, it specifies the interpretation and attributes of these names.
+
+선언이 이름들을 도입하는 경우, 이러한 이름들의 해석과 속성을 지정한다.
+
+A declaration may also have effects such as:
+
+선언은 다음과 같은 효과 또한 가지고 있다:
+
+- verifying a static assertion (7),
+- use of attributes (7), and
+- controlling template instantiation (11.1).
+
+- 정적 어서션(assertion) 검증 (7)
+- 속성 사용 (7), 그리고
+- 템플릿 인스턴스화 제어(11.1).
+
+2 A declaration is a definition unless:
+
+ it declares a function without specifying the function’s body (7.5),
+ it is a parameter declaration in a function declaration that does not specify the function’s body (7.5),
+ it is a global or namespace member declaration without the static specifier2
+,
+ it declares a static data member in a class definition,
+ it is a class name declaration,
+ it is a template parameter,
+ it is a typedef declaration (7),
+ it is an alias-declaration (7),
+ it is a using-declaration (7),
+ it is a static assert-declaration (7),
+ it is an empty-declaration (7),
+ or a using-directive (7).
+3 The two examples below are adapted from ISO C++ standard (2011) [basic.def]. All but one of the following are
+definitions:
