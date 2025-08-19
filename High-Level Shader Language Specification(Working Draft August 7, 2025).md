@@ -1166,15 +1166,20 @@ If a variable, function, or another entity with the same name is declared in sev
 
 ==1==    Entities with external linkage can be referred to from the scopes in the other translation units and enable linking between them.
 
-
+==1==    외부 연결을 가진 개체는 다른 변역 단위의 범위에서 참조될 수 있으며, 이들을 서로 연결할 수 있게 한다.
 
 ==2==    The following entities in HLSL have external linkage:
 
-
+==2==     HLSL의 다음 엔티티들은 외부 연결을 가진다.
 
 - global variables that are not marked static or groupshared
 
+static이나 groupshared로 표시되지 않은 전역 변수
+
+> These are not really linked with other translation units but rather their values are loaded indirectly based on cbuffer mapping.
 > 
+> 이것들은 정말로 다른 번역 단위와 링크되지 않지만 이것들의 값은 cbuffer 매핑에 기반하여 간접적으로 로드된다.
 
 - static data members of classes or template classes
 
+클래스의 정적 데이터 멤버 또는 템
