@@ -695,3 +695,189 @@ All whitespace characters and comments are ignored except as they separate token
 ==1==    The characters /\* start a comment which terminates with the characters \*/. The characters // start a comment which terminates at the next new line.
 
 /\* 문자들은 \*/ 문자들로 종료되는 주석을 시작한다. // 문자들은 다음 새 줄에서 종료되는 주석을 시작한다.
+
+## 2.7 H
+
+```
+header-name:
+    < h-char-sequence >
+    " q-char-sequence "
+
+h-char-sequence:
+    h-char
+    h-char-sequence h-char
+
+h-char:
+    개행 또는 > 를 제외한 번역 문자 집합의 모든 문자
+
+q-char-sequence:
+    q-char
+    q-char-sequence q-char
+
+q-char:
+    개행 또는 " 를 제외한 번역 문자 집합의 모든 문자
+```
+
+1 헤더 이름의 문자 시퀀스는 구현체가 정의한 방식으로 헤더 파일이나 외부 소스 파일 이름에 매핑됩니다.
+
+## 2.8 전처리 숫자 [Lex.PPNumber]
+
+```
+pp-number:
+    Working Draft
+    Literals
+    digit
+    . digit
+    pp-number ' digit
+    pp-number ' non-digit
+    pp-number e sign
+    pp-number E sign
+    pp-number p sign
+    pp-number P sign
+    pp-number .
+```
+
+1 전처리 숫자는 숫자나 마침표(.)로 시작하며, 유효한 식별자 문자들과 부동소수점 리터럴 접미사들(e+, e-, E+, E-, p+, p-, P+, P-)이 뒤따를 수 있습니다. 전처리 숫자 토큰은 모든 정수 리터럴 및 부동소수점 리터럴 토큰을 어휘적으로 포함합니다.
+
+2 전처리 숫자는 타입이나 값을 가지지 않습니다. 타입과 값은 전처리 숫자로부터 성공적으로 변환될 때 정수 리터럴, 부동소수점 리터럴, 벡터 리터럴 토큰에 할당됩니다.
+
+3 바로 다음 토큰이 scalar-element-sequence (2.9.4)인 경우, 전처리 숫자는 마침표(.)로 끝날 수 없습니다. 이 상황에서 pp-number 토큰은 마침표 이전에서 끝나도록 잘립니다.²
+
+## 2.9 리터럴 [Lex.Literals]
+
+### 2.9.1 리터럴 분류 [Lex.Literal.Kinds]
+
+```
+literal:
+    integer-literal
+    character-literal
+    floating-literal
+    string-literal
+    boolean-literal
+    vector-literal
+```
+
+### 2.9.2 정수 리터럴 [Lex.Literal.Int]
+
+```
+integer-literal:
+    decimal-literal integer-suffixopt
+    octal-literal integer-suffixopt
+    hexadecimal-literal integer-suffixopt
+
+decimal-literal:
+    nonzero-digit
+    decimal-literal digit
+
+octal-literal: 
+    0
+    octal-literal octal-digit
+
+hexadecimal-literal:
+    0x hexadecimal-digit
+    0X hexadecimal-digit
+    hexadecimal-literal hexadecimal-digit
+
+nonzero-digit: 다음 중 하나
+    1 2 3 4 5 6 7 8 9
+```
+
+²이 문법 공식화는 문맥 자유 문법이 아니며 LL(2) 파서를 필요로 합니다.
+
+```
+octal-digit: 다음 중 하나
+    0 1 2 3 4 5 6 7
+
+hexadecimal-digit: 다음 중 하나
+    0 1 2 3 4 5 6 7 8 9
+    a b c d e f
+    A B C D E F
+
+integer-suffix:
+    unsigned-suffix long-suffixopt
+    long-suffix unsigned-suffixopt
+
+unsigned-suffix: 다음 중 하나
+    u U
+
+long-suffix: 다음 중 하나
+    l L
+```
+
+1 정수 리터럴은 선택적 기수 접두사, 적절한 기수의 숫자 시퀀스, 그리고 선택적 타입 접미사입니다. 정수 리터럴은 마침표나 지수 지정자를 포함해서는 안 됩니다.
+
+2 정수 리터럴의 타입은 아래 표에서 해당하는 목록 중 그 값이 표현될 수 있는 첫 번째 타입입니다.³
+
+|접미사|10진 상수|8진 또는 16진 상수|
+|---|---|---|
+|없음|int32_t<br/>int64_t|int32_t<br/>uint32_t<br/>int64_t<br/>uint64_t|
+|u 또는 U|uint32_t<br/>uint64_t|uint32_t<br/>uint64_t|
+|l 또는 L|int64_t<br/>uint64_t|int64_t<br/>uint64_t|
+|u 또는 U와<br/>l 또는 L 둘 다|uint64_t|uint64_t|
+
+3 정수 리터럴의 지정된 값이 해당 목록의 어떤 타입으로도 표현될 수 없는 경우, 정수 리터럴은 타입을 가지지 않으며 프로그램은 올바르지 않은 형태입니다.
+
+4 구현체는 정수 접미사 ll과 ull을 각각 l과 ul과 동등한 것으로 지원할 수 있습니다.
+
+### 2.9.3 부동소수점 리터럴 [Lex.Literal.Float]
+
+```
+floating-literal:
+    fractional-constant exponent-partopt floating-suffixopt
+    digit-sequence exponent-part floating-suffixopt
+
+fractional-constant:
+    digit-sequenceopt . digit-sequence
+    digit-sequence .
+
+exponent-part:
+    e signopt digit-sequence
+    E signopt digit-sequence
+
+sign: 다음 중 하나
+    + -
+
+digit-sequence:
+    digit
+```
+
+³이 동작은 ISO C 표준(2011)과 일치하지만 HLSL이 더 적은 데이터 타입을 가지고 있기 때문에 범위가 축소됩니다.
+
+```
+digit-sequence digit 
+
+floating-suffix: 다음 중 하나
+    h f l H F L
+```
+
+1 부동소수점 리터럴은 선택적 지수부와 선택적 부동소수점 접미사를 가진 분수 상수로 작성되거나, 필수 지수부와 선택적 부동소수점 접미사를 가진 정수 숫자 시퀀스로 작성됩니다.
+
+2 부동소수점 리터럴의 타입은 접미사에 의해 명시적으로 지정되지 않는 한 float입니다. 접미사 h와 H는 half를 지정하고, 접미사 f와 F는 float를 지정하며, 접미사 l과 L은 double을 지정합니다.⁴ 소스에서 지정된 값이 해당 타입의 표현 가능한 값 범위에 있지 않으면, 프로그램은 올바르지 않은 형태입니다.
+
+### 2.9.4 벡터 리터럴 [Lex.Literal.Vector]
+
+```
+vector-literal:
+    integer-literal . scalar-element-sequence
+    floating-literal . scalar-element-sequence
+
+scalar-element-sequence:
+    scalar-element-sequence-x
+    scalar-element-sequence-r
+
+scalar-element-sequence-x:
+    x
+    scalar-element-sequence-x x
+
+scalar-element-sequence-r:
+    r
+    scalar-element-sequence-r r
+```
+
+1 벡터 리터럴은 정수 리터럴 또는 부동소수점 리터럴 뒤에 마침표(.)와 scalar-element-sequence가 따라오는 것입니다.
+
+2 scalar-element-sequence는 첫 번째 벡터 요소 접근자(x 또는 r)만 유효한 vector-swizzle-sequence입니다. scalar-element-sequence는 정수 리터럴 또는 부동소수점 리터럴 값에 대해 수행되는 벡터 확산 변환과 동등합니다(4.10).
+
+---
+
+⁴이는 FXC와 DXC의 구현체와는 상당히 다르지만, 공식 문서 및 GLSL의 동작과 일치합니다. 또한 기존 동작들보다 구현하기 훨씬 간단하고 더 규칙적입니다.
