@@ -1133,7 +1133,13 @@ If a variable, function, or another entity with the same name is declared in sev
 - A name with no linkage may not be referred to by names from any other scope.
 - A name with internal linkage may be referred to by names from other scopes within the same translation unit.
 - A name with external linkage may be referred to by names from other scopes within the same translation unit, and by names from scopes of other translation units.
-- A name with program linkage may be referred to by names from other scopes within the same translation unit, by names from scopes of other translation units, by names from scopes of other programs, and by a runtime
-implementation.
+- A name with program linkage may be referred to by names from other scopes within the same translation unit, by names from scopes of other translation units, by names from scopes of other programs, and by a runtime implementation.
+
+- 연결성이 없는 이름은 다른 어떤 범위의 이름에 의해서도 참조될 수 없습니다.
+- 내부 연결성을 갖는 이름은 동일한 번역 단위 내의 다른 범위의 이름들에 의해 참조될 수 있습니다.
+- 외부 연결성을 갖는 이름은 동일한 번역 단위 내의 다른 범위의 이름들과 다른 번역 단위의 범위의 이름들에 의해 참조될 수 있습니다.
+- 프로그램 연결성을 갖는 이름은 동일한 번역 단위 내의 다른 범위의 이름들, 다른 번역 단위의 범위의 이름들, 다른 프로그램의 범위의 이름들, 그리고 런타임 구현체에 의해 참조될 수 있습니다.
 
 ==6==    When merging translation units through linking or generating a freestanding program only names with program linkage must be retained in the final program.
+
+==6==    연결을 통해 번역 단위를 병합하거나 독립형 프로그램을 생성할 때, 프로그램 연결성을 갖는 이름들만이 최종 프로그램에서 유지되어야 합니다.
