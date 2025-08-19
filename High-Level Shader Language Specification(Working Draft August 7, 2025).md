@@ -1038,3 +1038,27 @@ A declaration may also have effects such as:
 All but one of the following are definitions:
 
 다음 중 하나를 제외하고는 모두 정의이다.
+
+```cpp
+
+int f(int x) { return x + 1; }    // defines f and x
+struct S { int a; int b; }        // defines S, S::a, and S::b
+struct X {                        // defines X
+    int x;                        // defines non-static member x
+    static int y;                 // declares static data member y
+};
+int X::y = 1;                     // defines X::y
+enum { up, down };                // defines up and down
+namespace N {                     // defines N
+int d;                            // declares N::d
+static int i;                     // defines N::i
+}
+
+```
+
+==4==    All of the following are declarations:
+
+```cpp
+
+
+```
