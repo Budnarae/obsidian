@@ -914,6 +914,10 @@ Some of this is a result of intentional adoption of syntax early in the developm
 
 Some are identical to C or C++, others are slightly different.
 
+일부는 C, C++과 동일하고, 나머지는 조금 다르다.
+
+HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++.
 
 
-HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++. This specification includes all necessary definitions for clarity
+
+This specification includes all necessary definitions for clarity
