@@ -1010,7 +1010,7 @@ A declaration may also have effects such as:
 - it is a global or namespace member declaration without the static specifier,
 
 > Global variable declarations are implicitly constant and external in HLSL.
-> 전역 변수 선언들은 
+> 전역 변수 선언들은 암묵적으로 상수이며 외부적이다.
 
 - it declares a static data member in a class definition,
 - it is a class name declaration,
@@ -1080,3 +1080,48 @@ tbuffer TB {            // does not declare TB
 }
 
 ```
+
+## 3.3 One-Definition Rule
+
+==1==    The ISO C++ standard (2011) One-definition rule is adopted as defined in ISO C++ standard (2011) \[basic.def.odr].
+
+ISO C++ 표준(2011) 단일 정의 규칙은 ISO C++ 표준(2011) \[basic.def.odr]에서 정의된 대로 채택된다.
+
+## 3.4 Scope
+## 3.5 Name Lookup
+## 3.6 Program and linkage
+
+==1==    A translation unit (2.1) is comprised of a sequence of declarations:
+
+==1==    번역 단위 (2.1)은 선언의 나열로 이루어져 있다.
+
+```text
+
+translation-unit:
+    declaration-sequenceopt
+
+```
+
+==2==    A program is one or more translation units linked together.
+
+==2==    단일 프로그램은 하나 이상의 번역 단위가 같이 링크된 것이다.
+
+A program built from a single translation unit, bypassing
+a linking step is called freestanding.
+3 A program is said to be fully linked, when it contains no unresolved external declarations, and all exported declarations
+are entry point declarations (3.7). A program is said to be partially linked, when it contains at least one unresolved external
+declaration or at least one exported declaration that is not an entry point.
+4 An implementation may generate programs as fully linked or partially linked as requested by the user, and a runtime
+may allow fully linked or partially linked programs as the implementation allows.
+5 A name has linkage if it can refer to the same entity as a name introduced by a declaration in another scope. If
+a variable, function, or another entity with the same name is declared in several scopes, but does not have sufficient
+linkage, then several instances of the entity are generated.
+ A name with no linkage may not be referred to by names from any other scope.
+ A name with internal linkage may be referred to by names from other scopes within the same translation unit.
+ A name with external linkage may be referred to by names from other scopes within the same translation unit, and
+by names from scopes of other translation units.
+ A name with program linkage may be referred to by names from other scopes within the same translation unit,
+by names from scopes of other translation units, by names from scopes of other programs, and by a runtime
+implementation.
+6 When merging translation units through linking or generating a freestanding program only names with program linkage
+must be retained in the final program.
