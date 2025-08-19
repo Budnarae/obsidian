@@ -947,14 +947,26 @@ Every name that denotes a label is introduced by a labeled statement (6.1).
 
 ==4==    A variable is introduced by the declaration of a reference other than a non-static data member of an object.
 
-==4==    
+==4==    변수는 객체의 비정적 데이터 멤버가 아닌 참조의 선언에 의해 도입된다.
 
 The variable’s name denotes the reference or object.
-5 Whenever a name is encountered it is necessary to determine if the name denotes an entity that is a type or template.
+
+변수의 이름은 참조나 객체를 나타낸다.
+
+==5==    Whenever a name is encountered it is necessary to determine if the name denotes an entity that is a type or template.
+
+==5==    이름이 등장할 때마다 그 이름이 타입이나 템플릿인 개체를 나타내는지 결정하는 것이 필요하다.
+
 The process for determining if a name refers to a type or template is called name lookup.
-6 Two names are the same name if:
- they are identifiers comprised of the same character sequence, or
- they are operator-function-ids formed with the same operator, or
- they are conversion-function-ids formed with the same type, or
- they are template-ids that refer to the same class or function.
+
+이름이 타입을 나타내는지 템플릿을 나타내는지 판단하는 과정을 룩업(lookup)이라 부른다.
+
+==6==    Two names are the same name if:
+
+==6==    다음의 조건을 충족하면 2개의 이름은 같은 이름이다:
+
+- they are identifiers comprised of the same character sequence, or
+- they are operator-function-ids formed with the same operator, or
+- they are conversion-function-ids formed with the same type, or
+- they are template-ids that refer to the same class or function.
 
