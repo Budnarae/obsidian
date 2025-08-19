@@ -906,6 +906,14 @@ scalar-element-sequence-r:
 
 Some of this is a result of intentional adoption of syntax early in the development of the language and some a side-effect of the Clang-based implementation of DXC.
 
+이 중 일부는 언어 개발 초기에 의도적으로 구문을 채택한 결과이고, 일부는 DXC의 Clang 기반 구현의 부수 결과이다.
+
+==2==    This chapter includes a lot of definitions that are inherited from C and C++.
+
+이번 챕터에서는 C와 C++로부터 상속받은 많은 정의를 포함한다.
+
+Some are identical to C or C++, others are slightly different.
 
 
-2 This chapter includes a lot of definitions that are inherited from C and C++. Some are identical to C or C++, others are slightly different. HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++. This specification includes all necessary definitions for clarity
+
+HLSL is neither a subset nor a superset of C or C++, and cannot be simply described in terms of C or C++. This specification includes all necessary definitions for clarity
