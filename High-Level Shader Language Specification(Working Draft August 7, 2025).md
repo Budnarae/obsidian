@@ -970,3 +970,14 @@ The process for determining if a name refers to a type or template is called nam
 - they are conversion-function-ids formed with the same type, or
 - they are template-ids that refer to the same class or function.
 
+- 동일한 문자 시퀀스로 구성된 식별자이거나, 또는
+- 동일한 연산자로 형성된 연산자 함수 아이디이거나, 또는
+- 동일한 타입으로 형성된 변환 함수 아이디이거나, 또는
+- 동일한 클래스나 함수를 참조하는 템플릿 아이디일 경우
+
+==7==    This section matches ISO C++ standard (2011) section \[basic] except for the exclusion of goto and literal operators.
+
+==7==    이 절은 goto와 리터럴 연산자를 제외하고 ISO C++ 표준 (2011)의 \[기본] 절과 동일하다.
+
+## 3.2 Declarations and definitions
+
