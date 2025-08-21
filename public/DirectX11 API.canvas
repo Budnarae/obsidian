@@ -1671,7 +1671,7 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "D3D11_RASTERIZER_DESC",
+      "text": "[D3D11_RASTERIZER_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_rasterizer_desc)",
       "type": "text",
       "width": 280,
       "x": 1870,
