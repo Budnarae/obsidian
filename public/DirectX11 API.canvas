@@ -878,7 +878,7 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "ID3D11InputLayout",
+      "text": "[ID3D11InputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nn-d3d11-id3d11inputlayout)",
       "type": "text",
       "width": 260,
       "x": 2350,
@@ -1104,7 +1104,7 @@
         "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "D3D11_INPUT_ELEMENT_DESC",
+      "text": "[D3D11_INPUT_ELEMENT_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_input_element_desc)",
       "type": "text",
       "width": 280,
       "x": 1650,
@@ -1118,7 +1118,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "CreateInputLayout",
+      "text": "[CreateInputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11device-createinputlayout)",
       "type": "text",
       "width": 260,
       "x": 2010,
@@ -1616,7 +1616,7 @@
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "IASetInputLayout",
+      "text": "[IASetInputLayout](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetinputlayout)",
       "type": "text",
       "width": 260,
       "x": 3218,
