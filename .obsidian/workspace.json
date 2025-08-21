@@ -13,16 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "High-Level Shader Language Specification(Working Draft August 7, 2025)"
+              "title": "index"
+            }
+          },
+          {
+            "id": "65a92548ebf8b22e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.9.10"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,13 +88,11 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 310.5,
-    "collapsed": true
+    "width": 310.5
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -193,6 +204,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
@@ -207,7 +219,7 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
     "index.md",
     "High-Level Shader Language Specification(Working Draft August 7, 2025).md",
