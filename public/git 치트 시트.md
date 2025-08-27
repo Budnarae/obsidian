@@ -360,3 +360,10 @@ git push <remote_repo_name> <branch_name>
 
 [여기](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8)를 참고
 
+# 새 브랜치 생성
+
+```bash
+
+git branch <branch_name>
+
+```
