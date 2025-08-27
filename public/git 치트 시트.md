@@ -177,3 +177,21 @@ git status -short
 # 파일 무시하기
 
 [이 문서](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)의 **파일 무시하기** 단락 참조
+
+# 어떤 내용이 변경되었는지 확인하기
+
+unstaged와 staged 상태를 비교
+
+```bash
+
+git diff
+
+```
+
+staged와 commited 상태를 비교
+
+```bash
+
+git diff --staged
+
+```
