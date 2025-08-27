@@ -17,7 +17,7 @@ _git cheet sheet_
 
 **git 설정**에 대한 보다 자세한 설명은 [여기](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95)로
 
-==사용자 이름과 이메일 주소 설정==
+## 사용자 이름과 이메일 주소 설정
 
 이 명령어는 git 설치 후 무조건 1회는 실행해야 한다.
 
@@ -28,7 +28,7 @@ git config --global user.email "johndoe@example.com"
 
 ```
 
-==git이 사용할 편집기 설정==
+## git이 사용할 편집기 설정
 
 ```bash
 
@@ -36,7 +36,7 @@ git config --global core.ditor emacs
 
 ```
 
-==설정 확인==
+## 설정 확인
 
 ```bash
 
@@ -44,7 +44,7 @@ git config --list
 
 ```
 
-==특정 키값만 확인==
+## 특정 키값만 확인
 
 ```text
 
@@ -69,8 +69,6 @@ file:/home/johndoe/.gitconfig	false
 ```
 
 # git help - 도움말
-
-
 
 명령어에 대한 도움말이 필요할 때 도움말을 보는 방법은 두 가지로 동일한 결과를 볼 수 있다.
 
@@ -116,7 +114,7 @@ usage: git add [<options>] [--] <pathspec>...
 
 # 저장소 관련
 
-==이미 존재하는 디렉토리를 저장소로 만들기==
+## 이미 존재하는 디렉토리를 저장소로 만들기
 
 ```bash
 
@@ -124,7 +122,7 @@ git init
 
 ```
 
-==파일의 변경을 staged 상태로 만듬==
+## 파일의 변경을 staged 상태로 만듬
 
 ```bash
 
@@ -132,7 +130,7 @@ git add <file_name>
 
 ```
 
-==파일의 변경을 commited 상태로 만듬==
+## 파일의 변경을 commited 상태로 만듬
 
 ```bash
 
@@ -140,7 +138,7 @@ git commit -m "<commit_name>"
 
 ```
 
-==기존 저장소 Clone==
+## 기존 저장소 Clone
 
 ```bash
 
@@ -156,7 +154,7 @@ git clone <repository_url> <other_name>
 
 ```
 
-==파일 상태 확인==
+## 파일 상태 확인
 
 ```bash
 
