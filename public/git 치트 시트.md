@@ -128,7 +128,7 @@ git add <file_name>
 
 ```
 
-# 파일 상태를 Unstage로 변경하기
+# 파일 상태를 Unstage로 변경
 
 ```bash
 
@@ -136,7 +136,15 @@ $ git reset Head <file>
 
 ```
 
-# Modified 파일 됟
+# Modified 파일 되돌리기
+
+```bash
+
+$ git checkout -- <file>
+
+```
+
+`git checkout — [file]` 명령은 꽤 위험한 명령이라는 것을 알아야 한다. 원래 파일로 덮어썼기 때문에 수정한 내용은 전부 사라진다. 수정한 내용이 진짜 마음에 들지 않을 때만 사용하자.
 
 # 파일의 변경을 commited 상태로 만듬
 
@@ -188,11 +196,11 @@ git status -short
 
 ```
 
-# 파일 무시하기
+# 파일 무시
 
 [이 문서](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)의 **파일 무시하기** 단락 참조
 
-# 어떤 내용이 변경되었는지 확인하기
+# 어떤 내용이 변경되었는지 확인
 
 unstaged와 staged 상태를 비교
 
@@ -216,7 +224,7 @@ git diff --cached
 
 ```
 
-# 파일 삭제하기
+# 파일 삭제
 
 `git rm` 명령으로 워킹 디렉토리, 그리고 staging area에서 파일을 삭제할 수 있다.
 
@@ -254,7 +262,7 @@ $ git rm \*~
 
 이 명령은 `~` 로 끝나는 파일을 모두 삭제한다.
 
-# 파일 이름 변경하기
+# 파일 이름 변경
 
 ```bash
 
