@@ -250,3 +250,17 @@ $ git rm \*~
 $ git mv <file_from> <file_to>
 
 ```
+
+# 커밋 히스토리 조회
+
+```bash
+
+git log
+
+```
+
+`-p, --patch`를 사용하면 각 커밋의 diff 결과를 보여준다.
+`-2` 옵션을 사용하면 최근 두 개의 결과만 보여준다.
+`--stat` 옵션으로 각 커밋의 통계 정보를 조회한다.
+`--pretty, --pretty=oneline, --pretty=short, --pretty=full, --pretty=fuller` 옵션으로 정보를 조금씩 가감해서 조회할 수 있다.
+`--pretty=format` 옵션으로 직접 포맷을 지정해서 출력할 수 있다.
