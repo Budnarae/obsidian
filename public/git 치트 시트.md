@@ -274,3 +274,14 @@ $ git mv <file_from> <file_to>
 
 [참고](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0)
 
+# 리모트 저장소 확인
+
+`git remote` 명령으로 현재 프로젝트에 등록된 리모트 저장소를 확인할 수 있다.
+
+```bash
+
+git remote
+
+```
+
+`-v` 옵션을 주어 단축 이름과 URL을 함께 볼 수 있다.
