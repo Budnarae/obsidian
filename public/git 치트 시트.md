@@ -136,6 +136,30 @@ git add <file_name>
 
 ```bash
 
-git commit -m <file_name>
+git commit -m "<commit_name>"
 
-```==
+```
+
+==기존 저장소 Clone==
+
+```bash
+
+git clone <repository_url>
+
+```
+
+다른 디렉토리 이름으로 클론하려면
+
+```bash
+
+git clone <repository_url> <other_name>
+
+```
+
+==파일 상태 확인==
+
+```bash
+
+git status
+
+```
