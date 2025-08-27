@@ -372,6 +372,8 @@ git branch <branch_name>
 
 ```
 
+`-d` 옵션을 사용하면 브랜치를 삭제한다.
+
 # 다른 브랜치로 이동
 
 ```bash
@@ -394,5 +396,20 @@ git checkout -b <branch_name>
 
 git branch <branch_name>
 git checkout <branch_name>
+
+```
+
+# Merge
+
+`git merge` 명령으로 합칠 브랜치에서 합쳐질 브랜치를 Merge 하면 된다.
+
+```bash
+
+$ git checkout master
+Switched to branch 'master'
+$ git merge iss53
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)
 
 ```
