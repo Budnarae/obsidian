@@ -278,7 +278,7 @@ $ git mv <file_from> <file_to>
 
 `git log` 명령에 `--decorate` 옵션을 사용하면 쉽게 브랜치가 어떤 커밋을 가리키는지 확인할 수 있다.
 
-`--oneline --decorate --graph --all` 옵션과 사용하면 현재 브랜치가 
+`--oneline --decorate --graph --all` 옵션과 사용하면 현재 브랜치가 가리키고 있는 히스토리가 무엇이고 어떻게 갈라져 나왔는지 보여준다.
 
 # 리모트 저장소 확인
 
@@ -376,6 +376,23 @@ git branch <branch_name>
 
 ```bash
 
+git checkout <branch_name>
+
+```
+
+브랜치를 만들면서 checkout까지 한번에 하려면 `git checkout` 명령에 `-b`라는 옵션을 추가한다.
+
+```bash
+
+git checkout -b <branch_name>
+
+```
+
+위 명령은 아래 명령을 줄여놓은 것이다.
+
+```bash
+
+git branch <branch_name>
 git checkout <branch_name>
 
 ```
