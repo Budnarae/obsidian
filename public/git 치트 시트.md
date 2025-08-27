@@ -174,6 +174,8 @@ git clone <repository_url> <other_name>
 
 ```
 
+저장소를 clone 하면 명령은 자동으로 리모트 저장소를 `origin`이라는 이름으로 추가한다.
+
 # 파일 상태 확인
 
 ```bash
@@ -285,3 +287,23 @@ git remote
 ```
 
 `-v` 옵션을 주어 단축 이름과 URL을 함께 볼 수 있다.
+
+# 리모트 저장소 추가
+
+```bash
+
+git remote add <단축이름> <url>
+
+```
+
+# fetch
+
+리모트 저장소에서 데이터를 가져오려면 다음과 같이 실행한다.
+
+```bash
+
+git fetch <remote>
+
+```
+
+git fetch 명령은 리모트 저장소의 데이터를 모두 로컬로 가져오지만, 자동으로 Merge 하지 않는다. 따라서 로컬에서 하던 작업을 정리하고 나서 수동으로 Merge해야 한다
