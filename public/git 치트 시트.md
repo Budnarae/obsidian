@@ -91,7 +91,8 @@ $ git help config
 
 Git 명령을 사용하기 위해 매우 자세한 도움말 전체를 볼 필요 없이 각 명령에서 사용할 수 있는 옵션들에 대해서 간략히 살펴볼수도 있다. `-h`, `--help` 옵션을 사용하면 다음과 같이 Git 명령에서 사용할 수 있는 옵션들에 대한 간단한 도움말을 출력한다.
 
-```console
+```bash
+
 $ git add -h
 usage: git add [<options>] [--] <pathspec>...
 
@@ -110,4 +111,31 @@ usage: git add [<options>] [--] <pathspec>...
     --ignore-errors       just skip files which cannot be added because of errors
     --ignore-missing      check if - even missing - files are ignored in dry run
     --chmod <(+/-)x>      override the executable bit of the listed files
+
 ```
+
+# 저장소 관련
+
+==이미 존재하는 디렉토리를 저장소로 만들기==
+
+```bash
+
+git init
+
+```
+
+==파일의 변경을 staged 상태로 만듬==
+
+```bash
+
+git add <file_name>
+
+```
+
+==파일의 변경을 commited 상태로 만듬==
+
+```bash
+
+git commit -m <file_name>
+
+```==
