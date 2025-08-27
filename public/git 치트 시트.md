@@ -296,6 +296,10 @@ git remote add <단축이름> <url>
 
 ```
 
+# 리모트 저장소 조회
+
+
+
 # fetch
 
 리모트 저장소에서 데이터를 가져오려면 다음과 같이 실행한다.
@@ -306,4 +310,28 @@ git fetch <remote>
 
 ```
 
-git fetch 명령은 리모트 저장소의 데이터를 모두 로컬로 가져오지만, 자동으로 Merge 하지 않는다. 따라서 로컬에서 하던 작업을 정리하고 나서 수동으로 Merge해야 한다
+git fetch 명령은 리모트 저장소의 데이터를 모두 로컬로 가져오지만, 자동으로 Merge 하지 않는다. 따라서 로컬에서 하던 작업을 정리하고 나서 수동으로 Merge해야 한다.
+
+# pull
+
+fetch와 거의 유사한 동작을 한다. 차이점은 데이터를 자동으로 현재 작업하는 코드와 Merge시킨다는 것이다.
+
+```bash
+
+git pull <remote>
+
+```
+
+# push
+
+작업한 내용을 원격 저장소에 업로드한다.
+
+```bash
+
+git push <remote_repo_name> <branch_name>
+
+```
+
+이 명령은 Clone 한 리모트 저장소에 쓰기 권한이 있고, Clone 하고 난 이후 아무도 Upstream 저장소에 Push 하지 않았을 때만 사용할 수 있다. 다시 말해서 Clone 한 사람이 여러 명 있을 때, 다른 사람이 Push 한 후에 Push 하려고 하면 Push 할 수 없다. 먼저 다른 사람이 작업한 것을 가져와서 Merge 한 후에 Push 할 수 있다.
+
+# 
