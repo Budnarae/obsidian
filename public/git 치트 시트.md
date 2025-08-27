@@ -112,9 +112,7 @@ usage: git add [<options>] [--] <pathspec>...
 
 ```
 
-# 저장소 관련
-
-## 이미 존재하는 디렉토리를 저장소로 만들기
+# 이미 존재하는 디렉토리를 저장소로 만들기
 
 ```bash
 
@@ -122,7 +120,7 @@ git init
 
 ```
 
-## 파일의 변경을 staged 상태로 만듬
+# 파일의 변경을 staged 상태로 만듬
 
 ```bash
 
@@ -130,7 +128,7 @@ git add <file_name>
 
 ```
 
-## 파일의 변경을 commited 상태로 만듬
+# 파일의 변경을 commited 상태로 만듬
 
 ```bash
 
@@ -138,7 +136,7 @@ git commit -m "<commit_name>"
 
 ```
 
-## 기존 저장소 Clone
+# 기존 저장소 Clone
 
 ```bash
 
@@ -154,10 +152,28 @@ git clone <repository_url> <other_name>
 
 ```
 
-## 파일 상태 확인
+# 파일 상태 확인
 
 ```bash
 
 git status
 
 ```
+
+짦막하게 확인하려면 `-s` 또는 `--short` 인자와 사용한다.
+
+```bash
+
+git status -s
+
+```
+
+```bash
+
+git status -short
+
+```
+
+# 파일 무시하기
+
+[이 문서](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)의 **파일 무시하기** 단락 참조
