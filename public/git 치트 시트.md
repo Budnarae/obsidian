@@ -128,6 +128,16 @@ git add <file_name>
 
 ```
 
+# 파일 상태를 Unstage로 변경하기
+
+```bash
+
+$ git reset Head <file>
+
+```
+
+# Modified 파일 됟
+
 # 파일의 변경을 commited 상태로 만듬
 
 ```bash
@@ -138,7 +148,7 @@ git commit
 
 `-m` 옵션을 사용하면 커밋 메세지를 인라인으로 삽입한다.
 `-a` 옵션을 사용하면 tracked 상태의 파일을 자동으로 staging area에 넣은 후 커밋한다. 즉, git add 명령어를 생략할 수 있다.
-`--amend` 옵션으로 
+`--amend` 옵션으로 가장 최근의 커밋을 재작성 할 수 있다.
 
 # 기존 저장소 Clone
 
@@ -255,3 +265,4 @@ $ git mv <file_from> <file_to>
 # 커밋 히스토리 조회
 
 [참고](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0)
+
