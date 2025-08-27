@@ -1,0 +1,1736 @@
+{
+  "edges": [
+    {
+      "fromNode": "a24d18ca4cfcc64d",
+      "fromSide": "bottom",
+      "id": "a9347b2610478d71",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2a3b13564008cef2",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2a3b13564008cef2",
+      "fromSide": "bottom",
+      "id": "9b5e70b2a7d78922",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "1eff90d7acfdd2d6",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1eff90d7acfdd2d6",
+      "fromSide": "bottom",
+      "id": "38d58217a356271d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d248dcb34f377c64",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "d248dcb34f377c64",
+      "fromSide": "bottom",
+      "id": "c18bad760f558857",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "623113583cd9f56d",
+      "fromSide": "bottom",
+      "id": "e6a8c4d0214e9fb7",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7534292e6e12eae8",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "123a397c00a72fe8",
+      "fromSide": "bottom",
+      "id": "fb528739cb46a325",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "125188f291fce4c3",
+      "fromSide": "bottom",
+      "id": "7ae628ab1106d9a6",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "01ca3f9062436123",
+      "fromSide": "bottom",
+      "id": "222c8ec3e750dfba",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "80d60145b7a20c47",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "left",
+      "id": "9fc61346921b99e2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "06941715118b8d20",
+      "toSide": "right"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "left",
+      "id": "0c6b7edb4ab07bc4",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "31a7ec4139c27e81",
+      "toSide": "right"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "80d60145b7a20c47",
+      "fromSide": "left",
+      "id": "502653b6e0a46259",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "da99a89f4b404e15",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "0ec96cdc8493c296",
+      "fromSide": "right",
+      "id": "fc20f342deb2df90",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0a2882dbc5e965f2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0a2882dbc5e965f2",
+      "fromSide": "right",
+      "id": "f21e5417c411332c",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "abbf87f436258546",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "14017d2c6cb04951",
+      "fromSide": "right",
+      "id": "ae5180de6a1411bb",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0a2882dbc5e965f2",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "170ad5b0c2ecf9cc",
+      "fromSide": "right",
+      "id": "fd6a88c322d78bbc",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "55b49ae27993020a",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "55b49ae27993020a",
+      "fromSide": "right",
+      "id": "c4555291dc2f59d2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "fabdc4e139e20f6d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b5848ad2304f074d",
+      "fromSide": "right",
+      "id": "64fa9c8f21514777",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2d53f21d267bda44",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "3170efdc8a505cf6",
+      "fromSide": "bottom",
+      "id": "9d6821eea0eacd1b",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "b5848ad2304f074d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1ca8823d9f10e80b",
+      "fromSide": "right",
+      "id": "0d76c1992e80576d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0ec96cdc8493c296",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "55b49ae27993020a",
+      "fromSide": "right",
+      "id": "791a32652ba6e7bf",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6e3380f1aa332406",
+      "fromSide": "right",
+      "id": "33d679473c73184c",
+      "label": "cpu를 통해 gpu의 상수 버퍼에 접근하게끔 함",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "7b47eec875f81929",
+      "fromSide": "right",
+      "id": "05e879bf0ebffa48",
+      "label": "cpu의 상수버퍼 접근 차단",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "abbf87f436258546",
+      "fromSide": "right",
+      "id": "65ed27818ba98828",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "eaa55b0b78550565",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "abbf87f436258546",
+      "fromSide": "right",
+      "id": "23df8f4314b305d2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "e097791d0aa9be33",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e097791d0aa9be33",
+      "fromSide": "right",
+      "id": "9b6be5fb73b5b08b",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7534292e6e12eae8",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "82a2d69c6363fa61",
+      "fromSide": "right",
+      "id": "6107ebdccf5de970",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7534292e6e12eae8",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "28c83cea01a04512",
+      "fromSide": "right",
+      "id": "7450d4803bdbe8be",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "416747f581116316",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "416747f581116316",
+      "fromSide": "right",
+      "id": "c73b5d726321aa9d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d248dcb34f377c64",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2d53f21d267bda44",
+      "fromSide": "right",
+      "id": "b4ac413e2ee85abb",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "933fb36fc9b84626",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "933fb36fc9b84626",
+      "fromSide": "right",
+      "id": "3e21f0c1679d8259",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d248dcb34f377c64",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1da159ee8d7750cd",
+      "fromSide": "right",
+      "id": "e54ff7956af74e96",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a24d18ca4cfcc64d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "fabdc4e139e20f6d",
+      "fromSide": "right",
+      "id": "2a6164bebba48a43",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "26e0de262330201f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "26e0de262330201f",
+      "fromSide": "right",
+      "id": "c9774c30a0d6f938",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a24d18ca4cfcc64d",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "25612ad884f798c0",
+      "fromSide": "top",
+      "id": "5ed98ae2ddc476ca",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d0ec79e604c9cf4d",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "d0ec79e604c9cf4d",
+      "fromSide": "right",
+      "id": "9a37729bc14610c6",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2ddce7d64e58779f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2ddce7d64e58779f",
+      "fromSide": "right",
+      "id": "a421956cbccee387",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "1f3285b4696fd9fd",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1f3285b4696fd9fd",
+      "fromSide": "right",
+      "id": "73c9207726a44095",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "962324df605b8e0b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "4272e5980c80d66c",
+      "fromSide": "right",
+      "id": "cfc5f4248e083d5d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "73fec2683baa3c2e",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2ddce7d64e58779f",
+      "fromSide": "right",
+      "id": "a3f1eda7c2d50697",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "4272e5980c80d66c",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "ed96cb4a2c0986d8",
+      "fromSide": "right",
+      "id": "bd13ca697791767e",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "ee6428d288f82746",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ee6428d288f82746",
+      "fromSide": "right",
+      "id": "30040cc771de7a50",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "62e1ee8f9aef775d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "fa808f2655d17ee4",
+      "fromSide": "right",
+      "id": "8696b5ea933a74fd",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2a3b13564008cef2",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "93be25923b353cc1",
+      "fromSide": "right",
+      "id": "72c6de6ee087dddb",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "62f21b8f1a77c3d5",
+      "fromSide": "right",
+      "id": "4c95ebb6ca07b9b6",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a24d18ca4cfcc64d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "73fec2683baa3c2e",
+      "fromSide": "right",
+      "id": "1a2524dbcb3187b0",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "93be25923b353cc1",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "962324df605b8e0b",
+      "fromSide": "right",
+      "id": "d4f5c7f72a447cfd",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "fa808f2655d17ee4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7534292e6e12eae8",
+      "fromSide": "bottom",
+      "id": "194f29c3ddf915bd",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "f2e2d67e74f36a61",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "55b49ae27993020a",
+      "fromSide": "right",
+      "id": "2d263e80de882af5",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "81cac63f3ff03368",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "81cac63f3ff03368",
+      "fromSide": "right",
+      "id": "4085d7e8380280f2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "238ae015ddc79d16",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "238ae015ddc79d16",
+      "fromSide": "right",
+      "id": "08d7aca18149dcae",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a24d18ca4cfcc64d",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "0cef86914dc4c535",
+      "fromSide": "right",
+      "id": "ac00395800f02211",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a4919e9fe67e463f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b8c7a73851a97e01",
+      "fromSide": "right",
+      "id": "323a7015441840b2",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "152f80b2e8f146fc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "152f80b2e8f146fc",
+      "fromSide": "right",
+      "id": "27b82fe498caa4cd",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "24d5889d9cd4cd39",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "24d5889d9cd4cd39",
+      "fromSide": "right",
+      "id": "35e719283c9d7e15",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "7ff27f0920e59827",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "7ff27f0920e59827",
+      "fromSide": "right",
+      "id": "9a42babe6d32b5c5",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "e097791d0aa9be33",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7ff27f0920e59827",
+      "fromSide": "right",
+      "id": "2f11924df23e14e5",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "f03fe44265b623d2",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "7534292e6e12eae8",
+      "fromSide": "bottom",
+      "id": "1d29701d714fbb90",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "0421a5d54460b9cc",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "ceb1e46bc304dcbf",
+      "fromSide": "right",
+      "id": "5e9876ba0197902f",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "88064e8414efc74a",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "a85f542caa52cbcb",
+      "fromSide": "right",
+      "id": "2496cf5fb980ebd1",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "b8c7a73851a97e01",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "a67019427055d8ee",
+      "fromSide": "right",
+      "id": "6544dc1ed598410d",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "0bd9324e9ef83916",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0bd9324e9ef83916",
+      "fromSide": "right",
+      "id": "00ab55592d6ede1c",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "31aeb1d6b49e4949",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "88064e8414efc74a",
+      "fromSide": "right",
+      "id": "2c9cee40f97d6f4e",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "cbe740b673a92245",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "cbe740b673a92245",
+      "fromSide": "right",
+      "id": "d95748545c2c969e",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2c70f45390d48acc",
+      "fromSide": "right",
+      "id": "ff29724d4aed803c",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "623113583cd9f56d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "31aeb1d6b49e4949",
+      "fromSide": "right",
+      "id": "442b738f5c5b90a1",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "2c70f45390d48acc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "62e1ee8f9aef775d",
+      "fromSide": "right",
+      "id": "49f227944e983533",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "62f21b8f1a77c3d5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "f2e2d67e74f36a61",
+      "fromSide": "bottom",
+      "id": "a6cbd42d97d55bf7",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "fff9cf85e68b4e84",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "0421a5d54460b9cc",
+      "fromSide": "bottom",
+      "id": "09c92e615c7c7164",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toFloating": false,
+      "toNode": "fff9cf85e68b4e84",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "7534292e6e12eae8",
+      "fromSide": "bottom",
+      "id": "958a51682010c376",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "fff9cf85e68b4e84",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "deb4eeba2d9f3295",
+      "fromSide": "right",
+      "id": "981318e50a65cee8",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "55b49ae27993020a",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "startNode": "49fc8591a55a4686",
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 3435,
+      "id": "e39be3ab76607879",
+      "label": "Resources",
+      "type": "group",
+      "width": 3750,
+      "x": -990,
+      "y": -280
+    },
+    {
+      "height": 1620,
+      "id": "8da87659fd016780",
+      "label": "Shader",
+      "type": "group",
+      "width": 1020,
+      "x": -880,
+      "y": 680
+    },
+    {
+      "height": 3115,
+      "id": "6b29955e990148e5",
+      "label": "View",
+      "type": "group",
+      "width": 440,
+      "x": 2240,
+      "y": -20
+    },
+    {
+      "height": 3195,
+      "id": "00464cd421a61072",
+      "label": "Graphics Pipeline",
+      "type": "group",
+      "width": 400,
+      "x": 3680,
+      "y": -40
+    },
+    {
+      "height": 755,
+      "id": "a653f1aa1478f4be",
+      "label": "Texture",
+      "type": "group",
+      "width": 400,
+      "x": 840,
+      "y": 2340
+    },
+    {
+      "height": 780,
+      "id": "4c03b71adc27ae28",
+      "label": "Object",
+      "type": "group",
+      "width": 360,
+      "x": -1960,
+      "y": -225
+    },
+    {
+      "height": 660,
+      "id": "1beb5c3adfc2665d",
+      "label": "API",
+      "type": "group",
+      "width": 400,
+      "x": -1480,
+      "y": -225
+    },
+    {
+      "height": 100,
+      "id": "bc6c678939639702",
+      "label": "Sampler",
+      "type": "group",
+      "width": 1080,
+      "x": -880,
+      "y": 2560
+    },
+    {
+      "height": 185,
+      "id": "4ace8d08e6b9596a",
+      "label": "Buffer",
+      "type": "group",
+      "width": 420,
+      "x": 280,
+      "y": 2680
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "1ca8823d9f10e80b",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "GetBuffer",
+      "type": "text",
+      "width": 120,
+      "x": 120,
+      "y": 2735
+    },
+    {
+      "height": 60,
+      "id": "28c83cea01a04512",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "D3D11_VIEWPORT",
+      "type": "text",
+      "width": 260,
+      "x": 2840,
+      "y": 1795
+    },
+    {
+      "height": 60,
+      "id": "14017d2c6cb04951",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_render_target_view_desc)",
+      "type": "text",
+      "width": 300,
+      "x": 1460,
+      "y": 2765
+    },
+    {
+      "height": 60,
+      "id": "fabdc4e139e20f6d",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "VertexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 130
+    },
+    {
+      "height": 60,
+      "id": "62e1ee8f9aef775d",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[ID3D11InputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nn-d3d11-id3d11inputlayout)",
+      "type": "text",
+      "width": 260,
+      "x": 2350,
+      "y": -165
+    },
+    {
+      "height": 60,
+      "id": "81cac63f3ff03368",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "IndexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 240
+    },
+    {
+      "height": 60,
+      "id": "a4919e9fe67e463f",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ConstantBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 340
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "b8c7a73851a97e01",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateTexture2D",
+      "type": "text",
+      "width": 260,
+      "x": 540,
+      "y": 3000
+    },
+    {
+      "height": 60,
+      "id": "152f80b2e8f146fc",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DepthStencilBuffer (ID3D11Texture2D)",
+      "type": "text",
+      "width": 260,
+      "x": 910,
+      "y": 3000
+    },
+    {
+      "height": 90,
+      "id": "88064e8414efc74a",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Shader Resource(ID3D11ShaderResourceView)",
+      "type": "text",
+      "width": 290,
+      "x": 890,
+      "y": 2380
+    },
+    {
+      "height": 60,
+      "id": "962324df605b8e0b",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "vertex shader(ID3D11VertexShader)",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": 725
+    },
+    {
+      "height": 60,
+      "id": "2ddce7d64e58779f",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "compiled shader (ID3DBlob)",
+      "type": "text",
+      "width": 260,
+      "x": -800,
+      "y": 2140
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "4272e5980c80d66c",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreatePixelShader",
+      "type": "text",
+      "width": 260,
+      "x": -480,
+      "y": 2220
+    },
+    {
+      "height": 60,
+      "id": "73fec2683baa3c2e",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "pixel shader(ID3D11PixelShader)",
+      "type": "text",
+      "width": 260,
+      "x": -160,
+      "y": 2220
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "1f3285b4696fd9fd",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateVertexShader",
+      "type": "text",
+      "width": 260,
+      "x": -480,
+      "y": 725
+    },
+    {
+      "height": 60,
+      "id": "a85f542caa52cbcb",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D11_TEXTURE2D_DESC",
+      "type": "text",
+      "width": 280,
+      "x": 160,
+      "y": 3000
+    },
+    {
+      "height": 60,
+      "id": "0ec96cdc8493c296",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "BackBuffer (ID3D11Texture2D)",
+      "type": "text",
+      "width": 260,
+      "x": 370,
+      "y": 2735
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "ceb1e46bc304dcbf",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "LoadFromXXXFile",
+      "type": "text",
+      "width": 260,
+      "x": 520,
+      "y": 2395
+    },
+    {
+      "height": 60,
+      "id": "a67019427055d8ee",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D11_SAMPLER_DESC",
+      "type": "text",
+      "width": 280,
+      "x": -860,
+      "y": 2580
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "0bd9324e9ef83916",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateSamplerState",
+      "type": "text",
+      "width": 260,
+      "x": -440,
+      "y": 2580
+    },
+    {
+      "height": 60,
+      "id": "31aeb1d6b49e4949",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Sampler State (ID3D11SamplerState)",
+      "type": "text",
+      "width": 260,
+      "x": -80,
+      "y": 2580
+    },
+    {
+      "height": 60,
+      "id": "ed96cb4a2c0986d8",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_INPUT_ELEMENT_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_input_element_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1650,
+      "y": -165
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "ee6428d288f82746",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateInputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11device-createinputlayout)",
+      "type": "text",
+      "width": 260,
+      "x": 2010,
+      "y": -165
+    },
+    {
+      "height": 60,
+      "id": "170ad5b0c2ecf9cc",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1240,
+      "y": 40
+    },
+    {
+      "height": 100,
+      "id": "80d60145b7a20c47",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[D3D11CreateDeviceAndSwapChain](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain)",
+      "type": "text",
+      "width": 300,
+      "x": -1440,
+      "y": -185
+    },
+    {
+      "height": 100,
+      "id": "d0ec79e604c9cf4d",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[D3DCompileFromFile](https://learn.microsoft.com/en-us/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompilefromfile)",
+      "type": "text",
+      "width": 300,
+      "x": -1440,
+      "y": 185
+    },
+    {
+      "height": 60,
+      "id": "25612ad884f798c0",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Shader file(.hlsl, .fx)",
+      "type": "text",
+      "width": 260,
+      "x": -1420,
+      "y": 520
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "06941715118b8d20",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "Device",
+      "type": "text",
+      "width": 260,
+      "x": -1920,
+      "y": -175
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "da99a89f4b404e15",
+      "styleAttributes": {
+        "border": null,
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "DeviceContext",
+      "type": "text",
+      "width": 260,
+      "x": -1920,
+      "y": -55
+    },
+    {
+      "height": 60,
+      "id": "125188f291fce4c3",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D_FEATURE_LEVEL",
+      "type": "text",
+      "width": 260,
+      "x": -1420,
+      "y": -590
+    },
+    {
+      "height": 60,
+      "id": "01ca3f9062436123",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DXGI_SWAP_CHAIN_DESC",
+      "type": "text",
+      "width": 260,
+      "x": -1120,
+      "y": -590
+    },
+    {
+      "height": 60,
+      "id": "deb4eeba2d9f3295",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_SUBRESOURCE_DATA](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_subresource_data)",
+      "type": "text",
+      "width": 260,
+      "x": 1240,
+      "y": 180
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "31a7ec4139c27e81",
+      "styleAttributes": {
+        "border": null,
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "SwapChain",
+      "type": "text",
+      "width": 260,
+      "x": -1920,
+      "y": 65
+    },
+    {
+      "height": 60,
+      "id": "123a397c00a72fe8",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "D3D_DRIVER_TYPE",
+      "type": "text",
+      "width": 260,
+      "x": -1720,
+      "y": -590
+    },
+    {
+      "height": 60,
+      "id": "a24d18ca4cfcc64d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Input Assembler (IA)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 20
+    },
+    {
+      "height": 60,
+      "id": "2a3b13564008cef2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Vertex Shader(VS)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 700
+    },
+    {
+      "height": 60,
+      "id": "1eff90d7acfdd2d6",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "생략\n",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 1375
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "24d5889d9cd4cd39",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateDepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 1300,
+      "y": 3000
+    },
+    {
+      "height": 80,
+      "id": "abbf87f436258546",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "RenderTargetView (ID3D11RenderTargetView)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 2855
+    },
+    {
+      "height": 60,
+      "id": "7ff27f0920e59827",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 3000
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "0a2882dbc5e965f2",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateRenderTargetView](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createrendertargetview)\n",
+      "type": "text",
+      "width": 260,
+      "x": 1870,
+      "y": 2865
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "933fb36fc9b84626",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "RSSetState",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 2010
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "93be25923b353cc1",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetShader",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 2250
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "cbe740b673a92245",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetShaderResources",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 2410
+    },
+    {
+      "height": 60,
+      "id": "d248dcb34f377c64",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Rasterizer (RS)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 1995
+    },
+    {
+      "height": 60,
+      "id": "623113583cd9f56d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Pixel Shader (PS)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 2555
+    },
+    {
+      "height": 60,
+      "id": "7534292e6e12eae8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Output Merger (OM)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 3035
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "fff9cf85e68b4e84",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[Present](https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 3520
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f03fe44265b623d2",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "ClearDepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 3088,
+      "y": 3175
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "82a2d69c6363fa61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "OMSetBlendState",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 3050
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f2e2d67e74f36a61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Draw",
+      "type": "text",
+      "width": 260,
+      "x": 3558,
+      "y": 3280
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "26e0de262330201f",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[IASetVertexBuffers](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetvertexbuffers)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 145
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "416747f581116316",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[RSSetViewports](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-rssetviewports)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 1810
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "eaa55b0b78550565",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "ClearRenderTargetView",
+      "type": "text",
+      "width": 260,
+      "x": 3088,
+      "y": 2735
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "2c70f45390d48acc",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "PSSetSamplers",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 2570
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "e097791d0aa9be33",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "OMSetRenderTargets",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 2890
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "238ae015ddc79d16",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "IASetIndexBuffers",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 255
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "fa808f2655d17ee4",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[VSSetShader](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-vssetshader)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 715
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0421a5d54460b9cc",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[DrawIndexed](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-drawindexed)",
+      "type": "text",
+      "width": 260,
+      "x": 3960,
+      "y": 3280
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "62f21b8f1a77c3d5",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[IASetInputLayout](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetinputlayout)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": -150
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "1da159ee8d7750cd",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[IASetPrimitiveTopology](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetprimitivetopology)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 25
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "55b49ae27993020a",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateBuffer](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer)",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 130
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "b5848ad2304f074d",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateRasterizeState](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createrasterizerstate)",
+      "type": "text",
+      "width": 260,
+      "x": 1880,
+      "y": 1995
+    },
+    {
+      "height": 60,
+      "id": "3170efdc8a505cf6",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_RASTERIZER_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_rasterizer_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1870,
+      "y": 1880
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0cef86914dc4c535",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "UpdateResource",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 590
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "7b47eec875f81929",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Unmap",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 360
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "6e3380f1aa332406",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Map",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 470
+    },
+    {
+      "height": 60,
+      "id": "2d53f21d267bda44",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ID3D11RasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 1995
+    }
+  ]
+}
