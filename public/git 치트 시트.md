@@ -132,9 +132,12 @@ git add <file_name>
 
 ```bash
 
-git commit -m "<commit_name>"
+git commit
 
 ```
+
+`-m` 옵션을 사용하면 커밋 메세지를 인라인으로 삽입한다.
+`-a` 옵션을 사용하면 tracked 상태의 파일을 자동으로 staging area에 넣은 후 커밋한다. 즉, git add 명령어를 생략할 수 있다.
 
 # 기존 저장소 Clone
 
@@ -195,3 +198,10 @@ staged와 commited 상태를 비교
 git diff --staged
 
 ```
+
+```bash
+
+git diff --cached
+
+```
+
