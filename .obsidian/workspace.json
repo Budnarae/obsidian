@@ -13,16 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/git 치트 시트.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "git 치트 시트"
+              "title": "index"
+            }
+          },
+          {
+            "id": "c35efe566a826aee",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,6 +183,16 @@
               "icon": "lucide-file",
               "title": "Plugin no longer active"
             }
+          },
+          {
+            "id": "ad259bb31105ef54",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
         "currentTab": 2
@@ -181,6 +204,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -191,16 +216,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "webpage-html-export:Export Vault to HTML": false,
-      "dashboard-navigator:Open dashboard navigator": false,
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "c35efe566a826aee",
   "lastOpenFiles": [
+    "index.md",
+    "public/git 치트 시트.md",
     "Pasted image 20250827125730.png",
     "public/DirectX11 API.canvas",
-    "public/git 치트 시트.md",
-    "index.md",
     "conflict-files-obsidian-git.md",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
     "재료/이미지/e0dca5c86a95290749326a0cd5efafc6_MD5.jpeg",
@@ -211,7 +235,6 @@
     "재료/이미지/96406e8cfcd2a4132eec85735dcf0781_MD5.jpeg",
     "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
     "재료/이미지/83909e09315bc3a0d0ce3fe2f7747373_MD5.jpeg",
-    "재료/이미지/7fa0daea1cf9f3859e206a516f12cb10_MD5.jpeg",
     "재료/이미지",
     "재료",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
