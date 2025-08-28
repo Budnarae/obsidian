@@ -374,6 +374,40 @@ git branch <branch_name>
 
 `-d` 옵션을 사용하면 브랜치를 삭제한다.
 아무런 인자, 옵션 없이 실행하면 현재 브랜치의 목록을 보여준다.
+`v` 옵션을 실행하면 브랜치마다 마지막 커밋 메세지도 함께 보여준다.
+
+각 브랜치가 지금 어떤 상태인지 확인하기에 좋은 옵션도 있다. 현재 Checkout 한 브랜치를 기준으로 `--merged` 와 `--no-merged` 옵션을 사용하여 Merge 된 브랜치인지 그렇지 않은지 필터링해 볼 수 있다. `git branch --merged` 명령으로 이미 Merge 한 브랜치 목록을 확인한다.
+
+```bash
+
+$ git branch --merged
+  iss53
+* master
+
+```
+
+`iss53` 브랜치는 앞에서 이미 Merge 했기 때문에 목록에 나타난다. `*` 기호가 붙어 있지 않은 브랜치는 `git branch -d` 명령으로 삭제해도 되는 브랜치다. 이미 다른 브랜치와 Merge 했기 때문에 삭제해도 정보를 잃지 않는다.
+
+반대로 현재 Checkout 한 브랜치에 Merge 하지 않은 브랜치를 살펴보려면 `git branch --no-merged` 명령을 사용한다.
+
+```bash
+
+$ git branch --no-merged
+  testing
+
+```
+
+위에는 없었던 다른 브랜치가 보인다. 아직 Merge 하지 않은 커밋을 담고 있기 때문에 `git branch -d` 명령으로 삭제되지 않는다.
+
+```bash
+
+$ git branch -d testing
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+
+```
+
+Merge 하지 않은 브랜치를 강제로 삭제하려면 `-D` 옵션으로 삭제한다.
 
 # 다른 브랜치로 이동
 
