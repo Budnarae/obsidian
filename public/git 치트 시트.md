@@ -448,3 +448,7 @@ index.html |    1 +
 1 file changed, 1 insertion(+)
 
 ```
+
+# 리모트 브랜치 조회
+
+[여기](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98)를 참고
