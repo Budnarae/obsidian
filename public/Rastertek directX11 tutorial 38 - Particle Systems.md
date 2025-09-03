@@ -1110,13 +1110,75 @@ We start by initializing all the different elements that will be used for the pa
 
 이 파티클 시스템에서는 다음과 같은 설정을 수행합니다:
 
-1. **파티클이 생성될 위치의 무작위 편차(Random Deviation)**를 설정하여, 일정한 위치가 아닌 범위 내에서 생성되도록 합니다.
-    
-2. 각 파티클이 **떨어지는 속도(Speed)**와, 그 속도에 대한 **무작위 편차**를 설정합니다.
-    
-3. 이어서 **파티클의 크기(Size)**를 설정합니다.
-    
-4. 마지막으로, **초당 방출될 파티클 수**와 **한 번에 시스템 내에 존재할 수 있는 최대 파티클 수**를 설정합니다.
-    
+1. 파티클이 생성될 위치의 무작위 편차(Random Deviation)를 설정하여, 일정한 위치가 아닌 범위 내에서 생성되도록 합니다.
+2. 각 파티클이 떨어지는 속도(Speed)와, 그 속도에 대한 무작위 편차를 설정합니다.
+3. 이어서 파티클의 크기(Size)를 설정합니다.
+4. 마지막으로, 초당 방출될 파티클 수와 한 번에 시스템 내에 존재할 수 있는 최대 파티클 수를 설정합니다.
 
-이러한 설정을 통해 파티클의 움직임과 생성 패턴에 다양성과 자연스러움을 부여하게 됩니다.
+```hlsl
+
+	// Set the random deviation of where the particles can be located when emitted.
+    m_particleDeviationX = 0.5f;
+    m_particleDeviationY = 0.1f;
+    m_particleDeviationZ = 2.0f;
+
+    // Set the speed and speed variation of particles.
+    m_particleVelocity = 1.0f;
+    m_particleVelocityVariation = 0.2f;
+
+    // Set the physical size of the particles.
+    m_particleSize = 0.2f;
+
+    // Set the number of particles to emit per second.
+    m_particlesPerSecond = 100.0f;
+
+    // Set the maximum number of particles allowed in the particle system.
+    m_maxParticles = 1000;
+
+```
+
+We then create the particle array based on the maximum number of particles that will be used.
+
+그 다음으로는, 사용될 최대 파티클 수를 기준으로 파티클 배열을 생성합니다.
+
+```hlsl
+
+	// Create the particle list.
+    m_particleList = new ParticleType[m_maxParticles];
+
+```
+
+Set each particle in the array to inactive to begin with.
+
+먼저 파티클 배열의 각 파티클을 모두 비활성 상태(inactive)로 설정합니다.
+
+```hlsl
+
+	 // Initialize the particle list.
+    for(i=0; i<m_maxParticles; i++)
+    {
+        m_particleList[i].active = false;
+    }
+
+```
+
+Initialize the two counters to zero to start with.
+
+0 부터 시작하는 두 개의 카운터를 초기화한다.
+
+```hlsl
+
+	// Initialize the current particle count to zero since none are emitted yet.
+    m_currentParticleCount = 0;
+
+    // Clear the initial accumulated time for the particle per second emission rate.
+    m_accumulatedTime = 0.0f;
+
+    return true;
+}
+
+```
+
+The ShutdownParticleSystem function releases the particle array during shutdown.
+
+`ShutdownParticleSystem` 함수는 셧다운 시 파티클 배열을 해체
