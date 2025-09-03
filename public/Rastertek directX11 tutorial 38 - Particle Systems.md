@@ -713,3 +713,50 @@ private:
 
 The VertexType for rendering particles just requires position, texture coordinates, and color to match up with the ParticleType properties.
 
+렌더링할 파티클을 위한 `VertexType`은 `ParticleType` 요소와 매치하기 위해 오직 위치, 텍스처 좌표, 그리고 색상만을 요구한다.
+
+```hlsl
+
+	struct VertexType
+    {
+        XMFLOAT3 position;
+        XMFLOAT2 texture;
+        XMFLOAT4 color;
+    };
+
+```
+
+Particles can have any number of properties that define them.
+
+파티클은 스스로를 정의하기 위해 어떠한 개수의 프로퍼티도 가질 수 있다.
+
+In this implementation we put all the properties of a particle in the ParticleType structure.
+
+이번 예제에서 우리는 파티클의 모든 프로퍼티를 `ParticleType` 구조체에 넣을 것이다.
+
+You can add many more but for this tutorial I am just going to cover position, speed, and color.
+
+더 많은 프로퍼티를 추가할 수도 있지만 이번 튜토리얼에서는 위치, 속도, 그리고 색상만을 다룬다.
+
+```hlsl
+
+	struct ParticleType
+    {
+        float positionX, positionY, positionZ;
+        float red, green, blue;
+        float velocity;
+        bool active;
+    };
+	
+public:
+    ParticleSystemClass();
+    ParticleSystemClass(const ParticleSystemClass&);
+    ~ParticleSystemClass();
+
+```
+
+The class functions are the regular initialize, shutdown, frame, and render.
+
+
+
+However, note that the Frame function is where we do all the work of updating, sorting, and rebuilding the of vertex buffer each frame so the particles can be rendered correctly.
