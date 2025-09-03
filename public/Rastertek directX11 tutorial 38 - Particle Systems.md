@@ -57,4 +57,41 @@ We will start the code section by looking at the particle shader first.
 
 우리는 파티클 셰이더 코드 부분부터 살펴볼 것이다.
 
-# Part
+# Particle.vs
+
+The particle.vs and particle.ps HLSL shader programs are what we use to render the particles.
+
+파티클을 렌더하기 위해 `particle.vs`와 `particle.ps` HLSL 셰이더 프로그램들을 사용한다.
+
+They are the basic texture shader with an added color modifying component.
+
+이것들은 기본 텍스처 셰이더에 색상 조정 기능이 추가된 형태이다.
+
+```hlsl
+
+/* Filename: particle.vs */
+
+// Globals
+cbuffer MatrixBuffer
+{
+	matrix worldMatrix;
+	matrix viewMatrix;
+	matrix projectionMatrix;
+};
+
+// Typedef
+
+```
+
+The two input types both have a color component so that the particle can have an individual color that is added to the texture base color.
+
+두 개의 입력 형식은 둘 다 색상 요소를 가진다. 따라서 파티클은 텍스처의 기본적인 색깔에 추가되는 독립적인 색깔을 가질 수 있다.
+
+```hlsl
+
+struct VertexInputType
+{
+	float4
+}
+
+```
