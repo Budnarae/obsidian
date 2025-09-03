@@ -98,7 +98,7 @@ struct VertexInputType
 
 struct PixelInputType
 {
-	float4 position:SV_POSITION:
+	float4 position:SV_POSITION;
 	float2 tex:TEXCOORD0;
 	float4 color:COLOR;
 };
@@ -193,4 +193,4 @@ Here is where we combine the texture color and the input particle color to get t
 
 The ParticleShaderClass is just the TextureShaderClass modified to handle a color component for the particles.
 
-
+`ParticleShaderClass`는 단지 파티클을 위한 색상 요소를 다루는 텍스처 셰이더 클래스이다. 
