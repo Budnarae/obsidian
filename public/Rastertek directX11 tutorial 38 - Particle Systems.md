@@ -152,7 +152,7 @@ SamplerState SampleType : register(s0);
 
 The PixelInputType has the added color component in the pixel shader also.
 
-`PixelInputType`은 픽셀 셰이더에서 더해진 색상 요소도 가지고 있다.
+`PixelInputType`에는 픽셀 셰이더에서 사용할 수 있도록 색상(color) 컴포넌트도 추가되어 있습니다.
 
 ```hlsl
 
@@ -160,7 +160,37 @@ struct PixelInputType
 {
 	float4 position : SV_POSITION;
 	float2 tex : TEXCOORD0;
-	float4 col
+	float4 color : COLOR;
+};
+
+// Pixel Shader
+
+float4 ParticlePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+	float4 finalColor;
+	
+	// Sample the pixel color from the texture using the sampler at this texture coordinate location.
+	textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+```
+
+Here is where we combine the texture color and the input particle color to get the final output color.
+
+다음은 텍스처의 색상과 입력받은 파티클 색상을 혼합하여 최종 색상을 더하는 부분이다.
+
+```hlsl
+
+	// Combine the texture color and the particle color to get the final color result.
+	finalColor = textureColor * input.color;
+	
+	return finalColor;
 }
 
 ```
+
+# Particleshaderclass.h
+
+The ParticleShaderClass is just the TextureShaderClass modified to handle a color component for the particles.
+
+
