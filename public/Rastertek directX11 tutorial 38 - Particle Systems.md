@@ -912,4 +912,73 @@ Once the particle system has been initialized it then creates the initial empty 
 
 The buffers are created empty at first as there are no particles emitted yet.
 
+버퍼는 처음에는 분출한 파티클이 없기 때문에 비어있는 상태로 생성된다.
 
+```hlsl
+
+bool ParticleSystemClass::Initialize(ID3D11Device* device, ID3D11DeviceContext* deviceContext, char* textureFilename)
+{
+    bool result;
+
+
+    // Load the texture that is used for the particles.
+    result = LoadTexture(device, deviceContext, textureFilename);
+    if(!result)
+    {
+        return false;
+    }
+
+    // Initialize the particle system.
+    result = InitializeParticleSystem();
+    if(!result)
+    {
+        return false;
+    }
+
+    // Create the buffers that will be used to render the particles with.
+    result = InitializeBuffers(device);
+    if(!result)
+    {
+        return false;
+    }
+
+    return true;
+}
+
+```
+
+The Shutdown function releases the buffers, particle system, and particle texture.
+
+`Shutdown` 함수는 버퍼, 파티클 시스템, 파티클 텍스처를 해제한다.
+
+```hlsl
+
+void ParticleSystemClass::Shutdown()
+{
+    // Release the buffers.
+    ShutdownBuffers();
+
+    // Release the particle system.
+    ShutdownParticleSystem();
+
+    // Release the texture used for the particles.
+    ReleaseTexture();
+
+    return;
+}
+
+```
+
+The Frame function is where we do the majority of the particle system work.
+
+`Frame` 함수는 파티클 시스템 동작의 핵심이 위치한 곳이다.
+
+Each frame we first check if we need to clear some of the particles that have reached the end of their render life.
+
+각 프레임마다 처음으로 실시하는 동작은 수명이 다해 소멸시켜야 할 파티클이 있는지 확인하는 것이다.
+
+Secondly, we emit new particles if it is time to do so.
+
+두번째로, 우리는 새로운 파티클을 분출한다
+
+After we emit new particles, we then update all the particles that are currently emitted, in this tutorial we update their height position to create a falling effect. After the particles have been updated, we then need to update the vertex buffer with the updated location of each particle. The vertex buffer is dynamic so updating it is easy to do.
