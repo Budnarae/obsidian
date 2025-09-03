@@ -817,6 +817,8 @@ The next variables are for setting up a single vertex and index buffer.
 
 다음 변수들은 하나의 정점과 하나의 인덱스 버퍼를 설정하기 위한 것들이다.
 
+Note that the vertex buffer will be dynamic since it will change all particle positions each frame.
+
 ```hlsl
 
 	VertexType* m_vertices;
@@ -825,4 +827,26 @@ The next variables are for setting up a single vertex and index buffer.
 
 ```
 
-Note that the vertex buffer will be dynamic since it will change all particle positions each frame.
+The following private class variables are the ones used for the particle properties.
+
+다음의 private 클래스 멤버변수들은 파티클 프로퍼티를 위해 사용되는 것들이다.
+
+They define how the particle system will work and changing each of them has a unique effect on how the particle system will react.
+
+이 값들은 파티클 시스템이 어떻게 동작할지를 정의하며, 각 값을 변경하면 파티클 시스템의 반응 방식에 고유한 영향을 미치게 됩니다.
+
+If you plan to add more functionality to the particle system you would add it here by using additional variables for modifying the particles.
+
+만약 파티클 시스템에 추가 기능을 넣는 것을 계획하고 있다면 파티클을 변경하기 위한 추가적인 변수를 여기에 추가하면 된다.
+
+```hlsl
+
+	float m_particleDeviationX, m_particleDeviationY, m_particleDeviationZ;
+    float m_particleVelocity, m_particleVelocityVariation;
+    float m_particleSize, m_particlesPerSecond;
+    int m_maxParticles;
+
+```
+
+We require a count and an accumulated time variable for timing the emission of particles.
+
