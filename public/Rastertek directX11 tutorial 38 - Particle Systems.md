@@ -873,4 +873,43 @@ We require a count and an accumulated time variable for timing the emission of p
 
 The class constructor initializes the private member variables to null.
 
-클랫
+클래스 생성자는 private 멤버 변수를 null로 초기화한다.
+
+```hlsl
+
+ParticleSystemClass::ParticleSystemClass()
+{
+    m_Texture = 0;
+    m_particleList = 0;
+    m_vertices = 0;
+    m_vertexBuffer = 0;
+    m_indexBuffer = 0;
+}
+
+
+ParticleSystemClass::ParticleSystemClass(const ParticleSystemClass& other)
+{
+}
+
+
+ParticleSystemClass::~ParticleSystemClass()
+{
+}
+
+```
+
+The Initialize function first loads the texture that will be used for the particles.
+
+`Initialize` 함수는 처음에 파티클에 사용될 텍스처를 로드한다.
+
+After the texture is loaded it then initializes the particle system.
+
+텍스처가 로드되면 텍스처는 파티클 시스템을 시작한다.
+
+Once the particle system has been initialized it then creates the initial empty vertex and index buffers.
+
+파티클 시스템이 시작되면 초기 공백 정점 버퍼와 인텍스 버퍼를 생성한다.
+
+The buffers are created empty at first as there are no particles emitted yet.
+
+
