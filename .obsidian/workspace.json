@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/git 치트 시트.md",
+                "file": "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "git 치트 시트"
+              "title": "Rastertek directX11 tutorial 38 - Particle Systems"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -142,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/git 치트 시트.md",
+                "file": "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
                 "followCursor": true,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of git 치트 시트"
+              "title": "Outline of Rastertek directX11 tutorial 38 - Particle Systems"
             }
           },
           {
@@ -157,8 +156,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -167,8 +166,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -177,17 +176,16 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 408.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,11 +204,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "f01099609e975412",
   "lastOpenFiles": [
     "index.md",
-    "public/git 치트 시트.md",
+    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "Pasted image 20250827125730.png",
+    "public/High-Level Shader Language Specification(Working Draft August 7, 2025).md",
+    "public/git 치트 시트.md",
     "public/DirectX11 API.canvas",
     "conflict-files-obsidian-git.md",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
@@ -245,7 +245,6 @@
     "private/42Seoul/Unity Piscine - Quick Presentation pdf 번역.md",
     "private/42Seoul/Unity Piscine - Module 01 pdf 번역.md",
     "private/42Seoul/Unity Piscine - Module 00 pdf 번역.md",
-    "private/42Seoul/SCOP pdf 번역.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
