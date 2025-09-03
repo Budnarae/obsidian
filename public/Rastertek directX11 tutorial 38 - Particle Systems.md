@@ -1024,3 +1024,32 @@ bool ParticleSystemClass::Frame(float frameTime, ID3D11DeviceContext* deviceCont
 The Render function calls the RenderBuffers private function to render the particles.
 
 `Render` 함수는 파티클을 렌더하기 위해 `RenderBuffers` private 함수를 부른다.
+
+```hlsl
+
+void ParticleSystemClass::Render(ID3D11DeviceContext* deviceContext)
+{
+    // Put the vertex and index buffers on the graphics pipeline to prepare them for drawing.
+    RenderBuffers(deviceContext);
+
+    return;
+}
+
+```
+
+GetTexture returns a pointer to the particle texture resource.
+
+`GetTexture`은 파티클 텍스처 리소스를 가리키는 포인터를 반환한다.
+
+```hlsl
+
+ID3D11ShaderResourceView* ParticleSystemClass::GetTexture()
+{
+    return m_Texture->GetTexture();
+}
+
+```
+
+The GetIndexCount function returns the count of indexes in the index buffer for rendering.
+
+`GetI`
