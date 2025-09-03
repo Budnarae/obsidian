@@ -118,6 +118,49 @@ PixelInputType ParticleVertexShader(VertexInputType input)
 	
 	// Store the texture coordinates for the pixel shader.
 	output.tex = input.tex;
+
+```
+
+The color is sent through to the pixel shader here.
+
+색상은 다음의 부분을 통해 픽셀 셰이더로 전달된다.
+
+```hlsl
+
+	// Store the particle color for the pixel shader.
+	output.color = input.color;
+	
+	return output;
+
+}
+
+```
+
+# Particle.ps
+
+```hlsl
+
+// Filename: particle.ps
+
+// Global
+Texture2D shaderTexture : register(t0);
+SamplerState SampleType : register(s0);
+
+// Typedefs
+
+```
+
+The PixelInputType has the added color component in the pixel shader also.
+
+`PixelInputType`은 픽셀 셰이더에서 더해진 색상 요소도 가지고 있다.
+
+```hlsl
+
+struct PixelInputType
+{
+	float4 position : SV_POSITION;
+	float2 tex : TEXCOORD0;
+	float4 col
 }
 
 ```
