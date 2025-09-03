@@ -251,4 +251,108 @@ private:
 
 # Particleshaderclass.cpp
 
+```hlsl
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: particleshaderclass.cpp
+////////////////////////////////////////////////////////////////////////////////
+#include "particleshaderclass.h"
+
+
+ParticleShaderClass::ParticleShaderClass()
+{
+    m_vertexShader = 0;
+    m_pixelShader = 0;
+    m_layout = 0;
+    m_matrixBuffer = 0;
+    m_sampleState = 0;
+}
+
+
+ParticleShaderClass::ParticleShaderClass(const ParticleShaderClass& other)
+{
+}
+
+
+ParticleShaderClass::~ParticleShaderClass()
+{
+}
+
+
+bool ParticleShaderClass::Initialize(ID3D11Device* device, HWND hwnd)
+{
+    wchar_t vsFilename[128], psFilename[128];
+    int error;
+    bool result;
+
+```
+
+We load the particle.vs and particle.ps HLSL shader files here.
+
+이 부분에서 particle.vs와 particle.ps hlsls 셰이더 파일을 로드한다.
+
+```hlsl
+
+	// Set the filename of the vertex shader.
+    error = wcscpy_s(vsFilename, 128, L"../Engine/particle.vs");
+    if(error != 0)
+    {
+        return false;
+    }
+
+    // Set the filename of the pixel shader.
+    error = wcscpy_s(psFilename, 128, L"../Engine/particle.ps");
+    if(error != 0)
+    {
+        return false;
+    }
+
+    // Initialize the vertex and pixel shaders.
+    result = InitializeShader(device, hwnd, vsFilename, psFilename);
+    if(!result)
+    {
+        return false;
+    }
+
+    return true;
+}
+
+
+void ParticleShaderClass::Shutdown()
+{
+    // Shutdown the vertex and pixel shaders as well as the related objects.
+    ShutdownShader();
+
+    return;
+}
+
+
+bool ParticleShaderClass::Render(ID3D11DeviceContext* deviceContext, int indexCount, XMMATRIX worldMatrix, XMMATRIX viewMatrix, XMMATRIX projectionMatrix, ID3D11ShaderResourceView* texture)
+{
+    bool result;
+
+
+    // Set the shader parameters that it will use for rendering.
+    result = SetShaderParameters(deviceContext, worldMatrix, viewMatrix, projectionMatrix, texture);
+    if(!result)
+    {
+        return false;
+    }
+
+    // Now render the prepared buffers with the shader.
+    RenderShader(deviceContext, indexCount);
+
+    return true;
+}
+
+
+bool ParticleShaderClass::InitializeShader(ID3D11Device* device, HWND hwnd, WCHAR* vsFilename, WCHAR* psFilename)
+{
+    HRESULT result;
+    ID3D10Blob* errorMessage;
+    ID3D10Blob* vertexShaderBuffer;
+    ID3D10Blob* pixelShaderBuffer;
+
+```
+
 
