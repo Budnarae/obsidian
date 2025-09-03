@@ -850,3 +850,27 @@ If you plan to add more functionality to the particle system you would add it he
 
 We require a count and an accumulated time variable for timing the emission of particles.
 
+파티클 방출 타이밍을 제어하기 위해서는 카운트 변수와 누적 시간(accumulated time) 변수가 필요합니다.
+
+```hlsl
+
+	int m_currentParticleCount;
+    float m_accumulatedTime;
+};
+
+```
+
+# Particlesystemclass.cpp
+
+```hlsl
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: particlesystemclass.cpp
+////////////////////////////////////////////////////////////////////////////////
+#include "particlesystemclass.h"
+
+```
+
+The class constructor initializes the private member variables to null.
+
+클랫
