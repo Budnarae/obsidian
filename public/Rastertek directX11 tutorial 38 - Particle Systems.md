@@ -1052,4 +1052,71 @@ ID3D11ShaderResourceView* ParticleSystemClass::GetTexture()
 
 The GetIndexCount function returns the count of indexes in the index buffer for rendering.
 
-`GetI`
+`GetIndexCount` 함수는 렌더링에 사용되는 인덱스 버퍼의 인덱스 개수를 반환합니다.
+
+```hlsl
+
+int ParticleSystemClass::GetIndexCount()
+{
+    return m_indexCount;
+}
+
+```
+
+LoadTexture loads the star01.tga file into a texture resource that can be used for rendering the particles.
+
+`LoadTexture` 함수는 `star01.tga` 파일을 텍스처 리소스로 로드하여, 파티클 렌더링에 사용할 수 있도록 만듭니다.
+
+```hlsl
+
+bool ParticleSystemClass::LoadTexture(ID3D11Device* device, ID3D11DeviceContext* deviceContext, char* filename)
+{
+    bool result;
+
+
+    // Create and initialize the texture object.
+    m_Texture = new TextureClass;
+
+    result = m_Texture->Initialize(device, deviceContext, filename);
+    if(!result)
+    {
+        return false;
+    }
+
+    return true;
+}
+
+```
+
+ReleaseTexture releases the texture resource that was used for rendering the particles.
+
+`ReleaseTexture` 함수는 파티클 렌더링에 사용된 텍스처 리소스를 해제합니다.
+
+The InitializeParticleSystem is where we initialize all the parameters and the particle system to be ready for frame processing.
+
+`InitializeParticleSystem` 함수는 모든 파라미터와 파티클 시스템을 초기화하여 프레임 처리에 대비하는 곳입니다.
+
+```hlsl
+
+bool ParticleSystemClass::InitializeParticleSystem()
+{
+    int i;
+
+```
+
+We start by initializing all the different elements that will be used for the particle properties. For this particle system we set the random deviation of where the particles will spawn in terms of location. We also set the speed they will fall at and the random deviation of speed for each particle. After that we set the size of the particles. And finally, we set how many particles will be emitted every second as well as the total amount of particles allowed in the system at one time.
+
+먼저, 파티클 속성에 사용될 다양한 요소들을 초기화하는 것부터 시작합니다.
+
+이 파티클 시스템에서는 다음과 같은 설정을 수행합니다:
+
+1. **파티클이 생성될 위치의 무작위 편차(Random Deviation)**를 설정하여, 일정한 위치가 아닌 범위 내에서 생성되도록 합니다.
+    
+2. 각 파티클이 **떨어지는 속도(Speed)**와, 그 속도에 대한 **무작위 편차**를 설정합니다.
+    
+3. 이어서 **파티클의 크기(Size)**를 설정합니다.
+    
+4. 마지막으로, **초당 방출될 파티클 수**와 **한 번에 시스템 내에 존재할 수 있는 최대 파티클 수**를 설정합니다.
+    
+
+이러한 설정을 통해 파티클의 움직임과 생성 패턴에 다양성과 자연스러움을 부여하게 됩니다.
