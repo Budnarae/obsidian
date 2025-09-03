@@ -757,6 +757,72 @@ public:
 
 The class functions are the regular initialize, shutdown, frame, and render.
 
-
+이 클래스는 보통 사용하는 `initialize`, `shutdown`, `frame`, `render` 함수들을 포함하고 있습니다.
 
 However, note that the Frame function is where we do all the work of updating, sorting, and rebuilding the of vertex buffer each frame so the particles can be rendered correctly.
+
+다만 유의해야 할 점은, 파티클이 제대로 렌더링되도록 하기 위해 `Frame` 함수 내에서 매 프레임마다 파티클의 업데이트, 정렬, 그리고 정점 버퍼의 재구성이 이루어진다는 점입니다.
+
+```hlsl
+
+    bool Initialize(ID3D11Device*, ID3D11DeviceContext*, char*);
+    void Shutdown();
+    bool Frame(float, ID3D11DeviceContext*);
+    void Render(ID3D11DeviceContext*);
+
+    ID3D11ShaderResourceView* GetTexture();
+    int GetIndexCount();
+
+private:
+    bool LoadTexture(ID3D11Device*, ID3D11DeviceContext*, char*);
+    void ReleaseTexture();
+
+    bool InitializeParticleSystem();
+    void ShutdownParticleSystem();
+
+    bool InitializeBuffers(ID3D11Device*);
+    void ShutdownBuffers();
+    void RenderBuffers(ID3D11DeviceContext*);
+	
+    void EmitParticles(float);
+    void UpdateParticles(float);
+    void KillParticles();
+    bool UpdateBuffers(ID3D11DeviceContext*);
+
+private:
+
+```
+
+We use a single texture for all the particles in this tutorial.
+
+이번 튜토리얼에서 구현하는 모든 파티클들은 하나의 텍스처를 사용하여 만든다.
+
+```hlsl
+
+    TextureClass* m_Texture;
+
+```
+
+The particle system is an array of particles made up from the ParticleType structure.
+
+파티클 시스템은 `ParticleType` 구조체로부터 생성된 파티클 배열이다.
+
+```hlsl
+
+	 ParticleType* m_particleList;
+
+```
+
+The next variables are for setting up a single vertex and index buffer.
+
+다음 변수들은 하나의 정점과 하나의 인덱스 버퍼를 설정하기 위한 것들이다.
+
+```hlsl
+
+	VertexType* m_vertices;
+    ID3D11Buffer* m_vertexBuffer, * m_indexBuffer;
+    int m_vertexCount, m_indexCount;
+
+```
+
+Note that the vertex buffer will be dynamic since it will change all particle positions each frame.
