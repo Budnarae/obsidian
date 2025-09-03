@@ -30,3 +30,31 @@ Additionally, we will also use blending to blend the particles together so that 
 
 Make sure to also read the summary after going over the tutorial as that is where I explain how to expand this basic particle system into a more advanced, robust, and efficient implementation.
 
+튜토리얼을 모두 살펴본 후에는 요약 부분도 꼭 읽어보세요.
+그곳에서 이 기본적인 파티클 시스템을 더 고급스럽고, 견고하며, 효율적인 구현으로 확장하는 방법을 설명하고 있습니다.
+
+# Framework
+
+The framework for this tutorial has the basics as usual.
+
+이번 튜토리얼을 위한 프레임워크는 언제나 그렇듯 기본적인 요소들로 구성된다.
+
+It also uses the TimerClass for timing when to emit new particles.
+
+이번에는 또한 새로운 입자를 방출할 타이밍을 구하기 위한 TimerClass를 사용한다.
+
+The new class used for shading the particles is called ParticleShaderClass.
+
+새로운 클래스인 ParticleShaderClass는 새로운 파티클을 셰이딩하기 위해 사용된다.
+
+And finally, the new particle system itself is encapsulated in the ParticleSystemClass.
+
+그리고 마침내, 새로운 파티클 시스템 그 스스로는 ParticleSystemClass에 의해 캡슐화될 것이다.
+
+![[c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg]]
+
+We will start the code section by looking at the particle shader first.
+
+우리는 파티클 셰이더 코드 부분부터 살펴볼 것이다.
+
+# Part
