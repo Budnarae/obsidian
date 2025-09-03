@@ -1312,3 +1312,216 @@ void ParticleSystemClass::ShutdownBuffers()
 }
 
 ```
+
+RenderBuffers is used to draw the particle buffers.
+
+`RenderBuffers`는 파티클 버퍼를 그리기 위해 사용한다.
+
+It places the geometry on the pipeline so that the shader can render it.
+
+이 함수는 셰이더가 파티클 버퍼를 렌더할 수 있도록 geometry를 파이프라인에 배치한다.
+
+```hlsl
+
+void ParticleSystemClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
+{
+    unsigned int stride;
+    unsigned int offset;
+
+
+    // Set vertex buffer stride and offset.
+    stride = sizeof(VertexType);
+    offset = 0;
+
+    // Set the vertex buffer to active in the input assembler so it can be rendered.
+    deviceContext->IASetVertexBuffers(0, 1, &m_vertexBuffer, &stride, &offset);
+
+    // Set the index buffer to active in the input assembler so it can be rendered.
+    deviceContext->IASetIndexBuffer(m_indexBuffer, DXGI_FORMAT_R32_UINT, 0);
+
+    // Set the type of primitive that should be rendered from this vertex buffer.
+    deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+
+    return;
+}
+
+```
+
+EmitParticles is called each frame to emit new particles. It determines when to emit a particle based on the frame time and the particles per second variable. If there is a new particle to be emitted then the new particle is created and its properties are set. After that it is inserted into the particle array in Z depth order. The particle array needs to be sorted in correct depth order for rendering to work using an alpha blend. If it is not sorted you will get some visual artifacts.
+
+`EmitParticles` 함수는 매 프레임 호출되어 **새로운 파티클을 방출**합니다.
+
+이 함수는 **프레임 시간(frame time)**과 **초당 방출할 파티클 수(particles per second)**를 기준으로 언제 파티클을 방출할지 결정합니다.
+
+새로운 파티클이 방출될 경우, 해당 파티클이 생성되고 속성들이 설정됩니다.
+
+그 후, 파티클은 **Z 깊이 순서(depth order)에 맞게 파티클 배열에 삽입**됩니다.
+
+파티클 배열은 **알파 블렌딩(투명도 처리)이 올바르게 동작하려면 깊이 순서대로 정렬되어야 하는데**, 정렬이 제대로 되지 않으면 시각적으로 이상한 아티팩트가 발생할 수 있습니다.
+
+따라서, 깊이 기반 정렬은 투명 파티클 렌더링에서 매우 중요한 단계입니다.
+
+```hlsl
+
+void ParticleSystemClass::EmitParticles(float frameTime)
+{
+    bool emitParticle, found;
+    float positionX, positionY, positionZ, velocity, red, green, blue;
+    int index, i, j;
+
+
+    // Increment the frame time.
+    m_accumulatedTime += frameTime;
+
+    // Set emit particle to false for now.
+    emitParticle = false;
+	
+    // Check if it is time to emit a new particle or not.
+    if(m_accumulatedTime > (1.0f / m_particlesPerSecond))
+    {
+        m_accumulatedTime = 0.0f;
+        emitParticle = true;
+    }
+
+    // If there are particles to emit then emit one per frame.
+    if((emitParticle == true) && (m_currentParticleCount < (m_maxParticles - 1)))
+    {
+        m_currentParticleCount++;
+
+        // Now generate the randomized particle properties.
+        positionX = (((float)rand() - (float)rand())/RAND_MAX) * m_particleDeviationX;
+        positionY = (((float)rand() - (float)rand())/RAND_MAX) * m_particleDeviationY;
+        positionZ = (((float)rand() - (float)rand())/RAND_MAX) * m_particleDeviationZ;
+
+        velocity = m_particleVelocity + (((float)rand() - (float)rand())/RAND_MAX) * m_particleVelocityVariation;
+
+        red   = (((float)rand() - (float)rand())/RAND_MAX) + 0.5f;
+        green = (((float)rand() - (float)rand())/RAND_MAX) + 0.5f;
+        blue  = (((float)rand() - (float)rand())/RAND_MAX) + 0.5f;
+
+        // Now since the particles need to be rendered from back to front for blending we have to sort the particle array.
+        // We will sort using Z depth so we need to find where in the list the particle should be inserted.
+        index = 0;
+        found = false;
+        while(!found)
+        {
+            if((m_particleList[index].active == false) || (m_particleList[index].positionZ < positionZ))
+            {
+                found = true;
+            }
+            else
+            {
+                index++;
+            }
+        }
+
+        // Now that we know the location to insert into we need to copy the array over by one position from the index to make room for the new particle.
+        i = m_currentParticleCount;
+        j = i - 1;
+
+        while(i != index)
+        {
+            m_particleList[i].positionX = m_particleList[j].positionX;
+            m_particleList[i].positionY = m_particleList[j].positionY;
+            m_particleList[i].positionZ = m_particleList[j].positionZ;
+            m_particleList[i].red       = m_particleList[j].red;
+            m_particleList[i].green     = m_particleList[j].green;
+            m_particleList[i].blue      = m_particleList[j].blue;
+            m_particleList[i].velocity  = m_particleList[j].velocity;
+            m_particleList[i].active    = m_particleList[j].active;
+            i--;
+            j--;
+        }
+
+        // Now insert it into the particle array in the correct depth order.
+        m_particleList[index].positionX = positionX;
+        m_particleList[index].positionY = positionY;
+        m_particleList[index].positionZ = positionZ;
+        m_particleList[index].red       = red;
+        m_particleList[index].green     = green;
+        m_particleList[index].blue      = blue;
+        m_particleList[index].velocity  = velocity;
+        m_particleList[index].active    = true;
+    }
+
+    return;
+}
+
+```
+
+The UpdateParticles function is where we update the properties of the particles each frame. In this tutorial we are updating the height position of the particle based on its speed which creates the particle water fall effect. This function can easily be extended to do numerous other effects and movement for the particles.
+
+`UpdateParticles` 함수는 **매 프레임마다 파티클의 속성들을 갱신하는 역할**을 합니다.
+
+이 튜토리얼에서는 파티클의 속도를 기준으로 **높이 위치(height position)를 업데이트**하여, 물이 떨어지는 듯한 워터폴(폭포) 효과를 만듭니다.
+
+이 함수는 확장하기 쉽기 때문에, 다양한 다른 효과나 파티클의 움직임을 추가하는 데 활용할 수 있습니다.
+
+즉, 기본 동작을 바탕으로 여러 가지 커스텀 동작을 구현할 수 있는 핵심 함수입니다.
+
+```hlsl
+
+void ParticleSystemClass::UpdateParticles(float frameTime)
+{
+    int i;
+
+
+    // Each frame we update all the particles by making them move downwards using their position, velocity, and the frame time.
+    for(i=0; i<m_currentParticleCount; i++)
+    {
+        m_particleList[i].positionY = m_particleList[i].positionY - (m_particleList[i].velocity * frameTime);
+    }
+
+    return;
+}
+
+```
+
+The KillParticles function is used to remove particles from the system that have exceeded their rendering life time. This function is called each frame to check if any particles should be removed. In this tutorial the function checks if they have dropped below -3.0 height, and if so, they are removed and the array is shifted back into depth order again.
+
+`KillParticles` 함수는 **렌더링 수명이 끝난 파티클을 시스템에서 제거하는 역할**을 합니다.
+
+이 함수는 매 프레임 호출되어, 제거 대상이 되는 파티클이 있는지 확인합니다.
+
+이 튜토리얼에서는 파티클의 높이 위치가 **-3.0 이하로 떨어졌는지 검사**하며, 조건을 만족하면 해당 파티클을 제거합니다.
+
+파티클이 제거되면 배열 내에서 **깊이 순서(depth order)를 유지하도록 나머지 파티클들을 앞으로 당겨 배열을 정렬**합니다.
+
+즉, 오래된 파티클을 정리하고, 올바른 렌더링 순서를 유지하는 중요한 함수입니다.
+
+```hlsl
+
+void ParticleSystemClass::KillParticles()
+{
+    int i, j;
+
+
+    // Kill all the particles that have gone below a certain height range.
+    for(i=0; i<m_maxParticles; i++)
+    {
+        if((m_particleList[i].active == true) && (m_particleList[i].positionY < -3.0f))
+        {
+            m_particleList[i].active = false;
+            m_currentParticleCount--;
+
+            // Now shift all the live particles back up the array to erase the destroyed particle and keep the array sorted correctly.
+            for(j=i; j<m_maxParticles-1; j++)
+            {
+                m_particleList[j].positionX = m_particleList[j+1].positionX;
+                m_particleList[j].positionY = m_particleList[j+1].positionY;
+                m_particleList[j].positionZ = m_particleList[j+1].positionZ;
+                m_particleList[j].red       = m_particleList[j+1].red;
+                m_particleList[j].green     = m_particleList[j+1].green;
+                m_particleList[j].blue      = m_particleList[j+1].blue;
+                m_particleList[j].velocity  = m_particleList[j+1].velocity;
+                m_particleList[j].active    = m_particleList[j+1].active;
+            }
+        }
+    }
+
+    return;
+}
+
+```
+
+The UpdateBuffers function is called each frame and rebuilds the entire dynamic vertex buffer with the updated position of all the particles in the particle system.
