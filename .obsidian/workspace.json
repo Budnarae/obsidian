@@ -11,15 +11,17 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "file": "public/DirectX11 API.canvas",
+                "viewState": {
+                  "x": 3977.011215896575,
+                  "y": 2792.7094540267412,
+                  "zoom": -0.13077477251343683
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
             }
           }
         ]
@@ -207,8 +209,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "index.md",
+    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
     "Pasted image 20250827125730.png",
