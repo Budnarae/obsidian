@@ -979,6 +979,48 @@ Each frame we first check if we need to clear some of the particles that have re
 
 Secondly, we emit new particles if it is time to do so.
 
-두번째로, 우리는 새로운 파티클을 분출한다
+두번째 동작은, 만약 그래야 할 때가 되었다면 새로운 파티클을 분출한다.
 
-After we emit new particles, we then update all the particles that are currently emitted, in this tutorial we update their height position to create a falling effect. After the particles have been updated, we then need to update the vertex buffer with the updated location of each particle. The vertex buffer is dynamic so updating it is easy to do.
+After we emit new particles, we then update all the particles that are currently emitted, in this tutorial we update their height position to create a falling effect.
+
+새로운 파티클을 분출한 다음에, 현재 분출 중인 파티클들을 갱신한다. 이번 튜토리얼에서 낙하 효과를 주기위해 입자의 높이를 갱신할 것이다.
+
+After the particles have been updated, we then need to update the vertex buffer with the updated location of each particle.
+
+파티클이 업데이트된 다음에, 정점 버퍼를 각 파티클들의 수정된 위치로 갱신해야 한다.
+
+The vertex buffer is dynamic so updating it is easy to do.
+
+정점 버퍼는 동적이므로 갱신은 쉬운 일이다.
+
+```hlsl
+
+bool ParticleSystemClass::Frame(float frameTime, ID3D11DeviceContext* deviceContext)
+{
+    bool result;
+
+
+    // Release old particles.
+    KillParticles();
+
+    // Emit new particles.
+    EmitParticles(frameTime);
+	
+    // Update the position of the particles.
+    UpdateParticles(frameTime);
+
+    // Update the dynamic vertex buffer with the new position of each particle.
+    result = UpdateBuffers(deviceContext);
+    if(!result)
+    {
+        return false;
+    }
+
+    return true;
+}
+
+```
+
+The Render function calls the RenderBuffers private function to render the particles.
+
+`Render` 함수는 파티클을 렌더하기 위해 `RenderBuffers` private 함수를 부른다.
