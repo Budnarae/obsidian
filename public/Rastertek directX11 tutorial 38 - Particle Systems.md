@@ -1525,3 +1525,188 @@ void ParticleSystemClass::KillParticles()
 ```
 
 The UpdateBuffers function is called each frame and rebuilds the entire dynamic vertex buffer with the updated position of all the particles in the particle system.
+
+`UpdateBuffers` 함수는 매 프레임 호출되며, 파티클 시스템 내 모든 파티클의 **업데이트된 위치 정보를 반영하여 동적 정점 버퍼를 다시 생성(재구성)** 합니다.
+
+```hlsl
+
+bool ParticleSystemClass::UpdateBuffers(ID3D11DeviceContext* deviceContext)
+{
+    int index, i;
+    HRESULT result;
+    D3D11_MAPPED_SUBRESOURCE mappedResource;
+    VertexType* verticesPtr;
+
+
+    // Initialize vertex array to zeros at first.
+    memset(m_vertices, 0, (sizeof(VertexType) * m_vertexCount));
+
+    // Now build the vertex array from the particle list array.  Each particle is a quad made out of two triangles.
+    index = 0;
+
+    for(i=0; i<m_currentParticleCount; i++)
+    {
+        // Bottom left.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX - m_particleSize, m_particleList[i].positionY - m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(0.0f, 1.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+
+        // Top left.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX - m_particleSize, m_particleList[i].positionY + m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(0.0f, 0.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+
+        // Bottom right.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX + m_particleSize, m_particleList[i].positionY - m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(1.0f, 1.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+
+        // Bottom right.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX + m_particleSize, m_particleList[i].positionY - m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(1.0f, 1.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+
+        // Top left.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX - m_particleSize, m_particleList[i].positionY + m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(0.0f, 0.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+
+        // Top right.
+        m_vertices[index].position = XMFLOAT3(m_particleList[i].positionX + m_particleSize, m_particleList[i].positionY + m_particleSize, m_particleList[i].positionZ);
+        m_vertices[index].texture = XMFLOAT2(1.0f, 0.0f);
+        m_vertices[index].color = XMFLOAT4(m_particleList[i].red, m_particleList[i].green, m_particleList[i].blue, 1.0f);
+        index++;
+    }
+	
+    // Lock the vertex buffer.
+    result = deviceContext->Map(m_vertexBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+    if(FAILED(result))
+    {
+        return false;
+    }
+
+    // Get a pointer to the data in the vertex buffer.
+    verticesPtr = (VertexType*)mappedResource.pData;
+
+    // Copy the data into the vertex buffer.
+    memcpy(verticesPtr, (void*)m_vertices, (sizeof(VertexType) * m_vertexCount));
+
+    // Unlock the vertex buffer.
+    deviceContext->Unmap(m_vertexBuffer, 0);
+
+    return true;
+}
+
+```
+
+# D3dclass.cpp
+
+In the D3DClass we needed to make a change to the Initialize function. We need to modify the alpha blending equation.
+
+As we are going to blend the particles together when they overlap, we need to setup a blend state that works well for our particles. In this tutorial we use additive blending which adds the colors of the particles together when they overlap. To do so we set the SrcBlend (the incoming particle texture) to D3D11_BLEND_ONE so that all the color is added from it to the result. And we also set the DestBlend (the back buffer where we are writing the texture to) to D3D11_BLEND_ONE so that all the particles already written to the back buffer get added to the incoming texture. So, the equation ends up being color = (1 * source) + (1 * destination).
+
+Note that our particles need to be sorted by depth for this equation to work. If they aren't sorted some of the particles will show their black edges creating visual artifacts that ruin the expected result.
+
+`D3DClass`의 `Initialize` 함수에서 알파 블렌딩 방정식을 수정해야 합니다.
+
+파티클이 겹칠 때 서로 블렌딩되도록 하기 위해, 파티클에 적합한 블렌드 상태를 설정해야 합니다. 이 튜토리얼에서는 **애드티브 블렌딩(Additive Blending)** 방식을 사용합니다. 애드티브 블렌딩은 파티클이 겹칠 때 색상을 더하는 방식입니다.
+
+이를 위해 다음과 같이 설정합니다:
+
+- **SrcBlend** (들어오는 파티클 텍스처) 를 `D3D11_BLEND_ONE`으로 설정하여, 파티클 색상이 결과에 100% 더해지도록 합니다.
+    
+- **DestBlend** (렌더링 대상인 백버퍼) 도 `D3D11_BLEND_ONE`으로 설정하여, 백버퍼에 이미 그려진 파티클 색상도 100% 더해지도록 합니다.
+    
+
+결과적으로 블렌딩 방정식은 다음과 같이 됩니다:  
+`color = (1 * source) + (1 * destination)`
+
+**중요:** 이 블렌딩 방정식이 제대로 작동하려면 파티클이 **깊이(depth) 순서대로 정렬**되어 있어야 합니다.  
+정렬이 되어 있지 않으면 일부 파티클에서 검은 테두리(블랙 에지)가 나타나 시각적 이상 현상(아티팩트)이 발생하여 원하는 결과를 얻기 어렵습니다.
+
+따라서 깊이 정렬과 올바른 블렌딩 설정은 파티클 렌더링에서 핵심 요소입니다.
+
+```hlsl
+
+// Create an alpha enabled blend state description.
+blendStateDescription.RenderTarget[0].BlendEnable = TRUE;
+blendStateDescription.RenderTarget[0].SrcBlend = D3D11_BLEND_ONE;
+blendStateDescription.RenderTarget[0].DestBlend = D3D11_BLEND_ONE;
+blendStateDescription.RenderTarget[0].BlendOp = D3D11_BLEND_OP_ADD;
+blendStateDescription.RenderTarget[0].SrcBlendAlpha = D3D11_BLEND_ONE;
+blendStateDescription.RenderTarget[0].DestBlendAlpha = D3D11_BLEND_ZERO;
+blendStateDescription.RenderTarget[0].BlendOpAlpha = D3D11_BLEND_OP_ADD;
+blendStateDescription.RenderTarget[0].RenderTargetWriteMask = 0x0f;
+
+```
+
+# Applicationclass.h
+
+```hlsl
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: applicationclass.h
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _APPLICATIONCLASS_H_
+#define _APPLICATIONCLASS_H_
+
+
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "d3dclass.h"
+#include "inputclass.h"
+#include "cameraclass.h"
+
+```
+
+The header for the TimerClass will be needed for timing the particles.
+
+파티클의 타이밍을 처리하기 위해서는 `TimerClass`의 헤더 파일이 필요합니다.
+
+The headers for the new ParticleShaderClass and ParticleSystemClass are added here to the ApplicationClass header file.
+
+`ParticleShaderClass`와 `ParticleSystemClass`의 헤더 파일은 **`ApplicationClass`의 헤더 파일에 추가되어야 합니다.**
+
+```hlsl
+
+#include "particlesystemclass.h"
+#include "particleshaderclass.h"
+
+
+/////////////
+// GLOBALS //
+/////////////
+const bool FULL_SCREEN = false;
+const bool VSYNC_ENABLED = true;
+const float SCREEN_DEPTH = 1000.0f;
+const float SCREEN_NEAR = 0.3f;
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: ApplicationClass
+////////////////////////////////////////////////////////////////////////////////
+class ApplicationClass
+{
+public:
+    ApplicationClass();
+    ApplicationClass(const ApplicationClass&);
+    ~ApplicationClass();
+
+    bool Initialize(int, int, HWND);
+    void Shutdown();
+    bool Frame(InputClass*);
+
+private:
+    bool Render();
+
+private:
+    D3DClass* m_Direct3D;
+    CameraClass* m_Camera;
+
+```
