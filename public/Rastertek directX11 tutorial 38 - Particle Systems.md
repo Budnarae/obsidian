@@ -1710,3 +1710,83 @@ private:
     CameraClass* m_Camera;
 
 ```
+
+The TimerClass variable is added here.
+
+타이머 클래스 변수는 여기에 추가된다.
+
+```hlsl
+
+	TimerClass* m_Timer;
+
+```
+
+We also add private member variables for the new ParticleShaderClass and ParticleSystemClass.
+
+또한, **`ParticleShaderClass`와 `ParticleSystemClass`에 대한 private 멤버 변수도 `ApplicationClass`에 추가해야 합니다.**
+
+```hlsl
+
+	ParticleSystemClass* m_ParticleSystem;
+    ParticleShaderClass* m_ParticleShader;
+};
+
+#endif
+
+```
+
+# Applicationclass.cpp
+
+```hlsl
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: applicationclass.cpp
+////////////////////////////////////////////////////////////////////////////////
+#include "applicationclass.h"
+
+```
+
+Initialize the pointers to null in the class constructor.
+
+클래스 생성자에서 포인터를 null로 초기화한다.
+
+```hlsl
+
+ApplicationClass::ApplicationClass()
+{
+    m_Direct3D = 0;
+    m_Camera = 0;
+    m_Timer = 0;
+    m_ParticleSystem = 0;
+    m_ParticleShader = 0;
+}
+
+
+ApplicationClass::ApplicationClass(const ApplicationClass& other)
+{
+}
+
+
+ApplicationClass::~ApplicationClass()
+{
+}
+
+
+bool ApplicationClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
+{
+    char textureFilename[128];
+    bool result;
+
+
+    // Create and initialize the Direct3D object.
+    m_Direct3D = new D3DClass;
+
+    result = m_Direct3D->Initialize(screenWidth, screenHeight, VSYNC_ENABLED, hwnd, FULL_SCREEN, SCREEN_DEPTH, SCREEN_NEAR);
+    if(!result)
+    {
+        MessageBox(hwnd, L"Could not initialize Direct3D.", L"Error", MB_OK);
+        return false;
+    }
+
+```
+
