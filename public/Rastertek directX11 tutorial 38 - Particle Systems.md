@@ -683,3 +683,33 @@ void ParticleShaderClass::RenderShader(ID3D11DeviceContext* deviceContext, int i
 
 
 ```
+
+# Particlesystemclass.h
+
+```hlsl
+
+//////////////
+// INCLUDES //
+//////////////
+#include <d3d11.h>
+#include <directxmath.h>
+using namespace DirectX;
+
+
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
+#include "textureclass.h"
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: ParticleSystemClass
+////////////////////////////////////////////////////////////////////////////////
+class ParticleSystemClass
+{
+private:
+
+```
+
+The VertexType for rendering particles just requires position, texture coordinates, and color to match up with the ParticleType properties.
+
