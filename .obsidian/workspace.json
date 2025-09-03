@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Rastertek directX11 tutorial 38 - Particle Systems"
+              "title": "index"
             }
           }
         ]
@@ -208,10 +208,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
     "index.md",
-    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "Pasted image 20250827125730.png",
     "public/High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "public/git 치트 시트.md",
@@ -224,7 +224,6 @@
     "재료/이미지/Pasted image 20250725144227.png",
     "재료/이미지/9cc6e1ed3d0d535a5f3c3812b5acd537_MD5.jpeg",
     "재료/이미지/96406e8cfcd2a4132eec85735dcf0781_MD5.jpeg",
-    "재료/이미지/8de55a1c149d557ef0ac0c190529e6e8_MD5.jpeg",
     "재료/이미지",
     "재료",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
