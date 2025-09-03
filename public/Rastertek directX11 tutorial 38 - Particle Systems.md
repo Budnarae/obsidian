@@ -1181,4 +1181,134 @@ Initialize the two counters to zero to start with.
 
 The ShutdownParticleSystem function releases the particle array during shutdown.
 
-`ShutdownParticleSystem` 함수는 셧다운 시 파티클 배열을 해체
+`ShutdownParticleSystem` 함수는 셧다운 시 파티클 배열을 해제한다.
+
+```hlsl
+
+void ParticleSystemClass::ShutdownParticleSystem()
+{
+    // Release the particle list.
+    if(m_particleList)
+    {
+        delete [] m_particleList;
+        m_particleList = 0;
+    }
+
+    return;
+}
+
+```
+
+InitializeBuffers prepares the vertex and index buffer that will be used for rendering the particles. As the particles will be updated every frame the vertex buffer will need to be created as a dynamic buffer. At the beginning there are no particles emitted so the vertex buffer will be created empty.
+
+`InitializeBuffers` 함수는 파티클 렌더링에 사용될 정점(Vertex) 버퍼와 인덱스(Index) 버퍼를 준비합니다.
+
+파티클이 매 프레임마다 업데이트되기 때문에, 정점 버퍼는 동적 버퍼(Dynamic Buffer)로 생성되어야 합니다.
+
+초기에는 방출된 파티클이 없으므로, 정점 버퍼는 빈 상태로 생성됩니다.
+
+즉, 이후 프레임 처리 중에 버퍼가 계속 갱신될 준비를 하는 단계입니다.
+
+```hlsl
+
+bool ParticleSystemClass::InitializeBuffers(ID3D11Device* device)
+{
+    unsigned long* indices;
+    int i;
+    D3D11_BUFFER_DESC vertexBufferDesc, indexBufferDesc;
+    D3D11_SUBRESOURCE_DATA vertexData, indexData;
+    HRESULT result;
+
+
+    // Set the maximum number of vertices in the vertex array.
+    m_vertexCount = m_maxParticles * 6;
+
+    // Set the maximum number of indices in the index array.
+    m_indexCount = m_vertexCount;
+
+    // Create the vertex array for the particles that will be rendered.
+    m_vertices = new VertexType[m_vertexCount];
+
+    // Create the index array.
+    indices = new unsigned long[m_indexCount];
+
+    // Initialize vertex array to zeros at first.
+    memset(m_vertices, 0, (sizeof(VertexType) * m_vertexCount));
+
+    // Initialize the index array.
+    for(i=0; i<m_indexCount; i++)
+    {
+        indices[i] = i;
+    }
+
+```
+
+Set the vertex buffer description to dynamic (D3D11_USAGE_DYNAMIC).
+
+정점 버퍼 명세를 dynamic (D3D11_USAGE_DYNAMIC)으로 설정한다.
+
+```hlsl
+
+	// Set up the description of the dynamic vertex buffer.
+    vertexBufferDesc.Usage = D3D11_USAGE_DYNAMIC;
+    vertexBufferDesc.ByteWidth = sizeof(VertexType) * m_vertexCount;
+    vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+    vertexBufferDesc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
+    vertexBufferDesc.MiscFlags = 0;
+    vertexBufferDesc.StructureByteStride = 0;
+
+    // Give the subresource structure a pointer to the vertex data.
+    vertexData.pSysMem = m_vertices;
+    vertexData.SysMemPitch = 0;
+    vertexData.SysMemSlicePitch = 0;
+
+    // Now finally create the vertex buffer.
+    result = device->CreateBuffer(&vertexBufferDesc, &vertexData, &m_vertexBuffer);
+    if(FAILED(result))
+    {
+        return false;
+    }
+
+```
+
+The index buffer can stay static (D3D11_USAGE_DEFAULT) since the data in it never changes.
+
+인덱스 버퍼는 데이터가 변하지 않기 때문에 `D3D11_USAGE_DEFAULT`(정적 버퍼)로 유지해도 됩니다.
+
+The ShutdownBuffers function releases the vertex and index buffer during shutdown.
+
+`ShutdownBuffers` 함수는 셧다운 동안 정점 버퍼와 인덱스 버퍼를 해제한다.
+
+It also releases the vertex array.
+
+또한 정점 배열도 해체한다.
+
+```hlsl
+
+void ParticleSystemClass::ShutdownBuffers()
+{
+    // Release the index buffer.
+    if(m_indexBuffer)
+    {
+        m_indexBuffer->Release();
+        m_indexBuffer = 0;
+    }
+
+    // Release the vertex buffer.
+    if(m_vertexBuffer)
+    {
+        m_vertexBuffer->Release();
+        m_vertexBuffer = 0;
+    }
+
+    // Release the vertices.
+    if(m_vertices)
+    {
+        delete [] m_vertices;
+        m_vertices = 0;
+    }
+
+    return;
+}
+
+```
