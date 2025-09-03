@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 3977.011215896575,
-                  "y": 2792.7094540267412,
-                  "zoom": -0.13077477251343683
-                }
+                "file": "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "Rastertek directX11 tutorial 38 - Particle Systems"
             }
           }
         ]
@@ -209,6 +207,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/DirectX11 API.canvas",
     "index.md",
     "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
@@ -216,7 +215,6 @@
     "Pasted image 20250827125730.png",
     "public/High-Level Shader Language Specification(Working Draft August 7, 2025).md",
     "public/git 치트 시트.md",
-    "public/DirectX11 API.canvas",
     "conflict-files-obsidian-git.md",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
     "재료/이미지/e0dca5c86a95290749326a0cd5efafc6_MD5.jpeg",
