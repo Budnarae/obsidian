@@ -258,7 +258,7 @@
       "styleAttributes": {
         "textAlign": "center"
       },
-      "text": "UIManager\n\nimgui를 사용하여 UI 렌더링을 관리",
+      "text": "UIManager\n\nimgui 및 텍스처 렌더링을 사용하여 UI 렌더링을 관리",
       "type": "text",
       "width": 260,
       "x": -920,
@@ -277,18 +277,6 @@
       "y": 560
     },
     {
-      "height": 120,
-      "id": "8f0a2a3ba3bb1481",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "SoundManager\n\n게임 사운드를 관리",
-      "type": "text",
-      "width": 260,
-      "x": -920,
-      "y": 880
-    },
-    {
       "height": 240,
       "id": "f709b0afaab83d97",
       "styleAttributes": {
@@ -299,6 +287,30 @@
       "width": 260,
       "x": -600,
       "y": 880
+    },
+    {
+      "height": 120,
+      "id": "8f0a2a3ba3bb1481",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "SoundManager\n\n게임 사운드를 관리",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 800
+    },
+    {
+      "height": 120,
+      "id": "81d0e76c77967a54",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "GameManager\n\n게임의 주기 관리",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 1000
     }
   ]
 }
