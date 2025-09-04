@@ -275,6 +275,30 @@
       "width": 260,
       "x": -600,
       "y": 560
+    },
+    {
+      "height": 120,
+      "id": "8f0a2a3ba3bb1481",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "SoundManager\n\n게임 사운드를 관리",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 880
+    },
+    {
+      "height": 240,
+      "id": "f709b0afaab83d97",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "MapManager\n\n맵 파일을 파싱하여 대응하는 UBlock을 상속하는 오브젝트를 생성 및 관리.\n\n다음 스테이지로 넘어갔을 때 맵을 갱신",
+      "type": "text",
+      "width": 260,
+      "x": -600,
+      "y": 880
     }
   ]
 }
