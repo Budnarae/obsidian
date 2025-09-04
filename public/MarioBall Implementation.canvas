@@ -90,6 +90,16 @@
       "toFloating": false,
       "toNode": "8488e12e1a5c0b5b",
       "toSide": "top"
+    },
+    {
+      "fromNode": "d0e6b77884416048",
+      "fromSide": "bottom",
+      "id": "66c83474bf5748fb",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "e3f648e2b24a9314",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -99,6 +109,7 @@
   },
   "nodes": [
     {
+      "color": "1",
       "height": 60,
       "id": "a513862c778b46b7",
       "styleAttributes": {
@@ -111,6 +122,7 @@
       "y": -340
     },
     {
+      "color": "2",
       "height": 60,
       "id": "47253f588254bde0",
       "styleAttributes": {
@@ -123,6 +135,7 @@
       "y": -120
     },
     {
+      "color": "4",
       "height": 60,
       "id": "d0e6b77884416048",
       "styleAttributes": {
@@ -135,6 +148,7 @@
       "y": -120
     },
     {
+      "color": "3",
       "height": 60,
       "id": "bcb12ad7bcc43681",
       "styleAttributes": {
@@ -147,6 +161,7 @@
       "y": 80
     },
     {
+      "color": "3",
       "height": 60,
       "id": "9fd50474a2b5ea72",
       "styleAttributes": {
@@ -159,6 +174,7 @@
       "y": 200
     },
     {
+      "color": "3",
       "height": 60,
       "id": "b378fa67989e72c4",
       "styleAttributes": {
@@ -171,6 +187,7 @@
       "y": 340
     },
     {
+      "color": "3",
       "height": 60,
       "id": "e1bde37acdfa7482",
       "styleAttributes": {
@@ -183,6 +200,7 @@
       "y": 80
     },
     {
+      "color": "3",
       "height": 60,
       "id": "259b0c775e2874b2",
       "styleAttributes": {
@@ -195,6 +213,7 @@
       "y": 200
     },
     {
+      "color": "3",
       "height": 60,
       "id": "88dfadb20e7ae6b3",
       "styleAttributes": {
@@ -207,6 +226,7 @@
       "y": 340
     },
     {
+      "color": "3",
       "height": 60,
       "id": "8488e12e1a5c0b5b",
       "styleAttributes": {
@@ -217,6 +237,44 @@
       "width": 260,
       "x": -280,
       "y": 80
+    },
+    {
+      "height": 240,
+      "id": "e3f648e2b24a9314",
+      "styleAttributes": {
+        "border": "dashed",
+        "shape": null,
+        "textAlign": "center"
+      },
+      "text": "Frame\n\n각 프레임마다 공의 움직임을 계산하여 위치를 갱신.\n\n충돌 대상에 따른 이벤트 처리",
+      "type": "text",
+      "width": 260,
+      "x": 40,
+      "y": 80
+    },
+    {
+      "height": 140,
+      "id": "f96a8fa6f2ac18fb",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UIManager\n\nimgui를 사용하여 UI 렌더링을 관리",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 560
+    },
+    {
+      "height": 180,
+      "id": "39f5d4246439c26f",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "ParticleManager\n\n오래된 파티클의 소멸\n새로운 파티클의 생성\n파티클의 스폰 위치를 관리",
+      "type": "text",
+      "width": 260,
+      "x": -600,
+      "y": 560
     }
   ]
 }
