@@ -1,0 +1,222 @@
+{
+  "edges": [
+    {
+      "fromNode": "a513862c778b46b7",
+      "fromSide": "bottom",
+      "id": "73382b68b6e0ab20",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "47253f588254bde0",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "a513862c778b46b7",
+      "fromSide": "bottom",
+      "id": "e45165e1634c15c1",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "d0e6b77884416048",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "64531027446d7e83",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "bcb12ad7bcc43681",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "ae2df7c8e281f99f",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "9fd50474a2b5ea72",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "ab989fe89eaa90d4",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "b378fa67989e72c4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "92a14db35a018078",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "e1bde37acdfa7482",
+      "toSide": "top"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "a2d1edecbc1cf712",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "259b0c775e2874b2",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "485d8c301e798144",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "88dfadb20e7ae6b3",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "47253f588254bde0",
+      "fromSide": "bottom",
+      "id": "9653efd36904ec69",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "8488e12e1a5c0b5b",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 60,
+      "id": "a513862c778b46b7",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UPrimitive",
+      "type": "text",
+      "width": 260,
+      "x": -220,
+      "y": -340
+    },
+    {
+      "height": 60,
+      "id": "47253f588254bde0",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UBlock",
+      "type": "text",
+      "width": 260,
+      "x": -480,
+      "y": -120
+    },
+    {
+      "height": 60,
+      "id": "d0e6b77884416048",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UBall",
+      "type": "text",
+      "width": 260,
+      "x": 40,
+      "y": -120
+    },
+    {
+      "height": 60,
+      "id": "bcb12ad7bcc43681",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UObstacle\n ",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 80
+    },
+    {
+      "height": 60,
+      "id": "9fd50474a2b5ea72",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UDestination",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 200
+    },
+    {
+      "height": 60,
+      "id": "b378fa67989e72c4",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UPlatform\n",
+      "type": "text",
+      "width": 260,
+      "x": -920,
+      "y": 340
+    },
+    {
+      "height": 60,
+      "id": "e1bde37acdfa7482",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UTrampolin",
+      "type": "text",
+      "width": 260,
+      "x": -600,
+      "y": 80
+    },
+    {
+      "height": 60,
+      "id": "259b0c775e2874b2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UPortalEntry",
+      "type": "text",
+      "width": 260,
+      "x": -600,
+      "y": 200
+    },
+    {
+      "height": 60,
+      "id": "88dfadb20e7ae6b3",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UPortalExit",
+      "type": "text",
+      "width": 260,
+      "x": -600,
+      "y": 340
+    },
+    {
+      "height": 60,
+      "id": "8488e12e1a5c0b5b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UStar",
+      "type": "text",
+      "width": 260,
+      "x": -280,
+      "y": 80
+    }
+  ]
+}
