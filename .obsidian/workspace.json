@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Imgui wiki Getting Started Win32 + DirectX11 번역본"
             }
           }
         ]
@@ -207,10 +207,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
+    "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/복사 생성자.md",
     "public/얕은 복사.md",
     "public/깊은 복사.md",
-    "index.md",
     "public/MarioBall Implementation.canvas",
     "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "public/DirectX11 API.canvas",
@@ -246,7 +247,6 @@
     "public/DirectX API.md",
     "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "private/크래프톤 정글 게임테크랩 지원서.md",
-    "private/42Seoul/matrix pdf 번역.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
