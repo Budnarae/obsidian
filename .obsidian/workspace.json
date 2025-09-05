@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/MarioBall Implementation.canvas",
-                "viewState": {
-                  "x": -470.85069192852154,
-                  "y": 894.0466204995555,
-                  "zoom": 0.3333333333333332
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "MarioBall Implementation"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -209,8 +207,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "public/MarioBall Implementation.canvas",
+    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "public/DirectX11 API.canvas",
     "index.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
