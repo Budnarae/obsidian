@@ -11,15 +11,17 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "file": "public/DirectX11 API.canvas",
+                "viewState": {
+                  "x": 3343.2278139408877,
+                  "y": 341.6992559287758,
+                  "zoom": -0.10884282708529625
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
             }
           }
         ]
@@ -207,9 +209,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
-    "index.md",
     "public/복사 생성자.md",
     "public/얕은 복사.md",
     "public/깊은 복사.md",
