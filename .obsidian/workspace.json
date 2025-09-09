@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/ImGui README.md 번역.md",
-                "mode": "source",
+                "file": "index.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ImGui README.md 번역"
+              "title": "index"
             }
           }
         ]
@@ -207,8 +207,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/ImGui README.md 번역.md",
+    "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "index.md",
     "public/복사 생성자.md",
     "public/얕은 복사.md",
