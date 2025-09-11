@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 3602.0978066173943,
-                  "y": 3192.7014837040115,
-                  "zoom": -1.1102230246251565e-16
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -209,6 +207,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/DirectX11 API.canvas",
     "index.md",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
@@ -217,7 +216,6 @@
     "public/깊은 복사.md",
     "public/MarioBall Implementation.canvas",
     "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
-    "public/DirectX11 API.canvas",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
     "Pasted image 20250827125730.png",
@@ -248,7 +246,6 @@
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
     "public/DirectX SDK Document - Tutorial 0 Win32 Basics.md",
     "public/DirectX API.md",
-    "public/Direct3D 11 MSDN - How To; Create a Reference Device.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
