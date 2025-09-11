@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "private/Untitled.canvas",
+                "file": "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
                 "viewState": {
                   "x": 0,
-                  "y": 0,
+                  "y": -465,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "게임테크랩 3주차 베이스 코드 플로우"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -210,7 +211,7 @@
   "active": "2bc37f46e1109b5d",
   "lastOpenFiles": [
     "index.md",
-    "private/Untitled.canvas",
+    "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
     "private/크래프톤 게임테크랩 3주차 발제.md",
