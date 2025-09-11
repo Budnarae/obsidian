@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "af0fd9fea77f0a8b",
         "type": "tabs",
         "children": [
           {
@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "private/크래프톤 게임테크랩 3주차 발제.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "크래프톤 게임테크랩 3주차 발제"
             }
           }
         ]
@@ -205,10 +205,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "public/DirectX11 API.canvas",
     "index.md",
+    "private/크래프톤 게임테크랩 3주차 발제.md",
+    "public/DirectX11 API.canvas",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/복사 생성자.md",
