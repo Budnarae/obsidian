@@ -4,24 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8222a0506d0a25fb",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "2bc37f46e1109b5d",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": -465,
-                  "zoom": 0
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "게임테크랩 3주차 베이스 코드 플로우"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -81,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -208,10 +205,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "2bc37f46e1109b5d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
+    "index.md",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
     "private/크래프톤 게임테크랩 3주차 발제.md",
