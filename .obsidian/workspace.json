@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "private/크래프톤 게임테크랩 3주차 발제.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "크래프톤 게임테크랩 3주차 발제"
             }
           }
         ]
@@ -205,10 +205,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
-    "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "index.md",
+    "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
     "private/크래프톤 게임테크랩 3주차 발제.md",
