@@ -748,15 +748,6 @@
       "y": -280
     },
     {
-      "height": 3195,
-      "id": "00464cd421a61072",
-      "label": "Graphics Pipeline",
-      "type": "group",
-      "width": 400,
-      "x": 3680,
-      "y": -40
-    },
-    {
       "height": 1620,
       "id": "8da87659fd016780",
       "label": "Shader",
@@ -773,6 +764,15 @@
       "width": 440,
       "x": 2240,
       "y": -20
+    },
+    {
+      "height": 3195,
+      "id": "00464cd421a61072",
+      "label": "Graphics Pipeline",
+      "type": "group",
+      "width": 400,
+      "x": 3680,
+      "y": -40
     },
     {
       "height": 755,
@@ -848,20 +848,6 @@
       "y": 2395
     },
     {
-      "color": "3",
-      "height": 60,
-      "id": "1ca8823d9f10e80b",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "GetBuffer",
-      "type": "text",
-      "width": 120,
-      "x": 120,
-      "y": 2735
-    },
-    {
       "height": 60,
       "id": "a85f542caa52cbcb",
       "styleAttributes": {
@@ -888,6 +874,61 @@
       "y": 2735
     },
     {
+      "height": 60,
+      "id": "ed96cb4a2c0986d8",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_INPUT_ELEMENT_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_input_element_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1650,
+      "y": -165
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "24d5889d9cd4cd39",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateDepthStencilView",
+      "type": "text",
+      "width": 260,
+      "x": 1300,
+      "y": 3000
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "55b49ae27993020a",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateBuffer](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer)",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 130
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0cef86914dc4c535",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "UpdateResource",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 590
+    },
+    {
       "color": "1",
       "height": 60,
       "id": "0a2882dbc5e965f2",
@@ -900,46 +941,6 @@
       "width": 260,
       "x": 1870,
       "y": 2865
-    },
-    {
-      "color": "1",
-      "height": 60,
-      "id": "b5848ad2304f074d",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "[CreateRasterizeState](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createrasterizerstate)",
-      "type": "text",
-      "width": 260,
-      "x": 1880,
-      "y": 1995
-    },
-    {
-      "height": 60,
-      "id": "2d53f21d267bda44",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ID3D11RasterizeState",
-      "type": "text",
-      "width": 260,
-      "x": 2320,
-      "y": 1995
-    },
-    {
-      "height": 80,
-      "id": "abbf87f436258546",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "RenderTargetView (ID3D11RenderTargetView)",
-      "type": "text",
-      "width": 260,
-      "x": 2320,
-      "y": 2855
     },
     {
       "height": 60,
@@ -982,20 +983,6 @@
       "y": 2220
     },
     {
-      "color": "1",
-      "height": 60,
-      "id": "1f3285b4696fd9fd",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "CreateVertexShader",
-      "type": "text",
-      "width": 260,
-      "x": -480,
-      "y": 725
-    },
-    {
       "height": 60,
       "id": "a67019427055d8ee",
       "styleAttributes": {
@@ -1024,6 +1011,73 @@
     },
     {
       "height": 60,
+      "id": "14017d2c6cb04951",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_render_target_view_desc)",
+      "type": "text",
+      "width": 300,
+      "x": 1460,
+      "y": 2765
+    },
+    {
+      "height": 60,
+      "id": "152f80b2e8f146fc",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "DepthStencilBuffer (ID3D11Texture2D)",
+      "type": "text",
+      "width": 260,
+      "x": 910,
+      "y": 3000
+    },
+    {
+      "height": 90,
+      "id": "88064e8414efc74a",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "Shader Resource(ID3D11ShaderResourceView)",
+      "type": "text",
+      "width": 290,
+      "x": 890,
+      "y": 2380
+    },
+    {
+      "color": "3",
+      "height": 60,
+      "id": "1ca8823d9f10e80b",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "GetBuffer",
+      "type": "text",
+      "width": 120,
+      "x": 120,
+      "y": 2735
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "1f3285b4696fd9fd",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "CreateVertexShader",
+      "type": "text",
+      "width": 260,
+      "x": -480,
+      "y": 725
+    },
+    {
+      "height": 60,
       "id": "31aeb1d6b49e4949",
       "styleAttributes": {
         "shape": "parallelogram",
@@ -1047,6 +1101,60 @@
       "width": 260,
       "x": -160,
       "y": 725
+    },
+    {
+      "height": 60,
+      "id": "170ad5b0c2ecf9cc",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1240,
+      "y": 40
+    },
+    {
+      "height": 60,
+      "id": "deb4eeba2d9f3295",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[D3D11_SUBRESOURCE_DATA](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_subresource_data)",
+      "type": "text",
+      "width": 260,
+      "x": 1240,
+      "y": 180
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "7b47eec875f81929",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Unmap",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 360
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "6e3380f1aa332406",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Map",
+      "type": "text",
+      "width": 260,
+      "x": 1610,
+      "y": 470
     },
     {
       "height": 100,
@@ -1099,98 +1207,6 @@
       "width": 260,
       "x": -1420,
       "y": -590
-    },
-    {
-      "color": "1",
-      "height": 60,
-      "id": "ee6428d288f82746",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "[CreateInputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11device-createinputlayout)",
-      "type": "text",
-      "width": 260,
-      "x": 2010,
-      "y": -165
-    },
-    {
-      "height": 60,
-      "id": "3170efdc8a505cf6",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_RASTERIZER_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_rasterizer_desc)",
-      "type": "text",
-      "width": 280,
-      "x": 1870,
-      "y": 1880
-    },
-    {
-      "height": 60,
-      "id": "62e1ee8f9aef775d",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[ID3D11InputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nn-d3d11-id3d11inputlayout)",
-      "type": "text",
-      "width": 260,
-      "x": 2350,
-      "y": -165
-    },
-    {
-      "height": 60,
-      "id": "ed96cb4a2c0986d8",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_INPUT_ELEMENT_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_input_element_desc)",
-      "type": "text",
-      "width": 280,
-      "x": 1650,
-      "y": -165
-    },
-    {
-      "height": 60,
-      "id": "14017d2c6cb04951",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_RENDER_TARGET_VIEW_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_render_target_view_desc)",
-      "type": "text",
-      "width": 300,
-      "x": 1460,
-      "y": 2765
-    },
-    {
-      "height": 60,
-      "id": "152f80b2e8f146fc",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "DepthStencilBuffer (ID3D11Texture2D)",
-      "type": "text",
-      "width": 260,
-      "x": 910,
-      "y": 3000
-    },
-    {
-      "height": 90,
-      "id": "88064e8414efc74a",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "Shader Resource(ID3D11ShaderResourceView)",
-      "type": "text",
-      "width": 290,
-      "x": 890,
-      "y": 2380
     },
     {
       "color": "1",
@@ -1264,18 +1280,6 @@
     },
     {
       "height": 60,
-      "id": "28c83cea01a04512",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "D3D11_VIEWPORT",
-      "type": "text",
-      "width": 260,
-      "x": 2840,
-      "y": 1795
-    },
-    {
-      "height": 60,
       "id": "2a3b13564008cef2",
       "styleAttributes": {
         "textAlign": "center"
@@ -1285,6 +1289,138 @@
       "width": 260,
       "x": 3760,
       "y": 700
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "238ae015ddc79d16",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[IASetIndexBuffers](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetindexbuffer)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 255
+    },
+    {
+      "height": 60,
+      "id": "a24d18ca4cfcc64d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Input Assembler (IA)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 20
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "26e0de262330201f",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[IASetVertexBuffers](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetvertexbuffers)",
+      "type": "text",
+      "width": 260,
+      "x": 3218,
+      "y": 145
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "fff9cf85e68b4e84",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[Present](https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 3520
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "f2e2d67e74f36a61",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "Draw",
+      "type": "text",
+      "width": 260,
+      "x": 3558,
+      "y": 3280
+    },
+    {
+      "color": "2",
+      "height": 60,
+      "id": "0421a5d54460b9cc",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[DrawIndexed](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-drawindexed)",
+      "type": "text",
+      "width": 260,
+      "x": 3960,
+      "y": 3280
+    },
+    {
+      "height": 60,
+      "id": "7534292e6e12eae8",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Output Merger (OM)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 3035
+    },
+    {
+      "height": 60,
+      "id": "2d53f21d267bda44",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ID3D11RasterizeState",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 1995
+    },
+    {
+      "height": 80,
+      "id": "abbf87f436258546",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "RenderTargetView (ID3D11RenderTargetView)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 2855
+    },
+    {
+      "height": 60,
+      "id": "28c83cea01a04512",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "D3D11_VIEWPORT",
+      "type": "text",
+      "width": 260,
+      "x": 2840,
+      "y": 1795
     },
     {
       "height": 60,
@@ -1339,33 +1475,6 @@
       "y": 2570
     },
     {
-      "height": 60,
-      "id": "a4919e9fe67e463f",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "ConstantBuffer(ID3D11Buffer)",
-      "type": "text",
-      "width": 260,
-      "x": 2320,
-      "y": 340
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "238ae015ddc79d16",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "IASetIndexBuffers",
-      "type": "text",
-      "width": 260,
-      "x": 3218,
-      "y": 255
-    },
-    {
       "color": "2",
       "height": 60,
       "id": "fa808f2655d17ee4",
@@ -1380,20 +1489,6 @@
       "y": 715
     },
     {
-      "color": "1",
-      "height": 60,
-      "id": "24d5889d9cd4cd39",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "CreateDepthStencilView",
-      "type": "text",
-      "width": 260,
-      "x": 1300,
-      "y": 3000
-    },
-    {
       "color": "2",
       "height": 60,
       "id": "933fb36fc9b84626",
@@ -1406,6 +1501,31 @@
       "width": 260,
       "x": 3218,
       "y": 2010
+    },
+    {
+      "height": 60,
+      "id": "d248dcb34f377c64",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Rasterizer (RS)",
+      "type": "text",
+      "width": 260,
+      "x": 3760,
+      "y": 1995
+    },
+    {
+      "height": 60,
+      "id": "a4919e9fe67e463f",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "ConstantBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 340
     },
     {
       "color": "2",
@@ -1437,18 +1557,6 @@
     },
     {
       "height": 60,
-      "id": "d248dcb34f377c64",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "Rasterizer (RS)",
-      "type": "text",
-      "width": 260,
-      "x": 3760,
-      "y": 1995
-    },
-    {
-      "height": 60,
       "id": "7ff27f0920e59827",
       "styleAttributes": {
         "shape": "parallelogram",
@@ -1459,58 +1567,6 @@
       "width": 260,
       "x": 2320,
       "y": 3000
-    },
-    {
-      "height": 60,
-      "id": "a24d18ca4cfcc64d",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "Input Assembler (IA)",
-      "type": "text",
-      "width": 260,
-      "x": 3760,
-      "y": 20
-    },
-    {
-      "height": 60,
-      "id": "fabdc4e139e20f6d",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "VertexBuffer(ID3D11Buffer)",
-      "type": "text",
-      "width": 260,
-      "x": 2320,
-      "y": 130
-    },
-    {
-      "height": 60,
-      "id": "81cac63f3ff03368",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "IndexBuffer(ID3D11Buffer)",
-      "type": "text",
-      "width": 260,
-      "x": 2320,
-      "y": 240
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "26e0de262330201f",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "[IASetVertexBuffers](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-iasetvertexbuffers)",
-      "type": "text",
-      "width": 260,
-      "x": 3218,
-      "y": 145
     },
     {
       "color": "2",
@@ -1527,19 +1583,6 @@
       "y": -150
     },
     {
-      "height": 60,
-      "id": "170ad5b0c2ecf9cc",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_BUFFER_DESC](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_buffer_desc)",
-      "type": "text",
-      "width": 280,
-      "x": 1240,
-      "y": 40
-    },
-    {
       "color": "2",
       "height": 60,
       "id": "1da159ee8d7750cd",
@@ -1552,89 +1595,6 @@
       "width": 260,
       "x": 3218,
       "y": 25
-    },
-    {
-      "height": 60,
-      "id": "deb4eeba2d9f3295",
-      "styleAttributes": {
-        "shape": "parallelogram",
-        "textAlign": "center"
-      },
-      "text": "[D3D11_SUBRESOURCE_DATA](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/ns-d3d11-d3d11_subresource_data)",
-      "type": "text",
-      "width": 260,
-      "x": 1240,
-      "y": 180
-    },
-    {
-      "color": "1",
-      "height": 60,
-      "id": "55b49ae27993020a",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "[CreateBuffer](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createbuffer)",
-      "type": "text",
-      "width": 260,
-      "x": 1610,
-      "y": 130
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "0cef86914dc4c535",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "UpdateResource",
-      "type": "text",
-      "width": 260,
-      "x": 1610,
-      "y": 590
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "7b47eec875f81929",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "Unmap",
-      "type": "text",
-      "width": 260,
-      "x": 1610,
-      "y": 360
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "6e3380f1aa332406",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "Map",
-      "type": "text",
-      "width": 260,
-      "x": 1610,
-      "y": 470
-    },
-    {
-      "color": "2",
-      "height": 60,
-      "id": "fff9cf85e68b4e84",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "[Present](https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present)",
-      "type": "text",
-      "width": 260,
-      "x": 3760,
-      "y": 3520
     },
     {
       "color": "2",
@@ -1667,20 +1627,6 @@
     {
       "color": "2",
       "height": 60,
-      "id": "f2e2d67e74f36a61",
-      "styleAttributes": {
-        "shape": "circle",
-        "textAlign": "center"
-      },
-      "text": "Draw",
-      "type": "text",
-      "width": 260,
-      "x": 3558,
-      "y": 3280
-    },
-    {
-      "color": "2",
-      "height": 60,
       "id": "eaa55b0b78550565",
       "styleAttributes": {
         "shape": "circle",
@@ -1693,30 +1639,84 @@
       "y": 2735
     },
     {
-      "color": "2",
+      "color": "1",
       "height": 60,
-      "id": "0421a5d54460b9cc",
+      "id": "b5848ad2304f074d",
       "styleAttributes": {
         "shape": "circle",
         "textAlign": "center"
       },
-      "text": "[DrawIndexed](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-drawindexed)",
+      "text": "[CreateRasterizeState](https://learn.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-id3d11device-createrasterizerstate)",
       "type": "text",
       "width": 260,
-      "x": 3960,
-      "y": 3280
+      "x": 1880,
+      "y": 1995
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "ee6428d288f82746",
+      "styleAttributes": {
+        "shape": "circle",
+        "textAlign": "center"
+      },
+      "text": "[CreateInputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nf-d3d11-id3d11device-createinputlayout)",
+      "type": "text",
+      "width": 260,
+      "x": 2010,
+      "y": -165
     },
     {
       "height": 60,
-      "id": "7534292e6e12eae8",
+      "id": "3170efdc8a505cf6",
       "styleAttributes": {
+        "shape": "parallelogram",
         "textAlign": "center"
       },
-      "text": "Output Merger (OM)",
+      "text": "[D3D11_RASTERIZER_DESC](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/ns-d3d11-d3d11_rasterizer_desc)",
+      "type": "text",
+      "width": 280,
+      "x": 1870,
+      "y": 1880
+    },
+    {
+      "height": 60,
+      "id": "62e1ee8f9aef775d",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "[ID3D11InputLayout](https://learn.microsoft.com/ko-kr/windows/win32/api/d3d11/nn-d3d11-id3d11inputlayout)",
       "type": "text",
       "width": 260,
-      "x": 3760,
-      "y": 3035
+      "x": 2350,
+      "y": -165
+    },
+    {
+      "height": 60,
+      "id": "fabdc4e139e20f6d",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "VertexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 130
+    },
+    {
+      "height": 60,
+      "id": "81cac63f3ff03368",
+      "styleAttributes": {
+        "shape": "parallelogram",
+        "textAlign": "center"
+      },
+      "text": "IndexBuffer(ID3D11Buffer)",
+      "type": "text",
+      "width": 260,
+      "x": 2320,
+      "y": 240
     },
     {
       "color": "2",

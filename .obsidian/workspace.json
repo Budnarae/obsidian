@@ -11,15 +11,17 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": false
+                "file": "public/DirectX11 API.canvas",
+                "viewState": {
+                  "x": 3387.5182255746436,
+                  "y": 3359.0319721035685,
+                  "zoom": 1.1102230246251565e-16
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-layout-dashboard",
+              "title": "DirectX11 API"
             }
           }
         ]
@@ -207,8 +209,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "private/크래프톤 게임테크랩 3주차 발제.md",
     "index.md",
+    "private/크래프톤 게임테크랩 3주차 발제.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
