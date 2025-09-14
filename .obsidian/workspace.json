@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/크래프톤 게임테크랩 3주차 발제.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "크래프톤 게임테크랩 3주차 발제"
+              "title": "index"
             }
           }
         ]
@@ -205,13 +205,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "private/크래프톤 게임테크랩 3주차 발제.md",
     "index.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
-    "private/크래프톤 게임테크랩 3주차 발제.md",
     "public/DirectX11 API.canvas",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
