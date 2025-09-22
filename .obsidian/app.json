@@ -1,18 +1,1 @@
-{
-  "strictLineBreaks": false,
-  "livePreview": false,
-  "readableLineLength": true,
-  "spellcheck": false,
-  "alwaysUpdateLinks": true,
-  "vimMode": false,
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A4",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
-  "showLineNumber": true,
-  "defaultViewMode": "preview",
-  "promptDelete": false
-}
+{}

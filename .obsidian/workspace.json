@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "public/DirectX11 API.canvas",
-                "viewState": {
-                  "x": 3387.5182255746436,
-                  "y": 3359.0319721035685,
-                  "zoom": 1.1102230246251565e-16
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "DirectX11 API"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -210,11 +208,11 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "index.md",
+    "public/DirectX11 API.canvas",
     "private/크래프톤 게임테크랩 3주차 발제.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
-    "public/DirectX11 API.canvas",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/복사 생성자.md",
