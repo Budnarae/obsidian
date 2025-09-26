@@ -50,6 +50,26 @@
       "toFloating": false,
       "toNode": "99cce5fab20ccc05",
       "toSide": "top"
+    },
+    {
+      "fromNode": "f0c03f86ca054299",
+      "fromSide": "right",
+      "id": "c97b559481421267",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a54210e603a3e5ec",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "493ae35dedccf97c",
+      "fromSide": "right",
+      "id": "1b0044484116a930",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "4f9f73520a97c760",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -77,6 +97,15 @@
       "y": -680
     },
     {
+      "height": 440,
+      "id": "be118a8a58fab455",
+      "label": "FClientApp::Run",
+      "type": "group",
+      "width": 420,
+      "x": 240,
+      "y": -680
+    },
+    {
       "collapsed": true,
       "height": 400,
       "id": "1cc1060e1b727066",
@@ -98,13 +127,22 @@
       "y": -354
     },
     {
-      "height": 440,
-      "id": "be118a8a58fab455",
-      "label": "FClientApp::Run",
+      "height": 400,
+      "id": "4f9f73520a97c760",
+      "label": "ULevel::Update",
       "type": "group",
-      "width": 420,
-      "x": 240,
-      "y": -680
+      "width": 400,
+      "x": 2400,
+      "y": -1920
+    },
+    {
+      "height": 280,
+      "id": "a54210e603a3e5ec",
+      "label": "ULevelManager::Update",
+      "type": "group",
+      "width": 380,
+      "x": 1880,
+      "y": -1360
     },
     {
       "height": 240,
@@ -363,6 +401,42 @@
       "width": 260,
       "x": 1960,
       "y": 60
+    },
+    {
+      "height": 60,
+      "id": "493ae35dedccf97c",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "ULevel::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1940,
+      "y": -1320
+    },
+    {
+      "height": 60,
+      "id": "33cede73c0251783",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UEditor::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1940,
+      "y": -1200
+    },
+    {
+      "height": 60,
+      "id": "4074ec076143084b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "ULevel::ProcessPendingDeletions",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1880
     }
   ]
 }
