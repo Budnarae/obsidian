@@ -127,11 +127,11 @@
       "y": -354
     },
     {
-      "height": 400,
+      "height": 360,
       "id": "4f9f73520a97c760",
       "label": "ULevel::Update",
       "type": "group",
-      "width": 400,
+      "width": 380,
       "x": 2400,
       "y": -1920
     },
@@ -152,6 +152,15 @@
       "width": 420,
       "x": 800,
       "y": -680
+    },
+    {
+      "height": 170,
+      "id": "a314b6589158c46c",
+      "label": "AActor::TIck",
+      "type": "group",
+      "width": 380,
+      "x": 2900,
+      "y": -1920
     },
     {
       "height": 140,
@@ -437,6 +446,42 @@
       "width": 260,
       "x": 2460,
       "y": -1880
+    },
+    {
+      "height": 60,
+      "id": "f8501cd4bc7aeba5",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "AActor::TIck",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1780
+    },
+    {
+      "height": 60,
+      "id": "44330d1daabb0b9e",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "ULevel::AddLevelPrimitiveComponent",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1680
+    },
+    {
+      "height": 60,
+      "id": "c4899699fcf89b5d",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UActorComponent::TickComponent",
+      "type": "text",
+      "width": 260,
+      "x": 2960,
+      "y": -1870
     }
   ]
 }
