@@ -1,0 +1,130 @@
+{
+  "edges": [
+    {
+      "fromNode": "05dbf94f638484d2",
+      "fromSide": "right",
+      "id": "709e803769dccec9",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "be118a8a58fab455",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "78e27f279b34d77b",
+      "fromSide": "right",
+      "id": "6dd86d6237fc18ab",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "427055ff73c3742a",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 400,
+      "id": "be118a8a58fab455",
+      "label": "FClientApp::Run",
+      "type": "group",
+      "width": 420,
+      "x": 240,
+      "y": -680
+    },
+    {
+      "height": 400,
+      "id": "427055ff73c3742a",
+      "label": "FClient::MainLoop",
+      "type": "group",
+      "width": 420,
+      "x": 800,
+      "y": -680
+    },
+    {
+      "height": 140,
+      "id": "6776147bc304cf5a",
+      "label": "WinMain",
+      "type": "group",
+      "width": 340,
+      "x": -240,
+      "y": -680
+    },
+    {
+      "height": 60,
+      "id": "05dbf94f638484d2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClientApp::Run",
+      "type": "text",
+      "width": 260,
+      "x": -200,
+      "y": -640
+    },
+    {
+      "height": 60,
+      "id": "a8f55a2d7d2a91f9",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClient::InitializeSystem",
+      "type": "text",
+      "width": 260,
+      "x": 320,
+      "y": -640
+    },
+    {
+      "height": 60,
+      "id": "78e27f279b34d77b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClient::MainLoop",
+      "type": "text",
+      "width": 260,
+      "x": 320,
+      "y": -540
+    },
+    {
+      "height": 60,
+      "id": "17bd6db6fe59c5cc",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClient::ShutdownSystem",
+      "type": "text",
+      "width": 260,
+      "x": 320,
+      "y": -440
+    },
+    {
+      "height": 60,
+      "id": "8fcd4558c310e138",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClient::TranslateMessage",
+      "type": "text",
+      "width": 260,
+      "x": 880,
+      "y": -640
+    },
+    {
+      "height": 60,
+      "id": "63c4fd7ddad421a1",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FClient::UpdateSystem",
+      "type": "text",
+      "width": 260,
+      "x": 880,
+      "y": -540
+    }
+  ]
+}
