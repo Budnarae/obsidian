@@ -70,6 +70,36 @@
       "toFloating": false,
       "toNode": "4f9f73520a97c760",
       "toSide": "left"
+    },
+    {
+      "fromNode": "f8501cd4bc7aeba5",
+      "fromSide": "right",
+      "id": "3d5bf07b39d3d3a4",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "a314b6589158c46c",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "33cede73c0251783",
+      "fromSide": "right",
+      "id": "a2da0d8f8dee496f",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "36ccf89144deeff7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "f2c5e898106c6d1b",
+      "fromSide": "bottom",
+      "id": "875092abf1f987ab",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "63debdd127790aba",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -86,6 +116,15 @@
       "width": 420,
       "x": 1880,
       "y": -680
+    },
+    {
+      "height": 750,
+      "id": "36ccf89144deeff7",
+      "label": "UEditor::Update",
+      "type": "group",
+      "width": 380,
+      "x": 2400,
+      "y": -1360
     },
     {
       "height": 540,
@@ -482,6 +521,55 @@
       "width": 260,
       "x": 2960,
       "y": -1870
+    },
+    {
+      "height": 60,
+      "id": "9383bf3b1dec696b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FViewport::UpdateActiveViewportClient",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1320
+    },
+    {
+      "height": 60,
+      "id": "c10d526b6805e679",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UCamera::UpdateInput",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1200
+    },
+    {
+      "height": 60,
+      "id": "f2c5e898106c6d1b",
+      "styleAttributes": {
+        "shape": "pill",
+        "textAlign": "center"
+      },
+      "text": "ULevel::GetSelectedActor",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1080
+    },
+    {
+      "height": 60,
+      "id": "63debdd127790aba",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "AActor::GetOwnedComponents",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -960
     }
   ]
 }
