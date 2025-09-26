@@ -11,17 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "private/Week5 게임 엔진 흐름도.canvas",
-                "viewState": {
-                  "x": 2302.657858526576,
-                  "y": -386.081735088742,
-                  "zoom": -1.1102230246251565e-16
-                }
+                "file": "index.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Week5 게임 엔진 흐름도"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -81,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -210,8 +207,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "private/Week5 게임 엔진 흐름도.canvas",
+    "index.md",
     "public/DirectX11 API.canvas",
     "private/크래프톤 게임테크랩 3주차 발제.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",

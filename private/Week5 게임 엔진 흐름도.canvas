@@ -77,15 +77,6 @@
       "y": -680
     },
     {
-      "height": 440,
-      "id": "be118a8a58fab455",
-      "label": "FClientApp::Run",
-      "type": "group",
-      "width": 420,
-      "x": 240,
-      "y": -680
-    },
-    {
       "collapsed": true,
       "height": 400,
       "id": "1cc1060e1b727066",
@@ -105,6 +96,15 @@
       "width": 260,
       "x": 1973,
       "y": -354
+    },
+    {
+      "height": 440,
+      "id": "be118a8a58fab455",
+      "label": "FClientApp::Run",
+      "type": "group",
+      "width": 420,
+      "x": 240,
+      "y": -680
     },
     {
       "height": 240,
