@@ -119,6 +119,15 @@
   },
   "nodes": [
     {
+      "height": 1040,
+      "id": "36ccf89144deeff7",
+      "label": "UEditor::Update",
+      "type": "group",
+      "width": 380,
+      "x": 2400,
+      "y": -1360
+    },
+    {
       "height": 840,
       "id": "205a6a7a1603652d",
       "label": "URenderer::Update",
@@ -126,15 +135,6 @@
       "width": 420,
       "x": 1880,
       "y": -680
-    },
-    {
-      "height": 860,
-      "id": "36ccf89144deeff7",
-      "label": "UEditor::Update",
-      "type": "group",
-      "width": 380,
-      "x": 2400,
-      "y": -1360
     },
     {
       "height": 540,
@@ -616,6 +616,18 @@
       "width": 260,
       "x": 2460,
       "y": -600
+    },
+    {
+      "height": 60,
+      "id": "02b81c4687af8781",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UEditor::UpdateLayout",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -480
     }
   ]
 }
