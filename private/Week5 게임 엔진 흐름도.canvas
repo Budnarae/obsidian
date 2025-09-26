@@ -19,6 +19,17 @@
       "toFloating": false,
       "toNode": "427055ff73c3742a",
       "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "fromNode": "63c4fd7ddad421a1",
+      "fromSide": "right",
+      "id": "3f70d0486c6ab11b",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "cf78ea6810af6eb7",
+      "toSide": "left"
     }
   ],
   "metadata": {
@@ -28,7 +39,16 @@
   },
   "nodes": [
     {
-      "height": 400,
+      "height": 540,
+      "id": "cf78ea6810af6eb7",
+      "label": "FClient::UpdateSystem",
+      "type": "group",
+      "width": 420,
+      "x": 1340,
+      "y": -680
+    },
+    {
+      "height": 440,
       "id": "be118a8a58fab455",
       "label": "FClientApp::Run",
       "type": "group",
@@ -37,7 +57,7 @@
       "y": -680
     },
     {
-      "height": 400,
+      "height": 240,
       "id": "427055ff73c3742a",
       "label": "FClient::MainLoop",
       "type": "group",
@@ -76,7 +96,7 @@
       "type": "text",
       "width": 260,
       "x": 320,
-      "y": -640
+      "y": -540
     },
     {
       "height": 60,
@@ -88,7 +108,7 @@
       "type": "text",
       "width": 260,
       "x": 320,
-      "y": -540
+      "y": -440
     },
     {
       "height": 60,
@@ -100,7 +120,19 @@
       "type": "text",
       "width": 260,
       "x": 320,
-      "y": -440
+      "y": -340
+    },
+    {
+      "height": 60,
+      "id": "3a2cccb8c4fc6327",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FAppWindow::Init",
+      "type": "text",
+      "width": 260,
+      "x": 320,
+      "y": -640
     },
     {
       "height": 60,
@@ -125,6 +157,66 @@
       "width": 260,
       "x": 880,
       "y": -540
+    },
+    {
+      "height": 60,
+      "id": "f0c03f86ca054299",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "LevelManager::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1420,
+      "y": -640
+    },
+    {
+      "height": 60,
+      "id": "a6c83c78be13d397",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "TimeManager::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1420,
+      "y": -540
+    },
+    {
+      "height": 60,
+      "id": "341d82c7c9d94e5e",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "InputManager::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1420,
+      "y": -440
+    },
+    {
+      "height": 60,
+      "id": "5c59736212c8830f",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UIManager::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1420,
+      "y": -340
+    },
+    {
+      "height": 60,
+      "id": "9a5dc53b84330f18",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "Renderer::Update",
+      "type": "text",
+      "width": 260,
+      "x": 1420,
+      "y": -240
     }
   ]
 }
