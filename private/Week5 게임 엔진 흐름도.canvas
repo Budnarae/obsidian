@@ -100,6 +100,16 @@
       "toFloating": false,
       "toNode": "63debdd127790aba",
       "toSide": "top"
+    },
+    {
+      "fromNode": "63debdd127790aba",
+      "fromSide": "bottom",
+      "id": "0d23f5bf7596344b",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "e73b77f73565f36b",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -570,6 +580,18 @@
       "width": 260,
       "x": 2460,
       "y": -960
+    },
+    {
+      "height": 60,
+      "id": "e73b77f73565f36b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UBatchLines::UpdateBoundingBoxVertices",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -840
     }
   ]
 }
