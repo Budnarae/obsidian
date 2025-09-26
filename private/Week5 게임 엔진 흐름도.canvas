@@ -128,7 +128,7 @@
       "y": -680
     },
     {
-      "height": 750,
+      "height": 860,
       "id": "36ccf89144deeff7",
       "label": "UEditor::Update",
       "type": "group",
@@ -534,30 +534,6 @@
     },
     {
       "height": 60,
-      "id": "9383bf3b1dec696b",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "FViewport::UpdateActiveViewportClient",
-      "type": "text",
-      "width": 260,
-      "x": 2460,
-      "y": -1320
-    },
-    {
-      "height": 60,
-      "id": "c10d526b6805e679",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "text": "UCamera::UpdateInput",
-      "type": "text",
-      "width": 260,
-      "x": 2460,
-      "y": -1200
-    },
-    {
-      "height": 60,
       "id": "f2c5e898106c6d1b",
       "styleAttributes": {
         "shape": "pill",
@@ -592,6 +568,54 @@
       "width": 260,
       "x": 2460,
       "y": -840
+    },
+    {
+      "height": 60,
+      "id": "9383bf3b1dec696b",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "FViewport::UpdateActiveViewportClient",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1320
+    },
+    {
+      "height": 60,
+      "id": "c10d526b6805e679",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UCamera::UpdateInput",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -1200
+    },
+    {
+      "height": 60,
+      "id": "5a0aadb729fb2aad",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UBatchLines::UpdateVertexBuffer",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -720
+    },
+    {
+      "height": 60,
+      "id": "9ec95500ca41194c",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UEditor::ProcessMouseInput",
+      "type": "text",
+      "width": 260,
+      "x": 2460,
+      "y": -600
     }
   ]
 }
