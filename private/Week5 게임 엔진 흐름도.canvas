@@ -40,6 +40,16 @@
       "toFloating": false,
       "toNode": "205a6a7a1603652d",
       "toSide": "left"
+    },
+    {
+      "fromNode": "397f103a08f36099",
+      "fromSide": "bottom",
+      "id": "8ac3fc151b8ef3d9",
+      "styleAttributes": {
+      },
+      "toFloating": false,
+      "toNode": "99cce5fab20ccc05",
+      "toSide": "top"
     }
   ],
   "metadata": {
@@ -49,21 +59,21 @@
   },
   "nodes": [
     {
+      "height": 840,
+      "id": "205a6a7a1603652d",
+      "label": "URenderer::Update",
+      "type": "group",
+      "width": 420,
+      "x": 1880,
+      "y": -680
+    },
+    {
       "height": 540,
       "id": "cf78ea6810af6eb7",
       "label": "FClient::UpdateSystem",
       "type": "group",
       "width": 420,
       "x": 1340,
-      "y": -680
-    },
-    {
-      "height": 540,
-      "id": "205a6a7a1603652d",
-      "label": "URenderer::Update",
-      "type": "group",
-      "width": 420,
-      "x": 1880,
       "y": -680
     },
     {
@@ -83,6 +93,18 @@
       "width": 400,
       "x": 1960,
       "y": -520
+    },
+    {
+      "height": 60,
+      "id": "eadaacd28a4588a7",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "TObjectPtr\\<UEditor>::RenderEditor",
+      "type": "text",
+      "width": 260,
+      "x": 1973,
+      "y": -354
     },
     {
       "height": 240,
@@ -288,11 +310,59 @@
       "styleAttributes": {
         "textAlign": "center"
       },
-      "text": "ULevelManager::",
+      "text": "ULevelManager::GetEditor\n",
       "type": "text",
       "width": 260,
       "x": 1960,
       "y": -340
+    },
+    {
+      "height": 60,
+      "id": "99cce5fab20ccc05",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UEditor::RenderEditor",
+      "type": "text",
+      "width": 260,
+      "x": 1960,
+      "y": -240
+    },
+    {
+      "height": 60,
+      "id": "b63de8cdabfbecec",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UUIManager::Render",
+      "type": "text",
+      "width": 260,
+      "x": 1960,
+      "y": -140
+    },
+    {
+      "height": 60,
+      "id": "f564765a10a532fc",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "UStatOverly::Render",
+      "type": "text",
+      "width": 260,
+      "x": 1960,
+      "y": -40
+    },
+    {
+      "height": 60,
+      "id": "78b856e827e181c2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "URenderer::RenderEnd",
+      "type": "text",
+      "width": 260,
+      "x": 1960,
+      "y": 60
     }
   ]
 }
