@@ -12,3 +12,4 @@ _빛이 있으라_
 [[Lambertian Reflection]]
 [[Lambert's cosine law]]
 [[Phong Shading]]
+[[Blinn-Phong reflection model]]
