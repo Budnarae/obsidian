@@ -54,6 +54,58 @@ The emission of a Lambertian radiator does not depend on the amount of incident 
 
 ---
 
+### 원문: _Details of equal brightness effect_
+
+**Figure 1**: Emission rate (photons/s) in a normal and off-normal direction. The number of photons/sec directed into any wedge is proportional to the area of the wedge.
+
+**Figure 2**: Observed intensity (photons/(s·m²·sr)) for a normal and off-normal observer; dA₀ is the area of the observing aperture and dΩ is the solid angle subtended by the aperture from the viewpoint of the emitting area element.
+
+The situation for a Lambertian surface (emitting or scattering) is illustrated in Figures 1 and 2. For conceptual clarity we will think in terms of photons rather than energy or luminous energy. The wedges in the circle each represent an equal angle dΩ, of an arbitrarily chosen size, and for a Lambertian surface, the number of photons per second emitted into each wedge is proportional to the area of the wedge.
+
+The length of each wedge is the product of the diameter of the circle and cos(θ). The maximum rate of photon emission per unit solid angle is along the normal, and diminishes to zero for θ = 90°. In mathematical terms, the radiance along the normal is **I** photons/(s·m²·sr) and the number of photons per second emitted into the vertical wedge is **I·dΩ·dA**. The number of photons per second emitted into the wedge at angle θ is **I·cos(θ)·dΩ·dA**.
+
+**Figure 2** represents what an observer sees. The observer directly above the area element will be seeing the scene through an aperture of area **dA₀** and the area element **dA** will subtend a (solid) angle of **dΩ₀**, which is a portion of the observer's total angular field-of-view of the scene. Since the wedge size **dΩ** was chosen arbitrarily, for convenience we may assume without loss of generality that it coincides with the solid angle subtended by the aperture when "viewed" from the locus of the emitting area element **dA**. Thus the normal observer will then be recording the same **I·dΩ·dA** photons per second emission derived above and will measure a radiance of:
+
+I0=I⋅dΩ⋅dAdΩ0⋅dA0I_0 = \frac{I \cdot d\Omega \cdot dA}{d\Omega_0 \cdot dA_0}I0​=dΩ0​⋅dA0​I⋅dΩ⋅dA​
+
+photons/(s·m²·sr)
+
+The observer at angle θ to the normal will be seeing the scene through the same aperture of area **dA₀** (still corresponding to a **dΩ** wedge) and from this oblique vantage the area element **dA** is foreshortened and will subtend a (solid) angle of **dΩ₀·cos(θ)**. This observer will be recording **I·cos(θ)·dΩ·dA** photons per second, and so will be measuring a radiance of:
+
+I0=I⋅cos⁡(θ)⋅dΩ⋅dAdΩ0⋅cos⁡(θ)⋅dA0=I⋅dΩ⋅dAdΩ0⋅dA0I_0 = \frac{I \cdot \cos(\theta) \cdot d\Omega \cdot dA}{d\Omega_0 \cdot \cos(\theta) \cdot dA_0} = \frac{I \cdot d\Omega \cdot dA}{d\Omega_0 \cdot dA_0}I0​=dΩ0​⋅cos(θ)⋅dA0​I⋅cos(θ)⋅dΩ⋅dA​=dΩ0​⋅dA0​I⋅dΩ⋅dA​
+
+which is the same as the normal observer. In the words of Tatum, "Thus the radiance of a lambertian radiating surface is independent of the angle from which it is viewed. Lambertian surfaces radiate isotropically. For a reflecting surface to be lambertian, it is required that the radiance be independent not only of the angle from which it is viewed, but also of the angle from which it is irradiated (or illuminated)."
+
+In the words of Yeo, "To put it in lay terms, the brightness of a Lambertian (or perfect diffuse reflector) remains constant as you view it from different angles. This is because, the change in intensity with angle (the cosine relationship) is countered by an equal but opposite change in the projected surface area that you view (also a cosine relationship). Thus the Lambertian surface will possess the same brightness (luminance or radiance) regardless of the angle that you view it from."
+
+---
+
+### 🇰🇷 번역: _동일한 밝기 효과의 세부 설명_
+
+**그림 1**: 수직 방향과 비수직 방향에서의 방출률 (광자/초). 어떤 쐐기(wedge) 방향으로 방출되는 광자 수는 그 쐐기의 면적에 비례합니다.
+
+**그림 2**: 수직 관찰자와 비수직 관찰자가 보는 관측 강도 (광자/(초·㎡·sr)). 여기서 **dA₀**는 관찰자가 보는 구멍의 면적이고, **dΩ**는 방출하는 면적 요소로부터 관찰 구멍이 이루는 입체각입니다.
+
+람버티안 표면(방출 또는 산란)의 상황이 그림 1과 2에 나타나 있습니다. 개념을 명확히 하기 위해, 우리는 에너지나 광속 대신 광자(photon) 수로 설명합니다. 원 안의 각 쐐기는 동일한 크기의 임의로 선택된 입체각 **dΩ**을 나타내며, 람버티안 표면에서는 각 쐐기로 초당 방출되는 광자 수가 해당 쐐기의 면적에 비례합니다.
+
+각 쐐기의 길이는 원의 지름과 **cos(θ)**의 곱입니다. 단위 입체각당 최대 광자 방출률은 법선(normal) 방향에 있으며, **θ = 90°**에서는 0으로 감소합니다. 수학적으로, 법선 방향의 복사휘도(radiance)는 **I** 광자/(초·㎡·sr)이고, 수직 방향 쐐기로 방출되는 광자 수는 **I·dΩ·dA**입니다. θ 각도 방향의 쐐기로 방출되는 광자 수는 **I·cos(θ)·dΩ·dA**입니다.
+
+**그림 2**는 관찰자가 보는 장면을 나타냅니다. 면적 요소 **dA** 바로 위에 있는 관찰자는 면적 **dA₀**의 구멍을 통해 장면을 보게 되며, **dA**는 관찰자의 시점에서 **dΩ₀** 입체각을 형성합니다. **dΩ** 쐐기의 크기는 임의로 정한 것이므로, 편의상 방출 면적 요소 **dA**에서 볼 때 관찰 구멍이 형성하는 입체각과 같다고 가정할 수 있습니다. 따라서 수직 관찰자는 앞서 유도된 **I·dΩ·dA** 광자를 초당 수신하게 되며, 다음과 같은 복사휘도를 측정합니다:
+
+I0=I⋅dΩ⋅dAdΩ0⋅dA0I_0 = \frac{I \cdot d\Omega \cdot dA}{d\Omega_0 \cdot dA_0}I0​=dΩ0​⋅dA0​I⋅dΩ⋅dA​
+
+단위는 광자/(초·㎡·sr)입니다.
+
+법선에서 θ 각도로 벗어난 방향에 있는 관찰자는 여전히 면적 **dA₀**의 동일한 구멍을 통해 장면을 보며, 이 경우 면적 요소 **dA**는 시야에서 짧아져 **dΩ₀·cos(θ)**의 입체각을 형성하게 됩니다. 이 관찰자는 **I·cos(θ)·dΩ·dA** 광자를 초당 수신하므로, 측정된 복사휘도는 다음과 같습니다:
+
+I0=I⋅cos⁡(θ)⋅dΩ⋅dAdΩ0⋅cos⁡(θ)⋅dA0=I⋅dΩ⋅dAdΩ0⋅dA0I_0 = \frac{I \cdot \cos(\theta) \cdot d\Omega \cdot dA}{d\Omega_0 \cdot \cos(\theta) \cdot dA_0} = \frac{I \cdot d\Omega \cdot dA}{d\Omega_0 \cdot dA_0}I0​=dΩ0​⋅cos(θ)⋅dA0​I⋅cos(θ)⋅dΩ⋅dA​=dΩ0​⋅dA0​I⋅dΩ⋅dA​
+
+이는 수직 방향 관찰자와 동일한 값입니다. Tatum의 말에 따르면, “따라서 람버티안 방출 표면의 복사휘도는 관찰 각도와 무관합니다. 람버티안 표면은 등방적으로 방출합니다. 반사 표면이 람버티안이 되기 위해서는 관찰 각도뿐만 아니라 조명되는 각도(입사각)에도 무관한 복사휘도를 가져야 합니다.”
+
+Yeo의 표현을 빌리면, “쉽게 말해, 람버티안(또는 완전 확산 반사체)의 밝기는 다양한 관찰 각도에서 동일하게 유지됩니다. 이는 각도에 따른 강도 변화(코사인 관계)가 관찰 면적의 축소(역방향의 코사인 관계)와 정확히 상쇄되기 때문입니다. 따라서 람버티안 표면은 어떤 각도에서 보든 동일한 밝기(휘도 또는 복사휘도)를 유지합니다.”
+
+---
+
 **영문 원문**
 
 ## Relating peak luminous intensity and luminous flux
