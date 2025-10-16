@@ -8,4 +8,5 @@ _빛이 있으라_
 
 ---
 
-[[]]
+[[Gouraud shading]]
+[[Lambertian Reflection]]
