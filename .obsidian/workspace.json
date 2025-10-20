@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "Normal Mapping 위키 문서 번역"
             }
+          },
+          {
+            "id": "72d2a546f82fcec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnopengl.com Normal-Mapping 문서 번역.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "learnopengl.com Normal-Mapping 문서 번역"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,10 +221,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "310e36ead2acbe89",
+  "active": "72d2a546f82fcec7",
   "lastOpenFiles": [
-    "public/Normal Mapping(위키 문서 번역).md",
     "public/Normal Mapping 위키 문서 번역.md",
+    "learnopengl.com Normal-Mapping 문서 번역.md",
+    "public/Normal Mapping(위키 문서 번역).md",
     "public/Lighting.md",
     "private/42Seoul/Libasem pdf 번역본.md",
     "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
@@ -248,7 +265,6 @@
     "재료",
     "public/rasterTek directX 11 tutorial 2 - 프레임워크와 윈도우 생성하기.md",
     "public/rasterTek directX 11 tutorial 1 - IDE 설치.md",
-    "public/assembly.md",
     "ingredient/ai role",
     "public/무제",
     "ingredient/canvas/한림대학교 운영체제 강의 학기말 프로젝트 - 관리자 프로그램 순서도.canvas",
