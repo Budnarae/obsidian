@@ -14,3 +14,4 @@ _빛이 있으라_
 [[Phong Shading]]
 [[Blinn-Phong reflection model]]
 [[Normal Mapping 위키 문서 번역]]
+[[Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역]]

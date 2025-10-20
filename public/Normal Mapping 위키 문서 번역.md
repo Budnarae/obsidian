@@ -8,7 +8,7 @@ _bump mapping_
 
 ---
 
-[원문]()
+[원문](https://en.wikipedia.org/wiki/Normal_mapping)
 
 ---
 
