@@ -13,3 +13,4 @@ _빛이 있으라_
 [[Lambert's cosine law]]
 [[Phong Shading]]
 [[Blinn-Phong reflection model]]
+[[Normal Mapping 위키 문서 번역]]
