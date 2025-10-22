@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
-                "mode": "preview",
+                "file": "learnopengl.com Normal-Mapping 문서 번역.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역"
+              "title": "learnopengl.com Normal-Mapping 문서 번역"
             }
           }
         ]
@@ -209,9 +209,9 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "public/Lighting.md",
+    "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
     "public/Normal Mapping 위키 문서 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.md",
-    "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
     "diffuse-lambersian shading 번역.md",
     "index.md",
     "public/Normal Mapping(위키 문서 번역).md",
