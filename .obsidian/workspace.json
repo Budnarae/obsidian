@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diffuse-lambersian shading 번역.md",
-                "mode": "preview",
+                "file": "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "diffuse-lambersian shading 번역"
+              "title": "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역"
             }
           }
         ]
