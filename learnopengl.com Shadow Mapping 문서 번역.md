@@ -452,4 +452,110 @@ float ShadowCalculation(vec4 fragPosLightSpace)
 
 원거리 평면을 확인하고 깊이 맵을 수동으로 지정된 경계 색상으로 클램핑하는 것은 깊이 맵의 과도한 샘플링(over-sampling)을 해결합니다. 이로써 마침내 우리가 찾고 있던 결과를 얻게 됩니다:
 
-이 모든 결과는 투영된 프래그먼트 좌표가 $[0, 1]$ 범위 내에 있고, 광원의 절두체 내에 있는 곳에만 그림자가 있다는 것을 의미합니다.
+The result of all this does mean that we only have shadows where the projected fragment coordinates sit inside the depth map range so anything outside the light frustum will have no visible shadows. As games usually make sure this only occurs in the distance it is a much more plausible effect than the obvious black regions we had before.
+
+이 모든 것의 결과는 **투영된 프래그먼트 좌표가 깊이 맵 범위 내에 위치하는 곳**에만 그림자가 있다는 것을 의미하며, 따라서 광원 절두체(light frustum) **바깥의 모든 것은 보이는 그림자가 없을 것입니다**. 게임들은 보통 이것이 먼 거리에서만 발생하도록 하기 때문에, 이전에 우리가 가졌던 명백한 검은색 영역보다 **훨씬 더 그럴듯한 효과**입니다.
+
+---
+
+## PCF
+
+The shadows right now are a nice addition to the scenery, but it's still not exactly what we want. If you were to zoom in on the shadows the **resolution dependency** of shadow mapping quickly becomes apparent.
+
+지금의 그림자는 풍경에 좋은 추가 요소이지만, 여전히 우리가 원하는 것은 아닙니다. 그림자를 확대해보면 그림자 매핑의 **해상도 의존성**이 빠르게 명백해집니다.
+
+Because the depth map has a fixed resolution, the depth frequently usually spans more than one fragment per texel. As a result, multiple fragments sample the same depth value from the depth map and come to the same shadow conclusions, which produces these **jagged blocky edges**.
+
+깊이 맵은 고정된 해상도를 가지고 있기 때문에, 깊이가 종종 텍셀당 하나 이상의 프래그먼트에 걸쳐 분포됩니다. 그 결과, 여러 프래그먼트가 깊이 맵에서 동일한 깊이 값을 샘플링하고 동일한 그림자 결론에 도달하며, 이는 이러한 **들쭉날쭉한 블록 모양의 모서리**를 생성합니다.
+
+You can reduce these blocky shadows by increasing the depth map resolution, or by trying to fit the light frustum as closely to the scene as possible.
+
+이러한 블록 모양의 그림자는 깊이 맵 해상도를 늘리거나, 광원 절두체를 씬에 가능한 한 가깝게 맞추려고 시도함으로써 줄일 수 있습니다.
+
+Another (partial) solution to these jagged edges is called **PCF**, or **percentage-closer filtering**, which is a term that hosts many different filtering functions that produce **softer shadows**, making them appear less blocky or hard. The idea is to sample more than once from the depth map, each time with slightly different texture coordinates. For each individual sample we check whether it is in shadow or not. All the sub-results are then combined and averaged and we get a **nice soft looking shadow**.
+
+이러한 들쭉날쭉한 모서리에 대한 또 다른 (부분적인) 해결책은 **PCF**, 즉 **Percentage-Closer Filtering**이라고 불리는데, 이는 **더 부드러운 그림자**를 생성하여 그림자를 덜 블록 모양이거나 딱딱하게 보이도록 만드는 많은 다른 필터링 함수를 포괄하는 용어입니다. 아이디어는 깊이 맵에서 **한 번 이상 샘플링**하되, 매번 약간 다른 텍스처 좌표를 사용하는 것입니다. 각각의 개별 샘플에 대해 그림자 속에 있는지 여부를 확인합니다. 그런 다음 모든 하위 결과를 결합하고 평균을 내어 **보기 좋은 부드러운 그림자**를 얻습니다.
+
+One simple implementation of PCF is to simply sample the surrounding texels of the depth map and average the results:
+
+PCF의 한 가지 간단한 구현은 깊이 맵의 주변 텍셀을 단순히 샘플링하고 결과를 평균화하는 것입니다:
+
+OpenGL Shading Language
+
+```
+float shadow = 0.0;
+vec2 texelSize = 1.0 / textureSize(shadowMap, 0);
+for(int x = -1; x <= 1; ++x)
+{
+    for(int y = -1; y <= 1; ++y)
+    {
+        float pcfDepth = texture(shadowMap, projCoords.xy + vec2(x, y) * texelSize).r; 
+        shadow += currentDepth - bias > pcfDepth ? 1.0 : 0.0;        
+    }    
+}
+shadow /= 9.0;
+```
+
+Here **`textureSize`** returns a **`vec2`** of the width and height of the given sampler texture at mipmap level **`0`**. **`1`** divided over this returns the size of a single texel that we use to offset the texture coordinates, making sure each new sample samples a different depth value. Here we sample **`9`** values around the projected coordinate's **`x`** and **`y`** value, test for shadow occlusion, and finally average the results by the total number of samples taken.
+
+여기서 **`textureSize`**는 밉맵 레벨 **`0`**에서 주어진 샘플러 텍스처의 너비와 높이를 **`vec2`**로 반환합니다. 이것을 **`1`**로 나눈 값은 텍스처 좌표를 오프셋하는 데 사용하는 단일 텍셀의 크기를 반환하며, 각 새 샘플이 다른 깊이 값을 샘플링하도록 보장합니다. 여기서 우리는 투영된 좌표의 **`x`** 및 **`y`** 값 주변에서 **9개**의 값을 샘플링하고, 그림자 폐색(occlusion)을 테스트한 다음, 최종적으로 취해진 총 샘플 수로 결과를 평균화합니다.
+
+By using more samples and/or varying the **`texelSize`** variable you can increase the quality of the soft shadows. Below you can see the shadows with simple PCF applied:
+
+더 많은 샘플을 사용하거나 **`texelSize`** 변수를 다양하게 변경하여 부드러운 그림자의 품질을 높일 수 있습니다. 아래에서 간단한 PCF가 적용된 그림자를 볼 수 있습니다:
+
+From a distance the shadows look a lot better and less hard. If you zoom in you can still see the resolution artifacts of shadow mapping, but in general this gives good results for most applications.
+
+멀리서 보면 그림자가 훨씬 더 보기 좋고 덜 딱딱해 보입니다. 확대하면 여전히 그림자 매핑의 해상도 아티팩트가 보이지만, 일반적으로 대부분의 애플리케이션에 좋은 결과를 제공합니다.
+
+You can find the complete source code of the example **here**.
+
+예제의 전체 소스 코드는 **여기**에서 찾을 수 있습니다.
+
+There is actually much more to PCF and quite a few techniques to considerably improve the quality of soft shadows, but for the sake of this chapter's length we'll leave that for a later discussion.
+
+실제로 PCF에는 훨씬 더 많은 것이 있으며, 부드러운 그림자의 품질을 상당히 향상시키는 꽤 많은 기술들이 있지만, 이 챕터의 길이를 고려하여 그것은 나중 논의를 위해 남겨두겠습니다.
+
+---
+
+## Orthographic vs perspective (직교 투영 대 원근 투영)
+
+There is a difference between rendering the depth map with an **orthographic** or a **perspective** projection matrix. An orthographic projection matrix does not deform the scene with perspective so all view/light rays are parallel. This makes it a great projection matrix for directional lights. A perspective projection matrix however does deform all vertices based on perspective which gives different results. The following image shows the different shadow regions of both projection methods:
+
+**직교(orthographic)** 또는 **원근(perspective)** 투영 행렬로 깊이 맵을 렌더링하는 것 사이에는 차이가 있습니다. 직교 투영 행렬은 원근법으로 씬을 변형하지 않으므로 모든 뷰/광선은 평행합니다. 이것은 방향 광원에 아주 좋은 투영 행렬입니다. 그러나 원근 투영 행렬은 원근법을 기반으로 모든 정점을 변형하여 다른 결과를 제공합니다. 다음 이미지는 두 투영 방법의 다른 그림자 영역을 보여줍니다:
+
+Perspective projections make most sense for light sources that have actual locations, unlike directional lights. Perspective projections are most often used with **spotlights** and **point lights**, while orthographic projections are used for **directional lights**.
+
+원근 투영은 방향 광원과는 달리 실제 위치를 갖는 광원에 가장 적합합니다. 원근 투영은 **스포트라이트** 및 **점 광원**과 함께 가장 자주 사용되는 반면, 직교 투영은 **방향 광원**에 사용됩니다.
+
+Another subtle difference with using a perspective projection matrix is that visualizing the depth buffer will often give an almost completely white result. This happens because with perspective projection the depth is transformed to **non-linear depth values** with most of its noticeable range close to the near plane. To be able to properly view the depth values as we did with the orthographic projection you first want to transform the non-linear depth values to **linear** as we discussed in the **depth testing** chapter:
+
+원근 투영 행렬을 사용할 때의 또 다른 미묘한 차이점은 깊이 버퍼를 시각화하면 종종 거의 완전히 흰색인 결과를 얻게 된다는 것입니다. 이는 원근 투영을 사용하면 깊이가 **비선형 깊이 값**으로 변환되어, 대부분의 눈에 띄는 범위가 근평면(near plane) 가까이에 있기 때문에 발생합니다. 우리가 직교 투영에서 했던 것처럼 깊이 값을 올바르게 보기 위해서는, **깊이 테스트(depth testing)** 챕터에서 논의했듯이 비선형 깊이 값을 먼저 **선형**으로 변환해야 합니다:
+
+OpenGL Shading Language
+
+```
+#version 330 core
+out vec4 FragColor;
+  in vec2 TexCoords;
+uniform sampler2D depthMap;
+uniform float near_plane;
+uniform float far_plane;
+
+float LinearizeDepth(float depth)
+{
+    float z = depth * 2.0 - 1.0; // Back to NDC (NDC로 돌아가기)
+    return (2.0 * near_plane * far_plane) / (far_plane + near_plane - z * (far_plane - near_plane));
+}
+
+void main()
+{             
+    float depthValue = texture(depthMap, TexCoords).r;
+    FragColor = vec4(vec3(LinearizeDepth(depthValue) / far_plane), 1.0); // perspective (원근 투영)
+    // FragColor = vec4(vec3(depthValue), 1.0); // orthographic (직교 투영)
+}  
+```
+
+This shows depth values similar to what we've seen with orthographic projection. Note that this is only useful for **debugging**; the depth checks remain the same with orthographic or projection matrices as the **relative depths** do not change.
+
+이것은 직교 투영에서 보았던 것과 유사한 깊이 값을 보여줍니다. 이것은 **디버깅**에만 유용하다는 점에 유의하십시오. **상대적인 깊이**는 변하지 않으므로 깊이 검사는 직교 투영 또는 원근 투영 행렬 모두에서 동일하게 유지됩니다.
