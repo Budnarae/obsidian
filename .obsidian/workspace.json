@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "위키피디아 Shadow mapping 번역.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "위키피디아 Shadow mapping 번역"
             }
           }
         ]
@@ -207,14 +207,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/Shadowing.md",
+    "위키피디아 Shadow mapping 번역.md",
+    "public/Lighting.md",
+    "index.md",
     "public/Tile-based light culling.md",
     "learnopengl.com Normal-Mapping 문서 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
-    "public/Lighting.md",
     "Computing Tangent Space Basis Vectors for an Arbitrary Mesh 번역.md",
     "public/Normal Mapping 위키 문서 번역.md",
     "diffuse-lambersian shading 번역.md",
-    "index.md",
     "public/Normal Mapping(위키 문서 번역).md",
     "private/42Seoul/Libasem pdf 번역본.md",
     "public/DirectX SDK Document - Tutorial 1 Direct3D 11 Basics.md",
@@ -239,8 +241,6 @@
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
     "public/High-Level Shader Language Specification(Working Draft August 7, 2025).md",
-    "public/git 치트 시트.md",
-    "conflict-files-obsidian-git.md",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
     "재료/이미지/e0dca5c86a95290749326a0cd5efafc6_MD5.jpeg",
     "재료/이미지/d7966247dce0f8d9d09a5aa136f49713_MD5.jpeg",
