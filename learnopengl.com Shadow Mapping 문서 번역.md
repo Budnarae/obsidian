@@ -200,6 +200,130 @@ glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 그 결과는 광원의 관점에서 보이는 각 프래그먼트의 가장 가까운 깊이를 담고 있는 멋지게 채워진 깊이 버퍼이다. 이 텍스처를 렌더링함으로써...
 
+...적절하게 생성된 깊이 맵을 가지고 실제 그림자를 렌더링하기 시작할 수 있습니다. 프래그먼트가 그림자 속에 있는지 확인하는 코드는 (당연히) 프래그먼트 셰이더에서 실행되지만, 광원 공간 변환은 정점 셰이더에서 수행합니다:
+
+```
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aNormal;
+layout (location = 2) in vec2 aTexCoords;
+
+out VS_OUT {
+    vec3 FragPos;
+    vec3 Normal;
+    vec2 TexCoords;
+    vec4 FragPosLightSpace;
+} vs_out;
+
+uniform mat4 projection;
+uniform mat4 view;
+uniform mat4 model;
+uniform mat4 lightSpaceMatrix;
+
+void main()
+{
+    vs_out.FragPos = vec3(model * vec4(aPos, 1.0));
+    vs_out.Normal = transpose(inverse(mat3(model))) * aNormal;
+    vs_out.TexCoords = aTexCoords;
+    vs_out.FragPosLightSpace = lightSpaceMatrix * vec4(vs_out.FragPos, 1.0);
+    gl_Position = projection * view * vec4(aPos, 1.0);
+}
+```
+
+여기서 새로운 것은 추가 출력 벡터 `FragPosLightSpace`입니다. 우리는 깊이 맵 단계에서 정점을 광원 공간으로 변환하는 데 사용된 것과 동일한 `lightSpaceMatrix`를 가져와 월드 공간 정점 위치를 프래그먼트 셰이더에서 사용하기 위해 광원 공간으로 변환합니다.
+
+씬을 렌더링하는 데 사용할 메인 프래그먼트 셰이더는 블린-퐁(Blinn-Phong) 조명 모델을 사용합니다. 그런 다음 프래그먼트 셰이더 내에서 프래그먼트가 그림자 속에 있을 때 `1.0`이고 그림자 속에 없을 때 `0.0`인 그림자 값을 계산합니다. 결과 확산(diffuse) 및 반사(specular) 요소는 이 그림자 요소와 곱해집니다. 그림자는 (빛의 산란(light scattering)으로 인해) 완전히 어두운 경우는 거의 없기 때문에, 주변광(ambient) 요소는 그림자 곱셈에서 제외합니다.1
+
+OpenGL Shading Language
+
+```
+#version 330 core
+out vec4 FragColor;
+
+in VS_OUT {
+    vec3 FragPos;
+    vec3 Normal;
+    vec2 TexCoords;
+    vec4 FragPosLightSpace;
+} fs_in;
+
+uniform sampler2D diffuseTexture;
+uniform sampler2D shadowMap;
+
+uniform vec3 lightPos;
+uniform vec3 viewPos;
+
+float ShadowCalculation(vec4 fragPosLightSpace)
+{
+    [...]
+}
+
+void main()
+{
+    vec3 color = texture(diffuseTexture, fs_in.TexCoords).rgb;
+    vec3 normal = normalize(fs_in.Normal);
+    vec3 lightColor = vec3(1.0);
+
+    // ambient (주변광)
+    vec3 ambient = 0.15 * lightColor;
+
+    // diffuse (확산광)
+    vec3 lightDir = normalize(lightPos - fs_in.FragPos);
+    float diff = max(dot(lightDir, normal), 0.0);
+    vec3 diffuse = diff * lightColor;
+
+    // specular (반사광)
+    vec3 viewDir = normalize(viewPos - fs_in.FragPos);
+    float spec = 0.0;
+    vec3 halfwayDir = normalize(lightDir + viewDir);
+    spec = pow(max(dot(normal, halfwayDir), 0.0), 64.0);
+    vec3 specular = spec * lightColor;
+
+    // calculate shadow (그림자 계산)
+    float shadow = ShadowCalculation(fs_in.FragPosLightSpace);                      
+    vec3 lighting = (ambient + (1.0 - shadow) * (diffuse + specular)) * color;    
+
+    FragColor = vec4(lighting, 1.0);
+}
+```
+
+이 프래그먼트 셰이더는 우리가 고급 조명(advanced lighting) 챕터에서 사용했던 것의 대부분을 복사한 것이지만, 추가된...
+
+...일종의 가상의 광원 영역이 있고, 이 영역 바깥의 큰 부분이 그림자 속에 있습니다. 이 영역은 바닥에 투영된 깊이 맵의 크기를 나타냅니다. 이런 일이 발생하는 이유는 우리가 이전에 깊이 맵의 래핑 옵션을 `GL_REPEAT`로 설정했기 때문입니다.
+
+우리가 원하는 것은 깊이 맵의 범위를 벗어난 모든 좌표가 깊이 $1.0$을 가지는 것입니다. 그 결과 이러한 좌표는 절대 그림자 속에 있지 않게 됩니다 (객체의 깊이가 $1.0$보다 클 수 없으므로). 이것은 텍스처 경계 색상(texture border color)을 구성하고 깊이 맵의 텍스처 래핑 옵션을 `GL_CLAMP_TO_BORDER`로 설정하여 수행할 수 있습니다:
+
+C++
+
+```
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+float borderColor[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+```
+
+이제 깊이 맵의 $[0, 1]$ 좌표 범위를 벗어난 곳을 샘플링할 때마다, 텍스처 함수는 항상 깊이 $1.0$을 반환하여, $0.0$의 그림자 값을 생성합니다. 이제 결과는 더 그럴듯해 보입니다:
+
+여전히 어두운 영역을 보여주는 한 부분이 있는 것 같습니다. 이는 광원의 직교 절두체의 **원거리 평면(far plane)** 바깥에 있는 좌표입니다. 그림자 방향을 보면 이 어두운 영역이 항상 광원의 절두체 끝 부분에서 발생한다는 것을 알 수 있습니다.
+
+광원 공간으로 투영된 프래그먼트 좌표는 $z$ 좌표가 $1.0$보다 클 때 광원의 원거리 평면보다 더 멀리 있습니다. 이 경우, 좌표의 $z$ 구성 요소를 깊이 맵 값과 비교하므로 `GL_CLAMP_TO_BORDER` 래핑 방식이 더 이상 작동하지 않습니다. $z$가 $1.0$보다 클 때 이는 항상 참을 반환합니다.
+
+이에 대한 수정은 상대적으로 쉽습니다. 투영된 벡터의 $z$ 좌표가 $1.0$보다 클 때마다 그림자 값을 $0.0$으로 강제 설정하면 됩니다:
+
+OpenGL Shading Language
+
+```
+float ShadowCalculation(vec4 fragPosLightSpace)
+{
+    [...]
+    if(projCoords.z > 1.0)
+        shadow = 0.0;
+    return shadow;
+}
+```
+
+원거리 평면을 확인하고 깊이 맵을 수동으로 지정된 경계 색상으로 클램핑하는 것은 깊이 맵의 과도한 샘플링(over-sampling)을 해결합니다. 이로써 마침내 우리가 찾고 있던 결과를 얻게 됩니다:
+
 ---
 
 ## 원거리 평면 (The far plane)
