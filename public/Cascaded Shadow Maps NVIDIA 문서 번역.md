@@ -129,3 +129,108 @@ C =    | 0    S_y   0   O_y |
 **그림 2-4. 여러 깊이 맵에서 그림자를 드리우는 삼각형**
 
 ---
+
+## 코드 개요 (Code Overview)
+
+함께 제공되는 OpenGL SDK 샘플에는 다음과 같은 소스 파일들이 포함되어 있습니다:
+
+• **terrain.cpp** – 환경을 로드하고 렌더링하기 위한 함수 정의들을 포함합니다. 그림자 매핑 알고리즘에 필요한 유일한 메서드는 Draw()이며, Load()와 GetDim()은 초기화 중에 호출되어 월드의 경계 상자를 로드하고 적절하게 설정합니다.
+
+• **utility.cpp** – 메인 코드를 더 읽기 쉽게 만들기 위한 많은 헬퍼 함수들을 포함합니다. 여기에는 셰이더 로더; 카메라 처리; 메뉴, 키보드 및 마우스 처리 등이 포함됩니다.
+
+• **shadowmapping.cpp** – 이 파일은 제시된 알고리즘의 주요 핵심 코드를 포함하며 그림자 맵과 최종 이미지를 화면에 생성하고 그리기 위한 모든 코드를 포함합니다.
+
+대략적으로, terrain.cpp와 utility.cpp는 샘플을 실행하는 데 필요한 프레임워크를 제공하며, 실제 게임에서는 게임 엔진이 이를 제공합니다. 이러한 비유에서 display()는 렌더링 루프의 일부이며, 이 샘플에서는 makeShadowMap()과 renderScene()를 호출합니다.
+
+**리스트 3-1. makeShadowMap()에서 발췌 (약간 수정됨)**
+
+```cpp
+void makeShadowMap() 
+{ 
+    /* ... */ 
+    // 라이트의 방향을 설정
+    gluLookAt(0, 0, 0, 
+        light_dir[0], light_dir[1], light_dir[2], 
+        1.0f, 0.0f, 0.0f); 
+    
+    /* ... */
+    // 카메라 공간에서 본 각 분할의 z 거리를 계산 
+    updateSplitDist(f, 1.0f, FAR_DIST); 
+    
+    // 모든 그림자 맵에 대해: 
+    for(int i=0; i<cur_num_splits; i++) 
+    { 
+        // 월드 공간에서 카메라 절두체 슬라이스 경계 점들을 계산
+        updateFrustumPoints(f[i], cam_pos, cam_view); 
+        
+        // 카메라 절두체 슬라이스를 완전히 둘러싸도록
+        // 라이트의 뷰 절두체를 조정
+        applyCropMatrix(f[i]); 
+        
+        // 현재 깊이 맵을 렌더링 대상으로 만들기
+        glFramebufferTextureLayerEXT(GL_FRAMEBUFFER_EXT, 
+            GL_DEPTH_ATTACHMENT_EXT, depth_tex_ar, 0, i); 
+        
+        // 지난번의 깊이 텍스처를 지우기
+        glClear(GL_DEPTH_BUFFER_BIT); 
+        
+        // 장면 그리기
+        terrain->Draw(minZ); 
+        
+        /* ... */
+    } 
+    /* ... */
+} 
+```
+
+renderScene()는 셰이더 유니폼들을 설정하고(리스트 3-2 참조) 그런 다음 CSM 없이 하는 것처럼 장면을 렌더링합니다. CSM에 중요한 코드 조각은 이 패스 동안 적용되는 픽셀 셰이더에 있습니다.
+
+**리스트 3-2. shadow_single_fragment.glsl (약간 수정됨)**
+
+```glsl
+uniform sampler2D tex;              // 지형 텍스처
+uniform vec4 far_d;                 // 모든 분할의 원거리 거리들
+varying vec4 vPos;                  // 뷰 공간에서 프래그먼트의 위치
+uniform sampler2DArrayShadow stex;  // 깊이 텍스처들
+
+float shadowCoef() 
+{ 
+    int index = 3; 
+    
+    // 이 프래그먼트의 깊이에 기반하여 
+    // 조회할 적절한 깊이 맵을 찾기
+    if(gl_FragCoord.z < far_d.x) 
+        index = 0; 
+    else if(gl_FragCoord.z < far_d.y) 
+        index = 1; 
+    else if(gl_FragCoord.z < far_d.z) 
+        index = 2; 
+    
+    // 이 프래그먼트의 위치를 뷰 공간에서
+    // 스케일된 라이트 클립 공간으로 변환하여
+    // xy 좌표가 [0;1]에 놓이도록 한다.
+    // 직교 광원에 대해서는 w로 나눌 필요가 없다는 점에 유의
+    vec4 shadow_coord = gl_TextureMatrix[index]*vPos; 
+    
+    // 비교할 현재 깊이를 설정
+    shadow_coord.w = shadow_coord.z; 
+    
+    // glsl에 어느 레이어에서 조회할지 알려주기
+    shadow_coord.z = float(index); 
+    
+    // 하드웨어가 비교를 수행하도록 하기
+    return shadow2DArray(stex, shadow_coord).x; 
+} 
+
+void main() 
+{ 
+    vec4 color_tex = texture2D(tex, gl_TexCoord[0].st); 
+    float shadow_coef = shadowCoef(); 
+    float fog_coef = clamp(gl_Fog.scale*(gl_Fog.end + vPos.z), 
+        0.0, 1.0); 
+    gl_FragColor = mix(gl_Fog.color, (0.9 * shadow_coef * 
+        gl_Color * color_tex + 0.1), fog_coef); 
+} 
+```
+
+---
