@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Cascaded Shadow Maps NVIDIA 문서 번역"
             }
           }
         ]
@@ -207,11 +207,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
+    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
     "public/Shadowing.md",
     "public/위키피디아 Shadow mapping 번역.md",
     "public/Lighting.md",
-    "index.md",
     "public/Tile-based light culling.md",
     "learnopengl.com Normal-Mapping 문서 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
@@ -238,7 +239,6 @@
     "public/얕은 복사.md",
     "public/깊은 복사.md",
     "public/MarioBall Implementation.canvas",
-    "public/Rastertek directX11 tutorial 38 - Particle Systems.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
     "재료/이미지/f36ecbf65050e43f57b2dd24838b5f56_MD5.jpg",
