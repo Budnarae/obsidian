@@ -37,7 +37,8 @@
               "title": "Cascaded Shadow Maps NVIDIA 문서 번역"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,10 +222,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "8c14a268980aea5e",
   "lastOpenFiles": [
-    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
+    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "index.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
     "public/Shadowing.md",
