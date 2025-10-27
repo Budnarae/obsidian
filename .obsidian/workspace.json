@@ -11,10 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "GPU Gem 3 Cascade Shadow 문서 번역"
             }
           }
         ]
@@ -202,8 +207,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "index.md",
+    "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
+    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
     "public/Shadowing.md",
     "public/위키피디아 Shadow mapping 번역.md",
@@ -232,7 +238,6 @@
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/복사 생성자.md",
     "public/얕은 복사.md",
-    "public/깊은 복사.md",
     "public/MarioBall Implementation.canvas",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
