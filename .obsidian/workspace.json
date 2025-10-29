@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
+                "file": "public/Perspective Shadow Maps 논문.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "GPU Gems 3 - Perspective Shadow Mapping 번역"
+              "title": "Perspective Shadow Maps 논문"
             }
           }
         ]
@@ -207,8 +207,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
+    "public/Perspective Shadow Maps 논문.md",
+    "index.md",
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
     "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
@@ -237,7 +238,6 @@
     "private/42Seoul/Untitled.md",
     "public/ImGui README.md 번역.md",
     "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
-    "public/복사 생성자.md",
     "public/MarioBall Implementation.canvas",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
