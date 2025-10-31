@@ -648,3 +648,202 @@ int main () {
 좀 더 고급 트릭이나 기능을 배우고 싶다면 `sol::this_state`와 `sol::variadic_args`를 참고하세요.  
 다음 튜토리얼 주제는 **C++ 타입(usertypes)을 Lua에서 사용하는 방법**입니다.  
 C++ 쪽 함수의 인자 활용법이나 효율적인 사용법이 더 궁금하다면 관련 노트를 참고하세요.
+
+---
+
+## C++ in Lua
+
+사용자 정의 타입(“usertype” 또는 간단히 “udt”)을 sol에서 사용하는 것은 간단합니다.  
+만약 멤버 변수나 함수를 호출하지 않는다면, 굳이 ‘등록(register)’할 필요도 없습니다 — 그냥 그대로 전달하면 됩니다.  
+하지만 Lua 안에서 usertype의 변수와 함수를 사용하려면, 반드시 등록을 해야 합니다.
+
+여기서는 여러 가지 정보를 포함한 짧은 예시를 통해 usertype을 다루는 방법을 보여드리겠습니다.
+
+---
+
+### player.hpp
+
+```cpp
+#include <iostream>
+
+struct player {
+public:
+	int bullets;
+	int speed;
+
+	player()
+		: player(3, 100) {
+
+	}
+
+	player(int ammo)
+		: player(ammo, 100) {
+
+	}
+
+	player(int ammo, int hitpoints)
+		: bullets(ammo), hp(hitpoints) {
+
+	}
+
+	void boost() {
+		speed += 10;
+	}
+
+	bool shoot() {
+		if (bullets < 1)
+			return false;
+		--bullets;
+		return true;
+	}
+
+	void set_hp(int value) {
+		hp = value;
+	}
+
+	int get_hp() const {
+		return hp;
+	}
+
+private:
+	int hp;
+};
+```
+
+이 클래스는 비교적 단순하지만, Lua에서 메타테이블(metatable)을 직접 작성하는 일은 피하고 싶습니다.  
+우리는 이 클래스를 Lua에 **손쉽게 통합**하고 싶습니다.
+
+---
+
+### 우리가 Lua에서 사용하고 싶은 코드 (player_script.lua)
+
+```lua
+p1 = player.new(2)
+
+-- p2는 아래에서 lua["p2"] = player(0); 으로 설정되어 있으므로 여전히 존재함
+local p2shoots = p2:shoot()
+assert(not p2shoots)
+-- 탄약이 0이었음
+
+-- 변수 프로퍼티 설정자(setter)
+p1.hp = 545
+-- 프로퍼티 접근자(unqualified getter)로 값 얻기
+print(p1.hp)
+assert(p1.hp == 545)
+
+local did_shoot_1 = p1:shoot()
+print(did_shoot_1)
+print(p1.bullets)
+local did_shoot_2 = p1:shoot()
+print(did_shoot_2)
+print(p1.bullets)
+local did_shoot_3 = p1:shoot()
+print(did_shoot_3)
+
+-- 읽기 가능
+print(p1.bullets)
+-- 아래는 오류 발생: bullets는 읽기 전용 변수이므로 쓸 수 없음
+-- p1.bullets = 20
+
+p1:boost()
+-- Lua 스크립트에서 런타임에 정의한 함수 호출
+p1:brake()
+```
+
+---
+
+이 동작을 가능하게 하려면, `new_usertype`과 `method`를 사용해 바인딩해야 합니다.  
+이 메서드들은 `table`과 `state(_view)` 양쪽 모두에 존재하지만, 여기서는 `state`를 사용하겠습니다.
+
+---
+
+### main.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+#include "player.hpp"
+
+#include <iostream>
+
+int main() {
+	sol::state lua;
+
+	lua.open_libraries(sol::lib::base);
+
+	// usertype을 등록하기 전에 userdata를 설정해도 괜찮음.
+	// 이후에 usertype을 등록하면 올바른 메타테이블이 자동으로 연결됨.
+
+	// "p2"라는 변수를 player 타입(탄약 0)으로 설정
+	lua["p2"] = player(0);
+
+	// usertype 메타테이블 생성
+	sol::usertype<player> player_type = lua.new_usertype<player>("player",
+		// 3개의 생성자
+		sol::constructors<player(), player(int), player(int, int)>());
+
+	// 값을 반환하는 일반적인 멤버 함수
+	player_type["shoot"] = &player::shoot;
+	// 일반적인 멤버 함수
+	player_type["boost"] = &player::boost;
+
+	// 멤버 변수처럼 get/set 가능한 프로퍼티
+	player_type["hp"] = sol::property(&player::get_hp, &player::set_hp);
+
+	// 읽기/쓰기 가능한 변수
+	player_type["speed"] = &player::speed;
+	// 읽기 전용 변수
+	// .set(foo, bar)는 [foo] = bar 와 동일
+	player_type.set("bullets", sol::readonly(&player::bullets));
+
+	lua.script_file("prelude_script.lua");
+	lua.script_file("player_script.lua");
+	return 0;
+}
+```
+
+---
+
+### 추가 Lua 코드 (prelude_script.lua)
+
+```lua
+function player:brake ()
+	self.speed = 0
+	print("we hit the brakes!")
+end
+```
+
+이 스크립트는 C++에서 정의되지 않은 `brake` 메서드를 **Lua 쪽에서 동적으로 추가**하는 예시입니다.
+
+---
+
+이제 이 스크립트를 실행하면 잘 작동할 것입니다.  
+값의 변화를 관찰하거나 실험도 가능하죠.
+
+이 밖에도 다음과 같은 고급 기능들이 존재합니다:
+
+- 초기화 함수 (private 생성자 / 소멸자 지원)
+    
+- `name.my_function(...)` 형태로 호출 가능한 “정적(static)” 함수
+    
+- 오버로딩된 멤버 함수
+    
+- `sol::var`을 이용한 전역 변수 바인딩 (`std::ref`를 사용하면 참조로도 가능)
+    
+
+---
+
+이 방법은 단순히 함수를 등록하는 수준을 넘어,  
+**Lua에서 C++ 코드를 재활용할 수 있는 강력한 방법**입니다.
+
+더 복잡한 클래스나 자료 구조를 Lua에 노출할 수 있으며,  
+만약 usertype 이상의 세밀한 제어가 필요하다면  
+`sol`의 커스터마이징 및 확장 기능을 통해 원하는 동작을 정의할 수도 있습니다.
+
+더 많은 예시와 복잡한 코드는 `examples` 디렉터리의  
+`usertype_` 접두어가 붙은 예시들을 참고하면 됩니다.
+
+---
+
+원문의 구조, 주석, 코드 포맷을 그대로 살린 **완전 번역본**입니다.
