@@ -471,9 +471,14 @@ int main () {
         sol::state lua;
 
         lua.script(R"(
-                function f (a)
+                local M = {}
+                
+                function M:f (a)
                         return a + 5
                 end
+                
+                
+                return M
         )");
 
         // 즉시 가져와서 바로 호출
