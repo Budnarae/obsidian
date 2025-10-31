@@ -9,7 +9,9 @@ _lua_
 
 ---
 
+[lua와 c++ 연동 방법 튜토리얼](https://lucasklassmann.com/blog/2019-02-02-embedding-lua-in-c/)
 
+[[sol2]]
 
 ---
 ---

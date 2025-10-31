@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/sol2.md",
-                "mode": "preview",
+                "file": "public/lua.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "sol2"
+              "title": "lua"
             }
           }
         ]
@@ -207,8 +207,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "public/lua.md",
     "public/sol2.md",
+    "public/lua.md",
     "index.md",
     "public/Perspective Shadow Maps 논문.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
