@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "sol2 Documentation 번역.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
@@ -241,12 +241,12 @@
         "y": 176,
         "width": 1024,
         "height": 800,
-        "maximize": true,
+        "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "1b28717d22e1d3e3",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "public/lua.md",
     "sol2 Documentation 번역.md",
