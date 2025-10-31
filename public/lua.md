@@ -14,7 +14,7 @@ _링크_
 [sol2 tutorial](https://sol2.readthedocs.io/en/latest/tutorial/tutorial-top.html)
 
 _문서_
-[]
+[[sol2 | sol2 벼락치기]]
 
 ---
 ---
