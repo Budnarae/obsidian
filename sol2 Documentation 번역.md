@@ -846,4 +846,265 @@ end
 
 ---
 
-원문의 구조, 주석, 코드 포맷을 그대로 살린 **완전 번역본**입니다.
+## **소유권 (ownership)**
+
+C++에서 리소스를 관리할 때 소유권은 중요합니다.  
+**sol**은 여러 가지 소유권(ownership) 의미 체계를 가지고 있으며, 대부분 기본적으로 안전합니다.  
+아래는 그 규칙들입니다.
+
+---
+
+### **객체 소유권 (object ownership)**
+
+Lua에 존재하는 어떤 것에 대한 참조를 가져오려면 `sol::reference` 또는 `sol::object`를 통해 가져올 수 있습니다:
+
+#### object_lifetime.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+#include <string>
+#include <iostream>
+
+int main () {
+	sol::state lua;
+	lua.open_libraries(sol::lib::base);
+
+	lua.script(R"(
+	obj = "please don't let me die";
+	)");
+
+	sol::object keep_alive = lua["obj"];
+	lua.script(R"(
+	obj = nil;
+	function say(msg)
+		print(msg)
+	end
+	)");
+
+	lua.collect_garbage();
+
+	lua["say"](lua["obj"]);
+	// 여전히 여기서 접근 가능하며 Lua 내에서도 살아 있음
+	// 이름이 지워졌더라도
+	std::string message = keep_alive.as<std::string>();
+	std::cout << message << std::endl;
+
+	// Lua에 다시 인자로 전달하거나
+	// 새 이름으로 지정할 수도 있음
+	// 원하는 대로!
+	lua["say"](keep_alive);
+
+	return 0;
+}
+```
+
+모든 객체는 `sol::state`가 파괴되기 전에 반드시 파괴되어야 합니다.  
+그렇지 않으면 Lua 상태(Lua State)에 대한 **dangling reference(잘못된 참조)** 가 생겨  
+끔찍하고 무시무시한 방식으로 프로그램이 터질 것입니다. 💥
+
+이 규칙은 단지 `sol::object`에만 해당되지 않습니다.  
+`sol::reference` 및 `sol::object`에서 파생된 모든 타입 (`sol::table`, `sol::userdata`, 등등) 역시  
+**state가 범위를 벗어나기 전에 정리(clean up)** 되어야 합니다.
+
+---
+
+### **포인터 소유권 (pointer ownership)**
+
+`sol`은 **raw pointer (일반 포인터)** 의 소유권을 가져가지 않습니다.  
+Raw pointer는 어떤 것도 소유하지 않기 때문입니다.
+
+따라서 `sol`은 raw pointer를 삭제하지 않습니다.  
+(삭제하면 안 됩니다. 소유자가 아니기 때문입니다.)
+
+#### pointer_lifetime.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+struct my_type {
+	void stuff() {
+	}
+};
+
+int main() {
+
+	sol::state lua;
+	// AAAHHH BAD
+	// dangling pointer!
+	lua["my_func"] = []() -> my_type* { return new my_type(); };
+
+	// AAAHHH!
+	lua.set("something", new my_type());
+
+	// AAAAAAHHH!!!
+	lua["something_else"] = new my_type();
+	return 0;
+}
+```
+
+---
+
+대신 **unique_ptr** 또는 **shared_ptr** 을 사용하거나,  
+단순히 **값(value)** 자체를 반환하세요.
+
+#### (스마트 포인터 사용) pointer_lifetime.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+struct my_type {
+	void stuff() {
+	}
+};
+
+int main() {
+
+	sol::state lua;
+	// :ok:
+	lua["my_func0"] = []() -> std::unique_ptr<my_type> { return std::make_unique<my_type>(); };
+
+	// :ok:
+	lua["my_func1"] = []() -> std::shared_ptr<my_type> { return std::make_shared<my_type>(); };
+
+	// :ok:
+	lua["my_func2"] = []() -> my_type { return my_type(); };
+
+	// :ok:
+	lua.set("something", std::unique_ptr<my_type>(new my_type()));
+
+	std::shared_ptr<my_type> my_shared = std::make_shared<my_type>();
+	// :ok:
+	lua.set("something_else", my_shared);
+
+	// :ok:
+	auto my_unique = std::make_unique<my_type>();
+	lua["other_thing"] = std::move(my_unique);
+
+	return 0;
+}
+```
+
+---
+
+만약 **수명이 충분히 길어질 것임을 확실히 알고 있고**,  
+Lua에 **참조(reference)** 로 넘기기만 하려는 것이라면  
+그것도 괜찮습니다:
+
+#### (static) pointer_lifetime.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+struct my_type {
+	void stuff() {
+	}
+};
+
+int main() {
+
+	sol::state lua;
+	lua["my_func5"] = []() -> my_type* {
+		static my_type mt;
+		return &mt;
+	};
+	return 0;
+}
+```
+
+---
+
+`sol`은 **nullptr** 을 감지할 수 있습니다.  
+따라서 반환할 때 nullptr이면,  
+dangling 참조 대신 **sol::lua_nil** 값이 푸시됩니다.
+
+하지만 **미리 nil임을 알고 있다면**,  
+`std::nullptr_t` 또는 `sol::lua_nil` 을 명시적으로 반환하는 것이 좋습니다.
+
+#### (nil / nullptr) pointer_lifetime.cpp
+
+```cpp
+#define SOL_ALL_SAFETIES_ON 1
+#include <sol/sol.hpp>
+
+struct my_type {
+	void stuff() {
+	}
+};
+
+int main() {
+
+	sol::state lua;
+	// 이건 여전히 나쁨 DON'T DO IT AAAHHH BAD
+	// 빈 unique_ptr을 반환하거나
+	// 명시적으로 하세요!
+	lua["my_func6"] = []() -> my_type* { return nullptr; };
+
+	// :ok:
+	lua["my_func7"] = []() -> std::nullptr_t { return nullptr; };
+
+	// :ok:
+	lua["my_func8"] = []() -> std::unique_ptr<my_type> {
+		// 기본 생성되며 nullptr로 초기화됨
+		// Lua로는 nil로 푸시됨
+		return std::unique_ptr<my_type>();
+		// std::shared_ptr도 동일하게 동작함
+	};
+
+	// 허용됨, 'something'을 nil로 설정함
+	// (참조가 없으면 다음 GC 때 삭제됨)
+	lua.set("something", nullptr);
+
+	// 이것도 괜찮음
+	lua["something_else"] = nullptr;
+
+	return 0;
+}
+```
+
+---
+
+### **일시적 (ephemeral, proxy) 객체**
+
+**Proxy** 와 **result** 타입들은 **일시적(ephemeral)** 입니다.  
+이들은 Lua 스택에 의존하며, 생성자와 소멸자가 Lua 스택과 상호작용합니다.
+
+즉, 이런 객체들은 **C++ 함수에서 반환하기에 매우 위험**합니다.  
+(매우 신중한 관리 없이는 스택이 해제된 후 참조 오류가 발생합니다.)
+
+다음과 같은 스택 기반 객체들을 사용할 때 주의해야 합니다:
+
+- `protected_function_result`
+    
+- `function_result`
+    
+- `load_result`
+    
+- `stack_reference`
+    
+- 그 밖의 Lua 스택을 직접 다루는 타입들
+    
+
+이런 것들을 반환하고 싶다면, **다시 생각해보세요**.  
+특히 **여러 개의 load/function 결과를 한 C++ 함수에서 처리하는 경우**는  
+구현 세부사항(implementation-defined behavior)에 의존해야 하므로  
+매우 위험합니다.
+
+---
+
+✅ **정리 요약**
+
+- `sol::object`, `sol::table` 등은 **Lua state보다 오래 살아서는 안 됨**
+    
+- **raw pointer 사용 금지**, 대신 `unique_ptr` / `shared_ptr` / 값 사용
+    
+- **nullptr 반환 시 nil로 처리됨**
+    
+- **스택 기반 객체는 반환하지 말 것**
+    
+
+---
