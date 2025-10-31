@@ -15,6 +15,7 @@ _링크_
 
 _문서_
 [[sol2 | sol2 벼락치기]]
+[[sol2 Documentation 번역]]
 
 ---
 ---
