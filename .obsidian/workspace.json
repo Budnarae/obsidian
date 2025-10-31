@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/lua.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "lua"
             }
           }
         ]
@@ -207,9 +207,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "index.md",
+    "public/lua.md",
     "public/Perspective Shadow Maps 논문.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
-    "index.md",
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
     "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
@@ -237,7 +238,6 @@
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
     "public/ImGui README.md 번역.md",
-    "public/Imgui wiki Getting Started Win32 + DirectX11 번역본.md",
     "public/MarioBall Implementation.canvas",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
