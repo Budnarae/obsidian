@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/lua.md",
+                "file": "public/sol2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "lua"
+              "title": "sol2"
             }
           }
         ]
@@ -207,8 +207,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "public/lua.md",
+    "public/sol2.md",
+    "index.md",
     "public/Perspective Shadow Maps 논문.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
@@ -237,7 +238,6 @@
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "private/42Seoul/Untitled.md",
-    "public/ImGui README.md 번역.md",
     "public/MarioBall Implementation.canvas",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "Pasted image 20250903194131.png",
