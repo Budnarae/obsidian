@@ -471,14 +471,9 @@ int main () {
         sol::state lua;
 
         lua.script(R"(
-                local M = {}
-                
-                function M:f (a)
+                function f (a)
                         return a + 5
                 end
-                
-                
-                return M
         )");
 
         // 즉시 가져와서 바로 호출
@@ -1308,5 +1303,95 @@ Lua에서 **가져올(get)** 필요는 없다면,
 
 ---
 
-원문 표현, 코드, 설명 모두 포함한 완전한 번역입니다.  
-원하신다면 여기서 이어지는 “stack customization API” 문서 부분도 번역해드릴까요?
+# GPT Chatting : sol2가 타입의 상속 지원 기능이 있는지
+
+---
+
+## 1️⃣ 기본 원칙
+
+Sol2는 **C++ 상속을 Lua 쪽에서도 인식**할 수 있게 설계되어 있습니다.
+
+- 부모 클래스(`Base`)를 Lua에 먼저 등록
+    
+- 자식 클래스(`Derived`)를 등록할 때 **`sol::bases<Base>`**를 지정하면 부모의 멤버/메서드를 자동으로 상속
+    
+
+즉, 부모 클래스에서 등록한 요소는 **자식에서 다시 등록할 필요 없음**.
+
+---
+
+## 2️⃣ 예시
+
+```cpp
+#include <sol/sol.hpp>
+#include <iostream>
+
+class Base {
+public:
+    void Foo() { std::cout << "Base::Foo\n"; }
+};
+
+class Derived : public Base {
+public:
+    void Bar() { std::cout << "Derived::Bar\n"; }
+};
+
+int main() {
+    sol::state lua;
+    lua.open_libraries(sol::lib::base);
+
+    // 부모 클래스 등록
+    lua.new_usertype<Base>("Base",
+        "Foo", &Base::Foo
+    );
+
+    // 자식 클래스 등록, bases<> 사용
+    lua.new_usertype<Derived>("Derived",
+        sol::bases<Base>(),  // Base 상속
+        "Bar", &Derived::Bar
+    );
+
+    lua.script(R"(
+        local d = Derived.new()
+        d:Foo()  -- Base::Foo 호출
+        d:Bar()  -- Derived::Bar 호출
+    )");
+
+    return 0;
+}
+```
+
+- Lua에서 `Derived` 객체는 자동으로 `Base`의 메서드(`Foo`)를 사용할 수 있음
+    
+- **Base에서 이미 등록한 `Foo`를 Derived에서 다시 등록할 필요 없음**
+    
+
+---
+
+## 3️⃣ 주의 사항
+
+1. **순서 중요**: 부모 클래스 먼저 등록 → 자식 클래스 등록 시 `sol::bases<Parent>` 지정
+    
+2. 부모 클래스가 포인터 멤버를 갖고 있으면, 해당 타입도 **사전에 Lua에 등록**되어 있어야 함
+    
+3. 다중 상속도 가능:
+    
+
+```cpp
+class Derived2 : public Base, public AnotherBase {};
+lua.new_usertype<Derived2>("Derived2", sol::bases<Base, AnotherBase>(), ...);
+```
+
+4. 멤버 변수는 상속되지 않음 → Lua에서 직접 접근할 수 있는 **공용 멤버**만 상속됨
+    
+
+---
+
+정리하면:
+
+- **메서드 상속**: 부모에서 등록하면 자식에서 중복 등록 불필요
+    
+- **멤버 변수 상속**: public이면 Lua에서 접근 가능, private/protected는 getter/setter 필요
+    
+- `sol::bases<Parent>`로 상속 관계를 명시해야 Lua에서도 자동 상속됨
+    
