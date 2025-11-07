@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/learnopengl skeletal animation 문서 번역.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "learnopengl skeletal animation 문서 번역"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "944f8f62c5a05053",
@@ -142,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "public/learnopengl skeletal animation 문서 번역.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 의 개요"
+              "title": "learnopengl skeletal animation 문서 번역 의 개요"
             }
           },
           {
@@ -207,8 +206,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "sol2 Documentation 번역.md",
     "index.md",
+    "public/learnopengl skeletal animation 문서 번역.md",
+    "sol2 Documentation 번역.md",
     "public/lua.md",
     "public/sol2.md",
     "public/Perspective Shadow Maps 논문.md",
@@ -235,7 +235,6 @@
     "public/Gouraud shading.md",
     "private/Week5 게임 엔진 흐름도.canvas",
     "public/DirectX11 API.canvas",
-    "private/크래프톤 게임테크랩 3주차 발제.md",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
     "Pasted image 20250827125730.png",
     "public/MarioBall Implementation.canvas",
