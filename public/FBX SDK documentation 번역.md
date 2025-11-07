@@ -171,3 +171,56 @@ FBX Review는 3D 자산 및 애니메이션을 검토하기 위한 독립 실행
 |AutoCAD|범용 CAD 모델링 패키지. FBX 파일을 가져오고 내보냄.|
 
 많은 타사 소프트웨어 제품도 FBX SDK를 사용하여 파일을 가져오고 내보냅니다. 자세한 내용은 __http://www.autodesk.com/fbx__를 참조하십시오.
+
+---
+
+**새로운 기능/변경 사항**
+
+이 섹션은 FBX SDK의 각 릴리스 간의 중요한 변경 사항에 대한 개요를 제공합니다.
+
+FBX SDK의 이전 버전 이후의 모든 변경 사항에 대한 세부 정보는 FBX SDK 설치 루트 디렉토리에 있는 readme.txt 파일에 있습니다.
+
+**더 이상 사용되지 않는 클래스 및 함수 피하기**
+
+FBX SDK의 각 릴리스에서 더 이상 사용되지 않는 클래스 및 함수는 `K_DEPRECATED`로 선언됩니다:
+
+```
+K_DEPRECATED KFbxTakeNode* GetDefaultTakeNode();
+```
+
+더 이상 사용되지 않는 함수를 계속 사용할 수 있지만 다음 사항에 유의하십시오:
+
+- 컴파일러에서 경고가 발생합니다.
+- 현재 릴리스에서 더 이상 사용되지 않는 함수는 다음 릴리스에서 완전히 제거됩니다.
+
+**이 섹션의 페이지**
+
+- FBX SDK 2020
+- FBX SDK 2019
+- FBX SDK 2018
+- FBX SDK 2017
+- FBX SDK 2016
+- FBX SDK 2015
+- FBX SDK 2014
+- FBX SDK 2013
+- FBX SDK 2012
+- FBX SDK 2011
+
+---
+
+**플랫폼 요구 사항**
+
+FBX SDK는 다음 플랫폼의 32비트 및 64비트 버전에서 실행됩니다:
+
+|플랫폼|요구 사항|
+|---|---|
+|Microsoft Windows|Windows 7.0<br>Windows 8.0 / Windows 8.1<br>Windows 10|
+|Windows Store 앱|Windows 8.0 이상.|
+|Linux|GCC 버전 9.3 이상을 제공하는 모든 Linux 구현.|
+|Mac OS|Intel 프로세서(64비트만) 또는 Apple M1(ARM64)이 탑재된 버전 10.8 이상|
+|iOS|버전 7.0. ARMv7, ARMv7s 및 ARM64 아키텍처 지원.|
+
+자세한 내용은 __권장 개발 환경__을 참조하십시오.
+
+---
+
