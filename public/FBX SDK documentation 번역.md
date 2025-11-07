@@ -483,3 +483,280 @@ FBX SDK를 사용하는 새 Visual Studio 솔루션을 만들려면:
 **프로젝트의 전처리기 정의에 대한 중요 참고 사항**
 
 FBX SDK의 동적 라이브러리 버전을 사용하는 경우 프로젝트의 전처리기 정의에 FBXSDK_SHARED를 추가하십시오. Visual Studio에서 이를 수행하려면 프로젝트에서 프로젝트 > 속성 > 구성 속성 > C/C++ > 전처리기를 선택하고 전처리기 정의 필드를 편집합니다.
+
+---
+
+**첫 번째 FBX SDK 프로그램**
+
+이 주제는 첫 번째 FBX SDK 프로그램에 대한 기본 개요를 제공합니다.
+
+이 프로그램은 정적으로 링크된 버전의 FBX SDK를 사용합니다. 환경에 맞게 FBX SDK를 설치하고 구성하는 방법에 대한 추가 정보는 설치 및 구성을 참조하십시오.
+
+다음 FBX SDK 프로그램은 다음 작업 방법에 대한 개요를 제공합니다:
+
+- FBX SDK 메모리 관리 객체를 인스턴스화합니다. (FbxManager)
+- FBX 파일의 내용을 씬으로 가져옵니다. (FbxIOSettings, FbxImporter, FbxScene)
+- 씬의 요소 계층 구조를 순회합니다. (FbxScene, FbxNode, FbxNodeAttribute)
+- 씬의 요소에 대한 기본 정보에 액세스하고 출력합니다. (FbxNode, FbxNodeAttribute, FbxString)
+
+**객체 관리**
+
+**관련 주제:** FBX SDK 관리자를 사용한 메모리 관리
+
+FBX SDK에서 조작되는 대부분의 객체는 SDK의 메모리 관리자 객체(FbxManager)에 대한 참조와 함께 인스턴스화됩니다. 일반적으로 FBX SDK를 사용하는 프로그램에서 가장 먼저 생성되는 객체 중 하나이며, FbxManager::Create() 함수로 인스턴스화됩니다. 프로그램에는 FbxManager의 인스턴스가 하나만 필요합니다. FbxManager::Destroy() 메서드를 사용하여 FbxManager의 인스턴스가 소멸되면, 이와 함께 생성된 다른 모든 FBX SDK 객체도 소멸됩니다.
+
+```cpp
+#include <fbxsdk.h>
+
+// ...
+
+/**
+ * 메인 함수 - 하드코딩된 fbx 파일을 로드하고,
+ * 그 내용을 xml 형식으로 stdout에 출력합니다.
+ */
+int main(int argc, char** argv) {
+
+    // 다음 파일명을 적절한 파일명 값으로 변경하십시오.
+    const char* lFilename = "file.fbx";
+
+    // SDK 관리자를 초기화합니다. 이 객체는 메모리 관리를 처리합니다.
+    FbxManager* lSdkManager = FbxManager::Create();
+```
+
+**FBX 파일의 내용 가져오기**
+
+**관련 주제:**
+
+- 지원되는 파일 형식
+- IO 설정
+- 씬 가져오기
+
+FBX 파일의 내용을 가져오려면 FbxIOSettings 객체와 FbxImporter 객체를 생성해야 합니다. FbxImporter 객체는 가져올 파일의 파일명과 가져오기 요구 사항에 맞게 적절히 구성된 FbxIOSettings 객체를 제공하여 초기화됩니다({ IO 설정 } 참조).
+
+```cpp
+// IO 설정 객체를 생성합니다.
+FbxIOSettings *ios = FbxIOSettings::Create(lSdkManager, IOSROOT);
+lSdkManager->SetIOSettings(ios);
+
+// SDK 관리자를 사용하여 임포터를 생성합니다.
+FbxImporter* lImporter = FbxImporter::Create(lSdkManager,"");
+
+// 첫 번째 인수를 임포터의 파일명으로 사용합니다.
+if(!lImporter->Initialize(lFilename, -1, lSdkManager->GetIOSettings())) {
+    printf("Call to FbxImporter::Initialize() failed.\n");
+    printf("Error returned: %s\n\n", lImporter->GetStatus().GetErrorString());
+    exit(-1);
+}
+```
+
+FbxImporter 객체는 제공된 FbxScene 객체를 FBX 파일에 포함된 요소로 채웁니다. FbxScene::Create() 함수의 두 번째 매개변수로 빈 문자열이 전달되는 것을 관찰하십시오. FBX SDK에서 생성된 객체에는 임의의 고유하지 않은 이름을 지정할 수 있으며, 이를 통해 사용자나 다른 프로그램이 내보낸 후 객체를 식별할 수 있습니다. FbxScene이 채워진 후에는 FbxImporter를 안전하게 소멸시킬 수 있습니다.
+
+```cpp
+// 가져온 파일로 채울 수 있도록 새 씬을 생성합니다.
+FbxScene* lScene = FbxScene::Create(lSdkManager,"myScene");
+
+// 파일의 내용을 씬으로 가져옵니다.
+lImporter->Import(lScene);
+
+// 파일을 가져왔으므로 임포터를 제거합니다.
+lImporter->Destroy();
+```
+
+**씬 탐색**
+
+**관련 주제:**
+
+- FBX 씬
+- FBX 노드
+- FBX 노드 속성
+- 두 씬 병합
+
+FbxScene 객체는 씬 내에 존재하는 요소의 컨테이너 역할을 합니다. 가져오거나 내보낸 파일당 FbxScene 객체는 하나만 있을 수 있습니다. 씬에는 메시, 조명, 카메라, 스켈레톤, NURBS(몇 가지만 언급하자면) 등 다양한 요소가 포함될 수 있습니다. FbxScene의 요소는 FbxNode의 계층적 트리로 구성됩니다. 씬의 루트 노드는 FbxScene::GetRootNode()를 통해 액세스됩니다. 씬의 루트 노드는 씬을 파일로 내보낼 때 저장되지 않으며, 그 자식만 저장됩니다. 노드의 자식은 FbxNode::GetChild()를 통해 액세스할 수 있습니다. 마찬가지로 노드의 부모는 FbxNode::GetParent()를 통해 액세스할 수 있습니다. 개념적으로 FbxNode는 하나 이상의 씬 요소에 대한 컨테이너 역할을 합니다. 예를 들어, 씬의 한 FbxNode에는 카메라가 포함될 수 있고, 다른 FbxNode에는 메시가 포함될 수 있습니다. FBX SDK에서 메시, 조명, 카메라, 스켈레톤, NURBS, 애니메이션 커브 등과 같은 씬 요소는 FbxNodeAttribute에서 파생된 클래스로 정의됩니다. FbxNode당 둘 이상의 FbxNodeAttribute가 있을 수 있습니다.
+
+```cpp
+// 씬의 노드와 그 속성을 재귀적으로 출력합니다.
+// 루트 노드는 속성을 포함해서는 안 되므로
+// 출력하지 않습니다.
+FbxNode* lRootNode = lScene->GetRootNode();
+if(lRootNode) {
+    for(int i = 0; i < lRootNode->GetChildCount(); i++)
+        PrintNode(lRootNode->GetChild(i));
+}
+// SDK 관리자와 그것이 처리하던 다른 모든 객체를 소멸시킵니다.
+lSdkManager->Destroy();
+```
+
+FbxNode는 로컬 이동(FbxNode::LclTranslation), 회전(FbxNode::LclRotation) 및 스케일링(FbxNode::LclScaling) 속성에 대한 액세스를 제공합니다. 이러한 속성은 현재 노드의 위치, 방향 및 스케일을 얻기 위해 부모 노드의 위치, 방향 및 스케일에 적용되는 변환을 나타냅니다.
+
+```cpp
+/**
+ * 노드, 그 속성 및 모든 자식을 재귀적으로 출력합니다.
+ */
+void PrintNode(FbxNode* pNode) {
+    PrintTabs();
+    const char* nodeName = pNode->GetName();
+    FbxDouble3 translation = pNode->LclTranslation.Get();
+    FbxDouble3 rotation = pNode->LclRotation.Get();
+    FbxDouble3 scaling = pNode->LclScaling.Get();
+
+    // 노드의 내용을 출력합니다.
+    printf("<node name='%s' translation='(%f, %f, %f)' rotation='(%f, %f, %f)' scaling='(%f, %f, %f)'>\n",
+        nodeName,
+        translation[0], translation[1], translation[2],
+        rotation[0], rotation[1], rotation[2],
+        scaling[0], scaling[1], scaling[2]
+        );
+    numTabs++;
+
+    // 노드의 속성을 출력합니다.
+    for(int i = 0; i < pNode->GetNodeAttributeCount(); i++)
+        PrintAttribute(pNode->GetNodeAttributeByIndex(i));
+
+    // 자식을 재귀적으로 출력합니다.
+    for(int j = 0; j < pNode->GetChildCount(); j++)
+        PrintNode(pNode->GetChild(j));
+
+    numTabs--;
+    PrintTabs();
+    printf("</node>\n");
+}
+```
+
+**첫 번째 프로그램**
+
+```cpp
+#include <fbxsdk.h>
+
+/* 탭 문자("\t") 카운터 */
+int numTabs = 0;
+
+/**
+ * 필요한 수의 탭을 출력합니다.
+ */
+void PrintTabs() {
+    for(int i = 0; i < numTabs; i++)
+        printf("\t");
+}
+
+/**
+ * 속성 타입에 기반한 문자열 표현을 반환합니다.
+ */
+FbxString GetAttributeTypeName(FbxNodeAttribute::EType type) {
+    switch(type) {
+        case FbxNodeAttribute::eUnknown: return "unidentified";
+        case FbxNodeAttribute::eNull: return "null";
+        case FbxNodeAttribute::eMarker: return "marker";
+        case FbxNodeAttribute::eSkeleton: return "skeleton";
+        case FbxNodeAttribute::eMesh: return "mesh";
+        case FbxNodeAttribute::eNurbs: return "nurbs";
+        case FbxNodeAttribute::ePatch: return "patch";
+        case FbxNodeAttribute::eCamera: return "camera";
+        case FbxNodeAttribute::eCameraStereo: return "stereo";
+        case FbxNodeAttribute::eCameraSwitcher: return "camera switcher";
+        case FbxNodeAttribute::eLight: return "light";
+        case FbxNodeAttribute::eOpticalReference: return "optical reference";
+        case FbxNodeAttribute::eOpticalMarker: return "marker";
+        case FbxNodeAttribute::eNurbsCurve: return "nurbs curve";
+        case FbxNodeAttribute::eTrimNurbsSurface: return "trim nurbs surface";
+        case FbxNodeAttribute::eBoundary: return "boundary";
+        case FbxNodeAttribute::eNurbsSurface: return "nurbs surface";
+        case FbxNodeAttribute::eShape: return "shape";
+        case FbxNodeAttribute::eLODGroup: return "lodgroup";
+        case FbxNodeAttribute::eSubDiv: return "subdiv";
+        default: return "unknown";
+    }
+}
+
+/**
+ * 속성을 출력합니다.
+ */
+void PrintAttribute(FbxNodeAttribute* pAttribute) {
+    if(!pAttribute) return;
+
+    FbxString typeName = GetAttributeTypeName(pAttribute->GetAttributeType());
+    FbxString attrName = pAttribute->GetName();
+    PrintTabs();
+    // 참고: FbxString의 문자 배열을 검색하려면 Buffer() 메서드를 사용하십시오.
+    printf("<attribute type='%s' name='%s'/>\n", typeName.Buffer(), attrName.Buffer());
+}
+
+/**
+ * 노드, 그 속성 및 모든 자식을 재귀적으로 출력합니다.
+ */
+void PrintNode(FbxNode* pNode) {
+    PrintTabs();
+    const char* nodeName = pNode->GetName();
+    FbxDouble3 translation = pNode->LclTranslation.Get();
+    FbxDouble3 rotation = pNode->LclRotation.Get();
+    FbxDouble3 scaling = pNode->LclScaling.Get();
+
+    // 노드의 내용을 출력합니다.
+    printf("<node name='%s' translation='(%f, %f, %f)' rotation='(%f, %f, %f)' scaling='(%f, %f, %f)'>\n",
+        nodeName,
+        translation[0], translation[1], translation[2],
+        rotation[0], rotation[1], rotation[2],
+        scaling[0], scaling[1], scaling[2]
+        );
+    numTabs++;
+
+    // 노드의 속성을 출력합니다.
+    for(int i = 0; i < pNode->GetNodeAttributeCount(); i++)
+        PrintAttribute(pNode->GetNodeAttributeByIndex(i));
+
+    // 자식을 재귀적으로 출력합니다.
+    for(int j = 0; j < pNode->GetChildCount(); j++)
+        PrintNode(pNode->GetChild(j));
+
+    numTabs--;
+    PrintTabs();
+    printf("</node>\n");
+}
+
+/**
+ * 메인 함수 - 하드코딩된 fbx 파일을 로드하고,
+ * 그 내용을 xml 형식으로 stdout에 출력합니다.
+ */
+int main(int argc, char** argv) {
+
+    // 다음 파일명을 적절한 파일명 값으로 변경하십시오.
+    const char* lFilename = "file.fbx";
+
+    // SDK 관리자를 초기화합니다. 이 객체는 모든 메모리 관리를 처리합니다.
+    FbxManager* lSdkManager = FbxManager::Create();
+
+    // IO 설정 객체를 생성합니다.
+    FbxIOSettings *ios = FbxIOSettings::Create(lSdkManager, IOSROOT);
+    lSdkManager->SetIOSettings(ios);
+
+    // SDK 관리자를 사용하여 임포터를 생성합니다.
+    FbxImporter* lImporter = FbxImporter::Create(lSdkManager,"");
+
+    // 첫 번째 인수를 임포터의 파일명으로 사용합니다.
+    if(!lImporter->Initialize(lFilename, -1, lSdkManager->GetIOSettings())) {
+        printf("Call to FbxImporter::Initialize() failed.\n");
+        printf("Error returned: %s\n\n", lImporter->GetStatus().GetErrorString());
+        exit(-1);
+    }
+
+    // 가져온 파일로 채울 수 있도록 새 씬을 생성합니다.
+    FbxScene* lScene = FbxScene::Create(lSdkManager,"myScene");
+
+    // 파일의 내용을 씬으로 가져옵니다.
+    lImporter->Import(lScene);
+
+    // 파일을 가져왔으므로 임포터를 제거합니다.
+    lImporter->Destroy();
+
+    // 씬의 노드와 그 속성을 재귀적으로 출력합니다.
+    // 루트 노드는 속성을 포함해서는 안 되므로
+    // 출력하지 않습니다.
+    FbxNode* lRootNode = lScene->GetRootNode();
+    if(lRootNode) {
+        for(int i = 0; i < lRootNode->GetChildCount(); i++)
+            PrintNode(lRootNode->GetChild(i));
+    }
+    // SDK 관리자와 그것이 처리하던 다른 모든 객체를 소멸시킵니다.
+    lSdkManager->Destroy();
+    return 0;
+}
+```
