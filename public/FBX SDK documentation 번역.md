@@ -948,11 +948,11 @@ CubeCreator 샘플 프로그램은 씬의 모델에 텍스처, 머티리얼 및 
 
 **런타임 시 텍스처 파일의 위치**
 
-`<yourFBXSDKpath>\examples\UI Examples\CubeCreator\`에는 CubeCreator가 텍스처 파일로 사용하는 `crate.jpg`라는 파일이 있습니다.
+`\<yourFBXSDKpath>\examples\UI Examples\CubeCreator\`에는 CubeCreator가 텍스처 파일로 사용하는 `crate.jpg`라는 파일이 있습니다.
 
 이 텍스처 파일을 CubeCreator의 실행 파일이 시작될 폴더에 복사해야 합니다. CubeCreator 프로젝트의 설정을 변경하지 않는 한:
 
-- 빌드 시 `CubeCreator.exe`는 `<yourFBXSDKpath>\bin\CubeCreator\`의 하위 디렉토리에 저장됩니다.
+- 빌드 시 `CubeCreator.exe`는 `\<yourFBXSDKpath>\bin\CubeCreator\`의 하위 디렉토리에 저장됩니다.
 - 런타임 시 `CubeCreator.exe`는 동일한 디렉토리에서 실행됩니다. 해당 위치에서 텍스처 파일을 검색합니다.
 
 FBX for QuickTime이 표면에 대한 텍스처 파일을 찾을 수 없으면 표면을 체커보드 패턴으로 렌더링합니다. 큐브의 면에 대한 모습은 다음과 같습니다:
