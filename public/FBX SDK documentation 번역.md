@@ -224,3 +224,120 @@ FBX SDK는 다음 플랫폼의 32비트 및 64비트 버전에서 실행됩니�
 
 ---
 
+**지원되는 파일 형식**
+
+FBX SDK는 다음을 수행할 수 있습니다:
+
+- FBX 파일 형식 버전 7.5, 7.4, 7.3, 7.2, 7.1, 7.0, 6.1 및 6.0과 호환되는 FBX 파일을 가져옵니다.
+- FBX 파일 형식 버전 7.5, 7.4, 7.3, 7.2, 7.1, 7.0 및 6.1과 호환되는 FBX 파일을 내보냅니다.
+
+FBX SDK는 다음 애플리케이션과 호환되는 FBX 파일을 가져오고 내보냅니다:
+
+|소프트웨어|버전|
+|---|---|
+|MotionBuilder|버전 5.5 이상.|
+|FBX Plug-in for 3ds Max|모든 버전.|
+|FBX Plug-in for Maya|모든 버전.|
+|FBX Plug-in for Maya LT|모든 버전. 참고: Maya LT 2016에서 FBX 파일을 내보낼 때 이제 한 번에 최대 100,000개의 폴리곤을 내보낼 수 있습니다. 씬 또는 선택한 객체가 100,000개 제한을 초과하면 오류가 표시됩니다. 자세한 내용은 Maya LT 도움말을 참조하십시오.|
+|Mudbox|버전 2010 이상.|
+|Flame|버전 8.0 이상.|
+|Smoke|버전 6.0 이상.|
+|Revit Architecture|버전 2009.1 이상.|
+|AutoCAD|버전 2011 이상.|
+
+FBX SDK는 다음 파일 형식의 파일도 가져오고 내보냅니다:
+
+|파일 형식|버전|
+|---|---|
+|Autodesk AutoCAD DXF (.dxf)|버전 13 이하.|
+|Collada DAE (.dae)|버전 1.5 이하.|
+|Alias OBJ (.obj)|모든 버전.|
+
+**참고:** FBX SDK 2012.0부터 .3ds 파일 형식 쓰기가 중단되었습니다. 그러나 .3ds 파일 리더는 계속 유지됩니다.
+
+---
+
+**지원되는 씬 요소**
+
+FBX SDK를 사용하면 씬(`FbxScene`)의 다음 요소에 액세스하거나, 생성하거나, 수정할 수 있습니다:
+
+- 메시 - `FbxMesh`
+- 상세도(LOD) 그룹 - `FbxLodGroup`
+- 카메라(3D용 스테레오 카메라 포함) - `FbxCamera`
+- 조명 및 고보 - `FbxLight`, `FbxGobo`
+- NURBS - `FbxNurbs`, `FbxNurbsCurve`, `FbxNurbsSurface`, `FbxTrimNurbsSurface`
+- 지오메트리에 대한 텍스처 매핑 - `FbxTexture`
+- 지오메트리에 대한 머티리얼 매핑 - `FbxSurfaceMaterial`
+- 제약 조건 - `FbxConstraint`
+- 지오메트리의 제어점에 대한 정점 캐시 애니메이션 - `FbxDeformer`
+- Up-Axis(X/Y/Z) 및 씬 스케일링(단위)을 제공하는 씬 설정 - `FbxGlobalSettings`, `FbxAxisSystem`
+- 위치, 회전, 스케일, 부모를 포함한 변환 데이터 - `FbxNode`
+- 마커 - `FbxMarker`
+- 선 - `FbxLine`
+- 스켈레톤 세그먼트(루트, 림, 림 노드) - `FbxSkeleton`
+- 애니메이션 커브 - `FbxAnimCurve`
+- 노드 목록(본 및 지오메트리)에 대한 레스트 및 바인드 포즈 - `FbxPose`
+
+---
+
+**정보 및 기술 지원**
+
+이 주제는 정보 및 기술 지원을 위한 참조 자료 세트를 제공합니다.
+
+FBX SDK 사용자를 위해 Autodesk FBX 웹사이트, FBX Developer Help, C++ Reference, Autodesk Developer Network 및 AREA 토론 포럼을 포함한 다양한 정보 출처를 이용할 수 있습니다.
+
+**FBX Developer Help**
+
+현재 읽고 계신 문서가 FBX Developer Help입니다. 이 문서의 목적은 FBX SDK의 핵심 개념에 익숙해지도록 하는 것입니다. 이 주제는 통찰력 있는 샘플 프로그램이나 C++ Reference 내의 관련 문서를 안내합니다. 마지막 순간의 문서 변경 사항에 대해서는 FBX SDK 설치의 루트 폴더에 있는 readme.txt 파일도 참조하십시오.
+
+**C++ 레퍼런스**
+
+C++ Reference에는 각 클래스, 멤버 함수, 열거형 등에 대한 API 문서가 포함되어 있습니다. FBX SDK는 Autodesk 3ds Max 및 Autodesk Maya용 FBX 플러그인을 개발하는 데 사용되었습니다. 또한 FBX Converter 및 FBX for QuickTime 프로그램을 개발하는 데도 사용되었습니다. 이러한 도구의 기능은 FBX SDK의 기능에 대한 좋은 소개를 제공합니다(이러한 도구에 대한 링크는 **http://www.autodesk.com/fbx** 참조).
+
+**레퍼런스 가이드 명명 규칙**
+
+레퍼런스 가이드의 헤더 파일과 샘플 프로그램은 일반적으로 다음 명명 규칙을 따릅니다.
+
+|접두사|참고|
+|---|---|
+|`Fbx`|대부분의 FBX SDK 클래스 이름은 Fbx로 시작합니다. 예: `FbxNode`, `FbxScene`, `FbxCamera`|
+|`p`|멤버 함수에 전달되는 매개변수는 소문자 "p"로 시작합니다. 예: `pWriteFileFormat`, `pScene`, `pFilename`|
+|`l`|지역 변수는 소문자 "l"로 시작합니다. 예: `lWriteFileFormat`, `lScene`, `lFilename`|
+|`g`|전역 변수는 소문자 "g"로 시작합니다. 예: `gStart`, `gStop`, `gCurrentTime`|
+|`m`|멤버 데이터(멤버 변수)는 소문자 "m"으로 시작합니다. 예: `mDescription`, `mImportname`, `mSelect`|
+
+**Autodesk Developer Network**
+
+FBX SDK에 대한 기술 지원은 Autodesk Developer Network(ADN) Sparks 타사 개발자 프로그램을 통해 제공됩니다. 프로그램 세부 정보, 혜택 및 가격은 **Autodesk Developer Network** 웹 페이지에서 확인할 수 있습니다.
+
+**토론 포럼**
+
+개발자 및 기타 사용자를 위한 무료 사용자 간 토론 포럼을 이용하려면 디지털 엔터테인먼트 및 시각화를 위한 Autodesk 커뮤니티인 AREA의 FBX 섹션을 방문하십시오: **https://forums.autodesk.com/t5/fbx-forum/bd-p/area-b64**
+
+---
+---
+
+**시작하기**
+
+이 섹션은 FBX SDK를 설치하고 구성하는 방법에 대한 정보를 제공합니다. 또한 FBX SDK에 익숙해지는 데 도움이 되는 기본 프로그램도 포함되어 있습니다.
+
+**이 섹션의 페이지**
+
+- 설치 및 구성
+- 첫 번째 FBX SDK 프로그램
+
+---
+
+**설치 및 구성**
+
+이 섹션은 개발 플랫폼에 따라 FBX SDK를 설치하고 구성하는 방법을 설명합니다.
+
+**참고:** FBX SDK에 대한 C++ 인터페이스 대신 Python FBX를 사용할 계획이라면 __Scripting with Python FBX__를 참조하십시오.
+
+**이 섹션의 페이지**
+
+- 권장 개발 환경
+- 디렉토리 구조
+- Windows용 FBX SDK 구성
+- Linux용 FBX SDK 구성
+- Mac OS용 FBX SDK 구성
