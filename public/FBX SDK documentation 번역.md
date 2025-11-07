@@ -972,3 +972,66 @@ CubeCreator는 다음 작업을 수행합니다:
 - 각 큐브에 회전 축을 부여합니다: X, Y 또는 Z입니다.
 - 사용자가 0~n개의 큐브를 추가할 수 있게 합니다. 추가된 각 큐브에 대해 머티리얼, 텍스처 및 애니메이션 중 일부 또는 전부를 추가할 수 있는 옵션이 있습니다. 씬을 FBX 파일(또는 FBX가 지원하는 다른 파일 형식)로 저장할 수 있게 합니다.
 - 저장된 파일에 저장된 씬을 보고 상호 작용하기 위해 FBX for QuickTime을 사용하도록 초대합니다.
+
+---
+
+**샘플 프로그램 빌드 및 실행**
+
+각 샘플은 FBX SDK 기능을 보여줍니다. 샘플 코드에는 기능을 설명하는 주석이 포함되어 있습니다.
+
+**Visual Studio 프로젝트 / makefile 생성**
+
+각 샘플 폴더에는 적절한 프로젝트/makefile을 생성하는 CMakeList.txt 규칙 파일이 포함되어 있습니다. 자세한 단계는 samples\README.txt에서 찾을 수 있습니다.
+
+**Windows**
+
+Visual Studio를 사용하여 샘플을 빌드하고 실행하려면:
+
+1. Visual Studio를 시작합니다.
+2. 파일 > 열기 > 프로젝트/솔루션을 클릭합니다.
+3. Visual Studio 버전에 대한 샘플 프로그램이 포함된 폴더로 이동합니다. 예를 들어, C:\Program Files\Autodesk\FBX\FBX SDK\<version>\samples\UI Examples\ImportExport\입니다.
+4. Visual Studio 버전에 대한 프로젝트 파일을 엽니다. Visual Studio는 새 솔루션을 만들고 해당 솔루션 내에서 프로젝트를 엽니다.
+5. 파일을 빌드하려면 빌드 > 솔루션 빌드를 클릭합니다. 프로젝트를 수정하지 않는 한, Visual Studio는 프로젝트의 `Debug\\` 디렉토리에 저장된 애플리케이션의 디버그 버전(`ImportExport.exe`)을 빌드합니다.
+6. Visual Studio 내에서 샘플을 실행하려면 디버그 메뉴에서 디버깅 시작을 선택합니다. ImportExport를 실행하면 ImportExport의 대화 상자가 나타납니다. 이를 사용하여 다양한 파일 형식으로 변환할 파일을 선택할 수 있습니다.
+
+**Mac OS 및 Linux**
+
+Mac OS 및 Linux 플랫폼에서 샘플 프로그램을 빌드하려면 생성된 makefile을 사용하십시오.
+
+---
+
+_중략 : Importing and Exporting a scene_
+
+---
+
+**FBX SDK 객체 모델**
+
+이 섹션은 FBX SDK 객체 모델을 제시합니다. FBX SDK를 효과적으로 사용하는 방법에 대한 직관을 제공하기 위해 여러 핵심 개념이 여기에서 설명됩니다.
+
+**메모리 관리**
+
+FBX SDK 내의 메모리 관리는 FBX SDK Manager 객체(`FbxManager`)에 의해 수행됩니다. `FbxManager` 싱글톤은 SDK에서 사용하는 객체를 생성, 조작 및 소멸시키는 책임이 있습니다. 자세한 내용은 __FBX SDK Manager로 메모리 관리하기__를 참조하십시오.
+
+**객체**
+
+FBX SDK의 대부분의 클래스는 `FbxObject`에서 파생됩니다. 자세한 내용은 **FBX 객체** 주제와 `FbxObject` 클래스 레퍼런스 페이지를 참조하십시오. `FbxObject`에서 파생된 클래스의 예로는 씬 노드, I/O 객체 및 컬렉션이 있습니다.
+
+**노드**
+
+FBX 씬 그래프는 `FbxNode` 객체의 트리로 구성됩니다. 이러한 노드에는 카메라, 메시, NURBS, 조명 및 기타 모든 씬 요소가 연결됩니다. 이러한 씬 요소는 `FbxNodeAttribute`의 특수화된 인스턴스입니다. 자세한 내용은 __노드 및 씬 그래프__를 참조하십시오.
+
+**IO 객체**
+
+`FbxImporter` 및 `FbxExporter` 객체는 FBX SDK에서 씬을 가져오고 내보내는 데 사용됩니다. 자세한 내용은 **씬 가져오기 및 내보내기** 섹션과 `FbxIO`, `FbxImporter` 및 `FbxExporter`의 클래스 레퍼런스 페이지를 참조하십시오.
+
+**컬렉션**
+
+대부분의 컨테이너 클래스는 `FbxCollection` 클래스에서 파생되며, 멤버 함수에는 `FbxCollection::AddMember()`, `FbxCollection::RemoveMember()`, `FbxCollection::FindMember()`, `FbxCollection::IsMember()`, `FbxCollection::SetSelected()` 등이 포함됩니다.
+
+**객체 속성**
+
+`FbxNode`와 같은 FBX 객체는 기존의 C++ 멤버 변수 대신 FBX 속성(`FbxProperty`)을 사용합니다. FBX 속성을 사용하면 강력한 형식의 데이터를 FBX 객체에 동적으로 추가할 수 있습니다. 자세한 내용은 __FBX 속성__을 참조하십시오.
+
+**연결**
+
+연결 개념은 FBX SDK의 객체 모델을 이해하는 데 중요합니다. 연결은 객체를 서로, 속성을 서로, 객체를 속성에, 그리고 그 반대로 바인딩할 수 있습니다. API에서 사용 가능한 `Connection` 클래스는 없습니다. 대신, 연결은 `FbxObject::GetSrcObject()`와 같은 `FbxObject` 및 `FbxProperty`의 연결 관련 멤버 함수로만 조작할 수 있습니다. 자세한 내용은 __연결__을 참조하십시오.
