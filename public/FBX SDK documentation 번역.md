@@ -1902,3 +1902,63 @@ FbxDouble3 scaling = lNode->LclScaling.Get();
 **노드 그룹화**
 
 FbxNode의 인스턴스는 바인딩된 FbxNodeAttribute 없이 존재할 수 있습니다. 이 경우 이러한 FbxNode는 씬에서 자식 노드를 그룹화하거나 배치하는 데 사용할 수 있습니다.
+
+---
+
+**변환 행렬 계산**
+
+FBX SDK와 Maya는 변환 행렬을 계산하기 위해 동일한 공식을 사용합니다. 그러나 3ds Max는 다른 공식을 사용합니다.
+
+**참고:** 3ds Max용 FBX 임포터 및 익스포터는 변환 행렬을 3ds Max와 자동으로 변환합니다.
+
+**FBX 및 Maya**
+
+다음 공식은 FBX SDK와 Maya가 노드의 변환 행렬을 계산하는 방법을 나타냅니다:
+
+`WorldTransform = ParentWorldTransform * T * Roff * Rp * Rpre * R * Rpost⁻¹ * Rp⁻¹ * Soff * Sp * S * Sp⁻¹`
+
+주어진 벡터는 `V' = WorldTransform * V`가 되도록 변환됩니다.
+
+|항목|포함하는 4 x 4 행렬:|
+|---|---|
+|`WorldTransform`|노드의 변환 행렬|
+|`ParentWorldTransform`|부모 노드의 변환 행렬|
+|`T`|이동|
+|`Roff`|회전 오프셋|
+|`Rp`|회전 피벗|
+|`Rpre`|사전 회전|
+|`R`|회전|
+|`Rpost⁻¹`|사후 회전의 역행렬|
+|`Rp⁻¹`|회전 피벗의 역행렬|
+|`Soff`|스케일링 오프셋|
+|`Sp`|스케일링 피벗|
+|`S`|스케일링|
+|`Sp⁻¹`|스케일링 피벗의 역행렬|
+
+**참고:**
+
+- 공식의 효과는 주어진 벡터가 먼저 스케일링되고, 그 다음 회전되고, 마지막으로 이동된다는 것입니다.
+- `R` 행렬은 회전 순서를 고려합니다. 행렬의 수학적 속성 때문에 `R`은 `Rx`, `Ry` 및 `Rz`(각각 행렬)의 가능한 조합 중 하나의 결과입니다. 예를 들어, 기본 회전 순서인 XYZ의 경우 `R = Rz * Ry * Rx`입니다.
+
+**3ds Max**
+
+다음 공식은 3ds Max가 노드의 변환 행렬을 계산하는 방법을 나타냅니다. 공식의 모든 항은 기하학적 변환을 나타내는 세 항을 제외하고는 FBX 및 Maya와 동일합니다:
+
+`WorldTransform = ParentWorldTransform * T * R * S * OT * OR * OS`
+
+|항목|포함하는 4 x 4 행렬:|
+|---|---|
+|`WorldTransform`|노드의 변환 행렬|
+|`ParentWorldTransform`|부모 노드의 변환 행렬|
+|`T`|이동|
+|`R`|회전|
+|`S`|스케일링|
+|`OT`|기하학적 변환 이동|
+|`OR`|기하학적 변환 회전|
+|`OS`|기하학적 변환 스케일링|
+
+**참고:**
+
+- 기하학적 이동, 기하학적 회전 및 기하학적 스케일링은 3ds Max의 객체 오프셋 개념과 관련이 있습니다. 이러한 기하학적 변환은 노드 변환 후 노드 속성에 적용됩니다.
+- 기하학적 변환은 상속되지 않습니다: `ParentWorldTransform`에는 `WorldTransform`의 부모 노드의 OT, OR 및 OS가 포함되지 않습니다.
+- 기하학적 변환은 FBX SDK에서 `FbxNode` 객체의 세 가지 속성으로 구현됩니다: `FbxNode::GeometricTranslation`, `FbxNode::GeometricRotation` 및 `FbxNode::GeometricScaling`.
