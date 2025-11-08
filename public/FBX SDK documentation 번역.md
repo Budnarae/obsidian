@@ -2256,10 +2256,28 @@ lCamera->FocusDistance.Set(100.0);
 
 ---
 
-# Geometry
+**지오메트리**
 
-## Geometry
+**지오메트리**
 
-`FbxGeometry` is the base class for geometric objects which support control point deformations. Instances of `FbxGeometry` can be bound to `FbxNode` objects as node attributes to via `FbxNode::SetNodeAttribute()`. Classes which inherit from `FbxGeometry` include `FbxMesh`, `FbxNurb`, `FbxPatch`, and `FbxLine`. For a full list of the classes which inherit from `FbxGeometry`, consult the class hierarchy in the C++ Reference.
+`FbxGeometry`는 제어점 변형을 지원하는 기하학적 객체의 기본 클래스입니다. `FbxGeometry`의 인스턴스는 `FbxNode::SetNodeAttribute()`를 통해 노드 속성으로 `FbxNode` 객체에 바인딩될 수 있습니다. `FbxGeometry`에서 상속하는 클래스에는 `FbxMesh`, `FbxNurb`, `FbxPatch` 및 `FbxLine`이 포함됩니다. `FbxGeometry`에서 상속하는 클래스의 전체 목록은 C++ 레퍼런스의 클래스 계층 구조를 참조하십시오.
 
-For more information, consult the [Meshes, Materials and Textures](https://help.autodesk.com/view/FBX/2020/ENU/?guid=FBX_Developer_Help_meshes_materials_and_textures_html) section.
+자세한 내용은 **메시, 머티리얼 및 텍스처** 섹션을 참조하십시오.
+
+---
+
+**메시, 머티리얼 및 텍스처**
+
+이 섹션은 FBX SDK의 메시, 텍스처 및 머티리얼을 제시합니다.
+
+**메시**
+
+메시는 `FbxMesh` 클래스에 의해 추상화됩니다. `FbxMesh`는 일반 문헌에서 정점(vertices)으로도 알려진 제어점 목록을 정의합니다. `FbxMesh`의 단일 인스턴스는 메모리 소비를 줄이기 위해 `FbxNode`의 여러 인스턴스에 바인딩될 수 있습니다. 이를 인스턴싱이라고 합니다. 씬 지오메트리는 레이어 및 레이어 요소(`FbxLayerElement`) 개념을 사용하여 노말 맵, 머티리얼 맵, 텍스처 맵 등을 정의합니다.
+
+**머티리얼**
+
+머티리얼(`FbxSurfaceLambert`, `FbxSurfacePhong`)은 `FbxNode::AddMaterial()`을 통해 `FbxNode`의 인스턴스에 바인딩됩니다. 머티리얼은 디퓨즈, 앰비언트 및 이미시브 색상 속성과 같은 씬의 지오메트리에 대한 기본 렌더링 특성을 정의합니다. 각 머티리얼은 `FbxNode`의 특정 인덱스를 차지하며, 이는 새로 생성된 폴리곤의 머티리얼을 정의하기 위해 `FbxMesh::BeginPolygon()`에서 참조될 수 있습니다.
+
+**텍스처**
+
+텍스처(`FbxFileTexture`, `FbxLayeredTexture`, `FbxProceduralTexture`)는 지오메트리가 렌더링되는 방식을 정의하기 위해 머티리얼 채널에 연결됩니다. `FbxFileTexture` 클래스는 예를 들어 `.jpg`와 같은 파일에 포함된 데이터를 사용하여 텍스처 값을 정의합니다.
