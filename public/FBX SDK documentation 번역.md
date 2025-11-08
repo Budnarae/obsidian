@@ -2472,3 +2472,515 @@ FbxNode* CreateCubeInstance(FbxScene* pScene, const char* pName, FbxMesh* pFirst
 ```
 
 각 노드는 메시, NURBS 또는 기타 씬 요소의 인스턴스입니다. 씬을 FBX 파일로 내보내면 인스턴싱도 파일 크기를 줄입니다. 여러 노드가 텍스처, 머티리얼, 애니메이션 커브 등을 공유하도록 하여 메모리를 절약할 수도 있습니다.
+
+---
+
+**머티리얼**
+
+**참고:** 이 주제의 샘플 코드는 ExportScene03/main.cxx 샘플 프로그램에도 제시되어 있습니다.
+
+**머티리얼 생성**
+
+FbxSurfaceMaterial 클래스는 람베르시안(FbxSurfaceLambert) 및 퐁(FbxSurfacePhong) 머티리얼의 기본 클래스입니다. 다음 코드 샘플에서는 5개의 머티리얼을 생성하고 FbxNode::AddMaterial()을 통해 FbxMesh의 FbxNode에 추가합니다. 머티리얼이 노드에 바인딩되면 메시의 폴리곤에 매핑할 수 있습니다.
+
+```cpp
+// 피라미드에 대한 머티리얼을 생성합니다.
+void CreateMaterials(FbxScene* pScene, FbxMesh* pMesh)
+{
+    int i;
+
+    for (i = 0; i < 5; i++ )
+    {
+        FbxString lMaterialName = "material";
+        FbxString lShadingName = "Phong";
+        lMaterialName += i;
+        FbxDouble3 lBlack(0.0, 0.0, 0.0);
+        FbxDouble3 lRed(1.0, 0.0, 0.0);
+        FbxDouble3 lColor;
+        FbxSurfacePhong *lMaterial = FbxSurfacePhong::Create(pScene, lMaterialName.Buffer());
+
+
+        // 기본 색상과 보조 색상을 생성합니다.
+        lMaterial->Emissive.Set(lBlack);
+        lMaterial->Ambient.Set(lRed);
+        lColor = FbxDouble3(i > 2   ? 1.0 : 0.0,
+            i > 0 && i < 4 ? 1.0 : 0.0,
+            i % 2   ? 0.0 : 1.0);
+        lMaterial->Diffuse.Set(lColor);
+        lMaterial->TransparencyFactor.Set(0.0);
+        lMaterial->ShadingModel.Set(lShadingName);
+        lMaterial->Shininess.Set(0.5);
+
+        // 메시의 노드를 가져와서 머티리얼을 추가합니다.
+        FbxNode* lNode = pMesh->GetNode();
+        if(lNode)             
+            lNode->AddMaterial(lMaterial);
+    }  
+}
+```
+
+**예제: 머티리얼이 있는 사각 피라미드 생성**
+
+다음 코드 샘플은 위에 정의된 CreateMaterials() 함수를 사용하여 5개의 머티리얼을 사각 피라미드의 5개 면에 바인딩합니다. 먼저 피라미드의 제어점과 노말을 정의하는 것으로 시작합니다.
+
+```cpp
+// 머티리얼이 있는 피라미드를 생성합니다.
+FbxNode* CreatePyramidWithMaterials(FbxScene* pScene, char* pName)
+{
+    int i, j;
+    FbxMesh* lMesh = FbxMesh::Create(pScene, pName);
+
+    FbxVector4 vertex0(-50, 0, 50);
+    FbxVector4 vertex1(50, 0, 50);
+    FbxVector4 vertex2(50, 0, -50);
+    FbxVector4 vertex3(-50, 0, -50);
+    FbxVector4 vertex4(0, 100, 0);
+
+    FbxVector4 lNormalP0(0, 1, 0);
+    FbxVector4 lNormalP1(0, 0.447, 0.894);
+    FbxVector4 lNormalP2(0.894, 0.447, 0);
+    FbxVector4 lNormalP3(0, 0.447, -0.894);
+    FbxVector4 lNormalP4(-0.894, 0.447, 0);
+
+    // 제어점을 생성합니다.
+    lMesh->InitControlPoints(16);
+    FbxVector4* lControlPoints = lMesh->GetControlPoints();
+
+    lControlPoints[0] = vertex0;
+    lControlPoints[1] = vertex1;
+    lControlPoints[2] = vertex2;
+    lControlPoints[3] = vertex3;
+    lControlPoints[4] = vertex0;
+    lControlPoints[5] = vertex1;
+    lControlPoints[6] = vertex4;
+    lControlPoints[7] = vertex1;
+    lControlPoints[8] = vertex2;
+    lControlPoints[9] = vertex4;
+    lControlPoints[10] = vertex2;
+    lControlPoints[11] = vertex3;
+    lControlPoints[12] = vertex4;
+    lControlPoints[13] = vertex3;
+    lControlPoints[14] = vertex0;
+    lControlPoints[15] = vertex4;
+
+    // 제어점당 노말을 지정합니다.
+
+    FbxGeometryElementNormal* lNormalElement= lMesh->CreateElementNormal();
+    lNormalElement->SetMappingMode(FbxGeometryElement::eByControlPoint);
+    lNormalElement->SetReferenceMode(FbxGeometryElement::eDirect);
+
+    lNormalElement->GetDirectArray().Add(lNormalP0);
+    lNormalElement->GetDirectArray().Add(lNormalP0);
+    lNormalElement->GetDirectArray().Add(lNormalP0);
+    lNormalElement->GetDirectArray().Add(lNormalP0);
+    lNormalElement->GetDirectArray().Add(lNormalP1);
+    lNormalElement->GetDirectArray().Add(lNormalP1);
+    lNormalElement->GetDirectArray().Add(lNormalP1);
+    lNormalElement->GetDirectArray().Add(lNormalP2);
+    lNormalElement->GetDirectArray().Add(lNormalP2);
+    lNormalElement->GetDirectArray().Add(lNormalP2);
+    lNormalElement->GetDirectArray().Add(lNormalP3);
+    lNormalElement->GetDirectArray().Add(lNormalP3);
+    lNormalElement->GetDirectArray().Add(lNormalP3);
+    lNormalElement->GetDirectArray().Add(lNormalP4);
+    lNormalElement->GetDirectArray().Add(lNormalP4);
+    lNormalElement->GetDirectArray().Add(lNormalP4);
+```
+
+그런 다음 머티리얼이 메시의 폴리곤 제어점에 바인딩되도록 지정하기 위해 메시 내에 새 머티리얼 레이어 요소(FbxGeometryElementMaterial)를 생성합니다. FbxMesh::BeginPolygon() 함수는 인덱스를 사용하여 새 폴리곤에 바인딩될 머티리얼을 결정합니다. 이 인덱스는 FbxNode에 저장된 머티리얼의 위치를 참조합니다.
+
+```cpp
+// 폴리곤 정점 배열.
+    int lPolygonVertices[] = { 0, 3, 2, 1,
+        4, 5, 6,
+        7, 8, 9,
+        10, 11, 12,
+        13, 14, 15 };
+
+    // 머티리얼 매핑을 설정합니다.
+    FbxGeometryElementMaterial* lMaterialElement = lMesh->CreateElementMaterial();
+    lMaterialElement->SetMappingMode(FbxGeometryElement::eByPolygon);
+    lMaterialElement->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
+
+    // 폴리곤을 생성합니다. 머티리얼 인덱스를 할당합니다.
+
+    // 피라미드 밑면.
+    lMesh->BeginPolygon(0); // 머티리얼 인덱스.
+
+    for(j = 0; j < 4; j++)
+    {
+        lMesh->AddPolygon(lPolygonVertices[j]); // 제어점 인덱스.
+    }
+
+    lMesh->EndPolygon ();
+
+    // 피라미드 측면.
+    for(i = 1; i < 5; i++)
+    {
+        lMesh->BeginPolygon(i); // 머티리얼 인덱스.
+
+        for(j = 0; j < 3; j++)
+        {
+            lMesh->AddPolygon(lPolygonVertices[4 + 3*(i - 1) + j]); // 제어점 인덱스.
+        }
+
+        lMesh->EndPolygon ();
+    }
+
+
+    FbxNode* lNode = FbxNode::Create(pScene,pName);
+
+    lNode->SetNodeAttribute(lMesh);
+
+    CreateMaterials(pScene, lMesh);
+
+    return lNode;
+}
+```
+
+---
+
+**하드웨어 셰이더를 사용하여 머티리얼 생성**
+
+CGFX 및 DirectX 하드웨어 셰이더는 FBX SDK 버전 2010부터 지원됩니다. `FbxImplementation` 클래스와 `FbxBindingTable` 클래스를 사용하여 CGFX 또는 DirectX 구현으로 머티리얼을 설정할 수 있습니다.
+
+---
+
+**텍스처**
+
+**참고:** 이 주제의 샘플 코드는 ExportScene03/main.cxx 샘플 프로그램에도 제시되어 있습니다.
+
+**파일에서 텍스처 생성**
+
+FbxTexture는 FBX SDK의 텍스처에 대한 기본 클래스입니다. 텍스처는 지오메트리가 렌더링되는 방식에 영향을 주기 위해 기본 머티리얼에 의존합니다. 다음 코드 샘플에서는 Phong 머티리얼의 디퓨즈, 앰비언트 및 이미시브 채널을 FbxFileTexture의 세 가지 개별 인스턴스에 연결합니다. FbxFileTexture는 파일에서 로드된 모든 텍스처를 나타냅니다. 파일에서 임베디드 또는 비임베디드 미디어를 참조하는 방법에 대한 자세한 내용은 미디어 참조를 참조하십시오.
+
+```cpp
+// 큐브에 대한 텍스처를 생성합니다.
+void CreateTexture(FbxScene* pScene, FbxMesh* pMesh)
+{
+    // 텍스처는 머티리얼의 속성에 연결되어야 하므로
+    // 머티리얼이 있으면 사용하고 없으면 새로 만듭니다
+    FbxSurfacePhong* lMaterial = NULL;
+
+    // 메시의 노드를 가져와서 머티리얼을 추가합니다.
+    FbxNode* lNode = pMesh->GetNode();
+    if(lNode)
+    {
+        lMaterial = lNode->GetSrcObject<FbxSurfacePhong>(0);
+        if (lMaterial == NULL)
+        {
+            FbxString lMaterialName = "toto";
+            FbxString lShadingName  = "Phong";
+            FbxDouble3 lBlack(0.0, 0.0, 0.0);
+            FbxDouble3 lRed(1.0, 0.0, 0.0);
+            FbxDouble3 lDiffuseColor(0.75, 0.75, 0.0);
+            lMaterial = FbxSurfacePhong::Create(pScene, lMaterialName.Buffer());
+
+            // 기본 색상과 보조 색상을 생성합니다.
+            lMaterial->Emissive           .Set(lBlack);
+            lMaterial->Ambient            .Set(lRed);
+            lMaterial->AmbientFactor      .Set(1.);
+            // 디퓨즈 채널에 텍스처 추가
+            lMaterial->Diffuse           .Set(lDiffuseColor);
+            lMaterial->DiffuseFactor     .Set(1.);
+            lMaterial->TransparencyFactor.Set(0.4);
+            lMaterial->ShadingModel      .Set(lShadingName);
+            lMaterial->Shininess         .Set(0.5);
+            lMaterial->Specular          .Set(lBlack);
+            lMaterial->SpecularFactor    .Set(0.3);
+
+            lNode->AddMaterial(lMaterial);
+        }
+    }
+
+    FbxFileTexture* lTexture = FbxFileTexture::Create(pScene,"Diffuse Texture");
+
+    // 텍스처 속성을 설정합니다.
+    lTexture->SetFileName("scene03.jpg"); // 리소스 파일은 현재 디렉토리에 있습니다.
+    lTexture->SetTextureUse(FbxTexture::eStandard);
+    lTexture->SetMappingType(FbxTexture::eUV);
+    lTexture->SetMaterialUse(FbxFileTexture::eModelMaterial);
+    lTexture->SetSwapUV(false);
+    lTexture->SetTranslation(0.0, 0.0);
+    lTexture->SetScale(1.0, 1.0);
+    lTexture->SetRotation(0.0, 0.0);
+
+    // 텍스처를 머티리얼의 해당 속성에 연결하는 것을 잊지 마십시오
+    if (lMaterial)
+        lMaterial->Diffuse.ConnectSrcObject(lTexture);
+
+    lTexture = FbxFileTexture::Create(pScene,"Ambient Texture");
+
+    // 텍스처 속성을 설정합니다.
+    lTexture->SetFileName("gradient.jpg"); // 리소스 파일은 현재 디렉토리에 있습니다.
+    lTexture->SetTextureUse(FbxTexture::eStandard);
+    lTexture->SetMappingType(FbxTexture::eUV);
+    lTexture->SetMaterialUse(FbxFileTexture::eModelMaterial);
+    lTexture->SetSwapUV(false);
+    lTexture->SetTranslation(0.0, 0.0);
+    lTexture->SetScale(1.0, 1.0);
+    lTexture->SetRotation(0.0, 0.0);
+
+    // 텍스처를 머티리얼의 해당 속성에 연결하는 것을 잊지 마십시오
+    if (lMaterial)
+        lMaterial->Ambient.ConnectSrcObject(lTexture);
+
+    lTexture = FbxFileTexture::Create(pScene,"Emissive Texture");
+
+    // 텍스처 속성을 설정합니다.
+    lTexture->SetFileName("spotty.jpg"); // 리소스 파일은 현재 디렉토리에 있습니다.
+    lTexture->SetTextureUse(FbxTexture::eStandard);
+    lTexture->SetMappingType(FbxTexture::eUV);
+    lTexture->SetMaterialUse(FbxFileTexture::eModelMaterial);
+    lTexture->SetSwapUV(false);
+    lTexture->SetTranslation(0.0, 0.0);
+    lTexture->SetScale(1.0, 1.0);
+    lTexture->SetRotation(0.0, 0.0);
+
+    // 텍스처를 머티리얼의 해당 속성에 연결하는 것을 잊지 마십시오
+    if (lMaterial)
+        lMaterial->Emissive.ConnectSrcObject(lTexture);
+}
+```
+
+**예제: 텍스처가 있는 큐브 생성**
+
+다음 코드 샘플은 위에서 정의한 CreateTexture() 함수를 사용합니다. 먼저 큐브의 제어점과 노말을 정의하는 것으로 시작합니다.
+
+```cpp
+// 텍스처가 있는 큐브를 생성합니다.
+FbxNode* CreateCubeWithTexture(FbxScene* pScene, char* pName)
+{
+    int i, j;
+    FbxMesh* lMesh = FbxMesh::Create(pScene,pName);
+
+    FbxVector4 vertex0(-50, 0, 50);
+    FbxVector4 vertex1(50, 0, 50);
+    FbxVector4 vertex2(50, 100, 50);
+    FbxVector4 vertex3(-50, 100, 50);
+    FbxVector4 vertex4(-50, 0, -50);
+    FbxVector4 vertex5(50, 0, -50);
+    FbxVector4 vertex6(50, 100, -50);
+    FbxVector4 vertex7(-50, 100, -50);
+
+    FbxVector4 lNormalXPos(1, 0, 0);
+    FbxVector4 lNormalXNeg(-1, 0, 0);
+    FbxVector4 lNormalYPos(0, 1, 0);
+    FbxVector4 lNormalYNeg(0, -1, 0);
+    FbxVector4 lNormalZPos(0, 0, 1);
+    FbxVector4 lNormalZNeg(0, 0, -1);
+
+    // 제어점을 생성합니다.
+    lMesh->InitControlPoints(24);
+    FbxVector4* lControlPoints = lMesh->GetControlPoints();
+
+    lControlPoints[0] = vertex0;
+    lControlPoints[1] = vertex1;
+    lControlPoints[2] = vertex2;
+    lControlPoints[3] = vertex3;
+    lControlPoints[4] = vertex1;
+    lControlPoints[5] = vertex5;
+    lControlPoints[6] = vertex6;
+    lControlPoints[7] = vertex2;
+    lControlPoints[8] = vertex5;
+    lControlPoints[9] = vertex4;
+    lControlPoints[10] = vertex7;
+    lControlPoints[11] = vertex6;
+    lControlPoints[12] = vertex4;
+    lControlPoints[13] = vertex0;
+    lControlPoints[14] = vertex3;
+    lControlPoints[15] = vertex7;
+    lControlPoints[16] = vertex3;
+    lControlPoints[17] = vertex2;
+    lControlPoints[18] = vertex6;
+    lControlPoints[19] = vertex7;
+    lControlPoints[20] = vertex1;
+    lControlPoints[21] = vertex0;
+    lControlPoints[22] = vertex4;
+    lControlPoints[23] = vertex5;
+
+
+    // 각 정점(또는 제어점)에 대해 하나의 노말을 갖도록 하므로
+    // 매핑 모드를 eByControlPoint로 설정합니다.
+    FbxGeometryElementNormal* lGeometryElementNormal= lMesh->CreateElementNormal();
+
+    lGeometryElementNormal->SetMappingMode(FbxGeometryElement::eByControlPoint);
+
+    // 노말 값을 설정하는 두 가지 방법이 있습니다.
+    bool firstWayNormalCalculations=true;
+    if (firstWayNormalCalculations)
+    {    
+        // 첫 번째 방법은 모든 제어점에 대해 
+        // 실제 노말 값을 설정하는 것입니다.
+        lGeometryElementNormal->SetReferenceMode(FbxGeometryElement::eDirect);
+
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYNeg);
+    }
+    else
+    {
+        // 두 번째 방법은 노말의 가능한 값을
+        // direct 배열에 넣고, 모든 제어점에 대해
+        // 인덱스 배열에 해당 값의 인덱스를 설정하는 것입니다.
+        lGeometryElementNormal->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
+
+        // direct 배열에 6개의 다른 노말을 추가합니다
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalZNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalXNeg);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYPos);
+        lGeometryElementNormal->GetDirectArray().Add(lNormalYNeg);
+
+        // 이제 각 제어점에 대해 사용할 노말을 지정해야 합니다
+        lGeometryElementNormal->GetIndexArray().Add(0); // direct 배열의 lNormalZPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(0); // direct 배열의 lNormalZPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(0); // direct 배열의 lNormalZPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(0); // direct 배열의 lNormalZPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(1); // direct 배열의 lNormalXPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(1); // direct 배열의 lNormalXPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(1); // direct 배열의 lNormalXPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(1); // direct 배열의 lNormalXPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(2); // direct 배열의 lNormalZNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(2); // direct 배열의 lNormalZNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(2); // direct 배열의 lNormalZNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(2); // direct 배열의 lNormalZNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(3); // direct 배열의 lNormalXNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(3); // direct 배열의 lNormalXNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(3); // direct 배열의 lNormalXNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(3); // direct 배열의 lNormalXNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(4); // direct 배열의 lNormalYPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(4); // direct 배열의 lNormalYPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(4); // direct 배열의 lNormalYPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(4); // direct 배열의 lNormalYPos 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(5); // direct 배열의 lNormalYNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(5); // direct 배열의 lNormalYNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(5); // direct 배열의 lNormalYNeg 인덱스.
+        lGeometryElementNormal->GetIndexArray().Add(5); // direct 배열의 lNormalYNeg 인덱스.
+    }
+```
+
+그런 다음 FbxMesh::CreateElementUV()를 호출하여 메시에 세 개의 새 텍스처 레이어를 생성합니다 - 디퓨즈, 앰비언트 및 이미시브 머티리얼 채널 각각에 대해 하나씩. 결과 텍스처 레이어 요소(FbxGeometryElementUV)는 텍스처의 UV 좌표를 각 폴리곤의 정점에 매핑하는 방법을 정의합니다. 마지막으로 FbxNode::SetShadingMode()를 FbxNode::eTextureShading 값으로 호출하여 텍스처가 씬에서 렌더링되도록 합니다.
+
+```cpp
+    // 폴리곤 정점 배열.
+    int lPolygonVertices[] = { 0, 1, 2, 3,
+        4, 5, 6, 7,
+        8, 9, 10, 11,
+        12, 13, 14, 15,
+        16, 17, 18, 19,
+        20, 21, 22, 23 };
+
+    // Diffuse 채널에 대한 UV 생성
+    FbxGeometryElementUV* lUVDiffuseElement = lMesh->CreateElementUV( "DiffuseUV");
+    K_ASSERT( lUVDiffuseElement != NULL);
+    lUVDiffuseElement->SetMappingMode(FbxGeometryElement::eByPolygonVertex);
+    lUVDiffuseElement->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
+
+    FbxVector2 lVectors0(0, 0);
+    FbxVector2 lVectors1(1, 0);
+    FbxVector2 lVectors2(1, 1);
+    FbxVector2 lVectors3(0, 1);
+
+    lUVDiffuseElement->GetDirectArray().Add(lVectors0);
+    lUVDiffuseElement->GetDirectArray().Add(lVectors1);
+    lUVDiffuseElement->GetDirectArray().Add(lVectors2);
+    lUVDiffuseElement->GetDirectArray().Add(lVectors3);
+
+
+    // Ambient 채널에 대한 UV 생성
+    FbxGeometryElementUV* lUVAmbientElement = lMesh->CreateElementUV("AmbientUV");
+
+    lUVAmbientElement->SetMappingMode(FbxGeometryElement::eByPolygonVertex);
+    lUVAmbientElement->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
+
+    lVectors0.Set(0, 0);
+    lVectors1.Set(1, 0);
+    lVectors2.Set(0, 0.418586879968643);
+    lVectors3.Set(1, 0.418586879968643);
+
+    lUVAmbientElement->GetDirectArray().Add(lVectors0);
+    lUVAmbientElement->GetDirectArray().Add(lVectors1);
+    lUVAmbientElement->GetDirectArray().Add(lVectors2);
+    lUVAmbientElement->GetDirectArray().Add(lVectors3);
+
+    // Emissive 채널에 대한 UV 생성
+    FbxGeometryElementUV* lUVEmissiveElement = lMesh->CreateElementUV("EmissiveUV");
+
+    lUVEmissiveElement->SetMappingMode(FbxGeometryElement::eByPolygonVertex);
+    lUVEmissiveElement->SetReferenceMode(FbxGeometryElement::eIndexToDirect);
+
+    lVectors0.Set(0.2343, 0);
+    lVectors1.Set(1, 0.555);
+    lVectors2.Set(0.333, 0.999);
+    lVectors3.Set(0.555, 0.666);
+
+    lUVEmissiveElement->GetDirectArray().Add(lVectors0);
+    lUVEmissiveElement->GetDirectArray().Add(lVectors1);
+    lUVEmissiveElement->GetDirectArray().Add(lVectors2);
+    lUVEmissiveElement->GetDirectArray().Add(lVectors3);
+
+    // 이제 UV를 eIndexToDirect 참조와 eByPolygonVertex 매핑 모드로 설정했으므로
+    // 인덱스 배열의 크기를 업데이트해야 합니다.
+    lUVDiffuseElement->GetIndexArray().SetCount(24);
+    lUVAmbientElement->GetIndexArray().SetCount(24);
+    lUVEmissiveElement->GetIndexArray().SetCount(24);
+
+
+
+    // 폴리곤을 생성합니다. 텍스처 및 텍스처 UV 인덱스를 할당합니다.
+    for(i = 0; i < 6; i++)
+    {
+        // 기본(디퓨즈) 채널 이상에 텍스처가 있으므로
+        // 기본 방식의 텍스처 할당을 사용하지 않습니다.
+        lMesh->BeginPolygon(-1, -1, false);
+
+
+
+        for(j = 0; j < 4; j++)
+        {
+            // 이 함수는 포인트를 지정합니다
+            lMesh->AddPolygon(lPolygonVertices[i*4 + j] // 제어점 인덱스.
+            );
+            // 이제 디퓨즈, 앰비언트 및 이미시브에 대한 UV의 인덱스 배열을 업데이트해야 합니다
+            lUVDiffuseElement->GetIndexArray().SetAt(i*4+j, j);
+            lUVAmbientElement->GetIndexArray().SetAt(i*4+j, j);
+            lUVEmissiveElement->GetIndexArray().SetAt(i*4+j, j);
+
+        }
+
+        lMesh->EndPolygon ();
+    }
+
+    FbxNode* lNode = FbxNode::Create(pScene,pName);
+
+    lNode->SetNodeAttribute(lMesh);
+    lNode->SetShadingMode(FbxNode::eTextureShading);
+
+    CreateTexture(pScene, lMesh);
+
+    return lNode;
+}
+```
