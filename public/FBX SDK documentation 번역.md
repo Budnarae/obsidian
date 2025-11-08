@@ -2984,3 +2984,238 @@ FbxNode* CreateCubeWithTexture(FbxScene* pScene, char* pName)
     return lNode;
 }
 ```
+
+---
+
+**레이어드 텍스처**
+
+이 튜토리얼 주제에서는 FbxLayeredTexture를 사용하여 4개의 FbxFileTexture 인스턴스를 레이어링하는 방법을 제시합니다. 또한 FbxLayerElement 개념을 확장하여 메시의 노말과 UV 좌표를 정의합니다. 이 주제의 코드는 Python으로 작성되었으며, C++에도 직접 적용됩니다.
+
+**예제: 4개의 텍스처 레이어링**
+
+필요한 리소스: 왼쪽에서 오른쪽으로: "one.jpg", "two.jpg", "three.jpg", "four.jpg". 이 파일들의 너비와 높이가 2의 배수(128x128)임을 확인하십시오. 이는 텍스처 치수에 권장됩니다.
+
+샘플 출력: 이 스크린샷은 Python 프로그램을 실행하고 결과 .fbx 파일을 Autodesk MotionBuilder로 가져온 후 촬영되었습니다.
+
+프로그램 요약: 아래 Python 프로그램은 씬을 생성하고 .fbx 파일로 내보냅니다. 이 씬에는 FbxLayeredTexture 인스턴스를 사용하여 텍스처가 적용된 평면 메시가 포함됩니다. 이 FbxLayeredTexture 인스턴스는 가산 블렌딩된 4개의 FbxFileTexture 인스턴스로 구성됩니다. FbxLayeredTexture는 FbxSurfaceLambert 인스턴스의 디퓨즈 속성에 연결됩니다. 다음 다이어그램에서 볼 수 있듯이 이 FbxSurfaceLambert 인스턴스는 FbxNode의 머티리얼 목록에 추가됩니다.
+
+평면 FbxMesh는 FbxNode의 속성으로 설정됩니다. 이 메시의 노말 값과 UV 좌표는 FbxLayerElementNormal 및 FbxLayerElementUV를 사용하여 0번째 FbxLayer 내에 설정됩니다. FbxMesh.BeginPolygon()이 매개변수로 '0'과 함께 호출될 때 머티리얼이 평면 폴리곤에 바인딩됩니다. 이 0은 부모 FbxNode의 머티리얼 목록에 포함된 (유일한) 머티리얼, 즉 이전에 언급한 FbxSurfaceLambert를 참조합니다.
+
+**참고:** 이 Python 프로그램을 성공적으로 실행하려면 프로그램이 실행될 때 위의 4개의 .jpg 이미지가 이 Python 프로그램과 같은 폴더에 있는지 확인하십시오.
+
+python
+
+```python
+'''
+layeredTextures.py
+
+    > 4개의 텍스처가 서로 위에 레이어링된 평면을 씬에 생성합니다.
+
+    > 필요한 텍스처 파일: one.jpg, two.jpg, three.jpg, four.jpg
+'''
+
+import fbx
+import FbxCommon
+
+vertices = [fbx.FbxVector4( -5, -5,  0 ), # 0 - 정점 인덱스.
+            fbx.FbxVector4(  5, -5,  0 ), # 1
+            fbx.FbxVector4(  5,  5,  0 ), # 2
+            fbx.FbxVector4( -5,  5,  0 )] # 3
+
+normalPosZ = fbx.FbxVector4( 0, 0, 1 ) # 양의 Z 노말 벡터.
+
+# 각 텍스처의 파일명과 알파 투명도를 정의합니다.
+textureFilenames = [ ( 'one.jpg',   0.2 ),
+                     ( 'two.jpg',   0.5 ),
+                     ( 'three.jpg', 0.4 ),
+                     ( 'four.jpg',  1.0 ) ]
+
+saveFilename = 'layeredTextures.fbx'
+
+###############################################################
+# 헬퍼 함수(들).                                              #
+###############################################################
+def createPlane(pScene):
+    ''' 루트 노드의 자식으로 평면 폴리곤을 생성합니다. '''
+
+    rootNode = pScene.GetRootNode()
+
+    #======================================================
+    # 노드 정의 및 메시 객체 생성.
+    #======================================================
+    # 노드를 생성합니다.
+    newNode = fbx.FbxNode.Create( pScene, 'planeNode' )
+    rootNode.AddChild( newNode )
+
+    # 메시 노드 속성을 생성합니다.
+    newMesh = fbx.FbxMesh.Create( pScene, 'planeMesh' )
+    newNode.SetNodeAttribute( newMesh )
+
+    # Lambert 머티리얼을 생성하고 메시의 노드에 할당합니다.
+    applyLambertMaterial( pScene, newNode )
+
+    # 레이어드 텍스처를 생성하고 적용합니다.
+    applyLayeredTexture( pScene, newNode )
+
+    # 텍스처를 보기 위해 노드의 셰이딩 모드를 설정합니다.
+    newNode.SetShadingMode( fbx.FbxNode.eTextureShading )
+
+    #======================================================
+    # 제어점.
+    #======================================================
+    # 폴리곤의 정점을 정의합니다.
+    global vertices
+    newMesh.InitControlPoints( 4 )
+    newMesh.SetControlPointAt( vertices[0], 0 )
+    newMesh.SetControlPointAt( vertices[1], 1 )
+    newMesh.SetControlPointAt( vertices[2], 2 )
+    newMesh.SetControlPointAt( vertices[3], 3 )
+
+    #======================================================
+    # 노말.
+    #======================================================
+    # 노말과 UV 좌표의 경우 인덱스 0의 레이어를 사용합니다.
+    # 존재하지 않으면 생성합니다.
+    layer = newMesh.GetLayer( 0 )
+    if( not layer ):
+        newMesh.CreateLayer()
+        layer = newMesh.GetLayer( 0 )
+
+    # 노말 레이어 요소를 생성합니다.
+    normalLayerElement = fbx.FbxLayerElementNormal.Create( newMesh, 'normals' )
+
+    # 각 정점(또는 제어점)에 대해 하나의 노말을 갖도록 하므로
+    # 매핑 모드를 eByControlPoint로 설정합니다
+    normalLayerElement.SetMappingMode( fbx.FbxLayerElement.eByControlPoint )
+
+    # 모든 제어점에 대한 노말 값을 설정합니다.
+    normalLayerElement.SetReferenceMode( fbx.FbxLayerElement.eDirect )
+
+    global normalPosZ # 양의 Z 노말.
+    normalLayerElement.GetDirectArray().Add( normalPosZ )
+    normalLayerElement.GetDirectArray().Add( normalPosZ )
+    normalLayerElement.GetDirectArray().Add( normalPosZ )
+    normalLayerElement.GetDirectArray().Add( normalPosZ )
+
+    # 노말 레이어 요소를 메시의 레이어 0에 할당합니다.
+    layer.SetNormals( normalLayerElement )
+
+    #======================================================
+    # Diffuse 채널 UV 좌표.
+    #======================================================
+    # 하나의 폴리곤(사각형 평면)만 다루므로
+    # 코드를 단순화하고 uv 좌표를 4개의 폴리곤 제어점에 직접 매핑할 수 있습니다.
+    uvDiffuseLayerElement = fbx.FbxLayerElementUV.Create( newMesh, 'diffuseUV' )
+    uvDiffuseLayerElement.SetMappingMode( fbx.FbxLayerElement.eByPolygonVertex )
+    uvDiffuseLayerElement.SetReferenceMode( fbx.FbxLayerElement.eDirect )
+
+    # direct 배열을 채웁니다.
+    uv0 = fbx.FbxVector2( 0, 0 )
+    uv1 = fbx.FbxVector2( 1, 0 )
+    uv2 = fbx.FbxVector2( 1, 1 )
+    uv3 = fbx.FbxVector2( 0, 1 )
+    uvDiffuseLayerElement.GetDirectArray().Add( uv0 )
+    uvDiffuseLayerElement.GetDirectArray().Add( uv1 )
+    uvDiffuseLayerElement.GetDirectArray().Add( uv2 )
+    uvDiffuseLayerElement.GetDirectArray().Add( uv3 )
+
+    # uv 레이어 요소를 메시의 레이어 0에 할당합니다.
+    layer.SetUVs( uvDiffuseLayerElement, fbx.FbxLayerElement.eTextureDiffuse )
+
+    #======================================================
+    # 폴리곤 정의.
+    #======================================================
+    # 하나의 평면 폴리곤을 생성합니다.
+    #    > FbxMesh.BeginPolygon()의 0은 폴리곤에 적용될 머티리얼의 인덱스를 참조합니다.
+    #      FbxNode에 적용된 머티리얼이 하나만 있으므로 인덱스 0을 사용합니다.
+    newMesh.BeginPolygon( 0 )
+    for i in range( 0, 4 ):
+        newMesh.AddPolygon( i )
+    newMesh.EndPolygon()
+
+    return newNode
+
+def applyLambertMaterial( pScene, pNode ):
+    ''' 노드에 Lambert 머티리얼을 적용합니다. '''
+
+    black = fbx.FbxDouble3( 0, 0, 0 )
+    white = fbx.FbxDouble3( 1, 1, 1 )
+
+    material = fbx.FbxSurfaceLambert.Create( pScene, 'myMaterial' )
+    material.ShadingModel.Set( 'Lambert' ) # FbxSurfacePhong 인스턴스를 사용하는 경우 'Phong'도 사용할 수 있습니다
+    material.Emissive.Set( black )
+    material.Ambient.Set( white )
+    material.Diffuse.Set( white )
+    material.TransparencyFactor.Set( 0 )
+
+    pNode.AddMaterial( material )
+
+
+def applyLayeredTexture( pScene, pNode ):
+    ''' 주어진 텍스처 파일명을 사용하여 노드에 레이어드 텍스처를 적용합니다. '''
+    global textureFilenames
+
+    textures = []
+
+    # 나중에 레이어링할 개별 텍스처 객체를 생성합니다.
+    for i in range( 0, len( textureFilenames ) ):
+
+        textureFilename = textureFilenames[i][0]
+        textureAlpha = textureFilenames[i][1]
+
+        newTexture = fbx.FbxFileTexture.Create( pScene, 'myFileTexture_' +  str( i ) )
+        newTexture.SetFileName( textureFilename )
+
+        newTexture.SetTextureUse( fbx.FbxTexture.eStandard )
+        newTexture.SetMappingType( fbx.FbxTexture.eUV )
+        newTexture.SetMaterialUse( fbx.FbxFileTexture.eModelMaterial )
+        newTexture.SetSwapUV( False )
+        newTexture.SetTranslation( 0.0, 0.0 )
+        newTexture.SetScale( 1.0, 1.0 )
+        newTexture.SetRotation( 0.0, 0.0 )
+        newTexture.Alpha.Set( textureAlpha )
+
+        textures.append( newTexture )
+
+    # 레이어드 텍스처 객체를 생성하고 그 안에 텍스처를 레이어링합니다.
+    layeredTexture = fbx.FbxLayeredTexture.Create( pScene, 'myLayeredTexture' )
+
+    for i in range( 0, len( textures ) ):
+        texture = textures[ i ]
+        layeredTexture.ConnectSrcObject( texture )
+        layeredTexture.SetTextureBlendMode( i, fbx.FbxLayeredTexture.eAdditive )
+
+    # 레이어드 텍스처를 인덱스 0의 노드 머티리얼에 연결합니다.
+    # 레이어드 텍스처는 머티리얼의 디퓨즈 채널에 연결됩니다.
+    material = pNode.GetMaterial( 0 )
+    material.Diffuse.ConnectSrcObject( layeredTexture )
+
+
+###############################################################
+# Main.                                                       #
+###############################################################
+def main():
+    ''' 메인 프로그램. '''
+    fbxManager = fbx.FbxManager.Create()
+    fbxScene = fbx.FbxScene.Create( fbxManager, '' )
+
+    # 텍스처가 적용된 평면 메시를 생성합니다.
+    newNode = createPlane( fbxScene )
+
+    # 파일을 저장합니다.
+    global saveFilename
+    FbxCommon.SaveScene( fbxManager, fbxScene, saveFilename, pEmbedMedia=True )
+
+    # 정리합니다.
+    fbxManager.Destroy()
+    del fbxManager, fbxScene, newNode
+
+if __name__ == '__main__':
+    main()
+```
+
+**참고:**
+
+- FbxLayerElementUV, FbxLayerElementNormal - UV 및 노말 정의
+- FbxLayerElement::EMappingMode - 레이어 요소가 표면에 매핑되는 방법을 지정하는 열거형.
+- FbxLayerElement::EReferenceMode - 레이어 요소의 IndexArray와 DirectArray가 참조되는 방법을 지정하는 열거형.
