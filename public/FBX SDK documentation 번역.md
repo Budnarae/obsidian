@@ -1962,3 +1962,123 @@ FBX SDK와 Maya는 변환 행렬을 계산하기 위해 동일한 공식을 사�
 - 기하학적 이동, 기하학적 회전 및 기하학적 스케일링은 3ds Max의 객체 오프셋 개념과 관련이 있습니다. 이러한 기하학적 변환은 노드 변환 후 노드 속성에 적용됩니다.
 - 기하학적 변환은 상속되지 않습니다: `ParentWorldTransform`에는 `WorldTransform`의 부모 노드의 OT, OR 및 OS가 포함되지 않습니다.
 - 기하학적 변환은 FBX SDK에서 `FbxNode` 객체의 세 가지 속성으로 구현됩니다: `FbxNode::GeometricTranslation`, `FbxNode::GeometricRotation` 및 `FbxNode::GeometricScaling`.
+
+---
+
+**FBX 노드 속성**
+
+**노드 속성 생성**
+
+`FbxNodeAttribute`는 `FbxNode`와 쌍을 이루어 특정 위치, 회전 및 스케일을 가진 씬 요소를 정의합니다. 해당 노드에 노드 속성이 설정되지 않은 경우 `FbxNode::GetNodeAttribute()`를 호출하면 `NULL`을 반환합니다.
+
+다음 코드 샘플(위의 다이어그램에 맞게 `ExportScene04/main.cxx`에서 조정됨)은 씬 내에서 간단한 스포트라이트를 생성하는 방법을 보여줍니다. 여기서 `FbxLight* light`는 `FbxNode* lightNode`의 노드 속성입니다. 조명에 대한 자세한 내용은 ~~{ 조명 }~~을 참조하십시오.
+
+```cpp
+// 스포트라이트를 생성합니다.
+FbxNode* CreateLight(FbxScene* pScene, char* pName)
+{
+    FbxLight* light = FbxLight::Create(pScene,pName);
+
+    light->LightType.Set(FbxLight::eSpot);
+    light->CastLight.Set(true);
+
+    FbxNode* lightNode = FbxNode::Create(pScene,pName);
+
+    lightNode->SetNodeAttribute(light);
+
+    return lightNode;
+}
+```
+
+**노드 속성**
+
+다음 표는 기본 씬 요소 세트와 관련된 `FbxNodeAttribute` 하위 클래스를 제시합니다. 이러한 노드 속성은 `FbxNode::SetNodeAttribute()`를 사용하여 `FbxNode`와 쌍을 이룰 수 있습니다. 전체 클래스 계층 구조는 C++ 레퍼런스 가이드를 참조하십시오.
+
+|씬 요소|`FbxNodeAttribute` 하위 클래스|
+|---|---|
+|카메라|`FbxCamera`, `FbxCameraStereo`|
+|카메라 전환기 (Autodesk MotionBuilder의 사용자 정의 카메라 정의)|`FbxCameraSwitcher`|
+|조명|`FbxLight`|
+|메시|`FbxMesh`|
+|Nurb|`FbxNurbs`, `FbxNurbsCurve`, `FbxNurbsSurface`, `FbxTrimNurbsSurface`|
+|패치 / 매개변수 표면|`FbxPatch`|
+|상세도 그룹|`FbxLodGroup`|
+|마커|`FbxMarker`|
+|스켈레톤|`FbxSkeleton`|
+
+**참고:** 일부 애플리케이션은 씬 그래프에 null 노드 타입이 필요합니다. `FbxNull` 노드 속성은 이러한 노드 타입을 정의하는 데 사용됩니다. `FbxNull`의 인스턴스는 `NULL` 값과 동일하지 않습니다.
+
+**노드 속성 타입**
+
+`FbxNodeAttribute`의 타입(`FbxNodeAttribute::EType`)은 `FbxNodeAttribute::GetAttributeType()`을 호출하여 얻을 수 있습니다. `EType`은 노드 속성 객체를 적절한 하위 클래스로 다운캐스팅하는 데 유용합니다.
+
+다음 코드 샘플(`ImportScene/main.cxx` 및 `ImportScene/DisplayLight.cxx`에서 조정됨)은 switch를 사용하여 `FbxNode`에 포함된 `FbxLight`를 표시하는 방법을 보여줍니다.
+
+```cpp
+//
+// ImportScene/DisplayLight.cxx에서 조정됨 ...
+// FbxNode 내에 포함된 FbxLight의 다양한 속성을 표시합니다.
+//
+void DisplayLight(FbxNode* pNode)
+{
+    FbxLight* lLight = (FbxLight*) pNode->GetNodeAttribute();
+
+    DisplayString("Light Name: ", (char *) pNode->GetName());
+    // ...
+
+    char* lLightTypes[] = { "Point", "Directional", "Spot" };
+
+    DisplayString("    Type: ", lLightTypes[lLight->LightType.Get()]);
+    DisplayBool("    Cast Light: ", lLight->CastLight.Get());
+
+    if (!(lLight->FileName.Get().IsEmpty()))
+    {
+        DisplayString("    Gobo");
+
+        DisplayString("        File Name: \"", lLight->FileName.Get().Buffer(), "\"");
+        DisplayBool("        Ground Projection: ", lLight->DrawGroundProjection.Get());
+        DisplayBool("        Volumetric Projection: ", lLight->DrawVolumetricLight.Get());
+        DisplayBool("        Front Volumetric Projection: ", lLight->DrawFrontFacingVolumetricLight.Get());
+    }
+
+    // ...
+}
+
+//
+// ImportScene/main.cxx에서 조정됨 ...
+// 노드의 내용을 표시합니다. 여기서는 FbxLight 노드 속성과 일치하는
+// eLight 속성 타입만 살펴보는 데 관심이 있습니다.
+//
+void DisplayContent(FbxNode* pNode)
+{
+    FbxNodeAttribute::EType lAttributeType;
+    int i;
+
+    if(pNode->GetNodeAttribute() == NULL)
+    {
+        printf("NULL Node Attribute\n\n");
+    }
+    else
+    {
+        lAttributeType = (pNode->GetNodeAttribute()->GetAttributeType());
+
+        switch (lAttributeType)
+        {
+            // ...
+
+        case FbxNodeAttribute::eLight:     
+            DisplayLight(pNode);
+            break;
+
+            // ...
+        }
+    }
+
+    // ...
+
+    for(i = 0; i < pNode->GetChildCount(); i++)
+    {
+        DisplayContent(pNode->GetChild(i));
+    }
+}
+```
