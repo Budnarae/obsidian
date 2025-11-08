@@ -2082,3 +2082,184 @@ void DisplayContent(FbxNode* pNode)
     }
 }
 ```
+
+---
+
+**조명**
+
+**조명 생성**
+
+FBX SDK의 조명은 FbxLight 클래스에 의해 추상화됩니다. FbxLight는 씬의 다른 객체와 마찬가지로 생성됩니다.
+
+기본적으로 FbxLight는 노드의 음의 Y축을 따라 향합니다.
+
+```cpp
+// 씬에서 조명을 위한 노드를 생성합니다.
+FbxNode* lLightNode = FbxNode::Create(pScene, "lightNode");
+
+// 조명을 생성합니다.
+FbxLight* lLight = FbxLight::Create(pScene, "light");
+
+// 조명 노드의 노드 속성을 설정합니다.
+lLightNode->SetNodeAttribute(lLight);
+
+// 조명 노드를 씬의 루트 노드에 추가합니다.
+FbxNode* lRootNode = pScene->GetRootNode();
+lRootNode->AddChild(lLightNode);
+```
+
+**참고:** 씬의 주변 조명은 FbxScene::GetGlobalSettings()를 통해 액세스할 수 있는 전역 설정에 정의됩니다. 자세한 내용은 FbxGlobalSettings 클래스 문서를 참조하십시오.
+
+**조명 타입**
+
+조명의 동작은 FbxLight::LightType 속성을 설정하여 정의할 수 있습니다.
+
+```cpp
+// 조명의 타입을 스포트라이트로 설정합니다.
+lLight->LightType.Set(FbxLight::eSpot);
+```
+
+다음 표는 각 조명 타입의 동작을 요약합니다.
+
+|조명 타입 (FbxLight::ELightType)|설명|
+|---|---|
+|FbxLight::eSpot|조명이 원점에서 스포트라이트처럼 원뿔 모양으로 퍼집니다.<br><br>FbxLight::InnerAngle 및 FbxLight::OuterAngle 속성이 원뿔의 매개변수를 도 단위로 결정합니다.|
+|FbxLight::ePoint|조명이 원점에서 모든 방향으로 균일하게 퍼집니다.|
+|FbxLight::eDirectional|조명이 원점에서 원통 모양으로 퍼집니다.|
+
+**조명 방향 지정**
+
+스포트라이트 또는 직접 조명은 씬의 특정 대상을 일관되게 향하도록 강제할 수 있습니다. 이를 위해 조명의 노드는 FbxNode::SetTarget()을 사용하여 대상을 설정해야 합니다. FbxMarker 노드 속성이 대상 노드에 사용됩니다.
+
+```cpp
+// 마커를 포함할 노드를 생성합니다. 이것이 대상 노드가 됩니다.
+FbxNode* lTargetNode = FbxNode::Create(pScene, "targetNode");
+
+// 마커 노드 속성을 생성합니다.
+FbxMarker* lMarker = FbxMarker::Create(pScene, "lightMarker");
+
+// 마커를 대상 노드의 속성으로 설정합니다.
+lTargetNode->SetNodeAttribute(lMarker);
+
+// 조명 노드의 대상을 설정합니다.
+lLightNode->SetTarget(lTargetNode);
+```
+
+기본적으로 FbxNode는 양의 X축을 조준 제약 조건으로 사용합니다. 새로 생성된 조명은 기본적으로 노드의 음의 Y축을 따라 향한다는 것을 상기하십시오. 조명이 노드의 양의 X축을 따라 향하도록 하려면 FbxNode::SetPostTargetRotation()을 사용하여 조명 노드에 90도의 회전 오프셋을 적용해야 합니다. 자세한 내용은 FbxNode 클래스 문서의 "노드 대상 관리" 섹션을 참조하십시오.
+
+**색상 및 강도**
+
+조명의 색상은 FbxLight::Color 속성에 정의됩니다. 조명의 기본 RGB 값은 FbxDouble3로 표현되는 (1.0, 1.0, 1.0)입니다.
+
+```cpp
+// 조명의 색상을 (0, 1, 0.5)로 설정합니다.
+lLight->Color.Set(FbxDouble3(0.0, 1.0, 0.5));
+```
+
+조명의 강도는 FbxLight::Intensity 속성에 정의됩니다. 강도의 기본 값은 FbxDouble1로 표현되는 100.0입니다.
+
+```cpp
+// 조명의 강도를 50.0으로 설정합니다.
+lLight->Intensity.Set(50.0)
+```
+
+**조명 감쇠**
+
+조명의 감쇠 타입은 FbxLight::DecayType 속성에 정의됩니다.
+
+```cpp
+// 조명의 감쇠 타입을 이차 감쇠로 설정합니다.
+lLight->DecayType.Set(FbxLight::eQuadratic);
+```
+
+다음 표는 사용 가능한 감쇠 타입을 요약합니다.
+
+|감쇠 타입 (FbxLight::EDecayType)|설명|
+|---|---|
+|FbxLight::eNone|감쇠 없음. 조명의 강도는 거리에 따라 감소하지 않습니다.|
+|FbxLight::eLinear|선형 감쇠. 조명의 강도는 조명으로부터의 거리에 따라 선형적으로 감소합니다.|
+|FbxLight::eQuadratic|이차 감쇠. 조명의 강도는 조명으로부터의 거리의 제곱에 따라 감소합니다. 이것은 물리적으로 가장 정확한 감쇠율입니다.|
+|FbxLight::eCubic|삼차 감쇠. 조명의 강도는 조명으로부터의 거리의 세제곱에 따라 감소합니다.|
+
+**참고:** FbxLight::EnableNearAttenuation 및 FbxLight::EnableFarAttenuation과 같은 다른 거리 기반 감쇠 속성도 사용할 수 있습니다. 자세한 내용은 FbxLight 클래스 문서를 참조하십시오.
+
+**그림자**
+
+그림자는 FbxLight::CastShadows 부울 속성을 사용하여 활성화됩니다. 조명 그림자의 색상은 FbxLight::ShadowColor 속성에 정의됩니다. 조명 그림자의 기본 RGB 값은 FbxDouble3로 표현되는 (0.0, 0.0, 0.0)입니다. FbxLight::SetShadowTexture()를 사용하여 그림자 텍스처를 적용할 수도 있습니다.
+
+---
+
+**카메라**
+
+**카메라 생성**
+
+FBX SDK의 카메라는 `FbxCamera` 클래스에 의해 추상화됩니다. 3D 이미징용 스테레오 카메라는 `FbxCameraStereo` 클래스에 의해 추상화됩니다. 이 주제에서는 `FbxCamera`를 생성하고 조작하는 기본적인 방법만 살펴보겠습니다.
+
+기본적으로 `FbxCamera`는 노드의 양의 X축 방향을 향합니다.
+
+```cpp
+// 씬에서 카메라를 위한 노드를 생성합니다.
+FbxNode* lCameraNode = FbxNode::Create(pScene, "cameraNode");
+
+// 조명을 생성합니다.
+FbxCamera* lCamera = FbxCamera::Create(pScene, "camera");
+
+// 카메라 노드의 노드 속성을 설정합니다.
+lCameraNode->SetNodeAttribute(lCamera);
+
+// 카메라 노드를 씬의 루트 노드에 추가합니다.
+FbxNode* lRootNode = pScene->GetRootNode();
+lRootNode->AddChild(lCameraNode);
+```
+
+카메라가 생성되면 씬의 기본 카메라로 설정할 수 있습니다. 씬에 카메라가 하나만 있는 경우에도 씬의 기본 카메라를 명시적으로 설정해야 합니다.
+
+```cpp
+// 씬의 기본 카메라를 설정합니다.
+pScene->GetGlobalSettings().SetDefaultCamera((char *) lCamera->GetName());
+```
+
+**카메라 방향 지정**
+
+카메라는 씬의 특정 대상을 일관되게 향하도록 강제할 수 있습니다. 이를 위해 카메라의 노드는 `FbxNode::SetTarget()`을 사용하여 대상을 설정해야 합니다. `FbxMarker` 노드 속성이 대상 노드에 사용됩니다.
+
+```cpp
+// 마커를 포함할 노드를 생성합니다. 이것이 대상 노드가 됩니다.
+FbxNode* lTargetNode = FbxNode::Create(pScene, "targetNode");
+
+// 마커 노드 속성을 생성합니다.
+FbxMarker* lMarker = FbxMarker::Create(pScene, "cameraMarker");
+
+// 마커를 대상 노드의 속성으로 설정합니다.
+lTargetNode->SetNodeAttribute(lMarker);
+
+// 카메라 노드의 대상을 설정합니다.
+lCameraNode->SetTarget(lTargetNode);
+```
+
+**참고:** 자세한 내용은 `FbxNode` 클래스 문서의 "노드 대상 관리" 섹션을 참조하십시오.
+
+기본적으로 `FbxCamera::FocusSource` 속성은 카메라의 대상에 초점을 유지하기 위해 `FbxCamera::eFocusSrcCameraInterest`로 설정됩니다. 초점 소스는 카메라로부터 특정 거리로도 설정할 수 있습니다.
+
+```cpp
+// 카메라의 초점 소스를 특정 거리로 설정합니다.
+lCamera->FocusSource.Set(FbxCamera::eFocusSpecificDistance);
+
+// 카메라로부터 거리를 100.0 단위로 설정합니다.
+// 이 거리의 기본 값은 200.0 단위입니다.
+lCamera->FocusDistance.Set(100.0);
+```
+
+**카메라 속성**
+
+씬에서 카메라를 구성하는 방법에 대한 자세한 내용은 `FbxCamera` 클래스 문서를 참조하십시오.
+
+---
+
+# Geometry
+
+## Geometry
+
+`FbxGeometry` is the base class for geometric objects which support control point deformations. Instances of `FbxGeometry` can be bound to `FbxNode` objects as node attributes to via `FbxNode::SetNodeAttribute()`. Classes which inherit from `FbxGeometry` include `FbxMesh`, `FbxNurb`, `FbxPatch`, and `FbxLine`. For a full list of the classes which inherit from `FbxGeometry`, consult the class hierarchy in the C++ Reference.
+
+For more information, consult the [Meshes, Materials and Textures](https://help.autodesk.com/view/FBX/2020/ENU/?guid=FBX_Developer_Help_meshes_materials_and_textures_html) section.
