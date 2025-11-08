@@ -1035,3 +1035,116 @@ FBX 씬 그래프는 `FbxNode` 객체의 트리로 구성됩니다. 이러한 �
 **연결**
 
 연결 개념은 FBX SDK의 객체 모델을 이해하는 데 중요합니다. 연결은 객체를 서로, 속성을 서로, 객체를 속성에, 그리고 그 반대로 바인딩할 수 있습니다. API에서 사용 가능한 `Connection` 클래스는 없습니다. 대신, 연결은 `FbxObject::GetSrcObject()`와 같은 `FbxObject` 및 `FbxProperty`의 연결 관련 멤버 함수로만 조작할 수 있습니다. 자세한 내용은 __연결__을 참조하십시오.
+
+---
+
+**FBX SDK 관리자로 메모리 관리하기**
+
+**FBX SDK 관리자 생성**
+
+`FbxManager` 클래스는 FBX SDK 객체를 생성, 관리 및 소멸시키는 책임이 있습니다. 주어진 프로그램에는 하나의 `FbxManager` 인스턴스만 필요합니다. 이 `FbxManager` 싱글톤의 생성은 일반적으로 모든 FBX SDK 프로그램의 첫 번째 작업입니다.
+
+```cpp
+FbxManager* lSdkManager = FbxManager::Create();
+```
+
+**FBX SDK 관리자로 객체 생성**
+
+FBX SDK의 객체는 각각의 `Create()` 및 `Destroy()` 멤버 함수를 통해 생성되거나 소멸됩니다. 하위 수준에서 이러한 함수는 `FbxManager`에 의존하여 메모리를 할당하고 해제합니다. 다음 예제에서 `FbxManager`는 새 씬을 인스턴스화하기 위해 `FbxScene::Create()` 함수에 매개변수로 전달됩니다.
+
+```cpp
+FbxScene* lScene = FbxScene::Create(lSdkManager, "Scene Name");
+```
+
+**메모리 할당**
+
+SDK 객체 관리자(`FbxManager`)는 새 객체를 포함하기에 충분한 양의 메모리를 자동으로 할당합니다. 필수는 아니지만, 객체 관리자의 메모리 할당 전략은 `fbxalloc.h`에 있는 `FbxSetMallocHandler`와 같은 핸들러 설정 함수를 사용하여 사용자 정의할 수 있습니다. 사용자 정의 메모리 할당자를 사용하는 방법에 대한 정보는 ViewScene/main.cxx 예제를 참조하십시오.
+
+**FBX 객체 명명**
+
+위의 코드 스니펫에서 `FbxScene::Create()`의 두 번째 매개변수는 문자열입니다. 객체가 생성될 때, 문자열을 사용하여 새 객체의 이름을 지정할 수 있습니다. 이 문자열은 고유할 필요가 없으며, 빈 문자열 `""`을 전달하는 것도 허용됩니다. 객체 이름은 FBX SDK 애플리케이션과 그 출력의 디버깅을 용이하게 할 수 있습니다.
+
+**참고:** FBX SDK의 현재 구현은 스레드 안전이 보장되지 않습니다. 동일한 `FbxManager`를 사용하여 생성되었지만 서로 다른 스레드에서 액세스되는 객체는 애플리케이션을 충돌시킬 가능성이 높습니다. 이것은 알려진 문제이며, 향후 릴리스에서 FBX SDK의 스레드 안전성을 보장할 계획이 있습니다.
+
+**씬 내에서 객체 생성**
+
+`FbxScene` 객체는 메시, 조명, 애니메이션, 캐릭터 등과 같은 다양한 씬 요소를 포함할 수 있습니다. 이러한 요소는 그것들이 존재하는 씬에 대한 참조와 함께 생성되어야 합니다. 따라서 씬이 내보내질 때 모든 요소도 함께 내보내집니다. 씬이 소멸되면 모든 객체에 할당된 메모리도 해제됩니다. ~~{ 노드 및 씬 그래프 }~~ 섹션은 씬 요소를 정의하고 조작하기 위한 `FbxNode` 및 `FbxNodeAttribute` 클래스의 사용을 설명합니다. 지금은 `FbxScene`이 이러한 객체를 생성하는 데 어떻게 사용될 수 있는지만 살펴보겠습니다.
+
+```cpp
+// 노드 객체 생성
+FbxNode* lNode = FbxNode::Create(lScene, "node");
+ 
+// 메시 객체 생성
+FbxMesh* lMesh = FbxMesh::Create(lScene, "");
+```
+
+**참고:** `FbxScene` 대신 `FbxManager`에 대한 참조만 사용하여 씬 요소(`FbxNode`, `FbxNodeAttribute`)를 생성하는 것이 가능하지만, 씬이 소멸될 때 해당 씬 요소는 함께 소멸되지 않습니다. 명시적으로 소멸시키거나 `FbxManager`가 소멸될 때만 소멸됩니다.
+
+**객체 소멸**
+
+FBX SDK 객체는 `Destroy()` 멤버 함수를 호출하여 명시적으로 소멸시켜야 합니다. `FbxManager`는 해당 객체에 할당된 메모리를 자동으로 해제하고, 해당 객체(`FbxObject`), 그 속성(`FbxProperty`) 및 다른 `FbxObject` 간의 모든 내부 연결을 업데이트하여 불일치를 제거합니다. FBX SDK의 연결 개념에 대한 자세한 내용은 ~~{ 연결 }~~을 참조하십시오. 다음 코드 스니펫은 위에서 인스턴스화한 객체를 소멸시키는 방법을 보여줍니다.
+
+```cpp
+// 이러한 객체 소멸
+lMesh->Destroy();      // 메시 소멸
+lNode->Destroy();      // 노드 소멸
+lScene->Destroy();     // 씬과 그 객체들 소멸
+lSDKManager->Destroy() // SDK Manager와 그것이 관리하는 나머지 객체들 소멸.
+```
+
+---
+
+**FBX 객체**
+
+**FBX 객체 생성 및 소멸**
+
+FBX 객체는 `FbxObject` 또는 `FbxObject`에서 파생된 다른 클래스의 인스턴스입니다. 객체의 인스턴스는 애플리케이션의 `FbxManager` 싱글톤에 대한 참조 또는 `FbxScene` 객체에 대한 참조와 함께 해당 클래스의 `Create()` 함수를 호출하여 생성됩니다.
+
+객체는 `Destroy()` 멤버 함수를 호출하거나, 객체를 생성하는 데 사용된 `FbxManager` 또는 `FbxScene` 객체에서 `Destroy()`를 호출하여 명시적으로 소멸시킬 수 있습니다. `FbxObject`를 인스턴스화하는 데 사용된 `FbxManager`는 `FbxObject::GetFbxManager()`를 호출하여 검색할 수 있습니다. 다음 코드 샘플에서 `FbxImporter`는 `FbxIO`에서 상속하고, `FbxIO`는 `FbxObject`에서 상속한다는 점에 유의하십시오.
+
+```cpp
+// pImporter가 FbxImporter의 인스턴스라고 가정합니다.
+FbxManager* lSdkManager = pImporter->GetFbxManager();
+```
+
+객체 생성 및 소멸에 대한 자세한 내용은 __FBX SDK Manager로 메모리 관리하기__를 참조하십시오.
+
+**속성**
+
+FBX SDK는 `FbxProperty` 클래스를 사용하여 `FbxObject` 인스턴스에 대한 강력한 형식의 정적 및/또는 동적 속성 연결을 강제합니다. FBX SDK 속성 모델은 **FBX 속성** 주제에 설명되어 있습니다.
+
+**컬렉션**
+
+`FbxAnimLayer`, `FbxAnimStack` 및 `FbxScene`과 같은 컨테이너 클래스는 `FbxCollection` 클래스에서 상속합니다. 이 클래스는 다음에 대한 인터페이스를 제공합니다:
+
+- 멤버 추가 - `FbxCollection::AddMember()`
+- 멤버 제거 - `FbxCollection::RemoveMember()`
+- 멤버 개수 세기 - `FbxCollection::GetMemberCount()`
+- 멤버 가져오기 - `FbxCollection::GetMember()`
+- 멤버 검색 - `FbxCollection::FindMember()`
+
+`FbxCollection::GetMemberCount()` 및 `FbxCollection::GetMember()` 함수는 `FbxCriteria`를 받아들이도록 오버로드되어 있습니다. 자세한 내용은 `FbxCriteria` 클래스 레퍼런스 페이지를 참조하십시오.
+
+**참고:** **연결** 주제는 객체 및 속성 계층 구조 간을 탐색하는 방법에 대한 추가 정보를 제공합니다.
+
+**FBX 객체 복사**
+
+FBX 객체는 `Copy()` 멤버 함수를 호출하여 복사할 수 있습니다. 할당 연산자(`operator=`)는 FBX 객체를 복사하는 데 사용할 수 없습니다. 이는 비공개 멤버 함수입니다. 다음 코드 샘플은 메시 객체를 복사하는 방법을 보여줍니다.
+
+```cpp
+// lScene이 유효한 씬 객체에 대한 포인터라고 가정합니다.
+FbxMesh* lSourceMesh = FbxMesh::Create (lScene, "");
+ 
+// lSourceMesh에 대한 제어점 등을 정의합니다.
+ 
+// 이 메시는 덮어쓰여질 것입니다
+FbxMesh* lTargetMesh = FbxMesh::Create (lScene, "");
+ 
+// lSourceMesh의 데이터를 lTargetMesh로 복사합니다. 
+// 소스 객체와 대상 객체는 동일한 클래스(이 경우 FbxMesh)의 인스턴스여야 합니다.
+lTargetMesh->Copy(lSourceMesh);
+```
+
+**참고:** `FbxObject`를 복사하면 연결된 모든 `FbxProperty` 인스턴스와 그 값도 복사됩니다.
+
+**참고:** `FbxObject`를 복사해도 객체 간 연결(예: 부모-자식 관계)은 복사되지 않습니다. 이러한 연결은 복사본에 명시적으로 설정해야 합니다. 자세한 내용은 __연결__을 참조하십시오.
