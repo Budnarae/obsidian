@@ -1843,3 +1843,62 @@ int main(int argc, char** argv) {
     exit(0);
 }
 ```
+
+---
+
+**FBX 노드**
+
+**노드란 무엇인가?**
+
+노드는 주로 씬 내에서 씬 요소의 위치, 회전 및 스케일을 지정하는 데 사용됩니다. 노드는 FbxNode 클래스에 의해 추상화됩니다. FbxScene은 노드의 부모-자식 계층 구조를 포함합니다. 이 트리의 루트 노드는 FbxScene::GetRootNode()를 통해 액세스됩니다. { FBX 씬 }에 자세히 설명된 것처럼, 추가 노드를 생성하고 이 루트 노드에 추가할 수 있습니다.
+
+```cpp
+// 씬의 루트 노드를 가져옵니다.
+FbxNode* lRootNode = lScene->GetRootNode();
+
+// 자식 노드를 생성합니다.
+FbxNode* lNode = FbxNode::Create(lScene, "child");
+
+// 자식을 루트 노드에 추가합니다.
+lRootNode->AddChild(lNode);
+```
+
+**참고:** 일부 파일 형식은 중복된 노드 이름을 허용하지 않습니다. 이 경우 중복된 이름은 nodename_ncl1, nodename_ncl2, nodename_ncl3 등으로 이름이 변경됩니다. 이전 FBX 파일 형식(버전 1.0에서 버전 6.1)은 중복된 노드 이름을 허용하지 않았습니다.
+
+**노드 계층 구조**
+
+노드 계층 구조는 FbxNode::GetChild() 및 FbxNode::GetParent()와 같은 메서드를 사용하여 순회됩니다. FbxNode::GetChildCount()는 해당 노드의 자식 수를 반환합니다.
+
+노드는 노드의 위치, 회전 및 스케일이 부모의 좌표 시스템과 관련하여 설명되도록 계층 구조로 구성됩니다. 예를 들어, 아래 다이어그램에서 cubeNode가 rootNode의 x축을 따라 4단위만큼 이동하면 lightNode도 이 이동의 영향을 받습니다. 그러나 cameraNode는 cubeNode의 자식이 아니므로 이 이동의 영향을 받지 않습니다.
+
+회전 및 스케일링 변환이 부모와 그 자식에 적용되는 순서는 노드의 상속 타입(ETransformInheritType)에 의해 지정됩니다. 이 변환 상속은 FbxNode::SetTransformationInheritType()을 사용하여 설정할 수 있습니다. 자세한 내용은 FbxNode 클래스 문서를 참조하십시오.
+
+씬 내보내기 및 FBX 씬에서 언급했듯이, 씬의 루트 노드는 씬을 내보낼 때 저장되지 않습니다. 루트 노드의 재귀적으로 하위인 자식만 씬과 함께 내보내집니다. 위 다이어그램에서 rootNode가 씬의 루트 노드라고 가정합니다. 씬을 내보낼 때 rootNode는 저장되지 않습니다. 그러나 cubeNode, lightNode 및 cameraNode는 노드 속성과 함께 파일에 저장됩니다.
+
+**노드 속성**
+
+메시, 조명, 카메라 또는 씬에 있는 기타 객체는 일반적으로 FbxNodeAttribute의 하위 클래스, 예를 들어 FbxMesh, FbxLight 또는 FbxCamera에 의해 추상화됩니다. FbxNodeAttribute는 FbxNode에 바인딩되어 씬에서의 위치를 설명합니다. 이 바인딩은 FbxNode::SetNodeAttribute()를 사용하여 수행됩니다.
+
+위 다이어그램에서 FbxNode* lightNode의 노드 속성은 FbxLight입니다. 따라서 씬에서 FbxLight* light의 위치는 FbxNode* rootNode에서 FbxNode* lightNode까지 각 노드에 적용된 누적 변환에 따라 달라집니다.
+
+하나의 노드에 둘 이상의 노드 속성을 바인딩할 수 있습니다. 이 개념은 다양한 상세도(LOD)의 메시를 다룰 때 유용합니다. 마찬가지로 하나의 노드 속성을 여러 노드에 바인딩할 수 있습니다. 이 기술은 "인스턴싱"으로 알려져 있으며, 메모리 소비를 줄입니다. 자세한 내용은 인스턴싱 - 메시 공유를 참조하십시오.
+
+**참고:** FbxSurfaceMaterial도 노드에 바인딩될 수 있으며, 예를 들어 메시의 표면 속성을 정의하기 위해 그 속성에 적용될 수 있습니다. FbxSurfaceMaterial은 FbxNodeAttribute의 하위 클래스가 아닙니다.
+
+**변환 데이터**
+
+노드의 변환 데이터에는 부모에 대한 이동, 회전 및 스케일링 벡터가 포함됩니다. 이 데이터는 FbxNode::LclTranslation, FbxNode::LclRotation, FbxNode::LclScaling을 통해 액세스할 수 있는 FbxPropertyT 객체 세트로 표현됩니다. "Lcl" 접두사는 "로컬"을 나타냅니다.
+
+```cpp
+FbxDouble3 translation = lNode->LclTranslation.Get();
+FbxDouble3 rotation = lNode->LclRotation.Get();
+FbxDouble3 scaling = lNode->LclScaling.Get();
+```
+
+노드의 변환 데이터는 FbxNode::GetTranslationLimits(), FbxNode::GetRotationLimits() 및 FbxNode::GetScalingLimits()를 통해 액세스할 수 있는 FbxLimits 객체에 의해 제한될 수 있습니다. 노드는 FbxConstraint 객체를 사용하여 제약할 수도 있습니다. 자세한 내용은 FbxLimits 및 FbxConstraint의 클래스 문서를 참조하십시오.
+
+씬의 전역 좌표 시스템에 대한 노드의 이동, 회전 및 스케일링 속성은 변환 행렬로 표현될 수 있습니다. 이 변환 행렬은 FbxNode::EvaluateGlobalTransform()을 통해 얻습니다.
+
+**노드 그룹화**
+
+FbxNode의 인스턴스는 바인딩된 FbxNodeAttribute 없이 존재할 수 있습니다. 이 경우 이러한 FbxNode는 씬에서 자식 노드를 그룹화하거나 배치하는 데 사용할 수 있습니다.
