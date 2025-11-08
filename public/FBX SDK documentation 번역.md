@@ -1473,3 +1473,101 @@ bool LoadScene(FbxManager* pManager, FbxDocument* pScene, const char* pFilename)
     return lStatus;
 }
 ```
+
+---
+
+**지원되는 문자열 형식**
+
+FBX SDK는 내부적으로 UTF-8 문자열을 사용합니다. UTF-8(8비트 UCS/유니코드 변환 형식)은 유니코드를 위한 가변 길이 문자 인코딩입니다. 유니코드 표준의 모든 문자를 표현할 수 있으면서도 ASCII와 하위 호환됩니다. UTF-8에 대한 좋은 소개는 Wikipedia(wikipedia.com)를 참조하십시오.
+
+FBX는 운영 체제의 API에서 함수를 호출할 때 UTF-8 문자열을 필요한 문자열 형식으로 변환합니다. 애플리케이션이 ASCII가 아닌 `char`를 사용하는 경우, FBX에 전달하기 전에 문자열을 UTF-8 `char *` C 문자열로 변환해야 합니다. fbxstring.h는 Windows 환경에 대해 다음 변환 함수를 정의합니다:
+
+```cpp
+FBXSDK_DLL void FbxWCToAnsi(const wchar_t* pInWideChar, char*& pOutANSI);
+FBXSDK_DLL void FbxAnsiToWC(const char* pInANSI, wchar_t*& pOutWideChar);
+FBXSDK_DLL void FbxAnsiToUTF8(const char* pInANSI, char*& pOutUTF8);
+FBXSDK_DLL void FbxUTF8ToAnsi(const char* pInUTF8, char*& pOutANSI);
+```
+
+---
+
+**FBX SDK 커스터마이징**
+
+이 주제는 FBX SDK의 기능을 사용자 정의하거나 확장하는 방법을 제시합니다.
+
+**사용자 정의 데이터**
+
+`FbxObject` 및 `FbxProperty`의 인스턴스는 (`void*`) 포인터를 제공하므로 해당 인스턴스에 사용자 정의 데이터를 연결할 수 있습니다:
+
+- `FbxObject` 사용자 데이터: `FbxObject::SetUserDataPtr()`, `FbxObject::GetUserDataPtr()`.
+- `FbxProperty` 사용자 데이터: `FbxProperty::SetUserDataPtr()`, `FbxProperty::GetUserDataPtr()`.
+
+**참고:** 사용자 정의 데이터를 생성, 소멸 및 기타 관리하는 책임은 사용자에게 있습니다.
+
+**사용자 정의 속성**
+
+`FbxProperty`의 사용자 정의 인스턴스는 `FbxObject`에 동적으로 추가될 수 있습니다. ~~{ FBX 속성 }~~에 제공된 샘플 코드는 이러한 사용자 정의 속성을 생성하고 추가하는 방법을 보여줍니다.
+
+**ExportScene05**, **UserProperties** 및 **Tutorial: ImportExport** 샘플 프로그램도 사용자 정의 속성의 데이터를 가져오고 설정하는 방법에 대한 통찰력을 제공합니다.
+
+**사용자 정의 클래스**
+
+사용자 정의 클래스는 `FbxManager::RegisterFbxClass()`를 호출하여 `FbxManager`에 등록해야 합니다.
+
+`<span class="char_link">[ExportScene03]()`/main.cxx에서 가져온 다음 샘플에서 사용자 정의 클래스 `MyFbxMesh` 및 `MyFbxObject`는 `ExportScene03/MyFbxMesh.h`에 정의되어 있습니다. 이러한 클래스는 각각 `FbxMesh` 및 `FbxObject`에서 상속합니다.
+
+```cpp
+#include <fbxsdk.h>
+#include "../Common/Common.h"
+#include "MyFbxMesh.h"
+
+// ...
+
+int main(int argc, char** argv)
+{
+    FbxManager* lSdkManager = NULL;
+    FbxScene* lScene = NULL;
+    // ...
+
+    // FBX SDK를 준비합니다.
+    InitializeSdkObjects(lSdkManager, lScene);
+
+    // 생성한 새 클래스를 SDK Manager에 추가합니다
+    // 우리 클래스 MyFbxMesh는 FbxMesh에서 파생되었습니다
+    lSdkManager->RegisterFbxClass("MyFbxMesh", FBX_TYPE(MyFbxMesh), FBX_TYPE(FbxMesh));
+    // 이제 클래스 MyFbxMesh를 사용할 준비가 되었습니다
+
+    lSdkManager->RegisterFbxClass("MyFbxObject", FBX_TYPE(MyFbxObject), FBX_TYPE(FbxObject), "MyFbxObjectType", "MyFbxObjectSubType");
+    // ...
+
+}
+```
+
+**레이어 요소에 대한 사용자 정의 데이터**
+
+사용자 정의 타입의 레이어 요소를 생성하려면 `FbxLayerElementUserData` 클래스를 사용하십시오. 다른 레이어 요소와 마찬가지로 폴리곤 정점별, 정점별, 폴리곤별 등으로 매핑할 수 있습니다.
+
+__ExportScene03__의 `CreateCubeWithMaterialAndMyFbxMesh()` 함수를 참조하십시오. 이 함수는 float 및 boolean 데이터 타입을 기반으로 사용자 정의 복합체를 생성하고 각 정점에 대한 데이터를 추가합니다.
+
+**사용자 정의 파일 형식**
+
+FBX SDK는 여러 파일 형식을 사용하여 씬 데이터를 가져오고 내보냅니다. 이러한 각 파일 형식에는 자체 writer 클래스(`FbxWriter`에서 파생) 및 reader 클래스(`FbxReader`에서 파생)가 있습니다. 사용자 정의 `FbxWriter` 및 `FbxReader`를 사용하려면 FBX SDK I/O 플러그인을 통해 로드해야 합니다. 자세한 내용은 __FBX SDK I/O 플러그인으로 파일 형식 사용자 정의하기__를 참조하십시오.
+
+**FBX Extensions SDK**
+
+FBX Extensions SDK는 .dll 파일에 구현할 수 있는 콜백 함수 세트입니다. 이러한 함수는 3ds Max, Maya 및 MotionBuilder의 가져오기 및 내보내기 기능을 사용자 정의합니다. 자세한 내용은 __FBX Extensions SDK__를 참조하십시오.
+
+---
+
+**노드 및 씬 그래프**
+
+이 섹션은 FBX 씬 그래프와 그 씬 요소 구성을 제시합니다.
+
+**노드**
+
+메시, 조명, 카메라, 스켈레톤 또는 선과 같은 씬 요소의 위치는 이동, 회전 및 스케일링 작업의 시퀀스로 설명할 수 있습니다. 이러한 기하학적 변환 데이터는 `FbxNode`에 의해 캡슐화됩니다.
+
+**노드 속성**
+
+씬의 카메라를 고려해보십시오. 이동, 회전 및 스케일링 값 외에도 프레임 너비, 프레임 높이, 피사계 심도, 모션 블러 등을 정의할 수도 있습니다. 이러한 추가 데이터는 `FbxNodeAttribute`의 하위 클래스인 `FbxCamera`에 의해 캡슐화됩니다. `FbxMesh` 및 `FbxLight`도 `FbxNodeAttribute`의 하위 클래스이며, 씬에서의 위치를 지정하기 위해 `FbxNode`에 바인딩될 수 있습니다.
+
