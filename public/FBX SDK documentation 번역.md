@@ -1148,3 +1148,215 @@ lTargetMesh->Copy(lSourceMesh);
 **참고:** `FbxObject`를 복사하면 연결된 모든 `FbxProperty` 인스턴스와 그 값도 복사됩니다.
 
 **참고:** `FbxObject`를 복사해도 객체 간 연결(예: 부모-자식 관계)은 복사되지 않습니다. 이러한 연결은 복사본에 명시적으로 설정해야 합니다. 자세한 내용은 __연결__을 참조하십시오.
+
+---
+
+**FBX 속성**
+
+**속성 관리**
+
+FbxProperty 템플릿 클래스는 FbxObject의 데이터가 강력한 형식을 갖도록 하는 데 사용됩니다. 예를 들어, FbxNode의 로컬 이동 벡터는 FbxDouble3에 대해 매개변수화된 FbxPropertyT를 사용하여 설명됩니다.
+
+FbxObject가 생성되면 정적 내장 FbxProperty가 자동으로 초기화됩니다. 자신만의 FbxProperty를 생성하려면 FbxProperty::Create()를 호출하고 FbxObject 또는 다른 FbxProperty에 대한 참조를 전달해야 합니다.
+
+다음 코드 샘플은 Animation 예제에서 가져온 것입니다. 이 샘플에서 FbxProperty::Create()의 첫 번째 매개변수는 FbxScene 객체입니다. 두 번째 매개변수는 속성의 데이터 타입입니다(데이터 타입의 전체 목록은 fbxdatatypes.h 헤더 파일에서 찾을 수 있습니다). 세 번째 매개변수는 속성에 할당된 이름입니다.
+
+```cpp
+FbxProperty p = FbxProperty::Create(pScene, DTDouble3, "Vector3Property");
+FbxSet<FbxDouble3>(p, FbxDouble3(1.1, 2.2, 3.3);
+```
+
+FbxProperty가 생성된 이름은 FbxProperty::GetName()을 호출하여 액세스할 수 있습니다. 이 이름은 계층 구조 내에서 속성을 검색하는 데 사용할 수 있습니다([속성 계층 구조](속성 계층 구조) 참조).
+
+FbxProperty의 인스턴스는 FbxProperty::Destroy()를 호출하여 소멸시킬 수 있습니다. FbxProperty의 계층 구조는 루트 속성에서 FbxProperty::DestroyRecursively()를 호출하여 소멸시킬 수 있습니다.
+
+**속성 데이터**
+
+FbxProperty의 인스턴스는 각각 FbxProperty::Set() 및 FbxProperty::Get()을 호출하여 설정하고 액세스할 수 있는 데이터를 포함합니다. 예를 들어, FbxDouble3의 벡터로 표현되는 FbxNode 기하학적 변환 데이터는 다음과 같은 방식으로 액세스할 수 있습니다:
+
+```cpp
+// ... FbxNode* lNode 초기화 ...
+FbxDouble3 translation = lNode->LclTranslation.Get();
+FbxDouble3 rotation = lNode->LclRotation.Get();
+FbxDouble3 scaling = lNode->LclScaling.Get();
+```
+
+FbxPropertyT 내에 포함된 데이터는 속성의 데이터 타입에 유효한 값으로만 설정할 수 있습니다. 일부 암시적 변환이 지원됩니다. 예를 들어, double이 필요할 때 int를 제공할 수 있습니다.
+
+**플래그**
+
+속성은 FbxProperty::GetFlag() 및 FbxProperty::ModifyFlag()를 사용하여 조작할 수 있는 FbxPropertyFlags::eFbxPropertyFlags 세트도 포함합니다.
+
+**연산자**
+
+표준 비교 및 할당 연산자를 사용하여 속성을 서로 비교하고 할당할 수 있습니다(FbxProperty::operator==(), FbxProperty::operator!=(), FbxProperty::operator=()).
+
+**사용자 정의 데이터**
+
+FbxProperty 클래스는 런타임에 FbxObject에 동적으로 연결될 수 있는 사용자 정의 데이터를 포함할 수 있습니다. 이에 대한 예제는 UserProperties 예제에서 찾을 수 있습니다.
+
+**속성 계층 구조**
+
+속성은 계층 구조로 구성될 수 있습니다. FbxProperty는 FbxObject 또는 다른 FbxProperty에 연결될 수 있습니다. 속성의 바인딩된 FbxObject는 FbxProperty::GetFbxObject()를 호출하여 액세스할 수 있습니다. ExportScene05 예제는 속성 계층 구조의 구성을 보여줍니다.
+
+**FBX 객체의 속성에 액세스하기**
+
+FBX 객체는 FbxObject::FindProperty()를 사용하여 검색할 수 있는 많은 속성을 가질 수 있습니다. 객체의 속성은 FbxObject::GetFirstProperty() 및 FbxObject::GetNextProperty()와 같은 메서드를 호출하여 반복할 수도 있습니다.
+
+**참고:** FbxIOSettings의 클래스 문서는 속성 계층 구조의 구성에 대한 유용한 통찰력을 제공합니다.
+
+**속성 계층 구조 탐색**
+
+FBX 속성의 계층 구조는 FBX 속성 탐색 함수를 통해 순회할 수 있습니다: FbxProperty::GetParent(), FbxProperty::GetChild(), FbxProperty::GetSibling(), FbxProperty::Find() 등이 있습니다.
+
+**참고:** 연결 주제는 객체 및 속성 계층 구조 간을 탐색하는 방법에 대한 추가 정보를 제공합니다.
+
+**샘플 코드**
+
+다음 샘플 코드는 ExportScene05 예제에서 가져온 것입니다. 자신만의 FbxProperty 값을 생성하고 FbxObjectMetaData 인스턴스(FbxObject에서 상속)에 바인딩하는 방법을 보여줍니다.
+
+```cpp
+// ... pScene을 FbxScene*로 초기화 ...
+
+// pScene에 FbxObjectMetaData* 객체를 생성합니다.
+FbxObjectMetaData* lFamilyMetaData = FbxObjectMetaData::Create(pScene, "Family");
+
+// 매개변수화된 데이터 타입(DTString, DTFloat, DTDouble)을 기반으로 
+// 여러 FbxProperty 인스턴스를 생성하고 데이터를 할당합니다.
+//
+// 네 번째 매개변수는 선택적 레이블 문자열로, FbxProperty::GetLabel() 및 
+// FbxProperty::SetLabel()을 사용하여 가져오고 수정할 수 있습니다. 
+// 이 레이블은 프로그램의 주 메모리에만 존재하며, 속성이 내보내질 때 
+// 파일로 내보내지지 않습니다.
+//
+// 이러한 속성들은 pFamilyMetaData 객체 내에 포함될 것입니다.
+//
+FbxProperty::Create(lFamilyMetaData, DTString, "Level", "Level").Set(FbxString("Family")); // String
+FbxProperty::Create(lFamilyMetaData, DTString, "Type", "Type").Set(FbxString("Wall"));     // String
+FbxProperty::Create(lFamilyMetaData, DTFloat, "Width", "Width").Set(10.0f);              // float
+FbxProperty::Create(lFamilyMetaData, DTDouble, "Weight", "Weight").Set(25.0);            // double
+FbxProperty::Create(lFamilyMetaData, DTDouble, "Cost", "Cost").Set(1.25);                // double
+```
+
+---
+
+**연결**
+
+**연결 시각화**
+
+연결은 FBX 객체 및/또는 FBX 속성 간의 양방향 관계를 관리하는 FBX SDK 데이터 구조입니다. FBX SDK 내에서 연결의 일관성을 보장하기 위해 실제 데이터 구조는 공개적으로 노출되지 않습니다. 대신, 연결은 FbxObject::ConnectSrcObject(), FbxObject::ConnectDstObject(), FbxProperty::ConnectDstObject(), FbxProperty::ConnectSrcProperty() 등과 같은 FbxObject 및 FbxProperty 연결 관리 메서드를 사용하여 조작할 수 있습니다.
+
+연결은 FBX 객체 및 속성의 대상(destination) 및 소스(source) 계층 구조로 시각화할 수 있습니다.
+
+- **객체-속성 연결**: 속성은 객체 내에 소스로 포함됩니다. FbxObject::GetSrcProperty()를 호출하면 주어진 인덱스에서 객체의 소스 속성을 반환합니다. 대칭적으로, FbxProperty::GetDstObject()를 호출하면 속성의 대상 객체를 반환합니다.
+- **객체-객체 연결**: 객체 간의 부모-자식 관계는 연결을 사용합니다(예: 씬의 노드 계층 구조). 일반적으로 객체의 자식은 소스이며, FbxObject::GetSrcObject()를 사용하여 액세스합니다. 객체의 부모는 대상이며, FbxObject::GetDstObject()를 사용하여 액세스합니다.
+- **속성-속성 연결**: 속성 간의 부모-자식 관계도 연결을 사용합니다(예: FbxIOSettings의 속성 계층 구조). 일반적으로 속성의 자식은 소스이며, FbxProperty::GetSrcProperty()를 사용하여 액세스합니다. 속성의 부모는 대상이라고 하며, FbxProperty::GetDstProperty()를 사용하여 액세스합니다.
+
+위 다이어그램의 대상 및 소스 연결은 다음 코드 샘플에 설명되어 있습니다.
+
+**obj0의 소스 객체에 액세스:**
+
+```cpp
+// ... obj0가 위 다이어그램을 반영하도록 초기화되었다고 가정합니다...
+// 설명 목적으로 obj0에 연결된 소스 객체의 수를 셉니다.
+int numSrcObjects = obj0->GetSrcObjectCount(); // numSrcObjects = 2
+
+// obj0에 연결된 두 개의 소스 객체에 액세스합니다
+// obj0->GetSrcObject(0)는 obj0->GetSrcObject()를 호출하는 것과 동일합니다
+FbxObject* obj1 = obj0->GetSrcObject(0);
+FbxObject* obj2 = obj0->GetSrcObject(1);
+```
+
+**obj0의 소스 속성에 액세스:**
+
+```cpp
+// ... obj0가 위 다이어그램을 반영하도록 초기화되었다고 가정합니다...
+FbxProperty* prop0 = obj0->GetSrcProperty();
+```
+
+**obj1의 대상 객체에 액세스:**
+
+```cpp
+// ... obj1이 위 다이어그램을 반영하도록 초기화되었다고 가정합니다...
+FbxObject* obj0 = obj1->GetDstObject();
+```
+
+**obj2에서 시작하여 임시적인 방식으로 계층 구조 순회:**
+
+```cpp
+// ... obj2가 위 다이어그램을 반영하도록 초기화되었다고 가정합니다...
+// obj2를 사용하여 prop2에 액세스합니다.
+FbxProperty* prop2 = obj2->GetSrcProperty();
+
+// 설명 목적으로 prop2의 소스 속성 수를 셉니다.
+int numSrcProperties = prop2->GetSrcPropertyCount(); // numSrcProperties = 2
+
+// prop2에 대해 각각 0과 1로 인덱싱된 소스인 prop3과 prop4에 액세스합니다.
+FbxProperty* prop3 = prop2->GetSrcProperty(0);
+FbxProperty* prop4 = prop2->GetSrcProperty(1);
+
+// obj2를 사용하여 obj0에 액세스합니다.
+FbxObject* obj0 = obj2->GetDstObject();
+
+// obj0를 사용하여 prop0에 액세스합니다.
+FbxProperty* prop0 = obj0->GetSrcProperty();
+
+// obj0를 사용하여 obj1에 액세스합니다.
+// 여기서는 obj1이 0으로 인덱싱되고 obj2가 1로 인덱싱된다고 가정합니다.
+FbxObject* obj1 = obj0->GetSrcObject(0);
+
+// obj1을 사용하여 prop1에 액세스합니다.
+FbxProperty* prop1 = obj1->GetSrcProperty();
+```
+
+**객체 및 속성 연결**
+
+FBX SDK의 연결 개념은 FbxProperty의 인스턴스를 FbxObject에 동적으로 추가할 수 있도록 합니다. 이를 통해 자신만의 데이터 타입을 정의하고, FbxProperty::SetUserDataPtr() 멤버 함수를 통해 FBX 속성으로 래핑하고, FbxObject::ConnectSrcProperty() 멤버 함수를 통해 해당 속성을 FBX 객체에 바인딩하는 유연성을 제공합니다.
+
+FbxCollection 클래스도 연결을 사용하여 객체 그룹을 계층 구조로 구성합니다. 예를 들어, FbxScene 클래스는 FbxScene::GetRootNode()를 통해 액세스할 수 있는 FbxNode 객체의 계층 구조를 포함합니다.
+
+노드(FbxNode) 및 노드 속성(FbxNodeAttribute)과 관련된 연결의 사용에 대해 자세히 알아보기 전에 FBX SDK의 씬 그래프 구성에 익숙해지는 것이 좋습니다. 자세한 내용은 { 노드 및 씬 그래프 } 섹션을 참조하십시오. 그러나 모험심이 있다면, 아래에 설명된 개념이 노드와 그 속성을 사용하여 씬 그래프가 어떻게 구조화되는지에 대한 직관을 제공할 것입니다.
+
+간단히 소개하면, FbxScene의 FbxNode 계층 구조는 기하학적 변환 스택을 지정하는 데 사용됩니다. FbxNodeAttribute에서 상속하는 클래스, 예를 들어 FbxMesh, FbxCamera 및 FbxLight는 씬의 모든 요소를 설명합니다. FbxNodeAttribute는 FbxNode에 연결되어 메시, 카메라 또는 조명이 3D 공간에서 어디에 존재하는지 지정합니다.
+
+**"객체-객체" 연결 예제: 씬의 노드 간 부모-자식 관계**
+
+씬의 노드 간 부모-자식 관계는 객체 연결을 사용합니다. 메서드가 호출된 부모 노드에 자식 노드를 추가하는 FbxNode::AddChild() 메서드를 고려하십시오:
+
+```cpp
+// ... lScene이 FbxScene*로 초기화되었다고 가정합니다,
+
+// 씬의 루트 노드를 가져옵니다.
+FbxNode* lParentNode = lScene->GetRootNode();
+
+// 자식 노드를 생성합니다.
+FbxNode* lChildNode = FbxNode::Create(lScene, "child");
+
+// 자식 노드를 루트 노드에 추가합니다.
+lParentNode->AddChild(lChildNode);
+```
+
+다음 연결이 만들어집니다:
+
+- 자식 노드는 부모 노드의 소스 객체가 됩니다.
+- 부모 노드는 자식 노드의 대상 객체가 됩니다.
+
+**참고:** lParentNode는 lScene의 소스 객체입니다. 따라서 lScene은 lParentNode의 대상 객체입니다.
+
+**참고:** { 두 씬 병합 } 주제는 두 씬의 내용을 병합하기 위해 노드 간의 연결을 명시적으로 조작합니다.
+
+**"객체-객체" 연결 예제: 노드 및 노드 속성**
+
+FbxNode와 FbxNodeAttribute의 관계는 일반적으로 FbxNode::SetNodeAttribute()를 호출하여 생성됩니다. 따라서 FbxMesh의 인스턴스(FbxNodeAttribute에서 상속)를 씬의 노드에 바인딩할 수 있습니다. 이 경우:
+
+- FbxNodeAttribute는 FbxNode의 소스 객체입니다.
+- FbxNode는 FbxNodeAttribute의 대상 객체입니다.
+
+**참고:** 머티리얼(FbxSurfaceMaterial)도 FbxNode에 소스 객체로 연결됩니다. 하나의 노드는 많은 머티리얼에 연결될 수 있고, 하나의 머티리얼은 많은 노드에 연결될 수 있습니다(메모리 사용량을 줄이기 위해). 그러나 FbxSurfaceMaterial은 FbxNodeAttribute의 하위 클래스가 아닙니다.
+
+**"객체-속성" 연결 예제: 노드 및 변환**
+
+{ FBX 속성 } 하위 섹션에서 언급했듯이, FbxNode의 로컬 변환 데이터는 FbxDouble3 데이터 타입으로 매개변수화된 FbxPropertyT로 정의됩니다. 이 경우:
+
+- FbxNode::LclTranslation에 의해 반환된 FbxPropertyT는 해당 FbxNode의 소스 속성입니다.
+- FbxNode는 해당 FbxPropertyT의 대상 객체입니다.
