@@ -1571,3 +1571,275 @@ FBX Extensions SDK는 .dll 파일에 구현할 수 있는 콜백 함수 세트�
 
 씬의 카메라를 고려해보십시오. 이동, 회전 및 스케일링 값 외에도 프레임 너비, 프레임 높이, 피사계 심도, 모션 블러 등을 정의할 수도 있습니다. 이러한 추가 데이터는 `FbxNodeAttribute`의 하위 클래스인 `FbxCamera`에 의해 캡슐화됩니다. `FbxMesh` 및 `FbxLight`도 `FbxNodeAttribute`의 하위 클래스이며, 씬에서의 위치를 지정하기 위해 `FbxNode`에 바인딩될 수 있습니다.
 
+---
+
+**FBX 씬**
+
+**씬 그래프 구성 요약**
+
+FBX SDK 씬 그래프는 `FbxScene` 클래스에 의해 추상화됩니다. 씬은 노드(`FbxNode`)의 계층 구조로 구성됩니다. 씬의 루트 노드는 `FbxScene::GetRootNode()`를 통해 액세스됩니다. 메시, 조명 또는 카메라와 같은 씬 요소는 `FbxNode`를 `FbxNodeAttribute`의 하위 클래스와 결합하여 정의됩니다. 자세한 내용은 **FBX 노드** 및 __FBX 노드 속성__을 참조하십시오.
+
+**참고:** 내보내기 작업 중에 씬의 루트 노드는 파일로 내보내지지 않습니다. 루트 노드의 자식만 파일로 내보내집니다. 따라서 파일에 저장되어야 하는 것을 루트 노드에 연결하는 것은 권장되지 않습니다.
+
+**씬 생성**
+
+__FBX SDK 관리자로 메모리 관리하기__에서 설명한 것처럼, `FbxScene`은 `FbxScene::Create()` 함수를 호출하여 생성됩니다. 새 `FbxScene`에는 루트 `FbxNode`와 기본 구성을 가진 `FbxGlobalSettings` 객체가 포함됩니다.
+
+```cpp
+// SDK 관리자를 생성합니다.
+FbxManager* lSdkManager = FbxManager::Create();
+
+// 씬을 생성합니다.
+FbxScene* lScene = FbxScene::Create(lSdkManager, "Scene Name");
+```
+
+씬 요소는 그것들이 속한 `FbxScene`에 대한 참조를 사용하여 생성됩니다. 이렇게 함으로써 씬은 함께 생성된 모든 요소와 함께 내보내집니다. 다음 샘플에서는 노드가 `FbxScene`에 대한 참조와 함께 생성되고 씬의 루트 노드에 연결됩니다.
+
+```cpp
+// 씬의 루트 노드를 가져옵니다.
+FbxNode* lRootNode = lScene->GetRootNode();
+
+// 자식 노드를 생성합니다.
+FbxNode* lChild = FbxNode::Create(lScene, "child");
+
+// 자식을 루트 노드에 추가합니다.
+lRootNode->AddChild(lChild);
+```
+
+**전역 씬 설정**
+
+씬의 축 시스템, 시스템 단위, 주변 조명 및 시간 설정은 `FbxGlobalSettings` 객체에 정의됩니다. 이 객체는 `FbxScene::GetGlobalSettings()`를 통해 액세스됩니다.
+
+**애니메이션 평가**
+
+씬의 `FbxAnimEvaluator`는 특정 시간에 씬의 각 노드의 애니메이션된 기하학적 변환을 평가합니다. 또한 특정 머티리얼의 색상 변경과 같은 씬의 다른 애니메이션 가능한 속성도 평가합니다. 씬의 `FbxAnimEvaluator`는 `FbxScene::GetEvaluator()`를 통해 액세스됩니다. 자세한 내용은 __애니메이션__을 참조하십시오.
+
+**텍스처 및 머티리얼 관리**
+
+씬 내에서 생성된 머티리얼(`FbxSurfaceMaterial`) 및 텍스처(`FbxTexture`)는 `FbxScene::GetMaterial()` 및 `FbxScene::GetTexture()`와 같은 멤버 함수를 사용하여 액세스하고 수정할 수 있습니다. 메시와 함께 머티리얼 및 텍스처를 사용하는 방법에 대한 자세한 내용은 __메시, 머티리얼 및 텍스처__를 참조하십시오.
+
+**캐릭터 및 캐릭터 포즈 관리**
+
+씬 내의 캐릭터(`FbxCharacter`) 및 캐릭터 포즈(`FbxCharacterPose`)는 `FbxScene::GetCharacter()` 및 `FbxScene::GetCharacterPose()`를 사용하여 액세스할 수 있습니다. 씬에서 캐릭터를 정의하는 방법에 대한 자세한 내용은 `FbxCharacter` 및 `FbxCharacterPose`의 클래스 문서를 참조하십시오.
+
+---
+
+**두 씬 병합**
+
+이 주제는 가져온 두 씬을 병합하는 방법을 제시합니다. 또한 씬과 그 안의 노드를 조작하는 기본적인 통찰력을 제공하며, 독자에게 연결 및 연결 관리 개념을 소개합니다.
+
+두 씬을 병합하기 위한 단계는 다음과 같습니다:
+
+1. 씬을 로드합니다.
+2. 로드된 씬 내의 노드를 수정합니다.
+3. 로드된 씬의 내용을 참조 씬으로 이동합니다.
+4. 다른 씬을 로드합니다.
+5. 참조 씬의 내용으로 새로 로드된 씬을 업데이트합니다.
+6. 참조 씬을 소멸시킵니다.
+
+**씬 로드 및 수정**
+
+생성하는 첫 번째 객체는 FbxManager입니다. 이 단계는 후속 FBX SDK 객체를 생성하는 데 필요합니다. 그런 다음 "현재 씬"이라고 하는 새로 생성된 FbxScene 객체가 사용자 정의 LoadScene() 함수에 전달되어 "file1.fbx"(실행 프로그램과 같은 폴더에 있어야 함)의 가져온 내용으로 채워질 수 있습니다. 씬의 내용이 채워지면 루트 노드의 첫 번째 자식(인덱스 0)의 이름을 "Test Name"으로 변경하기만 하면 됩니다.
+
+```cpp
+// SDK 관리자를 생성합니다.
+FbxManager* lSdkManager = FbxManager::Create();
+
+// 가져온 파일로 채울 수 있도록 새 씬을 생성합니다.
+FbxScene* lCurrentScene = FbxScene::Create(lSdkManager,"My Scene");
+
+// 씬을 로드합니다.
+LoadScene(lSdkManager, lCurrentScene, "file1.fbx");
+
+// 씬을 수정합니다. 이 예제에서는 하나의 노드 이름만 변경됩니다.
+lCurrentScene->GetRootNode()->GetChild(0)->SetName("Test Name");
+```
+
+**로드된 씬의 내용을 참조 씬으로 이동**
+
+"참조 씬"이라고 하는 다른 FbxScene 객체가 생성됩니다. FbxScene 객체가 생성되면 루트 노드와 전역 설정도 함께 생성됩니다. 따라서 이 단계의 목표는 현재 씬의 루트 노드에서 자식을 제거하여 참조 씬의 루트 노드의 자식이 될 수 있도록 하는 것입니다.
+
+```cpp
+// 현재 로드된 씬의 내용을 저장할 참조 씬을 생성합니다.
+FbxScene *lMyRefScene = FbxScene::Create(lSdkManager, "My Reference Scene");
+
+// 현재 로드된 씬의 노드 트리를 참조 씬으로 이동합니다.
+vector<FbxNode*> lChildren;
+int lNumChildren = lCurrentScene->GetRootNode()->GetChildCount();
+for(int i = 0; i < lNumChildren; i++) {
+
+    // 현재 로드된 씬에서 자식 노드를 가져옵니다.
+    lChildren.push_back(lCurrentScene->GetRootNode()->GetChild(i));
+
+    // 자식 노드를 참조 씬의 루트 노드에 연결합니다.
+   for( int c = 0; c < lChildren.size(); c )
+       lMyRefScene->GetRootNode()->AddChild(lChildren[c]);
+}
+
+// 루트 노드에서 자식을 제거합니다.
+lCurrentScene->GetRootNode()->DisconnectAllSrcObject();
+```
+
+현재 씬에 포함된 다른 FbxObject를 참조 씬으로 이동해야 할 수도 있습니다. 이러한 객체에는 FbxCharacter, FbxCharacterPose 및 FbxDocumentInfo의 인스턴스 등이 포함될 수 있습니다. 이러한 객체는 현재 씬의 루트 노드의 자식이 아니므로 다르게 이동해야 합니다. 이를 달성하기 위해 FBX SDK의 맥락에서 연결에 대한 기본 지식이 필요합니다.
+
+연결은 두 FbxObject, FbxObject와 FbxProperty 또는 두 FbxProperty 간의 방향성 "소스에서 대상으로" 관계입니다. 연결에 대한 자세한 내용은 연결을 참조하십시오. 이 튜토리얼의 범위에서는 현재 씬에서 모든 관련 소스 객체의 연결을 끊고 참조 씬에 연결하려고 합니다. FbxObject::GetSrcObjectCount(), FbxObject::DisconnectAllSrcObject() 및 FbxObject::ConnectDstObject()를 사용하여 이를 수행합니다.
+
+```cpp
+// 다른 객체를 참조 씬으로 이동합니다.
+int lNumSceneObjects = lCurrentScene->GetSrcObjectCount();
+for(int i = 0; i < lNumSceneObjects; i++) {
+    FbxObject* lObj = lCurrentScene->GetSrcObject(i);
+    if(lObj == lCurrentScene->GetRootNode() || *lObj == lCurrentScene->GetGlobalSettings()){
+        // 루트 노드나 씬의 전역 설정은 이동하지 않습니다. 
+        // 이러한 객체는 모든 씬에 대해 생성됩니다.
+        continue;
+    }
+    // 객체를 참조 씬에 연결합니다.
+    lObj->ConnectDstObject(lMyRefScene);
+}
+
+// 모든 씬 객체의 연결을 끊습니다.
+lCurrentScene->DisconnectAllSrcObject();
+```
+
+**참고:** 연결 개념을 사용하여 씬에서 특정 유형의 모든 객체를 가져올 수 있습니다. 다음 코드 스니펫에서는 lScene->GetSrcObjectCount(FbxMesh::ClassId)를 호출하여 씬에 연결된 메시를 반복합니다.
+
+```cpp
+for(int i = 0; i < lScene->GetSrcObjectCount(FbxMesh::ClassId); i++) {
+    FbxMesh* lMesh = (FbxMesh*)lScene->GetSrcObject(FbxMesh::ClassId, i);
+    //...
+}
+```
+
+**다른 씬 로드 및 업데이트**
+
+이 시점에서 현재 씬의 요소를 참조 씬으로 이동했으며 현재 씬은 비어 있게 되었습니다. 이제 현재 씬을 가져와 "file2.fbx"의 내용으로 다시 채웁니다. 마지막으로 현재 씬의 루트의 첫 번째 자식 이름을 참조 씬의 루트의 첫 번째 자식 이름으로 변경합니다. 결국 현재 씬의 루트의 첫 번째 자식 이름은 "Test Name"이 되어야 합니다.
+
+```cpp
+// 두 번째 파일을 lCurrentScene으로 가져옵니다.
+LoadScene(lSdkManager, lCurrentScene, "file2.fbx");
+
+// 두 번째 파일이 로드된 후 이름을 가져옵니다.
+FbxString lNameBeforeUpdate = lCurrentScene->GetRootNode()->GetChild(0)->GetName();
+FbxString lReferenceName = lMyRefScene->GetRootNode()->GetChild(0)->GetName();
+
+// 루트의 자식 0 이름을 업데이트합니다.
+lCurrentScene->GetRootNode()->GetChild(0)->SetName(lReferenceName);
+FbxString lNameAfterUpdate = lCurrentScene->GetRootNode()->GetChild(0)->GetName();
+
+// 참조 씬을 소멸시킵니다.
+lMyRefScene->Destroy();
+lMyRefScene = NULL;
+
+// 검증 단계
+printf("Verification (0 for success): %d\n", lNameAfterUpdate.Compare("Test Name"));
+```
+
+**씬 병합 튜토리얼 프로그램**
+
+다음은 위에서 논의한 씬 병합 튜토리얼 프로그램입니다.
+
+```cpp
+#include <fbxsdk.h>
+
+/**
+ * FbxManager, FbxScene 및 유효한 파일명이 주어진 씬을 로드합니다.
+ */
+int LoadScene(FbxManager* pSdkManager, FbxScene* pScene, char* filename) {
+    // io 설정 객체를 생성합니다.
+    FbxIOSettings *ios = FbxIOSettings::Create(pSdkManager, IOSROOT);
+    pSdkManager->SetIOSettings(ios);
+
+    // sdk 관리자를 사용하여 임포터를 생성합니다.
+    FbxImporter* lImporter = FbxImporter::Create(pSdkManager,"");
+
+    // 첫 번째 인수를 임포터의 파일명으로 사용합니다.
+    if(!lImporter->Initialize(filename, -1, pSdkManager->GetIOSettings())) {
+        printf("Call to FbxImporter::Initialize() failed.\n");
+        printf("Error returned: %s\n\n", lImporter->GetStatus().GetErrorString());
+        lImporter->Destroy();
+        return -1;
+    }
+
+    // 파일의 내용을 씬으로 가져옵니다.
+    lImporter->Import(pScene);
+
+    // 파일을 가져왔으므로 임포터를 제거할 수 있습니다.
+    lImporter->Destroy();
+    return 0;
+}
+
+/**
+ * 두 씬 병합 샘플 프로그램의 진입점입니다.
+ */
+int main(int argc, char** argv) {
+    // SDK 관리자를 생성합니다.
+    FbxManager* lSdkManager = FbxManager::Create();
+
+    // 가져온 파일로 채울 수 있도록 새 씬을 생성합니다.
+    FbxScene* lCurrentScene = FbxScene::Create(lSdkManager,"My Scene");
+
+    // 씬을 로드합니다.
+    LoadScene(lSdkManager, lCurrentScene, "file1.fbx");
+
+    // 씬을 수정합니다. 이 예제에서는 하나의 노드 이름만 변경됩니다.
+    lCurrentScene->GetRootNode()->GetChild(0)->SetName("Test Name");
+
+    // 현재 로드된 씬의 내용을 저장할 참조 씬을 생성합니다.
+    FbxScene *lMyRefScene = FbxScene::Create(lSdkManager, "My Reference Scene");
+
+    // 현재 로드된 씬의 노드 트리를 참조 씬으로 이동합니다.
+    vector<FbxNode*> lChildren;
+    int lNumChildren = lCurrentScene->GetRootNode()->GetChildCount();
+    for(int i = 0; i < lNumChildren; i++) {
+
+        // 현재 로드된 씬에서 자식 노드를 가져옵니다.
+        lChildren.push_back(lCurrentScene->GetRootNode()->GetChild(i));
+
+        // 자식 노드를 참조 씬의 루트 노드에 연결합니다.
+        for( int c = 0; c < lChildren.size(); c )
+           lMyRefScene->GetRootNode()->AddChild(lChildren[c]);
+    }
+
+    // 루트 노드에서 자식을 제거합니다.
+    lCurrentScene->GetRootNode()->DisconnectAllSrcObject();
+
+    // 다른 객체를 참조 씬으로 이동합니다.
+    int lNumSceneObjects = lCurrentScene->GetSrcObjectCount();
+    for(int i = 0; i < lNumSceneObjects; i++) {
+        FbxObject* lObj = lCurrentScene->GetSrcObject(i);
+        if(lObj == lCurrentScene->GetRootNode() || *lObj == lCurrentScene->GetGlobalSettings()){
+            // 루트 노드나 씬의 전역 설정은 이동하지 않습니다.
+            // 이러한 객체는 모든 씬에 대해 생성됩니다.
+            continue;
+        }
+        // 객체를 참조 씬에 연결합니다.
+        lObj->ConnectDstObject(lMyRefScene);
+    }
+
+    // 모든 씬 객체의 연결을 끊습니다.
+    lCurrentScene->DisconnectAllSrcObject();
+
+    // 두 번째 파일을 lCurrentScene으로 가져옵니다.
+    LoadScene(lSdkManager, lCurrentScene, "file1.fbx");
+
+    // 두 번째 파일이 로드된 후 이름을 가져옵니다.
+    FbxString lNameBeforeUpdate = lCurrentScene->GetRootNode()->GetChild(0)->GetName();
+    FbxString lReferenceName = lMyRefScene->GetRootNode()->GetChild(0)->GetName();
+
+    // 루트의 자식 0 이름을 업데이트합니다.
+    lCurrentScene->GetRootNode()->GetChild(0)->SetName(lReferenceName);
+    FbxString lNameAfterUpdate = lCurrentScene->GetRootNode()->GetChild(0)->GetName();
+
+    // 참조 씬을 소멸시킵니다.
+    lMyRefScene->Destroy();
+    lMyRefScene = NULL;
+
+    // 검증 단계
+    printf("Verification (0 for success): %d\n", lNameAfterUpdate.Compare("Test Name"));
+
+    // sdk 관리자를 소멸시킵니다.
+    lSdkManager->Destroy();
+    exit(0);
+}
+```
