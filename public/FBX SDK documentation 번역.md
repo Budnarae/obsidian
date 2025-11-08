@@ -1360,3 +1360,116 @@ FbxNode와 FbxNodeAttribute의 관계는 일반적으로 FbxNode::SetNodeAttribu
 
 - FbxNode::LclTranslation에 의해 반환된 FbxPropertyT는 해당 FbxNode의 소스 속성입니다.
 - FbxNode는 해당 FbxPropertyT의 대상 객체입니다.
+
+---
+
+**오류 처리**
+
+**오류**
+
+FBX 클래스의 많은 멤버 함수가 오류를 트리거할 수 있습니다. 그러한 경우:
+
+- 함수는 `false`를 반환합니다.
+- `*objectname*->GetStatus().GetErrorString()`은 오류 메시지가 포함된 문자열을 반환합니다.
+- `*objectname*->GetStatus().GetCode()`는 열거형에 지정된 대로 발생한 오류 유형을 검색합니다.
+
+**오류 처리 샘플**
+
+다음 코드는 `Common/Common.cxx`에 나타납니다. 비밀번호 보호를 포함한 파일 가져오기 작업의 오류 처리 절차를 보여줍니다. 일부 코드는 오류 처리 기능을 강조하기 위해 "`// ...`"로 대체되었습니다.
+
+```cpp
+bool LoadScene(FbxManager* pManager, FbxDocument* pScene, const char* pFilename)
+{
+  //…
+
+  bool lStatus;
+  char lPassword[1024];
+
+  //…
+
+  // 임포터를 생성합니다.
+  FbxImporter* lImporter = FbxImporter::Create(pManager,"");
+
+  // 파일명을 제공하여 임포터를 초기화합니다.
+  const bool lImportStatus = lImporter->Initialize(pFilename, -1, pManager->GetIOSettings());
+
+  // …
+
+  if(!lImportStatus)
+    {
+        FbxString error = lImporter->GetStatus().GetErrorString();
+        FBXSDK_printf("Call to FbxImporter::Initialize() failed.\n");
+        FBXSDK_printf("Error returned: %s\n\n", error.Buffer());
+
+        if (lImporter->GetStatus().GetCode() == FbxStatus::eInvalidFileVersion)
+        {
+          FBXSDK_printf("FBX file format version for this FBX SDK is %d.%d.%d\n", lSDKMajor, lSDKMinor, lSDKRevision);
+          FBXSDK_printf("FBX file format version for file '%s' is %d.%d.%d\n\n", pFilename, lFileMajor, lFileMinor, lFileRevision);
+        }
+
+        return false;
+    }
+    // …
+    // 씬을 가져옵니다.
+
+    lStatus = lImporter->Import(pScene);
+
+    if(lStatus == false && lImporter->GetStatus().GetCode() == FbxStatus::ePasswordError)
+    {
+        FBXSDK_printf("Please enter password: ");
+        lPassword[0] = '\0';
+
+        FBXSDK_CRT_SECURE_NO_WARNING_BEGIN
+        scanf("%s", lPassword);
+        FBXSDK_CRT_SECURE_NO_WARNING_END
+
+        FbxString lString(lPassword);
+
+        IOS_REF.SetStringProp(IMP_FBX_PASSWORD, lString);
+        IOS_REF.SetBoolProp(IMP_FBX_PASSWORD_ENABLE, true);
+
+        lStatus = lImporter->Import(pScene);
+
+        if(lStatus == false && lImporter->GetStatus().GetCode() == FbxStatus::ePasswordError)
+        {
+          FBXSDK_printf("\nPassword is wrong, import aborted.\n");
+        }
+    }
+
+    if (!lStatus || (lImporter->GetStatus() != FbxStatus::eSuccess))
+    {
+        FBXSDK_printf("********************************************************************************\n");
+        if (lStatus)
+        {
+            FBXSDK_printf("WARNING:\n");
+            FBXSDK_printf("   The importer was able to read the file but with errors.\n");
+            FBXSDK_printf("   Loaded scene may be incomplete.\n\n");
+        }
+        else
+        {
+            FBXSDK_printf("Importer failed to load the file!\n\n");
+        }
+
+        if (lImporter->GetStatus() != FbxStatus::eSuccess)
+            FBXSDK_printf("   Last error message: %s\n", lImporter->GetStatus().GetErrorString());
+
+        FbxArray<FbxString*> history;
+        lImporter->GetStatus().GetErrorStringHistory(history);
+        if (history.GetCount() > 1)
+        {
+            FBXSDK_printf("   Error history stack:\n");
+            for (int i = 0; i < history.GetCount(); i++)
+            {
+                FBXSDK_printf("      %s\n", history[i]->Buffer());
+            }
+        }
+        FbxArrayDelete<FbxString*>(history);
+        FBXSDK_printf("********************************************************************************\n");
+    }
+
+    // 임포터를 소멸시킵니다.
+    lImporter->Destroy();
+
+    return lStatus;
+}
+```
