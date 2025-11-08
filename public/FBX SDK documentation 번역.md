@@ -2281,3 +2281,194 @@ lCamera->FocusDistance.Set(100.0);
 **텍스처**
 
 텍스처(`FbxFileTexture`, `FbxLayeredTexture`, `FbxProceduralTexture`)는 지오메트리가 렌더링되는 방식을 정의하기 위해 머티리얼 채널에 연결됩니다. `FbxFileTexture` 클래스는 예를 들어 `.jpg`와 같은 파일에 포함된 데이터를 사용하여 텍스처 값을 정의합니다.
+
+---
+
+**메시**
+
+**메시 생성**
+
+FBX SDK의 메시는 FbxMesh 클래스에 의해 추상화됩니다. 메시는 면당 정점 또는 "제어점" 세트와 메시의 노말, 텍스처 및 머티리얼을 정의하는 레이어 그룹에 의해 정의됩니다. 다음 코드 샘플은 FbxMesh를 인스턴스화하는 방법을 보여줍니다.
+
+```cpp
+// 씬에서 메시를 위한 노드를 생성합니다.
+FbxNode* lMeshNode = FbxNode::Create(pScene, "meshNode");
+
+// 메시를 생성합니다.
+FbxMesh* lMesh = FbxMesh::Create(pScene, "mesh");
+
+// 메시 노드의 노드 속성을 설정합니다.
+lMeshNode->SetNodeAttribute(lMesh);
+
+// 메시 노드를 씬의 루트 노드에 추가합니다.
+FbxNode *lRootNode = pScene->GetRootNode();
+lRootNode->AddChild(lMeshNode);
+```
+
+**제어점 정의**
+
+FbxMesh의 면당 정점을 제어점이라고 합니다. FBX SDK의 객체는 기본적으로 오른손 좌표계, Y-Up 축 시스템에서 생성되므로 메시의 정점도 그에 따라 정의되어야 합니다. FbxMesh의 인스턴스는 특정 크기로 초기화할 수 있는 제어점 배열을 포함합니다. 예를 들어, 큐브의 메시는 24개의 제어점이 필요합니다: 면당 4개의 제어점이 있고, 큐브에는 6개의 면이 있습니다. 다음 코드 샘플은 큐브에 대한 제어점 배열을 초기화합니다.
+
+```cpp
+// 큐브의 8개 모서리를 정의합니다.
+// 큐브는 다음 범위에 걸쳐 있습니다
+//    X축을 따라 -50에서 50
+//    Y축을 따라 0에서 100
+//    Z축을 따라 -50에서 50
+FbxVector4 vertex0(-50, 0, 50);
+FbxVector4 vertex1(50, 0, 50);
+FbxVector4 vertex2(50, 100, 50);
+FbxVector4 vertex3(-50, 100, 50);
+FbxVector4 vertex4(-50, 0, -50);
+FbxVector4 vertex5(50, 0, -50);
+FbxVector4 vertex6(50, 100, -50);
+FbxVector4 vertex7(-50, 100, -50);
+
+// 메시의 제어점 배열을 초기화합니다.
+lMesh->InitControlPoints(24);
+FbxVector4* lControlPoints = lMesh->GetControlPoints();
+
+// 큐브의 각 면을 정의합니다.
+// 면 1
+lControlPoints[0] = vertex0;
+lControlPoints[1] = vertex1;
+lControlPoints[2] = vertex2;
+lControlPoints[3] = vertex3;
+// 면 2
+lControlPoints[4] = vertex1;
+lControlPoints[5] = vertex5;
+lControlPoints[6] = vertex6;
+lControlPoints[7] = vertex2;
+// 면 3
+lControlPoints[8] = vertex5;
+lControlPoints[9] = vertex4;
+lControlPoints[10] = vertex7;
+lControlPoints[11] = vertex6;
+// 면 4
+lControlPoints[12] = vertex4;
+lControlPoints[13] = vertex0;
+lControlPoints[14] = vertex3;
+lControlPoints[15] = vertex7;
+// 면 5
+lControlPoints[16] = vertex3;
+lControlPoints[17] = vertex2;
+lControlPoints[18] = vertex6;
+lControlPoints[19] = vertex7;
+// 면 6
+lControlPoints[20] = vertex1;
+lControlPoints[21] = vertex0;
+lControlPoints[22] = vertex4;
+lControlPoints[23] = vertex5;
+```
+
+제어점 관리에 대한 자세한 내용은 FbxGeometry 클래스 문서를 참조하십시오. FbxGeometry는 FbxMesh, FbxLine, FbxNurb 및 씬 지오메트리를 정의하는 데 사용되는 기타 클래스의 부모 클래스입니다.
+
+**참고:** 씬 축 변환은 메시의 정점 값에 영향을 미치지 않습니다. 자세한 내용은 씬 축 및 단위 변환을 참조하십시오.
+
+**노말 할당**
+
+메시의 노말 벡터는 FbxLayerElementNormal의 인스턴스에 정의됩니다. 노말과 같은 레이어 요소는 제어점별(FbxLayerElement::eByControlPoint), 폴리곤 정점별(FbxLayerElement::eByPolygonVertex), 폴리곤별(FbxLayerElement::eByPolygon), 엣지별(FbxLayerElement::eByEdge) 또는 전체 표면에 대해 하나의 매핑 좌표(FbxLayerElement::eAllSame)와 같은 다양한 방식으로 메시 표면에 매핑될 수 있습니다. 자세한 내용은 FbxLayerElement::EMappingMode를 참조하십시오.
+
+노말 벡터 배열과 제어점 배열이 주어지면, 노말 벡터 배열이 제어점 배열에 의해 참조되는 방식을 지정할 수 있습니다. 이는 FbxLayerElement::SetReferenceMode()에서 할당된 FbxLayerElement::EReferenceMode에 의해 정의됩니다. EReferenceMode::eDirect 모드는 노말 벡터 배열의 n번째 요소를 제어점 배열의 n번째 요소에 매핑합니다.
+
+|참조 모드 (FbxLayerElement::EReferenceMode)|설명|
+|---|---|
+|FbxLayerElement::eDirect|n번째 요소에 대한 매핑 정보가 FbxLayerElementTemplate::mDirectArray의 n번째 위치에서 발견됨을 나타냅니다.|
+|FbxLayerElement::eIndex|이 심볼은 FBX v5.0 파일과의 하위 호환성을 위해 유지됩니다. FBX v6.0 이상에서는 이 심볼이 FbxLayerElement::eIndexToDirect로 대체됩니다.|
+|FbxLayerElement::eIndexToDirect|FbxLayerElementTemplate::mIndexArray의 각 요소가 FbxLayerElementTemplate::mDirectArray의 요소를 참조하는 인덱스를 포함함을 나타냅니다.|
+
+다음 코드 샘플에서는 EReferenceMode::eDirect 참조 모드를 사용하여 제어점별 매핑(FbxLayerElement::eByControlPoint)을 메시에 적용하는 방법을 살펴보겠습니다. FbxLayerElementArrayTemplate::Add()가 호출되는 순서가 위에서 정의된 제어점의 순서에 해당한다는 점에 유의하십시오.
+
+```cpp
+// 각 축을 따라 노말 벡터를 정의합니다.
+FbxVector4 lNormalXPos( 1,  0,  0);
+FbxVector4 lNormalXNeg(-1,  0,  0);
+FbxVector4 lNormalYPos( 0,  1,  0);
+FbxVector4 lNormalYNeg( 0, -1,  0);
+FbxVector4 lNormalZPos( 0,  0,  1);
+FbxVector4 lNormalZNeg( 0,  0, -1);
+
+// 메시에 레이어 0이 아직 존재하지 않으면 생성합니다.
+// 여기서 노말을 정의할 것입니다.
+FbxLayer lLayer = lMesh->GetLayer(0);
+if(lLayer == NULL) {
+    lMesh->CreateLayer();
+    lLayer = lMesh->GetLayer(0);
+}
+
+// 노말 레이어를 생성합니다.
+FbxLayerElementNormal* lLayerElementNormal= FbxLayerElementNormal::Create(lMesh, "");
+
+// 각 노말 벡터를 각 제어점에 매핑하도록 매핑 모드를 설정합니다.
+lLayerElementNormal->SetMappingMode(FbxLayerElement::eByControlPoint);
+
+// 노말 배열의 n번째 요소가 제어점 배열의 n번째 요소에 매핑되도록
+// 참조 모드를 설정합니다.
+lLayerElementNormal->SetReferenceMode(FbxLayerElement::eDirect);
+
+// 메시에 대해 제어점이 정의된 순서와 동일한 순서로 노말 벡터를 할당합니다.
+// 면 1
+lLayerElementNormal->GetDirectArray().Add(lNormalZPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalZPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalZPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalZPos);
+// 면 2
+lLayerElementNormal->GetDirectArray().Add(lNormalXPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalXPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalXPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalXPos);
+// 면 3
+lLayerElementNormal->GetDirectArray().Add(lNormalZNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalZNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalZNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalZNeg);
+// 면 4
+lLayerElementNormal->GetDirectArray().Add(lNormalXNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalXNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalXNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalXNeg);
+// 면 5
+lLayerElementNormal->GetDirectArray().Add(lNormalYPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalYPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalYPos);
+lLayerElementNormal->GetDirectArray().Add(lNormalYPos);
+// 면 6
+lLayerElementNormal->GetDirectArray().Add(lNormalYNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalYNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalYNeg);
+lLayerElementNormal->GetDirectArray().Add(lNormalYNeg);
+
+// 마지막으로, 메시의 레이어 0을 노말 레이어 요소로 설정합니다.
+lLayer->SetNormals(lLayerElementNormal);
+```
+
+---
+
+**인스턴싱 - 메시 공유**
+
+메모리 요구 사항을 줄이기 위해 `FbxMesh`의 단일 인스턴스를 FbxNode의 여러 인스턴스에 바인딩할 수 있습니다. 모든 큐브가 동일하게 보이지만 수천 개가 필요한 프로그램이 필요하다고 상상해보십시오. 프로그램이 시작될 때 하나의 `FbxMesh` 객체를 생성하여 메모리를 절약할 수 있습니다. 그런 다음 새 큐브가 필요할 때마다 새 `FbxNode` 객체를 생성한 다음 해당 노드가 하나의 메시를 가리키도록 합니다. 이를 인스턴싱이라고 합니다.
+
+일반적으로 많은 노드 객체가 하나의 노드 속성 객체(즉, `FbxNodeAttribute`의 하위 클래스의 객체 하나)를 공유하도록 하여 메모리를 절약할 수 있습니다. 다음 함수는 `FbxMesh`를 새로 생성된 노드에 바인딩하는 방법을 보여줍니다.
+
+```cpp
+// 주어진 메시를 노드 속성으로 하는 큐브 인스턴스를 생성하고 씬에 추가합니다.
+FbxNode* CreateCubeInstance(FbxScene* pScene, const char* pName, FbxMesh* pFirstCube)
+{
+    // FbxNode를 생성합니다
+    FbxNode* lNode = FbxNode::Create(pScene,pName);
+
+    // 노드 속성을 설정합니다
+    lNode->SetNodeAttribute(pFirstCube);
+
+    // 큐브의 크기를 조정합니다
+    lNode->LclScaling.Set(FbxVector4(0.3, 0.3, 0.3));
+
+        // 씬에 노드를 추가합니다
+    pScene->GetRootNode()->AddChild(lNode);
+
+    // FbxNode를 반환합니다
+    return lNode;
+}
+```
+
+각 노드는 메시, NURBS 또는 기타 씬 요소의 인스턴스입니다. 씬을 FBX 파일로 내보내면 인스턴싱도 파일 크기를 줄입니다. 여러 노드가 텍스처, 머티리얼, 애니메이션 커브 등을 공유하도록 하여 메모리를 절약할 수도 있습니다.
