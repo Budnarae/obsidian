@@ -127,3 +127,24 @@ Speed = OwnerCharacter->GetVelocity().Size();
 IsInAir = OwnerCharacter->MovementComponent->IsFalling();
 ```
 
+#### Animation Notify 처리
+
+언리얼에서는 애니메이션에 **노티파이**가 추가되면, UAnimInstance가 이를 처리한다:
+
+- 타격 판정
+- 발자국 소리
+- 이벤트 콜백
+
+#### AnimMontage 처리(생략 가능)
+
+공격/스킬 같은 애니메이션 할 때 쓰는 시스템.
+
+- 루트모션
+- 섹션 이동
+- 몽타주 블렌드
+
+#### 네트워크 동기화(Replication) 처리(생략 확정)
+
+언리얼은 애니메이션 상태를 네트워킹하려면 별도 로직이 필요하지만,  
+이 역시 `UAnimInstance`가 중심.
+
