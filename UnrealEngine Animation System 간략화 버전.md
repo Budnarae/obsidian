@@ -148,3 +148,31 @@ IsInAir = OwnerCharacter->MovementComponent->IsFalling();
 언리얼은 애니메이션 상태를 네트워킹하려면 별도 로직이 필요하지만,  
 이 역시 `UAnimInstance`가 중심.
 
+
+## 기타
+
+### Evaluate란?
+
+Update가 DeltaTIme을 업데이트하고, Transition 조건 확인, Parameter 업데이트 등의 기능 등을 수행한다면 Evaluate는
+
+==현재 활성 상태/SequencePlayer/Blend 노드 등을 실제로 실행하여  
+최종 본 변환 배열(Bone Pose)을 만들어내는 단계이다.==
+
+따라서 Evaluate는 **최종 출력 Pose를 만들어내는 함수**이다.
+
+언리얼은 모든 애니메이션 노드가 다음 메서드를 가진다:
+
+```cpp
+void Evaluate(FPoseContext& Output)
+```
+
+이 Evaluate가 호출되면:
+
+```
+SequencePlayer →
+애니메이션 샘플링 Blend →
+포즈 블렌딩 StateMachine →
+현재 Active Node Evaluate 호출
+```
+
+그리고 마지막에 FPoseContext.Output이 “현재 캐릭터의 최종 본 포즈 배열”이 된다.
