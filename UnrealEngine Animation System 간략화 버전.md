@@ -60,16 +60,70 @@ Update Phase → Evaluate Phase
 - 매 프레임 파라미터 업데이트
 
 ```cpp
-```
 void UAnimInstance::NativeUpdateAnimation(float DeltaSeconds);
-### 🔹 Update Phase
+```
 
-시간 흐름에 따라 상태 업데이트.
+→ AnimGraph 내부의 모든 Update()를 호출하는 시작점.
 
-- StateMachine 트랜지션 평가
-    
-- SequencePlayer 시간 업데이트
-    
-- Blend 노드 업데이트
-    
-- 매 프레임 파라미터 업데이트
+**Evaluate Phase**
+
+최종 Bone Pose 생성.
+
+- 현재 StateMachine의 활성 노드 Evaluate()
+- SequencePlayer에서 BonePose 샘플
+- 블렌드 처리
+- Component Space 변환 (단순화 가능)
+
+```cpp
+void UAnimInstance::NativeEvaluateAnimation(FPoseContext& Output);
+```
+
+→ 엔진이 최종 Bone Transform 배열을 얻는 단계.
+
+#### Animation StateMachine의 Host
+
+AnimGraph에는 StateMachine이 존재하지만,  
+StateMachine을 매 프레임 갱신하는 주체는 **UAnimInstance**이다.
+
+`UAnimInstance`는 다음을 관리한다:
+
+- 현재 상태가 무엇인지 유지
+- 전환(Transition) 조건 평가
+- 스테이트 안의 SequencePlayer 업데이트
+
+즉,
+
+```cpp
+StateMachine.ExecuteUpdate()
+StateMachine.ExecuteEvaluate()
+```
+
+를 UAnimInstance가 실행한다.
+
+#### 애니메이션 파라미터 관리 (Speed, IsJumping, Direction 등)
+
+언리얼 블루프린트에서 다음과 같은 변수를 만들 수 있다:
+
+- Speed
+- IsFalling
+- Direction
+- bIsJumping
+- AimYaw, AimPitch
+
+이 변수들은 Animation StateMachine의 트랜지션 조건에 쓰인다.
+
+이 파라미터를 업데이트하는 함수가 바로:
+
+```cpp
+void UAnimInstance::NativeUpdateAnimation(float DeltaSeconds);
+```
+
+과제에서는 여기에 “애니메이션 파라미터 업데이트 로직”을 넣어주면 된다.
+
+_예시_
+
+```cpp
+Speed = OwnerCharacter->GetVelocity().Size();
+IsInAir = OwnerCharacter->MovementComponent->IsFalling();
+```
+
