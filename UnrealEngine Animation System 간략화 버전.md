@@ -286,33 +286,26 @@ void EvaluateTransitionPose(FPoseContext& Output)
 
 ####  State 시작
 
-### **`void OnStateEntered(int32 StateIndex, const FAnimationUpdateContext& Context)`**
+```cpp
+void OnStateEntered(int32 StateIndex, const FAnimationUpdateContext& Context)
+```
 
 **반환:** void  
 **역할:**
-
 - StateBegin 애님 노티파이 실행
-    
 - State 전용 변수 초기화
-    
 
----
+#### State 종료
 
-## ✔ **State 종료**
-
-### **`void OnStateExited(int32 StateIndex, const FAnimationUpdateContext& Context)`**
+```cpp
+void OnStateExited(int32 StateIndex, const FAnimationUpdateContext& Context)
+```
 
 **반환:** void  
 **역할:**
-
 - StateEnd 애님 노티파이 실행
-    
 
----
-
-# 🟦 4) StateMachine 정보 조회
-
----
+### StateMachine 정보 조회
 
 ## ✔ **현재 Active State Index 가져오기**
 
