@@ -31,6 +31,31 @@ USkeletalMeshComponent
      USkeleton
 ```
 
+# 데이터/제어 흐름 요약
+
+```cpp
+
+게임 로직 → USkeletalMeshComponent.Tick()
+        ↓
+   UAnimInstance.Update()
+        ↓
+   FAnimNode_Root.Update()
+        ↓
+FAnimNode_StateMachine.Update()
+        ↓
+ActiveState → FAnimNode_SequencePlayer.Update()
+        ↓
+      UAnimSequence (Pose 샘플링)
+        ↓
+      USkeleton (Bone 트리 참조)
+        ↓
+FAnimNode_SequencePlayer.Evaluate()
+        ↑
+StateMachine → Root → AnimInstance → SkeletalMeshComponent
+
+```
+
+---
 
 [[UAnimInstance]]
 [[FAnimNode_Base]]
