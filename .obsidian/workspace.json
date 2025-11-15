@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FAnimNode_StateMachine.md",
+                "file": "UAnimInstance.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FAnimNode_StateMachine"
+              "title": "UAnimInstance"
             }
           }
         ],
@@ -223,10 +223,10 @@
   },
   "active": "485b7f876d35c488",
   "lastOpenFiles": [
+    "FAnimNode_StateMachine.md",
     "FAnimNode_Base.md",
     "FAnimNode_Root.md",
     "FAnimNode_SequencePlayer.md",
-    "FAnimNode_StateMachine.md",
     "UAnimInstance.md",
     "UnrealEngine Animation System 간략화 버전 1.md",
     "UAnimSequence.md",
