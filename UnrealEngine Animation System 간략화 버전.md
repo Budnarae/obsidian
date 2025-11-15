@@ -224,37 +224,36 @@ bool ChangeState(int32 NewStateIndex, const FAnimationUpdateContext& Context)
 - StateBegin/StateEnd Notify 호출
 - Internal State Time 초기화
 
-## ✔ **Transition 가능 여부 판단**
+#### Transition 가능 여부 판단
 
-### **`bool CanEnterTransition(int32 TransitionIndex)`**
+```
+bool CanEnterTransition(int32 TransitionIndex)
+```
 
 **반환:** bool  
-**역할:** Transition이 가능한지 rule 검사  
-(Transition Rule 노드에서 계산된 조건 기반)
+**역할:** 
+- Transition이 가능한지 rule 검사 (Transition Rule 노드에서 계산된 조건 기반)
 
 ---
 
-## ✔ **Transition Rule 실행**
+#### Transition Rule 실행
 
-### **`bool EvaluateTransition(int32 TransitionIndex, const FAnimationUpdateContext& Context)`**
+```
+bool EvaluateTransition(int32 TransitionIndex, const FAnimationUpdateContext& Context)
+```
 
 **반환:** bool  
 **역할:**
-
 - Blueprint/Native 애님 그래프에 정의된 Transition Rule 실행
-    
 - 조건 결과 반환
-    
 
 ---
 
-# 🟦 2) StateMachine Evaluate (현재 State의 Pose 생성)
+### StateMachine Evaluate (현재 State의 Pose 생성)
 
 Transition은 Update에서 하고, Evaluate는 실제 Pose를 만든다.
 
----
-
-## ✔ **현재 State Evaluate**
+#### **현재 State Evaluate**
 
 ### **`void Evaluate_AnyThread(FPoseContext& Output)`**
 
