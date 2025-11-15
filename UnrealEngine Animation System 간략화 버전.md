@@ -253,38 +253,34 @@ bool EvaluateTransition(int32 TransitionIndex, const FAnimationUpdateContext& Co
 
 Transition은 Update에서 하고, Evaluate는 실제 Pose를 만든다.
 
-#### **현재 State Evaluate**
+#### 현재 State Evaluate
 
-### **`void Evaluate_AnyThread(FPoseContext& Output)`**
+```
+void Evaluate_AnyThread(FPoseContext& Output)
+```
 
 **반환:** void  
 **역할:**
 
 - 현재 활성화된 State의 AnimNode Evaluate 호출
-    
 - State 노드의 Evaluate 결과를 최종 Pose로 Output에 넣음
-    
 
-설명:  
-StateMachine 스스로는 Pose를 만들지 않고,  
-“현재 State가 가진 Root AnimNode”가 Pose를 만든다.
+**설명:**
+StateMachine 스스로는 Pose를 만들지 않고,  ==현재 State가 가진 Root AnimNode==가 Pose를 만든다.
 
----
-
-## ✔ **각 State의 blend 처리**
+#### 각 State의 blend 처리
 
 (BlendTransition AnimNode 포함 시) 아래 같은 함수가 내부적으로 호출됨:
 
-### **`void EvaluateTransitionPose(FPoseContext& Output)`**
+```
+void EvaluateTransitionPose(FPoseContext& Output)
+```
 
 **반환:** void  
 **역할:**
 
 - Transition 중이면
-    
-    - 이전 State Pose / 새 State Pose / Blend Alpha 기반으로  
-        포즈 블렌딩 처리
-        
+- 이전 State Pose / 새 State Pose / Blend Alpha 기반으로 포즈 블렌딩 처리
 
 ---
 
