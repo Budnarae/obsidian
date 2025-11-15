@@ -272,25 +272,19 @@ StateMachine 스스로는 Pose를 만들지 않고,  ==현재 State가 가진 Ro
 
 (BlendTransition AnimNode 포함 시) 아래 같은 함수가 내부적으로 호출됨:
 
-```
+```cpp
 void EvaluateTransitionPose(FPoseContext& Output)
 ```
 
 **반환:** void  
 **역할:**
+- Transition 중이면 이전 State Pose / 새 State Pose / Blend Alpha 기반으로 포즈 블렌딩 처리
 
-- Transition 중이면
-- 이전 State Pose / 새 State Pose / Blend Alpha 기반으로 포즈 블렌딩 처리
-
----
-
-# 🟦 3) State Begin / End Notify 처리
+### State Begin / End Notify 처리
 
 상태 전환에 따라 Notify 호출이 발생한다.
 
----
-
-## ✔ **State 시작**
+####  State 시작
 
 ### **`void OnStateEntered(int32 StateIndex, const FAnimationUpdateContext& Context)`**
 
