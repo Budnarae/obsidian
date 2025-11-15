@@ -238,8 +238,9 @@
   },
   "active": "4033a607917d0701",
   "lastOpenFiles": [
-    "UAnimInstance.md",
+    "FAnimStateTransition.md",
     "UnrealEngine Animation System 간략화 버전 1.md",
+    "UAnimInstance.md",
     "FAnimNode_StateMachine.md",
     "FAnimNode_SequencePlayer.md",
     "FAnimNode_Root.md",
@@ -263,7 +264,6 @@
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
     "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
-    "public/Shadowing.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
     "private/Week5 게임 엔진 흐름도.canvas",
     "public/DirectX11 API.canvas",

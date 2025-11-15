@@ -62,4 +62,5 @@ StateMachine → Root → AnimInstance → SkeletalMeshComponent
 [[FAnimNode_Root]]
 [[FAnimNode_StateMachine]]
 [[FAnimNode_SequencePlayer]]
+[[FAnimStateTransition]]
 [[UAnimSequence]]
