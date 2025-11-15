@@ -33,6 +33,8 @@ USkeletalMeshComponent
 
 
 [[UAnimInstance]]
+[[FAnimNode_Base]]
+[[FAnimNode_Root]]
 [[FAnimNode_StateMachine]]
 [[FAnimNode_SequencePlayer]]
 [[UAnimSequence]]
