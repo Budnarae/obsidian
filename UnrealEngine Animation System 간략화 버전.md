@@ -194,23 +194,17 @@ SequencePlayer →
 
 Update 단계에서는 “현재 State 유지 → 조건 평가 → 전환 여부 체크” 를 수행한다.
 
----
+#### Transition 조건 평가
 
-## ✔ **Transition 조건 평가**
-
-### **`void Update_AnyThread(const FAnimationUpdateContext& Context)`**
-
-**반환:** void  
+```cpp
+void Update_AnyThread(const FAnimationUpdateContext& Context)
+```
+ 
 **역할:**
-
 - 상태머신의 모든 transition rule을 업데이트함
-    
 - 각 State 노드의 Update()도 호출
-    
 - Transition 조건(bool) 판단
-    
 - 조건 충족 시 Active State 변경
-    
 
 **설명:**  
 애니메이션 Update 단계는 게임프레임과 동일하게 호출되며,  
@@ -218,21 +212,17 @@ Update 단계에서는 “현재 State 유지 → 조건 평가 → 전환 여�
 
 ---
 
-## ✔ **State 변경 로직 내부 함수**
+#### State 변경 로직 내부 함수
 
-### **`bool ChangeState(int32 NewStateIndex, const FAnimationUpdateContext& Context)`**
+```cpp
+bool ChangeState(int32 NewStateIndex, const FAnimationUpdateContext& Context)
+```
 
 **반환:** bool (전환 성공 여부)  
 **역할:**
-
 - 조건 충족 시 새로운 State로 전환
-    
 - StateBegin/StateEnd Notify 호출
-    
 - Internal State Time 초기화
-    
-
----
 
 ## ✔ **Transition 가능 여부 판단**
 
