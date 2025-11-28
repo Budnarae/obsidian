@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -207,6 +207,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "피사계 심도.md",
+    "index.md",
+    "Degrees of Freedom.md",
     "FAnimNode_Root.md",
     "UAnimInstance.md",
     "FAnimNode_StateMachine.md",
@@ -215,7 +218,6 @@
     "UnrealEngine Animation System 간략화 버전 1.md",
     "UAnimSequence.md",
     "Unreal Engine Viewport 구조.md",
-    "index.md",
     "FAnimStateTransition.md",
     "UnrealEngine Animation System 간략화 버전.md",
     "게임에서의 State.md",
@@ -231,8 +233,6 @@
     "public/Perspective Shadow Maps 논문.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
     "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
-    "public/Cascaded Shadow Maps NVIDIA 문서 번역.md",
-    "learnopengl.com Shadow Mapping 문서 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
     "private/Week5 게임 엔진 흐름도.canvas",
     "public/DirectX11 API.canvas",
