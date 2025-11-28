@@ -1,3 +1,13 @@
+---
+tags:
+  - graphics
+  - post_processing
+---
+
+_들어가는 말_
+
+---
+
 # Bokeh II: The Sequel (Bokeh II: 속편)
 
 bokeh 샘플을 마친 후, 나는 "완전히 멋지다"고 말하고 내 인생을 계속 살기 전에 해결하고 싶었던 몇 가지 남은 문제들이 있었습니다.
