@@ -14,15 +14,31 @@
               "type": "markdown",
               "state": {
                 "file": "index.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "ac2dccfbac44595f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Depth of field.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Depth of field"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,10 +221,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ac2dccfbac44595f",
   "lastOpenFiles": [
-    "피사계 심도.md",
     "index.md",
+    "Depth of field.md",
+    "피사계 심도.md",
     "Degrees of Freedom.md",
     "FAnimNode_Root.md",
     "UAnimInstance.md",
@@ -232,7 +249,6 @@
     "public/sol2.md",
     "public/Perspective Shadow Maps 논문.md",
     "public/GPU Gems 3 - Perspective Shadow Mapping 번역.md",
-    "public/GPU Gem 3 Cascade Shadow 문서 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
     "private/Week5 게임 엔진 흐름도.canvas",
     "public/DirectX11 API.canvas",
