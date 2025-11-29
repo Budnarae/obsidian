@@ -52,8 +52,7 @@
               "title": "휘도와 조도"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,11 +235,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "5611f428d47d6d51",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "휘도와 조도.md",
     "F-Number 위키피디아 번역.md",
     "피사계 심도.md",
+    "휘도와 조도.md",
     "GPU Gem3 - Chapter 28. Practical Post-Process Depth of Field.md",
     "index.md",
     "Bokeh II The Sequel - 번역.md",
