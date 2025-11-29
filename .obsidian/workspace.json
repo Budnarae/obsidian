@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/BFG.md",
+                "file": "GPU Gem3 - Chapter 28. Practical Post-Process Depth of Field.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BFG 의 개요"
+              "title": "GPU Gem3 - Chapter 28. Practical Post-Process Depth of Field 의 개요"
             }
           },
           {
@@ -215,8 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5,
-    "collapsed": true
+    "width": 408.5
   },
   "left-ribbon": {
     "hiddenItems": {
