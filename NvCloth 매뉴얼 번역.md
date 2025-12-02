@@ -8,9 +8,14 @@ _NvCloth_
 
 ---
 
-# 번역본
+# Compiling¶  
 
-Compiling¶  
+---
+
+[원문](https://nvidiagameworks.github.io/NvCloth/1.1/Compiling/index.html)
+
+---
+
 CMake은(는) Android를 제외한 모든 플랫폼에서 NVIDIA의 packman 스크립트를 사용하여 자동으로 획득됩니다. 인터넷 연결이 필요합니다.
 
 Windows¶  
