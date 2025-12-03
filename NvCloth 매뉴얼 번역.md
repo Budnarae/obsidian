@@ -521,3 +521,339 @@ cloth->setTetherConstraintStiffness(1.0f); //기본값
 
 ---
 
+## Collision detection (충돌 감지)
+
+NvCloth는 시뮬레이션에 충돌을 추가하기 위해 몇 가지 다른 방식을 제공합니다.  
+모든 충돌 프리미티브는 로컬 공간에서 정의됩니다.
+
+---
+
+우리는 각 cloth(천)에 대해 최대 32개의 충돌 구(sphere)를 정의할 수 있습니다:
+
+```cpp
+physx::PxVec4 spheres[2] = {
+       // 각 벡터의 처음 3개 요소는 로컬 공간에서의 구의 중심이며, 4번째 요소는 반지름이다
+       physx::PxVec4(0.0f, 0.0f, 0.0f, 1.0f),
+       physx::PxVec4(0.0f, 5.0f, 0.0f, 1.0f)
+};
+nv::cloth::Range<const physx::PxVec4> sphereRange(spheres, spheres + 2);
+cloth->setSpheres(sphereRange, 0, cloth->getNumSpheres());
+```
+
+마지막 두 인자는 이전에 정의된 구들 중 어떤 범위를 대체할지 정의합니다(이 매개변수는 모든 `Cloth::setCollisionShape` 함수에서 동일하게 동작).  
+이것은 이전 프레임 이후 충돌 프리미티브 중 일부만 변경된 경우 유용합니다.
+
+여기서는 `[0, cloth->getNumSpheres()[` 범위를 사용하여 이전에 정의되었을 수 있는 모든 구를 대체합니다.  
+구를 처음에 삽입하려면 `[0, 0[`을, 마지막에 삽입하려면 `[cloth->getNumSpheres(), cloth->getNumSpheres()[` 를 사용할 수 있습니다.
+
+---
+
+구들을 연결하여 캡슐(capsule)을 만들 수 있습니다:
+
+```cpp
+uint32_t capsuleIndices[2];
+capsuleIndices[0] = 0;
+capsuleIndices[1] = 1;
+
+cloth->setCapsules(nv::cloth::Range<uint32_t>(capsuleIndices, capsuleIndices + 2), 0, cloth->getNumCapsules());
+```
+
+위 코드는 sphere 0과 sphere 1을 연결합니다.  
+인덱스는 항상 **짝수 개**(pair)로 제공해야 합니다.  
+또한 마지막 두 인자는 쌍(pair)의 인덱스를 의미합니다.  
+즉, 위 코드 실행 후 `cloth->getNumCapsules()` 는 **1**을 반환합니다.
+
+---
+
+우리는 최대 32개의 충돌 평면(plane)도 정의할 수 있습니다:
+
+```cpp
+physx::PxVec4 planes[2] = {
+       physx::PxVec4(physx::PxVec3(0.5f, 0.4f, 0.0f).getNormalized(), 3.0f),
+       physx::PxVec4(physx::PxVec3(0.0f, 0.4f, 0.5f).getNormalized(), 3.0f)
+};
+
+nv::cloth::Range<const physx::PxVec4> planesR(planes, planes + 2);
+cloth->setPlanes(planesR, 0, cloth->getNumPlanes());
+```
+
+이것만으로는 cloth가 어떤 것과도 충돌하지 않습니다.  
+우리는 먼저 solver에게 각 평면이 **하나의 convex shape**임을 알려야 합니다:
+
+```cpp
+uint32_t indices[2];
+for(int i = 0; i < 2; i++)
+       indices[i] = 1 << i;
+nv::cloth::Range<uint32_t> indiceR(indices, indices + 2);
+mCloth->setConvexes(indiceR, 0, mCloth->getNumConvexes());
+```
+
+`indices` 배열에 저장된 값은 어떤 평면이 convex shape에 포함되는지 알려주는 **비트 마스크**입니다.  
+plane i 는 `1 << i` 비트로 표시됩니다.  
+여러 평면을 포함하는 convex shape은 여러 비트를 OR 연산으로 조합하여 만들 수 있습니다.  
+예: `(1<<i) | (1<<j)`.
+
+---
+
+임의의 삼각형(mesh) 충돌도 사용할 수 있습니다:
+
+```cpp
+physx::PxVec3* triangles = ...; //삼각형 데이터를 로드
+                                //인덱스 메쉬/정점 공유 불가
+                                //각 삼각형은 독립된 3개의 정점으로 정의해야 함
+nv::cloth::Range<const physx::PxVec3> triangleR(triangles, triangles + triangleCount * 3);
+cloth->setTriangles(triangleR, 0, cloth->getNumTriangles());
+```
+
+`setTriangles` 의 범위 인자는 **삼각형 개수 기준**임에 유의 (각 삼각형 = PxVec3 * 3).
+
+---
+
+충돌 시 마찰 계수는 다음과 같이 설정합니다:
+
+```cpp
+cloth->setFriction(0.5);
+```
+
+---
+
+## **Local space simulation (로컬 공간 시뮬레이션)**
+
+로컬 공간 시뮬레이션을 사용하면 시뮬레이션의 안정성과 반응성을 향상시키기 위한 더 많은 제어가 가능합니다.  
+우리는 전역/렌더 좌표계를 입자 시뮬레이션 좌표계와 분리합니다.  
+렌더링 시 cloth가 올바른 위치에 보이도록 그래픽 변환을 조정해야 합니다.
+
+---
+
+시뮬레이션에 cloth 좌표계가 전역 좌표계 대비 움직였음을 알려 주기 위해:
+
+```cpp
+cloth->setTranslation(physx::PxVec3(x,y,z));
+cloth->setRotation(physx::PxQuat(qx,qy,qz,qw));
+```
+
+이것은 입자 위치를 직접 변경하지 않지만,  
+cloth가 좌표계의 움직임에 제대로 반응하도록 **임펄스를 적용**합니다.  
+공기 저항(drag)과 양력(lift)도 이에 따라 반응합니다.
+
+---
+
+빠른 움직임은 튜널링, 자기 충돌, 불안정성, 끌림 등 문제를 유발할 수 있습니다.  
+이를 줄이기 위해 관성 계수(inertia multiplier)를 설정할 수 있습니다:
+
+```cpp
+//모든 값은 0.0 ~ 1.0
+cloth->setLinearInertia(physx::PxVec3(x,y,z));
+cloth->setAngularInertia(physx::PxVec3(ax,ay,az));
+cloth->setCentrifugalInertia(physx::PxVec3(cx,cy,cz));
+```
+
+---
+
+좌표계 이동 시 힘을 가하지 않고 cloth를 움직이고 싶으면(예: 월드 오리진 이동):
+
+```cpp
+cloth->teleport(physx::PxVec3(deltaX, deltaY, deltaZ));
+```
+
+또는 `setTranslation/setRotation` 사용 후 관성 효과를 지우기:
+
+```cpp
+cloth->clearInertia();
+```
+
+---
+
+## **Drag, lift and wind (공기 저항, 양력, 바람)**
+
+cloth는 기본적으로 진공 상태에서 시뮬레이션됩니다.  
+보다 자연스러운 시뮬레이션을 위해:
+
+```cpp
+cloth->setDragCoefficient(0.5f);
+cloth->setLiftCoefficient(0.6f);
+```
+
+바람 추가:
+
+```cpp
+cloth->setWindVelocity(physx::PxVec3(x,y,z));
+```
+
+시뮬레이션을 더 생생하게 하기 위해 값이 지속적으로 변하도록 하는 것이 좋습니다.
+
+---
+
+## **Distance/Motion constraints (거리/모션 제약)**
+
+cloth 움직임을 일정 범위 안에 제한하여 안정성 또는 연출을 위해 사용할 수 있습니다.  
+모션 제약은 각 입자의 움직임을 구 형태의 영역으로 제한합니다.
+
+다음은 모션 제약 설정 예:
+
+```cpp
+nv::cloth::Range<physx::PxVec4> motionConstraints = cloth->getMotionConstraints();
+for(int i = 0; i < (int)motionConstraints.size(); i++)
+{
+       motionConstraints[i] = physx::PxVec4(sphereCenter[i], sphereRadius[i]);
+}
+```
+
+모든 모션 제약을 제거하려면:
+
+```cpp
+cloth->clearMotionConstraints();
+```
+
+반경은 다음과 같이 scale, bias로 변환할 수 있습니다:
+
+```
+newRadius = scale * oldRadius + bias  
+(음수 방지 위해 clamp)
+```
+
+설정:
+
+```cpp
+cloth->setMotionConstraintScaleBias(scale, bias);
+cloth->setMotionConstraintStiffness(stiffness);
+```
+
+---
+
+## **Attaching cloth to animated characters (천을 애니메이션 캐릭터에 부착하기)**
+
+천을 부착하는 방법은 두 가지:
+
+1. **inverse mass = 0 인 잠긴 입자의 위치 갱신**
+    
+2. **모션 제약 사용**
+    
+
+두 방법을 동시에 사용하기도 함.
+
+---
+
+직접 입자 위치를 갱신하는 예시:
+
+```cpp
+{ // 이 범위가 끝나면 MappedRange 소멸자에서 업데이트가 트리거됨
+       nv::cloth::MappedRange<physx::PxVec4> particles = cloth->getCurrentParticles();
+       for all attached particles i
+       {
+       particles[attachmentVertices[i]] =
+           physx::PxVec4(attachmentPositions[i], mAttachmentVertexOriginalPositions[i].w);
+       }
+}
+```
+
+- 잠기지 않은 입자의 위치도 변경할 수 있지만, 일반적으로 원치 않는 결과를 유발함
+    
+- w 성분을 바꾸어 질량을 동적으로 변경할 수도 있음
+    
+- 이를 통해 런타임에 입자를 잠그거나 잠금 해제할 수 있음
+    
+
+모션 제약도 유사하게 사용할 수 있으며, 반경 0의 구를 사용하면 입자를 고정할 수 있습니다.
+
+또한 skinned mesh(캐릭터의 변형된 메쉬)에서의 거리 안에 cloth 입자가 머물도록 제한할 수도 있으며, 이는 안정성과 의도하지 않은 cloth 형태를 방지합니다.
+
+점진적으로 제약 반경을 줄이는 방식으로  
+**스킨된 클로스 ↔ 물리 클로스** 간의 블렌딩을 만들 수 있습니다.
+
+---
+
+## **Unit scaling (단위 스케일링)**
+
+SI 단위를 사용하는 것이 물리적 의미를 가지는 값 사용에 좋지만,  
+정밀도 문제나 게임 엔진과의 호환성 때문에 원하지 않을 수도 있습니다.
+
+거리 단위를 n배 스케일링하는 규칙:
+
+### 스케일링해야 하는 값(n배):
+
+- 모든 선형 거리 값
+    
+- 정점 위치
+    
+- 압축/신장 한계
+    
+- 테더(tether) 및 rest 길이(보통 cooker가 처리함)
+    
+- 충돌 shape의 반지름
+    
+- 충돌 shape 위치
+    
+- 중력 (cooker의 중력은 방향만 중요)
+    
+- 바람 속도
+    
+- 충돌 거리
+    
+
+### **변하지 않아야 하는 값:**
+
+- 강성(stiffness)
+    
+- 감쇠(damping)
+    
+- 강성 multiplier
+    
+- 테더 scale
+    
+- delta time
+    
+- 항력/양력 계수
+    
+
+### **유체 밀도(wind simulation)는 n⁻³ 배로 스케일해야 함**
+
+예:  
+데이터가 SI 단위(미터)인데 시뮬레이션을 센티미터 기준으로 하고 싶다면  
+`n = 100`
+
+---
+
+## **Troubleshooting (문제 해결)**
+
+### **cloth 일부가 사라짐(한 프레임 동안)**
+
+cloth 일부 또는 전체가 사라질 수 있는데,  
+이는 시뮬레이션에서 **float NaN**이 발생할 때 일어납니다.
+
+일부 경우 다음 프레임에서 회복되지만,  
+어떤 경우 cloth 일부 또는 전체가 영구적으로 사라질 수도 있습니다.
+
+가장 일반적인 원인:
+
+### **큰 constraint 오류(스트레칭 등)**
+
+확인해야 할 사항:
+
+- 빠르게 움직이는 collision shapes
+    
+- air drag/lift 또는 damping 적용된 상태에서의 빠른 충돌
+    
+- 큰 스트레칭 상태에서 air drag/lift 를 사용하면  
+    삼각형 면적에 따라 매우 큰 힘이 발생할 수 있음
+    
+- damping은 cloth 속성에 덜 민감해서 덜 위험함
+    
+
+---
+
+### **해결책:**
+
+- solver 빈도 증가(프레임 레이트보다 높게)
+    
+    ```cpp
+    cloth->setSolverFrequency(300);
+    ```
+    
+    → 충돌 침투 감소, 천의 강성 증가에 도움
+    
+- 충돌 shape 침투 감소  
+    (로컬 공간 시뮬레이션으로 전환)
+    
+- air drag/lift 감소 또는 비활성화
+    
