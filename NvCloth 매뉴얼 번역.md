@@ -289,7 +289,7 @@ nv::cloth::Factory* factory = NvClothCreateFactoryDX11(GraphicsContextManager);
 
 시뮬레이션 데이터는 두 개의 객체로 분리됩니다:
 
-- **Fabric**  
+- **Fabric**
     여러 인스턴스에서 공유 가능한 데이터 (제약 길이, 연결 등)
     
 - **Cloth**  
