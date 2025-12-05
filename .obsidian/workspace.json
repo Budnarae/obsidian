@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NvCloth 매뉴얼 번역.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "NvCloth 매뉴얼 번역"
+              "title": "index"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "index.md",
     "NvCloth 매뉴얼 번역.md",
+    "index.md",
     "Bokeh II The Sequel - 번역.md",
     "GPU Gem3 - Chapter 28. Practical Post-Process Depth of Field.md",
     "F-Number 위키피디아 번역.md",
