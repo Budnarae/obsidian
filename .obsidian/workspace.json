@@ -75,8 +75,7 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -96,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -186,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,9 +204,10 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
     "index.md",
+    "section_00_Front_Matter_KR.md",
     "NvCloth 매뉴얼 번역.md",
     "Bokeh II The Sequel - 번역.md",
     "GPU Gem3 - Chapter 28. Practical Post-Process Depth of Field.md",
@@ -232,7 +232,6 @@
     "public/FBX Wikipedia 번역.md",
     "public/learnopengl model loading 번역.md",
     "public/learnopengl skeletal animation 문서 번역.md",
-    "sol2 Documentation 번역.md",
     "learnopengl.com Normal-Mapping 문서 번역.pdf",
     "private/Week5 게임 엔진 흐름도.canvas",
     "public/DirectX11 API.canvas",
