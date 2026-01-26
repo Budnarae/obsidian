@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "53261e3b1914a704",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.11.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,7 +217,7 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "cfa74978c3df187e",
+  "active": "53261e3b1914a704",
   "lastOpenFiles": [
     "index.md",
     "section_00_Front_Matter_KR.md",
