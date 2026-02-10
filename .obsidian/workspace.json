@@ -23,15 +23,15 @@
             }
           },
           {
-            "id": "53261e3b1914a704",
+            "id": "0787c5deb56dbd7c",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.11.4"
+                "currentVersion": "1.11.5"
               },
               "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.11.4"
+              "title": "릴리즈 노트 1.11.5"
             }
           }
         ],
@@ -217,7 +217,7 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "53261e3b1914a704",
+  "active": "0787c5deb56dbd7c",
   "lastOpenFiles": [
     "index.md",
     "section_00_Front_Matter_KR.md",
