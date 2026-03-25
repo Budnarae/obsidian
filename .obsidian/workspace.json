@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "preview",
+                "file": "public/네트워크 프로토콜.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "네트워크 프로토콜"
             }
           }
         ]
@@ -208,6 +208,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "public/네트워크 토폴로지.md",
+    "public/네트워크 바이트 순서.md",
+    "public/깊은 복사.md",
+    "public/그리드.md",
+    "public/42 innercirle 정리.md",
+    "public/2FA.md",
+    "index.md",
     "learnopengl.com Normal-Mapping 문서 번역.md",
     "learnopengl.com Shadow Mapping 문서 번역.md",
     "Pasted image 20250827125730.png",
@@ -228,12 +235,6 @@
     "conflict-files-obsidian-git.md",
     "public/위키피디아 Shadow mapping 번역.md",
     "public/sol2.md",
-    "public/lua.md",
-    "public/learnopengl skeletal animation 문서 번역.md",
-    "public/learnopengl model loading 번역.md",
-    "public/WebglFundamentals skinning 문서 번역.md",
-    "public/Tile-based light culling.md",
-    "public/Shadowing.md",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "public/MarioBall Implementation.canvas",
     "private/게임테크랩 3주차 베이스 코드 플로우.canvas",
