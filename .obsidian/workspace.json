@@ -15,7 +15,7 @@
               "state": {
                 "file": "ingredient/template/개요.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
@@ -206,8 +206,12 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cfa74978c3df187e",
   "lastOpenFiles": [
+    "ingredient/template 1/참고자료.md",
+    "ingredient/template 1/개요와 참고자료.md",
+    "ingredient/template 1/개요.md",
+    "ingredient/template 1",
     "ingredient/template/참고자료.md",
     "ingredient/template/개요와 참고자료.md",
     "ingredient/template/개요.md",
@@ -231,9 +235,6 @@
     "public/가상 상속.md",
     "public/42 innercirle 정리.md",
     "public/2FA.md",
-    "public/네트워크 프로토콜.md",
-    "public/네트워크 토폴로지.md",
-    "public/네트워크 바이트 순서.md",
     "Pasted image 20250827125730.png",
     "재료/이미지/c4c07faa0ecdbde96ff5dc39933fd87d_MD5.jpeg",
     "public/MarioBall Implementation.canvas",
@@ -258,7 +259,6 @@
     "Excalidraw",
     "private/운영체제 학기말 과제",
     "resource/JavaScript",
-    "resource/HTML",
     "project/42Seoul/무제 폴더/무제 파일.canvas",
     "project/42Seoul/microshell/flowchart/무제 파일.canvas",
     "무제 파일.canvas",
